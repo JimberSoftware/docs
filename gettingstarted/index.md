@@ -19,7 +19,6 @@ This guide will show you how to become a member of highly secure companies world
 6. [Create NIACs](ni-niacs.md)
 7. [Create network controllers](ni-admins.md)
 8. [Configuring rules](ni-rules.md)
-{.links-list}
 
 
 ## Contact
