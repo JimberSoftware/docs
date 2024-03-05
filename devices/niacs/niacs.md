@@ -3,10 +3,10 @@
 Network Isolation Access Client (NIAC) is a specialized hardware device engineered to enable secure network connections. It can be integrated with a broad range of devices, including printers, IP cameras, hard drives, and industrial machinery. By serving as a distinct gateway for these devices, NIACs enhance accessibility, ensuring that all data in transit remains encrypted for utmost security.
 
 
-![niacs.png](/networkisolation/niacfront.png 'size:=300x')
+![niacs.png](/niacfront.png ':size=300')
  
 
-![niacs.png](/networkisolation/niacback.png 'size:=300x')
+![niacs.png](/niacback.png ':size=300')
 
 
 At the NIAC, there are 4 ports available: one WAN port for internet connection, two LAN ports, and one USB port. The USB port is currently not supported, so network devices can be connected.
@@ -21,14 +21,14 @@ A LAN port is typically used to connect local devices within a network. Typical 
 Once a device is connected, you can see the assigned IP address of the device in the overview of the NIACs. In this overview, you can also remove a device and activate or deactivate secure mode.
 
 
-![niac_overview.png](/networkisolation/niac_overview.png 'size:=920x')
+![niac_overview.png](/niac_overview.png ':size=920x')
 
 
-
+> [!INFO]
 > If you're an end customer interested in integrating NIACs with your devices, please get in touch with your assigned integrator. 
 
 
-
+> [!INFO]
 > If you're an integrator in need of NIACs, you can either contact your distributor or reach out directly to Jimber via email at security@jimber.io.
 
 
@@ -46,13 +46,13 @@ To create a NIAC into the platform, click on the `Create new` button
 prominently located at the upper right corner of the interface.
 
 
-![create_niac.png](/networkisolation/create_niac.png 'size:=800x')
+![create_niac.png](/create_niac.png ':size=600x')
 
 
 You can choose a hostname. The initial selected primary group is 'Servers' and 'Secure mode' is selected. Both can be changed. 
 
 > [!WARNING]
-> **Note**: A device that is connected to a NIAC will not be able to reach the internet unless "Allow WAN" is enabled for the NIAC.
+> A device that is connected to a NIAC will not be able to reach the internet unless "Allow WAN" is enabled for the NIAC.
 
 
 ## Edit a NIAC
@@ -61,7 +61,7 @@ NIACs can be edited by clicking on the yellow pencil icon next to their name
 .
 
 
-![edit_niac.png](/networkisolation/edit_niac.png 'size:=800x')
+![edit_niac.png](/edit_niac.png ':size=600x')
 
 
 ## Remove a NIAC
@@ -72,4 +72,4 @@ NIACs can be removed by clicking on the red trash bin icon next to their name
 
  You will receive a warning before the NIAC is permanently deleted:
  
-![delete_niac.png](/networkisolation/delete_niac.png 'size:=500x')
+![delete_niac.png](/delete_niac.png ':size=500x')

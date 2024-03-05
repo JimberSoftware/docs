@@ -11,7 +11,7 @@
 * # Devices
   * [User Devices](./devices/userdevices/userdevices)
   * [Servers](./devices/servers/servers)
-  * [NIACs](./devices/niacs)
+  * [NIACs](./devices/niacs/niacs)
   * [Network Controllers](./devices/networkcontrollers)
 * # Rules
   * [Rules](./rules/rules)
