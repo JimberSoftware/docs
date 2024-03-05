@@ -1,9 +1,12 @@
 # Network Controllers
+> [!INFO]
 > Network Controllers can either be cloud or on-premise.
 
 
 
 A network controller is a networking device that forwards data packets between the network. Network controllers play a crucial role in Network Isolation. Isolating a network means restricting its accessibility to only trusted entities and ensuring unauthorized access is prevented. 
+
+> [!INFO]
 > It ensures that each part of your network, whether it's a device, user, or application, cannot access any other part without explicit permission.
 
 
@@ -13,7 +16,7 @@ A network controller is a networking device that forwards data packets between t
 Every company that uses Network Isolation will have a cloud network controller **added by default**. This network controller ensures that all the company's devices and users, both external and internal, can access the network securely and consistently. The cloud network controller acts as an entry and exit point for network traffic, ensuring everyone can log in and access the necessary resources.
 
 
-![networkcontrollers.png](/networkisolation/networkcontrollers.png ':size=800')
+![networkcontrollers.png](/networkcontrollers.png ':size=800')
 
 
 ### On-Premise Network Controller (optional)
@@ -21,6 +24,8 @@ Every company that uses Network Isolation will have a cloud network controller *
 However, there is a potential challenge with the cloud-only approach. Without an on-premise network controller, internal or on-premise traffic will be routed through the internet, which can lead to unnecessary latency.
 
 To address this concern, companies have the option to add an on-premise network controller to their setup. 
+
+> [!INFO]
 > This ensures that local traffic remains local and does not get routed to the internet, thereby ensuring faster response times for internal network operations.
 
 
@@ -38,9 +43,9 @@ To add a network controller into the platform, click on the `Create new` button
 prominently located at the upper right corner of the interface.
 
 
-![create_networkcontroller.png](/networkisolation/create_networkcontroller.png ':size=800')
+![create_networkcontroller.png](/create_networkcontroller.png ':size=800')
 
-
+> [!WARNING]
 > Hostname, Endpoint Address and Public IP are mandatory.
 
 
@@ -51,7 +56,7 @@ prominently located at the upper right corner of the interface.
 .
 
 
-![edit_networkcontroller.png](/networkisolation/edit_networkcontroller.png ':size=800')
+![edit_networkcontroller.png](/edit_networkcontroller.png ':size=800')
 
 
 ## Delete on-premise Network Controller
@@ -63,7 +68,7 @@ prominently located at the upper right corner of the interface.
  
 
 
-![delete_networkcontroller.png](/networkisolation/delete_networkcontroller.png ':size=600')
+![delete_networkcontroller.png](/delete_networkcontroller.png ':size=600')
 
 
 ## On-premise Network Controller minimum specifications

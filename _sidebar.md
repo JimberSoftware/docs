@@ -12,7 +12,7 @@
   * [User Devices](./devices/userdevices/userdevices)
   * [Servers](./devices/servers/servers)
   * [NIACs](./devices/niacs/niacs)
-  * [Network Controllers](./devices/networkcontrollers)
+  * [Network Controllers](./devices/networkcontrollers/networkcontrollers)
 * # Rules
   * [Rules](./rules/rules)
 * # Advanced
