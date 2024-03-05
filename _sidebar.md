@@ -5,11 +5,11 @@
   * [Getting Started](./gettingstarted/index)
 * # Company
   * [Customers](./company/customers/customers)
-  * [Users](./company/customers)
-  * [Domains](./company/domains)
-  * [Integrations](./company/integrations)
+  * [Users](./company/users/users)
+  * [Domains](./company/domains/domains)
+  * [Integrations](./company/integrations/integrations)
 * # Devices
-  * [User Devices](./devices/userdevices)
+  * [User Devices](./devices/userdevices/userdevices)
   * [Servers](./devices/servers)
   * [NIACs](./devices/niacs)
   * [Network Controllers](./devices/networkcontrollers)
