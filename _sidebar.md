@@ -10,7 +10,7 @@
   * [Integrations](./company/integrations/integrations)
 * # Devices
   * [User Devices](./devices/userdevices/userdevices)
-  * [Servers](./devices/servers)
+  * [Servers](./devices/servers/servers)
   * [NIACs](./devices/niacs)
   * [Network Controllers](./devices/networkcontrollers)
 * # Rules
