@@ -1,4 +1,4 @@
-# Network Isolation - Best practices - 
+# Network Isolation - Best practices
 ## Intro
 Welcome to the best practices guide for Jimber Network Isolation. In this document, we'll dive into how to get the most out of our product by focusing on key areas: setting up groups, choosing the right IP ranges, and managing user permissions. It's especially important to get familiar with these features now, as we're planning to phase out multiple IP ranges in the future. This guide aims to give you all the tools and knowledge needed to ensure your network is not only effective but also secure and future-ready.
 
@@ -10,7 +10,8 @@ To ensure a smooth transition and minimize potential disruptions, we recommend a
 
 Looking ahead, the default IP range for new networks or customers will be ***'198.18.0.0/15'***. When setting up a new network or onboarding a new customer, it's advisable to use this range for the primary group, which should be designated as group number ***'0'*** and named ***'General'***. This approach not only aligns with our forthcoming standard but also ensures your network setup is aligned with future configurations.
 
-![general_group.jpg](/networkisolation/general_group.jpg)
+
+![general_group.jpg](/general_group.jpg)
 
 ## Applying rules
 In configuring rules within 'Network Isolation,' focusing on functionality rather than specific user groups is key. This approach emphasizes the purpose or action of the rule, making your network's configuration more intuitive and manageable. For instance, rather than naming a group based on the department or personnel, like 'Sales,' name it in a way that reflects its function. Consider names like 'AllowFileserver' to grant access to a file server.
@@ -24,4 +25,5 @@ When integrating 'Network Isolation' with Azure Entra ID, it's important to note
 
 This ensures that your network permissions reflect your organizational structure by leveraging your existing nested groups in Azure. Such integration streamlines access management, as changes in Azure group memberships are automatically updated in 'Network Isolation,' maintaining consistency and efficiency.
 
-![entraid_example.png](/networkisolation/entraid_example.png)
+
+![entraid_example.png](/entraid_example.png)

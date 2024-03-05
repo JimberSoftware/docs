@@ -1,63 +1,99 @@
-# Network Controllers
-> Network Controllers can either be cloud or on-premise.
+# How to setup Microsoft Azure
+
+## Create an account
+Go to https://azure.microsoft.com/ and create an Azure Account if you don't already have one.
+
+After creating an account you can go to the [azure portal](https://portal.azure.com/#home).
+
+
+## Create app registration
+On the Azure portal go to App registrations, this is located under 'Azure services'
+
+![azure_portal.png](/networkisolation/azure_portal.png =900x){.radius-5}
+
+
+Register a new application by clicking on “New registration” found on the top left
+
+![azure_new_registration.png](/networkisolation/azure_new_registration.png =900x){.radius-5}
+
+
+
+Choose a name (eg. JimberNetworkIsolation) and your scope, mostly “Single tenant” will suffice.
+You don’t need a redirect URI.
+Then click on ‘Register’ at the bottom left of your screen.
+
+![azure_registration_info.png](/networkisolation/azure_registration_info.png =900x){.radius-5}
+
+
+## Permissions
+
+Go to your newly created app registration, and choose 'API Permissions' in the right menu panel.
+
+![apipermissions.png](/networkisolation/apipermissions.png =900x){.radius-5}
+
+Following permissions from the Microsoft Graph API are needed:
+- Group.Read.All (Application)
+- User.Read (Delegated) -> this one should already be created by default
+- User.Read.All (Application)
+
+To grant new permissions you can click on 'Add a permission' which is located just above the existing permissions. 
+Here you can click on the 'Microsoft Graph' button.
+
+![azure_microsoft_graph.png](/networkisolation/request_api.png =900x){.radius-5}
+
+As said before you will need to add Group.Read.All and User.Read.All, both are **Application permissions**. 
+> Make sure to click on the right type of permissions!
+{.is-warning}
+
+
+![microsoft_graph_type_permissions.png](/networkisolation/request_api_2.png =900x){.radius-5}
+
+This will give you a whole list of different permissions where you can search for the right ones: 'Group.Read.All' and 'User.Read.All'.
+
+![permission_group.png](/networkisolation/permission_group.png =500x){.radius-5}
+![permission_user.png](/networkisolation/permission_user.png =500x){.radius-5}
+
+After this is done your permission list should look like this:
+
+![azure_permissions_list.png](/networkisolation/azure_permissions_list.png =900x){.radius-5}
+
+
+Admin consent is required and must be granted for your base directory in Azure. The base directory in our example is 'Standaardmap'.
+
+To do this click on 'Grand admin consent for Standaardmap'  which is next to 'Add a permission'. This will change the status for each permission to 'granted'.
+
+![grand_admin_consent.png](/networkisolation/grant_admin_consent.png =900x){.radius-5}
+
+> Note: If you cannot grand admin consent this is because your user does not have administrator rights. Please contact the admin of your Azure portal to grant admin consent.
 {.is-info}
 
+Eventually your permission list should look like this:
 
-A network controller is a networking device that forwards data packets between the network. Network controllers play a crucial role in Network Isolation. Isolating a network means restricting its accessibility to only trusted entities and ensuring unauthorized access is prevented. 
-> It ensures that each part of your network, whether it's a device, user, or application, cannot access any other part without explicit permission.
-{.is-success}
-
-
-## Cloud Network Controller (default)
-
-Every company that uses Network Isolation will have a cloud network controller **added by default**. This network controller ensures that all the company's devices and users, both external and internal, can access the network securely and consistently. The cloud network controller acts as an entry and exit point for network traffic, ensuring everyone can log in and access the necessary resources.
-
-![networkcontrollers.png](/networkisolation/networkcontrollers.png =800x){.decor-shadow .radius-5}
-
-### On-Premise Network Controller (optional)
-
-However, there is a potential challenge with the cloud-only approach. Without an on-premise network controller, internal or on-premise traffic will be routed through the internet, which can lead to unnecessary latency.
-
-To address this concern, companies have the option to add an on-premise network controller to their setup. 
-> This ensures that local traffic remains local and does not get routed to the internet, thereby ensuring faster response times for internal network operations.
-{.is-success}
+![grand_admin_consent.png](/networkisolation/configured_permissions.png =900x){.radius-5}
 
 
-### On-Premise Network controller Types:
-1. **Virtual Appliance**: This is a software-based network controller that can be installed on virtualized infrastructure, making it easier to deploy, scale and manage.
-2. **Physical Appliance**: This is a tangible hardware device that is installed in the company's data center or networking closet.
+## Client credentials
+Go to 'Overview' in the right menu panel to get a list of the essential info.
 
-## Create on-premise Network Controller
+Here you need to add client credentials:
+![azure_credentials.png](/networkisolation/azure_credentials.png =900x){.radius-5}
 
-To add a network controller into the platform, click on the `Create new` button
-![create_new.png](/create_new.png){ .radius-5}
-prominently located at the upper right corner of the interface.
+In the next screen, click on 'New client secret'. Choose a description and an expiration date: 
+![new_client_secret.png](/networkisolation/new_client_secret.png =900x){.radius-5}
 
-![create_networkcontroller.png](/networkisolation/create_networkcontroller.png =800x){.decor-shadow .radius-5}
+> When the token expires manual action is needed to ensure that Azure AD Sync keeps working.
+{.is-warning}
 
-> Hostname, Endpoint Address and Public IP are mandatory.
-{.is-info}
 
-## Edit on-premise Network Controller
 
- Network Controllers can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/pencil_2.png){.radius-5}.
 
-![edit_networkcontroller.png](/networkisolation/edit_networkcontroller.png =800x){.decor-shadow .radius-5}
 
-## Delete on-premise Network Controller
+Following information is needed for setup in Jimber Network Isolation:
+- The client secret you just created (Secret ID)
+- The client ID of your registered application (Found in overview)
+- The Tenant ID of your directory (Found in overview)
 
- Network Controllers can be removed by clicking on the red trash bin icon next to their name. ![recycle_bin.png](/recycle_bin.png){.radius-5}
- 
- 
+![new_client_secret.png](/networkisolation/secret_id.png =900x){.radius-5}
+![needed_info.png](/networkisolation/needed_info.png =900x){.radius-5}
 
-![delete_networkcontroller.png](/networkisolation/delete_networkcontroller.png =600x){.decor-shadow .radius-5}
-
-## On-premise Network Controller minimum specifications
-
-**General**:
-- 20GB hard disk
-
-**For each 50 users:**
-- 1 CPU
-- 1024MB RAM,
-
+To finish setup with Network Isolation go to the following [documentation page](/networkisolation/ni-integrations)
