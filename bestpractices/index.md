@@ -1,4 +1,4 @@
-# Network Isolation - Best practices
+# Network Isolation - Best practices - 
 ## Intro
 Welcome to the best practices guide for Jimber Network Isolation. In this document, we'll dive into how to get the most out of our product by focusing on key areas: setting up groups, choosing the right IP ranges, and managing user permissions. It's especially important to get familiar with these features now, as we're planning to phase out multiple IP ranges in the future. This guide aims to give you all the tools and knowledge needed to ensure your network is not only effective but also secure and future-ready.
 
