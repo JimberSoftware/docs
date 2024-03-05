@@ -1,5 +1,7 @@
-# Welcome to Docsify Page!
+# Network Isolation
+Welcome to the Jimber Network Isolation documentation. For issues please contact us at security@jimber.io
 
-This site was created using [**Docsify**](https://docsify.js.org), which is an open source documentation site generator, and imported in GitHub page. This site was created for [**Opensource.com**](https://opensource.com) demo.
+Please refer to the menu on the left to get more information about configuring your Network Isolation environment.
 
-![Welcome to Opensource.com](./images/cover.jpg)
+
+![mainpage_networkisolation.svg](mainpage_networkisolation.svg)
