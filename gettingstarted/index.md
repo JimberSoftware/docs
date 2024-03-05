@@ -24,4 +24,4 @@ This guide will show you how to become a member of highly secure companies world
 
 ## Contact
 
-If you have any questions, please contact Jimber support at <a href="mailto:security@jimber.io">security@jimber.io</a>.
+If you have any questions, please [contact Jimber](./contact/index)
