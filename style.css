@@ -1,3 +1,6 @@
+:root {
+    --theme-color: #111279;
+  }
 .github-corner { 
     display: none;
 }
