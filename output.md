@@ -1,129 +1,92 @@
-# How to setup Microsoft Azure
+# Groups
 
-## Create an account
-Go to https://azure.microsoft.com/ and create an Azure Account if you don't already have one.
+Groups in the network setting act as a valuable mechanism for applying uniform network rules across multiple users, servers, and Network Isolation Access Clients (NIACs). An important factor to remember is that all devices allocated under the same PRIMARY group inherently share the same subnet, thereby ensuring a unified network interface.
 
-After creating an account you can go to the [azure portal](https://portal.azure.com/#home).
+The concept of groups brings a high level of versatility and control to your network management. For instance, a group named 'Developers' could be set up, with rules allowing them to communicate with the devices in the 'Servers' group. Simultaneously, a separate group such as 'Sales' could be configured to not have this access, thereby segmenting network interactions based on job function or department.
 
+This approach helps create a network landscape that aligns with your organization's unique operational dynamics, managing access, and communication based on the distinct needs and roles of different groups. In essence, the use of groups facilitates a more streamlined, controlled, and secure network environment.
 
-## Create app registration
-On the Azure portal go to App registrations, this is located under 'Azure services'
 
+![groups.png](/networkisolation/groups.png ':size=900')
 
-![azure_portal.png](/networkisolation/azure_portal.png ':size=900')
+In the overview of the groups, you can see the different entries of a group:
 
+![group-entry.png](/networkisolation/group-entry_2.png ':size=900')
 
 
-Register a new application by clicking on “New registration” found on the top left
 
 
-![azure_new_registration.png](/networkisolation/azure_new_registration.png ':size=900')
+### Primary vs Additional groups
 
+Each user or device on your network can be assigned to one primary group, as well as numerous additional groups.
 
+The primary group not only establishes the subnet for the user or device, but also determines its primary set of network rules. On the other hand, the role of additional groups is to supplement the network rules that are applied to the device; they do not influence its subnet.
 
+For instance, consider a scenario where a user or device is assigned to one primary group and four additional groups. The user or device would obtain its subnet based on the IP range designated by the primary group. Then, the network rules from both the primary and all additional groups are aggregated and enforced on the user or device.
 
-Choose a name (eg. JimberNetworkIsolation) and your scope, mostly “Single tenant” will suffice.
-You don’t need a redirect URI.
-Then click on ‘Register’ at the bottom left of your screen.
+This flexible structure allows for a fine-tuned, layered approach to network management. Users or devices can benefit from a blend of network rules across multiple groups while adhering to clear subnet boundaries defined by their primary group.
 
 
-![azure_registration_info.png](/networkisolation/azure_registration_info.png ':size=900')
+![edit-server.png](/networkisolation/edit-server.png ':size=600')
 
 
+## Create a group
 
-## Permissions
+To create a new group into the platform, click on the `Create new` button 
 
-Go to your newly created app registration, and choose 'API Permissions' in the right menu panel.
+![create_new.png](/create_new.png)
 
+prominently located at the upper right corner of the interface.
 
-![apipermissions.png](/networkisolation/apipermissions.png ':size=900')
+> [!WARNING]
+> Please ensure to configure the group settings in such a way that there is no overlap with your organization's existing physical network, VPNs, or any other networks accessed by your staff.
 
+Creating a new group requires the following information:
 
-Following permissions from the Microsoft Graph API are needed:
-- Group.Read.All (Application)
-- User.Read (Delegated) -> this one should already be created by default
-- User.Read.All (Application)
+- Group Name: An identifier for the group, which can be updated later as needed.
+- Group Number: A numerical value utilized by the Network Controller interface.
+- Ip range: The designated private network range assigned to the group.
 
-To grant new permissions you can click on 'Add a permission' which is located just above the existing permissions. 
-Here you can click on the 'Microsoft Graph' button.
 
+![create-group.png](/networkisolation/create-group.png ':size=600')
 
-![azure_microsoft_graph.png](/networkisolation/request_api.png ':size=900')
 
+## Group details
+Access the details of a specific group by selecting the corresponding entry within the table (avoid clicking on the buttons at the end). This will reveal the network rules associated with the chosen group, along with the devices that fall under this group's purview.
 
-As said before you will need to add Group.Read.All and User.Read.All, both are **Application permissions**. 
-> Make sure to click on the right type of permissions!
 
+![group-details.png](/networkisolation/group-entry.png ':size=900')
 
 
+## Edit a group
+Groups can be edited by clicking on the yellow pencil icon next to their name 
+![pencil_2.png](/pencil_2.png)
+.
+ You'll then be able to adjust the group name as needed:
 
-![microsoft_graph_type_permissions.png](/networkisolation/request_api_2.png ':size=900')
+![create-group.png](/networkisolation/edit-group.png ':size=600')
 
 
-This will give you a whole list of different permissions where you can search for the right ones: 'Group.Read.All' and 'User.Read.All'.
 
+## Remove a group
+Groups can be removed by clicking on the red trash bin icon next to their name 
+![recycle_bin.png](/recycle_bin.png)
+.
 
-![permission_group.png](/networkisolation/permission_group.png ':size=500')
 
+![delete-group.png](/networkisolation/delete-group.png ':size=500')
 
-![permission_user.png](/networkisolation/permission_user.png ':size=500')
 
 
-After this is done your permission list should look like this:
+> [!WARNING]
+> A group can only be deleted if it has no linked devices or active network rules.
 
+To facilitate the removal process:
 
-![azure_permissions_list.png](/networkisolation/azure_permissions_list.png ':size=900')
+1. Refer to the 'Group Details' section to identify any devices associated with the group and its active network rules.
+2. Nullify all network rules associated with the group.
+3. Reassign any devices within the group to a different group.
 
+> After taking these steps, you should be able to successfully delete the group.
 
 
-Admin consent is required and must be granted for your base directory in Azure. The base directory in our example is 'Standaardmap'.
-
-To do this click on 'Grand admin consent for Standaardmap'  which is next to 'Add a permission'. This will change the status for each permission to 'granted'.
-
-
-![grand_admin_consent.png](/networkisolation/grant_admin_consent.png ':size=900')
-
-
-> Note: If you cannot grand admin consent this is because your user does not have administrator rights. Please contact the admin of your Azure portal to grant admin consent.
-
-
-Eventually your permission list should look like this:
-
-
-![grand_admin_consent.png](/networkisolation/configured_permissions.png ':size=900')
-
-
-
-## Client credentials
-Go to 'Overview' in the right menu panel to get a list of the essential info.
-
-Here you need to add client credentials:
-
-![azure_credentials.png](/networkisolation/azure_credentials.png ':size=900')
-
-
-In the next screen, click on 'New client secret'. Choose a description and an expiration date: 
-
-![new_client_secret.png](/networkisolation/new_client_secret.png ':size=900')
-
-
-> When the token expires manual action is needed to ensure that Azure AD Sync keeps working.
-
-
-
-
-
-
-Following information is needed for setup in Jimber Network Isolation:
-- The client secret you just created (Secret ID)
-- The client ID of your registered application (Found in overview)
-- The Tenant ID of your directory (Found in overview)
-
-
-![new_client_secret.png](/networkisolation/secret_id.png ':size=900')
-
-
-![needed_info.png](/networkisolation/needed_info.png ':size=900')
-
-
-To finish setup with Network Isolation go to the following [documentation page](/networkisolation/ni-integrations)
