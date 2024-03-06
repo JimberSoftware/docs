@@ -9,16 +9,16 @@ This guide will show you how to become a member of highly secure companies world
 
 ## Steps
 
-1. [Create customers](ni-domains.md)
+1. [Create Customers](./company/customers/customers)
 > [!NOTE]
 > **(This step is only for integrators who want to add a customer.)**
-2. [Create domains](ni-domains.md)
-3. [Create users](ni-users.md)
-4. [Create groups](ni-groups.md)
-5. [Create servers](ni-servers.md)
-6. [Create NIACs](ni-niacs.md)
-7. [Create network controllers](ni-admins.md)
-8. [Configuring rules](ni-rules.md)
+2. [Create domains](./company/domains/domains)
+3. [Create users](./company/users/users)
+4. [Create groups](./company/groups/groups)
+5. [Create servers](./devices/servers/servers)
+6. [Create NIACs](./devices/niacs/niacs)
+7. [Create network controllers](./devices/networkcontrollers/networkcontrollers)
+8. [Configuring rules](./rules/rules)
 
 
 ## Contact
