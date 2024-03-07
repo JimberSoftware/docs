@@ -1,77 +1,92 @@
-# Network Controllers
-> Network Controllers can either be cloud or on-premise.
+# Groups
+
+Groups in the network setting act as a valuable mechanism for applying uniform network rules across multiple users, servers, and Network Isolation Access Clients (NIACs). An important factor to remember is that all devices allocated under the same PRIMARY group inherently share the same subnet, thereby ensuring a unified network interface.
+
+The concept of groups brings a high level of versatility and control to your network management. For instance, a group named 'Developers' could be set up, with rules allowing them to communicate with the devices in the 'Servers' group. Simultaneously, a separate group such as 'Sales' could be configured to not have this access, thereby segmenting network interactions based on job function or department.
+
+This approach helps create a network landscape that aligns with your organization's unique operational dynamics, managing access, and communication based on the distinct needs and roles of different groups. In essence, the use of groups facilitates a more streamlined, controlled, and secure network environment.
+
+
+![groups.png](/networkisolation/groups.png ':size=900')
+
+In the overview of the groups, you can see the different entries of a group:
+
+![group-entry.png](/networkisolation/group-entry_2.png ':size=900')
 
 
 
-A network controller is a networking device that forwards data packets between the network. Network controllers play a crucial role in Network Isolation. Isolating a network means restricting its accessibility to only trusted entities and ensuring unauthorized access is prevented. 
-> It ensures that each part of your network, whether it's a device, user, or application, cannot access any other part without explicit permission.
+
+### Primary vs Additional groups
+
+Each user or device on your network can be assigned to one primary group, as well as numerous additional groups.
+
+The primary group not only establishes the subnet for the user or device, but also determines its primary set of network rules. On the other hand, the role of additional groups is to supplement the network rules that are applied to the device; they do not influence its subnet.
+
+For instance, consider a scenario where a user or device is assigned to one primary group and four additional groups. The user or device would obtain its subnet based on the IP range designated by the primary group. Then, the network rules from both the primary and all additional groups are aggregated and enforced on the user or device.
+
+This flexible structure allows for a fine-tuned, layered approach to network management. Users or devices can benefit from a blend of network rules across multiple groups while adhering to clear subnet boundaries defined by their primary group.
 
 
-
-## Cloud Network Controller (default)
-
-Every company that uses Network Isolation will have a cloud network controller **added by default**. This network controller ensures that all the company's devices and users, both external and internal, can access the network securely and consistently. The cloud network controller acts as an entry and exit point for network traffic, ensuring everyone can log in and access the necessary resources.
+![edit-server.png](/networkisolation/edit-server.png ':size=600')
 
 
-![networkcontrollers.png](/networkisolation/networkcontrollers.png ':size=800')
+## Create a group
 
-
-### On-Premise Network Controller (optional)
-
-However, there is a potential challenge with the cloud-only approach. Without an on-premise network controller, internal or on-premise traffic will be routed through the internet, which can lead to unnecessary latency.
-
-To address this concern, companies have the option to add an on-premise network controller to their setup. 
-> This ensures that local traffic remains local and does not get routed to the internet, thereby ensuring faster response times for internal network operations.
-
-
-
-### On-Premise Network controller Types:
-1. **Virtual Appliance**: This is a software-based network controller that can be installed on virtualized infrastructure, making it easier to deploy, scale and manage.
-2. **Physical Appliance**: This is a tangible hardware device that is installed in the company's data center or networking closet.
-
-## Create on-premise Network Controller
-
-To add a network controller into the platform, click on the `Create new` button
+To create a new group into the platform, click on the `Create new` button 
 
 ![create_new.png](/create_new.png)
 
 prominently located at the upper right corner of the interface.
 
+> [!WARNING]
+> Please ensure to configure the group settings in such a way that there is no overlap with your organization's existing physical network, VPNs, or any other networks accessed by your staff.
 
-![create_networkcontroller.png](/networkisolation/create_networkcontroller.png ':size=800')
+Creating a new group requires the following information:
+
+- Group Name: An identifier for the group, which can be updated later as needed.
+- Group Number: A numerical value utilized by the Network Controller interface.
+- Ip range: The designated private network range assigned to the group.
 
 
-> Hostname, Endpoint Address and Public IP are mandatory.
+![create-group.png](/networkisolation/create-group.png ':size=600')
 
 
-## Edit on-premise Network Controller
+## Group details
+Access the details of a specific group by selecting the corresponding entry within the table (avoid clicking on the buttons at the end). This will reveal the network rules associated with the chosen group, along with the devices that fall under this group's purview.
 
- Network Controllers can be edited by clicking on the yellow pencil icon next to their name 
+
+![group-details.png](/networkisolation/group-entry.png ':size=900')
+
+
+## Edit a group
+Groups can be edited by clicking on the yellow pencil icon next to their name 
 ![pencil_2.png](/pencil_2.png)
+.
+ You'll then be able to adjust the group name as needed:
+
+![create-group.png](/networkisolation/edit-group.png ':size=600')
+
+
+
+## Remove a group
+Groups can be removed by clicking on the red trash bin icon next to their name 
+![recycle_bin.png](/recycle_bin.png)
 .
 
 
-![edit_networkcontroller.png](/networkisolation/edit_networkcontroller.png ':size=800')
+![delete-group.png](/networkisolation/delete-group.png ':size=500')
 
 
-## Delete on-premise Network Controller
 
- Network Controllers can be removed by clicking on the red trash bin icon next to their name. 
-![recycle_bin.png](/recycle_bin.png)
+> [!WARNING]
+> A group can only be deleted if it has no linked devices or active network rules.
 
- 
- 
+To facilitate the removal process:
 
+1. Refer to the 'Group Details' section to identify any devices associated with the group and its active network rules.
+2. Nullify all network rules associated with the group.
+3. Reassign any devices within the group to a different group.
 
-![delete_networkcontroller.png](/networkisolation/delete_networkcontroller.png ':size=600')
+> After taking these steps, you should be able to successfully delete the group.
 
-
-## On-premise Network Controller minimum specifications
-
-**General**:
-- 20GB hard disk
-
-**For each 50 users:**
-- 1 CPU
-- 1024MB RAM,
 

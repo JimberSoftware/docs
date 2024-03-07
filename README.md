@@ -1,5 +1,5 @@
 # Network Isolation
-Welcome to the Jimber Network Isolation documentation. For issues please contact us at security@jimber.io
+Welcome to the Jimber Network Isolation documentation. For issues please [contact us](./contact/index)
 
 Please refer to the menu on the left to get more information about configuring your Network Isolation environment.
 

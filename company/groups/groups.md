@@ -6,9 +6,13 @@ The concept of groups brings a high level of versatility and control to your net
 
 This approach helps create a network landscape that aligns with your organization's unique operational dynamics, managing access, and communication based on the distinct needs and roles of different groups. In essence, the use of groups facilitates a more streamlined, controlled, and secure network environment.
 
-![groups.png](/networkisolation/groups.png  =900x){.decor-shadow .radius-5}
+
+![groups.png](/groups.png ':size=900')
+
 In the overview of the groups, you can see the different entries of a group:
-![group-entry.png](/networkisolation/group-entry_2.png =900x){.decor-shadow .radius-5}
+
+![group-entry.png](/group-entry_2.png ':size=900')
+
 
 
 
@@ -22,15 +26,20 @@ For instance, consider a scenario where a user or device is assigned to one prim
 
 This flexible structure allows for a fine-tuned, layered approach to network management. Users or devices can benefit from a blend of network rules across multiple groups while adhering to clear subnet boundaries defined by their primary group.
 
-![edit-server.png](/networkisolation/edit-server.png =600x){.decor-shadow .radius-5}
+
+![edit-server.png](/edit-server.png ':size=600')
+
 
 ## Create a group
 
 To create a new group into the platform, click on the `Create new` button 
-![create_new.png](/create_new.png){ .radius-5}
+
+![create_new.png](/create_new.png)
+
 prominently located at the upper right corner of the interface.
 
-> Please ensure to configure the group settings in such a way that there is no overlap with your organization's existing physical network, VPNs, or any other networks accessed by your staff. {.is-warning}
+> [!WARNING]
+> Please ensure to configure the group settings in such a way that there is no overlap with your organization's existing physical network, VPNs, or any other networks accessed by your staff.
 
 Creating a new group requires the following information:
 
@@ -38,26 +47,38 @@ Creating a new group requires the following information:
 - Group Number: A numerical value utilized by the Network Controller interface.
 - Ip range: The designated private network range assigned to the group.
 
-![create-group.png](/networkisolation/create-group.png =600x){.decor-shadow .radius-5}
+
+![create-group.png](/create-group.png ':size=600')
+
 
 ## Group details
 Access the details of a specific group by selecting the corresponding entry within the table (avoid clicking on the buttons at the end). This will reveal the network rules associated with the chosen group, along with the devices that fall under this group's purview.
 
-![group-details.png](/networkisolation/group-entry.png =900x){.decor-shadow .radius-5}
+
+![group-details.png](/group-entry.png ':size=900')
+
 
 ## Edit a group
-Groups can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/pencil_2.png){.radius-5}.
+Groups can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/pencil_2.png)
+
  You'll then be able to adjust the group name as needed:
-![create-group.png](/networkisolation/edit-group.png =600x){.decor-shadow .radius-5}
+
+![create-group.png](/edit-group.png ':size=600')
+
 
 
 ## Remove a group
-Groups can be removed by clicking on the red trash bin icon next to their name ![recycle_bin.png](/recycle_bin.png){.radius-5}.
+Groups can be removed by clicking on the red trash bin icon next to their name 
+![recycle_bin.png](/recycle_bin.png)
 
-![delete-group.png](/networkisolation/delete-group.png =500x){.decor-shadow .radius-5}
 
 
-> A group can only be deleted if it has no linked devices or active network rules. {.is-warning}
+![delete-group.png](/delete-group.png ':size=500')
+
+
+
+> [!WARNING]
+> A group can only be deleted if it has no linked devices or active network rules.
 
 To facilitate the removal process:
 
@@ -65,6 +86,7 @@ To facilitate the removal process:
 2. Nullify all network rules associated with the group.
 3. Reassign any devices within the group to a different group.
 
+> [!INFO]
 > After taking these steps, you should be able to successfully delete the group.
-{.is-success}
+
 

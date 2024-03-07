@@ -3,21 +3,22 @@
 
 * # [JIMBER NETWORK ISOLATION](./)
   * [Getting Started](./gettingstarted/index)
-* # Company
+* Company
   * [Customers](./company/customers/customers)
   * [Users](./company/users/users)
+  * [Groups](./company/groups/groups)
   * [Domains](./company/domains/domains)
   * [Integrations](./company/integrations/integrations)
-* # Devices
+* Devices
   * [User Devices](./devices/userdevices/userdevices)
   * [Servers](./devices/servers/servers)
   * [NIACs](./devices/niacs/niacs)
   * [Network Controllers](./devices/networkcontrollers/networkcontrollers)
-* # Rules
+* Rules
   * [Rules](./rules/rules)
-* # Advanced
-  * [Best Practices](./advanced/bestpractices)
+* Advanced
+  * [Best Practices](./advanced/bestpractices/bestpractices)
   * [Custom Configuration](./advanced/customconfiguration)
-  * [Active Directory](./advanced/activedirectory)
-  * [Microsoft Entra ID](./advanced/entraid)
+  * [Active Directory](./advanced/activedirectory/activedirectory)
+  * [Microsoft Entra ID](./advanced/entraid/entraid)
 * [Contact](./contact/index)
