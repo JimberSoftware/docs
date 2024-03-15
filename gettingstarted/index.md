@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Network isolation is a total network security solution that can help you protect your network from cyberthreats. By isolating your network, you can prevent unauthorized users from accessing sensitive data and applications.
+Network Isolation is a total network security solution that can help you protect your network from cyberthreats. By isolating your network, you can prevent unauthorized users from accessing sensitive data and applications.
 
 This guide will show you how to become a member of highly secure companies worldwide using `Jimber Network Isolation`
 
