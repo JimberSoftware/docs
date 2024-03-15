@@ -14,13 +14,14 @@ To incorporate a new customer into the platform, click on the `Create new` butto
 
 prominently located at the upper right corner of the interface.
 
-![create_customer.png](/create_customer.png){ .radius-5}
+![create_customer.png](/create_customer.png)
+
+
 
 Following fields should be provided:
 	
   - Name
   - Display name
-  - Integrator
   - Primary contact email
 
 > [!WARNING]
@@ -36,8 +37,12 @@ Customers can be edited by clicking on the yellow pencil icon next to their name
 ## Delete customer
 
 Customers can be deleted by clicking on the red trash bin icon next to their name ![recycle_bin.png](/recycle_bin.png)
+
+
 > [!WARNING]
 > Ensure there are no ongoing processes, tasks, or linked records associated with a customer before attempting to delete. Always verify and clear any dependencies in other sections of the platform before removal.
 
 You will receive a warning before the customer is permanently deleted:
-![deleting_customer.png](/networkisolation/deleting_customer.png =500x){.radius-5}
+
+![deleting_customer.png](deleting_customer.png)
+

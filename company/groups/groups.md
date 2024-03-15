@@ -59,7 +59,7 @@ Access the details of a specific group by selecting the corresponding entry with
 
 
 ## Edit a group
-Groups can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/pencil_2.png)
+Groups can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/pencil_2.png).
 
  You'll then be able to adjust the group name as needed:
 
@@ -69,7 +69,7 @@ Groups can be edited by clicking on the yellow pencil icon next to their name ![
 
 ## Remove a group
 Groups can be removed by clicking on the red trash bin icon next to their name 
-![recycle_bin.png](/recycle_bin.png)
+![recycle_bin.png](/recycle_bin.png).
 
 
 

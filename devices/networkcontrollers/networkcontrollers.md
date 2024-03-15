@@ -16,7 +16,7 @@ A network controller is a networking device that forwards data packets between t
 Every company that uses Network Isolation will have a cloud network controller **added by default**. This network controller ensures that all the company's devices and users, both external and internal, can access the network securely and consistently. The cloud network controller acts as an entry and exit point for network traffic, ensuring everyone can log in and access the necessary resources.
 
 
-![networkcontrollers.png](/networkcontrollers.png ':size=800')
+![network controllers.png](/networkcontrollers.png ':size=800')
 
 
 ### On-Premise Network Controller (optional)

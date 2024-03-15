@@ -14,6 +14,7 @@
   * [Servers](./devices/servers/servers)
   * [NIACs](./devices/niacs/niacs)
   * [Network Controllers](./devices/networkcontrollers/networkcontrollers)
+  * [Network Controllers Setup](./devices/networkcontrollerssetup/SettingUpServer.md)
 * Rules
   * [Rules](./rules/rules)
 * Advanced
