@@ -1,8 +1,5 @@
 # Integrations
 
-> [!INFO]
-> Comprehensive information can be found [here](/networkisolation/ni-active-directory).
-@todo
 
 ## DNS
 
@@ -12,26 +9,33 @@ To do so, enter the IP address DNS server and click on the apply button.
 ![dns_forwarder.png](dns_forwarder.png)
 
 ## Active Directory
-![integration_ad.png](integration_ad.png)
 
-## Azure Entra ID
+> [!INFO]
+> Comprehensive information can be found [here](/advanced/activedirectory/activedirectory.md).
+
+![integration_ad.png](integration_ad.png ':size=800')
+
+## Microsoft Entra ID
 
 Synchronize your user data seamlessly from Azure Entra ID to the Network Isolation platform. This ensures that user information remains consistent across both platforms, providing ease of user management.
 
-![integration_azure.png](azure-entry.png)
+> [!INFO]
+> Comprehensive information can be found [here](/advanced/entraid/entraid.md ':size=800').
+
+![micro_entra_id.png](micro_entra_id.png ':size=800')
 
 ### **Steps to Enable Synchronization**:
 
-1. **Network Isolation Group**: Designate a default group in Network Isolation where new users from Azure  Entra ID will be placed.
+1. **Network Isolation Group**: Designate a default group in Network Isolation where new users from Microsoft Entra ID will be placed.
 
-2. **Tenant ID**: A unique identifier that represents your Azure Entra ID organization.
+2. **Tenant ID**: A unique identifier that represents your Microsoft Entra ID organization.
 
-3. **Client ID**: Represents the application registration in Azure  Entra ID.
+3. **Client ID**: Represents the application registration in Microsoft Entra ID.
 
-4. **Client Secret**: A password created for the application registration in Azure Entra ID. This is used to authenticate the application during the synchronization process.
+4. **Client Secret**: A password created for the application registration in Microsoft Entra ID. This is used to authenticate the application during the synchronization process.
 
 > [!WARNING]
-> Ensure that you have appropriate permissions in Azure Entra ID to enable synchronization and always backup user data in Network Isolation before starting the process. 
+> Ensure that you have appropriate permissions in Microsoft Entra ID to enable synchronization and always backup user data in Network Isolation before starting the process. 
 
 ## API Keys
 

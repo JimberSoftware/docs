@@ -35,7 +35,9 @@ This guide provides instructions for installing Network Isolation on a domain co
 
 - #### Setting Static RPC Ports
 
-  - In order to assign a small range of static RPC ports, please edit the following values in the registry. > Microsoft documentation: [Configure RPC Dynamic Port Allocation with Firewalls](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-rpc-dynamic-port-allocation-with-firewalls#example)
+  - In order to assign a small range of static RPC ports, please edit the following values in the registry. 
+  >[!NOTE]
+  > Microsoft documentation: [Configure RPC Dynamic Port Allocation with Firewalls](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-rpc-dynamic-port-allocation-with-firewalls#example)
   
     
 ![Static RPC Ports](/ad-static-rpc-ports.png)
@@ -47,8 +49,9 @@ This guide provides instructions for installing Network Isolation on a domain co
   $DnsServerSettings.ListeningIpAddress = @("198.18.0.7")
   Set-DNSServerSetting $DnsServerSettings
   ```
-  >   This is not permanent; when the domain controller or server reboots, these settings will reset back to default.
-  >   
+  > [!NOTE]
+  > This is not permanent. When the domain controller or server reboots, these settings will reset back to default.
+     
 
 
 ### Installation
@@ -70,7 +73,7 @@ The installer can be found [here](https://signal.jimber.io/clients/windows-serve
 
   We need to add the token and the noDns flag.
 
-
+  > [!NOTE]
   >   Enabling the nodns flag ensures that the Network Isolation client does not alter the computer's DNS settings.
   
 
@@ -90,7 +93,11 @@ The installer can be found [here](https://signal.jimber.io/clients/windows-serve
   }
   ```
 
-  Once you've edited the settings.json file and saved it. Please go to the services on your domain controller and restart the "JimberNetworkIsolation" service.
+> [!WARNING]
+> **Attention**! Don't forget the comma at the end of lines and the quotation marks!
+Ensure to save the changes made to the file.
+
+  Please go to the services on your domain controller and restart the "JimberNetworkIsolation" service.
 
   
 ![Restarting the Service](/ad-restarting-the-service.png)
@@ -98,16 +105,18 @@ The installer can be found [here](https://signal.jimber.io/clients/windows-serve
 - #### Verify Correct DNS Settings and Connectivity
 
   Verify that your DNS settings are correct and you should now be connected to Network Isolation.
+  >[!WARNING]
+  >It's possible that your DNS settings were reset after you configured the settings.json file. If this occurs, you may need to manually re-enter the correct DNS information.
 
-  It's possible that your DNS settings were reset after you configured the settings.json file. If this occurs, you may need to manually re-enter the correct DNS information.
   Seeing a green connection icon next to your DC server name indicates that it is connected.
   
 ![ad-light-connected.png](/ad-light-connected.png)
-  Restart the domain controller now so that all services properly recognize the new network interface from Network Isolation.
+
+Restart the domain controller now so that all services properly recognize the new network interface from Network Isolation.
 
 - #### Configuring dns forwarding for signal server
 
-  - Go to your Signal server page and head to settings. On the top, you will find a setting to configure the DNS forwarder. Clients that have DNS override enabled will be filtered through our DNS service, but domain-specific queries will still be resolved by the server you specify in this field. You should add the Network Isolation IP of the Domain Controller.
+ Go to your Signal server page and head to settings. On the top, you will find a setting to configure the DNS forwarder. Clients that have DNS override enabled will be filtered through our DNS service, but domain-specific queries will still be resolved by the server you specify in this field. You should add the Network Isolation IP of the Domain Controller.
     
 ![Signal Server Forwarder](/ad-signal-server-forwarder.png)
 
@@ -115,16 +124,18 @@ The installer can be found [here](https://signal.jimber.io/clients/windows-serve
   - Open up the Server Manager and open the DNS Manager.
     
 ![DNS Manager](/ad-dns-manager.png)
-
-Open up the DNS server's properties.
+  
+  - Open up the DNS server's properties.
     
 ![DNS Properties](/ad-dns-properties.png)
 
-It is also possible to configure the forwarding DNS servers here; configure them how you see fit.
+It is also possible to configure the forwarding DNS servers here: .
     
 ![DNS Forwarders](/ad-dns-forwarders.png)
 
-Once configured, reboot to ensure all records are properly set by the DC.
+> [!NOTE]
+> You can configure them how you see fit.
+> Once configured, reboot to ensure all records are properly set by the DC.
 
 ### Port configuration on signal server
 

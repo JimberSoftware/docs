@@ -52,6 +52,8 @@ Here you can click on the 'Microsoft Graph' button.
 
 
 As said before you will need to add Group.Read.All and User.Read.All, both are **Application permissions**. 
+
+>[!WARNING]
 > Make sure to click on the right type of permissions!
 
 
@@ -84,7 +86,8 @@ To do this click on 'Grand admin consent for Standaardmap'  which is next to 'Ad
 ![grand_admin_consent.png](/grant_admin_consent.png ':size=900')
 
 
-> Note: If you cannot grand admin consent this is because your user does not have administrator rights. Please contact the admin of your Azure portal to grant admin consent.
+>[!NOTE] 
+> If you cannot grand admin consent this is because your user does not have administrator rights. Please contact the admin of your Azure portal to grant admin consent.
 
 
 Eventually your permission list should look like this:
@@ -106,8 +109,8 @@ In the next screen, click on 'New client secret'. Choose a description and an ex
 
 ![new_client_secret.png](/new_client_secret.png ':size=900')
 
-
-> When the token expires manual action is needed to ensure that Azure AD Sync keeps working.
+>[!WARNING]
+> When the token expires, manual action is needed to ensure that Azure AD Sync keeps working.
 
 
 
@@ -126,4 +129,4 @@ Following information is needed for setup in Jimber Network Isolation:
 ![needed_info.png](/needed_info.png ':size=900')
 
 
-To finish setup with Network Isolation go to the following [documentation page](./company/integrations/integrations/#)
+To finish setup with Network Isolation go to the following [documentation page](/company/integrations/integrations.md)
