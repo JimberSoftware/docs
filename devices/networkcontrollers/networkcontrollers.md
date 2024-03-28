@@ -61,8 +61,8 @@ prominently located at the upper right corner of the interface.
 
 ## Delete on-premise Network Controller
 
- Network Controllers can be removed by clicking on the red trash bin icon next to their name. 
-![recycle_bin.png](/recycle_bin.png)
+ Network Controllers can be removed by clicking on the red trash bin icon next to their name 
+![recycle_bin.png](/recycle_bin.png).
 
  
  

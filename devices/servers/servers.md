@@ -17,7 +17,8 @@ Following fields should be provided:
   - Hostname
   - Primary group
   
->   Hostname must be a lowercase string.
+> [!INFO] 
+> Hostname must be a lowercase string.
 
 
 ## Server installation
@@ -46,7 +47,9 @@ In this file, enter the token you were provided upon creating the server within 
  "token": "YOUR_TOKEN"
 }
 ```
-> **Attention**! Don't forget the comma at the end of lines and the quotation marks!
+
+> [!WARNING] 
+**Attention!** Don't forget the comma at the end of lines and the quotation marks!
 Ensure to save the changes made to the file.
 
 
@@ -68,7 +71,8 @@ Upon successful restart, the server should display a connected status (indicated
 `C:\Program Files\Jimber\jimbernetworkisolation.log`
 
 
-> **Attention**! When installing a server, Jimber Network Isolation might reset the DNS settings. Please add the "nodns" flag to disable this when using static IP/DNS configuration
+> [!WARNING]
+> **Attention!** When installing a server, Jimber Network Isolation might reset the DNS settings. Please add the "nodns" flag to disable this when using static IP/DNS configuration
 
 ```json
 {
@@ -80,6 +84,7 @@ Upon successful restart, the server should display a connected status (indicated
 ```
 #### Linux <i class="mdi mdi-ubuntu"></i>
 
+> [!INFO] 
 > Support is currently provided for the latest LTS versions of Ubuntu and Debian. For other OS distributions, please reach out to our support team.
 
 
@@ -110,6 +115,7 @@ The required token can be retrieved from the 'Servers' tab within the Signal ser
  "token": "YOUR_TOKEN"
 }
 ```
+> [!WARNING]
 > **Attention**! Don't forget the comma at the end of lines and the quotation marks!
 Ensure to save the changes made to the file.
 
@@ -125,9 +131,10 @@ Once successful, the server will display a connected status, indicated by a gree
 cat /var/log/jimber/jimbernetworkisolation.log
 ```
 
+>[!INFO]
 > You can see the installed version using `jimberfw -version`
 
-
+> [!WARNING]
 > **Attention**! When installing a server, Jimber Network Isolation might reset the DNS settings. Please add the "nodns" flag to disable this when using static IP/DNS configuration
 
 ```json
@@ -142,6 +149,7 @@ cat /var/log/jimber/jimbernetworkisolation.log
 
 #### Synology <i class="mdi mdi-nas"></i>
 
+>[!INFO]
 > Support is currently provided for Synology NAS running DMS 7.2+. If you're using an earlier version, please update or contact our support team for guidance.
 
 
@@ -164,8 +172,8 @@ If you don't find any, check the possible reasons below.
 - The synology hasn't started up yet and is not yet discoverable. Refresh the search a few times as it might take some time.
 - You are not on the same network as the synology or it is not connected to the internet.
 - It is turned off.
-- The synology has to be restarted because of some failure. Hold the power button untill the blue light blinks, then let go. 
-Wait untill it is turned off, then press the power button again. Wait untill you hear a beep before it can be found on find.synology.com (+- 1minute).
+- The synology has to be restarted because of some failure. Hold the power button until the blue light blinks, then let go. 
+Wait until it is turned off, then press the power button again. Wait until you hear a beep before it can be found on https://find.synology.com (+- 1 minute).
 
 ##### Installation
 Connect the synology and go through all the steps, most are straight forward.
@@ -229,6 +237,7 @@ The file will look like this, change 'YOUR_TOKEN' with the token you copied from
 
 ```
 
+> [!WARNING]
 > **Attention**! Don't forget the comma at the end of lines and the quotation marks!
 Ensure to save the changes made to the file.
 
@@ -320,9 +329,11 @@ By clicking on the server name in the overview, you can view the server details 
 
  
  Actually updating the server can be done by clicking on the icon.
->  In case of a successful update, the update icon disappears. 
+> [!INFO]
+> In case of a successful update, the update icon disappears. 
 
 
+>[!WARNING]
 > The update icon is not visible when the server is offline.
 
 

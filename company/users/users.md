@@ -2,6 +2,7 @@
 
 A user is a user on the platform. Users can have roles and be linked to properties of different products.
 
+
 > [!WARNING]
 > In order to create a new user, the company **must** have a domain.
 
