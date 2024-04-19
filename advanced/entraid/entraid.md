@@ -98,7 +98,7 @@ Eventually your permission list should look like this:
 
 
 ## Client credentials
-Go to 'Overview' in the right menu panel to get a list of the essential info.
+Go to 'Overview' in the left menu panel to get a list of the essential info.
 
 Here you need to add client credentials:
 

@@ -29,14 +29,14 @@ Following fields should be provided:
   
 
 ## Edit customer
-Customers can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/pencil_2.png)
+Customers can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/pencil_2.png).
 
 > [!WARNING]
 > Changing the integrator will remove all current integrator roles.
 
 ## Delete customer
 
-Customers can be deleted by clicking on the red trash bin icon next to their name ![recycle_bin.png](/recycle_bin.png)
+Customers can be deleted by clicking on the red trash bin icon next to their name ![recycle_bin.png](/recycle_bin.png).
 
 
 > [!WARNING]
