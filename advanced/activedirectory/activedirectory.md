@@ -38,7 +38,8 @@ This guide provides instructions for installing Network Isolation on a domain co
   - In order to assign a small range of static RPC ports, please edit the following values in the registry. 
   >[!NOTE]
   > Microsoft documentation: [Configure RPC Dynamic Port Allocation with Firewalls](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-rpc-dynamic-port-allocation-with-firewalls#example)
-  
+
+ You can download a .reg file to update the changes automatically [here](/Rpc.reg)
     
 ![Static RPC Ports](/ad-static-rpc-ports.png)
 
