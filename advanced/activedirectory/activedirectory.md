@@ -41,6 +41,8 @@ This guide provides instructions for installing Network Isolation on a domain co
 
  You can download a .reg file to update the changes automatically [here](https://docs.jimber.io/advanced/activedirectory/Rpc.reg)
     
+ Path of key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc
+  
 ![Static RPC Ports](/ad-static-rpc-ports.png)
 
 - #### Set DNS Manager Listening Interface (Secure Mode Only - Breaks Native Network Domain Communication Functionality!)
