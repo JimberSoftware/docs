@@ -39,7 +39,7 @@ This guide provides instructions for installing Network Isolation on a domain co
   >[!NOTE]
   > Microsoft documentation: [Configure RPC Dynamic Port Allocation with Firewalls](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-rpc-dynamic-port-allocation-with-firewalls#example)
 
- You can download a .reg file to update the changes automatically [here](/Rpc.reg)
+ You can download a .reg file to update the changes automatically [here](https://docs.jimber.io/advanced/activedirectory/Rpc.reg)
     
 ![Static RPC Ports](/ad-static-rpc-ports.png)
 
