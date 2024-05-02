@@ -11,14 +11,9 @@ prominently located at the upper right corner of the interface.
 
 ![add_server.png](create_server.png 'size:=500x')
 
-
-Following fields should be provided:
-	
-  - Hostname
-  - Primary group
-  
+ 
 > [!INFO] 
-> Hostname must be a lowercase string.
+> Hostname is mandatory must be a lowercase string.
 
 
 ## Server installation
