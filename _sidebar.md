@@ -22,4 +22,5 @@
   * [Custom Configuration](./advanced/customconfiguration)
   * [Active Directory](./advanced/activedirectory/activedirectory)
   * [Microsoft Entra ID](./advanced/entraid/entraid)
+  * [Network Drives](./advanced/mepnetworkdrives/mepnetworkdrives)
 * [Contact](./contact/index)
