@@ -1,8 +1,16 @@
-```ps
+# Map network drives on connect
+
+Mapping network drives using SMB (Windows file share) is a bit tricky using ZTNA networking. Important to know is that Windows will only add a network drive if the drive is reachable when mounting it. The easiest way to do this is to use the script functionality of Network Isolation.
+
+![scripts.jpg](/scripts.jpg)
+
+
+An example of a script to mount a network drive:
+
+
+```powershell
 $officePath = "\\office"
-$publicPath = "\\publiek"
-$programsPath = "\\programs"
-$ceviPath = "\\programs\\CEVIAPP"
+#add more paths here
 
 $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
 $folderPath = "$env:USERPROFILE\jimber_script_logs"
@@ -10,16 +18,14 @@ $folderPath = "$env:USERPROFILE\jimber_script_logs"
 Start-Transcript -Path (Join-Path -Path $folderPath -ChildPath "connected-script-transcript-$timestamp.txt")
 $outputFile = Join-Path -Path $folderPath -ChildPath "connected-script-logging-$timestamp.txt"
 
-$defaultSharePath = "\\beernemfp1.beernem.isolated"
+$defaultSharePath = "\\server.isolated" # Replace with the server hostname or IP address
 
 net use O: /del /yes
-net use Z: /del /yes
-net use P: /del /yes
-net use L: /del /yes
 
 
-$targetIP = "198.18.0.13" # Replace with the IP address you're expecting
-$hostname = "beernemfp1.beernem.isolated" # Replace with the hostname you want to resolve
+
+$targetIP = "198.18.0.50" # Replace with the IP address you're expecting
+$hostname = "server.isolated" # Replace with the hostname you want to resolve
 
 do {
     # Resolve the DNS name
@@ -52,19 +58,7 @@ $driveMappingJson = '[{
     "Path": "\\' + $defaultSharePath + '' + $officePath + '",
     "DriveLetter": "O",
     "Label": "Office"
-}, {
-    "Path": "\\' + $defaultSharePath + '' + $publicPath + '",
-    "DriveLetter": "Z",
-    "Label": "Publiek"
-}, {
-    "Path": "\\' + $defaultSharePath + '' + $programsPath + '",
-    "DriveLetter": "P",
-    "Label": "Programs"
-}, {
-    "Path": "\\' + $defaultSharePath + '' + $ceviPath + '",
-    "DriveLetter": "L",
-    "Label": "Programs CEVI"
-}]'
+}]' #you can extend with more shares here
 
 $driveMappingConfig = $driveMappingJson | ConvertFrom-Json
 
@@ -89,3 +83,5 @@ foreach ($drive in $driveMappingConfig) {
 net use | Out-File -FilePath $outputFile -Append
 Stop-Transcript
 ```
+
+or download the script [here](https://docs.jimber.io/advanced/mapnetworkdrives/mapnetworkdrives.ps1)
