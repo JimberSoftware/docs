@@ -18,7 +18,7 @@ A LAN port is typically used to connect local devices within a network. Typical 
 - Network printer
 - ...
 
-Once a device is connected, you can see the assigned IP address of the device in the overview of the NIACs. In this overview, you can also remove a device and activate or deactivate secure mode.
+Once a device is connected, you can see the assigned IP address of the device in the overview of the NIACs. In this overview, you can also remove a device and activate or deactivate secure mode. The IP address is assigned via DHCP. 
 
 
 ![niac_overview.png](/niac_overview.png ':size=920x')
@@ -35,6 +35,7 @@ Once a device is connected, you can see the assigned IP address of the device in
 
 
 ## Create a NIAC
+> [!WARNING]
 > Creating a NIAC can only be done by super admins of Jimber.
 
 
@@ -49,7 +50,7 @@ prominently located at the upper right corner of the interface.
 ![create_niac.png](/create_niac.png ':size=600x')
 
 
-You can choose a hostname. The initial selected primary group is 'Servers' and 'Secure mode' is selected. Both can be changed. 
+You can choose a hostname and it must be a lowercase string. 
 
 > [!WARNING]
 > A device that is connected to a NIAC will not be able to reach the internet unless "Allow WAN" is enabled for the NIAC.

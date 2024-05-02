@@ -14,7 +14,8 @@
   * [Servers](./devices/servers/servers)
   * [NIACs](./devices/niacs/niacs)
   * [Network Controllers](./devices/networkcontrollers/networkcontrollers)
-  * [Network Controllers Setup](./devices/networkcontrollerssetup/SettingUpServer.md)
+  * [Network Controllers Installation](./devices/networkcontrollerssetup/SettingUpServer.md)
+  * [Native Devices](./devices/nativedevices/nativedevices.md)
 * Rules
   * [Rules](./rules/rules)
 * Advanced
@@ -22,4 +23,5 @@
   * [Custom Configuration](./advanced/customconfiguration)
   * [Active Directory](./advanced/activedirectory/activedirectory)
   * [Microsoft Entra ID](./advanced/entraid/entraid)
+  * [Hypervisor Installation](./advanced/hypervisorinstallation/hypervisorinstallation.md)
 * [Contact](./contact/index)

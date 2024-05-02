@@ -60,7 +60,7 @@ prominently located at the upper right corner of the interface.
   
  Users can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/pencil_2.png).
  
-  ![deleting_user.png](/edit_user.png ':size=500x350')
+  ![edit_user.png](/edit_user.png ':size=500x350')
   
   The username cannot be changed, of course, but all other options are the same as when creating a user.
   
