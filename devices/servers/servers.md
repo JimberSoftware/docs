@@ -13,7 +13,7 @@ prominently located at the upper right corner of the interface.
 
  
 > [!INFO] 
-> Hostname is mandatory must be a lowercase string.
+> Hostname is mandatory and must be a lowercase string.
 
 
 ## Server installation

@@ -18,6 +18,7 @@
   * [Native Devices](./devices/nativedevices/nativedevices.md)
 * Rules
   * [Rules](./rules/rules)
+  * [Services](./rules/services)
 * Advanced
   * [Best Practices](./advanced/bestpractices/bestpractices)
   * [Custom Configuration](./advanced/customconfiguration)

@@ -52,7 +52,7 @@ Creating a new group requires the following information:
 
 
 ## Group details
-Access the details of a specific group by selecting the corresponding entry within the table (avoid clicking on the buttons at the end). This will reveal the network rules associated with the chosen group, along with the devices that fall under this group's purview.
+Access the details of a specific group by selecting the corresponding strip within the table (avoid clicking on the buttons at the end). This will reveal the network rules associated with the chosen group, along with the devices that fall under this group's purview.
 
 
 ![group-details.png](/group-entry.png ':size=900')

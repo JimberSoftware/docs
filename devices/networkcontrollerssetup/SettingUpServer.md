@@ -1,5 +1,9 @@
 # Installation of the Network Controller Server
 
+> [!Note]
+> If you intend to install this server virtually, please consider the necessary BIOS settings listed at the bottom of this page.
+
+
 **Start of the installation**
 
 Download the latest version for the 'Network Controller Server' from https://signal.jimber.io/downloads (no need to login).
@@ -70,4 +74,18 @@ Then Exit to leave the console and restart service.
 Shortly after, there should be a green dot visible next to the created network controller.
 ![success.png](success.png ':size=800')
 
+### Hypervisor installation
 
+Hypervisor installation is widely used. It's a very convenient way of working. The major advantage is that the network controller server can be installed on existing hardware. Therefore, there's no need for a physical device. However, there are some settings you need to consider.
+ 
+#### VMware ESXi
+
+When installing the network controller on-prem on ESXi, you need to make sure to select BIOS as the firmware type:
+
+
+![esxi_specs.png](esxi_specs.png ':size=700')
+
+
+#### Hyper-V
+
+When installing the network controller on-prem on Hyper-V, you need to choose legacy boot mode instead of EFI mode.This can be done in the settings of the virtual machine.

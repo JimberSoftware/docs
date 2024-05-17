@@ -12,8 +12,8 @@ When enabled, it forces clients to navigate the internet via the cloud or on-pre
 
 This feature can be turned on to chain the networkcontroller to existing firewall / proxy infrastructure or to be sure that all SaaS applications are accessed from the same IP. SaaS applications can be configured to only allow SaaS from one IP, this way you can make these applications only accessible for users connected to Network Isolation.
 
-> [!INFO] 
-> A device that is connected to a NIAC will not be able to reach the internet unless "Allow WAN" is enabled for the NIAC
+> [!WARNING]
+> A device that is connected to a NIAC will not be able to reach the internet unless the NIAC is member of a group of which the Wan Gateway is enabled.
    
 2. **DNS Override**
 

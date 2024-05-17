@@ -53,8 +53,15 @@ prominently located at the upper right corner of the interface.
 You can choose a hostname and it must be a lowercase string. 
 
 > [!WARNING]
-> A device that is connected to a NIAC will not be able to reach the internet unless "Allow WAN" is enabled for the NIAC.
+> A device that is connected to a NIAC will not be able to reach the internet unless the NIAC is member of a group of which the Wan Gateway is enabled. For instance: if a NIAC is member of the group WanGateway and in Group Configuration is Wan Gateway enabled for that group, the connected device will be able to reach the internet.
 
+![group_config.png](/group_config.png ':size=900x')
+
+In the overview, you can find more details about the NIAC by clicking on the NIAC strip.
+
+![niac_details.png](/niac_details.png ':size=600x')
+
+By clicking on the red trash bin icon you can release one of the devices connected to the NIAC. 
 
 ## Edit a NIAC
 NIACs can be edited by clicking on the yellow pencil icon next to their name 
