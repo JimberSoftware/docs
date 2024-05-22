@@ -41,7 +41,7 @@ TAG=v1.11.0-docker01 #Version of Jimber NI (no need to change)
 You can start the network controller with this command (as root)
 
 ```
-./start-with-bridge.sh
+./start_with_bridge.sh
 ```
 
 After initialization, the network controller should appear online in the Jimber Network Isolation platform. You can make sure that it restarts on reboot by adding it to the crontab:
