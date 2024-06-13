@@ -40,7 +40,7 @@ Customers can be deleted by clicking on the red trash bin icon next to their nam
 
 
 > [!WARNING]
-> Ensure there are no ongoing processes, tasks, or linked records associated with a customer before attempting to delete. Always verify and clear any dependencies in other sections of the platform before removal.
+> All resources of the customer will be deleted when deleting a customer. This process is irreversible.
 
 You will receive a warning before the customer is permanently deleted:
 
