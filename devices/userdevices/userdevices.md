@@ -101,7 +101,7 @@ If you're yet to have a login, please reach out to your network administrator to
 #### Linux <i class="mdi mdi-ubuntu"></i>
 
 > [!WARNING]
-> Support is currently provided for the latest LTS versions of Ubuntu and Debian. For other OS distributions, please reach out to our support team.
+> Support is currently provided for the latest LTS versions of Ubuntu. For other OS distributions, please reach out to our support team.
 
 Download the latest 'Linux Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Linux : [latest Linux version](https://signal.jimber.io/clients/linux-desktop-latest.deb)
 

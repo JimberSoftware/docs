@@ -19,7 +19,7 @@
   * [Services](./rules/services)
 * Advanced
   * [Best Practices](./advanced/bestpractices/bestpractices)
-  * [Custom Configuration](./advanced/customconfiguration)
+  * [Custom Configuration](./advanced/cusFtomconfiguration)
   * [Active Directory](./advanced/activedirectory/activedirectory)
   * [Microsoft Entra ID](./advanced/entraid/entraid)
   * [Hypervisor Installation](./advanced/hypervisorinstallation/hypervisorinstallation.md)

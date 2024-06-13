@@ -18,11 +18,13 @@ prominently located at the upper right corner of the interface.
 
 ## Server installation
 
-
 ### Platforms 
 
-#### Windows <i class="mdi mdi-microsoft-windows"></i>
+<!-- tabs:start -->
 
+
+
+#### **Windows**
 Download the latest version for the 'Windows Server' from https://signal.jimber.io/downloads (no need to login).
 
 
@@ -77,10 +79,10 @@ Upon successful restart, the server should display a connected status (indicated
   "nodns" : "true"
 }
 ```
-#### Linux <i class="mdi mdi-ubuntu"></i>
+#### **Linux**
 
 > [!INFO] 
-> Support is currently provided for the latest LTS versions of Ubuntu and Debian. For other OS distributions, please reach out to our support team.
+> Support is currently provided for the latest LTS versions of Ubuntu. For other OS distributions, please reach out to our support team.
 
 
 Download the latest version for the 'Linux Server' from https://signal.jimber.io/downloads (no need to login).
@@ -142,13 +144,14 @@ cat /var/log/jimber/jimbernetworkisolation.log
 ```
 
 
-#### Synology <i class="mdi mdi-nas"></i>
+
+#### **Synology**
 
 >[!INFO]
 > Support is currently provided for Synology NAS running DMS 7.2+. If you're using an earlier version, please update or contact our support team for guidance.
 
 
-##### **1. NAS Reset (Optional):**
+##### 1. NAS Reset (Optional):
 > [!INFO]
 > **Note:** Only perform if you wish to reset to factory settings.
 
@@ -158,7 +161,7 @@ cat /var/log/jimber/jimbernetworkisolation.log
   4. Await a final beep signaling the reset completion.
 
 
-##### **2. Setup**
+##### 2. Setup
 
 ##### Find synology online
 Make sure you are connected to the same network as the synology. Then go to http://find.synology.com/ and search for a nearby synology device.
@@ -246,6 +249,10 @@ reboot
 Check the server in the signal interface, it should go online if everthing went well. This can take some time since the synology is still starting up. But it should not take longer than 3 minutes
 
 
+
+
+
+
 ##### Update version
 **Auto update**
 
@@ -288,6 +295,8 @@ If you need to go to the interface of the synology first find the IP of it by go
 
 Then type in that ip in your browser and login with the credentials from the [create login](#create-login)
 
+
+<!-- tabs:end -->
 
 ## Server online/offline
 
