@@ -48,8 +48,7 @@ prominently located at the upper right corner of the interface.
   - Groups are optional. 
 
 > [!INFO]
->  Groups must be created to generate a user who can activate Network Isolation.
-> The email must come from the company's list. 
+>  Before adding a user, a domain name must be added first. The users email address must use the added domain name.
 
   
 - **Enable Secure mode**:
