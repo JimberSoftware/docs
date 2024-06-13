@@ -1,157 +1,10 @@
-# Servers
-
-## Create a server
-
-To create a server in the Security platform, click on the `Create new` button
-
-![create_new.png](/create_new.png)
-
-prominently located at the upper right corner of the interface.
-
-
-![add_server.png](create_server.png 'size:=500x')
-
- 
-> [!INFO] 
-> Hostname is mandatory and must be a lowercase string.
-
-
-## Server installation
-
-### Platforms 
-
-<!-- tabs:start -->
-
-
-
-#### **Windows**
-Download the latest version for the 'Windows Server' from https://signal.jimber.io/downloads (no need to login).
-
-
-Once downloaded, decompress the file and initiate the .msi installation file by double-clicking it.
-
-A dialog box will emerge—confirm the process by selecting 'Yes.'
-
-Subsequently, open the file **`settings.json`** located at C:\Program Files\Jimber\ as an **Administrator**. 
-In this file, enter the token you were provided upon creating the server within the Network Isolation interface. 
- 
-  
-
-```json
-{
- "publicKey": "l7D1+dm...",
- "privateKey": "ENjN41TJE7WEU76T...",
- "token": "YOUR_TOKEN"
-}
-```
-
-> [!WARNING] 
-**Attention!** Don't forget the comma at the end of lines and the quotation marks!
-Ensure to save the changes made to the file.
-
-
-
-
-The required token can be retrieved from the 'Servers' tab within the Signal server interface. Simply select and edit an existing server to find it.
-
-
-![edit_server.png](/edit_server.png 'size:=500x')
-
-
-Access the 'services' panel by entering 'services.msc' into the start menu's search bar. Within this panel, find the 'Jimber Network Isolation' service and initiate a restart.
-
-
-![services_jimber.png](/services_jimber.png 'size:=800x')
-
-
-Upon successful restart, the server should display a connected status (indicated by a green dot) in the Network Isolation interface. For any necessary troubleshooting, consult the log file at this location: 
-`C:\Program Files\Jimber\jimbernetworkisolation.log`
-
-
-[!WARNING]
-> **Attention!** When installing a server, Jimber Network Isolation might reset the DNS settings. Please add the "nodns" flag to disable this when using static IP/DNS configuration
-
-```json
-{
- "publicKey": "l7D1+dm...",
- "privateKey": "ENjN41TJE7WEU76T...",
- "token": "YOUR_TOKEN",
-  "nodns" : "true"
-}
-```
-#### **Linux**
-
-> [!INFO] 
-> Support is currently provided for the latest LTS versions of Ubuntu. For other OS distributions, please reach out to our support team.
-
-
-Download the latest version for the 'Linux Server' from https://signal.jimber.io/downloads (no need to login).
-
-```bash
-sudo apt update
-sudo apt install wireguard
-wget https://signal.jimber.io/clients/linux-server-latest.deb
-sudo dpkg -i linux-server-latest.deb
-```
-
-Upon completion of the installation, a new `settings.json` file will be automatically created in the `/etc/jimber/`directory.
-Open this file using the text editor of your choice. Within this file, you'll notice an empty token along with newly created public and private keys.
-
-In this file, enter the token you were provided upon creating the server within the Network Isolation interface.
-
-The required token can be retrieved from the 'Servers' tab within the Signal server interface. Simply select and edit an existing server to find it.
-
-
-![edit_server.png](/edit_server.png 'size:=500x')
-
-
-```json
-{
- "publicKey": "l7D1+dm...",
- "privateKey": "ENjN41TJE7WEU76T...",
- "token": "YOUR_TOKEN"
-}
-```
-> [!WARNING]
-> **Attention**! Don't forget the comma at the end of lines and the quotation marks!
-Ensure to save the changes made to the file.
-
-
-Restart the service by executing the following command:
-```bash
-sudo systemctl restart jimbernetworkisolation.service
-```
-
-Once successful, the server will display a connected status, indicated by a green dot, within the Network Isolation interface. If needed, refer to the following log files for debugging purposes:
-
-```bash
-cat /var/log/jimber/jimbernetworkisolation.log
-```
-
->[!INFO]
-> You can see the installed version using `jimberfw -version`
-
-<!-- > [!WARNING]
-> **Attention**! When installing a server, Jimber Network Isolation might reset the DNS settings. Please add the "nodns" flag to disable this when using static IP/DNS configuration
-
-```json
-{
- "publicKey": "l7D1+dm...",
- "privateKey": "ENjN41TJE7WEU76T...",
- "token": "YOUR_TOKEN",
-  "nodns" : "true"
-}
-``` -->
-
-
-
-#### **Synology**
+#### Synology <i class="mdi mdi-nas"></i>
 
 >[!INFO]
 > Support is currently provided for Synology NAS running DMS 7.2+. If you're using an earlier version, please update or contact our support team for guidance.
 
 
-##### 1. NAS Reset (Optional):
+##### **1. NAS Reset (Optional):**
 > [!INFO]
 > **Note:** Only perform if you wish to reset to factory settings.
 
@@ -161,7 +14,7 @@ cat /var/log/jimber/jimbernetworkisolation.log
   4. Await a final beep signaling the reset completion.
 
 
-##### 2. Setup
+##### **2. Setup**
 
 ##### Find synology online
 Make sure you are connected to the same network as the synology. Then go to http://find.synology.com/ and search for a nearby synology device.
@@ -250,9 +103,6 @@ Check the server in the signal interface, it should go online if everthing went 
 
 
 
-
-
-
 ##### Update version
 **Auto update**
 
@@ -295,8 +145,6 @@ If you need to go to the interface of the synology first find the IP of it by go
 
 Then type in that ip in your browser and login with the credentials from the [create login](#create-login)
 
-
-<!-- tabs:end -->
 
 ## Server online/offline
 
