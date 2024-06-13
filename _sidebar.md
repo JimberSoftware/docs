@@ -28,4 +28,5 @@
   * [Microsoft Entra ID](./advanced/entraid/entraid)
   * [Hypervisor Installation](./advanced/hypervisorinstallation/hypervisorinstallation.md)
   * [Docker Network Controller](./advanced/dockernetworkcontroller/dockernetworkcontroller)
+  * [Best Practices](./advanced/proxmox/proxmox)
 * [Contact](./contact/index)
