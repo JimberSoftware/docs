@@ -1,6 +1,4 @@
 <!-- docs/_sidebar.md -->
-
-
 * # [JIMBER NETWORK ISOLATION](./)
   * [Getting Started](./gettingstarted/index)
 * Company
@@ -25,4 +23,5 @@
   * [Active Directory](./advanced/activedirectory/activedirectory)
   * [Microsoft Entra ID](./advanced/entraid/entraid)
   * [Hypervisor Installation](./advanced/hypervisorinstallation/hypervisorinstallation.md)
+  * [Docker Network Controller](./advanced/dockernetworkcontroller/dockernetworkcontroller)
 * [Contact](./contact/index)

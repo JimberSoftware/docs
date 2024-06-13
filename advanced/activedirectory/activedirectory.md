@@ -38,8 +38,11 @@ This guide provides instructions for installing Network Isolation on a domain co
   - In order to assign a small range of static RPC ports, please edit the following values in the registry. 
   >[!NOTE]
   > Microsoft documentation: [Configure RPC Dynamic Port Allocation with Firewalls](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-rpc-dynamic-port-allocation-with-firewalls#example)
-  
+
+ You can download a .reg file to update the changes automatically [here](https://docs.jimber.io/advanced/activedirectory/Rpc.reg)
     
+ Path of key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc
+  
 ![Static RPC Ports](/ad-static-rpc-ports.png)
 
 - #### Set DNS Manager Listening Interface (Secure Mode Only - Breaks Native Network Domain Communication Functionality!)
