@@ -1,5 +1,5 @@
 <!-- docs/_sidebar.md -->
-* # [JIMBER NETWORK ISOLATION](./)
+* [JIMBER NETWORK ISOLATION](./)
   * [Getting Started](./gettingstarted/index)
 * Company
   * [Customers](./company/customers/customers)
@@ -23,7 +23,7 @@
   * [Port Forwarding](./rules/portforwarding/portforwarding)
 * Advanced
   * [Best Practices](./advanced/bestpractices/bestpractices)
-  * [Custom Configuration](./advanced/cusFtomconfiguration)
+  * [Custom Configuration](./advanced/customconfiguration/customconfiguration)
   * [Active Directory](./advanced/activedirectory/activedirectory)
   * [Microsoft Entra ID](./advanced/entraid/entraid)
   * [Hypervisor Installation](./advanced/hypervisorinstallation/hypervisorinstallation.md)
