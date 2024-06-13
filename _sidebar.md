@@ -16,8 +16,11 @@
   * [Network Controllers Installation](./devices/networkcontrollerssetup/SettingUpServer.md)
   * [Native Devices](./devices/nativedevices/nativedevices.md)
 * Rules
-  * [Rules](./rules/rules)
-  * [Services](./rules/services)
+  * [Group Configuration](./rules/groupconfiguration/groupconfiguration)
+  * [Group Traffic](./rules/grouptraffic/grouptraffic)
+  * [Web Filtering](./rules/webfiltering/webfiltering)
+  * [Services](./rules/services/services)
+  * [Port Forwarding](./rules/portforwarding/portforwarding)
 * Advanced
   * [Best Practices](./advanced/bestpractices/bestpractices)
   * [Custom Configuration](./advanced/cusFtomconfiguration)
