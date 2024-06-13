@@ -25,7 +25,7 @@ Following fields should be provided:
   - Primary contact email
 
 > [!WARNING]
-> In naming, spaces are not allowed.
+>  In the customer name, spaces and special characters/symbols are not allowed. You can add the full name in "Display name"
   
 
 ## Edit customer
