@@ -9,9 +9,21 @@
 Download the latest version for the 'Network Controller' from https://signal.jimber.io/downloads (no need to login).
 
 Use the downloaded file to install the Network Controller. 
-In the next window, click on Enter.
+
+![nc_install_start.png](/nc_install_start.png ':size=500')
+
+Click on Enter.
+
+![installation_server_nc_3.png](/installation_server_nc_3.png ':size=500')
+
+In the window "Guided storage configuration", you can hit 'Done'. You get an overview of the storage configuration. Here and in the next window, you can also choose for 'Done'. 
+
+![installation_server_nc_4.png](/installation_server_nc_4.png ':size=500')
+
 
 ![networkconnections.png](/networkconnections.png ':size=500')
+
+
 
 <!-- Then you will see a window with the message “Confirm destructive action”. This is a warning that all data on the used disks will be lost. Only in case of starting this process by mistake, you can choose here for “Continue”. -->
 
@@ -39,39 +51,48 @@ You need this data to proceed:
 - username: jimber
 - password: jimber
 
-Now, you get the message “Welcome to Jimber NC”.
+![installation_server_nc_5.png](/installation_server_nc_5.png ':size=500')
+
+
+<!-- Now, you get the message “Welcome to Jimber NC”.
 
 ![welcome_to_jimber_nc.png](/welcome_to_jimber_nc.png ':size=500')
-
 Choose the second option: “Configure Network Controller” and enter the name of your company. 
 
-Attention, this data is case-sensitive. 
+Attention, this data is case-sensitive.  -->
 
-Then, you have to fill in your Network Controller **token** you had to copy in a previous stage and hit Enter.
-In the next window you can also hit Enter. 
+After a few minutes you have to enter and re-enter the password for the Jimber-user. This is a password of your choice.
 
-![select_wan.png](/select_wan.png ':size=500')
+![nc_password.png](/nc_password.png ':size=400')
 
+![nc_success.png](/nc_success.png ':size=400')
 
-Check your WAN IP address. It should be correct!
+Eventually, you will get the screen below.
 
-![check_wan.png](/check_wan.png ':size=500')
+![nc_start.png](/nc_start.png ':size=500')
 
-**Completing the installation**
+Click on the Network Isolation icon in the bottom left corner and choose Network Controller Configuration.
 
-The service needs to be restarted now:
-
-![restart_service.png](restart_service.png ':size=500')
-
-![endpoint_address.png](endpoint_address.png ':size=500')
+![nc_configuration_2.png](/nc_configuration_2.png ':size=500')
 
 
-Endpoint Address: choose shell, and in the started console, you enter: ip a
+Then, you have to fill in your Network Controller **token** you had to copy in a previous stage, choose your WAN-interface and hit Submit.
 
-Then Exit to leave the console and restart service. 
+The following message will appear:
 
->[!NOTE]
->Now you can complete the creation of the Network Controller. 
+![nc_settings_updated.png](/nc_settings_updated.png ':size=400')
+
+Click on ![2_computers.png](/2_computers.png ':size=50') in the bottom right corner and choose Connection Information.
+
+
+![nc_info.png](/nc_info.png ':size=500')
+
+The displayed IP address must be entered as the endpoint address for the on-premise Network Controller. 
+ 
+![nc_endpoint.png](/nc_endpoint.png ':size=500')
+
+Restart the server to complete the installation.
+
 
 Shortly after, there should be a green dot visible next to the created network controller.
 ![success.png](success.png ':size=800')
@@ -93,7 +114,7 @@ When installing the network controller on-prem on ESXi, you need to make sure to
 
 When installing the network controller on-prem on Hyper-V, you need to choose legacy boot mode instead of EFI mode.This can be done in the settings of the virtual machine.
 
-##### Installing Hyper-V on a server (standard installation)
+<!-- ##### Installing Hyper-V on a server (standard installation)
 
 In the Server Manager, choose Add Roles and Features on the tab Manage. 
 
@@ -113,5 +134,5 @@ Open the Hyper-V manager:
 
 ![hyperv_manager.png](hyperv_manager.png ':size=500')
 
-Select the server and in the column Actions choose `New Virtual Machine`. 
+Select the server and in the column Actions choose `New Virtual Machine`. --> 
 

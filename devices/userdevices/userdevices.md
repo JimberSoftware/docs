@@ -20,8 +20,11 @@ Open the page signal.jimber.io and download the client that matches your operati
 
 ### Platforms 
 
-#### Windows <i class="mdi mdi-microsoft-windows"></i>
+<!-- tabs:start -->
 
+<!-- #### Windows <i class="mdi mdi-microsoft-windows"></i> -->
+
+#### **Windows**
 As mentioned, download the latest 'Windows Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Windows : [latest windows version](/https://signal.jimber.io/clients/windows-desktop-latest.msi)"
 
 > [!INFO]
@@ -62,8 +65,8 @@ Click on the Jimber icon and select 'Sign in'. This will launch a browser page f
 
 If you don't have a login yet, please reach out to your network administrator to set up an account for you.
 
-#### Mac <i class="mdi mdi-apple"></i>
-
+<!-- #### Mac <i class="mdi mdi-apple"></i> -->
+#### **Mac**
 As mentioned, download the latest 'Mac Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Mac : [latest mac version](https://signal.jimber.io/clients/mac-x64-latest.dmg)"
 
 > [!INFO]
@@ -98,7 +101,8 @@ Click on the Jimber icon and select 'Sign in'. This will launch a browser page f
 If you're yet to have a login, please reach out to your network administrator to set up an account for you.
 
 
-#### Linux <i class="mdi mdi-ubuntu"></i>
+<!-- #### Linux <i class="mdi mdi-ubuntu"></i> -->
+#### **Linux**
 
 > [!WARNING]
 > Support is currently provided for the latest LTS versions of Ubuntu. For other OS distributions, please reach out to our support team.
@@ -144,6 +148,8 @@ Click on the Jimber icon and select 'Sign in'. This will launch a browser page f
 ![linux-tray-logged-in.png](/linux_signed_in.png ':size=200x')
 
 If you're yet to have a login, please reach out to your network administrator to set up an account for you.
+
+<!-- tabs:end -->
 
 ## User devices online/offline
 

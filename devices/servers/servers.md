@@ -68,7 +68,7 @@ Upon successful restart, the server should display a connected status (indicated
 `C:\Program Files\Jimber\jimbernetworkisolation.log`
 
 
-[!WARNING]
+>[!WARNING]
 > **Attention!** When installing a server, Jimber Network Isolation might reset the DNS settings. Please add the "nodns" flag to disable this when using static IP/DNS configuration
 
 ```json

@@ -16,7 +16,7 @@ In the overview of the groups, you can see the different entries of a group:
 
 
 
-### Primary vs Additional groups
+<!-- ### Primary vs Additional groups
 
 Each user or device on your network can be assigned to one primary group, as well as numerous additional groups.
 
@@ -24,10 +24,10 @@ The primary group not only establishes the subnet for the user or device, but al
 
 For instance, consider a scenario where a user or device is assigned to one primary group and four additional groups. The user or device would obtain its subnet based on the IP range designated by the primary group. Then, the network rules from both the primary and all additional groups are aggregated and enforced on the user or device.
 
-This flexible structure allows for a fine-tuned, layered approach to network management. Users or devices can benefit from a blend of network rules across multiple groups while adhering to clear subnet boundaries defined by their primary group.
+This flexible structure allows for a fine-tuned, layered approach to network management. Users or devices can benefit from a blend of network rules across multiple groups while adhering to clear subnet boundaries defined by their primary group. -->
 
 
-![edit-server.png](/edit-server.png ':size=600')
+<!-- ![edit-server.png](/edit-server.png ':size=600') -->
 
 
 ## Create a group
