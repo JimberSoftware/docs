@@ -68,17 +68,6 @@ Upon successful restart, the server should display a connected status (indicated
 `C:\Program Files\Jimber\jimbernetworkisolation.log`
 
 
-[!WARNING]
-> **Attention!** When installing a server, Jimber Network Isolation might reset the DNS settings. Please add the "nodns" flag to disable this when using static IP/DNS configuration
-
-```json
-{
- "publicKey": "l7D1+dm...",
- "privateKey": "ENjN41TJE7WEU76T...",
- "token": "YOUR_TOKEN",
-  "nodns" : "true"
-}
-```
 #### **Linux**
 
 > [!INFO] 
@@ -130,18 +119,6 @@ cat /var/log/jimber/jimbernetworkisolation.log
 
 >[!INFO]
 > You can see the installed version using `jimberfw -version`
-
-<!-- > [!WARNING]
-> **Attention**! When installing a server, Jimber Network Isolation might reset the DNS settings. Please add the "nodns" flag to disable this when using static IP/DNS configuration
-
-```json
-{
- "publicKey": "l7D1+dm...",
- "privateKey": "ENjN41TJE7WEU76T...",
- "token": "YOUR_TOKEN",
-  "nodns" : "true"
-}
-``` -->
 
 
 
