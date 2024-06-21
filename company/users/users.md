@@ -61,7 +61,7 @@ prominently located at the upper right corner of the interface.
 
       - Go to the integrator of the customer where you want to add the security consultant to. In the example, that is 'User2'. 
 
-      - ![user_in_integrator.png](/user_in_integrator.png ':size=800')
+       ![user_in_integrator.png](/user_in_integrator.png ':size=800')
 
       - Create a new user as Security Consult by hitting the slider.
 
