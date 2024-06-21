@@ -1,5 +1,5 @@
 <!-- docs/_sidebar.md -->
-* # [JIMBER NETWORK ISOLATION](./)
+* [JIMBER NETWORK ISOLATION](./)
   * [Getting Started](./gettingstarted/index)
 * Company
   * [Customers](./company/customers/customers)
@@ -16,13 +16,17 @@
   * [Network Controllers Installation](./devices/networkcontrollerssetup/SettingUpServer.md)
   * [Native Devices](./devices/nativedevices/nativedevices.md)
 * Rules
-  * [Rules](./rules/rules)
-  * [Services](./rules/services)
+  * [Group Configuration](./rules/groupconfiguration/groupconfiguration)
+  * [Group Traffic](./rules/grouptraffic/grouptraffic)
+  * [Web Filtering](./rules/webfiltering/webfiltering)
+  * [Services](./rules/services/services)
+  * [Port Forwarding](./rules/portforwarding/portforwarding)
 * Advanced
   * [Best Practices](./advanced/bestpractices/bestpractices)
-  * [Custom Configuration](./advanced/cusFtomconfiguration)
+  * [Custom Configuration](./advanced/customconfiguration/customconfiguration)
   * [Active Directory](./advanced/activedirectory/activedirectory)
   * [Microsoft Entra ID](./advanced/entraid/entraid)
   * [Hypervisor Installation](./advanced/hypervisorinstallation/hypervisorinstallation.md)
+  * [Proxmox Cluster](./advanced/proxmox/proxmox)
   * [Docker Network Controller](./advanced/dockernetworkcontroller/dockernetworkcontroller)
 * [Contact](./contact/index)

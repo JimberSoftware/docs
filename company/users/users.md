@@ -22,6 +22,8 @@ prominently located at the upper right corner of the interface.
 
 ![newuser_2.png](newuser_2.png)
 
+ Groups are optional. 
+
 ### User Roles and their permissions
 
 - **Admin**:
@@ -32,31 +34,46 @@ prominently located at the upper right corner of the interface.
     ![create_admin.png](/create_admin.png ':size=500x350')
 
 
-
-- **Security Consultant**:
-   - This option is only available for **integrators**.
-   - Enables a user to manage configurations of customers.
-   - To gain access, the security consultant must be created as an admin.
-
-    ![access_control.png](/security_consultant.png ':size=500x350')
-  
+ 
 - **Enable Network Isolation**:
   - Activating this option will enable `Network Isolation` for the particular user, adding an extra layer of security.
   - To activate Network Isolation, hit the slider.
   
     ![access_control.png](/access_control.png ':size=500x350')
-  - Groups are optional. 
+  
 
 > [!INFO]
->  Groups must be created to generate a user who can activate Network Isolation.
-> The email must come from the company's list. 
+>  Before adding a user, a domain name must be added first. The users email address must use the added domain name.
 
   
 - **Enable Secure mode**:
   - If Secure mode is turned ON for a device all incoming traffic will be blocked unless it comes from Network Isolation.
   - To turn on Secure mode, hit the slider.
 
- ## Editing a User
+- **Security Consultant**:
+   - This option is only available for **integrators**.
+   - Enables a user to manage configurations of customers.
+   <!-- - To gain access, the security consultant must be created as an admin. -->
+
+    ![security_consultant_2.png](/security_consultant_2.png ':size=800')
+
+   - **How to add security consultant:**
+
+      - Go to the integrator of the customer where you want to add the security consultant to. In the example, that is 'User2'. 
+
+      - ![user_in_integrator.png](/user_in_integrator.png ':size=800')
+
+      - Create a new user as Security Consult by hitting the slider.
+
+        ![create_sec_cons.png](/create_sec_cons.png ':size=800')
+
+      -After creating that user (e.g.: ' user_sec_cons@testdomein2.be') select the correct customer and then the option "Users". Create a new user, using the user just created in previous step (' user_sec_cons@testdomein2.be').
+
+      ![add_sec_cons.png](/add_sec_cons.png ':size=800')
+      
+     
+
+## Editing a User
   
  Users can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/pencil_2.png).
  
@@ -71,4 +88,6 @@ prominently located at the upper right corner of the interface.
  You will receive a warning before the user is permanently deleted:
  
  ![deleting_user.png](/deleting_user.png ':size=500')
-  
+
+
+ 

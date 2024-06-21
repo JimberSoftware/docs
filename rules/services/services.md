@@ -1,6 +1,9 @@
 
 ## Create a Service
 
+Within our platform, a "Service" refers to a digital service that is accessible by a user. These services can encompass a variety of applications and resources, including websites/web portals, remote desktops, and internal CRMs (Customer Relationship Management systems). 
+
+Once a service is attributed to a group and a destination, the service entries will appear in the "Security Panel" of the user.
 
 To create a service into the platform, click on the `Create new` button
 

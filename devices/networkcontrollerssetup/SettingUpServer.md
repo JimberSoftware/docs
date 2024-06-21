@@ -101,6 +101,10 @@ Shortly after, there should be a green dot visible next to the created network c
 
 Hypervisor installation is widely used. It's a very convenient way of working. The major advantage is that the network controller server can be installed on existing hardware. Therefore, there's no need for a physical device. However, there are some settings you need to consider.
 
+The following hardware settings must also be set: 
+    - 2 cores
+    - 4 GB RAM
+    - 25 GB of hard disk space
  
 #### VMware ESXi
 
@@ -112,7 +116,7 @@ When installing the network controller on-prem on ESXi, you need to make sure to
 
 #### Hyper-V
 
-When installing the network controller on-prem on Hyper-V, you need to choose legacy boot mode instead of EFI mode.This can be done in the settings of the virtual machine.
+When installing the network controller on-prem on Hyper-V, you need to choose legacy boot mode instead of EFI mode. This can be done in the settings of the virtual machine.
 
 <!-- ##### Installing Hyper-V on a server (standard installation)
 
