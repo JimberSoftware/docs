@@ -25,7 +25,7 @@ Open the page signal.jimber.io and download the client that matches your operati
 <!-- #### Windows <i class="mdi mdi-microsoft-windows"></i> -->
 
 #### **Windows**
-As mentioned, download the latest 'Windows Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Windows : [latest windows version](/https://signal.jimber.io/clients/windows-desktop-latest.msi)"
+As mentioned, download the latest 'Windows Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Windows : [latest windows version](https://signal.jimber.io/clients/windows-desktop-latest.msi)
 
 > [!INFO]
 > To download another specific version, you can use signal.jimber.io/clients.
