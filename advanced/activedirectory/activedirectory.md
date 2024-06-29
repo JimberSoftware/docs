@@ -75,11 +75,8 @@ The installer can be found [here](https://signal.jimber.io/clients/windows-serve
   }
   ```
 
-  We need to add the token and the noDns flag.
+  We need to add the token.
 
-  > [!NOTE]
-  >   Enabling the nodns flag ensures that the Network Isolation client does not alter the computer's DNS settings.
-  
 
   We can find the token if we edit the server on Signal.
 
@@ -92,8 +89,7 @@ The installer can be found [here](https://signal.jimber.io/clients/windows-serve
   {
     "privateKey": "ZwcayfO6zvVWj6emhJr1j+FBa3ETt88IzXFxcMHkGY/L7sdabpyIa4B8SHa8HU72/L5TtYCClO5RE8pZgzo7GA==",
     "publicKey": "y+7HWm6ciGuAfEh2vB1O9vy+U7WAgpTuURPKWYM6Oxg=",
-    "token": "9hrkprdl05kbjopg",
-    "nodns": true
+    "token": "9hrkprdl05kbjopg"
   }
   ```
 

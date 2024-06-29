@@ -67,18 +67,6 @@ Access the 'services' panel by entering 'services.msc' into the start menu's sea
 Upon successful restart, the server should display a connected status (indicated by a green dot) in the Network Isolation interface. For any necessary troubleshooting, consult the log file at this location: 
 `C:\Program Files\Jimber\jimbernetworkisolation.log`
 
-
-[!WARNING]
-> **Attention!** When installing a server, Jimber Network Isolation might reset the DNS settings. Please add the "nodns" flag to disable this when using static IP/DNS configuration
-
-```json
-{
- "publicKey": "l7D1+dm...",
- "privateKey": "ENjN41TJE7WEU76T...",
- "token": "YOUR_TOKEN",
-  "nodns" : "true"
-}
-```
 #### **Linux**
 
 > [!INFO] 
