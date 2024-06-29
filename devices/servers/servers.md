@@ -122,7 +122,7 @@ cat /var/log/jimber/jimbernetworkisolation.log
 
 #### **Synology**
 
-[Click here to the on how to setup your synology nas](devices/synology/synology.md)
+[Click here to see how to setup your synology nas](devices/synology/synology.md)
 
 #### **Raspberry pi**
 
