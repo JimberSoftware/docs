@@ -35,7 +35,7 @@ The installation process will then begin and can take several minutes.
 
 ![installation_server_nc_2.png](/installation_server_nc_2.png ':size=500')
 
-While Network Isolation is installing,  you can create your Network Controller on https://signal.jimber.io.  You can find more explanation on how to do so at https://docs.jimber.io/#/./devices/networkcontrollers/networkcontrollers.
+While Network Isolation is installing,  you can create your Network Controller on https://signal.jimber.io.  You can find more explanation on how to do so [here](https://docs.jimber.io/#/./devices/networkcontrollers/networkcontrollers)
 
 Data you need:
 - Your Public IP. Use https://whatismyipaddress.com/ if necessary. 
