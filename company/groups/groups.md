@@ -41,11 +41,8 @@ prominently located at the upper right corner of the interface.
 > [!WARNING]
 > Please ensure to configure the group settings in such a way that there is no overlap with your organization's existing physical network, VPNs, or any other networks accessed by your staff.
 
-Creating a new group requires the following information:
+Creating a new group requires a group name that can be updated later as needed.
 
-- Group Name: An identifier for the group, which can be updated later as needed.
-- Group Number: A numerical value utilized by the Network Controller interface.
-- Ip range: The designated private network range assigned to the group.
 
 
 ![create-group.png](/create-group.png ':size=600')
@@ -55,7 +52,7 @@ Creating a new group requires the following information:
 Access the details of a specific group by selecting the corresponding strip within the table (avoid clicking on the buttons at the end). This will reveal the network rules associated with the chosen group, along with the devices that fall under this group's purview.
 
 
-![group-details.png](/group-entry.png ':size=900')
+![group_details_v12.png](/group_details_v12.png ':size=900')
 
 
 ## Edit a group
@@ -72,21 +69,11 @@ Groups can be removed by clicking on the red trash bin icon next to their name
 ![recycle_bin.png](/recycle_bin.png).
 
 
-
 ![delete-group.png](/delete-group.png ':size=500')
 
 
-
 > [!WARNING]
-> A group can only be deleted if it has no linked devices or active network rules.
+> The group will be removed without further notice.
 
-To facilitate the removal process:
-
-1. Refer to the 'Group Details' section to identify any devices associated with the group and its active network rules.
-2. Nullify all network rules associated with the group.
-3. Reassign any devices within the group to a different group.
-
-> [!INFO]
-> After taking these steps, you should be able to successfully delete the group.
 
 

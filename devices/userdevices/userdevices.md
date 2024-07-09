@@ -153,13 +153,10 @@ If you're yet to have a login, please reach out to your network administrator to
 
 In the overview of user devices, you can see who is online or offline.
 
-An online user device will appear at the top of the list in the overview with a green dot:
+An online user device will appear at the top of the list in the overview with a green dot.
+An offline user device will appear in the overview with a red dot.
 
-![overview userdevices.png](overview_userdevices.png ':size=800x')
-
-An offline user device will appear in the overview with a red dot:
-
-![overview userdevices.png](overview_userdevices_2.png ':size=800x')
+![user_device_v12.png](user_device_v12.png ':size=800x')
 
 ## Delete user device
 
