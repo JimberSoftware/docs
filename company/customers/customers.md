@@ -1,6 +1,6 @@
 # Customers
 > [!WARNING]
-> This *`Customers`* section is exclusively available for **integrators**. If you are an end customer, you will be directly redirected to the Network Isolation configuration of your company.
+> This *`Customers`* section is exclusively available for **partners**. If you are an end customer, you will be directly redirected to the Network Isolation configuration of your company.
 
 In our platform, a **customer** refers to a company intending to use Network Isolation. Integrators have the capability to manage these customers, ensuring seamless operations and service delivery.
 
@@ -29,14 +29,17 @@ Following fields should be provided:
   
 
 ## Edit customer
-Customers can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/pencil_2.png).
+Customers can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/icon_edit.png ':size=35;35').
+
 
 > [!WARNING]
-> Changing the integrator will remove all current integrator roles.
+> Changing the partner will remove all current security consultant roles
+
+<!-- Changing the integrator will remove all current integrator roles. -->
 
 ## Delete customer
 
-Customers can be deleted by clicking on the red trash bin icon next to their name ![recycle_bin.png](/recycle_bin.png).
+Customers can be deleted by clicking on the red trash bin icon next to their name ![recycle_bin.png](/icon_delete.png ':size=35;35').
 
 
 > [!WARNING]

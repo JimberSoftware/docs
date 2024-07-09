@@ -4,7 +4,7 @@ A user is a user on the platform. Users can have roles and be linked to properti
 
 
 > [!WARNING]
-> In order to create a new user, the company **must** have a domain.
+> In order to create a new user, the company **must** have a domain, so a domain name must be added first. The users email address must use the added domain name.
 
 > [!WARNING]
 > Managing users efficiently is crucial for maintaining the security and integrity of your platform. 
@@ -20,9 +20,9 @@ prominently located at the upper right corner of the interface.
 > [!INFO]
 > **Email** is used as the primary identifier for a user. It is essential for authentication purposes. Ensure that the provided email is valid and accessible by the user. 
 
-![newuser_2.png](newuser_2.png)
+![create_user.png](create_user.png ':size=500x300')
 
- Groups are optional. 
+
 
 ### User Roles and their permissions
 
@@ -31,7 +31,7 @@ prominently located at the upper right corner of the interface.
   - Grants privileges to manage the company's settings.
   - To promote a user to an administrator, hit the slider.
 
-    ![create_admin.png](/create_admin.png ':size=500x350')
+    ![create_admin.png](/create_admin.png ':size=500x300')
 
 
  
@@ -39,43 +39,48 @@ prominently located at the upper right corner of the interface.
   - Activating this option will enable `Network Isolation` for the particular user, adding an extra layer of security.
   - To activate Network Isolation, hit the slider.
   
-    ![access_control.png](/access_control.png ':size=500x350')
+    ![access_control.png](/access_control.png ':size=500x300')
   
 
-> [!INFO]
->  Before adding a user, a domain name must be added first. The users email address must use the added domain name.
+<!-- > [!INFO]
+>  Before adding a user, a domain name must be added first. The users email address must use the added domain name. -->
 
   
 - **Enable Secure mode**:
   - If Secure mode is turned ON for a device all incoming traffic will be blocked unless it comes from Network Isolation.
   - To turn on Secure mode, hit the slider.
 
+> [!INFO]
+>  Secure mode can only be enabled if network isolation is also enabled. 
+
 - **Security Consultant**:
-   - This option is only available for **integrators**.
-   - Enables a user to manage configurations of customers.
+   - This option is only available for **partners**.
+   - Enables a particular user to manage configurations of customers.
    <!-- - To gain access, the security consultant must be created as an admin. -->
 
-    ![security_consultant_2.png](/security_consultant_2.png ':size=800')
+    <!-- ![security_consultant_2.png](/security_consultant_2.png ':size=800') -->
 
-   - **How to add security consultant:**
+   - **How to add a security consultant:**
 
-      - Go to the integrator of the customer where you want to add the security consultant to. In the example, that is 'User2'. 
+      - Go to the partner of the customer where you want to add the security consultant to. In the example, that is **User2**. 
 
        ![user_in_integrator.png](/user_in_integrator.png ':size=800')
 
-      - Create a new user as Security Consult by hitting the slider.
+      - Create a new user as Security Consultant by hitting the slider.
 
-        ![create_sec_cons.png](/create_sec_cons.png ':size=800')
+        ![create_sec_cons.png](/create_sec_cons.png ':size=500x300')
 
-      -After creating that user (e.g.: ' user_sec_cons@testdomein2.be') select the correct customer and then the option "Users". Create a new user, using the user just created in previous step (' user_sec_cons@testdomein2.be').
+      -After creating that user (e.g.: ' user_sec_cons@testdomein2.be') select the correct **customer** and then the option "Users". Create a new user, using the user just created in previous step (' user_sec_cons@testdomein2.be'). That user becomes a Security Consultant for that company.
 
-      ![add_sec_cons.png](/add_sec_cons.png ':size=800')
-      
+      ![add_sec_cons.png](/add_sec_cons.png ':size=500x300')
+
+> [!INFO]
+>  You can also use an already existing Security Consultant from the partner. In that case you can skip the first step.      
      
 
 ## Editing a User
   
- Users can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/pencil_2.png).
+ Users can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/icon_edit.png ':size=35').
  
   ![edit_user.png](/edit_user.png ':size=500x350')
   
@@ -83,11 +88,22 @@ prominently located at the upper right corner of the interface.
   
 ## Deleting a User
 
- Users can be deleted by clicking on the red trash bin icon next to their name ![recycle_bin.png](/recycle_bin.png).
+ Users can be deleted by clicking on the red trash bin icon next to their name ![recycle_bin.png](/icon_delete.png ':size=35').
  
  You will receive a warning before the user is permanently deleted:
  
- ![deleting_user.png](/deleting_user.png ':size=500')
+ ![deleting_user.png](/deleting_user.png ':size=500x150')
 
 
- 
+## User properties
+
+ In the overview of the users, you can already see some properties: the role of the user in the company (Admin or User), the platform role that is generally 'User' and whether if the user is enabled or not.
+
+ ![overview_users.png](/overview_users.png ':size=800x150')
+
+ Clicking on the bar of the user, there appears a window with more details:
+
+
+![properties_user.png](/properties_user.png ':size=500')
+
+

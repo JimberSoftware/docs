@@ -9,7 +9,7 @@ To create a server in the Security platform, click on the `Create new` button
 prominently located at the upper right corner of the interface.
 
 
-![add_server.png](create_server.png 'size:=500x')
+![add_server.png](create_server.png 'size:=400')
 
  
 > [!INFO] 
@@ -290,14 +290,14 @@ Then type in that ip in your browser and login with the credentials from the [cr
 
 In the overview of the servers, you can see which is online or offline.
 
-A server online will appear in the overview with a green dot:
+A server online will appear in the overview with a green dot. A server offline will appear in the overview with a red dot.
 
 ![server online.png](server_online.png 'size:=800x')
 
 
 A server offline will appear in the overview with a red dot:
 
-![server offline.png](server_offline.png 'size:=800x')
+
 
 
 ## Details and firewall rules of a server
@@ -334,8 +334,7 @@ Access the details of a specific server and check the firewall rules by selectin
  ## Editing a server
   
  Servers can be edited by clicking on the yellow pencil icon next to their name 
-![pencil_2.png](/pencil_2.png)
-.
+![icon_edit.png](/icon_edit.png ':size=35').
   
 ![edit server.png](/edit_server.png 'size:=500x')
 
@@ -345,8 +344,7 @@ Access the details of a specific server and check the firewall rules by selectin
 ## Deleting a server
 
 Servers can be deleted by clicking on the red trash bin icon next to their name 
-![recycle_bin.png](/recycle_bin.png)
-.
+![icon_delete.png](/icon_delete.png ':size=35').
 
 
 You will receive a warning before the device is permanently deleted:

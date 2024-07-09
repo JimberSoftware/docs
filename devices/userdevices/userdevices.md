@@ -155,22 +155,21 @@ If you're yet to have a login, please reach out to your network administrator to
 
 In the overview of user devices, you can see who is online or offline.
 
-A user device online will appear at the top of the list in the overview with a green dot:
+A user device online will appear at the top of the list in the overview with a green dot.
+A user device offline will appear in the overview with a red dot.
 
 ![overview userdevices.png](overview_userdevices.png ':size=800x')
 
-A user device offline will appear in the overview with a red dot:
 
-![overview userdevices.png](overview_userdevices_2.png ':size=800x')
 
 ## Delete user device
 
-Offline user devices can be deleted by clicking on the red trash bin icon next to their name ![recycle_bin.png](/recycle_bin.png).
+Offline user devices can be deleted by clicking on the red trash bin icon next to their name ![icon_delete.png](/icon_delete.png ':size=35').
 
 
 You will receive a warning before the device is permanently deleted:
 
-![deleting_customer.png](deleting_device.png ':size=600')
+![deleting_device.png](deleting_device.png ':size=500')
 
 
 
