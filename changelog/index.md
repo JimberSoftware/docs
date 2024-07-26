@@ -1,0 +1,336 @@
+### Release 1.12
+
+- Improved generic filtering.
+- Fixed styling issues in the security panel.
+- Updated FormKit to version 1.5.5.
+- Corrected typos and fixed a bug related to daemon connection in hotspots.
+- Added email validation for company emails.
+- Implemented v2 rules configuration generation.
+- Enhanced admin filtering capabilities for menus with tables.
+- Introduced configuration events and improved DNS forwarding checks.
+- Fixed various bugs including empty chip in company emails, server updates indicator, duplicate entries, wrong routing on documentation and downloads, hostname errors, and UI jumping when enabling device limits.
+- Added device approval status and improved the reset buttons in group services.
+- Improved handling of network configurations and security panel updates.
+- Enhanced the user experience by fixing flickering issues, updating reset buttons, and implementing HTTPS for config transmissions.
+- Implemented better error handling and improved various user interface components.
+- Enhanced email content and device approval screens.
+- Added public signing key for signal server and improved group config table with device approval status.
+- Fixed bugs in CSV export and group configuration search.
+- Updated sidebar icons and implemented an icon library.
+- Upgraded Playwright and fixed related tests.
+- Improved input validation for all components and fixed missing status codes.
+- Enhanced workflow actions and added a prettier sorting plugin for Tailwind.
+- Added length validation to server hostname and other input fields.
+- Improved notification handling and device configuration updates.
+- Enhanced logging for various activities including Azure sync.
+- Fixed bugs related to service creation, rule sorting, and UI inconsistencies.
+- Added new features for better user experience in filtering and dropdown inputs.
+- Enhanced email sending and notification handling.
+- Improved error handling and validation for form inputs.
+- Made significant enhancements to the security panel responsiveness and modal design.
+- Improved handling of server updates and firewall configurations.
+- Fixed bugs in domain syncing, dashboard widgets, and service rule descriptions.
+- Added support for multiple public IPs and better handling of advanced filters.
+- Improved pagination and sorting for various tables and lists.
+- Updated FormKit and fixed related bugs and inconsistencies.
+- Added better logging for errors during domain syncing.
+
+This release focuses on improving the overall stability, user experience, and security of the product by addressing numerous bugs, enhancing filtering capabilities, and implementing better error handling and validation across various components.
+
+
+
+### Release 1.11
+
+- Implemented portforward JSON patch rules.
+- Changed default value of `last_seen`.
+- Refactored server, router, NIAC, group firewall, daemon, and auth for the new client.
+- Fixed QR code issue and Azure sync connection problem.
+- Turned server aliases field into a taglist.
+- Improved UI for daemon cleanup and added more validation to company CRUD operations.
+- Fixed user update issues, input field name, comparing rules, and various bugs.
+- Added decorator for integrator manager routes and fixed server aliases and group details bugs.
+- Implemented total alarms and primary contact settings for companies.
+- Removed timestamps from log messages and added update indicators in dashboard stats.
+- Added physical location to NIAC and improved group details page layout.
+- Fixed login error alerts and device configuration issues.
+- Implemented new view and rules, fixed Synology downloads, and improved DNS filtering.
+- Made DNS filtering editable by multiple users and implemented block and allowlist in the new DNS filter view.
+- Improved button text color and fixed mobile connection issues.
+- Fixed bugs related to QR device connection, IP regeneration, hostroutes, and native device creation.
+- Refactored to use new components and removed shared types from the frontend.
+- Included native devices into service rules and re-added provisioning message.
+- Added download button for group traffic and IP address uniqueness constraint on native devices.
+- Implemented better exception handling and device approval notifications.
+- Improved login redirection handling and fixed dashboard navigation issues.
+- Added constraints for inactive daemons cleanup and improved validation for input fields.
+- Fixed service deletion and added on-click functionality for groups taglist field.
+- Improved group configuration modal design and used a generic query for logs.
+- Fixed ESLint API job and other merge bugs.
+- Updated Azure ID for MSAL and improved error handling for undefined error messages.
+- Added platform to daemon and support for service addition to groups.
+- Fixed query breaking frontend and other double group issues.
+- Extended announce message functionality and fixed daemon scripts.
+- Updated design for alerts count and fixed update issues for inactive daemons.
+- Added support for multiple DNS addresses and fixed sorting bug in recent activity.
+- Improved NIAC update handling and added syntax highlighting in scripts.
+- Fixed several issues in daemon scripts and server partial updates.
+- Improved handling of too many events and fixed dev configurations.
+- Updated always-on feature with a beta tag.
+- Fixed alert messages for device approval and security panel styling.
+- Added email validation for company emails and fixed missing pull requests.
+- Implemented v2 rules configuration generation and configuration events.
+- Improved DNS forwarding checks and physical location updates for NIAC.
+- Removed blocking of QR daemon creation and added approval status to device management in the security panel.
+- Improved reset buttons in group services and fixed flickering issues in attribute services.
+- Fixed empty chip in company emails and server updates indicator.
+- Addressed duplicate entries and rules bugs, wrong routing on documentation and downloads.
+- Fixed hostname error in address service and updated configurations on native device deletion.
+- Prevented UI jumping when enabling device limit and improved redirect handling for dashboard.
+- Fixed user not found message and added proper input validation for all components.
+- Improved error handling in guidelines check and fixed validation bugs.
+- Added device approval screen and approval status to group config table.
+- Added security.txt and robots.txt files.
+- Implemented device limit reached page and fixed group configuration search issues.
+- Used group name instead of group ID in logs and fixed incomplete CSV data export.
+- Updated sidebar icons and heroicons.
+- Fixed message for duplicate names in service and group change in attribute service.
+- Improved daemon script generation and fixed service description requirements.
+- Fixed DNS filtering and adjusted location of group selection on attribute service window.
+- Improved URL validation for web service field and enabled service by default in group services.
+- Fixed long names in service entry component and corrected firewall rules display for servers.
+- Fixed refresh bug in service creation page and improved web filtering change update messages.
+- Changed copied message for server and fixed form layout for port forward rules.
+- Added length validation to URL/path in service entry and reordered attribute service filters.
+- Fixed documentation back button and various naming issues.
+- Improved table transparency and validation on QR devices.
+- Added handling for approval status change and fixed bugs in form layout.
+- Fixed undefined user detail pane and improved NC config update handling.
+- Improved errors and validation for domain names and fixed QR daemon creation message.
+- Added proper prop to FormKit to convert to integer in port inputs.
+- Fixed CrudForm typo and updated role fetching after company creation.
+- Added live errors for taglist fields and attributed services to the group details.
+- Changed all instances of "Traffic Between Groups" and added delete button for interfaces in NIAC details page.
+- Changed QR daemon to mobile device in log messages and added max length validation to physical location.
+- Fixed mapping of device platform and used appropriate SVGs for respective pages.
+- Removed "pushed" from QR daemon creation message and fixed undefined bug in security consultant actions.
+- Improved email content for device approval notification and fixed issues in daemon scripts and update handling.
+- Improved error messages for login redirects and validation for custom ports.
+- Improved UX for alerts count and fixed sorting bug in recent activity.
+- Fixed group details navigation and several bugs in daemon scripts.
+
+This version brings numerous improvements in user experience, bug fixes, validation enhancements, and new features, ensuring a more stable and efficient product.
+
+
+### Release 1.10
+
+- Fixed sidebar for company admins in super companies.
+- Updated component visibility for integrators in super companies.
+- Enhanced company website editing capabilities.
+- Allowed company admin and security consultant to access company integrations.
+- Implemented a generic method for searching, ordering, and pagination.
+- Renamed access controls to users and cleaned up unused imports.
+- Added documentation for production release.
+- Fixed visibility issues for integrator managers in the sidebar.
+- Enabled details pane opening via query parameters.
+- Supported login from multiple devices.
+- Adjusted favicon visibility based on sidebar state.
+- Removed daemon reference from user text.
+- Fixed group details page issues.
+- Addressed version setting issues for servers, NIACs, and NC.
+- Implemented cache busting for company favicon.
+- Fixed NIAC over cloud to on-prem issues.
+- Corrected roles for integrator company edit.
+- Added support for custom user daemons.
+- Updated Synology client configurations.
+- Created overviews for NIAC and user.
+- Optimized layout and sidebar structure for performance.
+- Fixed user page issues when security consultants were present.
+- Allowed integrator managers to see their colleagues.
+- Handled unauthenticated daemon disconnection attempts.
+- Set default height for text areas.
+- Fixed customer view issues for distributors.
+- Increased note field size for firewall rules.
+- Supported multi-line notes export.
+- Restored auth guard functionality.
+- Ensured cloud router deletion removes related VM.
+- Cleaned up mDNS forwarding IPs.
+- Fixed blocklist/allowlist functionality.
+- Added launcher version to notifications.
+- Prevented accidental deletion of superadmin role.
+- Fixed server rules detail pane.
+- Corrected router activity editing issues.
+- Addressed filter bugs and server detail inconsistencies.
+- Improved block and allowlist functionality.
+- Added reseller and customer acceptance views.
+- Created view for daemon configuration.
+- Added launcher update notifications.
+- Improved firewall rules validation.
+- Fixed company not found error.
+- Created standalone WAN configuration page.
+- Ensured URL parameters are removed when closing detail panels.
+- Fixed closest router map issues.
+- Renamed settings and added IP range to company.
+- Prevented integrators from being created with blacklisted domains.
+- Provided standalone views and routes for traffic between groups.
+- Adjusted network isolation side menu.
+- Added standalone view for PFW.
+- Allowed native devices to be added.
+- Restricted integrator management to superadmin.
+- Fixed consultant and manager redirects.
+- Added native device routes.
+- Fixed allow WAN and DNS override issues.
+- Consolidated Synology download options.
+- Added always-on development feature.
+- Fixed weird return code issues.
+- Corrected page redirects for table entities.
+- Validated domains on integrator creation.
+- Hidden edit/remove buttons for distributors on integrators page.
+- Disabled certain features for integrator managers.
+- Fixed NIAC detail panel opening on edit button click.
+- Updated server list refresh behavior.
+- Created tag list for servers.
+- Removed primary groups.
+- Included company name in mobile configuration.
+- Fixed invisible NC issue.
+- Corrected server provider issues.
+- Fixed Synology model search hanging issues.
+- Added title info for distributors, integrators, and customers.
+- Fixed integrator login issues for customers.
+- Allowed longer group names (reverted).
+- Added support for deleting tags.
+- Improved IP and IP range validation.
+- Removed inactive daemons after inactivity.
+- Created TypeScript client for consuming NestJS API.
+- Implemented company role guard in frontend router.
+- Included relevant network isolation users in company roles.
+- Extended no entities found component with creation boolean.
+- Added support for Azure transitive members.
+- Fixed connection issues on first sign-in.
+- Updated offline server button visibility.
+- Improved Azure sync and primary role issues.
+- Made accept guidelines error-free.
+- Simplified Jack workflow.
+- Retrieved user roles without logout/login.
+- Fixed delete long group name display issues.
+- Added email notifications for admins.
+- Refactored NIACs and groups to use CRUD table.
+- Regenerated configs after IP changes.
+- Improved native device support for the new client.
+- Trimmed text input fields.
+- Refactored Synology for the new client.
+- Made DNS filter category an entity.
+- Sent firewall config every 30 seconds.
+- Removed group dependency for entity creation.
+- Fixed server alias update bug.
+- Corrected QR code issue.
+- Fixed user update and input field name bugs.
+- Improved daemon cleanup UI.
+- Fixed SQL and other related issues.
+- Corrected device configuration and Synology downloads.
+- Sent DNS filter lists at NC connection.
+- Showed manual import button for admins.
+- Fixed button text color and store links.
+- Corrected mobile QR device connection issues.
+- Fixed IP regeneration and mobile connection issues.
+- Addressed various bugs and daemon config issues.
+- Corrected host routes.
+- Fixed native device listing and service allowance.
+- Refactored device management view.
+- Fixed DNS filtering and validation issues.
+- Re-added provisioning message.
+- Corrected NC config sorting and validation bugs.
+- Ensured IP address uniqueness for native devices.
+- Fixed sorting and native device issues.
+- Updated group detail panel navigation.
+- Provisioned cloud controller for integrator companies.
+- Backported customer creation changes.
+- Fixed server tag input validation.
+- Added constraints for inactive daemons cleanup.
+- Corrected absolute component visibility.
+- Fixed alias length limit bug.
+- Corrected NC config sorting.
+- Sent daemon config on user update.
+- Improved error messages.
+- Refactored initial cloud controller creation.
+- Showed correct dashboard based on roles and state.
+- Fixed host routes.
+- Corrected sidebar menu item generation.
+- Enabled NI user settings for integrators.
+- Fixed empty consultant list for integrators.
+- Improved redirect handling and cloud controller absence.
+- Sent NC config if user deleted.
+- Fixed login bugs and QR device validation.
+- Temporarily disabled sorting on problematic tables.
+- Removed complex domain constraints.
+- Fixed alias update and network controller issues.
+- Corrected filter and allow/reflection issues.
+- Transformed emails to lowercase for Azure sync.
+- Supported multiple public IPs.
+- Fixed secure mode toggle for servers.
+- Provided more data visibility for distributors.
+- Fixed traffic between groups table and API key field.
+- Corrected day schedules and other minor issues.
+- Improved Synology and NC config serve on edit.
+- Fixed log spam and company relations inclusion.
+- Fixed NIAC toggle and event over-sending.
+- Added blocked packets message endpoint.
+
+This release focuses on enhancing user experience, fixing numerous bugs, and implementing new features for better system management and usability.
+
+
+### Release 1.9
+
+- **User Devices and Navigation**
+  - Renamed daemons to user devices for user clarity.
+  - Displayed devices tab in the navigation bar.
+  - Consolidated multiple dashboards into one.
+
+- **Bug Fixes and Improvements**
+  - Disabled specific rules and fixed related bugs.
+  - Fixed server creation with additional groups.
+  - Removed shadow causing issues in Safari.
+  - Changed the home button and updated sidebar with documentation and downloads.
+  - Added an extra information field for rules and fixed table headers.
+  - Resolved errors on item removal and improved style.
+  - Fixed dropdown issues on Mac and port forwarding behavior.
+  - URL encoded all parameters for Whitesky API requests.
+
+- **Features and Enhancements**
+  - Added multicast DNS support.
+  - Fixed build issues and improved regex.
+  - Moved groups from firewall tab to server detail page.
+  - Developed NIAC DHCP and fixed secure mode toggle.
+  - Enhanced company website functionalities.
+  - Extended user view to create NI users instantly.
+  - Created integrations view and user settings modal.
+  - Rearranged sidebar links and moved various views (distributors, integrators, customers) to company view.
+  - Added fixed height container to pagination and improved CRUD operations.
+
+- **UI and UX Enhancements**
+  - Changed color of cancel button and download button visibility based on selection.
+  - Updated IP of NIAC/server when the primary group changes.
+  - Improved companyExistsGuard in routes and fixed build issues.
+  - Verified connections to avoid unverified communications.
+  - Fixed visibility issues of download items in Firefox.
+  - Allowed scheduling without timeslots and fixed duplicate router interface IP on group creation.
+  - Improved Azure AD sync and introduced custom parent group setting.
+  - Fixed clear button in port forwarding and other minor bugs.
+
+- **Refinements and Adjustments**
+  - Ensured IP changes only when primary group changes.
+  - Corrected data display in integrator tables and supported Synology platform server updates.
+  - Managed companies as an integrator and renamed roles for better clarity.
+  - Enhanced support for groups with special characters and fixed validation messages.
+  - Adjusted sidebar to display customer favicons and updated UI components for consistency.
+  - Fixed various navigation issues and improved error handling.
+  - Refactored firewall rules and improved validation for better performance.
+  - Updated favicon handling and integrated top margin adjustments.
+  - Addressed build issues and removed redundant PAT (Personal Access Token).
+
+- **Role Management and Security**
+  - Implemented role management for integrators of distributors.
+  - Enhanced integrator manager role creation and sidebar adjustments.
+  - Improved authentication guard and ensured secure role management.
+  - Verified Azure sync connection problems and fixed related issues.
+
+This release focuses on improving user clarity and navigation, fixing various bugs, enhancing features, and refining the UI and UX for a better overall user experience.
