@@ -14,7 +14,7 @@ To incorporate a new customer into the platform, click on the `Create new` butto
 
 prominently located at the upper right corner of the interface.
 
-![create_customer.png](/create_customer.png)
+![create_customer.png](/create_customer.png ':size=500')
 
 
 
@@ -26,7 +26,15 @@ Following fields should be provided:
 
 > [!WARNING]
 >  In the customer name, spaces and special characters/symbols are not allowed. You can add the full name in "Display name"
-  
+
+## Select customer  
+
+Once the customer has been created, you can select that customer by clicking on the corresponding strip.
+You get an overview of created assets:
+
+![overview_customer.png](/overview_customer.png ':size=800')
+
+Just after creating the customer, no assets will obviously be visible yet.
 
 ## Edit customer
 Customers can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/icon_edit.png ':size=35;35').
@@ -47,5 +55,5 @@ Customers can be deleted by clicking on the red trash bin icon next to their nam
 
 You will receive a warning before the customer is permanently deleted:
 
-![deleting_customer.png](deleting_customer.png)
+![deleting_customer.png](deleting_customer.png ':size=500')
 

@@ -9,7 +9,7 @@ For instance, if you wish to establish a user like 'jef@jimber.test', you must f
 
 ![domains.png](domains.png  ':size=800')
 
-## Create domain
+## Create Domain
 
 To establish a new domain, simply click on the `Create new` button 
 
@@ -19,9 +19,9 @@ located at the upper right corner of the interface.
 
 ![create_new_domain.png](create_domain.png  ':size=500x200')
 
-## Remove domain
+## Deleting Domain
 
-Domains can be removed by clicking on the red trash bin icon next to their name ![icon_delete.png](/icon_delete.png ':size=35').
+Domains can be deleted by clicking on the red trash bin icon next to their name ![icon_delete.png](/icon_delete.png ':size=35').
 
 > [!WARNING]
 > A domain cannot be removed if there are users associated with it. Ensure to first disassociate all linked users from the domain under the `Users` section.

@@ -30,7 +30,7 @@ This flexible structure allows for a fine-tuned, layered approach to network man
 <!-- ![edit-server.png](/edit-server.png ':size=600') -->
 
 
-## Create a group
+## Create Group
 
 To create a new group into the platform, click on the `Create new` button 
 
@@ -46,14 +46,15 @@ Creating a new group requires a group name that can be updated later as needed.
 ![create_group.png](/create_group.png ':size=500')
 
 
-## Group details
+## Group Details
+
 Access the details of a specific group by selecting the corresponding strip within the table (avoid clicking on the buttons at the end). This will reveal the network rules associated with the chosen group, along with the devices that fall under this group's purview.
 
 
 ![group_details.png](/group_details.png ':size=800')
 
 
-## Edit a group
+## Edit Group
 Groups can be edited by clicking on the yellow pencil icon next to their name ![icon_edit.png](/icon_edit.png ':size=35').
 
  You'll then be able to adjust the group name as needed:
@@ -62,8 +63,8 @@ Groups can be edited by clicking on the yellow pencil icon next to their name ![
 
 
 
-## Remove a group
-Groups can be removed by clicking on the red trash bin icon next to their name 
+## Deleting Group
+Groups can be deleted by clicking on the red trash bin icon next to their name 
 ![icon_delete.png](/icon_delete.png ':size=35').
 
 

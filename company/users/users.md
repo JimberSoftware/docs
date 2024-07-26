@@ -10,7 +10,7 @@ A user is a user on the platform. Users can have roles and be linked to properti
 > Managing users efficiently is crucial for maintaining the security and integrity of your platform. 
 
 
-## Create a New User
+## Create User
 To create a new user into the platform, click on the `Create new`  button
 
 ![create_new.png](/create_new.png)
@@ -51,7 +51,7 @@ prominently located at the upper right corner of the interface.
   - To turn on Secure mode, hit the slider.
 
 > [!INFO]
->  Secure mode can only be enabled if network isolation is also enabled. 
+>  Secure mode can only be enabled if Network Isolation is also enabled. 
 
 - **Security Consultant**:
    - This option is only available for **partners**.
@@ -78,7 +78,7 @@ prominently located at the upper right corner of the interface.
 >  You can also use an already existing Security Consultant from the partner. In that case you can skip the first step.      
      
 
-## Editing a User
+## Edit User
   
  Users can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/icon_edit.png ':size=35').
  
@@ -86,7 +86,7 @@ prominently located at the upper right corner of the interface.
   
   The username cannot be changed, of course, but all other options are the same as when creating a user.
   
-## Deleting a User
+## Deleting User
 
  Users can be deleted by clicking on the red trash bin icon next to their name ![recycle_bin.png](/icon_delete.png ':size=35').
  
@@ -101,7 +101,7 @@ prominently located at the upper right corner of the interface.
 
  ![overview_users.png](/overview_users.png ':size=800x150')
 
- Clicking on the bar of the user, there appears a window with more details:
+ Clicking on the corresponding strip of the user, there appears a window with more details:
 
 
 ![properties_user.png](/properties_user.png ':size=500')

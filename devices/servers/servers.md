@@ -1,6 +1,6 @@
 # Servers
 
-## Create a server
+## Create Server
 
 To create a server in the Security platform, click on the `Create new` button
 
@@ -9,7 +9,7 @@ To create a server in the Security platform, click on the `Create new` button
 prominently located at the upper right corner of the interface.
 
 
-![add_server.png](create_server.png 'size:=400')
+![add_server.png](create_server.png ':size=500')
 
  
 > [!INFO] 
@@ -55,20 +55,20 @@ Ensure to save the changes made to the file.
 The required token can be retrieved from the 'Servers' tab within the Signal server interface. Simply select and edit an existing server to find it.
 
 
-![edit_server.png](/edit_server.png 'size:=500x')
+![edit_server.png](/edit_server.png ':size=500')
 
 
 Access the 'services' panel by entering 'services.msc' into the start menu's search bar. Within this panel, find the 'Jimber Network Isolation' service and initiate a restart.
 
 
-![services_jimber.png](/services_jimber.png 'size:=800x')
+![services_jimber.png](/services_jimber.png ':size=800')
 
 
 Upon successful restart, the server should display a connected status (indicated by a green dot) in the Network Isolation interface. For any necessary troubleshooting, consult the log file at this location: 
 `C:\Program Files\Jimber\jimbernetworkisolation.log`
 
 
-[!WARNING]
+>[!WARNING]
 > **Attention!** When installing a server, Jimber Network Isolation might reset the DNS settings. Please add the "nodns" flag to disable this when using static IP/DNS configuration
 
 ```json
@@ -76,7 +76,7 @@ Upon successful restart, the server should display a connected status (indicated
  "publicKey": "l7D1+dm...",
  "privateKey": "ENjN41TJE7WEU76T...",
  "token": "YOUR_TOKEN",
-  "nodns" : "true"
+ "nodns" : "true"
 }
 ```
 #### **Linux**
@@ -102,7 +102,7 @@ In this file, enter the token you were provided upon creating the server within 
 The required token can be retrieved from the 'Servers' tab within the Signal server interface. Simply select and edit an existing server to find it.
 
 
-![edit_server.png](/edit_server.png 'size:=500x')
+![edit_server.png](/edit_server.png ':size=500')
 
 
 ```json
@@ -204,7 +204,7 @@ This will install networkisolation on the synology.
 Now go to https://signal.jimber.io to find the token at the servers section after login. There click on the yellow edit pencil of the server to see the 'Token' at the bottom. Copy this token to use in the next step.
 
 
-![edit_server.png](/edit_server.png 'size:=500x')
+![edit_server.png](/edit_server.png ':size=500')
 
 
 Add the token from the server in signal interface to the jimber settings file. 
@@ -234,7 +234,7 @@ Reboot after changing and saving the settings file
 reboot
 ```
 
-Check the server in the signal interface, it should go online if everthing went well. This can take some time since the synology is still starting up. But it should not take longer than 3 minutes
+Check the server in the signal interface, it should go online if everything went well. This can take some time since the synology is still starting up. But it should not take longer than 3 minutes
 
 
 
@@ -292,7 +292,7 @@ In the overview of the servers, you can see which is online or offline.
 
 A server online will appear in the overview with a green dot. A server offline will appear in the overview with a red dot.
 
-![server online.png](server_online.png 'size:=800x')
+![server online.png](server_online.png ':size=800')
 
 
 A server offline will appear in the overview with a red dot:
@@ -304,20 +304,20 @@ A server offline will appear in the overview with a red dot:
 
 Access the details of a specific server and check the firewall rules by selecting the corresponding strip within the table (avoid clicking on the buttons at the end). 
 
-![server detail.png](server_details.png 'size:=500x')
+![server detail.png](server_details.png ':size=500')
 
 
-![server_firewall_rules.png](server_firewall_rules.png 'size:=500x')
+![server_firewall_rules.png](server_firewall_rules.png ':size=500')
 
 
 ## Updating a server
 
- An update is available when a green icon is visible next to the name  ![icoon_update.png](/icoon_update.png )
+ An update is available when a green icon is visible next to the name  ![icoon_update.png](/icoon_update.png ':size=35')
 .
  
  By hovering over the icon, you can see which update it refers to.
  
-![update server.png](updating_server.png 'size:=500x')
+![update server.png](updating_server.png ':size=800')
 
  
  Actually updating the server can be done by clicking on the icon.
@@ -331,23 +331,22 @@ Access the details of a specific server and check the firewall rules by selectin
 
  
 
- ## Editing a server
+ ## Edit Server
   
  Servers can be edited by clicking on the yellow pencil icon next to their name 
 ![icon_edit.png](/icon_edit.png ':size=35').
   
-![edit server.png](/edit_server.png 'size:=500x')
+![edit server.png](/edit_server.png ':size=500')
 
   
   All  options are the same as when creating a server.
 
-## Deleting a server
+## Deleting Server
 
-Servers can be deleted by clicking on the red trash bin icon next to their name 
-![icon_delete.png](/icon_delete.png ':size=35').
+Servers can be deleted by clicking on the red trash bin icon next to their name![icon_delete.png](/icon_delete.png ':size=35').
 
 
 You will receive a warning before the device is permanently deleted:
 
-![deleting_server.png](delete_server.png 'size:=500x')
+![deleting_server.png](delete_server.png ':size=400')
 
