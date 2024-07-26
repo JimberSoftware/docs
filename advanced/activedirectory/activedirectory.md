@@ -126,6 +126,8 @@ It is also possible to configure the forwarding DNS servers here; configure them
 
 Once configured, reboot to ensure all records are properly set by the DC.
 
+## Signal Server Configuration
+
 ### Port configuration on signal server
 
 - #### Required ports
