@@ -14,6 +14,11 @@ To do so, enter the IP address DNS server and click on the apply button.
 
 ![integration_ad.png](integration_ad.png ":size=800")
 
+> [!INFO]
+> To activate this setting, you need to disable Microsoft Entra ID syncing as indicated.
+
+![disable_entra_id.png](disable_entra_id.png ":size=800")
+
 ## Microsoft Entra ID
 
 Synchronize your user data seamlessly from Azure Entra ID to the Network Isolation platform. This ensures that user information remains consistent across both platforms, providing ease of user management.

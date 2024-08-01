@@ -97,7 +97,7 @@ prominently located at the upper right corner of the interface.
 
 ## User properties
 
- In the overview of the users, you can already see some properties: the role of the user in the company (Admin or User), the platform role that is generally 'User' and whether if the user is enabled or not.
+ In the overview of the users, you can already see some properties: the role of the user in the company (Admin or User), the platform role that is generally 'User' and whether the user is enabled or not.
 
  ![overview_users.png](/overview_users.png ':size=800x150')
 

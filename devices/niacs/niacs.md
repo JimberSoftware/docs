@@ -21,7 +21,7 @@ A LAN port is typically used to connect local devices within a network. Typical 
 Once a device is connected, you can see the assigned IP address of the device in the overview of the NIACs. In this overview, you can also remove a device and activate or deactivate secure mode. The IP address is assigned via DHCP. 
 
 
-![niac_overview.png](/niac_overview.png ':size=920x')
+![niac_overview.png](/niac_overview.png ':size=800')
 
 
 > [!INFO]
@@ -34,7 +34,7 @@ Once a device is connected, you can see the assigned IP address of the device in
 
 
 
-## Create a NIAC
+## Create NIAC
 > [!WARNING]
 > Creating a NIAC can only be done by super admins of Jimber.
 
@@ -47,36 +47,39 @@ To create a NIAC into the platform, click on the `Create new` button
 prominently located at the upper right corner of the interface.
 
 
-![create_niac.png](/create_niac.png ':size=600x')
+![create_niac.png](/create_niac.png ':size=500')
 
 
 You can choose a hostname and it must be a lowercase string. 
 
+<!-- > [!WARNING]
+> A device that is connected to a NIAC will not be able to reach the internet unless the NIAC is member of a group of which the Wan Gateway is enabled. For instance: if a NIAC is member of the group WanGateway and in Group Details is Wan Configuration enabled for that group, the connected device will be able to reach the internet. -->
+
 > [!WARNING]
-> A device that is connected to a NIAC will not be able to reach the internet unless the NIAC is member of a group of which the Wan Gateway is enabled. For instance: if a NIAC is member of the group WanGateway and in Group Configuration is Wan Gateway enabled for that group, the connected device will be able to reach the internet.
+> A device that is connected to a NIAC will not be able to reach the internet unless the NIAC is member of a group of which the Wan Gateway is enabled. For instance: if a NIAC is member of the group WanGateway and in Group Configuration is Wan Gateway enabled for that group, the connected device will be able to reach the internet. -->
 
-![group_config.png](/group_config.png ':size=900x')
+![group_config.png](/group_config.png ':size=800')
 
-In the overview, you can find more details about the NIAC by clicking on the NIAC strip.
+<!-- ![group_details_niac.png](/group_details_niac.png ':size=600') -->
 
-![niac_details.png](/niac_details.png ':size=600x')
+In the overview, you can find more details about the NIAC by clicking on the corresponding strip.
 
-By clicking on the red trash bin icon you can release one of the devices connected to the NIAC. 
+![niac_details.png](/niac_details.png ':size=600')
 
-## Edit a NIAC
+By clicking on the red padlock icon you can release one of the devices connected to the NIAC. 
+
+## Edit NIAC
 NIACs can be edited by clicking on the yellow pencil icon next to their name 
-![pencil_2.png](/pencil_2.png)
-.
+![icon_edit.png](/icon_edit.png ':size=35').
 
 
 ![edit_niac.png](/edit_niac.png ':size=600x')
 
 
-## Remove a NIAC
+## Delete NIAC
 
-NIACs can be removed by clicking on the red trash bin icon next to their name 
-![recycle_bin.png](/recycle_bin.png)
-.
+NIACs can be deleted by clicking on the red trash bin icon next to their name 
+![icon_delete.png](/icon_delete.png ':size=35').
 
  You will receive a warning before the NIAC is permanently deleted:
  

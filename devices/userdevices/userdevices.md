@@ -34,7 +34,7 @@ As mentioned, download the latest 'Windows Client' from the 'Download' section i
 Open the downloaded file to install the 'Windows Client'.
 When a subsequent dialogue box emerges, please select 'Yes' to proceed.
 
-![windows-popup2.png](/windows-popup2.png ':size=300x')
+![windows-popup2.png](/windows-popup2.png ':size=300')
 
 To launch the software, either search for 'Jimber' using the Windows start menu or simply click on the newly created desktop icon.
 
@@ -90,13 +90,13 @@ Upon launching the software, the Jimber icon will become visible at the top righ
 
 Click on the Jimber icon and select 'Sign in'. This will launch a browser page for you to sign in.
 
-![mac-offline-tray.png](/mac-offline-tray.png ':size=300x'). 
+![mac-offline-tray.png](/mac-offline-tray.png ':size=300'). 
 
 > [!INFO]
 > Once successfully signed in, a green dot will appear on the tray icon as confirmation.
 
 
-![mac-tray-icon-online.png](/mac-online-tray.png ':size=300x')
+![mac-tray-icon-online.png](/mac-online-tray.png ':size=300')
 
 If you're yet to have a login, please reach out to your network administrator to set up an account for you.
 
@@ -112,32 +112,32 @@ Download the latest 'Linux Client' from the 'Download' section in your company's
 > [!INFO]
 > To download another specific version, you can use signal.jimber.io/clients.
 
-![linux-open-deb.png](linux-open-deb.png ':size=300x')
+![linux-open-deb.png](linux-open-deb.png ':size=300')
 
 In case you're using a default installer, simply double-clicking the file will install the program. 
 Without a default installer, you'll encounter the following window by double-clicking.
 
-![linux_no_defaultinstaller](linux_no_defaultinstaller.png ':size=800x')
+![linux_no_defaultinstaller](linux_no_defaultinstaller.png ':size=800')
 
 Close the window and browse to Downloads. Right-click on the icon and select 'Open With Other Application'. 
 
-![/linux_open_download](linux_open_download.png ':size=300x')
+![/linux_open_download](linux_open_download.png ':size=300')
 
 Choose 'Software Install': 
 
-![/linux_chose_software](linux_chose_software.png ':size=300x')
+![/linux_chose_software](linux_chose_software.png ':size=300')
 
 Choose 'Install' in the next screen:
 
-![/linux_install_software](linux_install_software.png ':size=300x')
+![/linux_install_software](linux_install_software.png ':size=300')
 
 Finally, access the program from your system menu by searching for 'Jimber Network Isolation'.
 
-![linux-search.png](/linux-search.png ':size=300x')
+![linux-search.png](/linux-search.png ':size=300')
 
 Upon launching the software, the Jimber icon will become visible at the top right of your screen, indicating that the Network Isolation service is now running.
 
-![linux-tray-icon.png](/linux-tray-icon.png ':size=200x')
+![linux-tray-icon.png](/linux-tray-icon.png ':size=200')
 
 Click on the Jimber icon and select 'Sign in'. This will launch a browser page for you to sign in. 
 
@@ -145,7 +145,7 @@ Click on the Jimber icon and select 'Sign in'. This will launch a browser page f
 > Once successfully logged in, a green dot will appear on the tray icon as confirmation.
 
 
-![linux-tray-logged-in.png](/linux_signed_in.png ':size=200x')
+![linux-tray-logged-in.png](/linux_signed_in.png ':size=200')
 
 If you're yet to have a login, please reach out to your network administrator to set up an account for you.
 
@@ -153,12 +153,13 @@ If you're yet to have a login, please reach out to your network administrator to
 
 ## User devices online/offline
 
-In the overview of user devices, you can see who is online or offline.
+In the overview of user devices, you can see who is online or offline:
 
-A user device online will appear at the top of the list in the overview with a green dot.
-A user device offline will appear in the overview with a red dot.
+- A user device online will appear at the top of the list in the overview with a green dot.
+- A user device offline will appear in the overview with a red dot.
+- A user device that does not support secure mode will appear in the overview with a green rectangle.
 
-![overview userdevices.png](overview_userdevices.png ':size=800x')
+![overview userdevices.png](overview_userdevices.png ':size=800')
 
 
 

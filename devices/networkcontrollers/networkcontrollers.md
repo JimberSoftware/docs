@@ -30,7 +30,7 @@ To address this concern, companies have the option to add an on-premise network 
 
 
 
-### On-Premise Network controller Types:
+### On-Premise Network Controller Types:
 1. **Virtual Appliance**: This is a software-based network controller that can be installed on virtualized infrastructure, making it easier to deploy, scale and manage.
 2. **Physical Appliance**: This is a tangible hardware device that is installed in the company's data center or networking closet.
 
@@ -43,7 +43,7 @@ To add a network controller into the platform, click on the `Create new` button
 prominently located at the upper right corner of the interface.
 
 
-![create_networkcontroller.png](/create_networkcontroller.png ':size=800')
+![create_networkcontroller.png](/create_networkcontroller.png ':size=500')
 
 > [!WARNING]
 > Hostname, Endpoint Address and Public IP are mandatory.
@@ -52,23 +52,21 @@ prominently located at the upper right corner of the interface.
 ## Edit on-premise Network Controller
 
  Network Controllers can be edited by clicking on the yellow pencil icon next to their name 
-![pencil_2.png](/pencil_2.png)
-.
+![icon_edit.png](/icon_edit.png ':size=35').
 
 
-![edit_networkcontroller.png](/edit_networkcontroller.png ':size=800')
+![edit_networkcontroller.png](/edit_networkcontroller.png ':size=500')
 
 
 ## Delete on-premise Network Controller
 
  Network Controllers can be removed by clicking on the red trash bin icon next to their name 
-![recycle_bin.png](/recycle_bin.png).
+![icon_delete.png](/icon_delete.png ':size=35').
 
  
  
 
-
-![delete_networkcontroller.png](/delete_networkcontroller.png ':size=600')
+![delete_networkcontroller.png](/delete_networkcontroller.png ':size=500')
 
 
 ## On-premise Network Controller minimum specifications
