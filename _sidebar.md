@@ -1,13 +1,13 @@
 <!-- docs/_sidebar.md -->
 * [JIMBER NETWORK ISOLATION](./)
   * [Getting Started](./gettingstarted/index)
-* Company
+* COMPANY
   * [Customers](./company/customers/customers)
   * [Users](./company/users/users)
   * [Groups](./company/groups/groups)
   * [Domains](./company/domains/domains)
   * [Integrations](./company/integrations/integrations)
-* Devices
+* DEVICES
   * [User Devices](./devices/userdevices/userdevices)
   * [Servers](./devices/servers/servers)
   * [Synology](./devices/synology/synology)
@@ -15,13 +15,16 @@
   * [Network Controllers](./devices/networkcontrollers/networkcontrollers)
   * [Network Controllers Installation](./devices/networkcontrollerssetup/SettingUpServer.md)
   * [Native Devices](./devices/nativedevices/nativedevices.md)
-* Rules
+* SECURITY
+  * [Scripts](./rules/scripts/scripts)
   * [Group Configuration](./rules/groupconfiguration/groupconfiguration)
-  * [Group Traffic](./rules/grouptraffic/grouptraffic)
   * [Web Filtering](./rules/webfiltering/webfiltering)
+  * [Group Traffic](./rules/grouptraffic/grouptraffic)
   * [Services](./rules/services/services)
+  * [Attribute Services](./rules/atttribute_services/atttribute_services)
+  * [Allow Custom Ports](./rules/allow_custom_ports/allow_custom_ports)
   * [Port Forwarding](./rules/portforwarding/portforwarding)
-* Advanced
+* ADVANCED
   * [Best Practices](./advanced/bestpractices/bestpractices)
   * [Custom Configuration](./advanced/customconfiguration/customconfiguration)
   * [Active Directory](./advanced/activedirectory/activedirectory)
