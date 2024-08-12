@@ -8,4 +8,4 @@ Please refer to the menu on the left to get more information about configuring y
 
 # Terms and Conditions
 
-You can find our terms and conditions [here](https://docs.jimber.io/terms/jimbertermsandconditions0324.pdf)
+You can find our terms and conditions [here](https://docs.jimber.io/terms/jimbertermsandconditions0824.pdf)
