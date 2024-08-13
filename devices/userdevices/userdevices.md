@@ -25,7 +25,7 @@ Open the page signal.jimber.io and download the client that matches your operati
 <!-- #### Windows <i class="mdi mdi-microsoft-windows"></i> -->
 
 #### **Windows**
-As mentioned, download the latest 'Windows Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Windows : [latest windows version](/https://signal.jimber.io/clients/windows-desktop-latest.msi)"
+As mentioned, download the latest 'Windows Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Windows : [latest windows version](https://signal.jimber.io/clients/windows-desktop-latest.msi)
 
 > [!INFO]
 > To download another specific version, you can use signal.jimber.io/clients.
@@ -42,7 +42,8 @@ To launch the software, either search for 'Jimber' using the Windows start menu 
 
 Upon launching the software, the Jimber icon will become visible at the bottom right of your screen, indicating that the Network Isolation service is now running. 
 
-In some cases the icon can be hidden in the system tray. By clicking on the arrow located on the left side of the system tray, it also displays the hidden icons.
+> [!INFO]
+> The Network Isolation icon  can be hidden. Use the up arrow icon ![arrow_up.png](/arrow_up.png ':size=30') if necessary to view hidden icons.
 
 ![windows-tray-icon.png](/windows-tray-icon.png ':size=400')
 
@@ -55,9 +56,6 @@ Click on the Jimber icon and select 'Sign in'. This will launch a browser page f
 
 
 ![windows-tray-logged-in.png](/windows-tray-logged-in.png ':size=400')
-
-> [!INFO]
-> The Network Isolation icon  can be hidden. Use the up arrow icon ![arrow_up.png](/arrow_up.png ':size=30') if necessary to view hidden icons.
 
 
 

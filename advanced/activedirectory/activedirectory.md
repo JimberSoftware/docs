@@ -21,6 +21,7 @@ This guide provides instructions for installing Network Isolation on a domain co
    - [Domain Client Testing - Enabling Secure Mode](#domain-client-testing-enabling-secure-mode)
 3. [Testing / Verification of Domain Communication](#testing--verification-of-domain-communication)
 4. [How to Map SMB shares](#mapping-smb-shares)
+5. [How to domain join a new use with a domain controller that has secure mode enabled](#_5-step-by-step-guide-domain-joining-a-new-user-with-secure-mode-enabled-on-the-domain-controller)
 
 
 ## Install Network Isolation on the Domain Controller
@@ -74,11 +75,8 @@ The installer can be found [here](https://signal.jimber.io/clients/windows-serve
   }
   ```
 
-  We need to add the token and the noDns flag.
+  We need to add the token.
 
-  > [!NOTE]
-  >   Enabling the nodns flag ensures that the Network Isolation client does not alter the computer's DNS settings.
-  
 
   We can find the token if we edit the server on Signal.
 
@@ -91,8 +89,7 @@ The installer can be found [here](https://signal.jimber.io/clients/windows-serve
   {
     "privateKey": "ZwcayfO6zvVWj6emhJr1j+FBa3ETt88IzXFxcMHkGY/L7sdabpyIa4B8SHa8HU72/L5TtYCClO5RE8pZgzo7GA==",
     "publicKey": "y+7HWm6ciGuAfEh2vB1O9vy+U7WAgpTuURPKWYM6Oxg=",
-    "token": "9hrkprdl05kbjopg",
-    "nodns": true
+    "token": "9hrkprdl05kbjopg"
   }
   ```
 
@@ -371,3 +368,38 @@ Check the Windows IP Configuration section. This section also contains some gene
   - The process of mapping SMB shares can present challenges, particularly when attempting to reuse existing mappings tied to domain names. The intricacy arises from Windows caching these entries and persistently attempting to connect to outdated shares. Despite accurate network isolation IP addresses appearing when resolving the domain name in the command prompt or a browser, Windows tends to cling to the old associations.
 
    - To circumvent this issue, it is advisable to either remove and remap the SMB shares once a functional connection is established or to modify existing policies and scripts. By doing so, you ensure the seamless and automatic provision of this essential functionality.
+
+### 5 Step-by-Step Guide: Domain Joining a New User with Secure Mode Enabled on the Domain Controller
+
+Joining a new user to a domain with secure mode enabled on the domain controller requires precise steps to ensure successful configuration. Follow these steps carefully to complete the process.
+
+## Step 1: Ensure User is Created
+Before proceeding, make sure that the new user account is created in the domain controller.
+
+## Step 2: Login as Local Administrator
+1. **Log in to the device** as a **local administrator**.
+
+## Step 3: Install and Configure Network Isolation
+1. Install network isolation software if it’s not already installed.
+2. **Configure network isolation** according to your organization's policies.
+
+
+## Step 4: Domain Join the User
+1. **Domain join the user.**
+2. **Restart the device** after the domain join process is complete.
+
+
+## Step 5: Login as Local Administrator Again
+1. **Log in to the device** as a **local administrator** once more.
+2. Start network isolation.
+
+## Step 6: Switch User or Lock the Device
+1. **Switch user** or **lock the device**. **Do not log out.**
+
+## Step 7: Login with the Domain Joined User
+1. **Login with the domain joined user**.
+2. Complete the first login process.
+3. **Restart the device** after the first login is complete.
+
+
+Following these steps ensures that the new user is successfully joined to the domain with secure mode enabled on the domain controller.

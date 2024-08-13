@@ -1,6 +1,6 @@
 # Groups
 
-Groups in the network setting act as a valuable mechanism for applying uniform network rules across multiple users, servers, and Network Isolation Access Clients (NIACs). An important factor to remember is that all devices allocated under the same PRIMARY group inherently share the same subnet, thereby ensuring a unified network interface.
+Groups in the network setting act as a valuable mechanism for applying uniform network rules across multiple users, servers, and Network Isolation Access Clients (NIACs).
 
 The concept of groups brings a high level of versatility and control to your network management. For instance, a group named 'Developers' could be set up, with rules allowing them to communicate with the devices in the 'Servers' group. Simultaneously, a separate group such as 'Sales' could be configured to not have this access, thereby segmenting network interactions based on job function or department.
 
@@ -42,6 +42,7 @@ prominently located at the upper right corner of the interface.
 > Please ensure to configure the group settings in such a way that there is no overlap with your organization's existing physical network, VPNs, or any other networks accessed by your staff.
 
 Creating a new group requires a group name that can be updated later as needed.
+Creating a new group requires a group name that can be updated later as needed.
 
 ![create_group.png](/create_group.png ':size=500')
 
@@ -70,7 +71,6 @@ Groups can be deleted by clicking on the red trash bin icon next to their name
 
 
 ![delete_group.png](/delete_group.png ':size=500')
-
 
 
 > [!WARNING]
