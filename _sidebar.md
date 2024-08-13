@@ -21,8 +21,8 @@
   * [Web Filtering](./rules/webfiltering/webfiltering)
   * [Group Traffic](./rules/grouptraffic/grouptraffic)
   * [Services](./rules/services/services)
-  * [Attribute Services](./rules/atttribute_services/atttribute_services)
-  * [Allow Custom Ports](./rules/allow_custom_ports/allow_custom_ports)
+  * [Attribute Services](./rules/attribute_services/attribute_services)
+  * [Allow Custom Ports](./rules/customports/customports)
   * [Port Forwarding](./rules/portforwarding/portforwarding)
 * ADVANCED
   * [Best Practices](./advanced/bestpractices/bestpractices)

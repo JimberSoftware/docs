@@ -20,12 +20,21 @@ prominently located at the upper right corner of the interface.
                     
 The hostname is mandatory and must be alphanumeric. Select the appropriate network controller and enter the valid IP address.
 
+> [!INFO] 
+> Once the native device is created the admin needs to add a 'Allow Custom Port' rule that gives specific groups access to the native device (under destination)
+
+ **For example:**
+
+ Here group testers77 can ping to the native device called 'joskepc-staging.com'. All other groups can't reach the native device unless specifically said so by adding a new 'Allow Custom Port' rule.
+
+
 ## Edit Native Device
   
  A native device can be edited by clicking on the yellow pencil icon next to its name ![icon_edit.png](/icon_edit.png ':size=35').
  
   ![edit_native.png](/edit_native.png ':size=500x350')
-  
+
+   
   
   ## Delete Native Device
 

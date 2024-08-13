@@ -295,9 +295,6 @@ A server online will appear in the overview with a green dot. A server offline w
 ![server online.png](server_online.png ':size=800')
 
 
-A server offline will appear in the overview with a red dot:
-
-
 
 
 ## Details and firewall rules of a server

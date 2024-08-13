@@ -1,10 +1,18 @@
 # Services
 
-## Create Service
-
 Within our platform, a "Service" refers to a digital service that is accessible by a user. These services can encompass a variety of applications and resources, including websites/web portals, remote desktops, and internal CRMs (Customer Relationship Management systems). 
 
 Once a service is attributed to a group and a destination, the service entries will appear in the "Security Panel" of the user.
+The Security Panel can be reached by clicking on the Jimber Network Isolation icon in the taskbar:
+
+![security_panel.png](/security_panel.png ':size=300')
+
+A security panel with multiple services can look like this:
+
+![security_panel_overview.png](/security_panel_overview.png ':size=800')
+
+
+## Create Service
 
 To create a service into the platform, click on the `Create new` button
 
