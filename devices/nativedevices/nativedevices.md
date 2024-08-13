@@ -21,11 +21,19 @@ prominently located at the upper right corner of the interface.
 The hostname is mandatory and must be alphanumeric. Select the appropriate network controller and enter the valid IP address.
 
 > [!INFO] 
-> Once the native device is created the admin needs to add a 'Allow Custom Port' rule that gives specific groups access to the native device (under destination)
+> Once the native device is created the admin needs to add a 'Allow Custom Port' rule that gives specific groups access to the native device (under destination).
 
  **For example:**
 
- Here group testers77 can ping to the native device called 'joskepc-staging.com'. All other groups can't reach the native device unless specifically said so by adding a new 'Allow Custom Port' rule.
+ We create a native device 'Websitetest':
+
+![example_native_device.png](/example_native_device.png ':size=800')
+
+ Now we add a new 'Allow Custom Port' rule where group testers77 can ping to the native device called 'Websitetest'. 
+ 
+ ![allow_custom_ports_2.png](/allow_custom_ports_2.png ':size=800')
+ 
+ All other groups can't reach the native device unless specifically said so by adding a new 'Allow Custom Port' rule.
 
 
 ## Edit Native Device
