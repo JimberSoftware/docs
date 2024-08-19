@@ -3,17 +3,22 @@
 >[!INFO]
 > Support is currently provided for Synology NAS running **DMS 7+**. If you're using an earlier version, please update or contact our support team for guidance.
 
-### Inital setup - `Optional`
-These steps are only required if you need to reset your nas or if you need to find the IP address. 
-<!-- tabs:start -->
-
-#### **Reset synology nas.**
-
-> [!INFO]
-> **Note:** Only perform if you wish to reset to factory settings.
+### Initial setup - `Optional`
 
 > [!WARNING]
-> **Note:** This will remove everything!
+> These steps are only required if you need to reset your NAS or if you need to find the IP address. 
+
+
+<!-- tabs:start -->
+
+#### **Reset Synology NAS**
+
+<!-- > [!INFO]
+> **Note:** Only perform if you wish to reset to factory settings. -->
+
+> [!WARNING]
+> Only perform if you wish to reset to factory settings.
+> This will remove everything!
 
   1. On the NAS back, locate the reset button.
   2. Press and hold for ~5 seconds until a beep sounds.
@@ -41,11 +46,14 @@ Wait until it is turned off, then press the power button again. Wait until you h
 #### Preparation
 Go to https://signal.jimber.io/ and add a new server to the signal interface. 
 
-![Add server to signal](add-server-to-signal.png 'size:=800x')
+![create_synology](create_synology.png ':size=500')
 
-Make sure to copy over the **Token** and **Hostname** to a notepad. 
+Make sure to copy the **Token** and **Hostname** to a notepad. 
 
-By default you will be able to access the nas through the hostname (Note on Windows you will have to append **.local**. Any alias you assign to the device will also be resolvable. If DNS Override is enabled.)
+By default you will be able to access the NAS through the hostname. 
+
+>[!INFO]
+> On Windows you will have to append **.local**. Any alias you assign to the device will also be resolvable if **DNS Override** is enabled.
 
 ##### Create a synology login for network isolation
 
@@ -59,19 +67,25 @@ The user will need the following access & permissions:
 
 ##### Enable SSH - Only required during the installation. 
 
-![Enable SSH](synology-enable-ssh.png 'size:=800x')
+![Enable SSH](synology-enable-ssh.png ':size=700')
 
-![Enable SSH](synology-enable-ssh2.png 'size:=800x')
+![Enable SSH](synology-enable-ssh2.png ':size=700')
 
 ##### Download the correct package for your synology.
 
-![Find the correct synology package](head-to-synology-downloads.png 'size:=800x')
-![Find the correct synology package](head-to-synology-downloads2.png 'size:=800x')
-![Find the correct synology package](head-to-synology-downloads3.png 'size:=800x')
-![Find the correct synology package](find-synology-version.png 'size:=800x')
-![Find the correct synology package](head-to-synology-downloads4.png 'size:=800x')
+<!-- ![Find the correct synology package](head-to-synology-downloads.png ':size=300x')
+![Find the correct synology package](head-to-synology-downloads2.png ':size:700x')
+![Find the correct synology package](head-to-synology-downloads3.png ':size=500x')
+![Find the correct synology package](find-synology-version.png ':size=800x')
+![Find the correct synology package](head-to-synology-downloads4.png ':size=500x') -->
 
-This will download the latest SPK version for your nas.
+![Find the correct synology package](choose_download_syn.png ':size=200')
+![Find the correct synology package](download_synology.png ':size=700')
+![Find the correct synology package](download_syn_warning.png ':size=500x250')
+![Find the correct synology package](find-synology-version.png ':size=700')
+![Find the correct synology package](choose_model.png ':size=500x250')
+
+This will download the latest SPK version for your NAS.
 
 ##### Installation
 

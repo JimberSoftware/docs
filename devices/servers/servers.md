@@ -25,14 +25,18 @@ prominently located at the upper right corner of the interface.
 
 
 #### **Windows**
+
+> [!INFO] 
+> First create your server (see above).
+
 Download the latest version for the 'Windows Server' from https://signal.jimber.io/downloads (no need to login).
 
 
 Once downloaded, decompress the file and initiate the .msi installation file by double-clicking it.
 
-A dialog box will emerge—confirm the process by selecting 'Yes.'
+<!-- A dialog box will emerge—confirm the process by selecting 'Yes.' -->
 
-Subsequently, open the file **`settings.json`** located at C:\Program Files\Jimber\ as an **Administrator**. 
+<!-- Subsequently, open the file **`settings.json`** located at C:\Program Files\Jimber\ as an **Administrator**. 
 In this file, enter the token you were provided upon creating the server within the Network Isolation interface. 
  
   
@@ -47,24 +51,34 @@ In this file, enter the token you were provided upon creating the server within 
 
 > [!WARNING] 
 **Attention!** Don't forget the comma at the end of lines and the quotation marks!
-Ensure to save the changes made to the file.
+Ensure to save the changes made to the file. -->
+
+
+Starting Jimber Network Isolation, a dialog box will emerge: 
+
+![jimber_server_settings.png](/jimber_server_settings.png ':size=500')
+
+The required token can be retrieved from the 'Servers' tab within the Signal Server Interface. Simply select and edit the  correct server to find it.
+
+![token.png](/token.png ':size=500')
+
+After filling in the token and pressing the submit button, a pop-up appears stating that the server configuration has been submitted and the service has been restarted:
+
+
+![settings_updated.png](/settings_updated.png ':size=400')
 
 
 
 
-The required token can be retrieved from the 'Servers' tab within the Signal server interface. Simply select and edit an existing server to find it.
+<!-- Access the 'services' panel by entering 'services.msc' into the start menu's search bar. Within this panel, find the 'Jimber Network Isolation' service and initiate a restart.
 
 
-![edit_server.png](/edit_server.png ':size=500')
+![services_jimber.png](/services_jimber.png ':size=800') -->
 
 
-Access the 'services' panel by entering 'services.msc' into the start menu's search bar. Within this panel, find the 'Jimber Network Isolation' service and initiate a restart.
+Upon successful installation, the server should display a connected status (indicated by a green dot) in the Network Isolation Interface. 
 
-
-![services_jimber.png](/services_jimber.png ':size=800')
-
-
-Upon successful restart, the server should display a connected status (indicated by a green dot) in the Network Isolation interface. For any necessary troubleshooting, consult the log file at this location: 
+For any necessary troubleshooting, consult the log file at this location: 
 `C:\Program Files\Jimber\jimbernetworkisolation.log`
 
 #### **Linux**
