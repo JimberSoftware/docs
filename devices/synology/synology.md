@@ -91,16 +91,16 @@ This will download the latest SPK version for your NAS.
 
 Follow the sequence shown in the screenshots below to properly install the SPK.
 
-![Install the SPK](install-spk.png 'size:=800x')
-![Install the SPK](install-spk2.png 'size:=800x')
-![Install the SPK](install-spk3.png 'size:=800x')
-![Install the SPK](install-spk4.png 'size:=800x')
-![Install the SPK](install-spk5.png 'size:=800x')
-![Install the SPK](install-spk6.png 'size:=800x')
+![Install the SPK](install-spk.png ':size=800')
+![Install the SPK](install-spk2.png ':size=800')
+![Install the SPK](install-spk3.png ':size=800'')
+![Install the SPK](install-spk4.png ':size=800')
+![Install the SPK](install-spk5.png ':size=800')
+![Install the SPK](install-spk6.png ':size=800')
 
-Wait about 30 to 60 seconds and now you will see that the nas has been successfully added to network isolation. (Indicated by the green circle next to the name.)
+Wait about 30 to 60 seconds and now you will see that the NAS has been successfully added to Network Isolation, indicated by the green dot next to the name.
 
-![Nas online](nas-online.png 'size:=800x')
+![NAS online](nas-online.png ':size=800')
 
 ##### Most commonly used ports for the synology nas
 
