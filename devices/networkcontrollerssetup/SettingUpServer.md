@@ -27,7 +27,7 @@ In the window "Guided storage configuration", you can hit 'Done'. You get an ove
 
 <!-- Then you will see a window with the message “Confirm destructive action”. This is a warning that all data on the used disks will be lost. Only in case of starting this process by mistake, you can choose here for “Continue”. -->
 
-In the next window you have to confirm that all data on the used disks may be lost. You can choose here for “Continue”. 
+In the next window you have to confirm that all data on the used disks may be lost. Choose here for “Continue”. 
 
 ![installation_server_nc.png](/installation_server_nc.png ':size=500')
 
@@ -35,7 +35,7 @@ The installation process will then begin and can take several minutes.
 
 ![installation_server_nc_2.png](/installation_server_nc_2.png ':size=500')
 
-While Network Isolation is installing,  you can create your Network Controller on https://signal.jimber.io.  You can find more explanation on how to do so [here](https://docs.jimber.io/#/./devices/networkcontrollers/networkcontrollers)
+While Network Isolation is installing,  you can create your Network Controller on https://signal.jimber.io.  You can find more explanation on how to do so [here](https://docs.jimber.io/#/./devices/networkcontrollers/networkcontrollers).
 
 Data you need:
 - Your Public IP. Use https://whatismyipaddress.com/ if necessary. 
@@ -45,11 +45,14 @@ Data you need:
 > [!WARNING]
 > After installation is complete, reboot the system.
 
+![nc_reboot.png](/nc_reboot.png ':size=500')
+
 **Continuation of the installation**
 
-You need this data to proceed:
+You need this data to proceed (hit "Enter" if necessary):
 - username: jimber
 - password: jimber
+
 
 ![installation_server_nc_5.png](/installation_server_nc_5.png ':size=500')
 
@@ -63,9 +66,9 @@ Attention, this data is case-sensitive.  -->
 
 After a few minutes you have to enter and re-enter the password for the Jimber-user. This is a password of your choice.
 
-![nc_password.png](/nc_password.png ':size=400')
+![password_nc.png](/password_nc.png ':size=300')
 
-![nc_success.png](/nc_success.png ':size=400')
+![nc_success.png](/nc_success.png ':size=300')
 
 Eventually, you will get the screen below.
 
@@ -80,9 +83,13 @@ Then, you have to fill in your Network Controller **token** you had to copy in a
 
 The following message will appear:
 
-![nc_settings_updated.png](/nc_settings_updated.png ':size=400')
+![settings_update_nc.png](/settings_update_nc.png ':size=300')
 
-Click on ![2_computers.png](/2_computers.png ':size=50') in the bottom right corner and choose Connection Information.
+Hit the OK button. 
+
+<!-- ![nc_settings_updated.png](/nc_settings_updated.png ':size=400') -->
+
+Click on ![2_computers.png](/2_computers.png ':size=50') in the bottom right corner (next to the date and time display) and choose Connection Information.
 
 
 ![nc_info.png](/nc_info.png ':size=500')
@@ -91,11 +98,11 @@ The displayed IP address must be entered as the endpoint address for the on-prem
  
 ![nc_endpoint.png](/nc_endpoint.png ':size=500')
 
-Restart the server to complete the installation.
-
+Restart the server to complete the installation. You need to re-enter the login and the chosen password.
+![re_enter_password.png](re_enter_password.png ':size=500')
 
 Shortly after, there should be a green dot visible next to the created network controller.
-![success.png](success.png ':size=800')
+![success.png](success.png ':size=500')
 
 ### Hypervisor installation
 

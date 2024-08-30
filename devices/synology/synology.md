@@ -20,7 +20,7 @@
 > Only perform if you wish to reset to factory settings.
 > This will remove everything!
 
-  1. On the NAS back, locate the reset button.
+  1. Locate the reset button on the back of the NAS.
   2. Press and hold for ~5 seconds until a beep sounds.
   3. Quickly press and hold again until 3 distinct beeps are heard.
   4. Await a final beep signaling the reset completion.
