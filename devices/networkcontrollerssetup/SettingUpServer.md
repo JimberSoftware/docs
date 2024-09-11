@@ -42,7 +42,7 @@ Data you need:
 - Token: copy it!
 - Endpoint Address: see next step.
 
-> [!WARNING]
+> [!Warning]
 > After installation is complete, reboot the system.
 
 ![nc_reboot.png](/nc_reboot.png ':size=500')
@@ -55,7 +55,6 @@ You need this data to proceed (hit "Enter" if necessary):
 
 
 ![installation_server_nc_5.png](/installation_server_nc_5.png ':size=500')
-
 
 <!-- Now, you get the message “Welcome to Jimber NC”.
 
@@ -99,6 +98,7 @@ The displayed IP address must be entered as the endpoint address for the on-prem
 ![nc_endpoint.png](/nc_endpoint.png ':size=500')
 
 Restart the server to complete the installation. You need to re-enter the login and the chosen password.
+
 ![re_enter_password.png](re_enter_password.png ':size=500')
 
 Shortly after, there should be a green dot visible next to the created network controller.
@@ -124,21 +124,7 @@ When installing the network controller on-prem on ESXi, you need to make sure to
 
 #### Hyper-V
 
-When installing the network controller on-prem on Hyper-V, you need to choose legacy boot mode instead of EFI mode. This can be done in the settings of the virtual machine.
-
-<!-- ##### Installing Hyper-V on a server (standard installation)
-
-In the Server Manager, choose Add Roles and Features on the tab Manage. 
-
-![server_manager.png](server_manager_2.png ':size=500')
-
-In the next screen 'Before you begin' click Next.
-Then you have to select the installation type. Here you can choose Role-based or feature installation. 
-In the following step you have to choose the destination server, mostly that will be a server from te server pool. Choose the right server. 
-
-Choose the Server Role Hyper-V in the next step, add the required features. That will include .Net Framework 4.8 Features, if not already installed. 
-After that you can choose next until you have to confirm installation selection. By clicking on Install Hyper-V will install on your server.  
-After installation a restart is required. 
+When installing a virtual machine on Hyper-V, you can choose for a virtual machine of the first generation or a virtual machine of the second generation.
 
 ##### Creating a Hyper-V server
 
@@ -146,5 +132,61 @@ Open the Hyper-V manager:
 
 ![hyperv_manager.png](hyperv_manager.png ':size=500')
 
-Select the server and in the column Actions choose `New Virtual Machine`. --> 
 
+Select the server and in the menu-item Actions choose `New Virtual Machine`. Follow the steps of the Wizard:
+
+![start_wizard.png](start_wizard.png ':size=500')
+
+
+1. Specify name and location
+2. Specify generation. 
+> [!Note]
+> If you don't see this option, it means you have an older version of Hyper-V. That is no problem.
+
+Here you have to choose between Generation 1 or Generation 2. If you are not sure which one to choose, you can consult this page: https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v 
+
+3. Assign memory: 4 GB. Activate the option 'Use Dynamic Memory for this virtual machine'.
+4. Configure network: choose for New Virtual Switch.
+5. Create virtual disk: at least 25 GB.
+6. Installation options: iso-file.
+
+![installation_options.png](installation_options.png ':size=500')
+7. Next step is a summary of the chosen options. After hitting the 'Finish'-button the installation begins as described above.
+
+> [!Warning]
+> After installation you have to restart the server and you could face this error message:
+>![cdrom_mount_failed.png](cdrom_mount_failed.png ':size=500')
+
+
+
+<!-- tabs:start -->
+
+
+
+###### **First generation**
+
+In the list of Virtual Machines, choose in the quick menu of the virtual machine 'Settings':
+
+![boot_order_gen1.PNG](boot_order_gen1.PNG ':size=500')
+
+Change the **startup order** to IDE. In the 'Action'-menu of the virtual machine choose 'Reset'. 
+Now the Network Controller should start.  
+
+ 
+###### **Second generation**
+
+In the list of Virtual Machines, choose in the quick menu of the virtual machine 'Settings'.
+
+1. Choose the option Security and  uncheck the option 'Enable Secure Boot'.
+
+![secure_boot.png](secure_boot.png ':size=500')
+
+
+2. Choose the option Firmware and change the **boot order** to Hard Drive. 
+
+![boot_order_gen2.PNG](boot_order_gen2.PNG ':size=500')
+
+In the 'Action'-menu of the virtual machine choose 'Reset'. 
+Now the Network Controller should start.  
+
+<!-- tabs:end -->
