@@ -102,7 +102,7 @@ To resolve this:
    Install the necessary software components:
 
    ```bash
-   opkg install wireguard-tools redis-server nano iptables-mod-nfqueue iptables kmod-ipt-nat iptables-mod-conntrack-extra bash libnetfilter-queue
+   opkg install wireguard-tools redis-server nano iptables-mod-nfqueue iptables kmod-ipt-nat iptables-mod-conntrack-extra bash libnetfilter-queue coreutils-stat
    ```
 
 ---
