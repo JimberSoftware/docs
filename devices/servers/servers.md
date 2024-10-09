@@ -8,13 +8,14 @@ To create a server in the Security platform, click on the `Create new` button
 
 prominently located at the upper right corner of the interface.
 
-
-![add_server.png](create_server.png ':size=500')
-
  
 > [!INFO] 
 > Hostname is mandatory and must be a lowercase string.
 
+- Hostname
+- Primary group
+
+> Hostname must be a lowercase string.
 
 ## Server installation
 
@@ -31,7 +32,6 @@ prominently located at the upper right corner of the interface.
 
 Download the latest version for the 'Windows Server' from https://signal.jimber.io/downloads (no need to login).
 
-
 Once downloaded, decompress the file and initiate the .msi installation file by double-clicking it.
 
 <!-- A dialog box will emerge—confirm the process by selecting 'Yes.' -->
@@ -43,9 +43,9 @@ In this file, enter the token you were provided upon creating the server within 
 
 ```json
 {
- "publicKey": "l7D1+dm...",
- "privateKey": "ENjN41TJE7WEU76T...",
- "token": "YOUR_TOKEN"
+  "publicKey": "l7D1+dm...",
+  "privateKey": "ENjN41TJE7WEU76T...",
+  "token": "YOUR_TOKEN"
 }
 ```
 
@@ -86,7 +86,6 @@ For any necessary troubleshooting, consult the log file at this location:
 > [!INFO] 
 > Support is currently provided for the latest LTS versions of Ubuntu. For other OS distributions, please reach out to our support team.
 
-
 Download the latest version for the 'Linux Server' from https://signal.jimber.io/downloads (no need to login).
 
 ```bash
@@ -109,17 +108,20 @@ The required token can be retrieved from the 'Servers' tab within the Signal ser
 
 ```json
 {
- "publicKey": "l7D1+dm...",
- "privateKey": "ENjN41TJE7WEU76T...",
- "token": "YOUR_TOKEN"
+  "publicKey": "l7D1+dm...",
+  "privateKey": "ENjN41TJE7WEU76T...",
+  "token": "YOUR_TOKEN"
 }
 ```
 > [!WARNING]
 > **Attention**! Don't forget the comma at the end of lines and the quotation marks!
 Ensure to save the changes made to the file.
 
+> **Attention**! Don't forget the comma at the end of lines and the quotation marks!
+> Ensure to save the changes made to the file.
 
 Restart the service by executing the following command:
+
 ```bash
 sudo systemctl restart jimbernetworkisolation.service
 ```
@@ -170,6 +172,7 @@ Access the details of a specific server and check the firewall rules by selectin
 
 ![server_firewall_rules.png](server_firewall_rules.png ':size=500')
 
+![server_firewall_rules.png](server_firewall_rules.png "size:=500x")
 
 ## Updating a server
 
@@ -185,10 +188,16 @@ Access the details of a specific server and check the firewall rules by selectin
 > [!INFO]
 > In case of a successful update, the update icon disappears. 
 
+![update server.png](updating_server.png "size:=500x")
+
+Actually updating the server can be done by clicking on the icon.
+
+> In case of a successful update, the update icon disappears.
 
 >[!WARNING]
 > The update icon is not visible when the server is offline.
 
+## Editing a server
 
  
 
@@ -199,13 +208,13 @@ Access the details of a specific server and check the firewall rules by selectin
   
 ![edit server.png](/edit_server.png ':size=500')
 
-  
-  All  options are the same as when creating a server.
+![edit server.png](/edit_server.png "size:=500x")
+
+All options are the same as when creating a server.
 
 ## Deleting Server
 
 Servers can be deleted by clicking on the red trash bin icon next to their name![icon_delete.png](/icon_delete.png ':size=35').
-
 
 You will receive a warning before the device is permanently deleted:
 
