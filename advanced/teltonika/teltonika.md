@@ -13,6 +13,17 @@ This guide provides step-by-step instructions for installing and configuring Ope
 
 ---
 
+---
+
+### Limitations
+
+Because of hardware limitations, following functionality is not available on Teltonika devices: 
+- DNS Filtering using filter lists
+
+---
+
+
+
 ### 1. Install OpenWRT on Teltonika RUT950/RUT955
 
 1. **Transfer the OpenWRT firmware to the device:**
@@ -95,6 +106,9 @@ To resolve this:
    /etc/init.d/firewall disable
    /etc/init.d/uhttpd disable
    /etc/init.d/uhttpd stop
+   /etc/init.d/dnsmasq disable
+   /etc/init.d/dnsmasq stop
+   
    ```
 
 3. **Install essential packages:**
