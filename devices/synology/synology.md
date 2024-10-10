@@ -75,6 +75,7 @@ The user will need the following access & permissions:
   - ssh 
 
 **Creating a new user** can be realized in 'Control Panel', 'User & Group':
+
 ![control_panel](control_panel.png ':size=500') 
 
 Please take note of the chosen **username** and **password**. 
@@ -99,27 +100,38 @@ Download the correct package for your Synology.
 ![Find the correct synology package](head-to-synology-downloads4.png ':size=500x') -->
 
 ![Find the correct synology package](choose_download_syn.png ':size=200')
-![Find the correct synology package](download_synology.png ':size=700')
-![Find the correct synology package](download_syn_warning.png ':size=500x250')
-![Find the correct synology package](info_center.png ':size=500')
-![Find the correct synology package](choose_model.png ':size=500x250')
+![Find the correct synology package](download_synology.png ':size=700') 
+
+![Find the correct synology package](download_syn_warning.png ':size=500x250') 
+
+![Find the correct synology package](info_center.png ':size=500') 
+
+![Find the correct synology package](choose_model.png ':size=500x250') 
 
 This will download the latest SPK version for your NAS.
 
 ##### Installation
 
+Choose Package Center in the taskbar and then Manuel Install in the right upper corner.
+
+![Install the SPK](install-spk.png ':size=700')
+
 Follow the sequence shown in the screenshots below to properly install the SPK.
 
-![Install the SPK](install-spk.png ':size=800')
-![Install the SPK](install-spk2.png ':size=800')
-![Install the SPK](install-spk3.png ':size=800'')
-![Install the SPK](install-spk4.png ':size=800')
-![Install the SPK](install-spk5.png ':size=800')
-![Install the SPK](install-spk6.png ':size=800')
+![Install the SPK](install-spk2.png ':size=700')
+![Install the SPK](install-spk3.png ':size=700')
+
+![Install the SPK](install-spk5.png ':size=700')
+![Install the SPK](install-spk6.png ':size=700')
+
+After installation you get the message that the installation was successful.
+
+![Install the SPK](install_syn_succes.png ':size=500')
+
 
 Wait about 30 to 60 seconds and now you will see that the NAS has been successfully added to Network Isolation, indicated by the green dot next to the name.
 
-![NAS online](nas-online.png ':size=800')
+![NAS online](nas-online.png ':size=500')
 
 ##### Most commonly used ports for the Synology NAS
 

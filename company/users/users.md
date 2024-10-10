@@ -40,8 +40,8 @@ prominently located at the upper right corner of the interface.
   - To activate Network Isolation, hit the slider.
   
     ![access_control.png](/access_control.png ':size=500x300')
-  
 
+  
 <!-- > [!INFO]
 >  Before adding a user, a domain name must be added first. The users email address must use the added domain name. -->
 
@@ -70,7 +70,11 @@ prominently located at the upper right corner of the interface.
 
         ![create_sec_cons.png](/create_sec_cons.png ':size=500x300')
 
-      -After creating that user (e.g.: ' user_sec_cons@testdomein2.be') select the correct **customer** and then the option "Users". Create a new user, using the user just created in previous step (' user_sec_cons@testdomein2.be'). That user becomes a Security Consultant for that company.
+      -After creating that user (e.g.: ' user_sec_cons@testdomein2.be') select the correct **Customer** and then the option "Users". Choose 
+       ![btn_add_consultant.png](/btn_add_consultant.png ':size=150x25')
+      
+      
+      The email that must provided is the one of the user just created in previous step (' user_sec_cons@testdomein2.be'). That user becomes a Security Consultant for that company.
 
       ![add_sec_cons.png](/add_sec_cons.png ':size=500x300')
 

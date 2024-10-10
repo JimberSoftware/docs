@@ -39,6 +39,7 @@ Just after creating the customer, no assets will obviously be visible yet.
 ## Edit customer
 Customers can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/icon_edit.png ':size=35;35').
 
+![edit_customer.png](/edit_customer.png ':size=500')
 
 > [!WARNING]
 > Changing the partner will remove all current security consultant roles
