@@ -96,7 +96,7 @@ sudo dpkg -i linux-server-latest.deb
 ```
 
 Upon completion of the installation, a new `settings.json` file will be automatically created in the `/etc/jimber/`directory.
-Open this file using the text editor of your choice. Within this file, you'll notice an empty token along with newly created public and private keys.
+Open this file using the text editor of your choice. Within this file, you'll notice the newly created public and private keys.
 
 In this file, enter the token you were provided upon creating the server within the Network Isolation interface.
 
