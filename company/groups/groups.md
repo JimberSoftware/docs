@@ -54,6 +54,16 @@ Access the details of a specific group by selecting the corresponding strip with
 
 ![group_details.png](/group_details.png ':size=800')
 
+> [!NOTE]
+> Devices and users can only be added to the group from their own page:
+>
+>    - Comprehensive information on Group Traffic Rules, Attribute Services and Custom Ports Rules can be found in the SECURITY section of the sidebar.
+>    - Comprehensive information on Group Configuration can be found [here](/./rules/groupconfiguration/groupconfiguration.md)
+>    - Comprehensive information on how to add users can be found [here](/./company/users/users.md).
+>    - Comprehensive information on how to add devices can be found in the DEVICES section of the sidebar.
+
+
+
 
 ## Edit Group
 Groups can be edited by clicking on the yellow pencil icon next to their name ![icon_edit.png](/icon_edit.png ':size=35').
@@ -61,6 +71,18 @@ Groups can be edited by clicking on the yellow pencil icon next to their name ![
  You'll then be able to adjust the group name as needed:
 
 ![edit_group.png](/edit_group.png ':size=500')
+
+
+## Copy Group
+Groups can be copied by clicking on the copy icon next to their name ![icon_copy_group.png](/icon_copy_group.png ':size=35').
+
+ You'll then be able to copy the group:
+
+![copy_group.png](/copy_group.png ':size=500')
+
+> [!NOTE]
+> The name of the new group is then `copy of ...` and can be changed. 
+
 
 
 
@@ -76,3 +98,6 @@ Groups can be deleted by clicking on the red trash bin icon next to their name
 > [!WARNING]
 > The group will be removed without further notice.
 
+
+
+[devices]: /./devices

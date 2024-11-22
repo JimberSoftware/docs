@@ -10,7 +10,7 @@ To do so, enter the IP address DNS server and click on the apply button.
 ## Active Directory
 
 > [!INFO]
-> Comprehensive information can be found [here](/advanced/activedirectory/activedirectory.md).
+> Comprehensive information can be found [here](/./advanced/activedirectory/activedirectory.md).
 
 ![integration_ad.png](integration_ad.png ":size=800")
 
@@ -24,13 +24,15 @@ To do so, enter the IP address DNS server and click on the apply button.
 Synchronize your user data seamlessly from Azure Entra ID to the Network Isolation platform. This ensures that user information remains consistent across both platforms, providing ease of user management.
 
 > [!INFO]
-> Comprehensive information can be found [here](/advanced/entraid/entraid.md ":size=800").
+> Comprehensive information can be found [here](/./advanced/entraid/entraid.md).
 
 ![micro_entra_id.png](micro_entra_id.png ":size=800")
 
 ### **Steps to Enable Synchronization**:
 
-1. **Network Isolation Group**: The name of a group on Microsoft Entra ID where all groups that should be synchronized are a member of. All member groups of this group (and their users) will be synced to Network Isolation.
+<!-- 1. **Network Isolation Group**: The name of a group on Microsoft Entra ID where all groups that should be synchronized are a member of. All member groups of this group (and their users) will be synced to Network Isolation. -->
+
+1. **SASE Group**: The name of a group on Microsoft Entra ID where all groups that should be synchronized are a member of. All member groups of this group (and their users) will be synced to Network Isolation.
 
 2. **Tenant ID**: A unique identifier that represents your Microsoft Entra ID organization.
 

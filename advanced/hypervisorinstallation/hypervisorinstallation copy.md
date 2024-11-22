@@ -45,7 +45,6 @@ Here you have to choose between Generation 1 or Generation 2. If you are not sur
 6. Installation options: iso-file.
 
 ![installation_options.png](installation_options.png ':size=500')
-
 7. Next step is a summary of the chosen options. After hitting the 'Finish'-button the installation begins as described above.
 
 > [!Warning]

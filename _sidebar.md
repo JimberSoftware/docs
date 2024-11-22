@@ -1,6 +1,8 @@
 <!-- docs/_sidebar.md -->
-* [JIMBER NETWORK ISOLATION](./)
+* **JIMBER SASE Platform**
   * [Getting Started](./gettingstarted/index)
+  * [Best Practices](./advanced/bestpractices/bestpractices)
+  
 * COMPANY
   * [Customers](./company/customers/customers)
   * [Users](./company/users/users)
@@ -25,7 +27,6 @@
   * [Allow Custom Ports](./rules/customports/customports)
   * [Port Forwarding](./rules/portforwarding/portforwarding)
 * ADVANCED
-  * [Best Practices](./advanced/bestpractices/bestpractices)
   * [Custom Configuration](./advanced/customconfiguration/customconfiguration)
   * [Active Directory](./advanced/activedirectory/activedirectory)
   * [Microsoft Entra ID](./advanced/entraid/entraid)

@@ -1,4 +1,4 @@
-# How to setup Microsoft Azure
+# How to setup Microsoft Entra ID
 
 ## Create an account
 
@@ -82,7 +82,7 @@ In the next screen, click on 'New client secret'. Choose a description and an ex
 ![new_client_secret.png](/new_client_secret.png ":size=900")
 
 > [!WARNING]
-> When the token expires, manual action is needed to ensure that Azure AD Sync keeps working.
+> When the token expires, manual action is needed to ensure that Entra ID Sync keeps working.
 
 Following information is needed for setup in Jimber Network Isolation:
 

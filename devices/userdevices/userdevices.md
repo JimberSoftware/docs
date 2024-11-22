@@ -28,7 +28,7 @@ Open the page signal.jimber.io and download the client that matches your operati
 As mentioned, download the latest 'Windows Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Windows : [latest windows version](https://signal.jimber.io/clients/windows-desktop-latest.msi)
 
 > [!INFO]
-> To download another specific version, you can use signal.jimber.io/clients.
+> To download another specific version, you can use this [link](https://signal.jimber.io/clients).
 
 
 Open the downloaded file to install the 'Windows Client'.
@@ -68,7 +68,7 @@ If you don't have a login yet, please reach out to your network administrator to
 As mentioned, download the latest 'Mac Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Mac : [latest mac version](https://signal.jimber.io/clients/mac-x64-latest.dmg)"
 
 > [!INFO]
-> To download another specific version, you can use signal.jimber.io/clients.
+> To download another specific version, you can use this [link](https://signal.jimber.io/clients).
 
 Install the Network Isolation Client by dragging the 'JimberNetworkIsolation' icon into your 'Applications' folder.
 
@@ -108,7 +108,7 @@ If you're yet to have a login, please reach out to your network administrator to
 Download the latest 'Linux Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Linux : [latest Linux version](https://signal.jimber.io/clients/linux-desktop-latest.deb)
 
 > [!INFO]
-> To download another specific version, you can use signal.jimber.io/clients.
+> To download another specific version, you can use this [link](https://signal.jimber.io/clients).
 
 ![linux-open-deb.png](linux-open-deb.png ':size=300')
 

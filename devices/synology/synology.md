@@ -91,7 +91,11 @@ Enable SSH can be realized in 'Control Panel', 'Terminal & SNMP':
 
 #### Installing Network Isolation on your Synology
 
-Download the correct package for your Synology.
+Download the latest version for your Synology from [downloads](https://signal.jimber.io/downloads) (no need to login) or use the link in the sidebar.
+
+> [!INFO]
+> To download another specific version, you can use this [link](https://signal.jimber.io/clients).
+
 
 <!-- ![Find the correct synology package](head-to-synology-downloads.png ':size=300x')
 ![Find the correct synology package](head-to-synology-downloads2.png ':size:700x')
@@ -143,5 +147,5 @@ Ports
 - 445
 
 
-[Learn how to configure rules.](../../rules/rules.md)
+**Configuring rules** to be found in the SECURITY section of the sidebar.
 

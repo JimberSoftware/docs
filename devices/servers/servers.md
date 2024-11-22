@@ -12,10 +12,6 @@ prominently located at the upper right corner of the interface.
 > [!INFO] 
 > Hostname is mandatory and must be a lowercase string.
 
-- Hostname
-- Primary group
-
-> Hostname must be a lowercase string.
 
 ## Server installation
 
@@ -31,6 +27,9 @@ prominently located at the upper right corner of the interface.
 > First create your server (see above).
 
 Download the latest version for the 'Windows Server' from https://signal.jimber.io/downloads (no need to login).
+
+> [!INFO]
+> To download another specific version, you can use this [link](https://signal.jimber.io/clients).
 
 Once downloaded, decompress the file and initiate the .msi installation file by double-clicking it.
 
@@ -88,6 +87,9 @@ For any necessary troubleshooting, consult the log file at this location:
 
 Download the latest version for the 'Linux Server' from https://signal.jimber.io/downloads (no need to login).
 
+> [!INFO]
+> To download another specific version, you can use this [link](https://signal.jimber.io/clients).
+
 ```bash
 sudo apt update
 sudo apt install wireguard
@@ -96,15 +98,16 @@ sudo dpkg -i linux-server-latest.deb
 ```
 
 Upon completion of the installation, a new `settings.json` file will be automatically created in the `/etc/jimber/`directory.
+<!-- This file must be completed with the token you were provided upon creating the server within the SASE Platform interface. This can be established with the following command:
+
+```bash
+sudo jimberfw -config
+```
+![token_linux_server.png](/token_linux_server.png ':size=300') -->
+
 Open this file using the text editor of your choice. Within this file, you'll notice an empty token along with newly created public and private keys.
 
-In this file, enter the token you were provided upon creating the server within the Network Isolation interface.
-
-The required token can be retrieved from the 'Servers' tab within the Signal server interface. Simply select and edit an existing server to find it.
-
-
-![edit_server.png](/edit_server.png ':size=500')
-
+In this file, enter the token you were provided upon creating the server within the SASE Platform interface.
 
 ```json
 {
@@ -117,8 +120,15 @@ The required token can be retrieved from the 'Servers' tab within the Signal ser
 > **Attention**! Don't forget the comma at the end of lines and the quotation marks!
 Ensure to save the changes made to the file.
 
-> **Attention**! Don't forget the comma at the end of lines and the quotation marks!
-> Ensure to save the changes made to the file.
+
+
+
+The required token can be retrieved from the 'Servers' tab within the Signal server interface. Simply select and edit an existing server to find it.
+
+
+![edit_server.png](/edit_server.png ':size=500')
+
+
 
 Restart the service by executing the following command:
 
@@ -138,7 +148,7 @@ cat /var/log/jimber/jimbernetworkisolation.log
 
 #### **Synology**
 
-[Click here to see how to setup your synology nas](devices/synology/synology.md)
+[Click here to see how to setup your synology nas](/./devices/synology/synology.md)
 
 #### **Raspberry pi**
 
@@ -147,6 +157,9 @@ Requirements:
 
 Follow the Linux installation but use the following deb file instead: 
 - https://signal.jimber.io/clients/rpi-latest.deb
+
+> [!INFO]
+> To download another specific version, you can use this [link](https://signal.jimber.io/clients).
 
 All other configuration is exactly the same.
 

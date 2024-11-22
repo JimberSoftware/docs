@@ -1,4 +1,4 @@
-# Group configuration
+# Group Configuration
 In the group configuration you can define different behavior per group. Options can be enabled or disabled, or custom properties for specific options can be set.
 
 ## WAN Gateway

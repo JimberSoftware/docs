@@ -116,7 +116,7 @@ Restart the domain controller now so that all services properly recognize the ne
 
 - #### Configuring dns forwarding for signal server
 
- Go to your Signal server page and head to settings. On the top, you will find a setting to configure the DNS forwarder. Clients that have DNS override enabled will be filtered through our DNS service, but domain-specific queries will still be resolved by the server you specify in this field. You should add the Network Isolation IP of the Domain Controller.
+ Go to your Signal Server page and head to Integrations. On the top, you will find a setting to configure the DNS forwarder. Clients that have DNS override enabled will be filtered through our DNS service, but domain-specific queries will still be resolved by the server you specify in this field. You should add the Network Isolation IP of the Domain Controller.
     
 ![Signal Server Forwarder](/ad-signal-server-forwarder.png)
 

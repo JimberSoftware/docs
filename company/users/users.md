@@ -22,7 +22,8 @@ prominently located at the upper right corner of the interface.
 
 ![create_user.png](create_user.png ':size=500x300')
 
-
+> [!WARNING]
+>  Username cannot be changed after creating a user! 
 
 ### User Roles and their permissions
 
@@ -101,7 +102,7 @@ prominently located at the upper right corner of the interface.
 
 ## User properties
 
- In the overview of the users, you can already see some properties: the role of the user in the company (Admin or User), the platform role that is generally 'User' and whether the user is enabled or not.
+ In the overview of the users, you can already see some properties: the role of the user in the company (Admin or User), the platform role that is generally 'User' and whether or not the user and Secure Mode are enabled.
 
  ![overview_users.png](/overview_users.png ':size=800x150')
 

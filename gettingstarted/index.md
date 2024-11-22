@@ -1,10 +1,10 @@
-# Jimber Network Isolation Getting Started Guide
+# Jimber SASE Platfrom Getting Started Guide
 
 ## Introduction
 
-Network Isolation is a total network security solution that can help you protect your network from cyberthreats. By isolating your network, you can prevent unauthorized users from accessing sensitive data and applications.
+Jimber SASE Platform is a total network security solution that can help you protect your network from cyberthreats. By isolating your network, you can prevent unauthorized users from accessing sensitive data and applications.
 
-This guide will show you how to become a member of highly secure companies worldwide using `Jimber Network Isolation`
+This guide will show you how to become a member of highly secure companies worldwide using `Jimber SASE Platform`
 
 
 ## Steps
@@ -18,7 +18,7 @@ This guide will show you how to become a member of highly secure companies world
 5. [Create servers](./devices/servers/servers)
 6. [Create NIACs](./devices/niacs/niacs)
 7. [Create network controllers](./devices/networkcontrollers/networkcontrollers)
-8. [Configuring rules](./rules/rules)
+8. **Configuring rules** to be found in the SECURITY section of the sidebar.
 
 
 ## Contact

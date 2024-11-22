@@ -1,6 +1,6 @@
 # Network Isolation - NIAC
 
-Network Isolation Access Client (NIAC) is a specialized hardware device engineered to enable secure network connections. It can be integrated with a broad range of devices, including printers, IP cameras, hard drives, and industrial machinery. By serving as a distinct gateway for these devices, NIACs enhance accessibility, ensuring that all data in transit remains encrypted for utmost security.
+Network Isolation Access Client (NIAC) is a specialized hardware device engineered to enable secure network connections. It can be integrated with a broad range of devices, including printers, IP cameras, hard drives and industrial machinery. By serving as a distinct gateway for these devices, NIACs enhance accessibility, ensuring that all data in transit remains encrypted for utmost security.
 
 
 ![niacs.png](/niacfront.png ':size=300')
@@ -9,13 +9,12 @@ Network Isolation Access Client (NIAC) is a specialized hardware device engineer
 ![niacs.png](/niacback.png ':size=300')
 
 
-At the NIAC, there are 4 ports available: one WAN port for internet connection, two LAN ports, and one USB port. The USB port is currently not supported, so network devices can be connected.
+At the NIAC, there are 4 ports available: one WAN port for internet connection, two LAN ports, and one USB port. The USB port is currently not supported, so only network devices can be connected.
 A LAN port is typically used to connect local devices within a network. Typical devices that can be connected to a LAN port include:
 - Computers (desktops, laptops)
-- Smartphones
 - Smart TVs
 - Network storage devices (NAS)
-- Network printer
+- Network printers
 - ...
 
 Once a device is connected, you can see the assigned IP address of the device in the overview of the NIACs. In this overview, you can also remove a device and activate or deactivate secure mode. The IP address is assigned via DHCP. 
@@ -56,7 +55,7 @@ You can choose a hostname and it must be a lowercase string.
 > A device that is connected to a NIAC will not be able to reach the internet unless the NIAC is member of a group of which the Wan Gateway is enabled. For instance: if a NIAC is member of the group WanGateway and in Group Details is Wan Configuration enabled for that group, the connected device will be able to reach the internet. -->
 
 > [!WARNING]
-> A device that is connected to a NIAC will not be able to reach the internet unless the NIAC is member of a group of which the Wan Gateway is enabled. For instance: if a NIAC is member of the group WanGateway and in Group Configuration is Wan Gateway enabled for that group, the connected device will be able to reach the internet. -->
+> A device that is connected to a NIAC will not be able to reach the internet unless the NIAC is member of a group of which the Wan Gateway is enabled. For instance: if a NIAC is member of the group WanGateway and in Group Configuration is Wan Gateway enabled for that group, the connected device will be able to reach the internet.
 
 ![group_config.png](/group_config.png ':size=800')
 
