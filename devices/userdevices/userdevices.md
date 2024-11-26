@@ -156,9 +156,12 @@ In the overview of user devices, you can see who is online or offline:
 - A user device online will appear at the top of the list in the overview with a green dot.
 - A user device offline will appear in the overview with a red dot.
 - A user device that does not support secure mode will appear in the overview with a green rectangle.
+- A user device that requires an update will appear in the overview with a yellow warning triangle.
 
-![overview userdevices.png](overview_userdevices.png ':size=800')
+![overview userdevices.png](overviewuserdevices.png ':size=800')
 
+<!-- ![overview_userdevices.png](overview_userdevices.png ':size=800') -->
+ 
 
 
 ## Delete user device
