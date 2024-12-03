@@ -98,14 +98,14 @@ sudo dpkg -i linux-server-latest.deb
 ```
 
 Upon completion of the installation, a new `settings.json` file will be automatically created in the `/etc/jimber/`directory.
-<!-- This file must be completed with the token you were provided upon creating the server within the SASE Platform interface. This can be established with the following command:
+This file must be completed with the token you were provided upon creating the server within the SASE Platform interface. This can be established with the following command:
 
 ```bash
 sudo jimberfw -config
 ```
-![token_linux_server.png](/token_linux_server.png ':size=300') -->
+![token_linux_server.png](/token_linux_server.png ':size=300') 
 
-Open this file using the text editor of your choice. Within this file, you'll notice an empty token along with newly created public and private keys.
+<!-- Open this file using the text editor of your choice. Within this file, you'll notice an empty token along with newly created public and private keys.
 
 In this file, enter the token you were provided upon creating the server within the SASE Platform interface.
 
@@ -118,7 +118,7 @@ In this file, enter the token you were provided upon creating the server within 
 ```
 > [!WARNING]
 > **Attention**! Don't forget the comma at the end of lines and the quotation marks!
-Ensure to save the changes made to the file.
+Ensure to save the changes made to the file. -->
 
 
 
@@ -170,6 +170,7 @@ All other configuration is exactly the same.
 In the overview of the servers, you can see which is online or offline.
 
 A server online will appear in the overview with a green dot. A server offline will appear in the overview with a red dot.
+For a server with an extra green arrow, an update is available.
 
 ![server online.png](server_online.png ':size=800')
 

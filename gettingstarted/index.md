@@ -11,7 +11,7 @@ This guide will show you how to become a member of highly secure companies world
 
 1. [Create Customers](./company/customers/customers)
 > [!NOTE]
-> **(This step is only for integrators who want to add a customer.)**
+> **(This step is only for partners who want to add a customer.)**
 2. [Create domains](./company/domains/domains)
 3. [Create users](./company/users/users)
 4. [Create groups](./company/groups/groups)

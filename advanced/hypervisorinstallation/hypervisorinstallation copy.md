@@ -1,8 +1,6 @@
 ### Hypervisor installation
 
-Hypervisor installation is widely used. It's a very convenient way of working. The major advantage is that the network controller server can be installed on existing hardware. Therefore, there's no need for a physical device. However, there are some settings you need to consider.
-
-The following minimum hardware settings must also be set:    
+The following minimum hardware settings must be set:    
   - 2 cores
   - 4 GB RAM
   - 25 GB of hard disk space

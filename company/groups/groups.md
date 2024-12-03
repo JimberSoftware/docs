@@ -76,12 +76,11 @@ Groups can be edited by clicking on the yellow pencil icon next to their name ![
 ## Copy Group
 Groups can be copied by clicking on the copy icon next to their name ![icon_copy_group.png](/icon_copy_group.png ':size=35').
 
- You'll then be able to copy the group:
+ You'll then be able to choose a name for the new group:
 
 ![copy_group.png](/copy_group.png ':size=500')
 
-> [!NOTE]
-> The name of the new group is then `copy of ...` and can be changed. 
+The new group will show the same details as the original group: firewall rules, group traffic rules, port rules and attributed services.
 
 
 
@@ -100,4 +99,4 @@ Groups can be deleted by clicking on the red trash bin icon next to their name
 
 
 
-[devices]: /./devices
+<!-- [devices]: /./devices -->

@@ -2,7 +2,7 @@
 > [!WARNING]
 > This *`Customers`* section is exclusively available for **partners**. If you are an end customer, you will be directly redirected to the Network Isolation configuration of your company.
 
-In our platform, a **customer** refers to a company intending to use Network Isolation. Integrators have the capability to manage these customers, ensuring seamless operations and service delivery.
+In our platform, a **customer** refers to a company intending to use `Jimber SASE Platform`. Integrators have the capability to manage these customers, ensuring seamless operations and service delivery.
 
 For clarity, consider a scenario where a company named *`Astral Voyage`* wants to use Network Isolation. You must first create *`Astral Voyage`* as a customer on the platform before any further configurations or service provisions can occur.
 
