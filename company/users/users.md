@@ -63,7 +63,7 @@ prominently located at the upper right corner of the interface.
 
    - **How to add a security consultant:**
 
-      - Go to the partner of the customer where you want to add the security consultant to. In the example, that is **User2**. 
+      - Go to the partner of the customer where you want to add the security consultant to. In the example, that is **Testpartner**. 
 
        ![user_in_integrator.png](/user_in_integrator.png ':size=800')
 
@@ -71,11 +71,11 @@ prominently located at the upper right corner of the interface.
 
         ![create_sec_cons.png](/create_sec_cons.png ':size=500x300')
 
-      -After creating that user (e.g.: ' user_sec_cons@testdomein2.be') select the correct **Customer** and then the option "Users". Choose 
+      -After creating that user (e.g.: ' user3@tel.net') select the correct **Customer** and then the option "Users". Choose 
        ![btn_add_consultant.png](/btn_add_consultant.png ':size=150x25')
       
       
-      The email that must provided is the one of the user just created in previous step (' user_sec_cons@testdomein2.be'). That user becomes a Security Consultant for that company.
+      The email that must provided is the one of the user just created in previous step (' user3@tel.net'). That user becomes a Security Consultant for that company.
 
       ![add_sec_cons.png](/add_sec_cons.png ':size=500x300')
 

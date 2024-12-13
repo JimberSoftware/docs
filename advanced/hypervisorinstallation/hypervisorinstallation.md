@@ -10,10 +10,15 @@ The following minimum hardware settings must be set:
 
 #### VMware ESXi
 
-When installing the network controller on-prem on ESXi, you need to make sure to select BIOS as the firmware type:
+Setting the hardware: 
+
+![virt_hardware esxi.png](virt_hardware_esxi.png ':size=500')
 
 
-![esxi_specs.png](esxi_specs.png ':size=700')
+Setting the options: make sure to select BIOS as the firmware type.
+
+
+![vm_options esxi.png](vm_options_esxi.png ':size=500')
 
 
 #### Hyper-V
@@ -46,7 +51,7 @@ Here you have to choose between Generation 1 or Generation 2. If you are not sur
 
 ![installation_options.png](installation_options.png ':size=500')
 
-7. Next step is a summary of the chosen options. After hitting the 'Finish'-button the installation begins as described above.
+7. Next step is a summary of the chosen options. After hitting the 'Finish'-button the installation begins as described [here](/./devices/networkcontrollerssetup/SettingUpServer.md).
 
 > [!Warning]
 > After installation you have to restart the server and you could face this error message:
