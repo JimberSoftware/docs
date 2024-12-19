@@ -35,6 +35,15 @@ The hostname is mandatory and must be alphanumeric. Select the appropriate netwo
  
  All other groups can't reach the native device unless specifically said so by adding a new 'Allow Custom Port' rule.
 
+> [!INFO] 
+> You can also add attribute services. 
+
+Choose the native device as 'Destination'.
+
+![add_attr_services.png](/add_attr_services.png ':size=800')
+
+
+
 
 ## Edit Native Device
   

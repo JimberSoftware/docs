@@ -39,7 +39,7 @@ To add an access rule, write a description, define start and end ports and choos
 
 In any case, you will receive a warning if the service was not submitted:
 
-![unsaved_changes.png](/unsaved_changes.png ':size=500x175')
+![unsaved_changes.png](/unsaved_changes.png ':size=400')
 
 ## Edit Service
 Services can be edited by clicking on the yellow pencil icon next to their name 

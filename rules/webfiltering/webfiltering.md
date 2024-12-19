@@ -28,4 +28,4 @@ To configure web filtering, follow the steps below:
 
 A warning appears for unsaved changes:
 
-![unsaved_changes.png](/unsaved_changes.png ':size=500x175')
+![unsaved_changes.png](/unsaved_changes.png ':size=400')
