@@ -26,6 +26,10 @@ Following fields should be provided:
 
 > [!WARNING]
 >  In the customer name, spaces and special characters/symbols are not allowed. You can add the full name in "Display name"
+## List of customers
+
+![list_customers.png](/list_customers.png ':size=800')
+
 
 ## Select customer  
 

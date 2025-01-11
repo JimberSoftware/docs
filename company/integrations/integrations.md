@@ -1,5 +1,12 @@
 # Integrations
 
+## Credentials: API Key
+
+API keys are a way to authenticate and grant access to various resources of an application or platform via its API. They are typically used to facilitate the interaction of third-party software with your application, enabling automation, integration, and other advanced functionalities.
+
+![api_key.png](api_key.png)
+
+
 ## DNS
 
 A DNS forwarder redirects DNS queries from one server to another. It's useful for managing and speeding up DNS queries by redirecting requests to a faster or more updated DNS server than the one set by default.
@@ -14,10 +21,10 @@ To do so, enter the IP address DNS server and click on the apply button.
 
 ![integration_ad.png](integration_ad.png ":size=800")
 
-> [!INFO]
+<!-- > [!INFO]
 > To activate this setting, you need to disable Microsoft Entra ID syncing as indicated.
 
-![disable_entra_id.png](disable_entra_id.png ":size=800")
+![disable_entra_id.png](disable_entra_id.png ":size=800") -->
 
 ## Microsoft Entra ID
 
@@ -43,6 +50,4 @@ Synchronize your user data seamlessly from Azure Entra ID to the Network Isolati
 > [!WARNING]
 > Ensure that you have appropriate permissions in Microsoft Entra ID to enable synchronization and always backup user data in Network Isolation before starting the process.
 
-## API Keys
 
-API keys are a way to authenticate and grant access to various resources of an application or platform via its API. They are typically used to facilitate the interaction of third-party software with your application, enabling automation, integration, and other advanced functionalities.
