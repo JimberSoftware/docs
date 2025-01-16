@@ -67,16 +67,21 @@ If you don't have a login yet, please reach out to your network administrator to
 #### **Mac**
 As mentioned, download the latest 'Mac Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Mac : [latest mac version](https://signal.jimber.io/clients/mac-x64-latest.dmg)"
 
+In the Downloads folder, you will find the file `SASE-Mac-1.XX.0.dmg`(XX stands for the version number).
+
+
+![mac_version.png](/mac_version.png ':size=100')
+
 > [!INFO]
 > To download another specific version, you can use this [link](https://signal.jimber.io/clients).
 
-Install the Network Isolation Client by dragging the 'JimberNetworkIsolation' icon into your 'Applications' folder.
+Double-click on this file and install the Network Isolation Client by dragging the 'JimberNetworkIsolation' icon into your 'Applications' folder.
 
-![mac-download.png](/mac_download.png ':size=500')
+![mac_download.png](/mac_download.png ':size=500')
 
- A pop-up appears to alert you that you have downloaded a file from the internet, asking if you indeed want to open the file. You can safely answer 'Open' to this prompt.
+ A pop-up may appear to alert you that you have downloaded a file from the internet, asking if you indeed want to open the file. You can safely answer 'Open' to this prompt.
 
-![mac-install_1.png](/mac_install_1.png )
+![mac_install_1.png](/mac_install_1.png )
 
 Following the installation, you'll find the JimberNetworkIsolation icon in your Launchpad. Simply search for 'JimberNetworkIsolation' and press 'Enter' to launch the application.
 
