@@ -45,4 +45,7 @@ Synchronize your user data seamlessly from Azure Entra ID to the Network Isolati
 
 ## API Keys
 
+> [!INFO]
+> Comprehensive information can be found [here](/./company/users/personalaccesstokens.md).
+
 API keys are a way to authenticate and grant access to various resources of an application or platform via its API. They are typically used to facilitate the interaction of third-party software with your application, enabling automation, integration, and other advanced functionalities.
