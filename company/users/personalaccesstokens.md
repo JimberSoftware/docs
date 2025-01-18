@@ -2,7 +2,7 @@
 
 Any admin user can create a PAT (personal access token) under the Integrations page. This token allows the user to access the API calls.
 
-![integrations_x_pat.png](/integrations_x_pat.png)
+![integrations_pat.png](/integrations_pat.png)
 
 Creating a PAT will give you a token that can only be seen once. Please copy this token and save it somewhere secure.
 
