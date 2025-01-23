@@ -1,10 +1,10 @@
 # Integrations
 
-## Credentials: API Key
+<!-- ## Credentials: API Key
 
 API keys are a way to authenticate and grant access to various resources of an application or platform via its API. They are typically used to facilitate the interaction of third-party software with your application, enabling automation, integration, and other advanced functionalities.
 
-![api_key.png](api_key.png)
+![api_key.png](api_key.png) -->
 
 
 ## DNS
