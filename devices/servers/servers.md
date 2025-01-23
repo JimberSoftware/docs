@@ -150,10 +150,10 @@ cat /var/log/jimber/jimbernetworkisolation.log
 
 [Click here to see how to setup your synology nas](/./devices/synology/synology.md)
 
-#### **Raspberry pi**
+#### **Raspberry Pi**
 
 Requirements:
-- Default raspbian installation 
+- Default Raspbian installation 
 
 Follow the Linux installation but use the following deb file instead: 
 - https://signal.jimber.io/clients/rpi-latest.deb
@@ -186,7 +186,6 @@ Access the details of a specific server and check the firewall rules by selectin
 
 ![server_firewall_rules.png](server_firewall_rules.png ':size=500')
 
-![server_firewall_rules.png](server_firewall_rules.png "size:=500x")
 
 ## Updating a server
 
@@ -195,23 +194,17 @@ Access the details of a specific server and check the firewall rules by selectin
  
  By hovering over the icon, you can see which update it refers to.
  
-![update server.png](updating_server.png ':size=800')
+![update server.png](updating_server.png ':size=500')
 
  
  Actually updating the server can be done by clicking on the icon.
+
 > [!INFO]
 > In case of a successful update, the update icon disappears. 
 
-![update server.png](updating_server.png "size:=500x")
-
-Actually updating the server can be done by clicking on the icon.
-
-> In case of a successful update, the update icon disappears.
 
 >[!WARNING]
 > The update icon is not visible when the server is offline.
-
-## Editing a server
 
  
 
@@ -222,7 +215,6 @@ Actually updating the server can be done by clicking on the icon.
   
 ![edit server.png](/edit_server.png ':size=500')
 
-![edit server.png](/edit_server.png "size:=500x")
 
 All options are the same as when creating a server.
 
