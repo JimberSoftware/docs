@@ -158,15 +158,12 @@ If you're yet to have a login, please reach out to your network administrator to
 
 In the overview of user devices, you can see who is online or offline:
 
-- A user device online will appear at the top of the list in the overview with a green dot.
-- A user device offline will appear in the overview with a red dot.
+- A user device online will appear at the top of the list in the overview with a green pc icon.
+- A user device offline will appear in the overview with a red pc icon.
+- A mobile user device online will appear in the overview with a green mobile device icon. 
 - A user device that requires an update will appear in the overview with a yellow warning triangle.
-- A green rectangle in the overview is a mobile user device.
 
 ![overview userdevices.png](overviewuserdevices.png ':size=800')
-
-<!-- ![overview_userdevices.png](overview_userdevices.png ':size=800') -->
- 
 
 
 ## Delete user device

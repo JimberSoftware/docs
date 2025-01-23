@@ -41,6 +41,10 @@ In any case, you will receive a warning if the service was not submitted:
 
 ![unsaved_changes.png](/unsaved_changes.png ':size=400')
 
+
+After creating the service you can switch to [Attribute Services](/./rules/attribute_services/attribute_services.md) to specify the details of the service.
+
+
 ## Edit Service
 Services can be edited by clicking on the yellow pencil icon next to their name 
 ![icon_edit.png](/icon_edit.png ':size=35').

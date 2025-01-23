@@ -17,6 +17,8 @@ Name must be between 3 and 253 characters.
 
 Depending on the platform, the script must be written in PowerShell (Windows) or Bash Script (other platforms).
 
+Different scripts can be executed when a client or server connects to or disconnects from Signal, depending on the selected platform.
+
 ## Edit User Device Script
 
 Scripts can be edited by clicking on the yellow pencil icon next to their name ![icon_edit.png](/icon_edit.png ':size=35').
