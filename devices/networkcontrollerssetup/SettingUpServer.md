@@ -56,53 +56,46 @@ You need this data to proceed (hit "Enter" if necessary):
 
 ![installation_server_nc_5.png](/installation_server_nc_5.png ':size=500')
 
-<!-- Now, you get the message “Welcome to Jimber NC”.
+Select option 3
 
-![welcome_to_jimber_nc.png](/welcome_to_jimber_nc.png ':size=500')
-Choose the second option: “Configure Network Controller” and enter the name of your company. 
+![menu.png](./menu.png)
 
-Attention, this data is case-sensitive.  -->
-
-After a few minutes you have to enter and re-enter the password for the Jimber-user. This is a password of your choice.
-
-![password_nc.png](/password_nc.png ':size=300')
-
-![nc_success.png](/nc_success.png ':size=300')
-
-Eventually, you will get the screen below.
-
-![nc_start.png](/nc_start.png ':size=500')
-
-Click on the Network Isolation icon in the bottom left corner and choose Network Controller Configuration.
-
-![nc_configuration_2.png](/nc_configuration_2.png ':size=500')
+On browser of pc on same network, go to that url
+use this IP for the endpoint address on the signal platform to create the network controller
+![ip_configuration.png](./ip_configuration.png)
 
 
-Then, you have to fill in your Network Controller **token** you had to copy in a previous stage, choose your WAN-interface and hit Submit.
+Login with jimber
+![web_login](./web_login.png)
 
-The following message will appear:
+Set a new password, note that it has to be at least 16 characters long!
+![web_new_password.png](./web_new_password.png)
 
-![settings_update_nc.png](/settings_update_nc.png ':size=300')
+Select the right network configuration and then click on 'test connection'. If successful you can go to the next step.
 
-Hit the OK button. 
+If it fails please check the NC has internet connection and config is correct in the webUI.
+![web_config.png](./web_config.png)
 
-<!-- ![nc_settings_updated.png](/nc_settings_updated.png ':size=400') -->
+Go to the signal platform and copy the token of the network controller you just created. You can find the token by editing the network controller with the yellow pencil.
 
-Click on ![2_computers.png](/2_computers.png ':size=50') in the bottom right corner (next to the date and time display) and choose Connection Information.
+![signal_token.png](./signal_token.png)
 
+Paste this token into the web configuration of the network controller. Then hit next
 
-![nc_info.png](/nc_info.png ':size=500')
+![web_token.png](./web_token.png)
 
-The displayed IP address must be entered as the endpoint address for the on-premise Network Controller. 
- 
-![nc_endpoint.png](/nc_endpoint.png ':size=500')
+Please wait a moment when you see this screen:
 
-Restart the server to complete the installation. You need to re-enter the login and the chosen password.
+![web_wait.png](./web_wait.png)
 
-![re_enter_password.png](re_enter_password.png ':size=500')
+when the connection is established you will get the following screen
 
-Shortly after, there should be a green dot visible next to the created network controller.
-![success.png](success.png ':size=500')
+![web_done.png](./web_done.png)
+
+Confirm that your network controller is now online on the signal platform under the network controller page
+
+![signal_nc_online.png](./signal_nc_online.png)
+
 
 ### Hypervisor installation
 
