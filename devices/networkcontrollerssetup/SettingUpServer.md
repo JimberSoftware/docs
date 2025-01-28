@@ -56,16 +56,19 @@ You need this data to proceed (hit "Enter" if necessary):
 
 ![installation_server_nc_5.png](/installation_server_nc_5.png ':size=500')
 
-Select option 3
+On the next screen select option 3 to show the ip configuration of the network controller.
 
 ![menu.png](./menu.png)
 
-On browser of pc on same network, go to that url
-use this IP for the endpoint address on the signal platform to create the network controller
+Now use a pc that is on the same network as the network controller and go to the shown web url of option 3. This web interface is used to further setup the network controller.
+
+> [!Note]
+>Use the IP shown to finish creating the network controller on the signal platform, this IP can be filled in under the endpoint address.
+
 ![ip_configuration.png](./ip_configuration.png)
 
 
-Login with jimber
+Login with jimber on the web interface
 ![web_login](./web_login.png)
 
 Set a new password, note that it has to be at least 16 characters long!
@@ -73,7 +76,7 @@ Set a new password, note that it has to be at least 16 characters long!
 
 Select the right network configuration and then click on 'test connection'. If successful you can go to the next step.
 
-If it fails please check the NC has internet connection and config is correct in the webUI.
+If it fails please check that the network controller has internet connection and the config is correct in the web interface.
 ![web_config.png](./web_config.png)
 
 Go to the signal platform and copy the token of the network controller you just created. You can find the token by editing the network controller with the yellow pencil.
@@ -88,7 +91,7 @@ Please wait a moment when you see this screen:
 
 ![web_wait.png](./web_wait.png)
 
-when the connection is established you will get the following screen
+when the connection is established you will get the following screen:
 
 ![web_done.png](./web_done.png)
 
