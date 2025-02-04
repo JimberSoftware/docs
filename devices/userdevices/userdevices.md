@@ -154,9 +154,9 @@ If you're yet to have a login, please reach out to your network administrator to
 
 <!-- tabs:end -->
 
-## User devices online/offline
+## User device online/offline
 
-In the overview of user devices, you can see who is online or offline:
+In the overview of user devices, you can see which ones are online or offline:
 
 - A user device online will appear at the top of the list in the overview with a green pc icon.
 - A user device offline will appear in the overview with a red pc icon.
@@ -164,6 +164,31 @@ In the overview of user devices, you can see who is online or offline:
 - A user device that requires an update will appear in the overview with a yellow warning triangle.
 
 ![overview userdevices.png](overviewuserdevices.png ':size=800')
+
+
+## User device Info
+
+In the overview of the user devices, you can already see some properties: 
+
+- Name of the device.
+- Operating System.
+- Client Version of the SASE platform.
+- Whether Secure Mode is active, disabled, unsupported.
+- IP-address.
+- Approval status which is normally 'Approved'.
+
+
+Clicking on the corresponding strip of the user device, there appears a window with more details:
+
+![user_device_info_details.png](user_device_info_details.png ':size=500')
+
+The software tab shows the installed antivirus software:
+
+![user_device_info_software.png](user_device_info_software.png ':size=500')
+
+The info can be copied by using the copy icon ![copy_icon.png](copy_icon.png ':size=25') in the right upper corner.
+
+
 
 
 ## Delete user device
