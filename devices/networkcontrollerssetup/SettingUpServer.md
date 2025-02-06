@@ -69,14 +69,17 @@ Now use a pc that is on the same network as the network controller and go to the
 
 
 Login with jimber on the web interface
+
 ![web_login](./web_login.png)
 
 Set a new password, note that it has to be at least 16 characters long!
+
 ![web_new_password.png](./web_new_password.png)
 
 Select the right network configuration and then click on 'test connection'. If successful you can go to the next step.
 
 If it fails please check that the network controller has internet connection and the config is correct in the web interface.
+
 ![web_config.png](./web_config.png)
 
 Go to the signal platform and copy the token of the network controller you just created. You can find the token by editing the network controller with the yellow pencil.
