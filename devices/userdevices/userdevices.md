@@ -1,6 +1,6 @@
 # User Devices
 
-The "User Devices" section in our security platform provides an overview and management interface for devices associated with your users. Devices can range across various operating systems including Windows, Mac, and Linux.
+The "User Devices" section in our security platform provides an overview and management interface for devices associated with your users. Devices can range across various operating systems including Windows, Mac and Linux.
 
 ### When are devices visible?
 
@@ -13,9 +13,10 @@ Devices will appear in the "User Devices" list as soon as:
 > If a device doesn't appear as expected after installation, ensure the device has an active internet connection, the user has logged in successfully, and consider restarting the client or the device.
 
 ## Desktop Client installation
-Open the page signal.jimber.io and download the client that matches your operating system from the `Downloads` section:
+Open the page [Jimber SASE downloads](https://signal.jimber.io/downloads) and download the client that matches your operating system:
 
-![windows-popup1.png](/start.png ':size=800x')
+<!-- ![windows-popup1.png](/start.png ':size=800x') -->
+![downloads.png](/downloads.png ':size=600')
 
 
 ### Platforms 
@@ -25,7 +26,7 @@ Open the page signal.jimber.io and download the client that matches your operati
 <!-- #### Windows <i class="mdi mdi-microsoft-windows"></i> -->
 
 #### **Windows**
-As mentioned, download the latest 'Windows Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Windows : [latest windows version](https://signal.jimber.io/clients/windows-desktop-latest.msi)
+As mentioned, download the latest 'Windows Client' from [Jimber SASE downloads](https://signal.jimber.io/downloads), or use the direct link to access the most recent version for Windows : [latest windows version](https://signal.jimber.io/clients/windows-desktop-latest.msi)
 
 > [!INFO]
 > To download another specific version, you can use this [link](https://signal.jimber.io/clients).
@@ -65,7 +66,7 @@ If you don't have a login yet, please reach out to your network administrator to
 
 <!-- #### Mac <i class="mdi mdi-apple"></i> -->
 #### **Mac**
-As mentioned, download the latest 'Mac Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Mac : [latest mac version](https://signal.jimber.io/clients/mac-x64-latest.dmg)"
+As mentioned, download the latest 'Mac Client' from [Jimber SASE downloads](https://signal.jimber.io/downloads), or use the direct link to access the most recent version for Mac : [latest mac version](https://signal.jimber.io/clients/mac-x64-latest.dmg)"
 
 In the Downloads folder, you will find the file `SASE-Mac-1.XX.0.dmg`(XX stands for the version number).
 
@@ -81,11 +82,11 @@ Double-click on this file and install the Network Isolation Client by dragging t
 
  A pop-up may appear to alert you that you have downloaded a file from the internet, asking if you indeed want to open the file. You can safely answer 'Open' to this prompt.
 
-![mac_install_1.png](/mac_install_1.png )
+![mac_install_1.png](/mac_install_1.png ':size=250' )
 
 Following the installation, you'll find the JimberNetworkIsolation icon in your Launchpad. Simply search for 'JimberNetworkIsolation' and press 'Enter' to launch the application.
 
-![mac-install_2.png](/mac_install_2.png )
+![mac-install_2.png](/mac_install_2.png ':size=400')
 
 Upon launching the software, the Jimber icon will become visible at the top right of your screen, indicating that the Network Isolation service is now running.
 
@@ -110,7 +111,7 @@ If you're yet to have a login, please reach out to your network administrator to
 > [!WARNING]
 > Support is currently provided for the latest LTS versions of Ubuntu. For other OS distributions, please reach out to our support team.
 
-Download the latest 'Linux Client' from the 'Download' section in your company's settings at signal.jimber.io, or use the direct link to access the most recent version for Linux : [latest Linux version](https://signal.jimber.io/clients/linux-desktop-latest.deb)
+As mentioned, download the latest 'Linux Client' from [Jimber SASE downloads](https://signal.jimber.io/downloads), or use the direct link to access the most recent version for Linux : [latest Linux version](https://signal.jimber.io/clients/linux-desktop-latest.deb)
 
 > [!INFO]
 > To download another specific version, you can use this [link](https://signal.jimber.io/clients).
