@@ -72,9 +72,9 @@ prominently located at the upper right corner of the interface.
 ## On-premise Network Controller minimum specifications
 
 **General**:
-- 20GB hard disk
+- 25GB hard disk
 
 **For each 50 users:**
-- 1 CPU
-- 1024MB RAM,
+- 2 CPU
+- 4GB RAM,
 
