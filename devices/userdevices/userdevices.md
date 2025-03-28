@@ -168,6 +168,7 @@ After signing in, clicking on the icon will show you this tray:
 
 
 - `Stealth mode` ensures that traffic is sent via HTTPS, allowing you to connect to Jimber even on hotspots, etc.
+To use this feature, port 51820 is normally used.
 - `Disconnect` will disconnect you from Network Isolation, but you stay signed in. 
 - `Quit`obviously closes the application.
 

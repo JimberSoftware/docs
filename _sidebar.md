@@ -1,5 +1,5 @@
 <!-- docs/_sidebar.md -->
-* **JIMBER SASE Platform**
+* JIMBER SASE Platform
   * [Getting Started](./gettingstarted/index)
   * [Best Practices](./advanced/bestpractices/bestpractices)
   
@@ -9,7 +9,7 @@
   * [Groups](./company/groups/groups)
   * [Domains](./company/domains/domains)
   * [Integrations](./company/integrations/integrations)
-* DEVICES
+* [**DEVICES**](/devices.md)
   * [User Devices](./devices/userdevices/userdevices)
   * [Servers](./devices/servers/servers)
   * [Synology](./devices/synology/synology)
@@ -18,6 +18,7 @@
   * [Network Controllers Installation](./devices/networkcontrollerssetup/SettingUpServer.md)
   * [Native Devices](./devices/nativedevices/nativedevices.md)
 * SECURITY
+  * [Security Panel](./rules/security_panel/security_panel)
   * [Scripts](./rules/scripts/scripts)
   * [Group Configuration](./rules/groupconfiguration/groupconfiguration)
   * [Web Filtering](./rules/webfiltering/webfiltering)

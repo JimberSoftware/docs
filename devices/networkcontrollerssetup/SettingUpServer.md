@@ -1,7 +1,9 @@
 # Installation of the Network Controller
 
 > [!Note]
-> If you intend to install this server virtually, please consider the necessary BIOS settings listed at the bottom of this page.
+> If you intend to install this server virtually, please consider the necessary [BIOS settings](/./advanced/hypervisorinstallation/hypervisorinstallation.md) 
+
+<!-- listed at the bottom of this page. -->
 
 
 **Start of the installation**

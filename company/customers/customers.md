@@ -6,7 +6,7 @@ In our platform, a **customer** refers to a company intending to use `Jimber SAS
 
 For clarity, consider a scenario where a company named *`Astral Voyage`* wants to use Network Isolation. You must first create *`Astral Voyage`* as a customer on the platform before any further configurations or service provisions can occur.
 
-## Create customer
+## Create Customer
 
 To incorporate a new customer into the platform, click on the `Create new` button
 
@@ -26,12 +26,12 @@ Following fields should be provided:
 
 > [!WARNING]
 >  In the customer name, spaces and special characters/symbols are not allowed. You can add the full name in "Display name"
-## List of customers
+## List of Customers
 
 ![list_customers.png](/list_customers.png ':size=800')
 
 
-## Select customer  
+## Select Customer  
 
 Once the customer has been created, you can select that customer by clicking on the corresponding strip.
 You get an overview of created assets:
@@ -41,7 +41,7 @@ You get an overview of created assets:
 > [!NOTE]
 > Just after creating the customer, no assets will obviously be visible yet.
 
-## Edit customer
+## Edit Customer
 Customers can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/icon_edit.png ':size=35;35').
 
 ![edit_customer.png](/edit_customer.png ':size=500')
@@ -51,7 +51,7 @@ Customers can be edited by clicking on the yellow pencil icon next to their name
 
 
 
-## Delete customer
+## Delete Customer
 
 Customers can be deleted by clicking on the red trash bin icon next to their name ![recycle_bin.png](/icon_delete.png ':size=35;35').
 
