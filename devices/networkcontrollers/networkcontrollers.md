@@ -76,5 +76,5 @@ prominently located at the upper right corner of the interface.
 
 **For each 50 users:**
 - 2 CPU
-- 4GB RAM,
+- 4GB RAM
 

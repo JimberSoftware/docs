@@ -20,7 +20,8 @@ prominently located at the upper right corner of the interface.
 > [!INFO]
 > **Email** is used as the primary identifier for a user. It is essential for authentication purposes. Ensure that the provided email is valid and accessible by the user. 
 
-![create_user.png](create_user.png ':size=500x300')
+![create_user.png](create_user.png ':size=500x300 :border-radius=10px')
+
 
 > [!WARNING]
 >  Username cannot be changed after creating a user! 

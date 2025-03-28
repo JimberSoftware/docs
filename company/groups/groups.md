@@ -42,7 +42,7 @@ prominently located at the upper right corner of the interface.
 > Please ensure to configure the group settings in such a way that there is no overlap with your organization's existing physical network, VPNs, or any other networks accessed by your staff.
 
 Creating a new group requires a group name that can be updated later as needed.
-Creating a new group requires a group name that can be updated later as needed.
+
 
 ![create_group.png](/create_group.png ':size=500')
 
@@ -57,10 +57,10 @@ Access the details of a specific group by selecting the corresponding strip with
 > [!NOTE]
 > Devices and users can only be added to the group from their own page:
 >
->    - Comprehensive information on Group Traffic Rules, Attribute Services and Custom Ports Rules can be found in the SECURITY section of the sidebar.
+>    - Comprehensive information on Group Traffic Rules, Attribute Services and Custom Ports Rules can be found in the **SECURITY** section of the sidebar.
 >    - Comprehensive information on Group Configuration can be found [here](/./rules/groupconfiguration/groupconfiguration.md)
 >    - Comprehensive information on how to add users can be found [here](/./company/users/users.md).
->    - Comprehensive information on how to add devices can be found in the DEVICES section of the sidebar.
+>    - Comprehensive information on how to add devices can be found in the [**DEVICES**](/devices.md) section of the sidebar.
 
 
 

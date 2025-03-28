@@ -50,8 +50,8 @@ Synchronize your user data seamlessly from Azure Entra ID to the Network Isolati
 > [!WARNING]
 > Ensure that you have appropriate permissions in Microsoft Entra ID to enable synchronization and always backup user data in Network Isolation before starting the process.
 
-## API Keys
+<!-- ## API Keys
 
 > [!INFO]
-> Comprehensive information can be found [here](/./company/users/personalaccesstokens.md).
+> Comprehensive information can be found [here](/./company/users/personalaccesstokens.md). -->
 

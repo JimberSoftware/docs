@@ -118,15 +118,15 @@ This will download the latest SPK version for your NAS.
 
 Choose Package Center in the taskbar and then Manuel Install in the right upper corner.
 
-![Install the SPK](install-spk.png ':size=700')
+![Install the SPK](install-spk.png ':size=500')
 
 Follow the sequence shown in the screenshots below to properly install the SPK.
 
-![Install the SPK](install-spk2.png ':size=700')
-![Install the SPK](install-spk3.png ':size=700')
+![Install the SPK](install-spk2.png ':size=500')
+![Install the SPK](install-spk3.png ':size=500')
 
-![Install the SPK](install-spk5.png ':size=700')
-![Install the SPK](install-spk6.png ':size=700')
+![Install the SPK](install-spk5.png ':size=500')
+![Install the SPK](install-spk6.png ':size=500')
 
 After installation you get the message that the installation was successful.
 
@@ -147,5 +147,6 @@ Ports
 - 445
 
 
-**Configuring rules** to be found in the SECURITY section of the sidebar.
+>[!INFO]
+>**Configuring rules** to be found in the **SECURITY** section of the sidebar.
 
