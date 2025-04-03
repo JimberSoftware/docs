@@ -23,7 +23,7 @@ TOKEN=token #Token in signalserver
 SUBNET=192.168.2.0/24 #subnet of your network
 GATEWAY=192.168.2.240 #your gateway
 IP=192.168.2.249 #network ip of the NC
-TAG=v1.11.0-docker06 #Version of Jimber NI (no need to change)
+TAG=v1.14.0-docker06 #Version of Jimber NI (no need to change)
 
 ```
 
