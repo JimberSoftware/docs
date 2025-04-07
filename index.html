@@ -1,19 +1,17 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
-  <link
-  rel="stylesheet"
-  href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"
-/>
-  <link rel="stylesheet" href="style.css">
   <title>Jimber SASE Platform - Documentation</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
+  <link rel="stylesheet" href="style.css">
+
   <style>
-   .sidebar-logo {
+    .sidebar-logo {
       text-align: center;
       padding: 20px 0;
     }
@@ -27,78 +25,79 @@
     }
   </style>
 
-<!-- Google Translate Init -->
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'en',
-          autoDisplay: false
-        }, 'google_translate_element');
-      }
-    </script>
-
-    <!-- Google Translate Script -->
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <!-- Google Translate Init -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
+
 <body>
   <div class="sidebar-logo">
     <img src="logo.png" alt="Logo">
   </div>
+
   <div id="google_translate_element" style="display: none;"></div>
-  <div id="app">
-    
-  </div>
-  
+  <div id="app">Loading...</div>
+
+  <!-- Docsify Config -->
   <script>
     window.$docsify = {
-      search: 'auto', // default
-      subMaxLevel: 1,
-      logo: 'logo.png', // Add your logo path here
       el: "#app",
+      name: 'Jimber SASE Docs',
       repo: './',
+      logo: 'logo.png',
       loadSidebar: true,
+      subMaxLevel: 1,
+      search: 'auto',
       'flexible-alerts': {
-      style: 'flat'
-    },
-    plugins: [
+        style: 'flat'
+      },
+      plugins: [
         function (hook, vm) {
           hook.afterEach(function(html, next) {
-            // Scroll to top
             document.documentElement.scrollTop = 0;
             document.body.scrollTop = 0;
             next(html);
           });
         }
       ]
-    }
-  </script> 
+    };
+  </script>
+
+  <!-- Docsify Scripts -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://unpkg.com/docsify-copy-code"></script>
   <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
-    <!-- Language Setter Script -->
-    <script>
-      function setLang(lang) {
-        const tryTranslate = () => {
-          const select = document.querySelector('.goog-te-combo');
-          if (select) {
-            select.value = lang;
-            select.dispatchEvent(new Event('change'));
-          }
-        };
 
-        // Initial apply
-        tryTranslate();
+  <!-- Auto Language Switch -->
+  <script>
+    function setLang(lang) {
+      const tryTranslate = () => {
+        const select = document.querySelector('.goog-te-combo');
+        if (select) {
+          select.value = lang;
+          select.dispatchEvent(new Event('change'));
+        }
+      };
 
-        // Re-apply on Docsify route change
-        window.addEventListener('hashchange', () => {
-          setTimeout(tryTranslate, 500);
-        });
-      }
+      // Initial apply
+      tryTranslate();
 
-      // Set this to your preferred language
-      setLang('fr');
-    </script>
+      // Re-apply on Docsify route change
+      window.addEventListener('hashchange', () => {
+        setTimeout(tryTranslate, 500);
+      });
+    }
+
+    setLang('fr'); // Change this to your target language
+  </script>
 </body>
 </html>
