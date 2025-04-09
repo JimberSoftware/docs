@@ -16,7 +16,7 @@ Devices will appear in the "User Devices" list as soon as:
 Open the page [Jimber SASE downloads](https://signal.jimber.io/downloads) and download the client that matches your operating system:
 
 <!-- ![windows-popup1.png](/start.png ':size=800x') -->
-![downloads.png](/downloads.png ':size=600')
+![downloads.png](/downloads.png ':size=800')
 
 
 ### Platforms 
@@ -155,6 +155,8 @@ If you're yet to have a login, please reach out to your network administrator to
 
 <!-- tabs:end -->
 
+---
+---
 ## The Jimber tray icon ![jimber_icon.png](/jimber_icon.png ':size=50')
 
 After signing in, clicking on the icon will show you this tray:

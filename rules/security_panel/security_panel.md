@@ -1,16 +1,16 @@
 # SECURITY PANEL
 
-## **Under construction...**
+<!-- ## **Under construction...** -->
 
-<!-- In the Jimber Tray you have the option `Security Panel`:
+In the Jimber Tray you have the option `Security Panel`:
 
 ![jimber_tray.png](jimber_tray.png ':size=300')
 
-Choosing this option, you will get the following screen: 
+Choosing this option, you can get the following screen depending on the installed services: 
 
 ![secure_panel.png](secure_panel.png ':size=700')
 
-The first option...
+In the overview of the services you can obviously start the selected service.
 
 The second option displays a screen where you can add your own devices:
 
@@ -34,4 +34,7 @@ Finally, you get a new QR-code and the final instructions to add your device:
 
 ![add_user_device_2.png](add_user_device_2.png ':size=500')
 
-Clicking on `I have configured my device`adds your device to the list.  -->
+Clicking on `I have configured my device`adds your device to the list. 
+
+>[!Warning]
+>Only **mobile** devices can be added in this way. Other devices like laptops, PCs and servers will appear in the list after installing the SASE software.   
