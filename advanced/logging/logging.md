@@ -4,9 +4,13 @@ You can find the log file locations for each platform below.
 
 The client/server log file gathers information regarding the startup of the SASE application on the installed platform, while the service log file gathers information regarding the connected service.
 
+When there is an issue in the environment, it is interesting to create the `debug.log` file. That can be established by creating an empty file in the correct folder: %PROGRAMFILES%\Jimber\ (Windows) or /var/log/jimber/ (other OS). 
+
+
 >[!Warning]
 >The `debug.log` never contains logs. It will enable extra logging in the other log files.
 <!-- If the debug.log file exists, debug information will be logged into the correct log files.  -->
+
 
 ##  Windows 
   - **Desktop:**
