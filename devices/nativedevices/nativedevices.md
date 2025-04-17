@@ -43,6 +43,11 @@ Choose the native device as 'Destination'.
 ![add_attr_services.png](/add_attr_services.png ':size=800')
 
 
+## Details of a Native Device
+
+Access the details of a specific native device by selecting the corresponding strip within the table (avoid clicking on the buttons at the end). The only additional information you obtain this way is the optional alias.
+
+![details_native.png](details_native.png ':size=800')
 
 
 ## Edit Native Device

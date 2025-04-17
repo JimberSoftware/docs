@@ -30,11 +30,11 @@
   > [!Warning]
   > After a complete reset of the Synology, you need to reinstall the operating system.
 
-##### **Locate synology NAS**
+##### **Locate Synology NAS**
 
 Make sure you are connected to the same network as the Synology.
 
-- Go to http://find.synology.com/ and search for a nearby synology device.
+- Go to http://find.synology.com/ and search for a nearby Synology device.
 - You can also directly go to the current internal IP address of the NAS. (Example: http://192.168.0.146:5000)
 
 After locating the Synology, you will see the following screen:
@@ -47,10 +47,10 @@ Click on 'Connect' to start the installation off the software.
 > If you don't find any, check the possible reasons below. 
 
 ###### Possible reasons
-- The synology hasn't started up yet and is not yet discoverable. Refresh the search a few times as it might take some time.
-- You are not on the same network as the synology or it is not connected to the internet.
+- The Synology hasn't started up yet and is not yet discoverable. Refresh the search a few times as it might take some time.
+- You are not on the same network as the Synology or it is not connected to the internet.
 - It is turned off.
-- The synology has to be restarted because of some failure. Hold the power button until the blue light blinks, then let go. 
+- The Synology has to be restarted because of some failure. Hold the power button until the blue light blinks, then let go. 
 Wait until it is turned off, then press the power button again. Wait until you hear a beep before it can be found on https://find.synology.com (+- 1 minute).
 
 
@@ -66,7 +66,7 @@ By default you will be able to access the NAS through the hostname.
 >[!INFO]
 > On Windows you will have to append **.local**. Any alias you assign to the device will also be resolvable if **DNS Override** is enabled.
 
-##### Create a synology login for network isolation
+##### Create a Synology login for Network Isolation
 
 To make it easier to manage, make a new user on the Synology specifically for the installation of Network Isolation. 
 
