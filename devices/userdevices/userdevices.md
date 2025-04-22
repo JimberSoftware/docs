@@ -18,12 +18,6 @@ Open the page [Jimber SASE downloads](https://signal.jimber.io/downloads) and do
 
 <!-- ![windows-popup1.png](/start.png ':size=800x') -->
 
-<<<<<<< Updated upstream
-![downloads.png](/downloads.png ":size=800")
-=======
-
-> > > > > > > Stashed changes
-
 ![downloads.png](/downloads.png ":size=600")
 
 ### Platforms
@@ -157,33 +151,24 @@ If you're yet to have a login, please reach out to your network administrator to
 
 <!-- tabs:end -->
 
-## <<<<<<< Updated upstream
+
 
 ---
 
 ## The Jimber tray icon ![jimber_icon.png](/jimber_icon.png ":size=50")
-
-=======
-
-## The Jimber tray icon ![jimber_icon.png](/jimber_icon.png ":size=50")
-
-> > > > > > > Stashed changes
 
 After signing in, clicking on the icon will show you this tray:
 
 ![jimber_tray.png](/jimber_tray.png ":size=250")
 
 - `Security panel`: here you get an overview off the services and your devices. Comprehensive information on services can be found [here](/./rules/services/services.md).
-- Chose `Sign out` to sign out of the application. You get this warning:
+- Choose `Sign out` to sign out of the application. You get this warning:
 
 ![logout.png](/logout.png ":size=300")
 
 - `Stealth mode` ensures that traffic is sent via HTTPS, allowing you to connect to Jimber even on hotspots, etc.
-  <<<<<<< Updated upstream
-  To use this feature, port 51820 is normally used.
-- # `Disconnect` will disconnect you from Network Isolation, but you stay signed in.
+   To use this feature, port 51820 is normally used.
 - `Disconnect` will disconnect you from Network Isolation, but you stay signed in.
-  > > > > > > > Stashed changes
 - `Quit`obviously closes the application.
 
 ## User device online/offline
@@ -197,7 +182,7 @@ In the overview of user devices, you can see which ones are online or offline:
 
 ![overview userdevices.png](overviewuserdevices.png ":size=800")
 
-## User device Info
+## User device info
 
 In the overview of the user devices, you can already see some properties:
 

@@ -3,7 +3,7 @@
   * [Getting Started](./gettingstarted/index)
   * [Best Practices](./advanced/bestpractices/bestpractices)
   
-* COMPANY
+* [**COMPANY**](/company.md)
   * [Customers](./company/customers/customers)
   * [Users](./company/users/users)
   * [Groups](./company/groups/groups)
@@ -17,7 +17,7 @@
   * [Network Controllers](./devices/networkcontrollers/networkcontrollers)
   * [Network Controllers Installation](./devices/networkcontrollerssetup/SettingUpServer.md)
   * [Native Devices](./devices/nativedevices/nativedevices.md)
-* SECURITY
+* [**SECURITY**](/security.md)
   * [Security Panel](./rules/security_panel/security_panel)
   * [Scripts](./rules/scripts/scripts)
   * [Group Configuration](./rules/groupconfiguration/groupconfiguration)
@@ -27,7 +27,7 @@
   * [Attribute Services](./rules/attribute_services/attribute_services)
   * [Allow Custom Ports](./rules/customports/customports)
   * [Port Forwarding](./rules/portforwarding/portforwarding)
-* ADVANCED
+* [**ADVANCED**](/advanced.md)
   * [Custom Configuration](./advanced/customconfiguration/customconfiguration)
   * [Active Directory](./advanced/activedirectory/activedirectory)
   * [Microsoft Entra ID](./advanced/entraid/entraid)
@@ -35,4 +35,4 @@
   * [Proxmox Cluster](./advanced/proxmox/proxmox)
   * [Docker Network Controller](./advanced/dockernetworkcontroller/dockernetworkcontroller)
   * [Logging](./advanced/logging/logging.md)
-* [Contact](./contact/index)
+* [**CONTACT**](./contact/index)

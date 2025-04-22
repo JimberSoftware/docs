@@ -2,9 +2,9 @@
 
 Groups in the network setting act as a valuable mechanism for applying uniform network rules across multiple users, servers, and Network Isolation Access Clients (NIACs).
 
-The concept of groups brings a high level of versatility and control to your network management. For instance, a group named 'Developers' could be set up, with rules allowing them to communicate with the devices in the 'Servers' group. Simultaneously, a separate group such as 'Sales' could be configured to not have this access, thereby segmenting network interactions based on job function or department.
+The concept of groups brings a high level of versatility and control to your network management. For instance, a group named 'Developers' could be set up with rules allowing members of that group to communicate with the devices in the group 'Servers'. Simultaneously, a separate group such as 'Sales' could be configured not to have this access, thereby segmenting network interactions based on job function or department.
 
-This approach helps create a network landscape that aligns with your organization's unique operational dynamics, managing access, and communication based on the distinct needs and roles of different groups. In essence, the use of groups facilitates a more streamlined, controlled, and secure network environment.
+This approach helps create a network landscape that aligns with your organization's unique operational dynamics, managing access, and communication based on the distinct needs and roles of different groups. In essence, the use of groups facilitates a more streamlined, controlled and secure network environment.
 
 
 ![groups.png](/groups.png ':size=800')
@@ -39,7 +39,7 @@ To create a new group into the platform, click on the `Create new` button
 prominently located at the upper right corner of the interface.
 
 > [!WARNING]
-> Please ensure to configure the group settings in such a way that there is no overlap with your organization's existing physical network, VPNs, or any other networks accessed by your staff.
+> Please ensure to configure the group settings in such a way that there is no overlap with your organization's existing physical network, VPNs or any other networks accessed by your staff.
 
 Creating a new group requires a group name that can be updated later as needed.
 
