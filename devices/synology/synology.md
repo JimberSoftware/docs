@@ -104,7 +104,7 @@ Download the latest version for your Synology from [downloads](https://signal.ji
 ![Find the correct synology package](head-to-synology-downloads4.png ':size=500x') -->
 
 ![Find the correct synology package](choose_download_syn.png ':size=200')
-![Find the correct synology package](download_synology.png ':size=700') 
+![Find the correct synology package](downloads.png ':size=700') 
 
 ![Find the correct synology package](download_syn_warning.png ':size=500x250') 
 
@@ -148,5 +148,6 @@ Ports
 
 
 >[!INFO]
->**Configuring rules** to be found in the **SECURITY** section of the sidebar.
+>**Configuring rules** to be found in the [SECURITY section of the sidebar](/security.md)
+
 

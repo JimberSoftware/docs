@@ -77,8 +77,8 @@ After filling in the token and pressing the submit button, a pop-up appears stat
 
 Upon successful installation, the server should display a connected status (indicated by a green dot) in the Network Isolation Interface. 
 
-For any necessary troubleshooting, consult the log file at this location: 
-`C:\Program Files\Jimber\jimbernetworkisolation.log`
+<!-- For any necessary troubleshooting, consult the log file at this location: 
+`C:\Program Files\Jimber\jimbernetworkisolation.log` -->
 
 #### **Linux**
 
@@ -136,11 +136,12 @@ Restart the service by executing the following command:
 sudo systemctl restart jimbernetworkisolation.service
 ```
 
-Once successful, the server will display a connected status, indicated by a green dot, within the Network Isolation interface. If needed, refer to the following log files for debugging purposes:
+Once successful, the server will display a connected status, indicated by a green dot, within the Network Isolation interface. 
+<!-- If needed, refer to the following log files for debugging purposes:
 
 ```bash
 cat /var/log/jimber/jimbernetworkisolation.log
-```
+``` -->
 
 >[!INFO]
 > You can see the installed version using `jimberfw -version`
@@ -165,6 +166,10 @@ All other configuration is exactly the same.
 
 <!-- tabs:end -->
 
+>[!INFO]
+>For any necessary troubleshooting, you can consult the log files. Locations of the log files van be found [here](/./advanced/logging/logging.md). 
+
+---
 ## Server online/offline
 
 In the overview of the servers, you can see which is online or offline.
@@ -194,7 +199,7 @@ Access the details of a specific server and check the firewall rules by selectin
  
  By hovering over the icon, you can see which update it refers to.
  
-![update server.png](updating_server.png ':size=500')
+![update server.png](updating_server.png ':size=700')
 
  
  Actually updating the server can be done by clicking on the icon.

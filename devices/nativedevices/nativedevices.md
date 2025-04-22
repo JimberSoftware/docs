@@ -21,7 +21,7 @@ prominently located at the upper right corner of the interface.
 The hostname is mandatory and must be alphanumeric. Select the appropriate network controller and enter the valid IP address.
 
 > [!INFO] 
-> Once the native device is created the admin needs to add a 'Allow Custom Port' rule that gives specific groups access to the native device (under destination).
+> Once the native device is created the admin needs to add a [Allow Custom Port](/./rules/customports/customports.md).rule that gives specific groups access to the native device (under destination).
 
  **For example:**
 
