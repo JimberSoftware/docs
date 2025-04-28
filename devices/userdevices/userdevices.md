@@ -42,7 +42,7 @@ To launch the software, either search for 'Jimber' using the Windows start menu 
 
 ![windows-search.png](/windows-search.png ":size=600")
 
-Upon launching the software, the Jimber icon will become visible at the bottom right of your screen, indicating that the Network Isolation service is now running.
+Upon launching the software, the Jimber icon will become visible at the bottom right of your screen, indicating that the SASE service is now running.
 
 > [!INFO]
 > The Network Isolation icon can be hidden. Use the up arrow icon ![arrow_up.png](/arrow_up.png ":size=30") if necessary to view hidden icons.
@@ -86,7 +86,7 @@ Following the installation, you'll find the JimberNetworkIsolation icon in your 
 
 ![mac-install_2.png](/mac_install_2.png ":size=400")
 
-Upon launching the software, the Jimber icon will become visible at the top right of your screen, indicating that the Network Isolation service is now running.
+Upon launching the software, the Jimber icon will become visible at the top right of your screen, indicating that the SASE service is now running.
 
 ![mac_launchpad.png](/mac_launchpad.png)
 
@@ -136,7 +136,7 @@ Finally, access the program from your system menu by searching for 'Jimber Netwo
 
 ![linux-search.png](/linux-search.png ":size=300")
 
-Upon launching the software, the Jimber icon will become visible at the top right of your screen, indicating that the Network Isolation service is now running.
+Upon launching the software, the Jimber icon will become visible at the top right of your screen, indicating that the SASE service is now running.
 
 ![linux-tray-icon.png](/linux-tray-icon.png ":size=200")
 

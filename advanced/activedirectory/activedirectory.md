@@ -4,7 +4,7 @@ This guide provides instructions for installing Network Isolation on a domain co
 
 ## Table of contents
 
-1. [Install Network Isolation on the Domain Controller](#install-network-isolation-on-the-domain-controller)
+1. [Install Jimber SASE on the Domain Controller](#install-network-isolation-on-the-domain-controller)
    - [Prerequisites](#prerequisites)
      - [Disable IPv6](#disable-ipv6)
      - [Setting Static RPC Ports](#setting-static-rpc-ports)
@@ -24,15 +24,15 @@ This guide provides instructions for installing Network Isolation on a domain co
 5. [How to domain join a new use with a domain controller that has secure mode enabled](#_5-step-by-step-guide-domain-joining-a-new-user-with-secure-mode-enabled-on-the-domain-controller)
 
 
-## Install Network Isolation on the Domain Controller
+## 1. Install Jimber SASE on the Domain Controller
 
 ### Prerequisites
 
 - #### Disable IPv6
 
-  - It is recommended to turn off IPv6 communication in your network for best practices. The advantages of using IPv6 are minimal, and disabling it simplifies securing the network with Network Isolation.
+  - It is recommended to turn off IPv6 communication in your network for best practices. The advantages of using IPv6 are minimal, and disabling it simplifies securing the network with Jimber SASE.
     
-![Disable IPv6](/ad-disable-ipv6.png)
+![Disable IPv6](/ad-disable-ipv6.png ':size=400')
 
 - #### Setting Static RPC Ports
 
@@ -44,10 +44,10 @@ This guide provides instructions for installing Network Isolation on a domain co
     
  Path of key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc
   
-![Static RPC Ports](/ad-static-rpc-ports.png)
+![Static RPC Ports](/ad-static-rpc-ports.png ':size=600')
 
 - #### Set DNS Manager Listening Interface (Secure Mode Only - Breaks Native Network Domain Communication Functionality!)
-  - When enabling secure mode, ensure that the correct interface is being listened to so that the domain-related IPs are correctly resolved when the AD gets queried. Change the IP below to the corresponding IP you are assigned through network isolation.
+  - When enabling secure mode, ensure that the correct interface is being listened to so that the domain-related IPs are correctly resolved when the AD gets queried. Change the IP below to the corresponding IP you are assigned through Network Isolation.
   ```powershell
   $DnsServerSettings = Get-DnsServerSetting -ALL
   $DnsServerSettings.ListeningIpAddress = @("198.18.0.7")
@@ -62,9 +62,23 @@ This guide provides instructions for installing Network Isolation on a domain co
 
 The installer can be found [here](https://signal.jimber.io/clients/windows-server-latest.msi). The installation is done by simply executing the MSI as an administrator.
 
-- #### Configuring settings.json
+Starting Jimber Network Isolation, a dialog box will emerge: 
 
-  - To correctly configure network isolation to connect back to Signal, we need to change the settings file.
+![jimber_server_settings.png](/jimber_server_settings.png ':size=500')
+
+The required token can be retrieved from the 'Servers' tab within the Signal Server Interface. Simply select and edit the  correct server to find it.
+
+![token.png](/token.png ':size=500')
+
+After filling in the token and pressing the submit button, a pop-up appears stating that the server configuration has been submitted and the service has been restarted:
+
+
+![settings_updated.png](/settings_updated.png ':size=400')
+
+
+<!-- - #### Configuring settings.json
+
+  - To correctly configure Network Isolation to connect back to Signal, we need to change the settings file.
     Once installed, open the following: "C:\Program Files\Jimber\settings.json" in Notepad or any other editor.
     By default, it will only contain a privateKey and a publicKey.
 
@@ -75,12 +89,9 @@ The installer can be found [here](https://signal.jimber.io/clients/windows-serve
   }
   ```
 
-  We need to add the token.
+  We need to add the token, which is to be found by editing the server on Signal.
 
-
-  We can find the token if we edit the server on Signal.
-
-  
+    
 ![ad-light-edit-server.png](/ad-light-edit-server.png ':size=600x')
 
   Edit the settings.json accordingly:
@@ -95,12 +106,12 @@ The installer can be found [here](https://signal.jimber.io/clients/windows-serve
 
 > [!WARNING]
 > **Attention**! Don't forget the comma at the end of lines and the quotation marks!
-Ensure to save the changes made to the file.
+Ensure to save the changes made to the file. -->
 
   Please go to the services on your domain controller and restart the "JimberNetworkIsolation" service.
 
   
-![Restarting the Service](/ad-restarting-the-service.png)
+![Restarting the Service](/ad-restarting-the-service.png ':size=600')
 
 - #### Verify Correct DNS Settings and Connectivity
 
@@ -110,34 +121,34 @@ Ensure to save the changes made to the file.
 
   Seeing a green connection icon next to your DC server name indicates that it is connected.
   
-![ad-light-connected.png](/ad-light-connected.png)
+![ad-light-connected.png](/ad-light-connected.png ':size=600')
 
 Restart the domain controller now so that all services properly recognize the new network interface from Network Isolation.
 
-- #### Configuring dns forwarding for signal server
+- #### Configuring DNS forwarding for Signal Server
 
  Go to your Signal Server page and head to Integrations. On the top, you will find a setting to configure the DNS forwarder. Clients that have DNS override enabled will be filtered through our DNS service, but domain-specific queries will still be resolved by the server you specify in this field. You should add the Network Isolation IP of the Domain Controller.
     
-![Signal Server Forwarder](/ad-signal-server-forwarder.png)
+![Signal Server Forwarder](/ad-signal-server-forwarder_2.png ':size=800' )
 
-- #### Configuring dns forwarding for the domain controller
+- #### Configuring DNS forwarding for the domain controller
   - Open up the Server Manager and open the DNS Manager.
     
-![DNS Manager](/ad-dns-manager.png)
+![DNS Manager](/ad-dns-manager.png ':size=600')
   
   - Open up the DNS server's properties.
     
-![DNS Properties](/ad-dns-properties.png)
+![DNS Properties](/ad-dns-properties.png ':size=500')
 
 It is also possible to configure the forwarding DNS servers here: .
     
-![DNS Forwarders](/ad-dns-forwarders.png)
+![DNS Forwarders](/ad-dns-forwarders.png ':size=400')
 
 > [!NOTE]
 > You can configure them how you see fit.
 > Once configured, reboot to ensure all records are properly set by the DC.
 
-## Signal Server Configuration
+## 2. Signal Server Configuration
 
 ### Port configuration on signal server
 
@@ -173,7 +184,7 @@ It is also possible to configure the forwarding DNS servers here: .
   
 ![ad-light-enable-secure-mode.png](/ad-light-enable-secure-mode.png ':size=900x')
 
-### Testing / Verification of Domain Communication
+## 3. Testing / Verification of Domain Communication
 
 
   - Find out which domain you are joined, regardless of the current state of the connection. So this will show the domain regardless of the fact that you have a working domain connection.<br />
@@ -365,40 +376,40 @@ Check the Windows IP Configuration section. This section also contains some gene
        NetBIOS over Tcpip. . . . . . . . : Enabled
     ```
 
-### Mapping SMB shares
+### 4. Mapping SMB shares
 
   - The process of mapping SMB shares can present challenges, particularly when attempting to reuse existing mappings tied to domain names. The intricacy arises from Windows caching these entries and persistently attempting to connect to outdated shares. Despite accurate network isolation IP addresses appearing when resolving the domain name in the command prompt or a browser, Windows tends to cling to the old associations.
 
    - To circumvent this issue, it is advisable to either remove and remap the SMB shares once a functional connection is established or to modify existing policies and scripts. By doing so, you ensure the seamless and automatic provision of this essential functionality.
 
-### 5 Step-by-Step Guide: Domain Joining a New User with Secure Mode Enabled on the Domain Controller
+### 5. Step-by-Step Guide: Domain Joining a New User with Secure Mode Enabled on the Domain Controller
 
 Joining a new user to a domain with secure mode enabled on the domain controller requires precise steps to ensure successful configuration. Follow these steps carefully to complete the process.
 
-## Step 1: Ensure User is Created
+#### Step 1: Ensure User is Created
 Before proceeding, make sure that the new user account is created in the domain controller.
 
-## Step 2: Login as Local Administrator
+#### Step 2: Login as Local Administrator
 1. **Log in to the device** as a **local administrator**.
 
-## Step 3: Install and Configure Network Isolation
+#### Step 3: Install and Configure Network Isolation
 1. Install network isolation software if it’s not already installed.
 2. **Configure network isolation** according to your organization's policies.
 
 
-## Step 4: Domain Join the User
+#### Step 4: Domain Join the User
 1. **Domain join the user.**
 2. **Restart the device** after the domain join process is complete.
 
 
-## Step 5: Login as Local Administrator Again
+#### Step 5: Login as Local Administrator Again
 1. **Log in to the device** as a **local administrator** once more.
 2. Start network isolation.
 
-## Step 6: Switch User or Lock the Device
+#### Step 6: Switch User or Lock the Device
 1. **Switch user** or **lock the device**. **Do not log out.**
 
-## Step 7: Login with the Domain Joined User
+#### Step 7: Login with the Domain Joined User
 1. **Login with the domain joined user**.
 2. Complete the first login process.
 3. **Restart the device** after the first login is complete.

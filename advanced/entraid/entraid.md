@@ -94,4 +94,4 @@ Following information is needed for setup in Jimber Network Isolation:
 
 ![needed_info.png](/needed_info.png ":size=900")
 
-To finish setup with Network Isolation go to the following [documentation page](/company/integrations/integrations.md)
+To finish setup with Network Isolation go to the following [documentation page](/company/integrations/integrations.md).

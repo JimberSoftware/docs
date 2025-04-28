@@ -1,8 +1,8 @@
-# Creating a proxmox cluster over Network Isolation
+# Creating a Proxmox cluster over Jimber SASE
 
-Using Jimber Network Isolation in combination with Proxmox, it is perfectly possible to create a cluster of the encrypted connection. This cluster can be expanded over multiple locations, beware that you need fast connections if you want features like High Availability to work. Always test out the whole setup before applying in production systems.
+Using Jimber SASE in combination with Proxmox, it is perfectly possible to create a cluster of the encrypted connection. This cluster can be expanded over multiple locations, beware that you need fast connections if you want features like High Availability to work. Always test out the whole setup before applying in production systems.
 
-## Install Jimber Network Isolation
+## Install Jimber SASE
 Using CLI, install the Jimber client on all hypervisors you want to add to your cluster. For this example we are using 2 hypervisors:
 
 - HVBruges, Network Isolation IP 198.18.0.25

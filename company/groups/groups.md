@@ -2,7 +2,13 @@
 
 Groups in the network setting act as a valuable mechanism for applying uniform network rules across multiple users, servers, and Network Isolation Access Clients (NIACs).
 
-The concept of groups brings a high level of versatility and control to your network management. For instance, a group named 'Developers' could be set up with rules allowing members of that group to communicate with the devices in the group 'Servers'. Simultaneously, a separate group such as 'Sales' could be configured not to have this access, thereby segmenting network interactions based on job function or department.
+The concept of groups brings a high level of versatility and control to your network management. As mentioned in [Best Practices](/./advanced/bestpractices/bestpractices.md) it is better to choose group names that reflects its function, such as 'AllowFileServer', 'ForceOneGateway'...
+
+For instance, a group named 'AllowServerAccess' could be set up with rules allowing members of that group to access with the devices in the group 'Servers'. Simultaneously, a separate group such as 'NoAccessServer' could be configured not to have this access. 
+
+<!-- A further segmentation of these groups can be made based on job function or department. -->
+
+<!-- For instance, a group named 'Developers' could be set up with rules allowing members of that group to communicate with the devices in the group 'Servers'. Simultaneously, a separate group such as 'Sales' could be configured not to have this access, thereby segmenting network interactions based on job function or department. -->
 
 This approach helps create a network landscape that aligns with your organization's unique operational dynamics, managing access, and communication based on the distinct needs and roles of different groups. In essence, the use of groups facilitates a more streamlined, controlled and secure network environment.
 

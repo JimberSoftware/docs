@@ -18,7 +18,7 @@ This guide will show you how to become a member of highly secure companies world
 5. [Create Servers](./devices/servers/servers)
 6. [Create NIACs](./devices/niacs/niacs)
 7. [Create Network Controllers](./devices/networkcontrollers/networkcontrollers)
-8. **Configuring rules** to be found in the SECURITY section of the sidebar.
+8. **Configuring rules** to be found in the [SECURITY](/security.md) section of the sidebar.
 
 
 ## Contact
