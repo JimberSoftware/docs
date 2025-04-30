@@ -1,10 +1,10 @@
 # Customers
 > [!WARNING]
-> This *`Customers`* section is exclusively available for **partners**. If you are an end customer, you will be directly redirected to the Network Isolation configuration of your company.
+> This *`Customers`* section is exclusively available for **partners**. If you are an end customer, you will be directly redirected to the *`Jimber SASE Platform`* configuration of your company.
 
 In our platform, a **customer** refers to a company intending to use `Jimber SASE Platform`. Integrators have the capability to manage these customers, ensuring seamless operations and service delivery.
 
-For clarity, consider a scenario where a company named *`Astral Voyage`* wants to use Network Isolation. You must first create *`Astral Voyage`* as a customer on the platform before any further configurations or service provisions can occur.
+For clarity, consider a scenario where a company named *`Astral Voyage`* wants to use `Jimber SASE Platform`. You must first create *`Astral Voyage`* as a customer on the platform before any further configurations or service provisions can occur.
 
 ## Create Customer
 
@@ -25,7 +25,7 @@ Following fields should be provided:
   - Primary contact email
 
 > [!WARNING]
->  In the customer name, spaces and special characters/symbols are not allowed. You can add the full name in "Display name"
+>  In the customer Name field, spaces and special characters or symbols are not allowed. You can however use these characters in the Display name field.
 ## List of Customers
 
 ![list_customers.png](/list_customers.png ':size=800')
@@ -39,21 +39,21 @@ You get an overview of created assets:
 ![overview_customer.png](/overview_customer.png ':size=800')
 
 > [!NOTE]
-> Just after creating the customer, no assets will obviously be visible yet.
+> A newly created customer has no assest to show yet.
 
 ## Edit Customer
-Customers can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/icon_edit.png ':size=35;35').
+Customers can be edited by clicking on the![pencil_2.png](/icon_edit.png ':size=35;35') icon next to their name.
 
 ![edit_customer.png](/edit_customer.png ':size=500')
 
 > [!WARNING]
-> As mentioned, changing the partner will remove all current security consultant roles
+> You will be notified that changing the partner will remove all current security consultant roles.
 
 
 
 ## Delete Customer
 
-Customers can be deleted by clicking on the red trash bin icon next to their name ![recycle_bin.png](/icon_delete.png ':size=35;35').
+Customers can be deleted by clicking on the ![recycle_bin.png](/icon_delete.png ':size=35;35') icon next to their name.
 
 
 > [!WARNING]

@@ -1,6 +1,6 @@
 # Domains
 
-Domains play a crucial role in the configuration process of your network's isolation settings. They provide the basis for setting up users and administrators, allowing efficient management of your network connections and changes.
+Domains play a crucial role in the configuration process of your `Jimber SASE Platform` settings. They provide the basis for setting up users and administrators, allowing efficient management of your network connections and changes.
 
 > [!WARNING]
 > It is vital to start with the registration of all the domains that your organization is currently utilizing. This initial setup is instrumental in paving the way for creating users and administrative accounts.

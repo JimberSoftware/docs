@@ -28,7 +28,7 @@ To do so, enter the IP address DNS server and click on the apply button.
 
 ## Microsoft Entra ID
 
-Synchronize your user data seamlessly from Azure Entra ID to the Network Isolation platform. This ensures that user information remains consistent across both platforms, providing ease of user management.
+Synchronize your user data seamlessly from Azure Entra ID to the `Jimber SASE Platform`. This ensures that user information remains consistent across both platforms, providing ease of user management.
 
 > [!INFO]
 > Comprehensive information can be found [here](/./advanced/entraid/entraid.md).

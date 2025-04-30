@@ -2,15 +2,16 @@
 
 ## Create Server
 
-To create a server in the Security platform, click on the `Create new` button
+To create a server in the `Jimber SASE Platform`, click on the `Create new` button
 
 ![create_new.png](/create_new.png)
 
-prominently located at the upper right corner of the interface.
+prominently located at the upper right corner of the interface. This will open following dialog box:
 
+![create_server.png](/create_server.png)
  
 > [!INFO] 
-> Hostname is mandatory and must be a lowercase string.
+> Hostname is mandatory and must be a lowercase string. We advise you to copy the token as you will be needing it for the installation of the server, but you can still access it at any time on the editing screen of the server on the `Jimber SASE Platform`.
 
 
 ## Server installation
@@ -53,11 +54,11 @@ In this file, enter the token you were provided upon creating the server within 
 Ensure to save the changes made to the file. -->
 
 
-Starting Jimber Network Isolation, a dialog box will emerge: 
+When starting `Jimber SASE Platform`, a dialog box will emerge: 
 
 ![jimber_server_settings.png](/jimber_server_settings.png ':size=500')
 
-The required token can be retrieved from the 'Servers' tab within the Signal Server Interface. Simply select and edit the  correct server to find it.
+The required token was created with the new server. If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab within the `Jimber SASE Platform`. Simply select and edit the correct server to find it.
 
 ![token.png](/token.png ':size=500')
 
@@ -75,7 +76,7 @@ After filling in the token and pressing the submit button, a pop-up appears stat
 ![services_jimber.png](/services_jimber.png ':size=800') -->
 
 
-Upon successful installation, the server should display a connected status (indicated by a green dot) in the Network Isolation Interface. 
+Upon successful installation, the server should display a connected status (indicated by a green dot) in the `Jimber SASE Platform`. 
 
 <!-- For any necessary troubleshooting, consult the log file at this location: 
 `C:\Program Files\Jimber\jimbernetworkisolation.log` -->
@@ -98,7 +99,7 @@ sudo dpkg -i linux-server-latest.deb
 ```
 
 Upon completion of the installation, a new `settings.json` file will be automatically created in the `/etc/jimber/`directory.
-This file must be completed with the token you were provided upon creating the server within the SASE Platform interface. This can be established with the following command:
+This file must be completed with the token you were provided upon creating the server within the `Jimber SASE Platform` interface. This can be established with the following command:
 
 ```bash
 sudo jimberfw -config
@@ -123,7 +124,7 @@ Ensure to save the changes made to the file. -->
 
 
 
-The required token can be retrieved from the 'Servers' tab within the Signal server interface. Simply select and edit an existing server to find it.
+If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab within the `Jimber SASE Platform`. Simply select and edit the correct server to find it.
 
 
 ![edit_server.png](/edit_server.png ':size=500')
@@ -136,7 +137,7 @@ Restart the service by executing the following command:
 sudo systemctl restart jimbernetworkisolation.service
 ```
 
-Once successful, the server will display a connected status, indicated by a green dot, within the Network Isolation interface. 
+Upon successful installation, the server should display a connected status (indicated by a green dot) in the `Jimber SASE Platform`. 
 <!-- If needed, refer to the following log files for debugging purposes:
 
 ```bash
@@ -172,10 +173,9 @@ All other configuration is exactly the same.
 ---
 ## Server online/offline
 
-In the overview of the servers, you can see which is online or offline.
+In the overview of the servers you can see which is online or offline.
 
-A server online will appear in the overview with a green dot. A server offline will appear in the overview with a red dot.
-For a server with an extra green arrow, an update is available.
+An online server will appear in the overview with a green dot. An offline server will appear in the overview with a red dot. When a server upgrade is available, it will be indicated by a green circle with an upward-pointing arrow.
 
 ![server online.png](server_online.png ':size=800')
 
@@ -184,7 +184,10 @@ For a server with an extra green arrow, an update is available.
 
 ## Details and firewall rules of a server
 
-Access the details of a specific server and check the firewall rules by selecting the corresponding strip within the table (avoid clicking on the buttons at the end). 
+To view the details of a specific server and inspect its firewall rules, select the corresponding row in the table.
+
+> [!INFO] 
+> Avoid using the action buttons at the end of the row (e.g. edit or delete).
 
 ![server detail.png](server_details.png ':size=500')
 
@@ -194,15 +197,15 @@ Access the details of a specific server and check the firewall rules by selectin
 
 ## Updating a server
 
- An update is available when a green icon is visible next to the name  ![icoon_update.png](/icoon_update.png ':size=35')
+ An update is available when indicated by a green circle with an upward-pointing arrow ![icoon_update.png](/icoon_update.png ':size=35')
 .
  
- By hovering over the icon, you can see which update it refers to.
+ By hovering over the icon you can see which update it refers to.
  
 ![update server.png](updating_server.png ':size=700')
 
  
- Actually updating the server can be done by clicking on the icon.
+ Execute the update by clicking on the icon.
 
 > [!INFO]
 > In case of a successful update, the update icon disappears. 
@@ -215,8 +218,7 @@ Access the details of a specific server and check the firewall rules by selectin
 
  ## Edit Server
   
- Servers can be edited by clicking on the yellow pencil icon next to their name 
-![icon_edit.png](/icon_edit.png ':size=35').
+ Servers can be edited by clicking on the![icon_edit.png](/icon_edit.png ':size=35') icon next to their name.
   
 ![edit server.png](/edit_server.png ':size=500')
 
@@ -225,7 +227,7 @@ All options are the same as when creating a server.
 
 ## Deleting Server
 
-Servers can be deleted by clicking on the red trash bin icon next to their name![icon_delete.png](/icon_delete.png ':size=35').
+Servers can be deleted by clicking on the![icon_delete.png](/icon_delete.png ':size=35') icon next to their name.
 
 You will receive a warning before the device is permanently deleted:
 
