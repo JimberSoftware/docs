@@ -20,11 +20,11 @@
 > This will remove everything!
 
   1. Locate the reset button on the back of the NAS.
-  2. Press and hold for ~5 seconds until a beep sounds. Usually you need a sharp pin.
+  2. Press and hold for approximately 5 seconds until you hear a beep sound. Usually you need a sharp pin to press the reset button.
 
   ![reset_synology](reset_synology.png ':size=100')
 
-  3. Quickly press and hold again until 3 distinct beeps are heard.
+  3. Release then quickly press and hold again until 3 distinct beeps are heard.
   4. Await a final beep signaling the reset completion.
 
   > [!Warning]
@@ -44,18 +44,16 @@ After locating the Synology, you will see the following screen:
 Click on 'Connect' to start the installation off the software.  
 
 >[!INFO]
-> If you don't find any, check the possible reasons below. 
+> If you can't locate the Synology NAS, check the possible reasons below. 
 
 ###### Possible reasons
-- The Synology hasn't started up yet and is not yet discoverable. Refresh the search a few times as it might take some time.
+- The Synology isn't turned on or hasn't started up and is not yet discoverable. Make sure the device is turned on and refresh the search a few times as it might take some time.
 - You are not on the same network as the Synology or it is not connected to the internet.
-- It is turned off.
-- The Synology has to be restarted because of some failure. Hold the power button until the blue light blinks, then let go. 
-Wait until it is turned off, then press the power button again. Wait until you hear a beep before it can be found on https://find.synology.com (+- 1 minute).
+- The Synology has to be restarted because of some failure. Hold the power button until the blue light blinks, then let go. Wait until it is turned off, then press the power button again. Wait until you hear a beep before it can be found on https://find.synology.com (+- 1 minute).
 
 
 #### Preparation
-Go to https://signal.jimber.io/ and add a new server to the signal interface. 
+Go to https://signal.jimber.io/ and add a new server to the `Jimber SASE Platform`. 
 
 ![create_synology](create_synology.png ':size=500')
 
@@ -68,7 +66,7 @@ By default you will be able to access the NAS through the hostname.
 
 ##### Create a Synology login for Network Isolation
 
-To make it easier to manage, make a new user on the Synology specifically for the installation of Network Isolation. 
+To make it easier to manage, make a new user on the Synology specifically for the installation of `Jimber SASE Platform`. 
 
 The user will need the following access & permissions: 
   - administrator

@@ -1,10 +1,10 @@
 # Users
 
-A user is a user on the platform. Users can have roles and be linked to properties of different products.
+A user refers to an individual account within the platform. Users can have roles and be linked to properties of different products.
 
 
 > [!WARNING]
-> In order to create a new user, the company **must** have a domain, so a domain name must be added first. The users email address must use the added domain name.
+> To create a new user, the company **must** first add a domain. The user's email address must correspond to the added domain.
 
 > [!WARNING]
 > Managing users efficiently is crucial for maintaining the security and integrity of your platform. 
@@ -24,22 +24,20 @@ prominently located at the upper right corner of the interface.
 
 
 > [!WARNING]
->  Username cannot be changed after creating a user! 
+>  Be aware that the username cannot be changed after creating a user.
 
 ### User Roles and their permissions
 
 - **Admin**:
+  - Toggle this option to promote a user to an administrator.
   - Allows the user to log into the security platform.
   - Grants privileges to manage the company's settings.
-  - To promote a user to an administrator, hit the slider.
 
     ![create_admin.png](/create_admin.png ':size=500x300')
 
-
  
-- **Enable Network Isolation**:
-  - Activating this option will enable `Network Isolation` for the particular user, adding an extra layer of security.
-  - To activate Network Isolation, hit the slider.
+- **Network Isolation** <!--Jimber SASE Licence-->:
+  - Toggle this option to enable `Network Isolation` <!--`Jimber SASE Licence`--> for this particular user, adding an extra layer of security.
   
     ![access_control.png](/access_control.png ':size=500x300')
 
@@ -49,8 +47,9 @@ prominently located at the upper right corner of the interface.
 
   
 - **Enable Secure mode**:
-  - If Secure mode is turned ON for a device all incoming traffic will be blocked unless it comes from Network Isolation.
-  - To turn on Secure mode, hit the slider.
+  - Toggle this option to enable Secure mode.
+  - If Secure mode is turned ON for a device all incoming traffic will be blocked unless it comes from the `Jimber SASE Platform`.
+  
 
 > [!INFO]
 >  Secure mode can only be enabled if Network Isolation is also enabled. 
@@ -64,19 +63,19 @@ prominently located at the upper right corner of the interface.
 
    - **How to add a security consultant:**
 
-      - Go to the partner of the customer where you want to add the security consultant to. In the example, that is **Testpartner**. 
+      - Navigate to the partner associated with the customer where you want to add the security consultant. In this example, the partner is **Testpartner**. 
 
        ![user_in_integrator.png](/user_in_integrator.png ':size=800')
 
-      - Create a new user as Security Consultant by hitting the slider.
+      - Create a new user with the Security Consultant role by toggling the option.
 
         ![create_sec_cons.png](/create_sec_cons.png ':size=500x300')
 
-      -After creating that user (e.g.: ' user3@tel.net') select the correct **Customer** and then the option "Users". Choose 
+      - Return to the Users page of customer where you want to add the security consultant and add the user you created in the previous step (e.g.: 'user3@tel.net') by choosing
+
        ![btn_add_consultant.png](/btn_add_consultant.png ':size=150x25')
       
-      
-      The email that must provided is the one of the user just created in previous step (' user3@tel.net'). That user becomes a Security Consultant for that company.
+      Provide the email address of the user you created ('user3@tel.net') and click 'Add Security Consultant' for this user to become security consultant for that company. 
 
       ![add_sec_cons.png](/add_sec_cons.png ':size=500x300')
 
@@ -86,15 +85,15 @@ prominently located at the upper right corner of the interface.
 
 ## Edit User
   
- Users can be edited by clicking on the yellow pencil icon next to their name ![pencil_2.png](/icon_edit.png ':size=35').
+ Users can be edited by clicking on the![pencil_2.png](/icon_edit.png ':size=35') icon next to their name.
  
   ![edit_user.png](/edit_user.png ':size=500x350')
   
-  The username cannot be changed, of course, but all other options are the same as when creating a user.
+  The username cannot be changed, as stated earlier, but all other options are the same as when creating a user.
   
 ## Deleting User
 
- Users can be deleted by clicking on the red trash bin icon next to their name ![recycle_bin.png](/icon_delete.png ':size=35').
+ Users can be deleted by clicking on the![recycle_bin.png](/icon_delete.png ':size=35') icon next to their name.
  
  You will receive a warning before the user is permanently deleted:
  
@@ -103,11 +102,14 @@ prominently located at the upper right corner of the interface.
 
 ## User properties
 
- In the overview of the users, you can already see some properties: the role of the user in the company (Admin or User), the platform role that is generally 'User' and whether or not the user and Secure Mode are enabled.
+In the user overview, several key properties are immediately visible: the user's role within the company (e.g., Admin or User), their platform role (typically 'User'), and the status of both the user account and Secure Mode.
 
  ![overview_users.png](/overview_users.png ':size=800x150')
 
- Clicking on the corresponding strip of the user, there appears a window with more details:
+ Clicking on a user's row opens a detailed view with additional information.
+
+> [!INFO] 
+> Avoid using the action buttons at the end of the row (e.g. edit or delete).
 
 
 ![properties_user.png](/properties_user.png ':size=500')

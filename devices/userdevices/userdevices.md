@@ -33,7 +33,7 @@ As mentioned, download the latest 'Windows Client' from [Jimber SASE downloads](
 > [!INFO]
 > To download another specific version, you can use this [link](https://signal.jimber.io/clients).
 
-Open the downloaded file to install the 'Windows Client'.
+Open the downloaded file to install the `Jimber SASE Platform` Client.
 When a subsequent dialogue box emerges, please select 'Yes' to proceed.
 
 ![windows-popup2.png](/windows-popup2.png ":size=300")
@@ -42,10 +42,10 @@ To launch the software, either search for 'Jimber' using the Windows start menu 
 
 ![windows-search.png](/windows-search.png ":size=600")
 
-Upon launching the software, the Jimber icon will become visible at the bottom right of your screen, indicating that the SASE service is now running.
+Upon launching the software, the Jimber icon will become visible at the bottom right of your screen, indicating that the Jimber SASE service is now running.
 
 > [!INFO]
-> The Network Isolation icon can be hidden. Use the up arrow icon ![arrow_up.png](/arrow_up.png ":size=30") if necessary to view hidden icons.
+> The Jimber icon can be hidden. Use the up arrow icon ![arrow_up.png](/arrow_up.png ":size=30") if necessary to view hidden icons.
 
 ![windows-tray-icon.png](/windows-tray-icon.png ":size=400")
 
@@ -74,7 +74,7 @@ In the Downloads folder, you will find the file `SASE-Mac-1.XX.0.dmg`(XX stands 
 > [!INFO]
 > To download another specific version, you can use this [link](https://signal.jimber.io/clients).
 
-Double-click on this file and install the Network Isolation Client by dragging the 'JimberNetworkIsolation' icon into your 'Applications' folder.
+Double-click on this file and install the `Jimber SASE Platform` Client by dragging the 'JimberNetworkIsolation' icon into your 'Applications' folder.
 
 ![mac_download.png](/mac_download.png ":size=500")
 
@@ -86,7 +86,7 @@ Following the installation, you'll find the JimberNetworkIsolation icon in your 
 
 ![mac-install_2.png](/mac_install_2.png ":size=400")
 
-Upon launching the software, the Jimber icon will become visible at the top right of your screen, indicating that the SASE service is now running.
+Upon launching the software, the Jimber icon will become visible at the top right of your screen, indicating that the Jimber SASE service is now running.
 
 ![mac_launchpad.png](/mac_launchpad.png)
 
@@ -136,7 +136,7 @@ Finally, access the program from your system menu by searching for 'Jimber Netwo
 
 ![linux-search.png](/linux-search.png ":size=300")
 
-Upon launching the software, the Jimber icon will become visible at the top right of your screen, indicating that the SASE service is now running.
+Upon launching the software, the Jimber icon will become visible at the top right of your screen, indicating that the Jimber SASE service is now running.
 
 ![linux-tray-icon.png](/linux-tray-icon.png ":size=200")
 
@@ -169,7 +169,7 @@ After signing in, clicking on the icon will show you this tray:
 - `Stealth mode` ensures that traffic is sent via HTTPS, allowing you to connect to Jimber even on hotspots, etc.
    To use this feature, port 51820 is normally used.
 - `Disconnect` will disconnect you from Network Isolation, but you stay signed in.
-- `Quit`obviously closes the application.
+- `Quit` closes the application.
 
 ## User device online/offline
 
@@ -188,7 +188,7 @@ In the overview of the user devices, you can already see some properties:
 
 - Name of the device.
 - Operating System.
-- Client Version of the SASE platform.
+- Client Version of the Jimber SASE Platform.
 - Whether Secure Mode is active, disabled, unsupported.
 - IP-address.
 - Approval status which is normally 'Approved'.
