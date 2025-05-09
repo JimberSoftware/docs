@@ -62,7 +62,7 @@ This guide provides instructions for installing Network Isolation on a domain co
 
 The installer can be found [here](https://signal.jimber.io/clients/windows-server-latest.msi). The installation is done by simply executing the MSI as an administrator.
 
-Starting Jimber Network Isolation, a dialog box will emerge: 
+Starting Jimber SASE, a dialog box will emerge: 
 
 ![jimber_server_settings.png](/jimber_server_settings.png ':size=500')
 
@@ -108,7 +108,7 @@ After filling in the token and pressing the submit button, a pop-up appears stat
 > **Attention**! Don't forget the comma at the end of lines and the quotation marks!
 Ensure to save the changes made to the file. -->
 
-  Please go to the services on your domain controller and restart the "JimberNetworkIsolation" service.
+  Please go to the services on your domain controller and restart the SASE service.
 
   
 ![Restarting the Service](/ad-restarting-the-service.png ':size=600')

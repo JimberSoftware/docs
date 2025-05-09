@@ -1,6 +1,6 @@
 # Contact 
 
-You can reach us by email or phone
+You can reach us by email or phone.
 
 Support email address:
 > ![email2.png](/email2.png ':size=50')  
