@@ -18,16 +18,16 @@ prominently located at the upper right corner of the interface. This will open f
 
 ### Platforms 
 
+> [!INFO] 
+> First create your server on the `Jimber SASE Platform` (see above).
+
 <!-- tabs:start -->
 
 
 
 #### **Windows**
 
-> [!INFO] 
-> First create your server (see above).
-
-Download the latest version for the 'Windows Server' from https://signal.jimber.io/downloads (no need to login).
+Download the latest version of the 'Windows Server' client from https://signal.jimber.io/downloads (no need to log in).
 
 > [!INFO]
 > To download another specific version, you can use this [link](https://signal.jimber.io/clients).
@@ -54,15 +54,15 @@ In this file, enter the token you were provided upon creating the server within 
 Ensure to save the changes made to the file. -->
 
 
-When starting `Jimber SASE Platform`, a dialog box will emerge: 
+When starting `Jimber SASE Client`, a dialog box will emerge: 
 
 ![jimber_server_settings.png](/jimber_server_settings.png ':size=500')
 
-The required token was created with the new server. If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab within the `Jimber SASE Platform`. Simply select and edit the correct server to find it.
+The required token was created with the new server. If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab of the `Jimber SASE Platform`. Simply select and edit the correct server to find it.
 
 ![token.png](/token.png ':size=500')
 
-After filling in the token and pressing the submit button, a pop-up appears stating that the server configuration has been submitted and the service has been restarted:
+After filling in the token and clicking the submit button, a pop-up appears stating that the server configuration has been submitted and the service has been restarted:
 
 
 ![settings_updated.png](/settings_updated.png ':size=400')
@@ -76,7 +76,7 @@ After filling in the token and pressing the submit button, a pop-up appears stat
 ![services_jimber.png](/services_jimber.png ':size=800') -->
 
 
-Upon successful installation, the server should display a connected status (indicated by a green dot) in the `Jimber SASE Platform`. 
+Upon successful installation, the server should display a connected status (indicated by a green dot) on the 'Servers' tab of the `Jimber SASE Platform`. 
 
 <!-- For any necessary troubleshooting, consult the log file at this location: 
 `C:\Program Files\Jimber\jimbernetworkisolation.log` -->
@@ -86,10 +86,7 @@ Upon successful installation, the server should display a connected status (indi
 > [!INFO] 
 > Support is currently provided for the latest LTS versions of Ubuntu. For other OS distributions, please reach out to our support team.
 
-Download the latest version for the 'Linux Server' from https://signal.jimber.io/downloads (no need to login).
-
-> [!INFO]
-> To download another specific version, you can use this [link](https://signal.jimber.io/clients).
+Download and install the latest version for the 'Linux Server' client from https://signal.jimber.io/downloads (no need to log in) by running following commands:
 
 ```bash
 sudo apt update
@@ -97,6 +94,8 @@ sudo apt install wireguard
 wget https://signal.jimber.io/clients/linux-server-latest.deb
 sudo dpkg -i linux-server-latest.deb
 ```
+> [!INFO]
+> To download another specific version, you can use this [link](https://signal.jimber.io/clients).
 
 Upon completion of the installation, a new `settings.json` file will be automatically created in the `/etc/jimber/`directory.
 This file must be completed with the token you were provided upon creating the server within the `Jimber SASE Platform` interface. This can be established with the following command:
@@ -124,20 +123,20 @@ Ensure to save the changes made to the file. -->
 
 
 
-If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab within the `Jimber SASE Platform`. Simply select and edit the correct server to find it.
+If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab of the `Jimber SASE Platform`. Simply select and edit the correct server to find it.
 
 
 ![edit_server.png](/edit_server.png ':size=500')
 
 
 
-Restart the service by executing the following command:
+Restart the service by running the following command:
 
 ```bash
 sudo systemctl restart jimbernetworkisolation.service
 ```
 
-Upon successful installation, the server should display a connected status (indicated by a green dot) in the `Jimber SASE Platform`. 
+Upon successful installation, the server should display a connected status (indicated by a green dot) on the 'Servers' tab of the `Jimber SASE Platform`. 
 <!-- If needed, refer to the following log files for debugging purposes:
 
 ```bash
@@ -163,7 +162,7 @@ Follow the Linux installation but use the following deb file instead:
 > [!INFO]
 > To download another specific version, you can use this [link](https://signal.jimber.io/clients).
 
-All other configuration is exactly the same.
+All other configuration is identical.
 
 <!-- tabs:end -->
 
@@ -173,7 +172,7 @@ All other configuration is exactly the same.
 ---
 ## Server online/offline
 
-In the overview of the servers you can see which is online or offline.
+In the overview of the servers you can see which servers are online or offline.
 
 An online server will appear in the overview with a green dot. An offline server will appear in the overview with a red dot. When a server upgrade is available, it will be indicated by a green circle with an upward-pointing arrow.
 
@@ -182,7 +181,7 @@ An online server will appear in the overview with a green dot. An offline server
 
 
 
-## Details and firewall rules of a server
+## Inspect server
 
 To view the details of a specific server and inspect its firewall rules, select the corresponding row in the table.
 

@@ -52,7 +52,7 @@ prominently located at the upper right corner of the interface.
   
 
 > [!INFO]
->  Secure mode can only be enabled if Network Isolation is also enabled. 
+>  Secure mode can only be enabled if Network Isolation <!--`Jimber SASE Licence`--> is also enabled. 
 
 - **Security Consultant**:
    - This option is only available for **partners**.
@@ -85,15 +85,19 @@ prominently located at the upper right corner of the interface.
 
 ## Edit User
   
- Users can be edited by clicking on the![pencil_2.png](/icon_edit.png ':size=35') icon next to their name.
+ Users can be edited by clicking on the![pencil_2.png](/icon_edit.png ':size=35')icon next to their name.
  
   ![edit_user.png](/edit_user.png ':size=500x350')
   
-  The username cannot be changed, as stated earlier, but all other options are the same as when creating a user.
+> [!WARNING]
+> The username cannot be changed. All other options are the same as when creating a user.
   
 ## Deleting User
 
- Users can be deleted by clicking on the![recycle_bin.png](/icon_delete.png ':size=35') icon next to their name.
+ Users can be deleted by clicking on the![recycle_bin.png](/icon_delete.png ':size=35')icon next to their name.
+
+> [!WARNING]
+> This process is irreversible.
  
  You will receive a warning before the user is permanently deleted:
  

@@ -31,9 +31,9 @@ Following fields should be provided:
 ![list_customers.png](/list_customers.png ':size=800')
 
 
-## Select Customer  
+## Details of Customer  
 
-Once the customer has been created, you can select that customer by clicking on the corresponding strip.
+To view the details of a specific customer, select their row in the table (rather than using the action buttons at the end).
 You get an overview of created assets:
 
 ![overview_customer.png](/overview_customer.png ':size=800')
@@ -42,7 +42,7 @@ You get an overview of created assets:
 > A newly created customer has no assest to show yet.
 
 ## Edit Customer
-Customers can be edited by clicking on the![pencil_2.png](/icon_edit.png ':size=35;35') icon next to their name.
+Customers can be edited by clicking on the![pencil_2.png](/icon_edit.png ':size=35')icon next to their name.
 
 ![edit_customer.png](/edit_customer.png ':size=500')
 
@@ -53,7 +53,7 @@ Customers can be edited by clicking on the![pencil_2.png](/icon_edit.png ':size=
 
 ## Delete Customer
 
-Customers can be deleted by clicking on the ![recycle_bin.png](/icon_delete.png ':size=35;35') icon next to their name.
+Customers can be deleted by clicking on the![recycle_bin.png](/icon_delete.png ':size=35')icon next to their name.
 
 
 > [!WARNING]

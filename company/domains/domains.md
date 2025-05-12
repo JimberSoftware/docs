@@ -3,9 +3,9 @@
 Domains play a crucial role in the configuration process of your `Jimber SASE Platform` settings. They provide the basis for setting up users and administrators, allowing efficient management of your network connections and changes.
 
 > [!WARNING]
-> It is vital to start with the registration of all the domains that your organization is currently utilizing. This initial setup is instrumental in paving the way for creating users and administrative accounts.
+> Start by registering all domains your organization currently uses. This is a necessary first step before creating users and administrative accounts.
 
-For instance, if you wish to establish a user like 'jef@jimber.test', you must first register the 'jimber.test' domain. This illustrates the importance of domains in configuring your network settings.
+For example, to create a user like 'jef@jimber.test', you must first register the 'jimber.test' domain. This highlights the role of domains in setting up your network.
 
 ![domains.png](domains.png  ':size=800')
 
