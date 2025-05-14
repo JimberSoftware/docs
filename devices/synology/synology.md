@@ -5,7 +5,7 @@
 
 #### Initial setup - `Optional`
 
-> [!WARNING]
+> [!INFO]
 > These steps are only required if you need to reset your NAS or if you need to find the IP address. 
 
 
@@ -44,12 +44,10 @@ After locating the Synology, you will see the following screen:
 Click on 'Connect' to start the installation off the software.  
 
 >[!INFO]
-> If you can't locate the Synology NAS, check the possible reasons below. 
-
-###### Possible reasons
-- The Synology isn't turned on or hasn't started up and is not yet discoverable. Make sure the device is turned on and refresh the search a few times as it might take some time.
-- You are not on the same network as the Synology or it is not connected to the internet.
-- The Synology has to be restarted because of some failure. Hold the power button until the blue light blinks, then let go. Wait until it is turned off, then press the power button again. Wait until you hear a beep before it can be found on https://find.synology.com (+- 1 minute).
+> If you can't locate the Synology NAS, check following reasons: 
+> - The Synology isn't turned on or hasn't started up and is not yet discoverable. Make sure the device is turned on and refresh the search a few times as it might take some time.
+> - You are not on the same network as the Synology or it is not connected to the internet.
+> - The Synology has to be restarted because of some failure. Hold the power button until the blue light blinks, then let go. Wait until it is turned off, then press the power button again. Wait until you hear a beep before it can be found on https://find.synology.com (+- 1 minute).
 
 
 #### Preparation
@@ -64,9 +62,9 @@ By default you will be able to access the NAS through the hostname.
 >[!INFO]
 > On Windows you will have to append **.local**. Any alias you assign to the device will also be resolvable if **DNS Override** is enabled.
 
-##### Create a Synology login for Network Isolation
+##### Create a Synology login for Jimber SASE Client
 
-To make it easier to manage, make a new user on the Synology specifically for the installation of `Jimber SASE Platform`. 
+To make it easier to manage, make a new user on the Synology specifically for the installation of the `Jimber SASE Client`. 
 
 The user will need the following access & permissions: 
   - administrator
@@ -87,9 +85,9 @@ Enable SSH can be realized in 'Control Panel', 'Terminal & SNMP':
 ![ssh_settings](ssh_settings.png ':size=500')
 
 
-#### Installing Network Isolation on your Synology
+#### Installing Jimber SASE Client on your Synology
 
-Download the latest version for your Synology from [downloads](https://signal.jimber.io/downloads) (no need to login) or use the link in the sidebar.
+Download the latest version for your Synology from [downloads](https://signal.jimber.io/downloads) (no need to log in).
 
 > [!INFO]
 > To download another specific version, you can use this [link](https://signal.jimber.io/clients).
@@ -114,7 +112,7 @@ This will download the latest SPK version for your NAS.
 
 ##### Installation
 
-Choose Package Center in the taskbar and then Manuel Install in the right upper corner.
+Choose Package Center in the taskbar and then Manual Install in the right upper corner.
 
 ![Install the SPK](install-spk.png ':size=500')
 
@@ -126,12 +124,12 @@ Follow the sequence shown in the screenshots below to properly install the SPK.
 ![Install the SPK](install-spk5.png ':size=500')
 ![Install the SPK](install-spk6.png ':size=500')
 
-After installation you get the message that the installation was successful.
+You will receive a confirmation that the installation was successful.
 
 ![Install the SPK](install_syn_succes.png ':size=500')
 
 
-Wait about 30 to 60 seconds and now you will see that the NAS has been successfully added to Network Isolation, indicated by the green dot next to the name.
+In about 30 to 60 seconds you should be able to see that the NAS has been successfully added to the `Jimber SASE Platform`, as indicated by the green dot next to the hostname.
 
 ![NAS online](nas-online.png ':size=500')
 
@@ -146,6 +144,6 @@ Ports
 
 
 >[!INFO]
->**Configuring rules** to be found in the [SECURITY section of the sidebar](/security.md)
+>Configuring rules can be found in the [SECURITY](/security.md) section of the sidebar.
 
 

@@ -1,6 +1,6 @@
 # User Devices
 
-The "User Devices" section in our security platform provides an overview and management interface for devices associated with your users. Devices can range across various operating systems including Windows, Mac and Linux.
+The "User Devices" section of the *`Jimber SASE Platform`* provides an overview and management interface for devices associated with your users. Devices can range across various operating systems including Windows, Mac and Linux as well as enabled mobile devices.
 
 ### When are devices visible?
 
@@ -28,12 +28,12 @@ Open the page [Jimber SASE downloads](https://signal.jimber.io/downloads) and do
 
 #### **Windows**
 
-As mentioned, download the latest 'Windows Client' from [Jimber SASE downloads](https://signal.jimber.io/downloads), or use the direct link to access the most recent version for Windows : [latest windows version](https://signal.jimber.io/clients/windows-desktop-latest.msi)
+As mentioned, download the latest 'Windows Client' from [Jimber SASE downloads](https://signal.jimber.io/downloads), or use the direct link to access the most recent version for Windows : [latest Windows version](https://signal.jimber.io/clients/windows-desktop-latest.msi)
 
 > [!INFO]
 > To download another specific version, you can use this [link](https://signal.jimber.io/clients).
 
-Open the downloaded file to install the `Jimber SASE Platform` Client.
+Open the downloaded file to install the `Jimber SASE Client`.
 When a subsequent dialogue box emerges, please select 'Yes' to proceed.
 
 ![windows-popup2.png](/windows-popup2.png ":size=300")
@@ -42,17 +42,17 @@ To launch the software, either search for 'Jimber' using the Windows start menu 
 
 ![windows-search.png](/windows-search.png ":size=600")
 
-Upon launching the software, the Jimber icon will become visible at the bottom right of your screen, indicating that the Jimber SASE service is now running.
+Upon launching the software, the Jimber tray icon will become visible at the bottom right of your screen, indicating that the `Jimber SASE Service` is now running.
 
 > [!INFO]
-> The Jimber icon can be hidden. Use the up arrow icon ![arrow_up.png](/arrow_up.png ":size=30") if necessary to view hidden icons.
+> The Jimber tray icon can be hidden. Use the up arrow icon ![arrow_up.png](/arrow_up.png ":size=30") if necessary to view hidden icons.
 
 ![windows-tray-icon.png](/windows-tray-icon.png ":size=400")
 
-Click on the Jimber icon and select 'Sign in'. This will launch a browser page for you to sign in.
+Click on the Jimber tray icon and select 'Sign in'. This will launch a browser page for you to sign in.
 
 > [!INFO]
-> Once successfully logged in, a green dot will appear on the tray icon as confirmation.
+> Once successfully logged in and connected, a green dot will appear on the Jimber tray icon as confirmation.
 
 ![windows-tray-logged-in.png](/windows-tray-logged-in.png ":size=400")
 
@@ -65,7 +65,7 @@ If you don't have a login yet, please reach out to your network administrator to
 > [!WARNING]
 > Our Mac client currently only supports installation on a system where the user has sudo/administrator rights.
 
-As mentioned, download the latest 'Mac Client' from [Jimber SASE downloads](https://signal.jimber.io/downloads), or use the direct link to access the most recent version for Mac : [latest mac version](https://signal.jimber.io/clients/mac-x64-latest.dmg)"
+As mentioned, download the latest 'Mac Client' from [Jimber SASE downloads](https://signal.jimber.io/downloads), or use the direct link to access the most recent version for Mac : [latest Mac version](https://signal.jimber.io/clients/mac-x64-latest.dmg)"
 
 In the Downloads folder, you will find the file `SASE-Mac-1.XX.0.dmg`(XX stands for the version number).
 
@@ -74,7 +74,7 @@ In the Downloads folder, you will find the file `SASE-Mac-1.XX.0.dmg`(XX stands 
 > [!INFO]
 > To download another specific version, you can use this [link](https://signal.jimber.io/clients).
 
-Double-click on this file and install the `Jimber SASE Platform` Client by dragging the 'JimberNetworkIsolation' icon into your 'Applications' folder.
+Double-click on this file and install the `Jimber SASE Client` by dragging the 'JimberNetworkIsolation' icon into your 'Applications' folder.
 
 ![mac_download.png](/mac_download.png ":size=500")
 
@@ -86,16 +86,16 @@ Following the installation, you'll find the JimberNetworkIsolation icon in your 
 
 ![mac-install_2.png](/mac_install_2.png ":size=400")
 
-Upon launching the software, the Jimber icon will become visible at the top right of your screen, indicating that the Jimber SASE service is now running.
+Upon launching the software, the Jimber menu bar icon will become visible at the top right of your screen, indicating that the `Jimber SASE Service` is now running.
 
 ![mac_launchpad.png](/mac_launchpad.png)
 
-Click on the Jimber icon and select 'Sign in'. This will launch a browser page for you to sign in.
+Click on the Jimber menu bar icon and select 'Sign in'. This will launch a browser page for you to sign in.
 
 ![mac-offline-tray.png](/mac-offline-tray.png ":size=300").
 
 > [!INFO]
-> Once successfully signed in, a green dot will appear on the tray icon as confirmation.
+> Once successfully signed in and connected, a green dot will appear on the Jimber menu bar icon as confirmation.
 
 ![mac-tray-icon-online.png](/mac-online-tray.png ":size=300")
 
@@ -136,14 +136,14 @@ Finally, access the program from your system menu by searching for 'Jimber Netwo
 
 ![linux-search.png](/linux-search.png ":size=300")
 
-Upon launching the software, the Jimber icon will become visible at the top right of your screen, indicating that the Jimber SASE service is now running.
+Upon launching the software, the Jimber system tray icon will become visible at the top right of your screen, indicating that the `Jimber SASE Service` is now running.
 
 ![linux-tray-icon.png](/linux-tray-icon.png ":size=200")
 
-Click on the Jimber icon and select 'Sign in'. This will launch a browser page for you to sign in.
+Click on the Jimber system tray icon and select 'Sign in'. This will launch a browser page for you to sign in.
 
 > [!INFO]
-> Once successfully logged in, a green dot will appear on the tray icon as confirmation.
+> Once successfully logged in and connected, a green dot will appear on the system tray icon as confirmation.
 
 ![linux-tray-logged-in.png](/linux_signed_in.png ":size=200")
 
@@ -168,7 +168,7 @@ After signing in, clicking on the icon will show you this tray:
 
 - `Stealth mode` ensures that traffic is sent via HTTPS, allowing you to connect to Jimber even on hotspots, etc.
    To use this feature, port 51820 is normally used.
-- `Disconnect` will disconnect you from Network Isolation, but you stay signed in.
+- `Disconnect` will disconnect you from the *`Jimber SASE Platform`*, but you stay signed in.
 - `Quit` closes the application.
 
 ## User device online/offline
@@ -188,12 +188,12 @@ In the overview of the user devices, you can already see some properties:
 
 - Name of the device.
 - Operating System.
-- Client Version of the Jimber SASE Platform.
-- Whether Secure Mode is active, disabled, unsupported.
+- Client Version of the *`Jimber SASE Platform`*.
+- Whether Secure Mode is active, disabled or unsupported.
 - IP-address.
-- Approval status which is normally 'Approved'.
+- Approval status.
 
-Clicking on the corresponding strip of the user device, there appears a window with more details:
+Clicking on the corresponding strip of the user device opens a new window with more details:
 
 ![user_device_info_details.png](user_device_info_details.png ":size=500")
 
@@ -205,8 +205,11 @@ The info can be copied by using the copy icon ![copy_icon.png](copy_icon.png ":s
 
 ## Delete user device
 
-Offline user devices can be deleted by clicking on the red trash bin icon next to their name ![icon_delete.png](/icon_delete.png ":size=35").
+User devices can be deleted by clicking on the red trash bin icon next to their name ![icon_delete.png](/icon_delete.png ":size=35").
 
-You will receive a warning before the device is permanently deleted:
+> [!WARNING]
+> When removing an active device it will immediately be disconnected from the *`Jimber SASE Platform`*. The user will have to log in on the device and, if enabled, have the device approved on the *`Jimber SASE Platform`* to add the device again.
+
+You will receive a warning before the device is deleted:
 
 ![deleting_device.png](deleting_device.png ":size=500")

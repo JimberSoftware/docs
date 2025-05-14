@@ -63,7 +63,7 @@ Access the details of a specific group by selecting the corresponding strip with
 > [!NOTE]
 > Devices and users can only be added to the group from their own page:
 >
->    - Comprehensive information on Group Traffic Rules, Attribute Services and Custom Ports Rules can be found in the **SECURITY** section of the sidebar.
+>    - Comprehensive information on Group Traffic Rules, Attribute Services and Custom Ports Rules can be found in the [**SECURITY**](/security.md) section of the sidebar.
 >    - Comprehensive information on Group Configuration can be found [here](/./rules/groupconfiguration/groupconfiguration.md)
 >    - Comprehensive information on how to add users can be found [here](/./company/users/users.md).
 >    - Comprehensive information on how to add devices can be found in the [**DEVICES**](/devices.md) section of the sidebar.
@@ -95,13 +95,14 @@ The new group will show the same details as the original group: firewall rules, 
 Groups can be deleted by clicking on the red trash bin icon next to their name 
 ![icon_delete.png](/icon_delete.png ':size=35').
 
+> [!WARNING]
+> This process is irreversible.
 
+You will receive a warning before the group is permanently deleted:
 
 ![delete_group.png](/delete_group.png ':size=500')
 
 
-> [!WARNING]
-> The group will be removed without further notice.
 
 
 
