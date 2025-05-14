@@ -1,6 +1,6 @@
 # Integrating Active Directory
 
-This guide provides instructions for installing Network Isolation on a domain controller and ensuring reliable communication within the domain.
+This guide provides instructions for installing Jimber SASE on a domain controller and ensuring reliable communication within the domain.
 
 ## Table of contents
 
@@ -392,7 +392,7 @@ Before proceeding, make sure that the new user account is created in the domain 
 #### Step 2: Login as Local Administrator
 1. **Log in to the device** as a **local administrator**.
 
-#### Step 3: Install and Configure Network Isolation
+#### Step 3: Install and Configure Jimber SASE
 1. Install network isolation software if it’s not already installed.
 2. **Configure network isolation** according to your organization's policies.
 

@@ -9,6 +9,8 @@
   * [Groups](./company/groups/groups)
   * [Domains](./company/domains/domains)
   * [Integrations](./company/integrations/integrations)
+  * [Notifications](./company/notificat/notifications)
+  * [Configuration](./company/configur/configuration)
 * [**DEVICES**](/devices.md)
   * [User Devices](./devices/userdevices/userdevices)
   * [Servers](./devices/servers/servers)
