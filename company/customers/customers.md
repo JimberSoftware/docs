@@ -25,7 +25,10 @@ Following fields should be provided:
   - Primary contact email
 
 > [!WARNING]
->  In the customer Name field, spaces and special characters or symbols are not allowed. You can however use these characters in the Display name field.
+>  In the customer Name field spaces and special characters or symbols are not allowed. You can however use these characters in the Display name field.
+
+Filling in the website will cause an icon to appear in front of the customer's name.
+
 ## List of Customers
 
 ![list_customers.png](/list_customers.png ':size=800')
@@ -39,7 +42,7 @@ You get an overview of created assets:
 ![overview_customer.png](/overview_customer.png ':size=800')
 
 > [!NOTE]
-> A newly created customer has no assest to show yet.
+> A newly created customer has no assets to show yet.
 
 ## Edit Customer
 Customers can be edited by clicking on the![pencil_2.png](/icon_edit.png ':size=35;35') icon next to their name.

@@ -35,7 +35,7 @@ Synchronize your user data seamlessly from Azure Entra ID to the `Jimber SASE Pl
 
 ![micro_entra_id.png](micro_entra_id.png ":size=800")
 
-#### **Steps to Enable Synchronization**:
+#### **Steps to enable synchronization**:
 
 <!-- 1. **Network Isolation Group**: The name of a group on Microsoft Entra ID where all groups that should be synchronized are a member of. All member groups of this group (and their users) will be synced to Network Isolation. -->
 

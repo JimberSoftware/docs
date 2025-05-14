@@ -106,7 +106,7 @@ In the user overview, several key properties are immediately visible: the user's
 
  ![overview_users.png](/overview_users.png ':size=800x150')
 
- Clicking on a user's row opens a detailed view with additional information.
+ Clicking on the corresponding strip of a user opens a detailed view with additional information.  
 
 > [!INFO] 
 > Avoid using the action buttons at the end of the row (e.g. edit or delete).
