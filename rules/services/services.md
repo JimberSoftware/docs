@@ -1,9 +1,10 @@
 # Services
 
-Within our platform, a "Service" refers to a digital service that is accessible by a user. These services can encompass a variety of applications and resources, including websites/web portals, remote desktops, and internal CRMs (Customer Relationship Management systems). 
+Within the *`Jimber SASE Platform`*, a **Service** represents a digital resource that can be made accessible to users. These services can include websites, internal portals, remote desktops, CRMs, or any other network-based application.
 
-Once a service is attributed to a group and a destination, the service entries will appear in the "Security Panel" of the user.
-The Security Panel can be reached by clicking on the Jimber Network Isolation icon in the taskbar:
+To make a service available, it must be assigned to a **group** and a **destination** on the [**Attribute Services**](/./rules/attribute_services/attribute_services.md) page. Once this is configured, the service will appear in the [**Security Panel**](/./rules/security_panel/security_panel.md) for users who are members of the selected group.
+
+Users can open the Security Panel by clicking the **Jimber SASE tray icon** in their taskbar.
 
 ![security_panel.png](/security_panel.png ':size=300')
 
@@ -23,21 +24,26 @@ prominently located at the upper right corner of the interface.
 
 ![create_service.png](/create_service.png ':size=800')
 
+1. **Choose a Name**: Start by giving your service a clear and recognizable name.
 
-You can choose a name for the service. Next step is creating a new service entry by clicking on 'Create new service entry'.
+2. **Create a New Service Entry**: Click **"Create new service entry"**. This defines how the service behaves.
 
-<!-- ![create_new_entry.png](/create_new_entry.png ':size=900x') -->
+    - **Description**: Provide a short explanation of the service entry.
+    - **Action**: Currently, the only available option is **"Open website"**.
+    - **URL/Path**: Enter the web address or internal path the service should open.
 
-You can create your service by entering a description, selecting what it should do and the URL or Path the service will need to complete the action. 
+3. **Add an Access Rule**: Define how traffic is allowed for the service.
 
-<!-- ![create_access_rules.png](/create_access_rules.png ':size=900x') -->
+    - **Description**: Briefly describe the purpose of the rule.
+    - **Start Port / End Port**: Specify the port range to allow. If left empty, it defaults to `1` and `65535`.
+    - **Protocol**: Choose the protocol the service will use (e.g., TCP or UDP).
 
-To add an access rule, write a description, define start and end ports and choose the protocol through which the service will communicate.
+Repeat these steps to configure additional services as needed.
 
 > [!WARNING]
-> Don't forget to submit the service, by clicking on the `Submit service` button ![submit_service.png](/submit_service.png ':size=100') prominently located at the upper right corner of the interface.
+> Don't forget to submit the service, by clicking on the `Submit service` button.
 
-In any case, you will receive a warning if the service was not submitted:
+If there are any unsaved changes, a warning message will appear, so you won’t miss submitting the service.
 
 ![unsaved_changes.png](/unsaved_changes.png ':size=400')
 
@@ -49,7 +55,14 @@ After creating the service you can switch to [Attribute Services](/./rules/attri
 Services can be edited by clicking on the yellow pencil icon next to their name 
 ![icon_edit.png](/icon_edit.png ':size=35').
 
-The same window appears as when creating a service. You can separately modify or delete service inputs or access rules.
+From here, you can:
+
+- Change the **service name**.
+- Add, remove, or modify **service entries**.
+- Add, remove, or modify **access rules**.
+
+If you make changes you don’t want to keep, use the `Clear changes` button to revert to the previously saved version.
+Don’t forget to save your changes to apply the updates by pressing the `Submit service` button.
 
 
 ## Delete Service
