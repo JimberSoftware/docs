@@ -10,13 +10,16 @@ A network controller is a networking device that forwards data packets between t
 > It ensures that each part of your network, whether it's a device, user, or application, cannot access any other part without explicit permission.
 
 
+![network controllers.png](/networkcontrollers.png ':size=800')
 
 ## Cloud Network Controller (default)
 
 Every company that uses the `Jimber SASE Platform` will have a cloud network controller **added by default**. This network controller ensures that all the company's devices and users, both external and internal, can access the network securely and consistently. The cloud network controller acts as an entry and exit point for network traffic, ensuring everyone can log in and access the necessary resources.
 
+An update is available when indicated by a green circle ![icoon_update.png](/icoon_update.png ':size=30') with an upward-pointing arrow.
 
-![network controllers.png](/networkcontrollers.png ':size=800')
+![nc_onpremise_update.png](/nc_onpremise_update.png ':size=800')
+
 
 
 ### On-Premise Network Controller (optional)
@@ -53,8 +56,7 @@ prominently located at the upper right corner of the interface.
 
 ## Edit on-premise Network Controller
 
- Network Controllers can be edited by clicking on the yellow pencil icon next to their name 
-![icon_edit.png](/icon_edit.png ':size=35').
+ Network Controllers can be edited by clicking on the yellow pencil icon ![icon_edit.png](/icon_edit.png ':size=30') next to their name.
 
 
 ![edit_networkcontroller.png](/edit_networkcontroller.png ':size=500')
@@ -62,8 +64,7 @@ prominently located at the upper right corner of the interface.
 
 ## Delete on-premise Network Controller
 
- Network Controllers can be removed by clicking on the red trash bin icon next to their name 
-![icon_delete.png](/icon_delete.png ':size=35').
+ Network Controllers can be removed by clicking on the red trash bin icon ![icon_delete.png](/icon_delete.png ':size=30') next to their name.
 
  You will receive a warning before the device is permanently deleted:
  
