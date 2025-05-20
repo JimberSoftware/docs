@@ -29,10 +29,10 @@ To set up web filtering for a group, follow these steps:
 
 5. **Monitor Traffic**: You can also monitor traffic to the blocked or allowed websites to track usage patterns and ensure that the filtering rules are being followed. Use the corresponding toggle to enable or disable each category.
 
-6. **Activate Changes**: Once you’ve made your changes, click the `Submit Rules` button to apply them and ensure the rules are active.
+6. **Activate Changes**: Once you’ve made your changes, click the `➢ Submit rules` button to apply them and ensure the rules are active.
 
 > [!INFO] 
-> Always double-check the rules before submitting to ensure the configuration is correct.
+> Always double-check the rules before submitting to ensure the configuration is correct. If you make changes you don’t want to keep, use the `Clear changes` button to revert to the previously saved version.
 
 If there are any unsaved changes, a warning message will appear, so you won’t miss updating your settings.
 

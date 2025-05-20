@@ -21,13 +21,7 @@ Scripts can be written for a variety of operating systems:
 This allows for flexible device-side automation based on connection status, for example, applying firewall rules, starting background services, or cleaning up temporary resources.
 
 ## Create User Device Script 
-To create a new script into the platform, click on the `Create new`  button
-
-![create_new.png](/create_new.png)
-
-prominently located at the upper right corner of the interface.
-
-
+To create a new script into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
 
 ![create_script.png](create_script.png ':size=500')
 

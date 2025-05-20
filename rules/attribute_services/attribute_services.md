@@ -1,21 +1,47 @@
 # Attribute Services
 
+After you have created a service on the [**Services**](/./rules/services/services.md) page, you need to configure it under **Attribute Services**. Doing so, you make the service available by assigning it to a group en a destination. 
+
 ![attribute_service.png](attribute_service.png ':size=800')
 
-### Configure Attribute Services
+### Create Attribute Services
 
-Click on `Add service` and follow the steps below:  
+Click on `+ Add service` and follow the steps below:  
 
 1. **Select a Group**: Choose the group for which you're creating the service.
 2. **Select a service**: Select the appropriate service from the dropdown list.
 3. **Select a destination**: Select the appropriate destination from the dropdown list.
-4. **Removing Service Rules**: Should you need to revoke a rule, click on the red trash bin icon next to the service rule![recycle_bin.png](/icon_delete.png ':size=35'). 
-6. **Activate Changes**: Once you've configured the service rule, press the `Submit Rules` button ![submit_service.png](/submit_service.png ':size=100') to apply your changes.
+4. **Enable or Disable**: Use the slider to turn the service on or off.
+5. **Activate Changes**: Once you've configured the service rule, press the `➢ Submit service` button to apply your changes.
+
+### Filter Attribute Services
+
+You can filter the list of Attribute Services using the dropdown menus at the top of the page. This helps you quickly find and manage the rules you're looking for.
+
+- **Group**: Show only services assigned to a specific group.  
+- **Service**: View all entries related to a particular service.  
+- **Destination**: Filter the list based on the selected destination.
+
+### Edit Attribute Services
+
+You can freely edit the listed Attribute Services. If you make changes you don’t want to keep, use the `Clear changes` button to revert to the previously saved version.
+
+> [!WARNING]
+> Don’t forget to save your changes to apply the updates by using the `➢ Submit service` button.
 
 
-In any case, you will receive a warning if the rule was not submitted:
+### Delete Attribute Services
 
-![unsaved_changes.png](/unsaved_changes.png ':size=400')
+Attribute Service rules can be removed by clicking on the delete icon![icon_delete.png](/icon_delete.png ':size=35')in their row.
 
+> [!WARNING]
+> Don’t forget to save your changes to apply the updates by using the `➢ Submit service` button.
 
+> [!INFO]
+> If there are any unsaved changes when you leave the page, a warning message will appear, so you won’t miss submitting the service.
+>
+>![unsaved_changes.png](/unsaved_changes.png ':size=400')
 
+### Download Attribute Services
+
+You can download all Attribute Services as a **.csv file** by clicking the download icon ![icon_download.png](/icon_download.png ':size=20') located next to the `➢ Submit service` button.

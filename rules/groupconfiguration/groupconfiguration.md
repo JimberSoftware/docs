@@ -171,7 +171,7 @@ When Always On is enabled, the application will launch with the system. Dependin
 - **Autostart Mode**: The app starts automatically but allows users to disconnect if needed.
 
 ##### Configuration Steps
-**
+
 1. Enable **Always On** in the *`Jimber SASE Platform`* group settings of the selected group.
 2. Choose between **Forced Mode** or **Autostart Mode**.
 3. Deploy the settings to connected devices.
