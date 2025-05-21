@@ -6,22 +6,22 @@ To make a service available, it must be assigned to a **group** and a **destinat
 
 Users can open the Security Panel by clicking the **Jimber SASE tray icon** in their taskbar.
 
-![security_panel.png](/security_panel.png ':size=300')
+![Screenshot of the Jimber Tray Menu](./screenshots/security_panel.png ':size=300')
 
 A security panel with multiple services can look like this:
 
-![security_panel_overview.png](/security_panel_overview.png ':size=800')
+![Screenshot of the Services tab of the Security Panel](./screenshots/security_panel_overview.png ':size=800')
 
 
 ### Create Services
 
 To create a service into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
 
-![services.png](/services.png ':size=800')
+![Screenshot of the Services page](./screenshots/services.png ':size=800')
 
 This will open the following screen where you can enter the specifics of your service:
 
-![create_service.png](/create_service.png ':size=800')
+![Screenshot of the Create Service page](./screenshots/create_service.png ':size=800')
 
 1. **Choose a Name**: Start by giving your service a clear and recognizable name.
 
@@ -40,7 +40,7 @@ This will open the following screen where you can enter the specifics of your se
 > [!WARNING]
 > Don't forget to submit the service, by clicking on the `➢ Submit service` button. If there are any unsaved changes when you leave the page, a warning message will appear:
 >
->![unsaved_changes.png](/unsaved_changes.png ':size=400')
+>![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=400')
 
 Repeat these steps to configure additional services as needed. 
 
@@ -49,13 +49,13 @@ After creating the service you can switch to [Attribute Services](/./rules/attri
 > [!INFO] 
 > You can save the configuration of your service by clicking the `📄 Save template` button.
 >
->![save_template.png](/save_template.png ':size=500')
+>![save_template.png](./screenshots/save_template.png ':size=500')
 >
 > When prompted, enter a distinctive name and a clear, descriptive summary to make it easy to identify and reuse later. 
 >
 > Any saved templates can be used when creating a new service by clicking the `📄 Load template` button at the bottom of the page, selecting the appropriate service template and clicking the `➢ Apply template` button.
 >
->![load_template.png](/load_template.png ':size=500')
+>![load_template.png](./screenshots/load_template.png ':size=500')
 
 ### Filter Services
 
@@ -64,7 +64,7 @@ You can search the list of Services using the search box at the top of the page.
 - Use the search box to enter keywords and filter the services list.
 
 ### Edit Services
-Services can be edited by clicking on the edit icon![icon_edit.png](/icon_edit.png ':size=35')in their row.
+Services can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
 
 From here, you can:
 
@@ -77,13 +77,13 @@ If you make changes you don’t want to keep, use the `Clear changes` button to 
 > [!WARNING]
 > Don't forget to submit the service, by clicking on the `➢ Submit service` button. If there are any unsaved changes when you leave the page, a warning message will appear:
 >
->![unsaved_changes.png](/unsaved_changes.png ':size=400')
+>![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=400')
 
 ### Delete Services
 
-Services can be removed by clicking on the delete icon![icon_delete.png](/icon_delete.png ':size=35')in their row.
+Services can be removed by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 
  You will receive a warning before the service is permanently deleted:
  
-![deleting_service.png](/deleting_service.png ':size=500x150')
+![Screenshot of the deletion warning](./screenshots/delete_service.png ':size=500x150')
 

@@ -2,7 +2,7 @@
 
 After you have created a service on the [**Services**](/./rules/services/services.md) page, you need to configure it under **Attribute Services**. Doing so, you make the service available by assigning it to a group en a destination. 
 
-![attribute_service.png](attribute_service.png ':size=800')
+![Screenshot of the Attribute Services page](./screenshots/attribute_service.png ':size=800')
 
 ### Create Attribute Services
 
@@ -32,7 +32,7 @@ You can freely edit the listed Attribute Services. If you make changes you don�
 
 ### Delete Attribute Services
 
-Attribute Service rules can be removed by clicking on the delete icon![icon_delete.png](/icon_delete.png ':size=35')in their row.
+Attribute Service rules can be removed by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 
 > [!WARNING]
 > Don’t forget to save your changes to apply the updates by using the `➢ Submit service` button.
@@ -40,8 +40,8 @@ Attribute Service rules can be removed by clicking on the delete icon![icon_dele
 > [!INFO]
 > If there are any unsaved changes when you leave the page, a warning message will appear, so you won’t miss submitting the service.
 >
->![unsaved_changes.png](/unsaved_changes.png ':size=400')
+>![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=400')
 
 ### Download Attribute Services
 
-You can download all Attribute Services as a **.csv file** by clicking the download icon ![icon_download.png](/icon_download.png ':size=20') located next to the `➢ Submit service` button.
+You can download all Attribute Services as a **.csv file** by clicking the download icon ![](../../images/icons/icon_download.png ':size=20') located next to the `➢ Submit service` button.

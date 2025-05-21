@@ -10,13 +10,19 @@ Traffic to blocked sites can be monitored, providing insights into which users a
 
 Web Filtering uses regularly updated lists per category to ensure that new threats and unwanted content are automatically detected and blocked as they emerge.
 
-![webfiltering.png](/webfiltering_updated.png ':size=800')
+![Screenshot of the Web Filtering page](./screenshots/webfiltering.png ':size=800')
+
+> [!WARNING]
+> For web filtering rules to be effective, DNS Override must be enabled for the same group. Without it, filtering rules won’t be applied.
 
 ### Configuring Web Filtering
 
 To set up web filtering for a group, follow these steps:
 
 1. **Select a Group**: Start by selecting the group you want to configure filtering rules for.
+
+> [!INFO] 
+> If a user belongs to multiple groups with conflicting web filtering rules, blocking takes precedence over allowing. This means that if one group blocks a site and another allows it, the site will be blocked for that user.
 
 2. **Block Categories**: Choose and block specific content categories (e.g., adult content, malware, gambling) to restrict access for the selected group. Use the corresponding toggle to enable or disable each category.
 
@@ -31,15 +37,13 @@ To set up web filtering for a group, follow these steps:
 
 6. **Activate Changes**: Once you’ve made your changes, click the `➢ Submit rules` button to apply them and ensure the rules are active.
 
-> [!INFO] 
+> [!WARNING] 
 > Always double-check the rules before submitting to ensure the configuration is correct. If you make changes you don’t want to keep, use the `Clear changes` button to revert to the previously saved version.
 
-If there are any unsaved changes, a warning message will appear, so you won’t miss updating your settings.
+> [!INFO]
+> If there are any unsaved changes, a warning message will appear, so you won’t miss updating your settings.
+>
+>![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=400')
 
-![unsaved_changes.png](/unsaved_changes.png ':size=400')
 
-> [!INFO] 
-> If a user belongs to multiple groups with conflicting web filtering rules, blocking takes precedence over allowing. This means that if one group blocks a site and another allows it, the site will be blocked for that user.
 
-> [!WARNING]
-> For web filtering rules to be effective, DNS Override must be enabled for the same group. Without it, filtering rules won’t be applied.

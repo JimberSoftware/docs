@@ -13,43 +13,69 @@ Scripts can be written for a variety of operating systems:
 - **Windows Server**
 - **Linux Server**
 
-> [!NOTE]  
-> The script format must match the target operating system:
-> - **Windows** and **Windows Server**: use `.bat` or `.ps1` (PowerShell) scripts.  
-> - **macOS** and **Linux-based systems**: use standard shell scripts (`.sh`), written in Bash or another supported shell.
+![Screenshot of the User Device Scripts page](./screenshots/scripts.png ':size=800')
 
 This allows for flexible device-side automation based on connection status, for example, applying firewall rules, starting background services, or cleaning up temporary resources.
 
-## Create User Device Script 
-To create a new script into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
+### Create User Device Scripts
 
-![create_script.png](create_script.png ':size=500')
+Click on the `+ Create new` button and follow the steps below:
 
-All fields in the script creation form are mandatory. Ensure that the script content is written in the correct format for the selected platform.
+1. **Name**: Enter a descriptive name for the script to help identify its purpose.
+2. **Select Group**: Choose the user group this script should apply to. The script will only execute for users who are members of this group.
+3. **Occurrence**: Select whether the script should run `On Connect` or `On Disconnect`.
+4. **Platform**: Choose the operating system the script is intended for (e.g. Windows, macOS, Linux, etc.).
+5. **Enable or Disable**: Use the slider to turn the script on or off.
+6. **Script Field**: Write or paste your script content in the provided editor. Make sure it matches the format for the selected platform.
+7. **Activate Changes**: Press the `Create User Device Script` button to save and apply the new user device script.
+
+> [!NOTE]  
+> Ensure that your script syntax matches the requirements of the target platform:
+> - `.bat` or `.ps1` for Windows-based systems  
+> - `.sh` (Bash) for Linux/macOS-based systems
+
+![Screenshot of the Create User Device Script window](./screenshots/create_script.png ':size=500')
 
 > [!WARNING]
 > It is essential to select the correct **group** when creating the script. The script will only be executed on devices belonging to the specified group when the defined trigger condition is met. Assigning the script to the wrong group may result in it not running on the intended devices.
 
-## User Device Script Details
+### Filter User Device Scripts
+
+You can search the list of Scripts using the search box at the top of the page. This helps you quickly find and manage the script you're looking for.
+
+- Use the search box to enter keywords and filter the scripts list.
+
+Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
+
+- **Property**: A dropdown menu where you choose the field to filter on.
+- **Match type**: A dropdown that allows you to select how to match the value (e.g. `equals`, `contains`, etc.).
+- **Value**: Enter or select the value to match, depending on the selected property.
+
+You can press the `+` button to add multiple filters.
+
+Once filters are applied:
+- The results are updated to reflect your conditions.
+- Active filters appear at the top of the page.
+- You can remove filters individually by clicking the `X` next to each, or remove all at once by clicking the `Reset Filters` button.
+
+
+### User Device Scripts Details
 
 To view the details of a specific script, select the row in the table (rather than using the action buttons at the end).
 
-![overview_scripts.png](overview_scripts.png ':size=800')
+![script_details.png](./screenshots/script_details.png ':size=500')
 
-![script_details.png](script_details.png ':size=500')
+### Edit User Device Scripts
 
-## Edit User Device Script
+Scripts can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
 
-Scripts can be edited by clicking on the yellow pencil icon next to their name ![icon_edit.png](/icon_edit.png ':size=35').
+![edit_script.png](./screenshots/edit_script.png ':size=500')
 
+### Delete User Device Scripts
 
-![edit_script.png](edit_script.png ':size=500')
-
-## Delete User Device Script
-
-Scripts can be deleted by clicking on the red trash bin icon next to their name ![recycle_bin.png](/icon_delete.png ':size=35').
+Scripts can be removed by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 
 You will receive a warning before the user is permanently deleted:
 
-![delete_script.png](delete_script.png ':size=500')
+![delete_script.png](./screenshots/delete_script.png ':size=500')
 
