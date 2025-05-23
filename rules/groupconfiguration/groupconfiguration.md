@@ -1,6 +1,8 @@
-# Group Configuration
+# ![](../../images/menu/menu_groupconfig.png ':size=28') Group Configuration
 
 Group Configuration allows administrators to define and manage policies that control how different sets of users or devices behave within the network. By assigning devices to groups, you can tailor specific features—such as routing behavior, DNS resolution, device onboarding rules, and application enforcement—to match organizational needs or security requirements.
+
+![Screenshot of the Group Configuration page](./screenshots/groupconfig.png ':size=800')
 
 This modular approach makes it easy to apply consistent settings across similar users or departments, enforce compliance standards, and simplify large-scale management. Each tab below represents a configurable option that can be enabled, disabled, or customized per group.
 

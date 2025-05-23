@@ -1,4 +1,4 @@
-# Services
+# ![](../../images/menu/menu_services.png ':size=28') Services
 
 Within the *`Jimber SASE Platform`*, a **Service** represents a digital resource that can be made accessible to users. These services can include websites, internal portals, remote desktops, CRMs, or any other network-based application.
 

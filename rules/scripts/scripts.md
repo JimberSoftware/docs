@@ -1,4 +1,4 @@
-# User Device Scripts
+# ![](../../images/menu/menu_scripts.png ':size=28') User Device Scripts
 
 Within the *`Jimber SASE Platform`*, you can create and manage user device scripts under the **User Device Scripts** section. These scripts are executed on the user's device and support two types of triggers:
 

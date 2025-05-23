@@ -1,4 +1,4 @@
-# Port Forwarding
+# ![](../../images/menu/menu_portforwarding.png ':size=28') Port Forwarding
 
 Port Forwarding allows external users who are not members of the *`Jimber SASE Platform`* to connect to internal services. Access is provided through the public IP of the Cloud Network Controller or the IP address of the On-Premise Network Controller.
 

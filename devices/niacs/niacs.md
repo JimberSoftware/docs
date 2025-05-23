@@ -1,12 +1,12 @@
-# Network Isolation Access Client - NIAC
+# ![](../../images/menu/menu_niacs.png ':size=25') Network Isolation Access Client - NIAC
 
 A Network Isolation Access Client (NIAC) is a specialized hardware device engineered to enable secure network connections. It can be integrated with a broad range of devices, including printers, IP cameras, hard drives and industrial machinery. By serving as a distinct gateway for these devices, NIACs enhance accessibility, ensuring that all data in transit remains encrypted for utmost security.
 
 
-![niacs.png](/niacfront.png ':size=300')
+![niacs.png](./screenshots/niacfront.png ':size=300')
  
 
-![niacs.png](/niacback.png ':size=300')
+![niacs.png](./screenshots/niacback.png ':size=300')
 
 
 A NIAC has four available ports: one WAN port for internet connection, two LAN ports and one USB port. The USB port is currently not supported, so only network devices can be connected.
@@ -20,33 +20,22 @@ A LAN port is typically used to connect local devices within a network. Typical 
 Once a device is connected, you can see the via DHCP assigned IP address of the device in the overview of the NIAC. In this overview you can also remove a device and activate or deactivate secure mode. 
 
 
-![niac_overview.png](/niac_overview.png ':size=800')
-
+![niac_overview.png](./screenshots/niac_overview.png ':size=800')
 
 > [!INFO]
 > If you're an end customer interested in integrating NIACs with your devices, please get in touch with your assigned integrator. 
 
-
 > [!INFO]
 > If you're an integrator in need of NIACs, you can either contact your distributor or reach out directly to Jimber via email at security@jimber.io.
 
-
-
-
-## Create NIAC
+### Create NIAC
 > [!WARNING]
 > Creating a NIAC can only be done by super admins of Jimber.
 
+To create a NIAC into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
 
 
-To create a NIAC into the platform, click on the `Create new` button
-
-![create_new.png](/create_new.png)
-
-prominently located at the upper right corner of the interface.
-
-
-![create_niac.png](/create_niac.png ':size=500')
+![create_niac.png](./screenshots/create_niac.png ':size=500')
 
 > [!INFO]
 > The hostname must be a lowercase string.
@@ -57,33 +46,31 @@ prominently located at the upper right corner of the interface.
 > [!WARNING]
 > A device that is connected to a NIAC will not be able to reach the internet unless the NIAC is a member of a group for which the WAN Gateway is enabled. For instance: if a NIAC is a member of the group WanGateway and WAN GATEWAY is enabled for that group in Group Configuration, then the connected device will be able to reach the internet.
 
-![group_config.png](/group_config.png ':size=800')
+![group_config.png](./screenshots/group_config.png ':size=800')
 
 <!-- ![group_details_niac.png](/group_details_niac.png ':size=600') -->
 
-## Inspect NIAC
+### Inspect NIAC
+
 To view the details of a specific NIAC, select the corresponding row in the table.
 
 > [!INFO] 
 > Avoid using the action buttons at the end of the row (e.g. edit or delete).
 
-![niac_details.png](/niac_details.png ':size=600')
+![niac_details.png](./screenshots/niac_details.png ':size=600')
 
-By clicking on the red padlock icon you can release one of the devices connected to the NIAC. 
+You can release one of the devices connected to the NIAC by clicking on the red padlock icon ![](../../images/icons/icon_lock.png ':size=20') in their row.
 
-## Edit NIAC
-NIACs can be edited by clicking on the yellow pencil icon next to their name 
-![icon_edit.png](/icon_edit.png ':size=35').
+### Edit NIAC
 
+NIACs can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
 
-![edit_niac.png](/edit_niac.png ':size=600x')
+![edit_niac.png](./screenshots/edit_niac.png ':size=600x')
 
+### Delete NIAC
 
-## Delete NIAC
+NIACs can be deleted by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 
-NIACs can be deleted by clicking on the red trash bin icon next to their name 
-![icon_delete.png](/icon_delete.png ':size=35').
-
- You will receive a warning before the NIAC is permanently deleted:
+You will receive a warning before the NIAC is permanently deleted:
  
-![delete_niac.png](/delete_niac.png ':size=500x')
+![delete_niac.png](./screenshots/delete_niac.png ':size=500x')

@@ -1,4 +1,4 @@
-# Group Traffic
+# ![](../../images/menu/menu_grouptraffic.png ':size=28') Group Traffic
 
 The **Group Traffic** feature controls how different groups can communicate with each other across your network setup. On the *`Jimber SASE Platform`*, a **group** is a flexible concept that can represent users, servers, or devices connected via a Network Isolation Access Client (NIAC).
 

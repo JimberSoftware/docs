@@ -1,4 +1,4 @@
-# Allow Custom Ports
+# ![](../../images/menu/menu_allowcustomports.png ':size=28') Allow Custom Ports
 
 This feature is designed for fine-grained control over inter-group communication. It lets you specify which server a group can communicate with, through which port, and using what protocol. It's an ideal solution for groups that don't require unrestricted access to another group.
 

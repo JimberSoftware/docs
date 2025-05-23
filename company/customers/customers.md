@@ -1,4 +1,4 @@
-# Customers
+# ![](../../images/menu/menu_customers.png ':size=25') Customers
 > [!WARNING]
 > This *`Customers`* section is exclusively available for **partners**. If you are an end customer, you will be directly redirected to the *`Jimber SASE Platform`* configuration of your company.
 
@@ -6,17 +6,11 @@ In our platform, a **customer** refers to a company intending to use `Jimber SAS
 
 For clarity, consider a scenario where a company named *`Astral Voyage`* wants to use `Jimber SASE Platform`. You must first create *`Astral Voyage`* as a customer on the platform before any further configurations or service provisions can occur.
 
-## Create Customer
+### Create Customers
 
-To incorporate a new customer into the platform, click on the `Create new` button
+To incorporate a new customer into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
 
-![create_new.png](/create_new.png)
-
-prominently located at the upper right corner of the interface.
-
-![create_customer.png](/create_customer.png ':size=500')
-
-
+![create_customer.png](./screenshots/create_customer.png ':size=500')
 
 Following fields should be provided:
 	
@@ -29,40 +23,39 @@ Following fields should be provided:
 
 Filling in the website will cause an icon to appear in front of the customer's name.
 
-## List of Customers
+### List of Customers
 
-![list_customers.png](/list_customers.png ':size=800')
+![list_customers.png](./screenshots/list_customers.png ':size=800')
 
 
-## Details of Customer  
+### Details of Customers
 
 To view the details of a specific customer, select their row in the table (rather than using the action buttons at the end).
 You get an overview of created assets:
 
-![overview_customer.png](/overview_customer.png ':size=800')
+![overview_customer.png](./screenshots/overview_customer.png ':size=800')
 
 > [!NOTE]
 > A newly created customer has no assets to show yet.
 
-## Edit Customer
-Customers can be edited by clicking on the![pencil_2.png](/icon_edit.png ':size=35')icon next to their name.
+### Edit Customers
+Customers can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
 
-![edit_customer.png](/edit_customer.png ':size=500')
+![edit_customer.png](./screenshots/edit_customer.png ':size=500')
 
 > [!WARNING]
 > You will be notified that changing the partner will remove all current security consultant roles.
 
 
 
-## Delete Customer
+### Delete Customers
 
-Customers can be deleted by clicking on the![recycle_bin.png](/icon_delete.png ':size=35')icon next to their name.
-
+Customers can be deleted by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 
 > [!WARNING]
 > All resources of the customer will be deleted when deleting a customer. This process is irreversible.
 
 You will receive a warning before the customer is permanently deleted:
 
-![deleting_customer.png](deleting_customer.png ':size=500')
+![deleting_customer.png](./screenshots/deleting_customer.png ':size=500')
 

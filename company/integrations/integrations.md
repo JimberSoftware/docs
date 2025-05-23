@@ -1,4 +1,4 @@
-# Integrations
+# ![](../../images/menu/menu_integrations.png ':size=25') Integrations
 
 <!-- ## Credentials: API Key
 
@@ -12,14 +12,14 @@ API keys are a way to authenticate and grant access to various resources of an a
 A DNS forwarder redirects DNS queries from one server to another. It's useful for managing and speeding up DNS queries by redirecting requests to a faster or more updated DNS server than the one set by default.
 To do so, enter the IP address DNS server and click on the apply button.
 
-![dns_forwarder.png](dns_forwarder.png)
+![dns_forwarder.png](./screenshots/dns_forwarder.png)
 
 ## Active Directory
 
 > [!INFO]
 > Detailed instructions are available in the Advanced section [here](/./advanced/activedirectory/activedirectory.md).
 
-![integration_ad.png](integration_ad.png ":size=800")
+![integration_ad.png](./screenshots/integration_ad.png ":size=800")
 
 <!-- > [!INFO]
 > To activate this setting, you need to disable Microsoft Entra ID syncing as indicated.
@@ -33,7 +33,7 @@ Synchronize your user data seamlessly from Azure Entra ID to the `Jimber SASE Pl
 > [!INFO]
 > Detailed instructions are available in the Advanced section [here](/./advanced/entraid/entraid.md).
 
-![micro_entra_id.png](micro_entra_id.png ":size=800")
+![micro_entra_id.png](./screenshots/micro_entra_id.png ":size=800")
 
 #### **Steps to enable synchronization**:
 

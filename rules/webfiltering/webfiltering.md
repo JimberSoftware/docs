@@ -1,6 +1,6 @@
 
 
-# Web Filtering
+# ![](../../images/menu/menu_webfiltering.png ':size=28') Web Filtering
 
 Web Filtering allows you to control and manage which websites a specific group can access on the network. You can block categories of content such as adult content, fake news, gambling, malware/adware, and social media.
 
