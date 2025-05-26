@@ -13,7 +13,7 @@ Because groups can be applied to various types of endpoints, this feature gives 
 > [!WARNING]  
 > Group Traffic should be used carefully. For more targeted control over specific services, consider using **Allow Custom Ports**, which offers a more secure and detailed approach.
 
-### Create Group Traffic Rule
+### Create Group Traffic Rules
 
 Click on the `+ Create a new rule` button and follow the steps below:
 
@@ -62,7 +62,7 @@ Group Traffic rules can be removed by clicking on the delete icon ![](../../imag
 >
 >![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=400')
 
-### Download Group Traffic Ruless
+### Download Group Traffic Rules
 
 You can download all Group Traffic rules as a **.csv file** by clicking the download icon ![](../../images/icons/icon_download.png ':size=20') located next to the `➢ Submit rules` button.
 

@@ -47,13 +47,13 @@ Repeat these steps to configure additional services as needed.
 After creating the service you can switch to [Attribute Services](/./rules/attribute_services/attribute_services.md) to specify the details of the service.
 
 > [!INFO] 
-> You can save the configuration of your service by clicking the `📄 Save template` button.
+> You can save the configuration of your service by clicking the `📄Save template` button.
 >
 >![save_template.png](./screenshots/save_template.png ':size=500')
 >
 > When prompted, enter a distinctive name and a clear, descriptive summary to make it easy to identify and reuse later. 
 >
-> Any saved templates can be used when creating a new service by clicking the `📄 Load template` button at the bottom of the page, selecting the appropriate service template and clicking the `➢ Apply template` button.
+> Any saved templates can be used when creating a new service by clicking the `📄Load template` button at the bottom of the page, selecting the appropriate service template and clicking the `➢ Apply template` button.
 >
 >![load_template.png](./screenshots/load_template.png ':size=500')
 

@@ -15,7 +15,7 @@ Web Filtering uses regularly updated lists per category to ensure that new threa
 > [!WARNING]
 > For web filtering rules to be effective, DNS Override must be enabled for the same group. Without it, filtering rules won’t be applied.
 
-### Configuring Web Filtering
+### Configure Web Filtering
 
 To set up web filtering for a group, follow these steps:
 

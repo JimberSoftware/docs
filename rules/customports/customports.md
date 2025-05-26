@@ -8,7 +8,7 @@ This feature is designed for fine-grained control over inter-group communication
 
 You have a webserver running on a server, but you don't want the users to have full access to the server. So this group will not have group traffic rules to the server, but only a specific custom port rule to the webserver.
 
-### Create Custom Ports Rule
+### Create Custom Ports Rules
 
 Click on the `+ Create a new rule` button and follow the steps below:
 

@@ -4,7 +4,7 @@ Groups in the network setting act as a valuable mechanism for applying uniform n
 
 The concept of groups brings a high level of versatility and control to your network management. As mentioned in [Best Practices](/./advanced/bestpractices/bestpractices.md) it is better to choose group names that reflects its function, such as 'AllowFileServer', 'ForceOneGateway'...
 
-For instance, a group named 'AllowServerAccess' could be set up with rules allowing members of that group to access with the devices in the group 'Servers'. Simultaneously, a separate group such as 'NoAccessServer' could be configured not to have this access. 
+For instance, a group named 'AllowServerAccess' could be set up with rules allowing members of that group to access with the devices in the group 'Servers'. Simultaneously, a separate group such as 'NoServerAccess' could be configured not to have this access. 
 
 <!-- A further segmentation of these groups can be made based on job function or department. -->
 
@@ -19,9 +19,6 @@ In the overview of the groups, you can see the different entries of a group:
 
 ![group_entry.png](./screenshots/group_entry_2.png ':size=800')
 
-
-
-
 <!-- ### Primary vs Additional groups
 
 Each user or device on your network can be assigned to one primary group, as well as numerous additional groups.
@@ -34,7 +31,6 @@ This flexible structure allows for a fine-tuned, layered approach to network man
 
 
 <!-- ![edit-server.png](/edit-server.png ':size=600') -->
-
 
 ### Create Groups
 
@@ -51,7 +47,7 @@ Creating a new group requires a group name that can be updated later as needed.
 
 ### Group Details
 
-Access the details of a specific group by selecting the corresponding strip within the table (avoid clicking on the buttons at the end). This will reveal the network rules associated with the chosen group, along with the devices that fall under this group's purview.
+Access the details of a specific group by selecting the corresponding row within the table (avoid clicking on the buttons at the end). This will reveal the network rules associated with the chosen group, along with the devices that fall under this group's purview.
 
 
 ![group_details.png](./screenshots/group_details.png ':size=800')
