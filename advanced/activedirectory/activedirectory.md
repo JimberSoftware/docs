@@ -1,4 +1,4 @@
-# Integrating Active Directory
+# Add an Active Directory to a SASE installation
 
 This guide provides instructions for installing Jimber SASE on a domain controller and ensuring reliable communication within the domain.
 

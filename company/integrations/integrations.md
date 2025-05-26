@@ -17,7 +17,7 @@ To do so, enter the IP address DNS server and click on the apply button.
 ## Active Directory
 
 > [!INFO]
-> Detailed instructions are available in the Advanced section [here](/./advanced/activedirectory/activedirectory.md).
+> Detailed instructions are available in the Advanced section [here](/./advanced/ad_integration/ad_integration.md).
 
 ![integration_ad.png](integration_ad.png ":size=800")
 

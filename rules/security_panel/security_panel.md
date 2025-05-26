@@ -1,6 +1,6 @@
 # Security Panel
 
-<!-- ## **Under construction...** -->
+
 
 When you click on the Jimber tray icon, a menu appears with several available options. Here you can select `Security Panel`:
 
@@ -33,7 +33,7 @@ You can add a new mobile device by clicking on the `Create new`  button
 
 prominently located at the upper right corner of the interface. 
 
-In step 1, you are provided with a QR code to install the Jimber Network Isolation application.<!--Jimber SASE Application--> If you have already installed the application, you may skip this step.
+In step 1, you are provided with a QR code to install the Jimber SASE app.<!--Jimber SASE Application--> If you have already installed the application, you may skip this step.
 
 ![scan_device.png](scan_device.png ':size=500')
 
