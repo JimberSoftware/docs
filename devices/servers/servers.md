@@ -1,22 +1,18 @@
-# Servers
+# ![](../../images/menu/menu_servers.png ':size=25') Servers
 
-## Create Server
+### Create Server
 
-To create a server in the `Jimber SASE Platform`, click on the `Create new` button
+To create a server in the `Jimber SASE Platform`, click on the `+ Create new` button located at the upper right corner of the interface. This will open following dialog box:
 
-![create_new.png](/create_new.png)
-
-prominently located at the upper right corner of the interface. This will open following dialog box:
-
-![create_server.png](/create_server.png)
+![create_server.png](./screenshots/create_server.png)
  
 > [!INFO] 
 > Hostname is mandatory and must be a lowercase string. We advise you to copy the token as you will be needing it for the installation of the server, but you can still access it at any time on the editing screen of the server on the `Jimber SASE Platform`.
 
 
-## Server installation
+### Server installation
 
-### Platforms 
+#### Platforms 
 
 > [!INFO] 
 > First create your server on the `Jimber SASE Platform` (see above).
@@ -56,16 +52,16 @@ Ensure to save the changes made to the file. -->
 
 When starting `Jimber SASE Client`, a dialog box will emerge: 
 
-![jimber_server_settings.png](/jimber_server_settings.png ':size=500')
+![jimber_server_settings.png](./screenshots/jimber_server_settings.png ':size=500')
 
 The required token was created with the new server. If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab of the `Jimber SASE Platform`. Simply select and edit the correct server to find it.
 
-![token.png](/token.png ':size=500')
+![token.png](./screenshots/token.png ':size=500')
 
 After filling in the token and clicking the submit button, a pop-up appears stating that the server configuration has been submitted and the service has been restarted:
 
 
-![settings_updated.png](/settings_updated.png ':size=400')
+![settings_updated.png](./screenshots/settings_updated.png ':size=400')
 
 
 
@@ -103,7 +99,7 @@ This file must be completed with the token you were provided upon creating the s
 ```bash
 sudo jimberfw -config
 ```
-![token_linux_server.png](/token_linux_server.png ':size=300') 
+![token_linux_server.png](./screenshots/token_linux_server.png ':size=300') 
 
 <!-- Open this file using the text editor of your choice. Within this file, you'll notice an empty token along with newly created public and private keys.
 
@@ -126,7 +122,7 @@ Ensure to save the changes made to the file. -->
 If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab of the `Jimber SASE Platform`. Simply select and edit the correct server to find it.
 
 
-![edit_server.png](/edit_server.png ':size=500')
+![edit_server.png](./screenshots/edit_server.png ':size=500')
 
 
 
@@ -170,41 +166,29 @@ All other configuration is identical.
 >For any necessary troubleshooting, you can consult the log files. Locations of the log files van be found [here](/./advanced/logging/logging.md). 
 
 ---
-## Server online/offline
+### Inspect Servers
 
 In the overview of the servers you can see which servers are online or offline.
 
 An online server will appear in the overview with a green dot. An offline server will appear in the overview with a red dot. When a server upgrade is available, it will be indicated by a green circle with an upward-pointing arrow.
 
-![server online.png](server_online.png ':size=800')
-
-
-
-
-## Inspect server
+![server online.png](./screenshots/server_online.png ':size=800')
 
 To view the details of a specific server and inspect its firewall rules, select the corresponding row in the table.
 
 > [!INFO] 
 > Avoid using the action buttons at the end of the row (e.g. edit or delete).
 
-![server detail.png](server_details.png ':size=500')
+![server detail.png](./screenshots/server_details.png ':size=500')
+![server_firewall_rules.png](./screenshots/server_firewall_rules.png ':size=500')
 
+An update is available when indicated by the green update icon ![](../../images/icons/icon_update.png ':size=20').
 
-![server_firewall_rules.png](server_firewall_rules.png ':size=500')
+Hover over the icon to see which update it refers to.
 
+![updating_server.png](./screenshots/updating_server.png ':size=700')
 
-## Updating a server
-
- An update is available when indicated by a green circle with an upward-pointing arrow ![icoon_update.png](/icoon_update.png ':size=35')
-.
- 
- By hovering over the icon you can see which update it refers to.
- 
-![update server.png](updating_server.png ':size=700')
-
- 
- Execute the update by clicking on the icon.
+Click the icon to initiate the update.
 
 > [!INFO]
 > In case of a successful update, the update icon disappears. 
@@ -213,22 +197,19 @@ To view the details of a specific server and inspect its firewall rules, select 
 >[!WARNING]
 > The update icon is not visible when the server is offline.
 
- 
+### Edit Servers
 
- ## Edit Server
-  
- Servers can be edited by clicking on the![icon_edit.png](/icon_edit.png ':size=35') icon next to their name.
-  
-![edit server.png](/edit_server.png ':size=500')
+Servers can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
 
+![edit server.png](./screenshots/edit_server.png ':size=500')
 
 All options are the same as when creating a server.
 
-## Deleting Server
+### Delete Servers
 
-Servers can be deleted by clicking on the![icon_delete.png](/icon_delete.png ':size=35') icon next to their name.
+Servers can be deleted by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 
 You will receive a warning before the device is permanently deleted:
 
-![deleting_server.png](delete_server.png ':size=400')
+![deleting_server.png](./screenshots/delete_server.png ':size=400')
 

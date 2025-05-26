@@ -1,40 +1,55 @@
-# Port Forwarding
+# ![](../../images/menu/menu_portforwarding.png ':size=28') Port Forwarding
 
-Port Forwarding allows external users, which are not enabled for Network Isolation, to connect to internal services. This can be achieved using the public IP of the cloud network controller or the IP of the on-premise network controller.
+Port Forwarding allows external users who are not members of the *`Jimber SASE Platform`* to connect to internal services. Access is provided through the public IP of the Cloud Network Controller or the IP address of the On-Premise Network Controller.
 
-![portforward.png](/portforward.png ':size=800')
 
-## Set Up Port Forwarding:
+![Screenshot of the Port Forward Rules page](./screenshots/portforward.png ':size=800')
 
-To set up Port Forwarding follow the steps below: 
+### Create Port Forwarding Rule
 
-1. **Description**: Begin by entering a clear description for the port forwarding rule to help in future references.
-2. **Select Source Port**: Specify the port number through which external clients will initiate the connection.
-3. **Specify Destination Port**: Determine the internal port number to which the traffic should be forwarded.
-4. **Choose Protocol**: Depending on your service's requirements, select either the TCP or UDP protocol.
-5. **Specify Destination**: Define the endpoint or service within your network to which the traffic should be directed.
-6. **Activate Changes**: After configuring your port forwarding rule, ensure you press the `Submit Rules` button ![submit_rules.png](/submit_rules.png ':size=100') to save and implement your changes.
+Click on the `+ Create a new rule` button and follow the steps below:
 
-In any case, you will receive a warning if the service was not submitted:
-
-![unsaved_changes.png](/unsaved_changes.png ':size=400')
+1. **Description**: Provide a clear description of the rule for future reference.
+2. **Source Port**: Enter the port number that external clients will use to connect.
+3. **Destination Port**: Specify the internal port number the traffic should be forwarded to.
+4. **Destination**: Choose the internal destination that should receive the forwarded traffic.
+5. **Protocol**: Select either TCP or UDP based on your service's requirements.
+6. **Enable or Disable**: Use the slider to turn the rule on or off.
+7. **Optional: Create a Note** ![](../../images/icons/icon_note.png ':size=20'): If the rule has a specific purpose or context, it’s helpful to include a note for clarity.
+8. **Activate Changes**: Once the rule is configured, press the `➢ Submit rules` button to apply your changes.
 
 > [!INFO] 
 >  Regularly review your port forwarding rules to ensure they meet the current needs and security standards of your organization.
 
-## Update Port Forward Rules
+### Filter Port Forwarding Rules
 
-Rules can be updated by clicking on the yellow pencil icon next to their name 
-![icon_edit.png](/icon_edit.png ':size=35').
+You can filter the list of Port Forwarding rules using the field at the top of the page. This helps you quickly locate and manage specific rules.
 
-The following window appears: 
+- **Destination**: Narrow down results by selecting a destination from the dropdown menu.
 
-![update_note_rule.png](/update_note_rule.png ':size=400')
+### Edit Port Forward Rules
 
-## Delete Port Forward Rules
+You can freely edit the listed Port Forwarding rules. If you make changes you don’t want to keep, use the `Clear changes` button to revert to the previously saved version.
 
-Rules can be removed by clicking on the red trash bin icon next to their name 
-![icon_delete.png](/icon_delete.png ':size=35').
+The notes of Port Forwarding rules can be updated by clicking the update icon ![](../../images/icons/icon_note.png ':size=20') in their row. The following window appears: 
 
- > [!WARNING] 
->  The rule will be deleted without further notice.
+![Screenshot of the Update Note window](./screenshots/update_note_rule.png ':size=400')
+
+> [!WARNING]
+> Don’t forget to save your changes to apply the updates by using the `➢ Submit rules` button.
+
+### Delete Port Forward Rules
+
+Port Forwarding rules can be removed by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
+
+> [!WARNING]
+> Don’t forget to save your changes to apply the updates by using the `➢ Submit rules` button.
+
+> [!INFO]
+> If there are any unsaved changes when you leave the page, a warning message will appear, so you won’t miss submitting the rules.
+>
+>![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=400')
+
+### Download Port Forwarding Ruless
+
+You can download all Port Forwarding rules as a **.csv file** by clicking the download icon ![](../../images/icons/icon_download.png ':size=20') located next to the `➢ Submit rules` button.

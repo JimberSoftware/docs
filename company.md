@@ -1,4 +1,4 @@
-# COMPANY
+# ![](./images/menu/company.png ':size=35') COMPANY
 
 
   * [Customers](./company/customers/customers)

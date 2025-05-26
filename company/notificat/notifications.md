@@ -1,4 +1,4 @@
-# Notifications Settings
+# ![](../../images/menu/menu_notifications.png ':size=25') Notifications Settings
 
 In this section, you can determine which people can receive which notifications.
 
@@ -6,7 +6,7 @@ The notification settings can be set for anyone of the company in the Company No
 
 ### Company Notifications Settings
 
-![company_not.png](/company_not.png ':size=700')
+![company_not.png](./screenshots/company_not.png ':size=700')
 
 In the email addresses field, you can enter the email addresses of the people who should receive the notifications.
 
@@ -23,7 +23,7 @@ In the email addresses field, you can enter the email addresses of the people wh
 
 ### User Notification Settings
 
-![user_not.png](/user_not.png ':size=700')
+![user_not.png](./screenshots/user_not.png ':size=700')
 
 Here the email address is that of the logged-in user.
 The available notifications are the same as above.
@@ -31,4 +31,4 @@ The available notifications are the same as above.
  Each set of notifications can be turned on or off. 
 
 > [!Note]
-> Don't forget to click the 'Apply' button after changing an option.
+> Don't forget to click the `Apply` button after changing an option.
