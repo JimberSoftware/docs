@@ -6,7 +6,7 @@ The notification settings can be set for anyone of the company in the Company No
 
 ### Company Notifications Settings
 
-![company_not.png](./screenshots/company_not.png ':size=700')
+![company_not.png](./screenshots/company_notificat.png ':size=700')
 
 In the email addresses field, you can enter the email addresses of the people who should receive the notifications.
 

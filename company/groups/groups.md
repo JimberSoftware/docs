@@ -44,6 +44,15 @@ Creating a new group requires a group name that can be updated later as needed.
 
 ![create_group.png](./screenshots/create_group.png ':size=500')
 
+### Filter Groups
+
+You can search the list of Groups using the search box at the top of the page. This helps you quickly find and manage the group you're looking for.
+
+- Use the search box to enter keywords and filter the group list.
+
+> [!INFO]
+> You can refresh the list of groups by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
+
 
 ### Group Details
 
@@ -83,7 +92,7 @@ The new group will show the same details as the original group: firewall rules, 
 
 
 
-### Deleting Groups
+### Delete Groups
 Groups can be deleted by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 
 > [!WARNING]
