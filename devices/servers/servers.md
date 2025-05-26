@@ -7,7 +7,10 @@ To create a server in the `Jimber SASE Platform`, click on the `+ Create new` bu
 ![create_server.png](./screenshots/create_server.png)
  
 > [!INFO] 
-> Hostname is mandatory and must be a lowercase string. We advise you to copy the token as you will be needing it for the installation of the server, but you can still access it at any time on the editing screen of the server on the `Jimber SASE Platform`.
+> - Hostname is mandatory and must be a lowercase string. 
+> - You can create a new tag or use a saved tag.
+> - If DNS override is enabled, the server can be accessed using its alias as a resolved hostname.
+> - We advise you to copy the token as you will be needing it for the installation of the server, but you can still access it at any time on the editing screen of the server on the `Jimber SASE Platform`.
 
 
 ### Server installation
@@ -166,7 +169,37 @@ All other configuration is identical.
 >For any necessary troubleshooting, you can consult the log files. Locations of the log files van be found [here](/./advanced/logging/logging.md). 
 
 ---
-### Inspect Servers
+
+### Filter Servers
+
+You can search the list of Servers using the search box at the top of the page. This helps you quickly find and manage the server you're looking for.
+
+- Use the search box to enter keywords and filter the server list.
+
+Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
+
+- **Property**: A dropdown menu where you choose the field to filter on.
+- **Match type**: A dropdown that allows you to select how to match the value (e.g. `equals`, `contains`, etc.).
+- **Value**: Enter or select the value to match, depending on the selected property.
+
+You can press the `+` button to add multiple filters.
+
+Once filters are applied:
+- The results are updated to reflect your conditions.
+- Active filters appear at the top of the page.
+- You can remove filters individually by clicking the `X` next to each, or remove all at once by clicking the `Reset Filters` button.
+
+> [!INFO]
+> You can refresh the list of servers by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
+
+You can review the used **Tags** by pressing the `Tags`button at the top of the page. Here you can also delete any used tags by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row..
+
+![tags.png](./screenshots/tags.png ':size=500')
+
+> [!WARNING]
+> Deleting a tag permanently removes all uses of it. You will not receive a warning message before deletion. 
+
+### Server Details
 
 In the overview of the servers you can see which servers are online or offline.
 
@@ -179,19 +212,17 @@ To view the details of a specific server and inspect its firewall rules, select 
 > [!INFO] 
 > Avoid using the action buttons at the end of the row (e.g. edit or delete).
 
-![server detail.png](./screenshots/server_details.png ':size=500')
+![server_detail.png](./screenshots/server_details.png ':size=500')
 ![server_firewall_rules.png](./screenshots/server_firewall_rules.png ':size=500')
 
-An update is available when indicated by the green update icon ![](../../images/icons/icon_update.png ':size=20').
-
-Hover over the icon to see which update it refers to.
+An update is available when indicated by the green update icon ![](../../images/icons/icon_update.png ':size=20'). Hover over the icon to see which update it refers to.
 
 ![updating_server.png](./screenshots/updating_server.png ':size=700')
 
-Click the icon to initiate the update.
+Click the update icon ![](../../images/icons/icon_update.png ':size=20') to initiate the update.
 
 > [!INFO]
-> In case of a successful update, the update icon disappears. 
+> Avoid clicking the update icon several times. In case of a successful update, the update icon disappears. Should the icon remain after several minutes, retry the update by clicking the icon again. 
 
 
 >[!WARNING]
@@ -211,5 +242,5 @@ Servers can be deleted by clicking on the delete icon ![](../../images/icons/ico
 
 You will receive a warning before the device is permanently deleted:
 
-![deleting_server.png](./screenshots/delete_server.png ':size=400')
+![delete_server.png](./screenshots/delete_server.png ':size=400')
 

@@ -126,7 +126,7 @@ Close the window and browse to `Downloads`. Right-click on the icon and select `
 
 Choose `Software Install`:
 
-![/linux_chose_software](./screenshots/linux_chose_software.png ":size=300")
+![/linux_choose_software](./screenshots/linux_choose_software.png ":size=300")
 
 Choose `Install` in the next screen:
 
@@ -155,7 +155,7 @@ If you're yet to have a login, please reach out to your network administrator to
 
 ---
 
-### The Jimber tray icon ![](./screenshots/jimber_icon.png ":size=50")
+### The Jimber Tray Icon ![](./screenshots/jimber_icon.png ":size=25")
 
 After signing in, clicking on the icon will show you this tray:
 
@@ -171,18 +171,7 @@ After signing in, clicking on the icon will show you this tray:
 - `Disconnect` will disconnect you from the *`Jimber SASE Platform`*, but you stay signed in.
 - `Quit` closes the application.
 
-### User device online/offline
-
-In the overview of user devices, you can see which ones are online or offline:
-
-- A user device online will appear at the top of the list in the overview with a green pc icon.
-- A user device offline will appear in the overview with a red pc icon.
-- A mobile user device online will appear in the overview with a green mobile device icon.
-- A user device that requires an update will appear in the overview with a yellow warning triangle.
-
-![overview userdevices.png](./screenshots/overviewuserdevices.png ":size=800")
-
-### User device info
+### User Device details
 
 In the overview of the user devices, you can already see some properties:
 
@@ -192,6 +181,15 @@ In the overview of the user devices, you can already see some properties:
 - Whether Secure Mode is active, disabled or unsupported.
 - IP-address.
 - Approval status.
+
+![overview userdevices.png](./screenshots/overviewuserdevices.png ":size=800")
+
+The overview also allows you to see which devices are online or offline:
+
+- A user device online will appear at the top of the list in the overview with a green pc icon ![](../../images/icons/icon_client_online.png ':size=20').
+- A user device offline will appear in the overview with a red pc icon ![](../../images/icons/icon_client_offline.png ':size=20').
+- A mobile user device online will appear in the overview with a green mobile device icon ![](../../images/icons/icon_mobile.png ':size=20').
+- A user device that requires an update will appear in the overview with a yellow warning triangle.
 
 Clicking on the corresponding strip of the user device opens a new window with more details:
 
@@ -203,7 +201,7 @@ The software tab shows the installed antivirus software:
 
 The info can be copied by using the copy button ![](../../images/buttons/button_copy.png ":size=25") in the right upper corner.
 
-### Delete user device
+### Delete user devices
 
 User devices can be deleted by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 
@@ -212,4 +210,4 @@ User devices can be deleted by clicking on the delete icon ![](../../images/icon
 
 You will receive a warning before the device is deleted:
 
-![deleting_device.png](./screenshots/deleting_device.png ":size=500")
+![delete_device.png](./screenshots/delete_device.png ":size=500")
