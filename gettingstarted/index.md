@@ -1,4 +1,4 @@
-# Jimber SASE Platfrom Getting Started Guide
+# Jimber SASE Platform Getting Started Guide
 
 ## Introduction
 
@@ -9,16 +9,23 @@ This guide will show you how to become a member of highly secure companies world
 
 ## Steps
 
-1. [Create Customers](./company/customers/customers)
+1.    [![](../../images/menu/menu_customers.png ':size=25') Create Customers](./company/customers/customers)
 > [!NOTE]
 > **(This step is only for partners who want to add a customer.)**
-2. [Create Domains](./company/domains/domains)
-3. [Create Users](./company/users/users)
-4. [Create Groups](./company/groups/groups)
-5. [Create Servers](./devices/servers/servers)
-6. [Create NIACs](./devices/niacs/niacs)
-7. [Create Network Controllers](./devices/networkcontrollers/networkcontrollers)
-8. **Configuring rules** to be found in the [SECURITY](/security.md) section of the sidebar.
+
+2. [ ![](../../images/menu/menu_domains.png ':size=25') Create Domains](./company/domains/domains)
+
+3. [ ![](../../images/menu/menu_users.png ':size=25')Create Users](./company/users/users)
+
+4. [ ![](../../images/menu/menu_groups.png ':size=25')Create Groups](./company/groups/groups)
+
+5. [ ![](../../images/menu/menu_servers.png ':size=25') Create Servers](./devices/servers/servers)
+
+6. [ ![](../../images/menu/menu_niacs.png ':size=25')Create NIACs](./devices/niacs/niacs)
+
+7. [ ![](../../images/menu/menu_networkcontrollers.png ':size=25'))Create Network Controllers](./devices/networkcontrollers/networkcontrollers)![](../../images/menu/menu_networkcontrollers.png 
+
+8. ![](../../images/menu/security.png ':size=30') **Configuring rules** to be found in the [SECURITY](/security.md) section of the sidebar.
 
 
 ## Contact

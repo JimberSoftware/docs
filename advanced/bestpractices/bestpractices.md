@@ -15,4 +15,4 @@ When integrating `Jimber SASE Platform` with Azure Entra ID, it's important to n
 This ensures that your network permissions reflect your organizational structure by leveraging your existing nested groups in Azure. Such integration streamlines access management, as changes in Azure group memberships are automatically updated in `Jimber SASE Platform`, maintaining consistency and efficiency.
 
 
-![entraid_example.png](/entraid_example.png)
+![entraid_example.png](/screenshots/entraid_example.png)
