@@ -186,10 +186,10 @@ In the overview of the user devices, you can already see some properties:
 
 The overview also allows you to see which devices are online or offline:
 
-- A user device online will appear at the top of the list in the overview with a green pc icon ![](../../images/icons/icon_client_online.png ':size=20').
-- A user device offline will appear in the overview with a red pc icon ![](../../images/icons/icon_client_offline.png ':size=20').
-- A mobile user device online will appear in the overview with a green mobile device icon ![](../../images/icons/icon_mobile.png ':size=20').
-- A user device that requires an update will appear in the overview with a yellow warning triangle.
+- A user device online will appear at the top of the list in the overview with a green pc icon ![](../../images/icons/icon_client_online.png ':size=20') at the start of it's row.
+- A user device offline will appear in the overview with a red pc icon ![](../../images/icons/icon_client_offline.png ':size=20') at the start of it's row.
+- A mobile user device online will appear in the overview with a green mobile device icon ![](../../images/icons/icon_mobile.png ':size=20') at the start of it's row.
+- A user device that requires an update will appear in the overview with a yellow warning triangle icon ![](../../images/icons/icon_deviceupdate.png ':size=20') before the delete icon ![](../../images/icons/icon_delete.png ':size=20') at the end of it's row. 
 
 Clicking on the corresponding strip of the user device opens a new window with more details:
 
