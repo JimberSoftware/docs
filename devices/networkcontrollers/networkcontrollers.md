@@ -42,7 +42,7 @@ To add a network controller into the `Jimber SASE Platform`, click on the `+ Cre
 > Hostname, Endpoint Address and Public IP are mandatory.
 
 > [!INFO]
-> Detailed instructions for the installation of an on-prem Network Controller are available [here](/./devices/networkcontrollerssetup/SettingUpServer.md). 
+> Detailed instructions for the installation of an on-prem Network Controller are available [here](../../advanced/networkcontrollerssetup/SettingUpServer.md). 
 > The minimum specifications for on-prem Network Controllers are:
 > 
 > **General**:
