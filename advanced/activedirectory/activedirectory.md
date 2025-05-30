@@ -32,7 +32,7 @@ This guide provides instructions for installing Jimber SASE on a domain controll
 
   - It is recommended to turn off IPv6 communication in your network for best practices. The advantages of using IPv6 are minimal, and disabling it simplifies securing the network with Jimber SASE.
     
-![Disable IPv6](/ad-disable-ipv6.png ':size=400')
+![Disable IPv6](./screenshots/ad-disable-ipv6.png ':size=400')
 
 - #### Setting Static RPC Ports
 
@@ -44,7 +44,7 @@ This guide provides instructions for installing Jimber SASE on a domain controll
     
  Path of key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc
   
-![Static RPC Ports](/ad-static-rpc-ports.png ':size=600')
+![Static RPC Ports](./screenshots/ad-static-rpc-ports.png ':size=600')
 
 - #### Set DNS Manager Listening Interface (Secure Mode Only - Breaks Native Network Domain Communication Functionality!)
   - When enabling secure mode, ensure that the correct interface is being listened to so that the domain-related IPs are correctly resolved when the AD gets queried. Change the IP below to the corresponding IP you are assigned through Network Isolation.
@@ -64,16 +64,16 @@ The installer can be found [here](https://signal.jimber.io/clients/windows-serve
 
 Starting Jimber SASE, a dialog box will emerge: 
 
-![jimber_server_settings.png](/jimber_server_settings.png ':size=500')
+![jimber_server_settings.png](./screenshots/jimber_server_settings.png ':size=500')
 
 The required token can be retrieved from the 'Servers' tab within the Signal Server Interface. Simply select and edit the  correct server to find it.
 
-![token.png](/token.png ':size=500')
+![token.png](./screenshots/token.png ':size=500')
 
 After filling in the token and pressing the submit button, a pop-up appears stating that the server configuration has been submitted and the service has been restarted:
 
 
-![settings_updated.png](/settings_updated.png ':size=400')
+![settings_updated.png](./screenshots/settings_updated.png ':size=400')
 
 
 <!-- - #### Configuring settings.json
@@ -111,7 +111,7 @@ Ensure to save the changes made to the file. -->
   Please go to the services on your domain controller and restart the SASE service.
 
   
-![Restarting the Service](/ad-restarting-the-service.png ':size=600')
+![Restarting the Service](./screenshots/ad-restarting-the-service.png ':size=600')
 
 - #### Verify Correct DNS Settings and Connectivity
 
@@ -121,7 +121,7 @@ Ensure to save the changes made to the file. -->
 
   Seeing a green connection icon next to your DC server name indicates that it is connected.
   
-![ad-light-connected.png](/ad-light-connected.png ':size=600')
+![ad-light-connected.png](./screenshots/ad-light-connected.png ':size=600')
 
 Restart the domain controller now so that all services properly recognize the new network interface from Network Isolation.
 
@@ -129,20 +129,20 @@ Restart the domain controller now so that all services properly recognize the ne
 
  Go to your Signal Server page and head to Integrations. On the top, you will find a setting to configure the DNS forwarder. Clients that have DNS override enabled will be filtered through our DNS service, but domain-specific queries will still be resolved by the server you specify in this field. You should add the Network Isolation IP of the Domain Controller.
     
-![Signal Server Forwarder](/ad-signal-server-forwarder_2.png ':size=800' )
+![Signal Server Forwarder](./screenshots/ad-signal-server-forwarder_2.png ':size=800' )
 
 - #### Configuring DNS forwarding for the domain controller
   - Open up the Server Manager and open the DNS Manager.
     
-![DNS Manager](/ad-dns-manager.png ':size=600')
+![DNS Manager](./screenshots/ad-dns-manager.png ':size=600')
   
   - Open up the DNS server's properties.
     
-![DNS Properties](/ad-dns-properties.png ':size=500')
+![DNS Properties](./screenshots/ad-dns-properties.png ':size=500')
 
 It is also possible to configure the forwarding DNS servers here: .
     
-![DNS Forwarders](/ad-dns-forwarders.png ':size=400')
+![DNS Forwarders](./screenshots/ad-dns-forwarders.png ':size=400')
 
 > [!NOTE]
 > You can configure them how you see fit.
@@ -174,7 +174,7 @@ It is also possible to configure the forwarding DNS servers here: .
 
   A lot of different services and ports can be used throughout AD and the applications you can host on it. Please enable other ports you might need.
   
-![ad-light-allowed-services.png](/ad-light-allowed-services.png ':size=900x')
+![ad-light-allowed-services.png](./screenshots/ad-light-allowed-services.png ':size=900x')
 
 - #### Domain Client Testing - Enabling Secure Mode
   Enabling secure mode ensures that other devices on your native network will not be able to connect to you. Only connections from Network Isolation will be allowed.<br /><br />
@@ -182,7 +182,7 @@ It is also possible to configure the forwarding DNS servers here: .
   In order to properly test domain communication, enable secure mode for the client and domain controller we are now going to test with. It is possible to test without secure mode, but then we cannot guarantee that Network Isolation will be used. It depends on how the domain controller will respond to its NetBIOS and DNS queries.<br /><br />
  
   
-![ad-light-enable-secure-mode.png](/ad-light-enable-secure-mode.png ':size=900x')
+![ad-light-enable-secure-mode.png](./screenshots/ad-light-enable-secure-mode.png ':size=900x')
 
 ## 3. Testing / Verification of Domain Communication
 

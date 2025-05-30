@@ -1,12 +1,22 @@
 # Security Panel
 
-
-
 When you click on the Jimber tray icon, a menu appears with several available options. Here you can select `Security Panel`:
 
 ![Screenshot of the Jimber Tray Menu](./screenshots/jimber_tray.png ':size=300')
 
-Clicking this option opens the Security Panel in a new browser tab. By default, the Services tab is shown, depending on the configured services, the screen you see may vary.
+> [!INFO]
+> Aside from the Security Panel, the menu offers other information about your connection to the `Jimber SASE Platform`, such as your login status, user details, the company you are connected to, and your `Jimber SASE Platform` IP address.
+>
+>
+> Here you can either disconnect (and reconnect) to the `Jimber SASE Platform`, or log out from the platform. Note that you will need to log back in with your credentials if you choose this option.
+>
+>
+> Finally, the menu allows you to toggle **Stealth mode** for your session. Stealth mode is designed to make VPN connections possible in environments that would normally block them—such as public hotspots, airports, or countries with strict internet censorship. It works by disguising VPN traffic to look like regular internet traffic, helping you bypass network restrictions.
+>
+>
+> Note that **Stealth mode** is only available in certain situations where your connection is recognized as external to the Jimber SASE cloud environment.
+
+Clicking Security Panel opens a new browser tab. By default, the Services tab is shown, and depending on the configured services, the screen you see may vary.
 
 ![Screenshot of the Services tab of the Security Panel](./screenshots/secure_panel.png ':size=700')
 

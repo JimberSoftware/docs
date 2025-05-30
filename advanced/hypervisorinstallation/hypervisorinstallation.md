@@ -12,13 +12,13 @@ The following minimum hardware settings must be set:
 
 Setting the hardware: 
 
-![virt_hardware esxi.png](virt_hardware_esxi.png ':size=500')
+![virt_hardware esxi.png](./screenshots/virt_hardware_esxi.png ':size=500')
 
 
 Setting the options: make sure to select BIOS as the firmware type.
 
 
-![vm_options esxi.png](vm_options_esxi.png ':size=500')
+![vm_options esxi.png](./screenshots/vm_options_esxi.png ':size=500')
 
 
 #### Hyper-V
@@ -29,12 +29,12 @@ When installing a virtual machine on Hyper-V, you can choose for a virtual machi
 
 Open the Hyper-V manager:
 
-![hyperv_manager.png](hyperv_manager.png ':size=500')
+![hyperv_manager.png](./screenshots/hyperv_manager.png ':size=500')
 
 
 Select the server and in the menu-item Actions choose `New Virtual Machine`. Follow the steps of the Wizard:
 
-![start_wizard.png](start_wizard.png ':size=500')
+![start_wizard.png](./screenshots/start_wizard.png ':size=500')
 
 
 1. Specify name and location
@@ -49,7 +49,7 @@ Here you have to choose between Generation 1 or Generation 2. If you are not sur
 5. Create virtual disk: at least 25 GB.
 6. Installation options: iso-file.
 
-![installation_options.png](installation_options.png ':size=500')
+![installation_options.png](./screenshots/installation_options.png ':size=500')
 
 7. Next step is a summary of the chosen options. After hitting the 'Finish'-button the installation begins as described [here](/./devices/networkcontrollerssetup/SettingUpServer.md).
 
@@ -67,7 +67,7 @@ Here you have to choose between Generation 1 or Generation 2. If you are not sur
 
 In the list of Virtual Machines, choose in the quick menu of the virtual machine 'Settings':
 
-![boot_order_gen1.PNG](boot_order_gen1.PNG ':size=500')
+![boot_order_gen1.PNG](./screenshots/boot_order_gen1.PNG ':size=500')
 
 Change the **startup order** to IDE. In the 'Action'-menu of the virtual machine choose 'Reset'. 
 Now the Network Controller should start.  
@@ -79,12 +79,12 @@ In the list of Virtual Machines, choose in the quick menu of the virtual machine
 
 1. Choose the option Security and  uncheck the option 'Enable Secure Boot'.
 
-![secure_boot.png](secure_boot.png ':size=500')
+![secure_boot.png](./screenshots/secure_boot.png ':size=500')
 
 
 2. Choose the option Firmware and change the **boot order** to Hard Drive. 
 
-![boot_order_gen2.PNG](boot_order_gen2.PNG ':size=500')
+![boot_order_gen2.PNG](./screenshots/boot_order_gen2.PNG ':size=500')
 
 In the 'Action'-menu of the virtual machine choose 'Reset'. 
 Now the Network Controller should start.  

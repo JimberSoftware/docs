@@ -22,7 +22,7 @@
   1. Locate the reset button on the back of the NAS.
   2. Press and hold for approximately 5 seconds until you hear a beep sound. Usually you need a sharp pin to press the reset button.
 
-  ![reset_synology](reset_synology.png ':size=100')
+  ![reset_synology](./screenshots/reset_synology.png ':size=100')
 
   3. Release then quickly press and hold again until 3 distinct beeps are heard.
   4. Await a final beep signaling the reset completion.
@@ -39,7 +39,7 @@ Make sure you are connected to the same network as the Synology.
 
 After locating the Synology, you will see the following screen:
 
-![find_synology](find_synology.png ':size=500')
+![find_synology](./screenshots/find_synology.png ':size=500')
 
 Click on 'Connect' to start the installation off the software.  
 
@@ -53,7 +53,7 @@ Click on 'Connect' to start the installation off the software.
 #### Preparation
 Go to https://signal.jimber.io/ and add a new server to the `Jimber SASE Platform`. 
 
-![create_synology](create_synology.png ':size=500')
+![create_synology](./screenshots/create_synology.png ':size=500')
 
 Make sure to copy the **Token** and **Hostname** to a notepad. 
 
@@ -72,7 +72,7 @@ The user will need the following access & permissions:
 
 **Creating a new user** can be realized in 'Control Panel', 'User & Group':
 
-![control_panel](control_panel.png ':size=500') 
+![control_panel](./screenshots/control_panel.png ':size=500') 
 
 Please take note of the chosen **username** and **password**. 
 
@@ -80,9 +80,9 @@ Please take note of the chosen **username** and **password**.
 
 Enable SSH can be realized in 'Control Panel', 'Terminal & SNMP':
 
-![control_panel_ssh](control_panel_ssh.png ':size=500') 
+![control_panel_ssh](./screenshots/control_panel_ssh.png ':size=500') 
 
-![ssh_settings](ssh_settings.png ':size=500')
+![ssh_settings](./screenshots/ssh_settings.png ':size=500')
 
 
 #### Installing Jimber SASE Client on your Synology
@@ -99,14 +99,14 @@ Download the latest version for your Synology from [downloads](https://signal.ji
 ![Find the correct synology package](find-synology-version.png ':size=800x')
 ![Find the correct synology package](head-to-synology-downloads4.png ':size=500x') -->
 
-![Find the correct synology package](choose_download_syn.png ':size=200')
-![Find the correct synology package](downloads.png ':size=700') 
+![Find the correct synology package](./screenshots/choose_download_syn.png ':size=200')
+![Find the correct synology package](./screenshots/downloads.png ':size=700') 
 
-![Find the correct synology package](download_syn_warning.png ':size=500x250') 
+![Find the correct synology package](./screenshots/download_syn_warning.png ':size=500x250') 
 
-![Find the correct synology package](info_center.png ':size=500') 
+![Find the correct synology package](./screenshots/info_center.png ':size=500') 
 
-![Find the correct synology package](choose_model.png ':size=500x250') 
+![Find the correct synology package](./screenshots/choose_model.png ':size=500x250') 
 
 This will download the latest SPK version for your NAS.
 
@@ -114,24 +114,24 @@ This will download the latest SPK version for your NAS.
 
 Choose Package Center in the taskbar and then Manual Install in the right upper corner.
 
-![Install the SPK](install-spk.png ':size=500')
+![Install the SPK](./screenshots/install-spk.png ':size=500')
 
 Follow the sequence shown in the screenshots below to properly install the SPK.
 
-![Install the SPK](install-spk2.png ':size=500')
-![Install the SPK](install-spk3.png ':size=500')
+![Install the SPK](./screenshots/install-spk2.png ':size=500')
+![Install the SPK](./screenshots/install-spk3.png ':size=500')
 
-![Install the SPK](install-spk5.png ':size=500')
-![Install the SPK](install-spk6.png ':size=500')
+![Install the SPK](./screenshots/install-spk5.png ':size=500')
+![Install the SPK](./screenshots/install-spk6.png ':size=500')
 
 You will receive a confirmation that the installation was successful.
 
-![Install the SPK](install_syn_succes.png ':size=500')
+![Install the SPK](./screenshots/install_syn_succes.png ':size=500')
 
 
 In about 30 to 60 seconds you should be able to see that the NAS has been successfully added to the `Jimber SASE Platform`, as indicated by the green dot next to the hostname.
 
-![NAS online](nas-online.png ':size=500')
+![NAS online](./screenshots/nas-online.png ':size=500')
 
 ##### Most commonly used ports for the Synology NAS
 
