@@ -24,13 +24,10 @@ These settings control how user devices are managed and isolated in your environ
 
 - **IP range**: Define the internal IP range used for isolated network segments.
 - **Native Devices enabled**: Toggle this option to allow or block native devices from accessing the platform.
-- **User devices expiry time**: Set how many days a user device remains active before it expires.  
-  > [!INFO] 
-  > The default is **30 days**.
+- **User devices expiry time**: Set how many days a user device remains active before it expires (default = 30 days).  
 - **Device limit enabled**: Enable this toggle to restrict the number of devices a user can register.
-- **Amount of devices allowed per user**: Specify the maximum number of devices per user.  
-  > [!INFO] 
-  > The default value is **3 devices**.
+- **Amount of devices allowed per user**: Specify the maximum number of devices per user (default = 3).  
+  
 
 
 > [!NOTE]  

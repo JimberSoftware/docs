@@ -74,9 +74,9 @@ In the Downloads folder, you will find the file `SASE-Mac-1.XX.0.dmg`(XX stands 
 > [!INFO]
 > To download another specific version, you can use this [link](https://signal.jimber.io/clients).
 
-Double-click on this file and install the `Jimber SASE Client` by dragging the 'JimberNetworkIsolation' icon into your 'Applications' folder.
+Double-click on this file and install the `Jimber SASE Client` by dragging the 'Jimber SASE app' icon into your 'Applications' folder.
 
-![mac_download.png](./screenshots/mac_download.png ":size=500")
+![mac_download.png](./screenshots/mac_download.png ":size=500") 
 
 A pop-up may appear to alert you that you have downloaded a file from the internet, asking if you indeed want to open the file. You can safely answer 'Open' to this prompt.
 

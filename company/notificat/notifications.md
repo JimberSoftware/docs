@@ -1,4 +1,4 @@
-# ![](../../images/menu/menu_notifications.png ':size=25') Notifications Settings
+# ![](../../images/menu/menu_notifications.png ':size=25') Notifications
 
 In this section, you can determine which people can receive which notifications.
 
