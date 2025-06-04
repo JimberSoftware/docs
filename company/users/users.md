@@ -86,7 +86,7 @@ Once filters are applied:
 
 In the user overview, several key properties are immediately visible: the user's role within the company (e.g., Admin or User), their platform role (typically 'User'), and the status of both the user account and Secure Mode.
 
- ![overview_users.png](./screenshots/overview_users.png ':size=800x150')
+ ![overview_users.png](./screenshots/overview_users.png ':size=800')
 
  Clicking on the corresponding row of a user opens a detailed view with additional information.  
 

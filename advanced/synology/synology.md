@@ -1,9 +1,9 @@
-### Synology
+# Synology
 
 >[!INFO]
 > Support is currently provided for Synology NAS running **DMS 7+**. If you're using an earlier version, please update or contact our support team for guidance.
 
-#### Initial setup - `Optional`
+### Initial setup - `Optional`
 
 > [!INFO]
 > These steps are only required if you need to reset your NAS or if you need to find the IP address. 
@@ -50,7 +50,7 @@ Click on 'Connect' to start the installation off the software.
 > - The Synology has to be restarted because of some failure. Hold the power button until the blue light blinks, then let go. Wait until it is turned off, then press the power button again. Wait until you hear a beep before it can be found on https://find.synology.com (+- 1 minute).
 
 
-#### Preparation
+### Preparation
 Go to https://signal.jimber.io/ and add a new server to the `Jimber SASE Platform`. 
 
 ![create_synology](./screenshots/create_synology.png ':size=500')
@@ -85,7 +85,7 @@ Enable SSH can be realized in 'Control Panel', 'Terminal & SNMP':
 ![ssh_settings](./screenshots/ssh_settings.png ':size=500')
 
 
-#### Installing Jimber SASE Client on your Synology
+### Installing Jimber SASE Client on your Synology
 
 Download the latest version for your Synology from [downloads](https://signal.jimber.io/downloads) (no need to log in).
 

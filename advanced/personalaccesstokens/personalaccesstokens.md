@@ -6,17 +6,25 @@ Any **admin user** can create a Personal Access Token (PAT) from the **Settings*
 
 ### Creating a Personal Access Token
 
-1. Navigate to the **Settings** page in your admin dashboard.  
+1. Navigate to the **Settings** page in your admin dashboard. 
+
 2. Locate the **PAT - Personal Access Tokens** section.
-![pat.png](/screenshots/pat.png ':size=800')
+
+  ![pat.png](/screenshots/pat.png ':size=800')
+
 3. Click on **Create New Token**.  
 4. Enter a clear, descriptive **name** for your PAT to help you identify its purpose later.  
 5. Optionally, set an **expiry date** for the token to enhance security.
-![create_pat.png](/screenshots/create_pat.png ':size=500')
+
+  ![create_pat.png](/screenshots/create_pat.png ':size=500')
+
 6. Once created, the token will be displayed **only once** — make sure to copy it by pressing the copy icon ![](../../images/icons/icon_copy.png ':size=20') and save it securely.
-![copy_pat.png](/screenshots/copy_pat.png ':size=800')
-7. Your active token will be listed in the section. You can delete the token before it's expiry date by pressing the delete icon ![](../../images/icons/icon_delete.png ':size=20') in it's row. 
-![active_pat.png](/screenshots/active_pat.png ':size=800')
+
+   ![copy_pat.png](/screenshots/copy_pat.png ':size=800')
+
+7. Your active token will be listed in the section. You can delete the token before the expiry date by pressing the delete icon ![](../../images/icons/icon_delete.png ':size=20') in its row. 
+
+  ![active_pat.png](/screenshots/active_pat.png ':size=800')
 
 > [!WARNING]  
 > The token is shown only once at creation. If you lose it, you will need to generate a new one.

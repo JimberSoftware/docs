@@ -28,7 +28,7 @@ TAG=v1.14.0-docker06 #Version of Jimber NI (no need to change)
 ```
 
 - Adapter: The adapter that is connected to your LAN network
-- Token: The token from the networkcontroller you created in the Jimber Network Isolation platform
+- Token: The token from the networkcontroller you created in the `Jimber SASE Platform`
 - Subnet: The subnet of the adapter on your LAN network
 - Gateway: The gateway ip on your LAN network
 - IP: The ip address you desire for your Network Controller (you should keep this out of your DHCP range)
@@ -36,7 +36,7 @@ TAG=v1.14.0-docker06 #Version of Jimber NI (no need to change)
 
 You can start the network controller using Docker Compose. For more information on Docker Compose, refer to the [official documentation](https://docs.docker.com/compose/).
 
-After starting the docker container, the network controller should appear online in the Jimber Network Isolation platform.
+After starting the docker container, the network controller should appear online in the `Jimber SASE Platform`.
 
 The Docker container will now be reachable by devices on the same LAN network.
 

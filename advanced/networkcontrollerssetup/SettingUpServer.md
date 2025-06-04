@@ -1,4 +1,4 @@
-# ![](../../images/menu/menu_networkcontrollers.png ':size=25')Installation of the Network Controller
+# ![](../../images/menu/menu_networkcontrollers.png ':size=25') Installation of the Network Controller
 
 > [!Note]
 > If you intend to install this server virtually, please consider the necessary [BIOS settings](/./advanced/hypervisorinstallation/hypervisorinstallation.md) 

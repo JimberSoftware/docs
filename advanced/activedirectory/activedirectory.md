@@ -1,10 +1,10 @@
 # Add an Active Directory to a SASE installation
 
-This guide provides instructions for installing Jimber SASE on a domain controller and ensuring reliable communication within the domain.
+This guide provides instructions for installing `Jimber SASE Client`  on a domain controller and ensuring reliable communication within the domain.
 
 ## Table of contents
 
-1. [Install Jimber SASE on the Domain Controller](#install-network-isolation-on-the-domain-controller)
+1. [Install Jimber SASE Client on the Domain Controller](#install-network-isolation-on-the-domain-controller)
    - [Prerequisites](#prerequisites)
      - [Disable IPv6](#disable-ipv6)
      - [Setting Static RPC Ports](#setting-static-rpc-ports)
@@ -24,13 +24,13 @@ This guide provides instructions for installing Jimber SASE on a domain controll
 5. [How to domain join a new use with a domain controller that has secure mode enabled](#_5-step-by-step-guide-domain-joining-a-new-user-with-secure-mode-enabled-on-the-domain-controller)
 
 
-## 1. Install Jimber SASE on the Domain Controller
+## 1. Install Jimber SASE Client on the Domain Controller
 
 ### Prerequisites
 
 - #### Disable IPv6
 
-  - It is recommended to turn off IPv6 communication in your network for best practices. The advantages of using IPv6 are minimal, and disabling it simplifies securing the network with Jimber SASE.
+  - It is recommended to turn off IPv6 communication in your network for best practices. The advantages of using IPv6 are minimal, and disabling it simplifies securing the network with the `Jimber SASE Platform`.
     
 ![Disable IPv6](./screenshots/ad-disable-ipv6.png ':size=400')
 
@@ -108,9 +108,9 @@ After filling in the token and pressing the submit button, a pop-up appears stat
 > **Attention**! Don't forget the comma at the end of lines and the quotation marks!
 Ensure to save the changes made to the file. -->
 
-  Please go to the services on your domain controller and restart the SASE service.
+  Please go to the services on your domain controller and restart the `Jimber SASE service`.
 
-  
+
 ![Restarting the Service](./screenshots/ad-restarting-the-service.png ':size=600')
 
 - #### Verify Correct DNS Settings and Connectivity
