@@ -1,10 +1,18 @@
 # How to create a combined environment for multiple customers
 
-# What is a combined environment?
+# What is a unified environment?
 
-A combined environment in Jimber SASE is an architectural setup where we integrate the systems of multiple companies into a single unified environment. Instead of isolating each company’s systems in separate environments or tenants, we bring them together under one SASE instance.
+A unified environment in Jimber SASE is an architectural setup where we integrate the systems of multiple companies into a single environment. Instead of isolating each company’s systems in separate environments or tenants, we bring them together under one SASE instance.
 
-This design offers significant advantages in terms of centralized management, cost efficiency, and simplified maintenance, while still ensuring that the unique configurations and policies of each company remain distinct and well-managed.
+## Why choose a unified environment?
+
+- **Cost efficiency**: You only need one environment for multiple companies, significantly reducing infrastructure, licensing, and operational overhead.
+- **Meets minimum requirements**: Jimber SASE requires a minimum of 10 users per environment. By unifying companies into one environment, you can efficiently meet this requirement without forcing small companies to maintain separate environments.
+- **Centralized management**: A single SASE instance simplifies administration, monitoring, and updates.
+- **Simplified maintenance**: With fewer environments to manage, ongoing maintenance and policy management are easier and less time-consuming.
+- **Clear separation with flexibility**: Even though companies share the environment, unique configurations, policies, and access controls ensure that each company remains isolated and secure within the unified setup.
+
+This design enables you to support multiple companies efficiently, while maintaining clarity, security, and scalability within Jimber SASE.
 
 ---
 
