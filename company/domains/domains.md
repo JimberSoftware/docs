@@ -9,7 +9,7 @@ For example, to create a user like 'k.janeway@avoy.com', you must first register
 
 ![domains.png](./screenshots/domains.png  ':size=800')
 
-### Create Domains
+### Create Domain
 
 To establish a new domain, simply click on the `+ Create new` button located at the upper right corner of the interface.
 
@@ -24,7 +24,7 @@ You can search the list of Domains using the search box at the top of the page. 
 > [!INFO]
 > You can refresh the list of domains by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
 
-### Delete Domains
+### Delete Domain
 
 Domains can be deleted by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 

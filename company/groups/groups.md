@@ -32,7 +32,7 @@ This flexible structure allows for a fine-tuned, layered approach to network man
 
 <!-- ![edit-server.png](/edit-server.png ':size=600') -->
 
-### Create Groups
+### Create Group
 
 To create a new group into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
 
@@ -56,7 +56,7 @@ You can search the list of Groups using the search box at the top of the page. T
 
 ### Group Details
 
-Access the details of a specific group by selecting the corresponding row within the table (avoid clicking on the buttons at the end). This will reveal the network rules associated with the chosen group, along with the devices that fall under this group's purview.
+Access the details of a specific group by clicking on the corresponding strip within the table. This will reveal the network rules associated with the chosen group, along with the devices that fall under this group's purview.
 
 
 ![group_details.png](./screenshots/group_details.png ':size=800')
@@ -72,7 +72,7 @@ Access the details of a specific group by selecting the corresponding row within
 
 
 
-### Edit Groups
+### Edit Group
 Groups can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
 
  You'll then be able to adjust the group name as needed:
@@ -80,8 +80,8 @@ Groups can be edited by clicking on the edit icon ![](../../images/icons/icon_ed
 ![edit_group.png](./screenshots/edit_group.png ':size=500')
 
 
-### Copy Groups
-Groups can be copied by clicking on the copy icon ![](../../images/icons/icon_copy.png ':size=20') in their row.
+### Duplicate Group
+Groups can be duplicated by clicking on the duplicate icon ![](../../images/icons/icon_copy.png ':size=20') in their row.
 
  You'll then be able to choose a name for the new group:
 
@@ -92,7 +92,7 @@ The new group will show the same details as the original group: firewall rules, 
 
 
 
-### Delete Groups
+### Delete Group
 Groups can be deleted by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 
 > [!WARNING]

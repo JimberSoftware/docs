@@ -8,7 +8,7 @@ For clarity, consider a scenario where a company named *`Astral Voyage`* wants t
 
 ![list_customers.png](./screenshots/list_customers.png ':size=800')
 
-### Create Customers
+### Create Customer
 
 To incorporate a new customer into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
 
@@ -27,7 +27,8 @@ Filling in the website will cause an icon to appear in front of the customer's n
 
 ### Filter Customers
 
-You can search the list of Customers using the search box at the top of the page. This helps you quickly find and manage the customer you're looking for.
+You can search the list of customers using the search box at the top of the page. This helps you quickly find and manage the customer you're looking for.
+
 
 - Use the search box to enter keywords and filter the customer list.
 
@@ -36,6 +37,8 @@ Next to the search box, there is a filter icon ![](../../images/icons/icon_filte
 - **Property**: A dropdown menu where you choose the field to filter on.
 - **Match type**: A dropdown that allows you to select how to match the value (e.g. `equals`, `contains`, etc.).
 - **Value**: Enter or select the value to match, depending on the selected property.
+
+![filter_customer.png](./screenshots/filter_customer.png ':size=300')
 
 You can press the `+` button to add multiple filters.
 
@@ -49,7 +52,7 @@ Once filters are applied:
 
 ### Customer Details
 
-To view the details of a specific customer, select their row in the table (rather than using the action buttons at the end).
+Clicking on the corresponding strip of a customer opens a detailed view with additional information.
 You get an overview of created assets:
 
 ![overview_customer.png](./screenshots/overview_customer.png ':size=800')
@@ -57,7 +60,7 @@ You get an overview of created assets:
 > [!NOTE]
 > A newly created customer has no assets to show yet.
 
-### Edit Customers
+### Edit Customer
 Customers can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
 
 ![edit_customer.png](./screenshots/edit_customer.png ':size=500')
@@ -67,7 +70,7 @@ Customers can be edited by clicking on the edit icon ![](../../images/icons/icon
 
 
 
-### Delete Customers
+### Delete Customer
 
 Customers can be deleted by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 

@@ -6,7 +6,7 @@ A user refers to an individual account within the platform. Users can have roles
 > Managing users efficiently is crucial for maintaining the security and integrity of your platform. 
 
 
-### Create Users
+### Create User
 To create a new User into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
 
 > [!WARNING]
@@ -62,7 +62,7 @@ To create a new Security Consultant into the platform, follow the steps below. T
 
 ### Filter Users
 
-You can search the list of Users using the search box at the top of the page. This helps you quickly find and manage the user you're looking for.
+You can search the list of users using the search box at the top of the page. This helps you quickly find and manage the user you're looking for.
 
 - Use the search box to enter keywords and filter the user list.
 
@@ -71,6 +71,9 @@ Next to the search box, there is a filter icon ![](../../images/icons/icon_filte
 - **Property**: A dropdown menu where you choose the field to filter on.
 - **Match type**: A dropdown that allows you to select how to match the value (e.g. `equals`, `contains`, etc.).
 - **Value**: Enter or select the value to match, depending on the selected property.
+
+
+![filter_user.png](./screenshots/filter_user.png ':size=300')
 
 You can press the `+` button to add multiple filters.
 
@@ -88,15 +91,15 @@ In the user overview, several key properties are immediately visible: the user's
 
  ![overview_users.png](./screenshots/overview_users.png ':size=800')
 
- Clicking on the corresponding row of a user opens a detailed view with additional information.  
+ Clicking on the corresponding strip of a user opens a detailed view with additional information.  
 
-> [!INFO] 
-> Avoid using the action buttons at the end of the row (e.g. edit or delete).
+<!-- > [!INFO] 
+> Avoid using the action buttons at the end of the row (e.g. edit or delete). -->
 
 
 ![properties_user.png](./screenshots/properties_user.png ':size=500')
 
-### Edit Users
+### Edit User
   
  Users can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
  
@@ -105,7 +108,7 @@ In the user overview, several key properties are immediately visible: the user's
 > [!WARNING]
 > The username cannot be changed. All other options are the same as when creating a user.
   
-### Delete Users
+### Delete User
 
  Users can be deleted by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 
