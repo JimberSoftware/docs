@@ -171,23 +171,22 @@ After signing in, clicking on the icon will show you this tray:
 - `Disconnect` will disconnect you from the *`Jimber SASE Platform`*, but you stay signed in.
 - `Quit` closes the application.
 
-### User Device details
+### User Device Details
 
 In the overview of the user devices, you can already see some properties:
 
+- Operating System, indicated by a red or green OS icon: ![](../../images/icons/icon_windows_os.png ':size=20'), ![](../../images/icons/icon_ubuntu_os.png ':size=20'), ![](../../images/icons/icon_apple_os.png ':size=20').
 - Name of the device.
-- Operating System.
-- Client Version of the *`Jimber SASE Platform`*.
 - Whether Secure Mode is active, disabled or unsupported.
 - IP-address.
 - Approval status.
 
-![overview userdevices.png](./screenshots/overviewuserdevices.png ":size=800")
+![overview_userdevices.png](./screenshots/overview_userdevices.png ":size=800")
 
 The overview also allows you to see which devices are online or offline:
 
-- A user device online will appear at the top of the list in the overview with a green pc icon ![](../../images/icons/icon_client_online.png ':size=20') at the start of it's row.
-- A user device offline will appear in the overview with a red pc icon ![](../../images/icons/icon_client_offline.png ':size=20') at the start of it's row.
+- A user device online will appear at the top of the list in the overview with a green OS icon at the start of it's row.
+- A user device offline will appear in the overview with a red OS icon at the start of it's row.
 - A mobile user device online will appear in the overview with a green mobile device icon ![](../../images/icons/icon_mobile.png ':size=20') at the start of it's row.
 - A user device that requires an update will appear in the overview with a yellow warning triangle icon ![](../../images/icons/icon_deviceupdate.png ':size=20') before the delete icon ![](../../images/icons/icon_delete.png ':size=20') at the end of it's row. 
 

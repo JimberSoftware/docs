@@ -39,4 +39,6 @@
   * [Docker Network Controller](./advanced/dockernetworkcontroller/dockernetworkcontroller)
   * [Logging](./advanced/logging/logging.md)
   * [Personal Access Tokens](./advanced/personalaccesstokens/personalaccesstokens.md)
+  * [Unified Environment](./advanced/unified_environment/unified_environment.md)
+
 * [**CONTACT**](./contact/index)

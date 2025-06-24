@@ -52,10 +52,7 @@ To create a NIAC into the platform, click on the `+ Create new` button located a
 
 ### Inspect NIAC
 
-To view the details of a specific NIAC, select the corresponding row in the table.
-
-> [!INFO] 
-> Avoid using the action buttons at the end of the row (e.g. edit or delete).
+Clicking on the corresponding strip of the NIAC opens a new window with more details:
 
 ![niac_details.png](./screenshots/niac_details.png ':size=600')
 

@@ -4,7 +4,9 @@
 
 To create a server in the `Jimber SASE Platform`, click on the `+ Create new` button located at the upper right corner of the interface. This will open following dialog box:
 
-![create_server.png](./screenshots/create_server.png)
+![create_server_16.png](./screenshots/create_server_16.png ":size=800")
+
+<!-- ![create_server.png](./screenshots/create_server.png ":size=500") -->
  
 > [!INFO] 
 > - Hostname is mandatory and must be a lowercase string. 
@@ -33,25 +35,6 @@ Download the latest version of the 'Windows Server' client from https://signal.j
 
 Once downloaded, decompress the file and initiate the .msi installation file by double-clicking it.
 
-<!-- A dialog box will emerge—confirm the process by selecting 'Yes.' -->
-
-<!-- Subsequently, open the file **`settings.json`** located at C:\Program Files\Jimber\ as an **Administrator**. 
-In this file, enter the token you were provided upon creating the server within the Network Isolation interface. 
- 
-  
-
-```json
-{
-  "publicKey": "l7D1+dm...",
-  "privateKey": "ENjN41TJE7WEU76T...",
-  "token": "YOUR_TOKEN"
-}
-```
-
-> [!WARNING] 
-**Attention!** Don't forget the comma at the end of lines and the quotation marks!
-Ensure to save the changes made to the file. -->
-
 
 When starting `Jimber SASE Client`, a dialog box will emerge: 
 
@@ -59,7 +42,9 @@ When starting `Jimber SASE Client`, a dialog box will emerge:
 
 The required token was created with the new server. If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab of the `Jimber SASE Platform`. Simply select and edit the correct server to find it.
 
-![token.png](./screenshots/token.png ':size=500')
+![update_server.png](./screenshots/update_server.png ':size=800')
+
+<!-- ![token.png](./screenshots/token.png ':size=500') -->
 
 After filling in the token and clicking the submit button, a pop-up appears stating that the server configuration has been submitted and the service has been restarted:
 
@@ -125,7 +110,7 @@ Ensure to save the changes made to the file. -->
 If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab of the `Jimber SASE Platform`. Simply select and edit the correct server to find it.
 
 
-![edit_server.png](./screenshots/edit_server.png ':size=500')
+![update_server.png](./screenshots/update_server.png ':size=800')
 
 
 
