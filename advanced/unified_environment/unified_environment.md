@@ -48,6 +48,8 @@ The first step is to register the domains of each company into the SASE environm
 
 Domains act as the primary namespace reference for users, groups, resources, and policies.
 
+![domains.png](/screenshots/domains.png)
+
 ---
 
 ## Step 2 — Add Users
@@ -55,7 +57,7 @@ Domains act as the primary namespace reference for users, groups, resources, and
 Users are added based on their email addresses, which automatically tie them to the appropriate domain/company.
 
 No additional onboarding steps are required per user beyond adding their email — their domain affiliation is clear from the email (e.g., `alice@companya.be`, `bob@companyb.co.uk`).
-
+![users.png](/screenshots/users.png)
 ---
 
 ## Step 3 — Assign Users to Groups
@@ -80,6 +82,8 @@ Add the resources (servers, applications, file shares, etc.) specific to the com
 - `db.db01.companya.be`
 
 This makes it easy to identify and manage company-specific assets.
+
+![servers.png](/screenshots/servers.png)
 
 ---
 
