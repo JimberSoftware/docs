@@ -42,7 +42,7 @@ When starting `Jimber SASE Client`, a dialog box will emerge:
 
 The required token was created with the new server. If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab of the `Jimber SASE Platform`. Simply select and edit the correct server to find it.
 
-![update_server.png](./screenshots/update_server.png ':size=800')
+![update_server.png](./screenshots/update_server_token.png ':size=800')
 
 <!-- ![token.png](./screenshots/token.png ':size=500') -->
 
@@ -110,7 +110,7 @@ Ensure to save the changes made to the file. -->
 If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab of the `Jimber SASE Platform`. Simply select and edit the correct server to find it.
 
 
-![update_server.png](./screenshots/update_server.png ':size=800')
+![update_server.png](./screenshots/update_server_token.png ':size=800')
 
 
 
@@ -164,20 +164,20 @@ You can search the list of Servers using the search box at the top of the page. 
 Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (e.g. `equals`, `contains`, etc.).
+- **Match type**: A dropdown that allows you to select how to match the value (`equals`or `contains`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
-You can press the `+` button to add multiple filters.
+To add multiple filters you can press the filter icon ![](../../images/icons/icon_filter.png ':size=20') again and then press the `+` button.
 
-Once filters are applied:
+<!-- Once filters are applied:
 - The results are updated to reflect your conditions.
 - Active filters appear at the top of the page.
-- You can remove filters individually by clicking the `X` next to each, or remove all at once by clicking the `Reset Filters` button.
+- You can remove filters individually by clicking the `X` next to each, or remove all at once by clicking the `Reset Filters` button. -->
 
 > [!INFO]
 > You can refresh the list of servers by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
 
-You can review the used **Tags** by pressing the `Tags`button at the top of the page. Here you can also delete any used tags by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row..
+You can review the used **Tags** by pressing the `Tags`button at the top of the page. Here you can also delete any used tags by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 
 ![tags.png](./screenshots/tags.png ':size=500')
 
@@ -192,10 +192,8 @@ An online server will appear in the overview with a green dot. An offline server
 
 ![server online.png](./screenshots/server_online.png ':size=800')
 
-To view the details of a specific server and inspect its firewall rules, select the corresponding row in the table.
+Clicking on the corresponding strip of a specific server opens a new window with more details and the firewall rules.
 
-> [!INFO] 
-> Avoid using the action buttons at the end of the row (e.g. edit or delete).
 
 ![server_detail.png](./screenshots/server_details.png ':size=500')
 ![server_firewall_rules.png](./screenshots/server_firewall_rules.png ':size=500')
@@ -207,21 +205,21 @@ An update is available when indicated by the green update icon ![](../../images/
 Click the update icon ![](../../images/icons/icon_update.png ':size=20') to initiate the update.
 
 > [!INFO]
-> Avoid clicking the update icon several times. In case of a successful update, the update icon disappears. Should the icon remain after several minutes, retry the update by clicking the icon again. 
+> In case of a successful update, the update icon disappears. Should the icon remain after several minutes, retry the update by clicking the icon again. 
 
 
 >[!WARNING]
 > The update icon is not visible when the server is offline.
 
-### Edit Servers
+### Edit Server
 
 Servers can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
 
-![edit server.png](./screenshots/edit_server.png ':size=500')
+![edit server.png](./screenshots/update_server.png ':size=800')
 
 All options are the same as when creating a server.
 
-### Delete Servers
+### Delete Server
 
 Servers can be deleted by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 

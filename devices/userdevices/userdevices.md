@@ -181,6 +181,9 @@ In the overview of the user devices, you can already see some properties:
 - IP-address.
 - Approval status.
 
+>[!NOTE]
+>The "Device Approval" feature on our platform adds an extra layer of security and control by requiring administrative approval before a device can be added to the network. This process ensures that only authorized devices are granted access, helping to maintain the integrity and security of the network.
+
 ![overview_userdevices.png](./screenshots/overview_userdevices.png ":size=800")
 
 The overview also allows you to see which devices are online or offline:
@@ -199,6 +202,28 @@ The software tab shows the installed antivirus software:
 ![user_device_info_software.png](./screenshots/user_device_info_software.png ":size=500")
 
 The info can be copied by using the copy button ![](../../images/buttons/button_copy.png ":size=25") in the right upper corner.
+
+### Filter User Devices
+
+You can search the list of user devices using the search box at the top of the page. This helps you quickly find and manage the device you're looking for.
+
+- Use the search box to enter keywords and filter the device list.
+
+Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
+
+- **Property**: A dropdown menu where you choose the field to filter on.
+- **Match type**: A dropdown that allows you to select how to match the value (`equals`or `contains`).
+- **Value**: Enter or select the value to match, depending on the selected property.
+
+To add multiple filters you can press the filter icon ![](../../images/icons/icon_filter.png ':size=20') again and then press the `+` button.
+
+<!-- Once filters are applied:
+- The results are updated to reflect your conditions.
+- Active filters appear at the top of the page.
+- You can remove filters individually by clicking the `X` next to each, or remove all at once by clicking the `Reset Filters` button. -->
+
+> [!INFO]
+> You can refresh the list of user devices by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
 
 ### Delete user devices
 

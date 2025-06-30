@@ -10,7 +10,7 @@ For instance, should an IP camera be situated within the camera VLAN and access 
 
 
 
-### Create Native Devices
+### Create Native Device
 To create a new native device into the `Jimber SASE Platform`, click on the `+ Create new` button located at the upper right corner of the interface.
 
 ![create_native.png](./screenshots/create_native.png ':size=500x350')
@@ -40,23 +40,23 @@ Choose the Native Device as 'Destination'.
 ![add_attr_services.png](./screenshots/add_attr_services.png ':size=800')
 
 
-### Details of Native Devices
+### Details of a Native Device
 
-To view the details of a specific Native Device, select its row in the table (rather than using the action buttons at the end). This will reveal any additional information, such as the optional alias.
+Clicking on the corresponding strip of a device opens a detailed view with additional information.
 
 ![details_native.png](./screenshots/details_native.png ':size=800')
 
 
-### Edit Native Devices
+### Edit a Native Device
   
- A native device can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
+ A native device can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in its row.
  
   ![edit_native.png](./screenshots/edit_native.png ':size=500x350')
 
    
-### Delete Native Device
+### Delete a Native Device
 
- A native device can be deleted by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
+ A native device can be deleted by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in its row.
  
  You will receive a warning before the device is permanently deleted:
  

@@ -5,7 +5,7 @@
 A network controller is a networking device that forwards data packets between the network. Network controllers play a crucial role in the `Jimber SASE Platform`. Isolating a network means restricting its accessibility to only trusted entities and ensuring unauthorized access is prevented. 
 
 > [!INFO]
-> It ensures that each part of your network, whether it's a device, user, or application, cannot access any other part without explicit permission.
+> It ensures that each part of your network, whether it's a device, a user or an application cannot access any other part without explicit permission.
 
 
 ![network controllers.png](./screenshots/networkcontrollers.png ':size=800')
@@ -38,12 +38,12 @@ To add a network controller into the `Jimber SASE Platform`, click on the `+ Cre
 
 ![create_networkcontroller.png](./screenshots/create_networkcontroller.png ':size=500')
 
-> [!WARNING]
-> Hostname, Endpoint Address and Public IP are mandatory.
+
+Hostname, Endpoint Address and Public IP are mandatory.
 
 > [!INFO]
 > Detailed instructions for the installation of an on-prem Network Controller are available [here](../../advanced/networkcontrollerssetup/SettingUpServer.md). 
-> The minimum specifications for on-prem Network Controllers are:
+> The minimum specifications for on-prem Network Controller are:
 > 
 > **General**:
 > - 25GB hard disk
@@ -51,11 +51,11 @@ To add a network controller into the `Jimber SASE Platform`, click on the `+ Cre
 > - 2 CPU
 > - 4GB RAM
 
-### Edit on-premise Network Controllers
+### Edit on-premise Network Controller
 
- Network Controllers can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
+ A Network Controller can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in its row.
 
-![edit_networkcontroller.png](./screenshots/edit_networkcontroller.png ':size=500')
+![edit_networkcontroller.png](./screenshots/edit_networkcontroller.png ':size=500') 
 
 
 ### Delete on-premise Network Controllers

@@ -56,7 +56,16 @@ Clicking on the corresponding strip of the NIAC opens a new window with more det
 
 ![niac_details.png](./screenshots/niac_details.png ':size=600')
 
+- #### Release device
 You can release one of the devices connected to the NIAC by clicking on the red padlock icon ![](../../images/icons/icon_lock.png ':size=20') in their row.
+
+![deleting_dhcp_lease.png](./screenshots/deleting_dhcp_lease.png ':size=400')
+
+- #### Update device
+
+You can delete or add aliases for a device by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in its row.
+
+![update_device.png](./screenshots/update_device.png ':size=400')
 
 ### Edit NIAC
 
