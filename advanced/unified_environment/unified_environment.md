@@ -7,14 +7,14 @@ A unified environment in Jimber SASE is an architectural setup where we integrat
 ## Why choose a unified environment?
 
 - **Cost efficiency**: You only need one environment for multiple companies, significantly reducing infrastructure, licensing, and operational overhead.
-- **Meets minimum requirements**: Jimber SASE requires a minimum of 10 users per environment. By unifying companies into one environment, you can efficiently meet this requirement without forcing small companies to maintain separate environments.
+- **Meets minimum requirements**: Jimber SASE requires a minimum of 5 users per environment. By unifying companies into one environment, you can efficiently meet this requirement without forcing small companies to maintain separate environments.
 - **Centralized management**: A single SASE instance for small companies simplifies administration, monitoring, and updates.
 - **Simplified maintenance**: With fewer environments for small companies, ongoing maintenance and policy management are easier and less time-consuming.
 - **Clear separation with flexibility**: Even though companies share the unified environment, unique configurations, policies, and access controls ensure that each company remains isolated and secure within the setup.
 
 ## Remark
 
-For companies with more than 10 users, we advise creating a **dedicated environment** rather than including them in a unified environment. This helps avoid unnecessary complexity and ensures cleaner management of policies and configurations.
+For companies with more than 5 users, we advise creating a **dedicated environment** rather than including them in a unified environment. This helps avoid unnecessary complexity and ensures cleaner management of policies and configurations.
 
 
 
