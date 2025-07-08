@@ -10,6 +10,26 @@ A network controller is a networking device that forwards data packets between t
 
 ![network controllers.png](./screenshots/networkcontrollers.png ':size=800')
 
+### Filter Networkcontrollers
+
+You can search the list of networkcontrollers using the search box at the top of the page. This helps you quickly find and manage the networkcontroller you're looking for.
+
+- Use the search box to enter keywords and filter the networkcontroller list.
+
+Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
+
+- **Property**: A dropdown menu where you choose the field to filter on.
+- **Match type**: A dropdown that allows you to select how to match the value (`equals` or `contains`).
+- **Value**: Enter or select the value to match, depending on the selected property.
+
+![filter_nc.png](./screenshots/filter_nc.png ':size=400')
+
+To add multiple filters you can press the filter icon ![](../../images/icons/icon_filter.png ':size=20') again and then press the `+` button.
+
+
+> [!INFO]
+> You can refresh the list of networkcontrollers by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
+
 ### Cloud Network Controller (default)
 
 Every company that uses the `Jimber SASE Platform` will have a cloud network controller **added by default**. This network controller ensures that all the company's devices and users, both external and internal, can access the network securely and consistently. The cloud network controller acts as an entry and exit point for network traffic, ensuring everyone can log in and access the necessary resources.

@@ -46,6 +46,25 @@ Clicking on the corresponding strip of a device opens a detailed view with addit
 
 ![details_native.png](./screenshots/details_native.png ':size=800')
 
+### Filter Native Devices
+
+You can search the list of native devices using the search box at the top of the page. This helps you quickly find and manage the native device you're looking for.
+
+- Use the search box to enter keywords and filter the native device list.
+
+Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
+
+- **Property**: A dropdown menu where you choose the field to filter on.
+- **Match type**: A dropdown that allows you to select how to match the value (`equals`or `contains`).
+- **Value**: Enter or select the value to match, depending on the selected property.
+
+![filter_nd.png](./screenshots/filter_nd.png ':size=400')
+
+To add multiple filters you can press the filter icon ![](../../images/icons/icon_filter.png ':size=20') again and then press the `+` button.
+
+> [!INFO]
+> You can refresh the list of native devices by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
+
 
 ### Edit a Native Device
   

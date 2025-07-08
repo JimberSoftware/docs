@@ -48,15 +48,15 @@ You can search the list of Scripts using the search box at the top of the page. 
 Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (e.g. `equals`, `contains`, etc.).
+- **Match type**: A dropdown that allows you to select how to match the value (`equals` or `contains`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
-You can press the `+` button to add multiple filters.
+![filter_scripts.png](./screenshots/filter_scripts.png ':size=400')
 
-Once filters are applied:
-- The results are updated to reflect your conditions.
-- Active filters appear at the top of the page.
-- You can remove filters individually by clicking the `X` next to each, or remove all at once by clicking the `Reset Filters` button.
+To add multiple filters you can press the filter icon ![](../../images/icons/icon_filter.png ':size=20') again and then press the `+` button.
+
+> [!INFO]
+> You can refresh the list of users by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
 
 
 ### User Device Scripts Details

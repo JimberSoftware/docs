@@ -6,6 +6,30 @@ Group Configuration allows administrators to define and manage policies that con
 
 This modular approach makes it easy to apply consistent settings across similar users or departments, enforce compliance standards, and simplify large-scale management. Each tab below represents a configurable option that can be enabled, disabled, or customized per group.
 
+### Filter Group Configurations
+
+You can search the list of group configurations using the search box at the top of the page. This helps you quickly find and manage the group configuration you're looking for.
+
+- Use the search box to enter keywords and filter the group configuration list.
+
+Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
+
+- **Property**: A dropdown menu where you choose the field to filter on.
+- **Match type**: A dropdown that allows you to select how to match the value (only `equals`).
+- **Value**: Enter or select the value to match, depending on the selected property.
+
+![filter_groupconfig.png](./screenshots/filter_groupconfig.png ':size=400')
+
+To add multiple filters you can press the filter icon ![](../../images/icons/icon_filter.png ':size=20') again and then press the `+` button.
+
+<!-- Once filters are applied:
+- The results are updated to reflect your conditions.
+- Active filters appear at the top of the page.
+- You can remove filters individually by clicking the `X` next to each, or remove all at once by clicking the `Reset Filters` button. -->
+
+> [!INFO]
+> You can refresh the list of users by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
+
 <!-- tabs:start -->
 
 ### **WAN GATEWAY**
@@ -177,6 +201,21 @@ When Always On is enabled, the application will launch with the system. Dependin
 1. Enable **Always On** in the *`Jimber SASE Platform`* group settings of the selected group.
 2. Choose between **Forced Mode** or **Autostart Mode**.
 3. Deploy the settings to connected devices.
+
+### **EDR**
+
+_EDR systems continuously monitor activity on endpoints._
+
+EDR stands for Endpoint Detection and Response. It is a security solution focused on monitoring, detecting and responding to threats on endpoints such as computers, laptops and servers. EDR solutions help detect cyberattacks at an early stage and minimize damage by enabling a swift response to suspicious activities.
+
+### **IDS/IPS**
+
+_IDS (Intrusion Detection System) identifies potential intrusions, unauthorized access, or other suspicious activities within a network._
+
+_IPS (Intrusion Prevention System) detects and prevents intrusions, unauthorized access, and other suspicious activities within a network._
+
+
+IDS and IPS are security systems that monitor network traffic for malicious activity. An IDS detects threats and generates alerts, while an IPS not only detects threats but also takes action to stop them.
 
 
 <!-- tabs:end -->

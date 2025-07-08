@@ -29,6 +29,7 @@ Once a device is connected, you can see the via DHCP assigned IP address of the 
 > If you're an integrator in need of NIACs, you can either contact your distributor or reach out directly to Jimber via email at security@jimber.io.
 
 ### Create NIAC
+
 > [!WARNING]
 > Creating a NIAC can only be done by super admins of Jimber.
 
@@ -50,6 +51,32 @@ To create a NIAC into the platform, click on the `+ Create new` button located a
 
 <!-- ![group_details_niac.png](/group_details_niac.png ':size=600') -->
 
+### Filter NIACs
+
+You can search the list of NIACs using the search box at the top of the page. This helps you quickly find and manage the NIAC you're looking for.
+
+- Use the search box to enter keywords and filter the NIAC list.
+
+Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
+
+- **Property**: A dropdown menu where you choose the field to filter on.
+- **Match type**: A dropdown that allows you to select how to match the value (`equals` or `contains`).
+- **Value**: Enter or select the value to match, depending on the selected property.
+
+
+![filter_niac.png](./screenshots/filter_niac.png ':size=400')
+
+To add multiple filters you can press the filter icon ![](../../images/icons/icon_filter.png ':size=20') again and then press the `+` button.
+
+<!-- Once filters are applied:
+- The results are updated to reflect your conditions.
+- Active filters appear at the top of the page.
+- You can remove filters individually by clicking the `X` next to each, or remove all at once by clicking the `Reset Filters` button. -->
+
+
+> [!INFO]
+> You can refresh the list of NIACs by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
+
 ### Inspect NIAC
 
 Clicking on the corresponding strip of the NIAC opens a new window with more details:
@@ -63,9 +90,12 @@ You can release one of the devices connected to the NIAC by clicking on the red 
 
 - #### Update device
 
-You can delete or add aliases for a device by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in its row.
+You can add or delete aliases for a device by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in its row.
 
 ![update_device.png](./screenshots/update_device.png ':size=400')
+
+>[!NOTE]
+> To add an alias, enter the name and press Enter or the spacebar before clicking Submit.
 
 ### Edit NIAC
 

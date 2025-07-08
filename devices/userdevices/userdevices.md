@@ -215,6 +215,8 @@ Next to the search box, there is a filter icon ![](../../images/icons/icon_filte
 - **Match type**: A dropdown that allows you to select how to match the value (`equals`or `contains`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
+![filter_userdevice.png](./screenshots/filter_userdevice.png ':size=400')
+
 To add multiple filters you can press the filter icon ![](../../images/icons/icon_filter.png ':size=20') again and then press the `+` button.
 
 <!-- Once filters are applied:

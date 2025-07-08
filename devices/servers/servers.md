@@ -167,6 +167,8 @@ Next to the search box, there is a filter icon ![](../../images/icons/icon_filte
 - **Match type**: A dropdown that allows you to select how to match the value (`equals`or `contains`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
+![filter_server.png](./screenshots/filter_server.png ':size=400')
+
 To add multiple filters you can press the filter icon ![](../../images/icons/icon_filter.png ':size=20') again and then press the `+` button.
 
 <!-- Once filters are applied:
@@ -177,12 +179,16 @@ To add multiple filters you can press the filter icon ![](../../images/icons/ico
 > [!INFO]
 > You can refresh the list of servers by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
 
+### Tags
+
+Tags are added while creating or editing the server.
+
 You can review the used **Tags** by pressing the `Tags`button at the top of the page. Here you can also delete any used tags by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 
 ![tags.png](./screenshots/tags.png ':size=500')
 
 > [!WARNING]
-> Deleting a tag permanently removes all uses of it. You will not receive a warning message before deletion. 
+> Deleting a tag permanently removes all use of it. You will not receive a warning message before deletion. 
 
 ### Server Details
 
