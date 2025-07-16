@@ -11,7 +11,7 @@ This section provides an overview of where you can find Jimber SASE log files on
 - **Debug Logs:** Special empty files that enable enhanced logging in the other log files when present.
 
 > [!WARNING]
-> The `debug.log` file itself does **not** contain logs. Instead, its presence triggers verbose logging across the client, server, and service logs to aid in troubleshooting.
+> The `debug.log` file itself does **not** contain logs. Instead, when present, it enables verbose logging across the client, server, and service layers to assist in diagnosing issues
 
 ---
 
@@ -36,7 +36,7 @@ Once created, the system will produce more detailed logs that can help identify 
 - Launcher log: `%PROGRAMFILES%\Jimber\launcher.log`
 - Debug trigger file: `%PROGRAMFILES%\Jimber\debug.log`
 
-#### Server
+##### Server
 - Server log: `%PROGRAMFILES%\Jimber\server.log`
 - Launcher log: `%PROGRAMFILES%\Jimber\launcher.log`
 - Debug trigger file: `%PROGRAMFILES%\Jimber\debug.log`

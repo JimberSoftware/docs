@@ -1,4 +1,4 @@
-# Synology
+# Synology  
 
 >[!INFO]
 > Support is currently provided for Synology NAS running **DMS 7+**. If you're using an earlier version, please update or contact our support team for guidance.

@@ -14,21 +14,20 @@ Use the downloaded file to install the Network Controller.
 
 Press Enter.
 
-![installation_server_nc_3.png](./screenshots/installation_server_nc_3.png ':size=600')
+<!-- ![installation_server_nc_3.png](./screenshots/installation_server_nc_3.png ':size=600')
 
-In the window "Guided storage configuration", you can hit 'Done'. You will get an overview of the storage configuration. Here and in the next window, you can also hit 'Done'. 
+In the window "Guided storage configuration", you can hit 'Done'. You will get an overview of the storage configuration. Here and in the next window, you can also hit **Done**. 
 
-![installation_server_nc_4.png](./screenshots/installation_server_nc_4.png ':size=600')
-
-
-
-![networkconnections.png](./screenshots/networkconnections.png ':size=600')
+![installation_server_nc_4.png](./screenshots/installation_server_nc_4.png ':size=600') -->
 
 
 
-<!-- Then you will see a window with the message “Confirm destructive action”. This is a warning that all data on the used disks will be lost. Only in case of starting this process by mistake, you can choose here for “Continue”. -->
+![network_config.png](./screenshots/network_config_.png ':size=600')
 
-In the next window you will be informed that all data on the used disks may be lost. Choose to “Continue”. 
+
+
+
+In the next window you will be informed that all data on the used disks may be lost. Choose to **Continue**. 
 
 ![installation_server_nc.png](./screenshots/installation_server_nc.png ':size=600')
 

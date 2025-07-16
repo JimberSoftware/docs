@@ -1,9 +1,16 @@
-# ![](../../images/menu/menu_networkcontrollers.png ':size=25') Installation of the Network Controller
+# ![](../../images/menu/menu_networkcontrollers.png ':size=25') Installation of a Network Controller
 
 > [!Note]
 > If you intend to install this server virtually, please consider the necessary [BIOS settings](/./advanced/hypervisorinstallation/hypervisorinstallation.md) 
 
-<!-- listed at the bottom of this page. -->
+> [!Note]
+> The minimum specifications for on-prem Network Controller are:
+> 
+> **General**:
+> - 25GB hard disk
+> **For every 50 users:**
+> - 2 CPU
+> - 4GB RAM
 
 
 Download the latest version for the 'Network Controller' from https://signal.jimber.io/downloads (no need to log in).
@@ -16,21 +23,21 @@ Press Enter.
 
 ![installation_server_nc_3.png](./screenshots/installation_server_nc_3.png ':size=600')
 
-In the window "Guided storage configuration", you can hit 'Done'. You will get an overview of the storage configuration. Here and in the next window, you can also hit 'Done'. 
+In the window "Guided storage configuration", you can hit **Done**. You will get an overview of the storage configuration. Here and in the next window, you can also hit **Done**. 
 
 ![installation_server_nc_4.png](./screenshots/installation_server_nc_4.png ':size=600')
 
+<!-- In the window "Network configuration", you can hit **Done**. -->
 
-
-![networkconnections.png](./screenshots/networkconnections.png ':size=600')
+![network_config.png](./screenshots/network_config.png ':size=600')
 
 
 
 <!-- Then you will see a window with the message “Confirm destructive action”. This is a warning that all data on the used disks will be lost. Only in case of starting this process by mistake, you can choose here for “Continue”. -->
 
-In the next window you will be informed that all data on the used disks may be lost. Choose to “Continue”. 
+In the next window you will be informed that all data on the used disks may be lost. Choose to **Continue**. 
 
-![installation_server_nc.png](./screenshots/installation_server_nc.png ':size=600')
+![install_system.png](./screenshots/install_system.png ':size=600')
 
 The installation process will then begin, which can take several minutes.
 
@@ -59,7 +66,7 @@ You need this data to proceed (hit "Enter" if necessary):
 
 ![installation_server_nc_5.png](./screenshots/installation_server_nc_5.png ':size=600')
 
-On the next screen select option 3 to show the IP configuration of the Network Controller.
+On the next screen select option **3** to show the IP configuration of the Network Controller.
 
 ![menu.png](./screenshots/menu.png)
 
@@ -112,7 +119,7 @@ Confirm that your Network Controller is now online on the `Jimber SASE Platform`
 
 ### Hypervisor installation
 
-Hypervisor installation is widely used as iy's a very convenient way of working. The major advantage is that the Network Controller Server can be installed on existing hardware. Therefore, there's no need for a physical device. 
+Hypervisor installation is widely used as a very convenient way of working. The major advantage is that the Network Controller Server can be installed on existing hardware. Therefore, there's no need for a physical device. 
 
 > [!INFO]
-> Detailed instructions are available in the Advanced section [here](/./advanced/hypervisorinstallation/hypervisorinstallation.md).
+> Detailed instructions are available [here](/./advanced/hypervisorinstallation/hypervisorinstallation.md).

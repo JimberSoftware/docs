@@ -1,6 +1,7 @@
 # ![](../../images/menu/menu_users.png ':size=25') Users
 
 A user refers to an individual account within the platform. Users can have roles and be linked to properties of different products.
+testetst
 
 > [!INFO]
 > Managing users efficiently is crucial for maintaining the security and integrity of your platform. 
@@ -17,8 +18,8 @@ To create a new User into the platform, click on the `+ Create new` button locat
 ![create_user.png](./screenshots/create_user.png ':size=500x300 :border-radius=10px')
 
 
-> [!WARNING]
->  Be aware that the username cannot be changed after creating a user.
+<!-- > [!WARNING]
+>  Be aware that the username cannot be changed after creating a user. -->
 
 #### User Roles and their permissions
 
