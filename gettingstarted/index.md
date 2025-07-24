@@ -23,7 +23,7 @@ This guide will show you how to become a member of highly secure companies world
 
 6. [ ![](../../images/menu/menu_niacs.png ':size=25')Create NIACs](./devices/niacs/niacs)
 
-7. [ ![](../../images/menu/menu_networkcontrollers.png ':size=25'))Create Network Controllers](./devices/networkcontrollers/networkcontrollers)![](../../images/menu/menu_networkcontrollers.png 
+7. [ ![](../../images/menu/menu_networkcontrollers.png ':size=25')Create Network Controllers](./devices/networkcontrollers/networkcontrollers) 
 
 8. ![](../../images/menu/security.png ':size=30') **Configuring rules** to be found in the [SECURITY](/security.md) section of the sidebar.
 
