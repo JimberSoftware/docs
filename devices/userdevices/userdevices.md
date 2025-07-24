@@ -166,8 +166,11 @@ After signing in, clicking on the icon will show you this tray:
 
 ![logout.png](./screenshots/logout.png ":size=300")
 
-- `Stealth mode` ensures that traffic is sent via HTTPS, allowing you to connect to Jimber even on hotspots, etc.
-   To use this feature, port 51820 is normally used.
+- `Stealth mode` ensures that traffic is sent via encrypted HTTP and is designed to make VPN connections possible in environments that would normally block them, such as public hotspots, airports, or countries with strict internet censorship. It works by disguising VPN traffic to look like regular internet traffic, helping you bypass network restrictions. To use this feature, port 51820 is normally used.
+>
+> [!NOTE]
+> **Stealth mode** is only available in certain situations where your connection is recognized as external to the Jimber SASE cloud environment.
+
 - `Disconnect` will disconnect you from the *`Jimber SASE Platform`*, but you stay signed in.
 - `Quit` closes the application.
 

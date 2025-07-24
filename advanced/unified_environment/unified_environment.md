@@ -48,6 +48,8 @@ The first step is to register the domains of each company into the SASE environm
 
 Domains act as the primary namespace reference for users, groups, resources, and policies.
 
+![domains.png](/screenshots/domains.png)
+
 ---
 
 ### Step 2 — Add Users
@@ -55,6 +57,8 @@ Domains act as the primary namespace reference for users, groups, resources, and
 Users are added based on their email addresses, which automatically tie them to the appropriate domain/company.
 
 No additional onboarding steps are required per user beyond adding their email — their domain affiliation is clear from the email (e.g., `alice@companya.be`, `bob@companyb.co.uk`).
+
+![users.png](/screenshots/users.png)
 
 ---
 
@@ -81,6 +85,8 @@ Add the resources (servers, applications, file shares, etc.) specific to the com
 
 This makes it easy to identify and manage company-specific assets.
 
+![servers.png](/screenshots/servers.png)
+
 ---
 
 ### Step 5 — Configure Access via Attribute Service
@@ -104,7 +110,7 @@ Unified, functional security groups:
 - Focus on shared security functions rather than company boundaries
 - Allow policies to be applied centrally and uniformly
 
-For example:
+**For example:**
 - A group like `group.webfiltering-enabled.all-companies` could include `group.all-users.companya.be`, `group.all-users.companyb.co.uk`, and other company user groups.
 
 ---
@@ -114,10 +120,10 @@ For example:
 Central policy application  
 You can attach security features (such as `policy.webfiltering.all-companies`, `policy.dns-protection.all-companies`) directly to these functional groups. This ensures the policy is enforced consistently, no matter the company.
 
-Flexible membership  
+**Flexible membership**  
 Groups from different companies can be added as members of a functional group. This allows a single policy to cover many companies without duplicating configurations.
 
-No added risk  
+**No added risk**  
 Even though these groups span multiple companies:
 - There is no unintended cross-access to resources or data
 - Policies applied are security enforcements only, not permissions to access company-specific resources
