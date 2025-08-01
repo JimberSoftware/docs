@@ -35,19 +35,29 @@
 Make sure you are connected to the same network as the Synology.
 
 - Go to http://find.synology.com/ and search for a nearby Synology device.
-- You can also directly go to the current internal IP address of the NAS. (Example: http://192.168.0.146:5000)
 
-After locating the Synology, you will see the following screen:
-
-![find_synology](./screenshots/find_synology.png ':size=500')
-
-Click on 'Connect' to start the installation off the software.  
+![search_synology](./screenshots/search_synology.png ':size=500')
 
 >[!INFO]
 > If you can't locate the Synology NAS, check following reasons: 
 > - The Synology isn't turned on or hasn't started up and is not yet discoverable. Make sure the device is turned on and refresh the search a few times as it might take some time.
 > - You are not on the same network as the Synology or it is not connected to the internet.
 > - The Synology has to be restarted because of some failure. Hold the power button until the blue light blinks, then let go. Wait until it is turned off, then press the power button again. Wait until you hear a beep before it can be found on https://find.synology.com (+- 1 minute).
+- You can also directly go to the current internal IP address of the NAS. (Example: http://192.168.0.146:5000)
+
+After locating the Synology, you will see the following screen:
+
+![find_synology](./screenshots/find_synology.png ':size=500')
+
+
+Select the correct device, click 'Connect', and accept the EULA. 
+
+![synology_eula.png](./screenshots/synology_eula.png ':size=500')
+
+Click 'Next' to start the software installation.
+
+![connecting_synology](./screenshots/connecting_synology.png ':size=500')
+
 
 
 ### Preparation

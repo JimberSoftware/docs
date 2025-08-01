@@ -12,7 +12,7 @@ For clarity, consider a scenario where a company named *`Astral Voyage`* wants t
 
 To incorporate a new customer into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
 
-![create_customer.png](./screenshots/create_customer.png ':size=500')
+![create_customer.png](./screenshots/create_customer.png ':size=400')
 
 Following fields should be provided:
 	
@@ -35,7 +35,7 @@ You can search the list of customers using the search box at the top of the page
 Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (e.g. `equals`, `contains`, etc.).
+- **Match type**: A dropdown that allows you to select how to match the value (`equals`or `contains`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
 ![filter_customer.png](./screenshots/filter_customer.png ':size=300')
@@ -63,7 +63,7 @@ You get an overview of created assets:
 ### Edit Customer
 Customers can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
 
-![edit_customer.png](./screenshots/edit_customer.png ':size=500')
+![edit_customer.png](./screenshots/edit_customer.png ':size=400')
 
 > [!WARNING]
 > You will be notified that changing the partner will remove all current security consultant roles.

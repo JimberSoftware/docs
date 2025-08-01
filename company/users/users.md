@@ -105,8 +105,7 @@ In the user overview, several key properties are immediately visible: the user's
  
   ![edit_user.png](./screenshots/edit_user.png ':size=500x350')
   
-> [!WARNING]
-> The username cannot be changed. All other options are the same as when creating a user.
+All options are the same as when creating a user.
   
 ### Delete User
 
