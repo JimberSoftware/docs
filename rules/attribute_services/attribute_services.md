@@ -1,6 +1,6 @@
 # ![](../../images/menu/menu_attributeservices.png ':size=28') Attribute Services
 
-After you have created a service on the [**Services**](/./rules/services/services.md) page, you need to configure it under **Attribute Services**. Doing so, you make the service available by assigning it to a group en a destination. 
+After you have created a service on the [**Services**](/./rules/services/services.md) page, you need to configure it under **Attribute Services**. Doing so, you make the service available by assigning it to a group and a destination. 
 
 ![Screenshot of the Attribute Services page](./screenshots/attribute_service.png ':size=800')
 

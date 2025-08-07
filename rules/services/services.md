@@ -37,25 +37,25 @@ This will open the following screen where you can enter the specifics of your se
     - **Start Port / End Port**: Specify the port range to allow. If left empty, it defaults to `1` and `65535`.
     - **Protocol**: Choose the protocol the service will use (e.g., TCP or UDP).
 
-> [!WARNING]
-> Don't forget to submit the service, by clicking on the `➢ Submit service` button. If there are any unsaved changes when you leave the page, a warning message will appear:
->
->![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=400')
+4. **Submit the service**, by clicking on the `➢ Submit service` button. If there are any unsaved changes when you leave the page, a warning message will appear:
 
-Repeat these steps to configure additional services as needed. 
+![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=400')
+
+**Repeat these steps** to configure additional services as needed. 
 
 After creating the service you can switch to [Attribute Services](/./rules/attribute_services/attribute_services.md) to specify the details of the service.
 
-> [!INFO] 
-> You can save the configuration of your service by clicking the `📄Save template` button.
->
->![save_template.png](./screenshots/save_template.png ':size=500')
->
-> When prompted, enter a distinctive name and a clear, descriptive summary to make it easy to identify and reuse later. 
->
-> Any saved templates can be used when creating a new service by clicking the `📄Load template` button at the bottom of the page, selecting the appropriate service template and clicking the `➢ Apply template` button.
->
->![load_template.png](./screenshots/load_template.png ':size=500')
+### Service template
+
+You can save the configuration of your service by clicking the `📄Save template` button. When prompted, enter a distinctive name and a clear, descriptive summary to make it easy to identify and reuse later. 
+
+![save_template.png](./screenshots/save_template.png ':size=500')
+
+ 
+ Any saved templates can be used when creating a new service by clicking the `📄Load template` button at the bottom of the page, selecting the appropriate service template and clicking the `➢ Apply template` button.
+
+![load_template.png](./screenshots/load_template.png ':size=500')
+
 
 ### Filter Services
 
@@ -72,12 +72,11 @@ From here, you can:
 - Add, remove, or modify **service entries**.
 - Add, remove, or modify **access rules**.
 
-If you make changes you don’t want to keep, use the `Clear changes` button to revert to the previously saved version.
-
 > [!WARNING]
-> Don't forget to submit the service, by clicking on the `➢ Submit service` button. If there are any unsaved changes when you leave the page, a warning message will appear:
->
->![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=400')
+> Don't forget to submit the service, by clicking on the `➢ Submit service` button.
+
+If you made changes you don’t want to keep, use the `Clear changes` button to revert to the previously saved version.
+
 
 ### Delete Services
 

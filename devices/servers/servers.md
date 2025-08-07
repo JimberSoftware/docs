@@ -151,7 +151,7 @@ All other configuration is identical.
 <!-- tabs:end -->
 
 >[!INFO]
->For any necessary troubleshooting, you can consult the log files. Locations of the log files van be found [here](/./advanced/logging/logging.md). 
+>For any necessary troubleshooting, you can consult the log files. Locations of the log files can be found [here](/./advanced/logging/logging.md). 
 
 ---
 
