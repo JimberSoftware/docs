@@ -46,7 +46,7 @@ The required token was created with the new server. If you did not copy the toke
 
 <!-- ![token.png](./screenshots/token.png ':size=500') -->
 
-After filling in the token and clicking the submit button, a pop-up appears stating that the server configuration has been submitted and the service has been restarted:
+After filling in the token and clicking the submit button, a pop-up appears stating that the server configuration has been submitted and the service will be restarted:
 
 
 ![settings_updated.png](./screenshots/settings_updated.png ':size=400')
