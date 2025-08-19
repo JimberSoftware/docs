@@ -61,6 +61,16 @@ On the domain controller, open PowerShell and run these two commands: -->
 - The **Password** is the password of the user. 
 - Choose the right **Network Controller**.
 
+>[!NOTE]
+>To identify the correct distinguished names, you can execute the following commands in PowerShell:
+>
+>```bash
+>   dsquery group -name JimberSASE_Sync
+>```
+>```bash
+>   dsquery user -name user1
+>```
+
 >[!WARNING]
 > Don't forget to click the`Apply`button to apply the entered values.
 

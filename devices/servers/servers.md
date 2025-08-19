@@ -89,29 +89,10 @@ sudo jimberfw -config
 ```
 ![token_linux_server.png](./screenshots/token_linux_server.png ':size=300') 
 
-<!-- Open this file using the text editor of your choice. Within this file, you'll notice an empty token along with newly created public and private keys.
-
-In this file, enter the token you were provided upon creating the server within the SASE Platform interface.
-
-```json
-{
-  "publicKey": "l7D1+dm...",
-  "privateKey": "ENjN41TJE7WEU76T...",
-  "token": "YOUR_TOKEN"
-}
-```
-> [!WARNING]
-> **Attention**! Don't forget the comma at the end of lines and the quotation marks!
-Ensure to save the changes made to the file. -->
-
-
-
-
 If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab of the `Jimber SASE Platform`. Simply select and edit the correct server to find it.
 
 
 ![update_server.png](./screenshots/update_server_token.png ':size=800')
-
 
 
 Restart the service by running the following command:
