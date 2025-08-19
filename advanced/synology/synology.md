@@ -10,7 +10,7 @@
 
 
 
-##### **Reset Synology NAS**
+##### Reset Synology NAS
 
 <!-- > [!INFO]
 > **Note:** Only perform if you wish to reset to factory settings. -->
@@ -30,7 +30,7 @@
   > [!Warning]
   > After a complete reset of the Synology, you need to reinstall the operating system.
 
-##### **Locate Synology NAS**
+##### Locate Synology NAS
 
 Make sure you are connected to the same network as the Synology.
 
@@ -58,9 +58,37 @@ Click 'Next' to start the software installation.
 
 ![connecting_synology](./screenshots/connecting_synology.png ':size=500')
 
+##### Install DiskStation Manager
+
+Finally install the software for the Synology NAS.
+
+![install_synology_manager](./screenshots/install_synology_manager.png ':size=500')
+
+![installing_synology](./screenshots/installing_synology.png ':size=500')
+
+After the installation of the software the Synology will restart. This takes about 10 minutes.
+
+![restart_synology](./screenshots/restart_synology.png ':size=500')
+
+After the restart you can begin to manage the Synology.
+
+![welcome_to_synology](./screenshots/welcome_to_synology.png ':size=500')
+
+In the next window, you can choose a device name, an administrator and a password. 
+
+![get started](./screenshots/getstarted.png ':size=500')
+
+Choose in the next window an option for updating the Synology.
+
+![update_options](./screenshots/update_options.png ':size=500')
+
+Create in the next window a Synology account. 
+
+![synology_account](./screenshots/synology_account.png ':size=500')
 
 
 ### Preparation
+
 Go to https://signal.jimber.io/ and add a new server to the `Jimber SASE Platform`. 
 
 ![create_synology](./screenshots/create_synology.png ':size=500')
