@@ -86,6 +86,10 @@ Create in the next window a Synology account.
 
 ![synology_account](./screenshots/synology_account.png ':size=500')
 
+At this point, you can make a Synology Account.
+
+![account_synology](./screenshots/account_synology.png ':size=300')
+
 
 ### Preparation
 
@@ -112,7 +116,14 @@ The user will need the following access & permissions:
 
 ![control_panel](./screenshots/control_panel.png ':size=500') 
 
-Please take note of the chosen **username** and **password**. 
+![new_user](./screenshots/new_user.png ':size=500') 
+
+![join_group](./screenshots/join_group.png ':size=500') 
+
+You can ignore the next windows  until the job is done. 
+
+>[!NOTE]
+>Please take note of the chosen **username** and **password**. 
 
 **Enable SSH** - Only required during the installation.
 
@@ -140,6 +151,8 @@ Download the latest version for your Synology from [downloads](https://signal.ji
 ![Find the correct synology package](./screenshots/choose_download_syn.png ':size=200')
 ![Find the correct synology package](./screenshots/downloads.png ':size=700') 
 
+You can find the model name of your Synology in the Info Center of the control panel. 
+
 ![Find the correct synology package](./screenshots/download_syn_warning.png ':size=500x250') 
 
 ![Find the correct synology package](./screenshots/info_center.png ':size=500') 
@@ -150,13 +163,19 @@ This will download the latest SPK version for your NAS.
 
 ##### Installation
 
-Choose Package Center in the taskbar and then Manual Install in the right upper corner.
+Choose Package Center in the taskbar and then **Manual Install** in the right upper corner.
 
 ![Install the SPK](./screenshots/install-spk.png ':size=500')
 
 Follow the sequence shown in the screenshots below to properly install the SPK.
 
 ![Install the SPK](./screenshots/install-spk2.png ':size=500')
+
+In the next window you can choose `Agree`.
+
+![third_party](./screenshots/third_party.png ':size=500')
+
+
 ![Install the SPK](./screenshots/install-spk3.png ':size=500')
 
 ![Install the SPK](./screenshots/install-spk5.png ':size=500')

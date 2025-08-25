@@ -2,21 +2,40 @@
 
 In this section you can see how to integrate users and groups from an Active Directory into the SASE platform.
 
+>[!WARNING]
+>To enable Active Directory Integration you need at least one on-premise network controller.
+
+![no_on_premise.png](./screenshots/no_on_premise.png ':size=500')
+
+
+How to setup a network controller you can [here](/./advanced/networkcontrollerssetup/SettingUpServer.md).
+
 
 <!-- UNDER CONSTRUCTION -->
 
 #### In the Active Directory
 
-Create a new user in de AD (e.g. User1) and add the user to the AD group Read-Only Domain Controllers:
+Create a new user in de AD (e.g. **User1**) and add the user to the AD group **Read-Only Domain Controllers**:
 
 ![user_in_rodc.png](./screenshots/user_in_rodc.png ':size=500')
 
-Create a new Global Security groups e.g. JimberSASE_Sync and GeneralUsers:
+Assign the 'Read-Only Domain Controllers' group as the user's primary group.
+- Select the properties of the group.
+
+![properties_user.png](./screenshots/properties_user.png ':size=300')
+
+  - Open the **Member of** tab.
+  - Select the **Read-Only Domain Controllers** group.
+  - Click **Set Primary Group**.
+
+![primary_group.png](./screenshots/primary_group.png ':size=300')
+
+Create new Global Security groups e.g. **JimberSASE_Sync** and **GeneralUsers**:
 
 ![new_groups.png](./screenshots/new_groups.png ':size=500')
 
 
-Add your user to the group GeneralUsers. 
+Add the AD-user to be synchronized (e.g. Jack) to the group GeneralUsers. 
 
 Add the group GeneralUsers to the group JimberSASE_Sync. 
 
@@ -58,7 +77,7 @@ On the domain controller, open PowerShell and run these two commands: -->
 
 - In the **SASE Group field**, enter the Distinguished Name of the group (in this example: CN=JimberSASE_Sync,CN=Users,DC=domainname,DC=be). 
 - In the **Username field**, enter the Distinguished Name of the user you want to sync (in this example: CN=User1,CN=Users,DC=domainname,DC=be).
-- The **Password** is the password of the user. 
+- The **Password** is the password of the user (in this example User1). 
 - Choose the right **Network Controller**.
 
 >[!NOTE]
