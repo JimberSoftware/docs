@@ -1,0 +1,338 @@
+File: changelog/index.md
+
+### Version 1.12
+
+- Amélioration du filtrage générique.
+- Correction de problèmes de style dans le panneau de sécurité.
+- Mise à jour de FormKit vers la version 1.5.5.
+- Correction de fautes de frappe et d’un bug lié à la connexion du démon dans les hotspots.
+- Ajout de la validation des adresses e-mail professionnelles.
+- Mise en œuvre de la génération de configuration des règles v2.
+- Amélioration des capacités de filtrage de l’administrateur pour les menus avec tableaux.
+- Introduction d’événements de configuration et amélioration des vérifications du transfert DNS.
+- Correction de divers bugs, notamment une puce vide dans les adresses e-mail professionnelles, l’indicateur de mises à jour du serveur, les entrées en double, le mauvais routage vers la documentation et les téléchargements, les erreurs de nom d’hôte et les sauts de l’interface utilisateur lors de l’activation des limites d’appareils.
+- Ajout du statut d’approbation des appareils et amélioration des boutons de réinitialisation dans les services de groupe.
+- Amélioration de la gestion des configurations réseau et des mises à jour du panneau de sécurité.
+- Amélioration de l’expérience utilisateur grâce à la correction des problèmes de scintillement, à la mise à jour des boutons de réinitialisation et à la mise en œuvre de HTTPS pour les transmissions de configuration.
+- Mise en œuvre d’une meilleure gestion des erreurs et amélioration de divers composants de l’interface utilisateur.
+- Amélioration du contenu des e-mails et des écrans d’approbation des appareils.
+- Ajout de la clé de signature publique pour le serveur de signalisation et amélioration du tableau de configuration de groupe avec le statut d’approbation des appareils.
+- Correction de bugs dans l’exportation CSV et la recherche de configuration de groupe.
+- Mise à jour des icônes de la barre latérale et mise en œuvre d’une bibliothèque d’icônes.
+- Mise à niveau de Playwright et correction des tests associés.
+- Amélioration de la validation des entrées pour tous les composants et correction des codes d’état manquants.
+- Amélioration des actions de workflow et ajout d’un plugin de tri plus joli pour Tailwind.
+- Ajout de la validation de longueur au nom d’hôte du serveur et aux autres champs de saisie.
+- Amélioration de la gestion des notifications et des mises à jour de configuration des appareils.
+- Amélioration de la journalisation de diverses activités, notamment de la synchronisation Azure.
+- Correction de bugs liés à la création de services, au tri des règles et aux incohérences de l’interface utilisateur.
+- Ajout de nouvelles fonctionnalités pour améliorer l’expérience utilisateur dans le filtrage et les champs de listes déroulantes.
+- Amélioration de l’envoi des e-mails et de la gestion des notifications.
+- Amélioration de la gestion des erreurs et de la validation des champs de formulaire.
+- Améliorations majeures de la réactivité du panneau de sécurité et de la conception des fenêtres modales.
+- Amélioration de la gestion des mises à jour du serveur et des configurations du pare-feu.
+- Correction de bugs dans la synchronisation des domaines, les widgets du tableau de bord et les descriptions des règles de service.
+- Ajout de la prise en charge de plusieurs IP publiques et amélioration de la gestion des filtres avancés.
+- Amélioration de la pagination et du tri pour divers tableaux et listes.
+- Mise à jour de FormKit et correction des bugs et incohérences associés.
+- Amélioration de la journalisation des erreurs survenant pendant la synchronisation des domaines.
+
+Cette version vise à améliorer la stabilité générale, l’expérience utilisateur et la sécurité du produit en corrigeant de nombreux bugs, en améliorant les capacités de filtrage et en mettant en œuvre une meilleure gestion des erreurs et validation dans divers composants.
+
+
+
+### Version 1.11
+
+- Mise en œuvre de règles de correctif JSON pour la redirection de ports.
+- Modification de la valeur par défaut de `last_seen`.
+- Refactorisation du serveur, du routeur, de NIAC, du pare-feu de groupe, du démon et de l’authentification pour le nouveau client.
+- Correction du problème de code QR et du problème de connexion de la synchronisation Azure.
+- Transformation du champ des alias du serveur en liste de tags.
+- Amélioration de l’interface utilisateur pour le nettoyage des démons et ajout de validations pour les opérations CRUD de l’entreprise.
+- Correction de problèmes de mise à jour des utilisateurs, de nom de champ de saisie, de comparaison des règles et de divers autres bugs.
+- Ajout d’un décorateur aux routes du gestionnaire d’intégrateurs et correction de bugs liés aux alias du serveur et aux détails du groupe.
+- Mise en œuvre du nombre total d’alertes et des paramètres de contact principal pour les entreprises.
+- Suppression des horodatages des messages de journal et ajout d’indicateurs de mise à jour dans les statistiques du tableau de bord.
+- Ajout de l’emplacement physique à NIAC et amélioration de la mise en page de la page des détails du groupe.
+- Correction des alertes d’erreur de connexion et des problèmes de configuration des appareils.
+- Mise en œuvre d’une nouvelle vue et de nouvelles règles, correction des téléchargements Synology et amélioration du filtrage DNS.
+- Modification du filtrage DNS pour qu’il puisse être modifié par plusieurs utilisateurs et mise en œuvre des listes de blocage et d’autorisation dans la nouvelle vue de filtrage DNS.
+- Amélioration de la couleur du texte des boutons et correction des problèmes de connexion mobile.
+- Correction de bugs liés à la connexion d’appareils par QR code, à la régénération d’IP, aux routes d’hôte et à la création d’appareils natifs.
+- Refactorisation pour utiliser de nouveaux composants et suppression des types partagés du frontend.
+- Ajout des appareils natifs aux règles de service et rétablissement du message de provisionnement.
+- Ajout d’un bouton de téléchargement pour le trafic de groupe et d’une contrainte d’unicité des adresses IP pour les appareils natifs.
+- Mise en œuvre d’une meilleure gestion des exceptions et de notifications d’approbation des appareils.
+- Amélioration de la gestion des redirections de connexion et correction des problèmes de navigation du tableau de bord.
+- Ajout de contraintes pour le nettoyage des démons inactifs et amélioration de la validation des champs de saisie.
+- Correction de la suppression des services et ajout d’une fonctionnalité au clic pour le champ de liste de tags des groupes.
+- Amélioration de la conception de la fenêtre modale de configuration de groupe et utilisation d’une requête générique pour les journaux.
+- Correction de la tâche API ESLint et d’autres bugs de fusion.
+- Mise à jour de l’ID Azure pour MSAL et amélioration de la gestion des messages d’erreur indéfinis.
+- Ajout de la plateforme au démon et prise en charge de l’ajout de services aux groupes.
+- Correction d’une requête qui bloquait le frontend et d’autres problèmes de groupes en double.
+- Extension de la fonctionnalité des messages d’annonce et correction des scripts des démons.
+- Mise à jour de la conception du nombre d’alertes et correction des problèmes de mise à jour des démons inactifs.
+- Ajout de la prise en charge de plusieurs adresses DNS et correction d’un bug de tri dans l’activité récente.
+- Amélioration de la gestion des mises à jour de NIAC et ajout de la coloration syntaxique dans les scripts.
+- Correction de plusieurs problèmes dans les scripts des démons et les mises à jour partielles du serveur.
+- Amélioration de la gestion d’un trop grand nombre d’événements et correction des configurations de développement.
+- Mise à jour de la fonctionnalité toujours active avec une balise bêta.
+- Correction des messages d’alerte pour l’approbation des appareils et du style du panneau de sécurité.
+- Ajout de la validation des adresses e-mail professionnelles et récupération des demandes de fusion manquantes.
+- Mise en œuvre de la génération de configuration des règles v2 et des événements de configuration.
+- Amélioration des vérifications du transfert DNS et des mises à jour de l’emplacement physique de NIAC.
+- Suppression du blocage de la création de démons par QR code et ajout du statut d’approbation à la gestion des appareils dans le panneau de sécurité.
+- Amélioration des boutons de réinitialisation dans les services de groupe et correction des problèmes de scintillement dans les services d’attributs.
+- Correction de la puce vide dans les adresses e-mail professionnelles et de l’indicateur de mises à jour du serveur.
+- Correction des entrées en double et des bugs liés aux règles, ainsi que du mauvais routage vers la documentation et les téléchargements.
+- Correction d’une erreur de nom d’hôte dans le service d’adresses et mise à jour des configurations lors de la suppression d’un appareil natif.
+- Prévention des sauts de l’interface utilisateur lors de l’activation de la limite d’appareils et amélioration de la gestion des redirections vers le tableau de bord.
+- Correction du message indiquant que l’utilisateur est introuvable et ajout d’une validation appropriée des entrées pour tous les composants.
+- Amélioration de la gestion des erreurs lors de la vérification des directives et correction des bugs de validation.
+- Ajout de l’écran d’approbation des appareils et du statut d’approbation au tableau de configuration de groupe.
+- Ajout des fichiers security.txt et robots.txt.
+- Mise en œuvre de la page indiquant que la limite d’appareils est atteinte et correction des problèmes de recherche de configuration de groupe.
+- Utilisation du nom du groupe à la place de son ID dans les journaux et correction de l’exportation incomplète des données CSV.
+- Mise à jour des icônes de la barre latérale et de Heroicons.
+- Correction du message concernant les noms en double dans les services et du changement de groupe dans le service d’attributs.
+- Amélioration de la génération des scripts des démons et correction des exigences relatives aux descriptions des services.
+- Correction du filtrage DNS et modification de l’emplacement de sélection du groupe dans la fenêtre du service d’attributs.
+- Amélioration de la validation des URL pour le champ de service web et activation par défaut du service dans les services de groupe.
+- Correction de l’affichage des noms longs dans le composant d’entrée de service et de l’affichage des règles de pare-feu pour les serveurs.
+- Correction d’un bug d’actualisation dans la page de création de services et amélioration des messages de mise à jour des modifications du filtrage web.
+- Modification du message de copie du serveur et correction de la mise en page du formulaire pour les règles de redirection de ports.
+- Ajout de la validation de longueur aux URL/chemins dans l’entrée de service et réorganisation des filtres du service d’attributs.
+- Correction du bouton de retour de la documentation et de divers problèmes de nommage.
+- Amélioration de la transparence des tableaux et de la validation des appareils QR.
+- Ajout de la gestion des changements de statut d’approbation et correction de bugs dans la mise en page des formulaires.
+- Correction du panneau de détails d’utilisateur indéfini et amélioration de la gestion des mises à jour de configuration NC.
+- Amélioration des erreurs et de la validation des noms de domaine, et correction du message de création de démon QR.
+- Ajout de la propriété appropriée à FormKit pour convertir les entrées de port en entiers.
+- Correction d’une faute de frappe dans CrudForm et mise à jour de la récupération des rôles après la création d’une entreprise.
+- Ajout d’erreurs en temps réel pour les champs de liste de tags et ajout des services attribués aux détails du groupe.
+- Modification de toutes les occurrences de « Traffic Between Groups » et ajout d’un bouton de suppression des interfaces dans la page des détails de NIAC.
+- Remplacement de « démon QR » par « appareil mobile » dans les messages de journal et ajout d’une longueur maximale à l’emplacement physique.
+- Correction du mappage de la plateforme des appareils et utilisation des SVG appropriés pour les pages correspondantes.
+- Suppression de « pushed » du message de création de démon QR et correction d’un bug indéfini dans les actions du consultant en sécurité.
+- Amélioration du contenu des e-mails de notification d’approbation des appareils et correction de problèmes dans les scripts des démons et la gestion des mises à jour.
+- Amélioration des messages d’erreur pour les redirections de connexion et de la validation des ports personnalisés.
+- Amélioration de l’UX du nombre d’alertes et correction d’un bug de tri dans l’activité récente.
+- Correction de la navigation dans les détails du groupe et de plusieurs bugs dans les scripts des démons.
+
+Cette version apporte de nombreuses améliorations à l’expérience utilisateur, des corrections de bugs, des améliorations de la validation et de nouvelles fonctionnalités, pour garantir un produit plus stable et plus efficace.
+
+
+### Version 1.10
+
+- Correction de la barre latérale pour les administrateurs d’entreprise dans les superentreprises.
+- Mise à jour de la visibilité des composants pour les intégrateurs dans les superentreprises.
+- Amélioration des possibilités de modification du site web de l’entreprise.
+- Autorisation pour les administrateurs d’entreprise et les consultants en sécurité d’accéder aux intégrations de l’entreprise.
+- Mise en œuvre d’une méthode générique de recherche, de tri et de pagination.
+- Renommage des contrôles d’accès en utilisateurs et nettoyage des imports inutilisés.
+- Ajout de la documentation pour la mise en production.
+- Correction des problèmes de visibilité des gestionnaires d’intégrateurs dans la barre latérale.
+- Possibilité d’ouvrir le panneau de détails à l’aide de paramètres de requête.
+- Prise en charge de la connexion depuis plusieurs appareils.
+- Adaptation de la visibilité du favicon à l’état de la barre latérale.
+- Suppression de la référence au démon dans le texte destiné aux utilisateurs.
+- Correction de problèmes sur la page des détails du groupe.
+- Correction de problèmes de définition de version pour les serveurs, les NIAC et NC.
+- Mise en œuvre de l’invalidation du cache pour le favicon de l’entreprise.
+- Correction de problèmes liés à NIAC sur le cloud et sur site.
+- Correction des rôles pour la modification des entreprises d’intégrateur.
+- Ajout de la prise en charge des démons personnalisés des utilisateurs.
+- Mise à jour des configurations du client Synology.
+- Création de vues d’ensemble pour NIAC et les utilisateurs.
+- Optimisation de la mise en page et de la structure de la barre latérale pour améliorer les performances.
+- Correction de problèmes sur la page des utilisateurs en présence de consultants en sécurité.
+- Autorisation pour les gestionnaires d’intégrateurs de voir leurs collègues.
+- Gestion des tentatives de déconnexion de démons non authentifiés.
+- Définition d’une hauteur par défaut pour les zones de texte.
+- Correction de problèmes dans la vue client pour les distributeurs.
+- Augmentation de la taille du champ de notes pour les règles de pare-feu.
+- Prise en charge de l’exportation de notes sur plusieurs lignes.
+- Rétablissement de la fonctionnalité du garde d’authentification.
+- Vérification que la suppression d’un routeur cloud supprime également la VM associée.
+- Nettoyage des IP de transfert mDNS.
+- Correction de la fonctionnalité des listes de blocage et d’autorisation.
+- Ajout de la version du lanceur aux notifications.
+- Prévention de la suppression accidentelle du rôle de superadministrateur.
+- Correction du panneau de détails des règles du serveur.
+- Correction des problèmes de modification de l’activité du routeur.
+- Correction de bugs de filtrage et d’incohérences dans les détails du serveur.
+- Amélioration de la fonctionnalité des listes de blocage et d’autorisation.
+- Ajout des vues d’acceptation des revendeurs et des clients.
+- Création d’une vue pour la configuration du démon.
+- Ajout de notifications de mise à jour du lanceur.
+- Amélioration de la validation des règles de pare-feu.
+- Correction de l’erreur indiquant que l’entreprise est introuvable.
+- Création d’une page autonome de configuration WAN.
+- Vérification de la suppression des paramètres d’URL lors de la fermeture des panneaux de détails.
+- Correction de problèmes liés à la carte du routeur le plus proche.
+- Renommage des paramètres et ajout d’une plage d’IP à l’entreprise.
+- Prévention de la création d’intégrateurs avec des domaines sur liste noire.
+- Mise à disposition de vues et de routes autonomes pour le trafic entre les groupes.
+- Modification du menu latéral d’isolation réseau.
+- Ajout d’une vue autonome pour PFW.
+- Autorisation de l’ajout d’appareils natifs.
+- Restriction de la gestion des intégrateurs au superadministrateur.
+- Correction des redirections des consultants et des gestionnaires.
+- Ajout de routes pour les appareils natifs.
+- Correction des problèmes liés à l’autorisation du WAN et à la surcharge DNS.
+- Regroupement des options de téléchargement Synology.
+- Ajout de la fonctionnalité toujours active pour le développement.
+- Correction de problèmes de codes de retour inhabituels.
+- Correction des redirections de page pour les entités des tableaux.
+- Validation des domaines lors de la création d’un intégrateur.
+- Masquage des boutons de modification et de suppression pour les distributeurs sur la page des intégrateurs.
+- Désactivation de certaines fonctionnalités pour les gestionnaires d’intégrateurs.
+- Correction de l’ouverture du panneau de détails de NIAC lors du clic sur le bouton de modification.
+- Mise à jour du comportement d’actualisation de la liste des serveurs.
+- Création d’une liste de tags pour les serveurs.
+- Suppression des groupes principaux.
+- Inclusion du nom de l’entreprise dans la configuration mobile.
+- Correction d’un problème d’invisibilité de NC.
+- Correction des problèmes liés au fournisseur du serveur.
+- Correction des problèmes de blocage de la recherche de modèles Synology.
+- Ajout d’informations de titre pour les distributeurs, les intégrateurs et les clients.
+- Correction des problèmes de connexion des intégrateurs pour les clients.
+- Autorisation de noms de groupe plus longs (annulée).
+- Ajout de la prise en charge de la suppression des tags.
+- Amélioration de la validation des IP et des plages d’IP.
+- Suppression des démons inactifs après une période d’inactivité.
+- Création d’un client TypeScript pour consommer l’API NestJS.
+- Mise en œuvre du garde de rôle d’entreprise dans le routeur frontend.
+- Inclusion des utilisateurs concernés par l’isolation réseau dans les rôles de l’entreprise.
+- Extension du composant « aucune entité trouvée » avec un booléen de création.
+- Ajout de la prise en charge des membres transitifs Azure.
+- Correction des problèmes de connexion lors de la première ouverture de session.
+- Mise à jour de la visibilité du bouton du serveur hors ligne.
+- Amélioration de la synchronisation Azure et correction des problèmes de rôle principal.
+- Correction des erreurs lors de l’acceptation des directives.
+- Simplification du workflow Jack.
+- Récupération des rôles des utilisateurs sans déconnexion ni reconnexion.
+- Correction des problèmes d’affichage des noms de groupe longs lors de leur suppression.
+- Ajout de notifications par e-mail pour les administrateurs.
+- Refactorisation de NIAC et des groupes pour utiliser le tableau CRUD.
+- Régénération des configurations après les modifications d’IP.
+- Amélioration de la prise en charge des appareils natifs pour le nouveau client.
+- Suppression des espaces superflus dans les champs de saisie de texte.
+- Refactorisation de Synology pour le nouveau client.
+- Transformation de la catégorie de filtre DNS en entité.
+- Envoi de la configuration du pare-feu toutes les 30 secondes.
+- Suppression de la dépendance aux groupes lors de la création d’entités.
+- Correction d’un bug de mise à jour des alias du serveur.
+- Correction du problème de code QR.
+- Correction des bugs de mise à jour des utilisateurs et de nom de champ de saisie.
+- Amélioration de l’interface utilisateur du nettoyage des démons.
+- Correction des problèmes SQL et d’autres problèmes associés.
+- Correction de la configuration des appareils et des téléchargements Synology.
+- Envoi des listes de filtres DNS lors de la connexion à NC.
+- Affichage du bouton d’importation manuelle pour les administrateurs.
+- Correction de la couleur du texte des boutons et des liens vers les boutiques.
+- Correction des problèmes de connexion des appareils QR mobiles.
+- Correction de la régénération des IP et des problèmes de connexion mobile.
+- Correction de divers bugs et problèmes de configuration des démons.
+- Correction des routes d’hôte.
+- Correction de l’affichage des appareils natifs et de l’autorisation des services.
+- Refactorisation de la vue de gestion des appareils.
+- Correction des problèmes de filtrage DNS et de validation.
+- Rétablissement du message de provisionnement.
+- Correction du tri de la configuration NC et des bugs de validation.
+- Garantie de l’unicité des adresses IP pour les appareils natifs.
+- Correction des problèmes de tri et d’appareils natifs.
+- Mise à jour de la navigation du panneau des détails du groupe.
+- Provisionnement d’un contrôleur cloud pour les entreprises d’intégrateurs.
+- Rétroportage des modifications de création des clients.
+- Correction de la validation de la saisie des tags du serveur.
+- Ajout de contraintes pour le nettoyage des démons inactifs.
+- Correction de la visibilité absolue des composants.
+- Correction d’un bug de limite de longueur des alias.
+- Correction du tri de la configuration NC.
+- Envoi de la configuration du démon lors de la mise à jour d’un utilisateur.
+- Amélioration des messages d’erreur.
+- Refactorisation de la création initiale du contrôleur cloud.
+- Affichage du tableau de bord approprié selon les rôles et l’état.
+- Correction des routes d’hôte.
+- Correction de la génération des éléments du menu de la barre latérale.
+- Activation des paramètres utilisateur NI pour les intégrateurs.
+- Correction de la liste vide des consultants pour les intégrateurs.
+- Amélioration de la gestion des redirections et de l’absence de contrôleur cloud.
+- Envoi de la configuration NC en cas de suppression d’un utilisateur.
+- Correction de bugs de connexion et de validation des appareils QR.
+- Désactivation temporaire du tri sur les tableaux présentant des problèmes.
+- Suppression des contraintes complexes sur les domaines.
+- Correction de la mise à jour des alias et des problèmes de contrôleur réseau.
+- Correction des problèmes de filtre et d’autorisation/réflexion.
+- Conversion des adresses e-mail en minuscules pour la synchronisation Azure.
+- Prise en charge de plusieurs IP publiques.
+- Correction de l’activation du mode sécurisé pour les serveurs.
+- Amélioration de la visibilité des données pour les distributeurs.
+- Correction du tableau du trafic entre les groupes et du champ de clé API.
+- Correction des horaires journaliers et d’autres problèmes mineurs.
+- Amélioration de la configuration de Synology et de NC lors de la modification.
+- Correction de la journalisation excessive et inclusion des relations d’entreprise.
+- Correction de l’activation/désactivation de NIAC et de l’envoi excessif d’événements.
+- Ajout d’un endpoint de message pour les paquets bloqués.
+
+Cette version vise à améliorer l’expérience utilisateur, à corriger de nombreux bugs et à mettre en œuvre de nouvelles fonctionnalités pour faciliter la gestion et l’utilisation du système.
+
+
+### Version 1.9
+
+- **Appareils utilisateur et navigation**
+  - Renommage des démons en appareils utilisateur pour plus de clarté.
+  - Affichage de l’onglet des appareils dans la barre de navigation.
+  - Regroupement de plusieurs tableaux de bord en un seul.
+
+- **Corrections de bugs et améliorations**
+  - Désactivation de règles spécifiques et correction des bugs associés.
+  - Correction de la création de serveurs avec des groupes supplémentaires.
+  - Suppression de l’ombre à l’origine de problèmes dans Safari.
+  - Modification du bouton d’accueil et mise à jour de la barre latérale avec la documentation et les téléchargements.
+  - Ajout d’un champ d’information supplémentaire pour les règles et correction des en-têtes de tableau.
+  - Résolution des erreurs lors de la suppression d’éléments et amélioration du style.
+  - Correction des problèmes de listes déroulantes sur Mac et du comportement de redirection de ports.
+  - Encodage des paramètres d’URL pour toutes les requêtes de l’API Whitesky.
+
+- **Fonctionnalités et améliorations**
+  - Ajout de la prise en charge de DNS multicast.
+  - Correction de problèmes de compilation et amélioration des expressions régulières.
+  - Déplacement des groupes de l’onglet Pare-feu vers la page des détails du serveur.
+  - Développement de DHCP NIAC et correction de l’activation/désactivation du mode sécurisé.
+  - Amélioration des fonctionnalités du site web de l’entreprise.
+  - Extension de la vue utilisateur pour créer instantanément des utilisateurs NI.
+  - Création d’une vue des intégrations et d’une fenêtre modale de paramètres utilisateur.
+  - Réorganisation des liens de la barre latérale et déplacement de diverses vues (distributeurs, intégrateurs, clients) vers la vue de l’entreprise.
+  - Ajout d’un conteneur à hauteur fixe pour la pagination et amélioration des opérations CRUD.
+
+- **Améliorations de l’interface utilisateur et de l’UX**
+  - Modification de la couleur du bouton d’annulation et de la visibilité du bouton de téléchargement selon la sélection.
+  - Mise à jour de l’IP de NIAC/du serveur lorsque le groupe principal change.
+  - Amélioration de companyExistsGuard dans les routes et correction de problèmes de compilation.
+  - Vérification des connexions pour éviter les communications non vérifiées.
+  - Correction des problèmes de visibilité des éléments de téléchargement dans Firefox.
+  - Autorisation de la planification sans créneaux horaires et correction de l’adresse IP d’interface de routeur en double lors de la création d’un groupe.
+  - Amélioration de la synchronisation Azure AD et introduction d’un paramètre personnalisé de groupe parent.
+  - Correction du bouton d’effacement de la redirection de ports et d’autres bugs mineurs.
+
+- **Ajustements et améliorations**
+  - Garantie que les changements d’IP se produisent uniquement lorsque le groupe principal change.
+  - Correction de l’affichage des données dans les tableaux des intégrateurs et prise en charge des mises à jour de serveur sur la plateforme Synology.
+  - Gestion des entreprises en tant qu’intégrateur et renommage des rôles pour plus de clarté.
+  - Amélioration de la prise en charge des groupes contenant des caractères spéciaux et correction des messages de validation.
+  - Ajustement de la barre latérale pour afficher les favicons des clients et mise à jour des composants de l’interface utilisateur pour assurer la cohérence.
+  - Correction de divers problèmes de navigation et amélioration de la gestion des erreurs.
+  - Refactorisation des règles de pare-feu et amélioration de la validation pour de meilleures performances.
+  - Mise à jour de la gestion des favicons et intégration des ajustements de marge supérieure.
+  - Correction de problèmes de compilation et suppression du PAT (Personal Access Token) redondant.
+
+- **Gestion des rôles et sécurité**
+  - Mise en œuvre de la gestion des rôles pour les intégrateurs des distributeurs.
+  - Amélioration de la création du rôle de gestionnaire d’intégrateurs et ajustements de la barre latérale.
+  - Amélioration du garde d’authentification et garantie d’une gestion sécurisée des rôles.
+  - Vérification des problèmes de connexion de la synchronisation Azure et correction des problèmes associés.
+
+Cette version vise à améliorer la clarté pour les utilisateurs et la navigation, à corriger divers bugs, à enrichir les fonctionnalités et à perfectionner l’interface utilisateur et l’UX afin d’offrir une meilleure expérience globale.

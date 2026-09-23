@@ -1,5 +1,425 @@
 {
-  "version": 1,
-  "source": {},
-  "languages": {}
+    "languages": {
+        "fr": {
+            "files": {
+                "README.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "015d6b60ef7dfaa5d172b07946d7e50429eb849a4ce5933a70011bb1624d2c87",
+                    "translation_hash": "8fb8bc31ed359dfbd91e8d7f1b3e565e497bf129d0d256ab3ce231cc80ee6683"
+                },
+                "_sidebar.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "b5b2eb7a4c9f3dff1132f0bbb73e753865b67087d0c79dbeed1fa761d1e8a2fc",
+                    "translation_hash": "ee66c6e43afd111fa45b0e0f4cb68d2f9b0590f84b47dc9bb9d26f2c7f733afe"
+                },
+                "advanced.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "783d8eba603dd12cb97f442c28690a576a122744ddf8657d8c9292676044e7bc",
+                    "translation_hash": "1a6157e710094537f11824ad397dae73991b0998de27827ea278052f54de46a5"
+                },
+                "advanced/activedirectory/activedirectory.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "37cea213891440a476b021c78262287dea10884b2f565b86069961fdf973af44",
+                    "translation_hash": "c140b2e4135a93164b72e812ffad22d9ee5ff53448b90492b2c38ea073248ed3"
+                },
+                "advanced/ad_integration/ad_integration.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "4c38afaf3b1122f9d9320981322e040f86870565de04dc7bf8569a3b113ef057",
+                    "translation_hash": "c82eb877456f62d9ffb004ce5ad089458e3e6565bd95602e28c861f76d163184"
+                },
+                "advanced/azure/azure.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "01a67258c1a182785814fdd8cc94b736285b418d729ea99187522d091692d1cc",
+                    "translation_hash": "ff1375ba1223d467f5c90fa41bd4a29e9b79f5149fdf4b8b6d602e3327531ece"
+                },
+                "advanced/bestpractices/bestpractices.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "928b257f144abfecb32f5480dc68a397ab0522451088efe55715dfd160f5fc0e",
+                    "translation_hash": "5bf368799e4671dcdae1ff08b672a02e06c5493648402d8fa6f06af5d71c0748"
+                },
+                "advanced/customconfiguration/customconfiguration.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "7997b4aaf7033fb46632c41e2f24ea461475645d0ead60a168898738eb5efe5c",
+                    "translation_hash": "871950532ee9fd108fd7292aa660586170090a1165ba66203bd8676216aafe11"
+                },
+                "advanced/dockernetworkcontroller/dockernetworkcontroller.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "d66e37a02e2c6cf5cb8fc5a761acf485418f25988437e6627e3f8b6ee574acea",
+                    "translation_hash": "711fc9253c83d16c81493d488eaf88315e4aec9ed803d87204b9034c618037fa"
+                },
+                "advanced/entraid/entraid.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "a17d362f71e0121b1664dd5175c38d884a0fc6a7684bb3a372f1adb6cf7ca147",
+                    "translation_hash": "f364be0e43cf953ac0cd99344b127aaa2a47a36e925b66666cad30822c80f0f2"
+                },
+                "advanced/hypervisorinstallation/hypervisorinstallation copy.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "a8f4cc46a1235445698d9f3abedba3af02f8b40c13f42d1c6331c5fa0d179b7f",
+                    "translation_hash": "1a031a36c9085ae0b44888cc53ff916602ab3bc4c6bb648c371a0537b639db23"
+                },
+                "advanced/hypervisorinstallation/hypervisorinstallation.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "d70d8d4948b8032a6107daa0da3ed58234ac146bf3dc371c0c8b71560da5e0f7",
+                    "translation_hash": "92521d60ee35cf4ae537a9b916820c5caddbaacf072279a0553f495b7cf5509b"
+                },
+                "advanced/logging/logging.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "3866d5b57575492ccd419d255b0e653c853acdee243568e36fe7960a4d8f7af9",
+                    "translation_hash": "ff02a394beaa421d13109a9ec40ad79707109e68a73764eed202be60545967d7"
+                },
+                "advanced/mapnetworkdrives/mapnetworkdrives.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "27dea6235351155fe5bc64b05d0f42cbcc37ced7e46818f216f47422989ba9c2",
+                    "translation_hash": "dc90280488fd4574830ab0fea4f5fa18cb7a0a15d82c043b5c103ea93d231ddb"
+                },
+                "advanced/networkcontrollerssetup/SettingUpServer.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "496468c9756b4c2486ffc793e3860def1f783a67f1fc6b25627e1c1023554d7e",
+                    "translation_hash": "df52faa3185f534bc7f2016bae7037004c70e743984641959796f4aac3ff05cd"
+                },
+                "advanced/personalaccesstokens/personalaccesstokens.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "436355951d363fb63a683b7094397e3fac00537c89b2aa4420c87a0dfab4d0af",
+                    "translation_hash": "d9a12b4c28d6a31f070d3bc1d9acc265daff264b8efbf703cbc7158b881a0b26"
+                },
+                "advanced/proxmox/proxmox.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "0be55b224cd568a38087da79bc8455f2e731302d5054a8672fd6a4dcb1f68bf3",
+                    "translation_hash": "5c561d65568935a047bbdf2c563acb703dfe0e9f8160b3af06a42218915b1239"
+                },
+                "advanced/synology/synology.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "8400643c517dff3677d93a3acffe01de40bdbfcdafec42623e95d3f7234e0684",
+                    "translation_hash": "084343777b4e3af4f5b37ac5d4a453c7ba9838e4f11de02c710a0636224d3136"
+                },
+                "advanced/teltonika/teltonika.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "216f89267e5433311b108d123995c720f42f6a44a617bf7e060029f2d846b631",
+                    "translation_hash": "8712418671fa4c18fa85ff03ce26ff124a2b3d00837fe4c6398645b3b9cae25d"
+                },
+                "advanced/unified_environment/unified_environment.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "1cb7f4ec4ccf5f0cb562108d109428c5bc075aa5e07c7024baf4dde73d76f55a",
+                    "translation_hash": "2ce235653e6836af5fc13a3ec3ffa517a66966f610f03ae6afd527f97fe0cfde"
+                },
+                "changelog/index.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "679c89f3477116ab51f56880d86e24bf2838599c8724f5b42139feff743f067a",
+                    "translation_hash": "757ec126c133ef00dca017364d4924109a95b7912c6f4b2b6b89e02d4ee8315c"
+                },
+                "company.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "df8272d98630d53dcc4bbd21c69ae4354218c615493782a7110226c67e0a897a",
+                    "translation_hash": "f2c11b3a2ab3c2644b2879eafcd235de9fba03c993cf2efd334a68aee0b283a9"
+                },
+                "company/configur/configuration.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "f5c49b00523eb789964b02504c007f482df545098f475835e1dc9c9e2d88e677",
+                    "translation_hash": "3d1ed015acfdefb11e9bc90d801e6fd765b9cb74542969f27d1b4d5bf4aa6f3f"
+                },
+                "company/configur/root-certificate-intune.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "5fe6e7b5eefe02eb655e2081cd7c9de561c9b0094118ce8cbac6db0f4c217051",
+                    "translation_hash": "355690a74f604067c2e99ebed7c003287d38d73a39958f6f2fa0b7b4364922a2"
+                },
+                "company/customers/customers.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "b71c4c64daa2385c0449478d8896d899ea11b45023141b4c05817d6a73b313b5",
+                    "translation_hash": "eeb65bb6a4ad852db24abf1a791862d91ebaf5d29ef4e492e454596f90e73452"
+                },
+                "company/domains/domains.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "c28e926a3edbb405e75f5a1fe54b6ca41bdc55dfb49599e482583148d7d33198",
+                    "translation_hash": "d647f26e66e095d2de53f1d781865a8f136a6588f4e39bcc95cb494f3a0183c1"
+                },
+                "company/groups/groups.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "45dc674021575feddaef1b1bb3d7576e9327d5815e39e2bed4ca6f1b6c506f60",
+                    "translation_hash": "232d10a5e74f01a2efb858a9efeeb511a3873556b3163cd1662803f47118f762"
+                },
+                "company/integrations/integrations.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "9f9ba8ada31208e50fb78e62cfc37ea42d5082ba1feef3d65d9ca3217b004f22",
+                    "translation_hash": "de35aaeae84ebfcbdf71475c2de6206b8e31f52452a278d17f1ec73a9817563b"
+                },
+                "company/locations/locations.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "2e611fdff76d9e600c602a31f90cfb1ea6702452525f6a52564dfe810c101d2f",
+                    "translation_hash": "4509927978e688f47795c42bfeb918377f7a2073e7fc960e36a0e6ed4bac0670"
+                },
+                "company/notificat/notifications.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "150d1af72e5ae4268cc4dadeb1b4b174162ddc8dc293344a65eba76a45eec030",
+                    "translation_hash": "0628496816218876e67a1e6d635a2a1c7b2075e075eab760d1d3ab2cd167523f"
+                },
+                "company/users/users.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "62a24a71253c3c1ea4e60151094b0603df3c06461102e293ca207ce739597442",
+                    "translation_hash": "45ddb69fdbb8830002459c03fe050d806139d3d6952a2e1e9f3cfee9ad5d8eed"
+                },
+                "contact/index.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "dbb75406eeffdfa11bef89972326a18bae02c153d5ec6fa24689bb49cf74202e",
+                    "translation_hash": "7a60760392041d8a257bc793b170d6cc93a27d9ffc39ef12ab51c31681431122"
+                },
+                "devices.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "2ffc1820c70de253ec74e8956c288410e305728942f6a55bfd6a4c2d96632912",
+                    "translation_hash": "8ddebb599e6e23db4b38b4ce9a1051e31112ced38a860195498b92b6c72a1846"
+                },
+                "devices/nativedevices/nativedevices.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "67d014fdefb1b85d95532f26691e56bc2780e46ba25d9fc3e40a7549007f41f9",
+                    "translation_hash": "c39df4082741a28562867a205cfc69e0f18b17288d14276b0f5558702687e594"
+                },
+                "devices/networkcontrollers/networkcontrollers.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "42a248b9e8a9b95d9daec0877722e1349c26bb11a9aad4b4e2011f75733ef70b",
+                    "translation_hash": "ceeed1190b48cc81015de4deae1422f6a22332710f4a62cc11e41f3b7592cad0"
+                },
+                "devices/networkcontrollerssetup/SettingUpServer.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "9a5d3e040ff437d41d715b612b9e8c3c5a42bdf095774b53eb69de983955e235",
+                    "translation_hash": "0f97a67ce55641d1816756e33718a455abb7da52188088d7b6851d279cd7d740"
+                },
+                "devices/niacs/niacs.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "dba9623f33d03c27f3ab5bd1eb933b4bb5f5aa49addf1f8e18b43542169b96ce",
+                    "translation_hash": "8db6a8173308503efcef16676c36d6c8e51d437e2e213d02969e2ac7a880bafb"
+                },
+                "devices/servers/servers.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "d27d806ad329dfb1fa63c96e9d6df6b72a02160ff9a3ce9e153d530353fa8814",
+                    "translation_hash": "a8b14e850ce367331574f0d40e58ebb203813d45b428cd180a6f5c5c19d5bb3f"
+                },
+                "devices/userdevices/userdevices.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "83af1b185404836abdadc67f6a4c8244a631942aecf929dc6506fe6b7cc4a006",
+                    "translation_hash": "b52e2adfaa1eb9194c8316eec7ea0b7bfff2dc869257cc43af9a1335c495533d"
+                },
+                "gettingstarted/index.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "3221d3a1606f6e5a491e3501f64f877c42128125879eb9ae5240ef7e93b91fad",
+                    "translation_hash": "7590a72665038af3385b36305ea21a30187bf07381839c9957b138db99b2067d"
+                },
+                "gettingstarted/setting.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "c9f6887e7d82665ee9c9f606cbf94b7ada5974e403749ba03d705f6e774375a4",
+                    "translation_hash": "c0aea22e597632608f62a261f08ac368e0fe3a3225147261311cdad168e3798a"
+                },
+                "input.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "76ca9c6e15503894457f7842611dd4bab801411bc968ba834272970607aa3899",
+                    "translation_hash": "e692fbcc65a868a44013c6ec0d577ab7cd28597f5d3f1cb5301e016bb807848f"
+                },
+                "monitoring/monitoring.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "654f1e44623b3cef93282bc92ead4d9497e2dcf06773d1d6361a6ec4977d1b6f",
+                    "translation_hash": "dd946cd3a40c38d42c010bab40a81654335b8d83560ef4c7216442dc1ef8a725"
+                },
+                "nativenetworks.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "42f2d5484337d24d676f2d70bf6e1a17ac386fa995601ac9c0888516ac42be82",
+                    "translation_hash": "e6a32e91a810c55ca0e1d8210f9234f4c4cfe918cb3b949b7e2ed918c63498cb"
+                },
+                "nativenetworks/dhcp-server.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "0ac93cbc36cf2620615db00b79a44850ad04d54ce5c68ea83b0b9461787cea66",
+                    "translation_hash": "c0b6f44902b1d7534baf94fb6154db65ea609d33a8fff5359ad9578e555e4a1d"
+                },
+                "nativenetworks/index.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "fa325f4bf0e3413b28d60424d3ff73b93a0f5d3f8fb88bb1c7d4c7fa30c9a1c1",
+                    "translation_hash": "c8d6d302983ee28cfaeb3a9e192d0239c9ddc9f117457d396683180da7109daa"
+                },
+                "nativenetworks/network-interfaces.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "aea64c09a27e7d1347b48312f6226207fa05bef822dd24f412ea79e326977ce3",
+                    "translation_hash": "706c50a9fbb792e39227df82b83fface424fa86bcaf24d19318d27a7b37a6caf"
+                },
+                "nativenetworks/networks.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "1b49f005bf072e85d313e9b7e01561abe54228ca17c201ac45a42749ac88583f",
+                    "translation_hash": "f1d2c8faf53818016f74502caa6f72e4ebee10ebf1066dbe350017624e950f72"
+                },
+                "nativenetworks/virtualinterfaces.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "a23f70728403536fd0822df61f865dc1bfed94757c1063cc1689eab721319d05",
+                    "translation_hash": "f9d9a5b9af29a34ace54d490003b0fbc4354ad8bf3d1c8aa46af5b9caeb99015"
+                },
+                "nativenetworks/wan-load-balance.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "71ea7a66e69725f4dfd2a9e98c1c65b6d141908e93aa647932ec30daefd20ae6",
+                    "translation_hash": "8d3fac70ed11040cc5ae6d8bd060c6650d0698f625acca068e8dd231caf8281f"
+                },
+                "nativenetworks/web-filtering.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "1f6b66114837dad2a26226a49662300032d1e47f5f095c6df500dec5682ec0a3",
+                    "translation_hash": "180a807f4b09f4e2edeea6066711d05c0c2446683b57e522ed8ab9fa9a4a6877"
+                },
+                "output.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "2661e5cb1d4de6d0bd1ebdf15a70b9fa983cd21cd657e70f29279450dc253a94",
+                    "translation_hash": "b51b9114ddec924fe891ae4114cda6168358b077e488f485c68d422d86b720a0"
+                },
+                "rules/attribute_services/attribute_services.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "5c7fc159c9a708d44a840c805f6d695e8ea0fa84d7dca642465e2779650428a6",
+                    "translation_hash": "e9c38911923bdf1c6fc831e0122e1c75084840ef4aacbda9b1834ffc169a0458"
+                },
+                "rules/customports/customports.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "a6ab5d122fd9ed6caa951bd87c7712d6906e9a39bba161ceb42e16f957e66cfb",
+                    "translation_hash": "6e32b293cf3921d3d800de5c8be167625146ce7710fc9652e06c2ebe69400370"
+                },
+                "rules/edrconfiguration/edrconfiguration.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "64ced3d3a8d80781f6cc504a276c916945dfaa6b8ef42c36c073b94a49725cae",
+                    "translation_hash": "26e679ee2339aba0190cc67f32be82bb1e2e971af0e76a45b25b84b0cbd63ac2"
+                },
+                "rules/firewall-policies/firewall-policies.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "9a5ad641485978e1adc666a2ba1ceda53c44d592d8ae7d7bcebaa7ccaf83daaf",
+                    "translation_hash": "99f12fd61e1376938e63935a6f7afe53648c9948e6fb8dbedaa54817b3c4273e"
+                },
+                "rules/groupconfiguration/groupconfiguration.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "b39ca97bfd7d39a9bc63678e0ee5f22acd3b7855418a4899428092f986fc5118",
+                    "translation_hash": "133d5fa9f561f26f653d3b2484c529c0e0378dc0a3f918d3403167836f7126ee"
+                },
+                "rules/grouptraffic/grouptraffic.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "de9d355670067d4021701672b85e2dde45dbf021d6683a2ed34bcf0e0a431392",
+                    "translation_hash": "bc5f5ee6d94a47e873355c679323e81487e22906f95f4fadd72d6eb711dfb7dd"
+                },
+                "rules/portforwarding/portforwarding.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "43a7566654cc7dc6eb8ea72b8f235d6e8e71cdaf0f9742f0c8e3b6bb8c55e53a",
+                    "translation_hash": "15cedbc09c0dde6389de9b21cde954fc180b2ffc25abd4960bf05fd146666d43"
+                },
+                "rules/scripts/scripts.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "648a5c378ecf476a3a7b8b776311aa401130e5ae212c0eaffc73315add8214fe",
+                    "translation_hash": "20ec245419123875ceec973d20a800ec548e0f883d13bb1fa535a2c63f2885b9"
+                },
+                "rules/security_panel/security_panel.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "7836344f906c65e0aaff6f4055e8c88f042a8fbcfc84e19c869eb15ebebf2530",
+                    "translation_hash": "7b56b5e74fd6a950c8af953a6a75602a335ca0ab4dfe0e87107755334e139af3"
+                },
+                "rules/services/services.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "552abefdc307d88f72c2d8de0cbcac7c55f949e4b79da61a1fbe23269e9e1d97",
+                    "translation_hash": "3d8487463fcf8cfbd397f11b247388e37b5026627d21ce116a25fde33d34203d"
+                },
+                "rules/webfiltering/webfiltering.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "230dbc28897dc157e213168f079d3f3f01dd6caa7aaad260f2015ca260ec0d63",
+                    "translation_hash": "65e1bbc4b63afa98814c15a40ee6c4fd3b194944a2ae74281081952bd48b6a0a"
+                },
+                "security.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "caabad8e355a25527d1cefabb37934da88434da3e225b4a06f14bc05cd5a6f6f",
+                    "translation_hash": "1443f4849090ae7337916d89427bd5bfc73a85bc053867e820a7a4b624816284"
+                },
+                "tutorials/cloud/index.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "0f2664b3416e26ffcab9aa8b25c7d404d551bc57d166aa3eebb85592edf4ea89",
+                    "translation_hash": "1fbc1a2dd8a1a472aa7830f9ea86ced9f49962faa93c01e6533987430462bb49"
+                },
+                "tutorials/index.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "559b6c6ebb7e23b0cd86bbd595026d71beb5a78f4a273a8b8e32baeb47558ec3",
+                    "translation_hash": "928dc193645d266d18ca0c243513db03eb2f2187e1b0435118fe2c3df7132ae9"
+                },
+                "tutorials/java/index.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "95f63252555e1f2e3fd2d3061fe32644e1376f35a6dd9615cf6e89c7f7ed0f2e",
+                    "translation_hash": "0f476cfb483dff07691a88e34485094e08cacc98f80473edb83980cf33a6f989"
+                },
+                "tutorials/tomcat/index.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "0d5ed79fca951eee7c7ff5fc13ae2b341c57b1a70bdba56a561a6906865a75f5",
+                    "translation_hash": "329ec78a685d9988c1f6010fb7b5b84bd12f0f02cb3014a622622a33726a2862"
+                }
+            },
+            "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+            "name": "Français",
+            "prompt_version": "1"
+        }
+    },
+    "source": {
+        "commit": "091473185a79e87f0cbf986efa2880c8ac8ff2f2",
+        "path": "apps/docs",
+        "repository": "JimberSoftware/jimberfw_signalserver"
+    },
+    "version": 1
 }
