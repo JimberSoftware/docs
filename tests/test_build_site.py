@@ -30,6 +30,8 @@ class BuildSiteTests(unittest.TestCase):
             self.assertIn("'/documentation/' + language", root_index)
             self.assertIn("const documentationBasePath = '/documentation'", french_index)
             self.assertIn("documentationBasePath + '/fr/'", french_index)
+            self.assertIn('class="sidebar-header"', french_index)
+            self.assertIn("sidebar.insertBefore(header, sidebar.firstChild)", french_index)
 
 
 if __name__ == "__main__":

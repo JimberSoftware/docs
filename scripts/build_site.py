@@ -19,15 +19,57 @@ LANGUAGE_INDEX = r"""<!doctype html>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
         <link rel="stylesheet" href="style.css" />
         <title>Jimber SASE Platform - Documentation</title>
+        <style>
+            .sidebar-header {{
+                background: #fff;
+                border-bottom: 1px solid #e8e8ee;
+                padding: 20px 22px 16px;
+                position: sticky;
+                top: 0;
+                z-index: 2;
+            }}
+
+            .sidebar-header img {{
+                display: block;
+                height: auto;
+                margin: 0 auto 16px;
+                max-width: 170px;
+                width: 75%;
+            }}
+
+            .language-picker label {{
+                color: #555;
+                display: block;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: 0.04em;
+                margin-bottom: 6px;
+                text-transform: uppercase;
+            }}
+
+            .language-picker select {{
+                appearance: auto;
+                background: #fff;
+                border: 1px solid #c9c9d4;
+                border-radius: 6px;
+                color: #111279;
+                cursor: pointer;
+                font: inherit;
+                padding: 8px 10px;
+                width: 100%;
+            }}
+        </style>
     </head>
     <body>
-        <div class="language-picker">
-            <label for="language">Language</label>
-            <select id="language" onchange="switchLanguage(this.value)">
+        <div class="sidebar-header">
+            <img src="logo.png" alt="Jimber" />
+            <div class="language-picker">
+                <label for="language">Language</label>
+                <select id="language" onchange="switchLanguage(this.value)">
 {options}
-            </select>
+                </select>
+            </div>
         </div>
-        <div class="sidebar-logo"><img src="logo.png" alt="Jimber" /></div>
         <div id="app"></div>
         <script>
             const supportedLanguages = {supported};
@@ -72,6 +114,13 @@ LANGUAGE_INDEX = r"""<!doctype html>
                 'flexible-alerts': {{ style: 'flat' }},
                 plugins: [
                     function (hook) {{
+                        hook.ready(function () {{
+                            const header = document.querySelector('.sidebar-header');
+                            const sidebar = document.querySelector('.sidebar');
+                            if (header && sidebar) {{
+                                sidebar.insertBefore(header, sidebar.firstChild);
+                            }}
+                        }});
                         hook.afterEach(function (html, next) {{
                             document.documentElement.scrollTop = 0;
                             document.body.scrollTop = 0;

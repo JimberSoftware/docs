@@ -6,6 +6,10 @@ on:
       environment:
         required: true
         type: string
+      action:
+        required: false
+        type: string
+        default: deploy
   workflow_dispatch:
     inputs:
       environment:
@@ -17,6 +21,14 @@ on:
           - testing
           - staging
           - production
+      action:
+        description: "Deploy or remove the selected environment"
+        required: true
+        type: choice
+        default: deploy
+        options:
+          - deploy
+          - remove
 
 permissions:
   contents: read
@@ -28,6 +40,7 @@ concurrency:
 
 jobs:
   build:
+    if: inputs.action == 'deploy'
     runs-on: ubuntu-latest
     outputs:
       image: ${{ steps.image.outputs.reference }}
@@ -78,7 +91,7 @@ jobs:
           tags: ${{ steps.image.outputs.reference }}
 
   deploy-testing:
-    if: inputs.environment == 'testing'
+    if: inputs.action == 'deploy' && inputs.environment == 'testing'
     needs: build
     runs-on: signal-server-multi-env
     environment:
@@ -109,7 +122,7 @@ jobs:
           docker compose -p documentation-testing up -d
 
   deploy-staging:
-    if: inputs.environment == 'staging'
+    if: inputs.action == 'deploy' && inputs.environment == 'staging'
     needs: build
     runs-on: signal-server-multi-env
     environment:
@@ -140,7 +153,7 @@ jobs:
           docker compose -p documentation-staging up -d
 
   deploy-production:
-    if: inputs.environment == 'production'
+    if: inputs.action == 'deploy' && inputs.environment == 'production'
     needs: build
     strategy:
       fail-fast: false
@@ -175,3 +188,60 @@ jobs:
         run: |
           docker compose -p documentation-production pull
           docker compose -p documentation-production up -d
+
+  remove-testing:
+    if: inputs.action == 'remove' && inputs.environment == 'testing'
+    runs-on: signal-server-multi-env
+    environment: testing
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: docker-compose.yml
+          sparse-checkout-cone-mode: false
+      - name: Remove documentation
+        env:
+          DOCUMENTATION_IMAGE: unused
+          ENVIRONMENT: testing
+          SASE_DOMAIN: sase.testing.jimber.io
+          TRAEFIK_NETWORK: traefik-proxy
+        run: docker compose -p documentation-testing down
+
+  remove-staging:
+    if: inputs.action == 'remove' && inputs.environment == 'staging'
+    runs-on: signal-server-multi-env
+    environment: staging
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: docker-compose.yml
+          sparse-checkout-cone-mode: false
+      - name: Remove documentation
+        env:
+          DOCUMENTATION_IMAGE: unused
+          ENVIRONMENT: staging
+          SASE_DOMAIN: sase.staging.jimber.io
+          TRAEFIK_NETWORK: traefik-proxy
+        run: docker compose -p documentation-staging down
+
+  remove-production:
+    if: inputs.action == 'remove' && inputs.environment == 'production'
+    strategy:
+      fail-fast: false
+      matrix:
+        runner:
+          - signal1-ovh-group-runner
+          - signal2-ovh-group-runner
+    runs-on: ${{ matrix.runner }}
+    environment: production
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: docker-compose.yml
+          sparse-checkout-cone-mode: false
+      - name: Remove documentation
+        env:
+          DOCUMENTATION_IMAGE: unused
+          ENVIRONMENT: production
+          SASE_DOMAIN: sase.jimber.io
+          TRAEFIK_NETWORK: proxy
+        run: docker compose -p documentation-production down
