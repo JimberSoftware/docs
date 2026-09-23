@@ -5,7 +5,11 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from scripts.sync_docs import synchronize, validate_translation
+from scripts.sync_docs import (
+    restore_protected_markdown,
+    synchronize,
+    validate_translation,
+)
 
 
 class FakeTranslator:
@@ -113,7 +117,24 @@ class SyncDocsTests(unittest.TestCase):
         self.assertIn("inline code changed", errors)
         self.assertIn("Markdown link targets changed", errors)
 
+    def test_restores_code_and_link_targets_after_translation(self) -> None:
+        source = (
+            "Run `command` and read [the guide](guide.md).\n\n"
+            "```sh\necho ok\n```\n"
+        )
+        translated = (
+            "Exécutez `commande` et lisez [le guide](guide-fr.md).\n\n"
+            "```sh\necho non\n```\n"
+        )
+
+        restored = restore_protected_markdown(source, translated)
+
+        self.assertEqual(validate_translation(source, restored), [])
+        self.assertIn("Exécutez", restored)
+        self.assertIn("`command`", restored)
+        self.assertIn("(guide.md)", restored)
+        self.assertIn("echo ok", restored)
+
 
 if __name__ == "__main__":
     unittest.main()
-

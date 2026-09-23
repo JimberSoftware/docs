@@ -18,6 +18,11 @@ from typing import Protocol
 LINK_TARGET_RE = re.compile(r"!?\[[^\]]*\]\(([^)\s]+)(?:\s+[^)]*)?\)")
 HTML_TARGET_RE = re.compile(r"\b(?:href|src)=[\"']([^\"']+)[\"']", re.IGNORECASE)
 INLINE_CODE_RE = re.compile(r"(?<!`)`([^`\n]+)`(?!`)")
+FENCED_BLOCK_RE = re.compile(
+    r"^[ \t]*(?P<fence>`{3,}|~{3,})[^\n]*\n.*?"
+    r"^[ \t]*(?P=fence)[ \t]*(?:<!--.*?-->|-->)?[ \t]*$",
+    re.MULTILINE | re.DOTALL,
+)
 
 
 class TranslationError(RuntimeError):
@@ -99,6 +104,33 @@ def protected_markdown_parts(markdown: str) -> dict[str, list[str]]:
     }
 
 
+def restore_pattern_matches(
+    source: str,
+    translated: str,
+    pattern: re.Pattern[str],
+    group: int,
+) -> str:
+    source_matches = list(pattern.finditer(source))
+    translated_matches = list(pattern.finditer(translated))
+    if len(source_matches) != len(translated_matches):
+        return translated
+
+    restored = translated
+    for source_match, translated_match in reversed(
+        list(zip(source_matches, translated_matches, strict=True))
+    ):
+        start, end = translated_match.span(group)
+        restored = restored[:start] + source_match.group(group) + restored[end:]
+    return restored
+
+
+def restore_protected_markdown(source: str, translated: str) -> str:
+    restored = restore_pattern_matches(source, translated, FENCED_BLOCK_RE, 0)
+    restored = restore_pattern_matches(source, restored, INLINE_CODE_RE, 1)
+    restored = restore_pattern_matches(source, restored, LINK_TARGET_RE, 1)
+    return restore_pattern_matches(source, restored, HTML_TARGET_RE, 1)
+
+
 def validate_translation(source: str, translated: str) -> list[str]:
     errors: list[str] = []
     if not translated.strip():
@@ -163,9 +195,16 @@ Terminology glossary:
                 input=f"File: {path}{retry_note}\n\n{source}",
             )
             translated = strip_outer_markdown_fence(response.output_text)
+            translated = restore_protected_markdown(source, translated)
             previous_errors = validate_translation(source, translated)
             if not previous_errors:
                 return translated.rstrip() + "\n"
+
+            print(
+                f"Retrying {path} after attempt {attempt}: "
+                + "; ".join(previous_errors),
+                flush=True,
+            )
 
         raise TranslationError(
             f"Translation of {path} failed validation after 3 attempts: "
@@ -290,7 +329,12 @@ def synchronize(
         destination = repository / "content" / language_code
         destination.mkdir(parents=True, exist_ok=True)
 
-        for relative in pending[language_code]:
+        total_pending = len(pending[language_code])
+        for index, relative in enumerate(pending[language_code], start=1):
+            print(
+                f"Translating {language_code} {index}/{total_pending}: {relative}",
+                flush=True,
+            )
             source_text = translatable[relative].read_text(encoding="utf-8")
             assert translator is not None
             translated_text = translator.translate(
