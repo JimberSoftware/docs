@@ -107,9 +107,12 @@ LANGUAGE_INDEX = r"""<!doctype html>
 
             function cleanSearchResultTitles() {{
                 document.querySelectorAll('.matching-post h2').forEach(function (title) {{
-                    title.textContent = title.textContent
+                    const cleanedTitle = title.textContent
                         .replace(/!\[[^\]]*\]\([^)]*\)\s*/g, '')
                         .trim();
+                    if (cleanedTitle !== title.textContent) {{
+                        title.textContent = cleanedTitle;
+                    }}
                 }});
             }}
 

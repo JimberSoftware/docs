@@ -35,6 +35,7 @@ class BuildSiteTests(unittest.TestCase):
             self.assertIn("namespace: 'jimber-sase-documentation-fr'", french_index)
             self.assertIn("Rechercher dans la documentation", french_index)
             self.assertIn("new MutationObserver(cleanSearchResultTitles)", french_index)
+            self.assertIn("if (cleanedTitle !== title.textContent)", french_index)
 
 
 if __name__ == "__main__":
