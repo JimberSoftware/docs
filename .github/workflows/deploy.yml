@@ -49,21 +49,14 @@ jobs:
         with:
           ref: main
 
-      - name: Validate deployment target
-        env:
-          TARGET_ENVIRONMENT: ${{ inputs.environment }}
-        run: |
-          case "$TARGET_ENVIRONMENT" in
-            testing|staging|production) ;;
-            *)
-              echo "::error::Unsupported deployment environment: $TARGET_ENVIRONMENT"
-              exit 1
-              ;;
-          esac
-
       - uses: actions/setup-python@v6
         with:
           python-version: "3.13"
+
+      - name: Validate deployment target
+        env:
+          TARGET_ENVIRONMENT: ${{ inputs.environment }}
+        run: python -m scripts.environment_config "$TARGET_ENVIRONMENT" --require-enabled
 
       - name: Validate generated documentation
         run: |

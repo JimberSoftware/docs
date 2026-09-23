@@ -1,8 +1,7 @@
 {
   "source": {
     "repository": "JimberSoftware/jimberfw_signalserver",
-    "path": "apps/docs",
-    "default_ref": "development"
+    "path": "apps/docs"
   },
   "model": "gpt-6-luna",
   "prompt_version": "1",

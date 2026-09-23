@@ -19,13 +19,24 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       changed: ${{ steps.commit.outputs.changed }}
+      auto_deploy: ${{ steps.environment.outputs.auto_deploy }}
     steps:
       - name: Check out documentation repository
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Read testing environment configuration
+        id: environment
+        run: python -m scripts.environment_config testing --github-output >> "$GITHUB_OUTPUT"
+
       - name: Check translation credentials
+        if: steps.environment.outputs.enabled == 'true'
         id: credentials
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -39,11 +50,11 @@ jobs:
           fi
 
       - name: Check out English source documentation
-        if: steps.credentials.outputs.ready == 'true'
+        if: steps.environment.outputs.enabled == 'true' && steps.credentials.outputs.ready == 'true'
         uses: actions/checkout@v6
         with:
           repository: JimberSoftware/jimberfw_signalserver
-          ref: ${{ github.event.client_payload.sha || vars.SIGNALSERVER_DOCS_REF || 'development' }}
+          ref: ${{ steps.environment.outputs.source_ref }}
           path: .upstream
           ssh-key: ${{ secrets.SIGNALSERVER_DEPLOY_KEY }}
           sparse-checkout: |
@@ -51,22 +62,16 @@ jobs:
           sparse-checkout-cone-mode: false
 
       - name: Read source revision
-        if: steps.credentials.outputs.ready == 'true'
+        if: steps.environment.outputs.enabled == 'true' && steps.credentials.outputs.ready == 'true'
         id: source
         run: echo "sha=$(git -C .upstream rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-      - uses: actions/setup-python@v6
-        if: steps.credentials.outputs.ready == 'true'
-        with:
-          python-version: "3.13"
-          cache: pip
-
       - name: Install translation dependencies
-        if: steps.credentials.outputs.ready == 'true'
+        if: steps.environment.outputs.enabled == 'true' && steps.credentials.outputs.ready == 'true'
         run: pip install -r requirements.txt
 
       - name: Synchronize and translate
-        if: steps.credentials.outputs.ready == 'true'
+        if: steps.environment.outputs.enabled == 'true' && steps.credentials.outputs.ready == 'true'
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_TRANSLATION_MODEL || 'gpt-6-luna' }}
@@ -76,18 +81,19 @@ jobs:
             --source-sha "${{ steps.source.outputs.sha }}"
 
       - name: Validate generated documentation
-        if: steps.credentials.outputs.ready == 'true'
+        if: steps.environment.outputs.enabled == 'true' && steps.credentials.outputs.ready == 'true'
         run: python -m scripts.validate_docs
 
       - name: Verify site build
-        if: steps.credentials.outputs.ready == 'true'
+        if: steps.environment.outputs.enabled == 'true' && steps.credentials.outputs.ready == 'true'
         run: python -m scripts.build_site
 
       - name: Commit synchronized documentation
-        if: steps.credentials.outputs.ready == 'true'
+        if: steps.environment.outputs.enabled == 'true' && steps.credentials.outputs.ready == 'true'
         id: commit
         env:
           SOURCE_SHA: ${{ steps.source.outputs.sha }}
+          SOURCE_REF: ${{ steps.environment.outputs.source_ref }}
         run: |
           git add content shared translation/state.json
           if git diff --cached --quiet; then
@@ -99,6 +105,7 @@ jobs:
           git config user.email "41898282+jimber-docs-bot[bot]@users.noreply.github.com"
           git commit \
             -m "docs(i18n): sync with signalserver ${SOURCE_SHA:0:8}" \
+            -m "Source-Ref: $SOURCE_REF" \
             -m "Source-Commit: $SOURCE_SHA" \
             -m "Refs #72"
           git push origin HEAD:main
@@ -106,7 +113,7 @@ jobs:
 
   deploy:
     needs: sync
-    if: needs.sync.outputs.changed == 'true'
+    if: needs.sync.outputs.changed == 'true' && needs.sync.outputs.auto_deploy == 'true'
     permissions:
       contents: read
       packages: write

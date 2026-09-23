@@ -10,8 +10,9 @@ source using the language configuration and terminology in `translation/`.
 ## Synchronization
 
 The `Synchronize translations` workflow runs hourly, on manual request, or after
-a `signalserver-docs-changed` repository dispatch. It performs these operations
-atomically:
+a `signalserver-docs-changed` repository dispatch. The watched source branch is
+defined in `deployment/environments.json`; testing currently follows the current
+`development` branch. The workflow performs these operations atomically:
 
 1. Sparse-checks out `apps/docs` from Signalserver.
 2. Mirrors English Markdown into `content/en` and shared assets into `shared`.
@@ -31,8 +32,9 @@ Traefik route at `/documentation`:
 - Production: `https://sase.jimber.io/documentation/`
 
 The existing `/docs` route is not modified. Synchronization deploys to testing
-automatically. Staging and production deployments are started manually from the
-`Deploy multilingual documentation` workflow after testing the generated site.
+automatically. Staging and production are disabled in
+`deployment/environments.json`; deployment attempts are rejected until each
+environment has `enabled: true` and a non-empty `source_ref`.
 Testing and staging attach to `traefik-proxy`; production attaches to the
 existing external `proxy` network used by the production edge router.
 
@@ -46,7 +48,6 @@ Required Actions secrets:
 
 Optional Actions variables:
 
-- `SIGNALSERVER_DOCS_REF`: source branch or tag, defaults to `development`.
 - `OPENAI_TRANSLATION_MODEL`: model override, defaults to `gpt-6-luna`.
 
 Run checks locally with:

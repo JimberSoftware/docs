@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "environments": {
+    "testing": {
+      "enabled": true,
+      "source_ref": "development",
+      "auto_deploy": true
+    },
+    "staging": {
+      "enabled": false,
+      "source_ref": null,
+      "auto_deploy": false
+    },
+    "production": {
+      "enabled": false,
+      "source_ref": null,
+      "auto_deploy": false
+    }
+  }
+}
