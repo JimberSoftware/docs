@@ -34,8 +34,9 @@ class BuildSiteTests(unittest.TestCase):
             self.assertIn("sidebar.insertBefore(header, sidebar.firstChild)", french_index)
             self.assertIn("namespace: 'jimber-sase-documentation-fr'", french_index)
             self.assertIn("Rechercher dans la documentation", french_index)
-            self.assertIn("new MutationObserver(cleanSearchResultTitles)", french_index)
-            self.assertIn("if (cleanedTitle !== title.textContent)", french_index)
+            self.assertIn("new MutationObserver(cleanSearchResults)", french_index)
+            self.assertIn("if (cleanedText !== element.textContent)", french_index)
+            self.assertIn(".matching-post h2, .matching-post p", french_index)
 
 
 if __name__ == "__main__":

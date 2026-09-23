@@ -105,13 +105,21 @@ LANGUAGE_INDEX = r"""<!doctype html>
                 }});
             }}
 
-            function cleanSearchResultTitles() {{
-                document.querySelectorAll('.matching-post h2').forEach(function (title) {{
-                    const cleanedTitle = title.textContent
-                        .replace(/!\[[^\]]*\]\([^)]*\)\s*/g, '')
-                        .trim();
-                    if (cleanedTitle !== title.textContent) {{
-                        title.textContent = cleanedTitle;
+            function cleanSearchResultText(value) {{
+                return value
+                    .replace(/!\[[^\]]*\]\([^)]*\)\s*/g, '')
+                    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+                    .replace(/\[!([A-Z]+)\]/g, '$1:')
+                    .replace(/(\*\*|__|`)/g, '')
+                    .replace(/\s+/g, ' ')
+                    .trim();
+            }}
+
+            function cleanSearchResults() {{
+                document.querySelectorAll('.matching-post h2, .matching-post p').forEach(function (element) {{
+                    const cleanedText = cleanSearchResultText(element.textContent);
+                    if (cleanedText !== element.textContent) {{
+                        element.textContent = cleanedText;
                     }}
                 }});
             }}
@@ -139,7 +147,7 @@ LANGUAGE_INDEX = r"""<!doctype html>
 
                             const results = document.querySelector('.results-panel');
                             if (results) {{
-                                new MutationObserver(cleanSearchResultTitles).observe(results, {{
+                                new MutationObserver(cleanSearchResults).observe(results, {{
                                     childList: true,
                                     subtree: true,
                                 }});
