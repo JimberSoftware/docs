@@ -109,6 +109,7 @@ jobs:
     if: needs.sync.outputs.changed == 'true'
     permissions:
       contents: read
-      pages: write
-      id-token: write
+      packages: write
     uses: ./.github/workflows/deploy.yml
+    with:
+      environment: testing

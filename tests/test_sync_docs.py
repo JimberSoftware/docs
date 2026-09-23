@@ -152,7 +152,7 @@ class SyncDocsTests(unittest.TestCase):
         output = build(self.repository)
         french_index = (output / "fr/index.html").read_text(encoding="utf-8")
 
-        self.assertIn("return '/fr' + url", french_index)
+        self.assertIn("return documentationBasePath + '/fr' + url", french_index)
         self.assertIn('const supportedLanguages = ["en", "fr"]', french_index)
 
 

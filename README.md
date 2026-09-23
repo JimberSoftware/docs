@@ -18,7 +18,26 @@ atomically:
 3. Translates files whose source, prompt, or glossary hash changed.
 4. Validates protected Markdown, translation state, and the rendered site.
 5. Commits directly to `main` only when every step succeeds.
-6. Deploys the resulting multilingual site to GitHub Pages.
+6. Builds a container and deploys changed documentation to testing.
+
+## Deployment
+
+The multilingual documentation is served independently from the existing
+Signalserver documentation service. It uses a dedicated Compose project and a
+Traefik route at `/documentation`:
+
+- Testing: `https://sase.testing.jimber.io/documentation/`
+- Staging: `https://sase.staging.jimber.io/documentation/`
+- Production: `https://sase.jimber.io/documentation/`
+
+The existing `/docs` route is not modified. Synchronization deploys to testing
+automatically. Staging and production deployments are started manually from the
+`Deploy multilingual documentation` workflow after testing the generated site.
+Testing and staging attach to `traefik-proxy`; production attaches to the
+existing external `proxy` network used by the production edge router.
+
+`docs.jimber.io` remains a GitHub Pages redirect to
+`https://sase.jimber.io/docs/` from the legacy `release_1.15` branch.
 
 Required Actions secrets:
 

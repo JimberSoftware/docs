@@ -1,0 +1,22 @@
+services:
+  documentation:
+    image: ${DOCUMENTATION_IMAGE}
+    restart: always
+    networks:
+      - traefik
+    labels:
+      - "signal.environment=${ENVIRONMENT}"
+      - "traefik.enable=true"
+      - "traefik.docker.network=${TRAEFIK_NETWORK:-traefik-proxy}"
+      - "traefik.http.routers.${ENVIRONMENT}-sase-documentation.rule=Host(`${SASE_DOMAIN}`) && (Path(`/documentation`) || PathPrefix(`/documentation/`))"
+      - "traefik.http.routers.${ENVIRONMENT}-sase-documentation.entrypoints=websecure"
+      - "traefik.http.routers.${ENVIRONMENT}-sase-documentation.tls=true"
+      - "traefik.http.routers.${ENVIRONMENT}-sase-documentation.priority=100"
+      - "traefik.http.routers.${ENVIRONMENT}-sase-documentation.middlewares=${ENVIRONMENT}-strip-documentation"
+      - "traefik.http.middlewares.${ENVIRONMENT}-strip-documentation.stripPrefix.prefixes=/documentation"
+      - "traefik.http.services.${ENVIRONMENT}-sase-documentation.loadbalancer.server.port=80"
+
+networks:
+  traefik:
+    name: ${TRAEFIK_NETWORK:-traefik-proxy}
+    external: true

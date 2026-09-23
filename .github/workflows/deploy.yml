@@ -1,69 +1,177 @@
-name: Deploy multilingual docs
+name: Deploy multilingual documentation
 
 on:
   workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "content/**"
-      - "shared/**"
-      - "site/**"
-      - "scripts/build_site.py"
-      - "translation/config.json"
+    inputs:
+      environment:
+        description: "Environment to deploy"
+        required: true
+        type: choice
+        default: testing
+        options:
+          - testing
+          - staging
+          - production
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
+  packages: write
 
 concurrency:
-  group: pages
+  group: documentation-${{ inputs.environment }}
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
+    outputs:
+      image: ${{ steps.image.outputs.reference }}
     steps:
       - uses: actions/checkout@v6
         with:
           ref: main
 
+      - name: Validate deployment target
+        env:
+          TARGET_ENVIRONMENT: ${{ inputs.environment }}
+        run: |
+          case "$TARGET_ENVIRONMENT" in
+            testing|staging|production) ;;
+            *)
+              echo "::error::Unsupported deployment environment: $TARGET_ENVIRONMENT"
+              exit 1
+              ;;
+          esac
+
       - uses: actions/setup-python@v6
         with:
           python-version: "3.13"
 
-      - name: Check generated content
-        id: content
+      - name: Validate generated documentation
         run: |
-          if find content/en -type f -name '*.md' -print -quit 2>/dev/null | grep -q .; then
-            echo "ready=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "ready=false" >> "$GITHUB_OUTPUT"
-            echo "### Deployment skipped" >> "$GITHUB_STEP_SUMMARY"
-            echo "The first translation synchronization has not run yet." >> "$GITHUB_STEP_SUMMARY"
-          fi
+          python -m unittest discover -v
+          python -m scripts.validate_docs
+          python -m scripts.build_site --base-path /documentation
 
-      - name: Validate translations
-        if: steps.content.outputs.ready == 'true'
-        run: python -m scripts.validate_docs
-
-      - name: Build site
-        if: steps.content.outputs.ready == 'true'
-        run: python -m scripts.build_site
-
-      - uses: actions/configure-pages@v5
-        if: steps.content.outputs.ready == 'true'
-
-      - uses: actions/upload-pages-artifact@v4
-        if: steps.content.outputs.ready == 'true'
+      - uses: docker/login-action@v4
         with:
-          path: public
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Deploy to GitHub Pages
-        if: steps.content.outputs.ready == 'true'
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - uses: docker/setup-buildx-action@v3
+
+      - name: Select image reference
+        id: image
+        run: echo "reference=ghcr.io/jimbersoftware/docs/site:$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Build and publish image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.image.outputs.reference }}
+
+  deploy-testing:
+    if: inputs.environment == 'testing'
+    needs: build
+    runs-on: signal-server-multi-env
+    environment:
+      name: testing
+      url: https://sase.testing.jimber.io/documentation/
+    permissions:
+      contents: read
+      packages: read
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: docker-compose.yml
+          sparse-checkout-cone-mode: false
+      - uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          logout: false
+      - name: Deploy documentation
+        env:
+          DOCUMENTATION_IMAGE: ${{ needs.build.outputs.image }}
+          ENVIRONMENT: testing
+          SASE_DOMAIN: sase.testing.jimber.io
+          TRAEFIK_NETWORK: traefik-proxy
+        run: |
+          docker compose -p documentation-testing pull
+          docker compose -p documentation-testing up -d
+
+  deploy-staging:
+    if: inputs.environment == 'staging'
+    needs: build
+    runs-on: signal-server-multi-env
+    environment:
+      name: staging
+      url: https://sase.staging.jimber.io/documentation/
+    permissions:
+      contents: read
+      packages: read
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: docker-compose.yml
+          sparse-checkout-cone-mode: false
+      - uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          logout: false
+      - name: Deploy documentation
+        env:
+          DOCUMENTATION_IMAGE: ${{ needs.build.outputs.image }}
+          ENVIRONMENT: staging
+          SASE_DOMAIN: sase.staging.jimber.io
+          TRAEFIK_NETWORK: traefik-proxy
+        run: |
+          docker compose -p documentation-staging pull
+          docker compose -p documentation-staging up -d
+
+  deploy-production:
+    if: inputs.environment == 'production'
+    needs: build
+    strategy:
+      fail-fast: false
+      matrix:
+        runner:
+          - signal1-ovh-group-runner
+          - signal2-ovh-group-runner
+    runs-on: ${{ matrix.runner }}
+    environment:
+      name: production
+      url: https://sase.jimber.io/documentation/
+    permissions:
+      contents: read
+      packages: read
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: docker-compose.yml
+          sparse-checkout-cone-mode: false
+      - uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          logout: false
+      - name: Deploy documentation
+        env:
+          DOCUMENTATION_IMAGE: ${{ needs.build.outputs.image }}
+          ENVIRONMENT: production
+          SASE_DOMAIN: sase.jimber.io
+          TRAEFIK_NETWORK: proxy
+        run: |
+          docker compose -p documentation-production pull
+          docker compose -p documentation-production up -d

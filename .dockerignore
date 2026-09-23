@@ -1,0 +1,7 @@
+.git
+.github
+.upstream
+public
+tests
+__pycache__
+*.pyc

@@ -4,7 +4,9 @@
 from __future__ import annotations
 
 import json
+import posixpath
 import shutil
+from argparse import ArgumentParser
 from pathlib import Path
 
 
@@ -29,9 +31,10 @@ LANGUAGE_INDEX = r"""<!doctype html>
         <div id="app"></div>
         <script>
             const supportedLanguages = {supported};
+            const documentationBasePath = '{base_path}';
 
             function switchLanguage(language) {{
-                window.location.href = '/' + language + '/' + window.location.hash;
+                window.location.href = documentationBasePath + '/' + language + '/' + window.location.hash;
             }}
 
             function localizeInternalUrl(url) {{
@@ -44,11 +47,14 @@ LANGUAGE_INDEX = r"""<!doctype html>
                 }}
 
                 url = url.replace(/^\/\.\//, '/');
-                const firstSegment = url.slice(1).split('/')[0];
-                if (supportedLanguages.includes(firstSegment)) {{
+                if (url === documentationBasePath || url.startsWith(documentationBasePath + '/')) {{
                     return url;
                 }}
-                return '/{code}' + url;
+                const firstSegment = url.slice(1).split('/')[0];
+                if (supportedLanguages.includes(firstSegment)) {{
+                    return documentationBasePath + url;
+                }}
+                return documentationBasePath + '/{code}' + url;
             }}
 
             function localizeRenderedUrls(html) {{
@@ -58,8 +64,8 @@ LANGUAGE_INDEX = r"""<!doctype html>
             }}
 
             window.$docsify = {{
-                alias: {{ '/.*/_sidebar.md': '/{code}/_sidebar.md' }},
-                basePath: '/{code}/',
+                alias: {{ '/.*/_sidebar.md': documentationBasePath + '/{code}/_sidebar.md' }},
+                basePath: documentationBasePath + '/{code}/',
                 loadSidebar: true,
                 search: 'auto',
                 subMaxLevel: 1,
@@ -95,11 +101,11 @@ ROOT_INDEX = """<!doctype html>
             const supported = {supported};
             const preferred = (navigator.language || 'en').split('-')[0];
             const language = supported.includes(preferred) ? preferred : 'en';
-            window.location.replace('/' + language + '/' + window.location.hash);
+            window.location.replace('{base_path}/' + language + '/' + window.location.hash);
         </script>
     </head>
     <body>
-        <p><a href="/en/">Open the Jimber SASE documentation</a></p>
+        <p><a href="{base_path}/en/">Open the Jimber SASE documentation</a></p>
     </body>
 </html>
 """
@@ -110,7 +116,14 @@ def overlay(source: Path, destination: Path) -> None:
         shutil.copytree(source, destination, dirs_exist_ok=True)
 
 
-def build(repository: Path) -> Path:
+def normalize_base_path(base_path: str) -> str:
+    normalized = "/" + base_path.strip("/")
+    if normalized == "/":
+        return ""
+    return posixpath.normpath(normalized)
+
+
+def build(repository: Path, base_path: str = "/documentation") -> Path:
     config = json.loads(
         (repository / "translation/config.json").read_text(encoding="utf-8")
     )
@@ -121,8 +134,12 @@ def build(repository: Path) -> Path:
 
     languages = {"en": {"name": "English"}, **config["languages"]}
     supported = list(languages)
+    base_path = normalize_base_path(base_path)
     (output / "index.html").write_text(
-        ROOT_INDEX.format(supported=json.dumps(supported)),
+        ROOT_INDEX.format(
+            supported=json.dumps(supported),
+            base_path=base_path,
+        ),
         encoding="utf-8",
     )
     (output / ".nojekyll").touch()
@@ -145,6 +162,7 @@ def build(repository: Path) -> Path:
                 code=code,
                 options=options,
                 supported=json.dumps(supported),
+                base_path=base_path,
             ),
             encoding="utf-8",
         )
@@ -153,8 +171,15 @@ def build(repository: Path) -> Path:
 
 
 def main() -> int:
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--base-path",
+        default="/documentation",
+        help="Public URL prefix used by the deployed site.",
+    )
+    arguments = parser.parse_args()
     repository = Path(__file__).resolve().parents[1]
-    output = build(repository)
+    output = build(repository, arguments.base_path)
     print(f"Built documentation site in {output}")
     return 0
 
