@@ -105,11 +105,24 @@ LANGUAGE_INDEX = r"""<!doctype html>
                 }});
             }}
 
+            function cleanSearchResultTitles() {{
+                document.querySelectorAll('.matching-post h2').forEach(function (title) {{
+                    title.textContent = title.textContent
+                        .replace(/!\[[^\]]*\]\([^)]*\)\s*/g, '')
+                        .trim();
+                }});
+            }}
+
             window.$docsify = {{
                 alias: {{ '/.*/_sidebar.md': documentationBasePath + '/{code}/_sidebar.md' }},
                 basePath: documentationBasePath + '/{code}/',
                 loadSidebar: true,
-                search: 'auto',
+                search: {{
+                    paths: 'auto',
+                    namespace: 'jimber-sase-documentation-{code}',
+                    placeholder: '{search_placeholder}',
+                    noData: '{search_no_data}',
+                }},
                 subMaxLevel: 1,
                 'flexible-alerts': {{ style: 'flat' }},
                 plugins: [
@@ -119,6 +132,14 @@ LANGUAGE_INDEX = r"""<!doctype html>
                             const sidebar = document.querySelector('.sidebar');
                             if (header && sidebar) {{
                                 sidebar.insertBefore(header, sidebar.firstChild);
+                            }}
+
+                            const results = document.querySelector('.results-panel');
+                            if (results) {{
+                                new MutationObserver(cleanSearchResultTitles).observe(results, {{
+                                    childList: true,
+                                    subtree: true,
+                                }});
                             }}
                         }});
                         hook.afterEach(function (html, next) {{
@@ -212,6 +233,12 @@ def build(repository: Path, base_path: str = "/documentation") -> Path:
                 options=options,
                 supported=json.dumps(supported),
                 base_path=base_path,
+                search_placeholder=(
+                    "Rechercher dans la documentation" if code == "fr" else "Search the documentation"
+                ),
+                search_no_data=(
+                    "Aucun résultat" if code == "fr" else "No results"
+                ),
             ),
             encoding="utf-8",
         )
