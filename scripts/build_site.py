@@ -1,0 +1,135 @@
+#!/usr/bin/env python3
+"""Build a static multilingual Docsify site."""
+
+from __future__ import annotations
+
+import json
+import shutil
+from pathlib import Path
+
+
+LANGUAGE_INDEX = """<!doctype html>
+<html lang="{code}">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Jimber SASE Platform - Documentation</title>
+    </head>
+    <body>
+        <div class="language-picker">
+            <label for="language">Language</label>
+            <select id="language" onchange="switchLanguage(this.value)">
+{options}
+            </select>
+        </div>
+        <div class="sidebar-logo"><img src="logo.png" alt="Jimber" /></div>
+        <div id="app"></div>
+        <script>
+            function switchLanguage(language) {{
+                window.location.href = '/' + language + '/' + window.location.hash;
+            }}
+
+            window.$docsify = {{
+                alias: {{ '/.*/_sidebar.md': '/{code}/_sidebar.md' }},
+                basePath: '/{code}/',
+                loadSidebar: true,
+                search: 'auto',
+                subMaxLevel: 1,
+                'flexible-alerts': {{ style: 'flat' }},
+                plugins: [
+                    function (hook) {{
+                        hook.afterEach(function (html, next) {{
+                            document.documentElement.scrollTop = 0;
+                            document.body.scrollTop = 0;
+                            next(html);
+                        }});
+                    }},
+                ],
+            }};
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+        <script src="https://unpkg.com/docsify-copy-code"></script>
+        <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+        <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    </body>
+</html>
+"""
+
+
+ROOT_INDEX = """<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Jimber SASE Platform - Documentation</title>
+        <script>
+            const supported = {supported};
+            const preferred = (navigator.language || 'en').split('-')[0];
+            const language = supported.includes(preferred) ? preferred : 'en';
+            window.location.replace('/' + language + '/' + window.location.hash);
+        </script>
+    </head>
+    <body>
+        <p><a href="/en/">Open the Jimber SASE documentation</a></p>
+    </body>
+</html>
+"""
+
+
+def overlay(source: Path, destination: Path) -> None:
+    if source.exists():
+        shutil.copytree(source, destination, dirs_exist_ok=True)
+
+
+def build(repository: Path) -> Path:
+    config = json.loads(
+        (repository / "translation/config.json").read_text(encoding="utf-8")
+    )
+    output = repository / "public"
+    if output.exists():
+        shutil.rmtree(output)
+    output.mkdir(parents=True)
+
+    languages = {"en": {"name": "English"}, **config["languages"]}
+    supported = list(languages)
+    (output / "index.html").write_text(
+        ROOT_INDEX.format(supported=json.dumps(supported)),
+        encoding="utf-8",
+    )
+    (output / ".nojekyll").touch()
+
+    cname = repository / "CNAME"
+    if cname.exists():
+        shutil.copy2(cname, output / "CNAME")
+
+    for code, language in languages.items():
+        destination = output / code
+        overlay(repository / "shared", destination)
+        overlay(repository / "content" / code, destination)
+        options = "\n".join(
+            f'                <option value="{option_code}"'
+            f'{" selected" if option_code == code else ""}>{option["name"]}</option>'
+            for option_code, option in languages.items()
+        )
+        (destination / "index.html").write_text(
+            LANGUAGE_INDEX.format(code=code, options=options),
+            encoding="utf-8",
+        )
+
+    return output
+
+
+def main() -> int:
+    repository = Path(__file__).resolve().parents[1]
+    output = build(repository)
+    print(f"Built documentation site in {output}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
+

@@ -1,0 +1,25 @@
+{
+  "source": {
+    "repository": "JimberSoftware/jimberfw_signalserver",
+    "path": "apps/docs",
+    "default_ref": "development"
+  },
+  "model": "gpt-6-luna",
+  "prompt_version": "1",
+  "translatable_extensions": [".md"],
+  "ignored_source_paths": [
+    ".gitignore",
+    ".nojekyll",
+    "Dockerfile",
+    "convert.py",
+    "index.html",
+    "nginx.conf"
+  ],
+  "languages": {
+    "fr": {
+      "name": "Français",
+      "english_name": "French",
+      "glossary": "translation/glossaries/fr.md"
+    }
+  }
+}

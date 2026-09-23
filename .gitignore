@@ -21,3 +21,13 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Generated documentation site
+public/
+
+# Local Python artifacts
+__pycache__/
+*.pyc
+
+# Sparse checkout used by the synchronization workflow
+.upstream/
