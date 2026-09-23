@@ -5,6 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from scripts.build_site import build
 from scripts.sync_docs import (
     restore_protected_markdown,
     synchronize,
@@ -134,6 +135,25 @@ class SyncDocsTests(unittest.TestCase):
         self.assertIn("`command`", restored)
         self.assertIn("(guide.md)", restored)
         self.assertIn("echo ok", restored)
+
+    def test_site_localizes_root_absolute_urls_at_render_time(self) -> None:
+        (self.repository / "content/en").mkdir(parents=True)
+        (self.repository / "content/fr").mkdir(parents=True)
+        for language in ("en", "fr"):
+            (self.repository / f"content/{language}/README.md").write_text(
+                "# Documentation\n",
+                encoding="utf-8",
+            )
+        (self.repository / "translation/config.json").write_text(
+            json.dumps(self.config),
+            encoding="utf-8",
+        )
+
+        output = build(self.repository)
+        french_index = (output / "fr/index.html").read_text(encoding="utf-8")
+
+        self.assertIn("return '/fr' + url", french_index)
+        self.assertIn('const supportedLanguages = ["en", "fr"]', french_index)
 
 
 if __name__ == "__main__":

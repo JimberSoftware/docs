@@ -8,7 +8,7 @@ import shutil
 from pathlib import Path
 
 
-LANGUAGE_INDEX = """<!doctype html>
+LANGUAGE_INDEX = r"""<!doctype html>
 <html lang="{code}">
     <head>
         <meta charset="UTF-8" />
@@ -28,8 +28,33 @@ LANGUAGE_INDEX = """<!doctype html>
         <div class="sidebar-logo"><img src="logo.png" alt="Jimber" /></div>
         <div id="app"></div>
         <script>
+            const supportedLanguages = {supported};
+
             function switchLanguage(language) {{
                 window.location.href = '/' + language + '/' + window.location.hash;
+            }}
+
+            function localizeInternalUrl(url) {{
+                const documentationOrigin = 'https://docs.jimber.io/';
+                if (url.startsWith(documentationOrigin)) {{
+                    url = '/' + url.slice(documentationOrigin.length);
+                }}
+                if (!url.startsWith('/') || url.startsWith('//')) {{
+                    return url;
+                }}
+
+                url = url.replace(/^\/\.\//, '/');
+                const firstSegment = url.slice(1).split('/')[0];
+                if (supportedLanguages.includes(firstSegment)) {{
+                    return url;
+                }}
+                return '/{code}' + url;
+            }}
+
+            function localizeRenderedUrls(html) {{
+                return html.replace(/\b(href|src)="([^"]+)"/g, function (_, attribute, url) {{
+                    return attribute + '="' + localizeInternalUrl(url) + '"';
+                }});
             }}
 
             window.$docsify = {{
@@ -44,7 +69,7 @@ LANGUAGE_INDEX = """<!doctype html>
                         hook.afterEach(function (html, next) {{
                             document.documentElement.scrollTop = 0;
                             document.body.scrollTop = 0;
-                            next(html);
+                            next(localizeRenderedUrls(html));
                         }});
                     }},
                 ],
@@ -116,7 +141,11 @@ def build(repository: Path) -> Path:
             for option_code, option in languages.items()
         )
         (destination / "index.html").write_text(
-            LANGUAGE_INDEX.format(code=code, options=options),
+            LANGUAGE_INDEX.format(
+                code=code,
+                options=options,
+                supported=json.dumps(supported),
+            ),
             encoding="utf-8",
         )
 
@@ -132,4 +161,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
