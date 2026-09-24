@@ -305,8 +305,8 @@
                 "nativenetworks/web-filtering.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "1f6b66114837dad2a26226a49662300032d1e47f5f095c6df500dec5682ec0a3",
-                    "translation_hash": "180a807f4b09f4e2edeea6066711d05c0c2446683b57e522ed8ab9fa9a4a6877"
+                    "source_hash": "e14c70c15453ce77bf05d5153003c2fed5c7b69a0cb0c2aeeab3a4bba29aaa14",
+                    "translation_hash": "744d3ea97c75268f3f0ceb3d943afd2a9abc5b591636e42e99764fc0281a6b7c"
                 },
                 "output.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -417,7 +417,7 @@
         }
     },
     "source": {
-        "commit": "0392f02c4c36e8698e8da1376a45147fcd07abbb",
+        "commit": "d39d468b4bad7d7cf385ca654aa23ae0398e2a7e",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },
