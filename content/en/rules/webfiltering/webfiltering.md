@@ -13,7 +13,9 @@ Web Filtering uses regularly updated lists per category to ensure that new threa
 ![Screenshot of the Web Filtering page](./screenshots/webfiltering.png ':size=800')
 
 > [!WARNING]
-> For web filtering rules to be effective, DNS Override must be enabled for the same group. Without it, filtering rules won’t be applied.
+> Web filtering will only be applied if *DNS Override* and/or *SSL Inspection* is enabled for the chosen group. Without either one, filtering rules won’t be applied. 
+
+![dns_override_ssl_inspection.png](./screenshots/dns_override_ssl_inspection.png ':size=300')
 
 ### Configure Web Filtering
 
@@ -31,19 +33,19 @@ To set up web filtering for a group, follow these steps:
    - **Allowlist**: Add trusted websites to the allowlist to ensure they remain accessible, even if they belong to a blocked category.
    - **Remove Websites**: To remove a website from either list, click the red trash bin icon next to the website name.
 
-4. **Time-based Rules**: Set time-based rules to control access to certain sites during specific time slots. Click the clock icon to define when the restrictions should apply.
+4. **Time-based Rules**: Set time-based rules to control access (block) to certain sites during specific time slots. Click the clock icon to define when the restrictions should apply.
 
 5. **Monitor Traffic**: You can also monitor traffic to the blocked or allowed websites to track usage patterns and ensure that the filtering rules are being followed. Use the corresponding toggle to enable or disable each category.
 
-6. **Activate Changes**: Once you’ve made your changes, click the `➢ Submit rules` button to apply them and ensure the rules are active.
+6. **Activate Changes** by clicking the `➢ Submit` button. The rules become active.
 
 > [!WARNING] 
 > Always double-check the rules before submitting to ensure the configuration is correct. If you make changes you don’t want to keep, use the `Clear changes` button to revert to the previously saved version.
 
 > [!INFO]
-> If there are any unsaved changes, a warning message will appear, so you won’t miss updating your settings.
+> If there are any unsaved changes, a warning message will appear.
 >
->![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=400')
+>![Screenshot of the unsaved changes warning](./screenshots/unsaved_changes.png ':size=300')
 
 
 

@@ -1,4 +1,4 @@
-# ![native_networks](../images/menu/menu_nativenetworks.png ':size=25') Network Interfaces
+# ![native_networks](../images/menu/menu_networkinterfaces.png ':size=25') Network Interfaces
 
 Use the *Network Interfaces* page to connect physical ports and VLANs to your native networks.
 
@@ -17,7 +17,7 @@ Use the search box to enter keywords and filter the Network Interfaces list.
 Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (`equals`, `contains`, or `NOT`).
+- **Match type**: A dropdown that allows you to select how to match the value (`EQUALS`, `CONTAINS`, or `NOT`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
 ![filter_native_networks.png](./screenshots/filter_native_networks.png ':size=500')

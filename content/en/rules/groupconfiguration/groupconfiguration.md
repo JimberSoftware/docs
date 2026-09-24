@@ -7,7 +7,7 @@ Group Configuration allows administrators to define and manage policies that con
 This modular approach makes it easy to apply consistent settings across similar users or departments, enforce compliance standards, and simplify large-scale management. Each tab below represents a configurable option that can be enabled, disabled, or customized per group.
 
 > [!TIP]
-> You can download an overview of the group configuration by clicking on the download icon ![](../../images/icons/icon_download.png ':size=20') located above the overview on the right. The overview will be downloaded as a CSV-file. 
+> You can download an overview of the group configuration by clicking on the download icon ![](../../images/icons/icon_download.png ':size=20') located at the top right of the overview. The overview will be downloaded as a CSV-file. 
 
 
 ### Edit Group Configuration

@@ -269,8 +269,8 @@
                 "nativenetworks/dhcp-server.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "0ac93cbc36cf2620615db00b79a44850ad04d54ce5c68ea83b0b9461787cea66",
-                    "translation_hash": "c0b6f44902b1d7534baf94fb6154db65ea609d33a8fff5359ad9578e555e4a1d"
+                    "source_hash": "ce344936dcdc9a1fabe618aebb3dea3748b03e9d4ba20fbf434d82bf06c4d142",
+                    "translation_hash": "a2c5e645346b98154a10eead859e3f8b024c8b90e992058ef908b2dfd3d6e32e"
                 },
                 "nativenetworks/index.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -281,14 +281,14 @@
                 "nativenetworks/network-interfaces.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "aea64c09a27e7d1347b48312f6226207fa05bef822dd24f412ea79e326977ce3",
-                    "translation_hash": "706c50a9fbb792e39227df82b83fface424fa86bcaf24d19318d27a7b37a6caf"
+                    "source_hash": "4dd495793f8dd027d46c8b99943f3d6437c72f1143d8cb674251ccc9710478fd",
+                    "translation_hash": "17dfd02e5b31f631111d4f86b2d155a9f5c37c626c64ed93c433d5c77a1c846d"
                 },
                 "nativenetworks/networks.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "1b49f005bf072e85d313e9b7e01561abe54228ca17c201ac45a42749ac88583f",
-                    "translation_hash": "f1d2c8faf53818016f74502caa6f72e4ebee10ebf1066dbe350017624e950f72"
+                    "source_hash": "c72079c0c4e8c84b4834df02188811927fe1881dd1345b14ffac83fcb5409e69",
+                    "translation_hash": "5b6249dae5bbcea3878ec82789e3c79fab6ca5b1f654c94290c839c2b55901f6"
                 },
                 "nativenetworks/virtualinterfaces.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -299,14 +299,14 @@
                 "nativenetworks/wan-load-balance.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "71ea7a66e69725f4dfd2a9e98c1c65b6d141908e93aa647932ec30daefd20ae6",
-                    "translation_hash": "8d3fac70ed11040cc5ae6d8bd060c6650d0698f625acca068e8dd231caf8281f"
+                    "source_hash": "d4e025acddce1890471b9a2ec2eae6a5205ace97cd51cc0e6df0f59f88492e09",
+                    "translation_hash": "bdca2ea2d969278d275cb93de941dc84d216a3bffe92e5fdcb2c167ba2c179a5"
                 },
                 "nativenetworks/web-filtering.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "e14c70c15453ce77bf05d5153003c2fed5c7b69a0cb0c2aeeab3a4bba29aaa14",
-                    "translation_hash": "744d3ea97c75268f3f0ceb3d943afd2a9abc5b591636e42e99764fc0281a6b7c"
+                    "source_hash": "8c5ed1fde45054e82d94633888b2a5f1a3860814212cf86e56204a189f8b7d74",
+                    "translation_hash": "24a817f354b55298ed301ee1299c9710ec6694ee1bf7efef353c52860a3b6de7"
                 },
                 "output.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -326,6 +326,12 @@
                     "source_hash": "a6ab5d122fd9ed6caa951bd87c7712d6906e9a39bba161ceb42e16f957e66cfb",
                     "translation_hash": "6e32b293cf3921d3d800de5c8be167625146ce7710fc9652e06c2ebe69400370"
                 },
+                "rules/edrconfiguration/edr_configuration_new.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "07da1b34896b700636bbc7b6784532b5580ac0503bbcd62140b6b6f8aed7f091",
+                    "translation_hash": "987022ae9b8e6a18aec65912df8a1d9431df4e231243a087b8677413002bbf3c"
+                },
                 "rules/edrconfiguration/edrconfiguration.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
@@ -341,8 +347,8 @@
                 "rules/groupconfiguration/groupconfiguration.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "b39ca97bfd7d39a9bc63678e0ee5f22acd3b7855418a4899428092f986fc5118",
-                    "translation_hash": "133d5fa9f561f26f653d3b2484c529c0e0378dc0a3f918d3403167836f7126ee"
+                    "source_hash": "e6b10d4c4696781ca24173c8cab3fa06a3c17946cdd12e8bab1067afcf7a8c0f",
+                    "translation_hash": "d55ba04cfb8d51822f71a480d46961d0bb75f47f7bf5c2cc43d7fb4e311d7794"
                 },
                 "rules/grouptraffic/grouptraffic.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -377,8 +383,8 @@
                 "rules/webfiltering/webfiltering.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "230dbc28897dc157e213168f079d3f3f01dd6caa7aaad260f2015ca260ec0d63",
-                    "translation_hash": "65e1bbc4b63afa98814c15a40ee6c4fd3b194944a2ae74281081952bd48b6a0a"
+                    "source_hash": "ebfed730b7c3f7872a900ab49c9b491f4cfbbad4ff97b143ff2bc44de6f13e0c",
+                    "translation_hash": "35826e749566296a9748f6b5a6209e974ad135413307d1d7a270569f37361f4b"
                 },
                 "security.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -417,7 +423,7 @@
         }
     },
     "source": {
-        "commit": "e0078f72a711cd945f2310fe775d80dc5d1a517b",
+        "commit": "fad50bd275786c56f16a5800faef80e4828270ff",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },

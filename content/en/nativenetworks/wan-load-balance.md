@@ -1,11 +1,11 @@
-# ![native_networks](../images/menu/menu_nativenetworks.png ':size=25') WAN Load Balance
+# ![native_networks](../images/menu/menu_wanloadbalance.png ':size=25') WAN Load Balance
 
 Use the *WAN Load Balance* page to decide which WAN interfaces are used during normal operation and which interfaces are kept for failover.
 
 - *Primary Interfaces* are the preferred WAN connections for links that should carry traffic during normal operation.
 - *Failover Interfaces* are backup WAN connections that are used when primary connectivity is unavailable.
 
-![wan-load-balance.png](./screenshots/wan-load-balance.png ':size=900')
+![wan-load-balance.png](./screenshots/wan-load-balance.png ':size=800')
 
 ### Configure WAN Load Balancing
 
@@ -15,7 +15,7 @@ Use the *WAN Load Balance* page to decide which WAN interfaces are used during n
 - Select the correct **Network Controller** from the dropdown at the top left of the page.
 - In the *Primary Interfaces* section, click **Add WAN Interfaces**.
 
-![add-wan-interface.png](./screenshots/add-wan-interface.png ':size=600')
+![add-wan-interface.png](./screenshots/add-wan-interface.png ':size=500')
 
 - Select one or more WAN interfaces with the checkboxes.
 - Click *Save*.
@@ -53,7 +53,7 @@ To remove a WAN Interface
 - Open the *Add WAN Interfaces* window in either section.
 - Click the *X* button next to the interface name
 
-![remove-wan-interface.png](./screenshots/remove-wan-interface.png ':size=600')
+![remove-wan-interface.png](./screenshots/remove-wan-interface.png ':size=500')
 
 >[!Attention]
 >Don't forget to click *Save* in the current window and *Submit* on the main page!
@@ -67,7 +67,7 @@ To remove a WAN Interface
 > [!IMPORTANT]
 > At least one primary interface is required before you can submit the changes.
 
-![one_primary_interface.png](./screenshots/one_primary_interface.png ':size=600')
+![one_primary_interface.png](./screenshots/one_primary_interface.png ':size=500')
 
 
 > [!NOTE]

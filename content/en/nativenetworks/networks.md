@@ -72,7 +72,7 @@ In the *Create Routed Network* window, complete the fields:
 
 <!-- tabs:end -->
 
-
+---
 
 #### Details of a Native Network
 

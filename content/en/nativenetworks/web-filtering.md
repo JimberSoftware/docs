@@ -1,4 +1,4 @@
-# ![](../images/menu/menu_dns.png ':size=25') Web Filtering
+# ![native_networks](../images/menu/menu_webfiltering.png ':size=25') Web Filtering
 
 Use the _Web Filtering_ page to apply filtering policies to a selected native network.
 
@@ -9,7 +9,7 @@ You can control common content categories, social media platforms, AI tools, and
 
 ### Configure Web Filtering
 
-![web-filtering.png](./screenshots/web-filtering.png ':size=700')
+![web-filtering.png](./screenshots/web-filtering.png ':size=600')
 
 - Choose a _Native Network_ from the dropdown at the top left of the page.
 - Review the filtering cards on the page.
@@ -59,6 +59,12 @@ If no custom domains have been added yet, the page shows _No domains on allowlis
 
 ![no_allowlist.png](./screenshots/no_allowlist.png ':size=500')
 
+### Remark
+
+If you click the little clock icon in the bottom right, a new window will appear where you can indicate which days the blocklist or the allowlist applies to:
+
+![weekly_schedule.png](./screenshots/weekly_schedule.png ':size=500')
+
 ## Summary
 
-Use _Web Filtering_ to apply network-level content controls to devices connected through a native network, including unmanaged devices that do not run the _Jimber SASE Client_.
+Use *Web Filtering* to apply network-level content controls to devices connected through a native network, including unmanaged devices that do not run the ***_<span style="color: darkblue;">Jimber SASE Client</span>_***.

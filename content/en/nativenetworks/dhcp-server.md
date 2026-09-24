@@ -1,4 +1,4 @@
-# ![](../images/menu/menu_dhcp.png ':size=25') DHCP Server
+# ![native_networks](../images/menu/menu_dhcpserver.png ':size=25') DHCP Server
 
 Use the *DHCP Server* page to configure DHCP and DNS settings for a native network.
 
@@ -6,18 +6,18 @@ The page lets you select a native network, enable or disable DHCP, define the IP
 
 ### Configure DHCP Server 
 
-![dhcp-server.png](./screenshots/dhcp-server.png ':size=900')
+![dhcp-server.png](./screenshots/dhcp-server.png ':size=700')
 
 - Choose a **Native Network** from the dropdown at the top left of the page.
 - In the **DHCP Configuration** card
--   Enable the **DHCP Master Toggle** if you want clients on that network to automatically receive IP addresses via DHCP.
--   Review the *Interface* field. This field is read-only and shows the assigned interface and its CIDR block.
+  -  Enable the **DHCP Master Toggle** if you want clients on that network to automatically receive IP addresses via DHCP.
+  -  Review the *Interface* field. This field is read-only and shows the assigned interface and its CIDR block.
 -  Configure the **Range**:
     - Enter the start IP address.
     - Enter the end IP address.
 -  Enter the **Gateway IP Address**.
 - Configure DNS:
-    - Jimber DNS
+    - Jimber DNS: no further settings needed.
     - Custom DNS:
         - Enter the required DNS server IP address
         - To add another DNS server, click `+ Add IP Address`.
@@ -25,7 +25,7 @@ The page lets you select a native network, enable or disable DHCP, define the IP
 ![dhcp-server-custom-dns.png](./screenshots/dhcp-server-custom-dns.png ':size=500')
 
 >[!ATTENTION]
->Don't forget to click `Submit` to implement the changes .
+>Don't forget to click `Submit` to implement the changes (button in the upper right corner).
 
 
 > [!TIP]
