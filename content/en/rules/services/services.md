@@ -10,18 +10,18 @@ Users can open the Security Panel by clicking the **Jimber SASE tray icon** in t
 
 A security panel with multiple services can look like this:
 
-![Screenshot of the Services tab of the Security Panel](./screenshots/security_panel_overview.png ':size=800')
+![Screenshot of the Services tab of the Security Panel](./screenshots/security_panel_overview.png ':size=600')
 
 
 ### Create Services
 
 To create a service into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
 
-![Screenshot of the Services page](./screenshots/services.png ':size=800')
+![Screenshot of the Services page](./screenshots/services.png ':size=700')
 
 This will open the following screen where you can enter the specifics of your service:
 
-![Screenshot of the Create Service page](./screenshots/create_service.png ':size=800')
+![Screenshot of the Create Service page](./screenshots/create_service.png ':size=700')
 
 1. **Choose a Name**: Start by giving your service a clear and recognizable name.
 
@@ -46,13 +46,13 @@ This will open the following screen where you can enter the specifics of your se
 3. **Submit the service**, by clicking on the `➢ Submit` button. 
 If you leave the page with any unsaved changes, a warning message will appear:
 
-    ![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=400')
+    ![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=300')
 
 **Repeat these steps** to configure additional access rules as needed. 
 
 After creating the service you can switch to [Policies](/./rules/firewall-policies/firewall-policies.md) to specify the details of the service.
 
-### Service template
+### Service Template
 
 You can save the configuration of your service by clicking the `📄Save template` button. When prompted, enter a distinctive name and a clear, descriptive summary to make it easy to identify and reuse later. 
 

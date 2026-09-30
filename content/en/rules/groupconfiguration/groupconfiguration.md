@@ -153,9 +153,10 @@ When Mobile Connection is enabled, users can add a mobile device via the Securit
 
 ##### Configuration Steps
 
-1. Enable **Mobile Connection** in the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** group configuration settings of the selected group.
+1. Enable **Mobile Connection** in the **_<span style="color: darkblue;">Jimber SASE Platform</span>_** group configuration settings of the selected group.
 2. Create a new mobile device in the Security panel.
-3. Link the mobile device by scanning the QR code with the Jimber Network Isolation app.
+3. Link the mobile device by scanning the QR code with the **_<span style="color: darkblue;">Jimber SASE app</span>_**.
+<!-- 3. Link the mobile device by scanning the QR code with the Jimber Network Isolation app. -->
 
 
 ### **DEVICE LIMIT**
@@ -223,7 +224,7 @@ More information on EDR is to be find [here](/./rules/edrconfiguration/edrconfig
 
 - Enable **EDR** in the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** group configuration settings of the selected group.
 
-
+edr_groupconfig.png
 ### **SSL**
 
 _SSL inspection intercepts, decrypts, scans, and re-encrypts encrypted HTTPS web traffic in real time to uncover hidden security threats._

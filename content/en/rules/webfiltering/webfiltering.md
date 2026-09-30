@@ -13,7 +13,7 @@ Web Filtering uses regularly updated lists per category to ensure that new threa
 ![Screenshot of the Web Filtering page](./screenshots/webfiltering.png ':size=800')
 
 > [!WARNING]
-> Web filtering will only be applied if *DNS Override* and/or *SSL Inspection* is enabled for the chosen group. Without either one, filtering rules won’t be applied. 
+> Web filtering will only be applied if *DNS Override* **and/or** *SSL Inspection* is enabled for the chosen group. Without either one, filtering rules won’t be applied. 
 
 ![dns_override_ssl_inspection.png](./screenshots/dns_override_ssl_inspection.png ':size=300')
 
@@ -28,14 +28,29 @@ To set up web filtering for a group, follow these steps:
 
 2. **Block Categories**: Choose and block specific content categories (e.g., adult content, malware, gambling) to restrict access for the selected group. Use the corresponding toggle to enable or disable each category.
 
-3. **Manage Websites**:
-   - **Blocklist**: Add specific websites you want to block by entering their URLs into the blocklist.
-   - **Allowlist**: Add trusted websites to the allowlist to ensure they remain accessible, even if they belong to a blocked category.
-   - **Remove Websites**: To remove a website from either list, click the red trash bin icon next to the website name.
+   ![block.png](./screenshots/block.png ':size=350')
 
-4. **Time-based Rules**: Set time-based rules to control access (block) to certain sites during specific time slots. Click the clock icon to define when the restrictions should apply.
+3. **Manage Websites**:
+   - **Blocklist**: Add specific websites you want to block by entering their URLs into the blocklist. Click + to add an additional website. A time slot can be configured:
+
+      ![blocklist.png](./screenshots/blocklist.png ':size=350')
+
+   - **Allowlist**: Add trusted websites to the allowlist to ensure they remain accessible, even if they belong to a blocked category. Here also, websites can be added and a time slot can be configured.
+
+      ![allowlist.png](./screenshots/allowlist.png ':size=350')
+
+   - **Remove Websites**: To remove a website from either list, click the red trash bin icon ![](../../images/icons/icon_delete.png ':size=15') next to the website name.
+
+4. **Time-based Rules**: Set time-based rules to control access (block) to certain sites during specific time slots. Click the clock icon to define when the restrictions should apply. The schedule can be set per day and with multiple time slots. Click + to add an additional time slot:
+
+    ![weekly_schedule.png](./screenshots/weekly_schedule.png ':size=350')
+
+   To delete a time slot, click the recycle bin ![](../../images/icons/icon_delete.png ':size=15') next to the time slot you want to delete. 
+
 
 5. **Monitor Traffic**: You can also monitor traffic to the blocked or allowed websites to track usage patterns and ensure that the filtering rules are being followed. Use the corresponding toggle to enable or disable each category.
+
+   ![monitor.png](./screenshots/monitor.png ':size=350')
 
 6. **Activate Changes** by clicking the `➢ Submit` button. The rules become active.
 
@@ -43,9 +58,9 @@ To set up web filtering for a group, follow these steps:
 > Always double-check the rules before submitting to ensure the configuration is correct. If you make changes you don’t want to keep, use the `Clear changes` button to revert to the previously saved version.
 
 > [!INFO]
-> If there are any unsaved changes, a warning message will appear.
+> If there are any unsaved changes leaving the page, a warning message will appear.
 >
->![Screenshot of the unsaved changes warning](./screenshots/unsaved_changes.png ':size=300')
+>![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=300')
 
 
 
