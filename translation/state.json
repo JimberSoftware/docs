@@ -335,8 +335,8 @@
                 "rules/edrconfiguration/edrconfiguration.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "64ced3d3a8d80781f6cc504a276c916945dfaa6b8ef42c36c073b94a49725cae",
-                    "translation_hash": "26e679ee2339aba0190cc67f32be82bb1e2e971af0e76a45b25b84b0cbd63ac2"
+                    "source_hash": "39b3332fe2f08148998d223b04dc2a5c78a65eb55c1670fbe9e08f4eb4b80cab",
+                    "translation_hash": "bb5d213539ee47d28567d04bf7102c1d1f050ad28a44bc9f0a132de3552bae6a"
                 },
                 "rules/firewall-policies/firewall-policies.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -423,7 +423,7 @@
         }
     },
     "source": {
-        "commit": "3a9acab3b2b89ec0029b638927338c06650d4196",
+        "commit": "b3de35cd99d941ddca6aa7316ca73036695aaf57",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },

@@ -1,48 +1,105 @@
-# ![](../../images/menu/menu_edr.png ':size=50') EDR
+# ![](../../images/menu/menu_edr.png ':size=50') EDR Configuration
 
-EDR (Endpoint Detection and Response) configuration involves setting up policies and settings to monitor, detect, and respond to threats on endpoints.
-The EDR process involves constant monitoring and data gathering from endpoints to identify and address threats in real time and provides information about actions at the endpoints, including details about attempted cyber attacks. 
-
+Endpoint Detection and Response (EDR) monitors Windows endpoints for suspicious activity and can respond automatically when a threat is detected. Configure EDR per group so that the response matches the severity of the detection.
 
 > [!IMPORTANT]
-> This feature must be activated by a company administrator.
-  
-### EDR CONFIGURATION
+> EDR must be available for your company and enabled for the selected group under **Security > Group Configuration**. Only groups with EDR enabled appear on this page.
 
-![edrconfiguration.png](./screenshots/edrconfiguration.png ':size=800')
+## Configure EDR for a group
 
+1. Go to **Security > EDR > EDR Configuration**.
+2. Select the group you want to configure.
+3. Use the switch on a detection card to enable or disable that detection.
+4. For each enabled detection, choose the automatic response for each severity level: **Low**, **Medium**, **High**, or **Critical**.
+5. Select **Submit** to apply the configuration.
 
-> [!WARNING]
-> Choosing a higher level of sensitivity for the malicious file detection could resolve in more false positives. 
+![EDR Configuration with malicious file detection settings](./screenshots/edrconfiguration.png ':size=1000')
 
 > [!NOTE]
-> If EDR is set, you can use the [monitoring page](/./monitoring/monitoring.md) to inspect recorded activities and threats.  
+> Enabling a detection without selecting a response action still records detections in the relevant EDR monitoring page. It does not take an automatic response action.
 
-> [!IMPORTANT]
-> If 'Lockdown device network' is enabled and an issue was occurred, an administrator has to unlock the device network again using one of the standard Windows procedures, for instance via Device Manager.
+> [!TIP]
+> Start with monitoring or less disruptive responses, review the detections, and then enable stronger responses for higher severity levels. This helps reduce disruption from false positives.
 
-### EDR Whitelist
+### Response actions
 
-An EDR whitelist (or allowlist) configures an Endpoint Detection and Response platform to ignore specific files, folders, processes, or scripts. This prevents legitimate administrative tools or business-critical software from triggering false-positive alerts, blocking execution, or consuming resources.
+| Action           | Result                                                                                                                                                                 |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Quarantine**   | Quarantines the detected file on the endpoint.                                                                                                                         |
+| **Disable SASE** | Removes the affected device's SASE access. Administrator action may be required before the device can connect again.                                                   |
+| **Lockdown**     | Locks down networking on the endpoint. An administrator must restore the Windows network connection, for example by re-enabling the network adapter in Device Manager. |
 
-Use whitelists in EDR to:
--  Stop security agents from mistakenly killing vital applications or proprietary software and in this way secure business continuity.
--  Cut down on false positives, saving security teams time and so reduce alert fatigue.
+You can select more than one available response action for the same severity level.
 
-#### Create a whitelist entry
+> [!WARNING]
+> **Disable SASE** interrupts access through Jimber SASE, while **Lockdown** interrupts all networking on the endpoint. Test these responses with a limited group before enabling them broadly.
 
-To create a new whitelist entry, click on the `+ Create new` button located at the upper right corner of the interface.
+## Detection types
 
-![create_whitelist.png](./screenshots/create_whitelist.png ':size=500')
+### Malicious File Detection
 
-- Enter the filename.
-- Enter the hash. Calculate the hash e.g., by using a browser-based tool like [SHA256 Online Calculator](https://emn178.github.io/online-tools/sha256.html).
+Scans files for malicious content. Select a sensitivity level, then configure the response for each severity.
 
+- **Standard** provides the baseline level of detection.
+- **Extended** performs broader detection.
+- **High** provides the broadest detection and can produce more false positives.
 
-#### Edit a whitelist entry
+Available responses: **Quarantine**, **Disable SASE**, and **Lockdown**.
 
-Whitelist Entries can be edited by clicking on the edit icon  in their row.
+### Network Anomaly Detection
 
-![edit_whitelist.png](./screenshots/edit_whitelist.png ':size=500')
+Detects suspicious network behavior on the endpoint. Configure **Disable SASE** and **Lockdown** independently for each severity level.
 
-You can change the name of the file. No need to recalculate the hash.
+![Network anomaly detection settings](./screenshots/network-anomaly-detection.png ':size=1000')
+
+### Unsigned Binaries
+
+Detects executable files and libraries that do not have a trusted digital signature. Configure **Quarantine** independently for each severity level.
+
+![Unsigned binary and file anomaly detection settings](./screenshots/unsigned-binaries-file-anomaly.png ':size=1000')
+
+### File Anomaly Detection
+
+Detects unusual file activity and records it for review. This detection has no configurable automatic response actions.
+
+### Windows Defender
+
+Monitors supported Microsoft Defender Antivirus events. Configure **Disable SASE** and **Lockdown** independently for each severity level.
+
+![Windows Defender settings](./screenshots/windows-defender.png ':size=1000')
+
+> [!NOTE]
+> If an endpoint belongs to multiple groups, its EDR configuration combines the enabled detections and response actions from those groups. Malicious File Detection uses the highest configured sensitivity.
+
+## Review detections
+
+Open the relevant page under **Monitoring > EDR** to review detections, severity, affected device, and the action taken. See the [Monitoring documentation](/./monitoring/monitoring.md) for more information.
+
+## EDR Whitelist
+
+The EDR whitelist prevents a trusted file from triggering Malicious File Detection. A whitelist entry applies to the file's SHA-256 hash, so a changed version of the file requires a new entry.
+
+> [!WARNING]
+> Only whitelist files that you have verified and trust. A whitelisted file is excluded from malicious file detection.
+
+### Create a whitelist entry
+
+1. Go to **Security > EDR > EDR Whitelist**.
+2. Select **+ Create new**.
+3. Enter a recognizable filename.
+4. Enter the file's SHA-256 hash.
+5. Save the entry.
+
+![Create an EDR whitelist entry](./screenshots/create_whitelist.png ':size=500')
+
+On Windows, you can calculate the hash in PowerShell:
+
+```powershell
+Get-FileHash -Algorithm SHA256 "C:\path\to\file.exe"
+```
+
+### Edit a whitelist entry
+
+Select the edit icon in the entry's row to change its filename. The SHA-256 hash cannot be changed. To use a different hash, create a new whitelist entry.
+
+![Edit an EDR whitelist entry](./screenshots/edit_whitelist.png ':size=500')
