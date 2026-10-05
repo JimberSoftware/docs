@@ -33,5 +33,19 @@ These settings control how user devices are managed and isolated in your environ
 
     Use the [Microsoft Intune deployment guide](./root-certificate-intune.md) to install the certificate on managed macOS devices.
 
+### Zero Trust Outbound
+
+Zero Trust Outbound (ZTO) controls internet access through enabled outbound policies. Managed endpoints retain the following built-in exceptions even when their outbound policies are disabled:
+
+| Protocol    | Destination port                                     | Allowed destinations                                                                                          |
+| ----------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| TCP and UDP | 53 (DNS)                                             | Any destination                                                                                               |
+| TCP and UDP | 51820 (Jimber tunnel connectivity)                   | Any destination                                                                                               |
+| TCP         | 80 and 443 (Signal Server and Lifeline connectivity) | IP addresses resolved from the Signal Server URL and configured Lifeline addresses, including its fallback IP |
+
+DNS is allowed by default, so the automatically created **Standard Internet** service does not include port 53. Disabling a Standard Internet policy does not block DNS or Jimber tunnel connectivity.
+
+If a Signal Server or Lifeline hostname lookup fails or returns no IP addresses, TCP ports 80 and 443 are allowed to any destination to preserve platform connectivity. With a successful lookup, ordinary HTTP and HTTPS internet access requires an enabled outbound policy.
+
 > [!IMPORTANT]
 > Always remember to click the **_Apply_** button to save your changes after editing any configuration setting.

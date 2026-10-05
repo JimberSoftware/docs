@@ -137,8 +137,8 @@
                 "company/configur/configuration.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "f5c49b00523eb789964b02504c007f482df545098f475835e1dc9c9e2d88e677",
-                    "translation_hash": "3d1ed015acfdefb11e9bc90d801e6fd765b9cb74542969f27d1b4d5bf4aa6f3f"
+                    "source_hash": "21e1b2fcdc2c931c8d784c5d7e9698302f868fc64ca4514debb11b41ec1b6487",
+                    "translation_hash": "efc6ed1474c98036c9945947a8d1533db8ef9f1af62b017308aacde37fb3f4f5"
                 },
                 "company/configur/root-certificate-intune.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -423,7 +423,7 @@
         }
     },
     "source": {
-        "commit": "e99270bafed80ba1cee5ee5f4babc7b8e63846d3",
+        "commit": "ead5d811d35343ecc4b7e95844d454932daec527",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },
