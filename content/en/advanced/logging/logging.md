@@ -4,9 +4,9 @@ This section provides an overview of where you can find Jimber SASE log files on
 
 ### Overview of Log Types
 
-- **Client Logs:** Capture information about the startup and operation of the `Jimber SASE Client` application on user devices.
-- **Server Logs:** Record details about the server-side component of `Jimber SASE Platform`.
-- **Service Logs:** Contain information about the `Jimber SASE Service`, the local background service responsible for managing connectivity and other essential tasks.
+- **Client Logs:** Capture information about the startup and operation of the **_<span style="color: darkblue;">Jimber SASE Client</span>_** application on user devices.
+- **Server Logs:** Record details about the server-side component of **_<span style="color: darkblue;">Jimber SASE Platform</span>_**.
+- **Service Logs:** Contain information about the **_<span style="color: darkblue;">Jimber SASE Service</span>_**, the local background service responsible for managing connectivity and other essential tasks.
 - **Launcher Logs:** Track activities related to launching and updating the Jimber applications.
 - **Debug Logs:** Special empty files that enable enhanced logging in the other log files when present.
 

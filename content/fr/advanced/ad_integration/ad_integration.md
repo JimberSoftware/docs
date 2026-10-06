@@ -1,6 +1,6 @@
 # Intégration d’Active Directory
 
-Dans cette section, vous découvrirez comment intégrer des utilisateurs et des groupes d’un Active Directory à la Plateforme Jimber SASE.
+Dans cette section, vous découvrirez comment intégrer des utilisateurs et des groupes d’un Active Directory dans la **_<span style="color: darkblue;">Plateforme Jimber SASE</span>_**.
 
 >[!WARNING]
 >Pour activer l’intégration d’Active Directory, vous devez disposer d’au moins un contrôleur réseau sur site.
@@ -8,7 +8,7 @@ Dans cette section, vous découvrirez comment intégrer des utilisateurs et des 
 ![no_on_premise.png](./screenshots/no_on_premise.png ':size=500')
 
 
-Vous trouverez [ici](/./advanced/networkcontrollerssetup/SettingUpServer.md) la procédure de configuration d’un contrôleur réseau.
+Pour savoir comment configurer un contrôleur réseau, cliquez [ici](/./advanced/networkcontrollerssetup/SettingUpServer.md).
 
 
 
@@ -19,7 +19,7 @@ Créez un nouvel utilisateur dans AD (par exemple **User1**) et ajoutez-le au gr
 ![user_in_rodc.png](./screenshots/user_in_rodc.png ':size=500')
 
 > [!IMPORTANT]
-> L’utilisateur en lecture seule, User1, permet à SASE de lire Active Directory depuis le contrôleur de domaine.
+> L’utilisateur en lecture seule, User1, permet à SASE de lire Active Directory à partir du contrôleur de domaine.
 
 Définissez le groupe « Read-Only Domain Controllers » comme groupe principal de l’utilisateur.
 - Sélectionnez les propriétés du groupe.
@@ -28,7 +28,7 @@ Définissez le groupe « Read-Only Domain Controllers » comme groupe principal 
 
   - Ouvrez l’onglet **Membre de**.
   - Sélectionnez le groupe **Read-Only Domain Controllers**.
-  - Cliquez sur **Définir comme groupe principal**.
+  - Cliquez sur **Définir le groupe principal**.
 
 ![primary_group.png](./screenshots/primary_group.png ':size=300')
 
@@ -45,30 +45,30 @@ Ajoutez le groupe GeneralUsers au groupe JimberSASE_Sync.
 
 
 >[!IMPORTANT]
-> Ajoutez au groupe GeneralUsers tout autre utilisateur ou groupe que vous souhaitez synchroniser avec la Plateforme SASE.
+> Tout autre utilisateur ou groupe que vous souhaitez synchroniser avec la plateforme SASE doit être ajouté au groupe GeneralUsers.
 
 
-#### Dans la Plateforme SASE
+#### Dans la plateforme SASE
  
-Ouvrez la Plateforme Jimber SASE.
+Ouvrez la **_<span style="color: darkblue;">Plateforme Jimber SASE</span>_**.
 
 
-##### 1. Créez un groupe portant le même nom que dans Active Directory ; dans cet exemple, GeneralUsers.
+##### 1. Créez un groupe portant le même nom que dans Active Directory, dans cet exemple GeneralUsers.
 
 ![same_group.png](./screenshots/same_group.png ':size=500')
 
 ##### 2. Configurez le redirecteur DNS
    - Accédez à Entreprise > Intégrations
    - Le paramètre de configuration se trouve en haut de la page.
-   - Ajoutez ici l’adresse IP d’isolation réseau du contrôleur de domaine.
+   - Ajoutez ici l’adresse IP Network Isolation du contrôleur de domaine.
 
 
    ![dnsforwarding.png](./screenshots/dnsforwarding.png ':size=600')
 
 >[!NOTE]
-> Le trafic des clients pour lesquels le remplacement DNS est activé est filtré par notre service DNS.
+> Les clients pour lesquels le remplacement DNS est activé sont filtrés par notre service DNS.
 >
-> Les requêtes spécifiques au domaine sont toujours résolues par le serveur indiqué dans ce champ.
+> Les requêtes propres au domaine sont toujours résolues par le serveur indiqué dans ce champ.
 
 ##### 3. Synchronisation
 - Accédez à Entreprise > Intégrations
@@ -76,16 +76,16 @@ Ouvrez la Plateforme Jimber SASE.
 ![integrations.png](./screenshots/integrations.png ':size=600')
 <!-- 
 
-On the domain controller, open PowerShell and run these two commands: -->
+Sur le contrôleur de domaine, ouvrez PowerShell et exécutez ces deux commandes : -->
 
 - Dans le **champ Groupe SASE**, saisissez le nom distinctif du groupe (dans cet exemple : CN=JimberSASE_Sync,CN=Users,DC=domainname,DC=be).
 - Dans le **champ Nom d’utilisateur**, saisissez le nom distinctif de l’utilisateur en lecture seule créé précédemment (dans cet exemple : CN=User1,CN=Users,DC=domainname,DC=be).
 - Le **mot de passe** est celui de l’utilisateur (dans cet exemple, le mot de passe de User1).
-- Choisissez le **contrôleur réseau** approprié.
+- Choisissez le bon **contrôleur réseau**.
 - Cliquez sur le bouton **Appliquer** pour appliquer les valeurs saisies.
 
 >[!TIP]
->Pour identifier les noms distinctifs appropriés, vous pouvez exécuter les commandes suivantes dans PowerShell :
+>Pour identifier les noms distinctifs corrects, vous pouvez exécuter les commandes suivantes dans PowerShell :
 >
 >```bash
 >   dsquery group -name JimberSASE_Sync
@@ -99,7 +99,7 @@ On the domain controller, open PowerShell and run these two commands: -->
 ##### 4. Groupe des contrôleurs de domaine
 
 - Accédez à Entreprise > Groupes
-- Créez un groupe **Domain Controllers**
+- Créez un nouveau groupe **Domain Controllers**
 
 ![create_group_dc.png](./screenshots/create_group_dc.png ':size=500')
 
@@ -168,13 +168,13 @@ Suivez ces étapes :
 
 
 
-<!-- You can check whether the synchronization was successful at the users section. -->
+<!-- Vous pouvez vérifier si la synchronisation a réussi dans la section des utilisateurs. -->
 
 
 Après avoir sélectionné les différents composants, cliquez sur le bouton `Submit` pour appliquer les modifications :
 
 ![result_attribute.png](./screenshots/result_attribute.png ':size=600')
 
-Après avoir soumis la politique, vous devriez la trouver dans l’aperçu des `policies`.
+Après avoir soumis la politique, vous devriez la trouver dans la vue d’ensemble des `policies`.
 
 ![overview_att_policy.png](./screenshots/overview_att_policy.png ':size=800').

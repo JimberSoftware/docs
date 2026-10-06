@@ -1,6 +1,6 @@
 # Active Directory Integration
 
-In this section you can see how to integrate users and groups from an Active Directory into the SASE platform.
+In this section you can see how to integrate users and groups from an Active Directory into the **_<span style="color: darkblue;">Jimber SASE Platform</span>_**.
 
 >[!WARNING]
 >To enable Active Directory Integration you need at least one on-premise network controller.
@@ -50,7 +50,7 @@ Add the group GeneralUsers to the group JimberSASE_Sync.
 
 #### In the SASE platform
  
-Open the Jimber SASE platform.
+Open the **_<span style="color: darkblue;">Jimber SASE Platform</span>_**.
 
 
 ##### 1. Create a new group with the same name as in the Active Directory, in this example GeneralUsers. 

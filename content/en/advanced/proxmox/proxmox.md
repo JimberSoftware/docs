@@ -1,6 +1,6 @@
 # Creating a Proxmox cluster over Jimber SASE
 
-Using Jimber SASE in combination with Proxmox, it is perfectly possible to create a cluster of the encrypted connection. This cluster can be expanded over multiple locations, beware that you need fast connections if you want features like High Availability to work. Always test out the whole setup before applying in production systems.
+Using **_<span style="color: darkblue;">Jimber SASE</span>_** in combination with Proxmox, it is perfectly possible to create a cluster of the encrypted connection. This cluster can be expanded over multiple locations, beware that you need fast connections if you want features like High Availability to work. Always test out the whole setup before applying in production systems.
 
 ## Install Jimber SASE
 Using CLI, install the Jimber client on all hypervisors you want to add to your cluster. For this example we are using 2 hypervisors:

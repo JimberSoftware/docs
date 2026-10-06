@@ -94,9 +94,9 @@ Select the right network configuration and then click on ![test_connection.png](
 
 ![web_config.png](./screenshots/web_config.png ':size=600')
 
-Go to the `Jimber SASE Platform` and copy the token of the Network Controller you just created. You can find the token by editing the Network Controller with the yellow pencil.
+Go to the **_<span style="color: darkblue;">Jimber SASE Platform</span>_** and copy the token of the Network Controller you just created. You can find the token by editing the Network Controller with the yellow pencil.
 
-![signal_token.png](./screenshots/signal_token.png ':size=500')
+![signal_token.png](./screenshots/signal_token.png ':size=400')
 
 Paste this token into the web configuration of the Network Controller. Then hit next.
 
@@ -110,7 +110,7 @@ When the connection is established you will get the following screen:
 
 ![web_done.png](./screenshots/web_done.png ':size=600')
 
-Confirm that your Network Controller is now online on the `Jimber SASE Platform` under the Network Controller page.
+Confirm that your Network Controller is now online on the **_<span style="color: darkblue;">Jimber SASE Platform</span>_** under the Network Controller page.
 
 ![signal_nc_online.png](./screenshots/signal_nc_online.png ':size=600')
 

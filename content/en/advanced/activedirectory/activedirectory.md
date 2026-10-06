@@ -1,6 +1,6 @@
 # Add an Active Directory to a SASE installation
 
-This guide provides instructions for installing **_Jimber SASE Platform_**  on a domain controller and ensuring reliable communication within the domain.
+This guide provides instructions for installing **_<span style="color: darkblue;">Jimber SASE Platform</span>_**  on a domain controller and ensuring reliable communication within the domain.
 
 ## Table of contents
 
@@ -24,13 +24,13 @@ This guide provides instructions for installing **_Jimber SASE Platform_**  on a
 5. [How to domain join a new use with a domain controller that has secure mode enabled](#_5-step-by-step-guide-domain-joining-a-new-user-with-secure-mode-enabled-on-the-domain-controller)
 
 
-## 1. Install Jimber SASE Client on the Domain Controller
+### 1. Install Jimber SASE Client on the Domain Controller
 
 ### Prerequisites
 
 - #### Disable IPv6
 
-  - It is recommended to turn off IPv6 communication in your network for best practices. The advantages of using IPv6 are minimal, and disabling it simplifies securing the network with the `Jimber SASE Platform`.
+  - It is recommended to turn off IPv6 communication in your network for best practices. The advantages of using IPv6 are minimal, and disabling it simplifies securing the network with the **_<span style="color: darkblue;">Jimber SASE Platform</span>_**.
     
 ![Disable IPv6](./screenshots/ad-disable-ipv6.png ':size=300')
 
@@ -133,7 +133,7 @@ Restart the domain controller now so that all services properly recognize the ne
 
  Go to your SASE Server page and head to Integrations. On the top, you will find a setting to configure the DNS forwarder. Clients that have DNS override enabled will be filtered through our DNS service, but domain-specific queries will still be resolved by the server you specify in this field. You should add the Network Isolation IP of the Domain Controller.
     
-![SASE Server Forwarder](./screenshots/ad-SASE-server-forwarder_2.png ':size=600' )
+![SASE Server Forwarder](./screenshots/ad-signal-server-forwarder_2.png ':size=600' )
 
 - #### Configuring DNS forwarding for the domain controller
   - Open up the Server Manager and open the DNS Manager.
@@ -152,7 +152,7 @@ It is also possible to configure the forwarding DNS servers here:
 > You can configure them how you see fit.
 > Once configured, reboot to ensure all records are properly set by the DC.
 
-## 2. SASE Server Configuration
+### 2. SASE Server Configuration
 
 ### Port configuration on SASE server
 
@@ -178,7 +178,7 @@ It is also possible to configure the forwarding DNS servers here:
 
   A lot of different services and ports can be used throughout AD and the applications you can host on it. Please enable other ports you might need.
   
-![ad-light-allowed-services.png](./screenshots/ad-light-allowed-services.png ':size=900x')
+![ad-light-allowed-services.png](./screenshots/ad-light-allowed-services.png ':size=700')
 
 - #### Domain Client Testing - Enabling Secure Mode
   Enabling secure mode ensures that other devices on your native network will not be able to connect to you. Only connections from Network Isolation will be allowed.<br /><br />
@@ -186,9 +186,9 @@ It is also possible to configure the forwarding DNS servers here:
   In order to properly test domain communication, enable secure mode for the client and domain controller we are now going to test with. It is possible to test without secure mode, but then we cannot guarantee that Network Isolation will be used. It depends on how the domain controller will respond to its NetBIOS and DNS queries.<br /><br />
  
   
-![ad-light-enable-secure-mode.png](./screenshots/ad-light-enable-secure-mode.png ':size=900x')
+![ad-light-enable-secure-mode.png](./screenshots/ad-light-enable-secure-mode.png ':size=700')
 
-## 3. Testing / Verification of Domain Communication
+### 3. Testing / Verification of Domain Communication
 
 
   - Find out which domain you are joined, regardless of the current state of the connection. So this will show the domain regardless of the fact that you have a working domain connection.<br />

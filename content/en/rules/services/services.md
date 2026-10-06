@@ -1,6 +1,7 @@
 # ![](../../images/menu/menu_services.png ':size=28') Services
 
-Within the **_Jimber SASE Platform_**, a **Service** represents a digital resource that can be made accessible to users. These services can include websites, internal portals, remote desktops, CRMs, or any other network-based application.
+Within the **_<span style="color: darkblue;">Jimber SASE Platform</span>_**
+, a **Service** represents a digital resource that can be made accessible to users. These services can include websites, internal portals, remote desktops, CRMs, or any other network-based application.
 
 To make a service available, it must be assigned to a **group** and a **destination** on the [**Policies**](/./rules/firewall-policies/firewall-policies.md) page. Once this is configured, the service will appear in the [**Security Panel**](/./rules/security_panel/security_panel.md) for users who are members of the selected group.
 
@@ -17,11 +18,11 @@ A security panel with multiple services can look like this:
 
 To create a service into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
 
-![Screenshot of the Services page](./screenshots/services.png ':size=700')
+![Screenshot of the Services page](./screenshots/services.png ':size=600')
 
 This will open the following screen where you can enter the specifics of your service:
 
-![Screenshot of the Create Service page](./screenshots/create_service.png ':size=700')
+![Screenshot of the Create Service page](./screenshots/create_service.png ':size=600')
 
 1. **Choose a Name**: Start by giving your service a clear and recognizable name.
 
@@ -68,6 +69,9 @@ You can save the configuration of your service by clicking the `📄Save templat
 
 You can search the list of Services using the search box at the top of the page. This helps you quickly find and manage the service you're looking for.
 
+> [!TIP]
+> You can refresh the list of services by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
+
 ### Update Services
 Services can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
 
@@ -90,5 +94,5 @@ Services can be removed by clicking on the delete icon ![](../../images/icons/ic
 
  You will receive a warning before the service is permanently deleted:
  
-![Screenshot of the deletion warning](./screenshots/delete_service.png ':size=300')
+![Screenshot of the deletion warning](./screenshots/delete_service.png ':size=400')
 

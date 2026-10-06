@@ -10,7 +10,7 @@ Any **admin user** can create a Personal Access Token (PAT) from the **Settings*
 
 2. Click on **Create New PAT**.  
 
-![pat.png](/screenshots/pat.png ':size=800')
+![pat.png](/screenshots/pat.png ':size=600')
 
 
 3. Enter a clear, descriptive **name** for your PAT to help you identify its purpose later.  
@@ -18,15 +18,15 @@ Any **admin user** can create a Personal Access Token (PAT) from the **Settings*
 
 
 
-![create_pat.png](/screenshots/create_pat.png ':size=500')
+![create_pat.png](/screenshots/create_pat.png ':size=300')
 
 5. Once created, the token will be displayed **only once** — make sure to copy it by pressing the copy icon ![](../../images/icons/icon_copy.png ':size=20') and save it securely.
 
-![copy_pat.png](/screenshots/copy_pat.png ':size=800')
+![copy_pat.png](/screenshots/copy_pat.png ':size=600')
 
 6. Your active token will be listed in the section. You can delete the token before the expiry date by pressing the delete icon ![](../../images/icons/icon_delete.png ':size=20') in its row. 
 
-![active_pat.png](/screenshots/active_pat.png ':size=800')
+![active_pat.png](/screenshots/active_pat.png ':size=600')
 
 > [!WARNING]  
 > The token is shown only once at creation. If you lose it, you will need to generate a new one.
@@ -57,7 +57,6 @@ After you create your token, you can use it to authenticate API calls through th
 
 - **Explore API Endpoints:**  
   The Swagger UI lists all available API endpoints grouped by functionality. You can browse and read details about request parameters, response formats, and example calls. For example, this section contains API endpoints for Users:
-
     ![swagger_user.png](/screenshots/swagger_user.png ':size=800')
 
 - **Test API Calls Directly:**  

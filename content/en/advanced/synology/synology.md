@@ -93,7 +93,7 @@ At this point, you can make a Synology Account.
 
 ### Preparation
 
-Go to https://signal.jimber.io/ and add a new server to the `Jimber SASE Platform`. 
+Go to https://sase.jimber.io/ and add a new server to the **_<span style="color: darkblue;">Jimber SASE Platform</span>_**. 
 
 ![create_synology](./screenshots/create_synology.png ':size=500')
 
@@ -106,7 +106,7 @@ By default you will be able to access the NAS through the hostname.
 
 ##### Create a Synology login for Jimber SASE Client
 
-To make it easier to manage, make a new user on the Synology specifically for the installation of the `Jimber SASE Client`. 
+To make it easier to manage, make a new user on the Synology specifically for the installation of the **_<span style="color: darkblue;">Jimber SASE Client</span>_**. 
 
 The user will need the following access & permissions: 
   - administrator
@@ -136,10 +136,10 @@ Enable SSH can be realized in 'Control Panel', 'Terminal & SNMP':
 
 ### Installing Jimber SASE Client on your Synology
 
-Download the latest version for your Synology from [downloads](https://signal.jimber.io/downloads) (no need to log in).
+Download the latest version for your Synology from [downloads](https://sase.jimber.io/downloads) (no need to log in).
 
 > [!INFO]
-> To download another specific version, you can use this [link](https://signal.jimber.io/clients).
+> To download another specific version, you can use this [link](https://sase.jimber.io/clients).
 
 
 <!-- ![Find the correct synology package](head-to-synology-downloads.png ':size=300x')
@@ -149,15 +149,15 @@ Download the latest version for your Synology from [downloads](https://signal.ji
 ![Find the correct synology package](head-to-synology-downloads4.png ':size=500x') -->
 
 ![Find the correct synology package](./screenshots/choose_download_syn.png ':size=200')
-![Find the correct synology package](./screenshots/downloads.png ':size=700') 
+![Find the correct synology package](./screenshots/downloads.png ':size=300') 
 
 You can find the model name of your Synology in the Info Center of the control panel. 
 
-![Find the correct synology package](./screenshots/download_syn_warning.png ':size=500x250') 
+![Find the correct synology package](./screenshots/download_syn_warning.png ':size=300') 
 
 ![Find the correct synology package](./screenshots/info_center.png ':size=500') 
 
-![Find the correct synology package](./screenshots/choose_model.png ':size=500x250') 
+![Find the correct synology package](./screenshots/choose_model.png ':size=300') 
 
 This will download the latest SPK version for your NAS.
 
@@ -183,12 +183,12 @@ In the next window you can choose `Agree`.
 
 You will receive a confirmation that the installation was successful.
 
-![Install the SPK](./screenshots/install_syn_succes.png ':size=500')
+![Install the SPK](./screenshots/install_syn_succes.png ':size=300')
 
 
-In about 30 to 60 seconds you should be able to see that the NAS has been successfully added to the `Jimber SASE Platform`, as indicated by the green dot next to the hostname.
+In about 30 to 60 seconds you should be able to see that the NAS has been successfully added to the **_<span style="color: darkblue;">Jimber SASE Platform</span>_**, as indicated by the green dot next to the hostname.
 
-![NAS online](./screenshots/nas-online.png ':size=500')
+![NAS online](./screenshots/nas-online.png ':size=300')
 
 ##### Most commonly used ports for the Synology NAS
 

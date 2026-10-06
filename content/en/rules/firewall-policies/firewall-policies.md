@@ -1,6 +1,6 @@
 # ![](../../images/menu/menu_policies.png ':size=28') Policies
 
-**Policies** in the **_Jimber SASE Platform_** provide a comprehensive and centralized approach to managing network security rules. Unlike traditional rule-based systems, policies define access permissions by specifying **sources**, **destinations**, and **services** in a unified framework.
+**Policies** in the **_<span style="color: darkblue;">Jimber SASE Platform</span>_** provide a comprehensive and centralized approach to managing network security rules. Unlike traditional rule-based systems, policies define access permissions by specifying **sources**, **destinations**, and **services** in a unified framework.
 
 Policies offer several advantages over legacy rule configurations:
 
@@ -12,7 +12,7 @@ Policies offer several advantages over legacy rule configurations:
 > [!INFO]
 > Policies replace and consolidate functionality from legacy features like Group Traffic, Allow Custom Ports, and Attribute Services, providing a more intuitive and scalable security management approach.
 
-## Prerequisites
+### Prerequisites
 
 Before creating policies, ensure you have the following components configured:
 
@@ -33,36 +33,37 @@ Policies can use any combination of these entity types as sources and destinatio
 - **[User Devices](/./devices/userdevices/userdevices.md)**: End-user devices (laptops, mobiles, etc.)
 - **[Native Networks](/./devices/nativenetworks/index.md)**: Physical network segments
 
-## Create Policy
+### Create Policy
 
 To create a new policy, click the `+ Create new` button in the upper right corner of the Policies page.
 
 ![create_policy.png](./screenshots/create_policy.png ':size=500')
 
-#### Basic Settings
+#### 1. Basic Settings
 
-1. **Policy Name**: Provide a clear, descriptive name for the policy
-2. **Enabled**: Use the toggle to activate or deactivate the policy
-3. **Migration Source** (if applicable): Shows the original rule source if this policy was migrated from legacy configurations
+ 1. **Policy Name**: Provide a clear, descriptive name for the policy
+ 2. **Enabled**: Use the toggle to activate or deactivate the policy
+ 3. **Migration Source** (if applicable): Shows the original rule source if this policy was migrated from legacy configurations.
+    <!-- Click [here](#policy-migration) for migration overview.  -->
 
-#### Configure Services
+#### 2. Configure Services
 
 Select which services this policy will govern. Services define the applications, websites, or resources that users can access through this policy.
 
-1. Click `+ Add Service` to select from available services.
-2. Multiple services can be added to a single policy.
+ 1. Click `+ Add Services` to select from available services.
+ 2. Multiple services can be added to a single policy.
 <!-- 3. Each service shows its configured access rules and destinations. -->
 
 ![add_service.png](./screenshots/add_service.png ':size=500')
 
 
 
-#### Define Sources
+#### 3. Define Sources
 
-Sources represent **who** can access the services defined in this policy. You can add multiple source entities:
+Sources represent **who** can access the services defined in this policy. As already mentioned, you can add multiple source entities:
 
-1. Click `+ Add Source` to open the entity selection dialog
-2. Choose from available entity types:
+ 1. Click `+ Add Sources` to open the entity selection dialog
+ 2. Choose from available entity types:
 
     - **[Groups](/./company/groups/groups.md)**: Select user or device groups
     - **[Servers](/./devices/servers/servers.md)**: Choose specific servers
@@ -72,19 +73,19 @@ Sources represent **who** can access the services defined in this policy. You ca
     - **[User Devices](/./devices/userdevices/userdevices.md)**: Pick specific devices of a user
     - **[Native Networks](/./devices/nativenetworks/index.md)**: Select network segments
 
-3. **Search and Filter**: Use the search function to quickly locate specific entities
+ 3. **Search and Filter**: Use the search function to quickly locate specific entities
 
 ![add_source.png](./screenshots/add_source.png ':size=500')
 
-4. **Multiple Selection**: Add as many source entities as needed for your policy
+ 4. **Multiple Selection**: Add as many source entities as needed for your policy
 
-#### Define Destinations
+#### 4. Define Destinations
 
 Destinations represent **where** the sources can connect. This defines the target resources that sources can access:
 
-1. Click `+ Add Destination` to select destination entities
-2. Choose from the same entity types available for sources
-3. Destinations typically include:
+ 1. Click `+ Add Destinations` to select destination entities
+ 2. Choose from the same entity types available for sources
+ 3. Destinations typically include:
     - **[Servers](/./devices/servers/servers.md)** hosting the services
     - **[Groups](/./company/groups/groups.md)** containing target resources
     - **[Native Networks](/./devices/nativenetworks/index.md)** with accessible resources
@@ -96,14 +97,14 @@ Destinations represent **where** the sources can connect. This defines the targe
 > [!INFO]
 > Don't forget to hit the save-button at the bottom of each window. 
 
-#### Service Entries
+#### 5. Service Entries
 
-1. Click `+ Add Service entry` to enter a service entry.
-2. Choose a name for the entry.
-3. Choose an action.
-4. Enter the correct URL or path the service will need to complete the action.
+ 1. Click `+ Add Service entry` to enter a service entry.
+ 2. Choose a name for the entry.
+ 3. Choose an action.
+ 4. Enter the correct URL or path the service will need to complete the action.
 
-![service_entry.png](./screenshots/service_entry.png ':size=800')
+![service_entry.png](./screenshots/service_entry.png ':size=700')
 
 
 <!-- #### Service Actions
@@ -114,15 +115,15 @@ Configure how the policy handles service access:
 - **Monitor**: Log access attempts for auditing (if available)
 - **Custom Rules**: Define specific port ranges or protocols if needed -->
 
-#### Submit Policy
+#### 6. Submit Policy
 
 Once all sections are configured:
 
-1. Review your policy configuration
-2. Click `➢ Submit` to save and activate the policy
-3. The policy will immediately take effect if enabled
+ 1. Review your policy configuration
+ 2. Click `➢ Submit` to save and activate the policy
+ 3. The policy will immediately take effect if enabled
 
-## Manage Existing Policies
+### Manage Existing Policies
 
 #### View Policy List
 
@@ -136,26 +137,31 @@ The main Policies page displays all configured policies in a table format:
 - **Destinations**: Target entities for access
 - **Enabled**: Current policy status (active/inactive)
 
-![policies_overview.png](./screenshots/policies_overview.png ':size=800')
+![policies_overview.png](./screenshots/policies_overview.png ':size=700')
+
+> [!NOTE]
+>If any of the items are left blank, a yellow exclamation mark will appear in the policy row.
 
 ##### Enable/Disable Policies
 
 Toggle policy status directly from the main table:
 
-1. Click the **Enable/Disable toggle** in the policy row
-2. The policy status updates immediately
-3. Disabled policies stop enforcing access rules but remain configured
+ 1. Click the **Enable/Disable toggle** in the policy row
+ 2. The policy status updates immediately
+ 3. Disabled policies stop enforcing access rules but remain configured
 
+> [!TIP]
+> You can refresh the list of policies by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
 
 #### Update Policies
 
 To modify an existing policy:
 
-1. Click the the edit icon ![](../../images/icons/icon_edit.png ':size=20') in the policy row
-2. Make necessary changes to any section
-3. Click `➢ Submit` to save updates
+ 1. Click the the edit icon ![](../../images/icons/icon_edit.png ':size=20') in the policy row.
+ 2. Make necessary changes to any section
+ 3. Click `➢ Submit` to save updates
 
-![update_policy.png](./screenshots/update_policy.png ':size=800')
+![update_policy.png](./screenshots/update_policy.png ':size=500')
 
 #### Delete Policies
 
@@ -163,12 +169,12 @@ Click the delete icon ![](../../images/icons/icon_delete.png ':size=20') in the 
 
 You will receive a warning before the policy is permanently deleted:
 
-![delete_policy.png](./screenshots/delete_policy.png ':size=300')
+![delete_policy.png](./screenshots/delete_policy.png ':size=400')
 
 > [!WARNING]
 > Deleting a policy immediately removes permanently all associated access rules. Users may lose access to services if no other policies grant permission.
 
-## Policy Migration
+### Policy Migration
 
 The system automatically migrates legacy rules from previous configurations:
 
@@ -178,16 +184,16 @@ The system automatically migrates legacy rules from previous configurations:
 
 Migrated policies show their original source in the Basic Settings section, helping you understand the rule's history and context.
 
-## Best Practices
+### Best Practices
 
-### Policy Organization
+#### Policy Organization
 
 - **Use descriptive names** that clearly indicate the policy's purpose
 - **Group related services** into single policies when appropriate
 - **Separate critical and non-critical** access rules into different policies
 - **Use groups** instead of individual entities where possible
 
-### Security Considerations
+#### Security Considerations
 
 - **Apply the principle of least privilege** - grant only necessary access
 - **Regularly review policies** to ensure they match current business needs
@@ -196,19 +202,19 @@ Migrated policies show their original source in the Basic Settings section, help
 > [!INFO]
 > Policies provide audit trails and logging capabilities, which makes it easier to monitor usage and fix connection problems.
 <!-- making it easier to track access patterns and troubleshoot connectivity issues.-->
-## Troubleshooting
+### Troubleshooting
 
-### Common Issues
+#### Common Issues
 
-**Policy Not Taking Effect**
+ **Policy Not Taking Effect**
 
-- Verify the policy is **enabled**
-- Check that the **Network Controller is running**
-- Ensure **sources and destinations** are correctly configured
-- Confirm **services** are properly defined and active
+  - Verify the policy is **enabled**
+  - Check that the **Network Controller is running**
+  - Ensure **sources and destinations** are correctly configured
+  - Confirm **services** are properly defined and active
 
-**Access Denied Despite Policy**
+ **Access Denied Despite Policy**
 
-- Review **service access rules** for correct port ranges
-- Verify **entity memberships** (users in groups, devices in networks)
-- Ensure **destinations include the target resources**
+  - Review **service access rules** for correct port ranges
+  - Verify **entity memberships** (users in groups, devices in networks)
+  - Ensure **destinations include the target resources**

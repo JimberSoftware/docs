@@ -1,9 +1,9 @@
 # ![](../../images/menu/menu_portforwarding.png ':size=28') Port Forwarding
 
-Port Forwarding allows external users who are not members of the *`Jimber SASE Platform`* to connect to internal services. Access is provided through the public IP of the Cloud Network Controller or the IP address of the On-Premise Network Controller.
+Port Forwarding allows external users who are not members of the **_<span style="color: darkblue;">Jimber SASE Platform</span>_** to connect to internal services. Access is provided through the public IP of the Cloud Network Controller or the IP address of the On-Premise Network Controller.
 
 
-![Screenshot of the Port Forward Rules page](./screenshots/portforward.png ':size=800')
+![Screenshot of the Port Forward Rules page](./screenshots/portforward.png ':size=700')
 
 ### Create Port Forwarding Rule
 
@@ -16,7 +16,7 @@ Click on the `+ Create a new rule` button and follow the steps below:
 5. **Protocol**: Select either TCP or UDP based on your service's requirements.
 6. **Enable or Disable**: Use the slider to turn the rule on or off.
 7. **Optional: Create a Note** ![](../../images/icons/icon_note.png ':size=20'): If the rule has a specific purpose or context, it’s helpful to include a note for clarity.
-8. **Activate Changes**: Once the rule is configured, press the `➢ Submit rules` button to apply your changes.
+8. **Activate Changes**: Once the rule is configured, press the `➢ Submit` button to apply your changes.
 
 > [!TIP]
 > You can download an overview of the port forwarding rules associated to a destination by clicking on the download icon ![](../../images/icons/icon_download.png ':size=20') located above the overview on the right next to the `➢ Submit` button.. The overview will be downloaded as a CSV-file.

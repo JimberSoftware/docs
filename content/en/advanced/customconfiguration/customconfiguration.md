@@ -1,6 +1,6 @@
 # Custom Configuration
 
-To accommodate specific requirements or to address compatibility issues with other software on your system, a custom configuration for the **_Jimber SASE Platform_** may be necessary. This flexibility is especially useful during testing phases or when customizing the software to fit unique operational environments.
+To accommodate specific requirements or to address compatibility issues with other software on your system, a custom configuration for the **_<span style="color: darkblue;">Jimber SASE Platform</span>_** may be necessary. This flexibility is especially useful during testing phases or when customizing the software to fit unique operational environments.
 
 ## Environment Variables
 
@@ -10,7 +10,7 @@ Our software's behavior can be tailored through specific environment variables:
 JIMBER_PORT=13138
 ```
 
-This alters the active listening ports of **_Jimber SASE Platform_**. By setting this, you engage the specified port and the next three sequentially (8000, 8001, 8002, 8003), optimizing port management to suit your network configuration.
+This alters the active listening ports of **_<span style="color: darkblue;">Jimber SASE Platform</span>_**. By setting this, you engage the specified port and the next three sequentially (8000, 8001, 8002, 8003), optimizing port management to suit your network configuration.
 
 The environment variables can be found under Control Panel, System. Scroll down in the right pane and click on Advanced system settings.
 
