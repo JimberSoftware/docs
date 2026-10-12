@@ -90,6 +90,9 @@ The **DNS Override** feature enhances control and security by allowing you to cu
 
 The DNS override feature works by intercepting DNS queries within your network and applying custom resolution rules.
 
+> [!IMPORTANT]
+> On Linux, DNS Override is supported only with **systemd-resolved**.
+
 ##### Configuration Steps
 1. Define hostnames and aliases.
 2. Set up web filtering rules.

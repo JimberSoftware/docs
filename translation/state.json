@@ -227,14 +227,14 @@
                 "devices/servers/servers.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "d27d806ad329dfb1fa63c96e9d6df6b72a02160ff9a3ce9e153d530353fa8814",
-                    "translation_hash": "a8b14e850ce367331574f0d40e58ebb203813d45b428cd180a6f5c5c19d5bb3f"
+                    "source_hash": "a4ef1534c4cfeb8315c243f31d6a4f975418c1f9a72afc3a3d82779d5cf6a0fb",
+                    "translation_hash": "4fb4c2751dae5b4c3b792927acc725a8c813da8fdedc59bf2bcae9bb33eb0915"
                 },
                 "devices/userdevices/userdevices.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "83af1b185404836abdadc67f6a4c8244a631942aecf929dc6506fe6b7cc4a006",
-                    "translation_hash": "b52e2adfaa1eb9194c8316eec7ea0b7bfff2dc869257cc43af9a1335c495533d"
+                    "source_hash": "ffd9598a3b5de308eb07c13a77b9790a1cdae5e3ba97dd8ce87afcef9461b90c",
+                    "translation_hash": "d477da9bd09f24cc442c19b7338806050116a155e80bbe26c769beb4fd5ef25e"
                 },
                 "gettingstarted/index.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -347,8 +347,8 @@
                 "rules/groupconfiguration/groupconfiguration.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "e48edacbcdcc3f1f1bad520e7c13521f34fb4e24687d967a09b1ee6447ea832a",
-                    "translation_hash": "453d5419b345290f757546bcbac58b965f6669dc418532eeb27795bdc16ba4c2"
+                    "source_hash": "bce3d0cabf1dbbb7587a312153d217ba74698b29ca7c9488507b747d1d4a9cbd",
+                    "translation_hash": "90d6ad91737e09f0ba7a9153a747000501386c4e42d2c8ddb109a17f06ea9a52"
                 },
                 "rules/grouptraffic/grouptraffic.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -423,7 +423,7 @@
         }
     },
     "source": {
-        "commit": "42f15021f5dfbc670a1df0e509deec778946dc4f",
+        "commit": "6b934e837b9171f15c12c952b56bab352dfd7c45",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },

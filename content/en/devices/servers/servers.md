@@ -71,6 +71,9 @@ Upon successful installation, the server should display a connected status (indi
 
 ### **Linux**
 
+> [!IMPORTANT]
+> On Linux, DNS Override is supported only with **systemd-resolved**.
+
 > [!INFO] 
 > Support is currently provided for the latest LTS versions of Ubuntu. For other OS distributions, please reach out to our support team.
 

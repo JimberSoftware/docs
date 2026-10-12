@@ -114,6 +114,9 @@ If you're yet to have a login, please reach out to your network administrator to
 
 #### **Linux**
 
+> [!IMPORTANT]
+> On Linux, DNS Override is supported only with **systemd-resolved**.
+
 > [!ATTENTION]
 > Support is currently provided for the latest LTS version of Ubuntu. For other OS distributions, please reach out to our support team.
 
