@@ -44,19 +44,19 @@
   - [Allow Custom Ports (Archived)](./rules/customports/customports)
 
 - [**ADVANCED**](/advanced.md)
-    - [Custom Configuration](./advanced/customconfiguration/customconfiguration)
-    - [Active Directory](./advanced/activedirectory/activedirectory)
-    - [Active Directory Integration](./advanced/ad_integration/ad_integration)
-    - [Microsoft Entra ID Integration](./advanced/entraid/entraid)
-    - [Hypervisor Installation](./advanced/hypervisorinstallation/hypervisorinstallation.md)
-    - [Network Controllers Installation](./advanced/networkcontrollerssetup/SettingUpServer.md)
-        <!-- - [Network Controller in Azure](./advanced/azure/azure.md) -->
-    - [Synology](./advanced/synology/synology)
-    - [Proxmox Cluster](./advanced/proxmox/proxmox)
-    - [Docker Network Controller](./advanced/dockernetworkcontroller/dockernetworkcontroller)
-    - [Logging](./advanced/logging/logging.md)
-    - [Personal Access Tokens](./advanced/personalaccesstokens/personalaccesstokens.md)
-    - [Unified Environment](./advanced/unified_environment/unified_environment.md)
+  - [Custom Configuration](./advanced/customconfiguration/customconfiguration)
+  - [Active Directory](./advanced/activedirectory/activedirectory)
+  <!-- - [Active Directory Integration](./advanced/ad_integration/ad_integration) -->
+  - [Microsoft Entra ID Integration](./advanced/entraid/entraid)
+  - [Hypervisor Installation](./advanced/hypervisorinstallation/hypervisorinstallation.md)
+  - [Network Controllers Installation](./advanced/networkcontrollerssetup/SettingUpServer.md)
+  <!-- - [Network Controller in Azure](./advanced/azure/azure.md) -->
+  - [Synology](./advanced/synology/synology)
+  - [Proxmox Cluster](./advanced/proxmox/proxmox)
+  - [Docker Network Controller](./advanced/dockernetworkcontroller/dockernetworkcontroller)
+  - [Logging](./advanced/logging/logging.md)
+  - [Personal Access Tokens](./advanced/personalaccesstokens/personalaccesstokens.md)
+  - [Unified Environment](./advanced/unified_environment/unified_environment.md)
 - [**MONITORING**](./monitoring/monitoring.md)
 
 - [**CONTACT**](./contact/index)

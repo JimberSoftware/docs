@@ -1,27 +1,30 @@
+File: advanced/activedirectory/activedirectory.md
+
 # Ajouter un Active Directory à une installation SASE
 
 Ce guide fournit des instructions pour installer **_<span style="color: darkblue;">Jimber SASE Platform</span>_** sur un contrôleur de domaine et garantir une communication fiable au sein du domaine.
 
 ## Table des matières
 
-1. [Installer Jimber SASE Client sur le contrôleur de domaine](#install-network-isolation-on-the-domain-controller)
+1. [Installer Jimber SASE Client sur le contrôleur de domaine](#_1-install-network-isolation-on-the-domain-controller)
    - [Prérequis](#prerequisites)
      - [Désactiver IPv6](#disable-ipv6)
      - [Définir des ports RPC statiques](#setting-static-rpc-ports)
      - [Définir l’interface d’écoute du gestionnaire DNS](#set-dns-manager-listening-interface)
    - [Installation](#installation)
-     - [Configurer settings.json](#configuring-settingsjson)
+     <!-- - [Configuration de settings.json](#configuring-settingsjson) -->
      - [Vérifier les paramètres DNS et la connectivité](#verify-correct-dns-settings-and-connectivity)
-     - [Configurer le transfert DNS vers le serveur SASE](#configuring-dns-forwarding-for-SASE-server)
+     - [Configurer le transfert DNS pour le serveur SASE](#configuring-dns-forwarding-for-SASE-server)
      - [Configurer le transfert DNS pour le contrôleur de domaine](#configuring-dns-forwarding-for-the-domain-controller)
-2. [Configuration du serveur SASE](#SASE-server-configuration)
-   - [Configuration des ports sur le serveur SASE](#port-configuration-on-SASE-server)
+2. [Configuration du serveur SASE](#_2-sase-server-configuration)
+  <!--  - [Configuration des ports sur le serveur SASE](#port-configuration-on-SASE-server)
      - [Ports requis](#required-ports)
      - [Ports facultatifs](#optional-ports)
-   - [Test du client de domaine : activation du mode sécurisé](#domain-client-testing-enabling-secure-mode)
-3. [Test / vérification de la communication avec le domaine](#testing--verification-of-domain-communication)
-4. [Comment mapper des partages SMB](#mapping-smb-shares)
-5. [Comment joindre un nouveau compte à un domaine avec un contrôleur de domaine dont le mode sécurisé est activé](#_5-step-by-step-guide-domain-joining-a-new-user-with-secure-mode-enabled-on-the-domain-controller)
+   - [Test du client de domaine - Activation du mode sécurisé](#domain-client-testing-enabling-secure-mode) -->
+3. [Test du client de domaine](#_3-domain-client-testing)
+4. [Test / vérification de la communication du domaine](#_4-testing-verification-of-domain-communication)
+5. [Comment mapper des partages SMB](#_5-mapping-smb-shares)
+6. [Comment joindre un nouvel utilisateur à un domaine avec un contrôleur de domaine dont le mode sécurisé est activé](#_6-step-by-step-guide-domain-joining-a-new-user-with-secure-mode-enabled-on-the-domain-controller)
 
 
 ### 1. Installer Jimber SASE Client sur le contrôleur de domaine
@@ -30,17 +33,17 @@ Ce guide fournit des instructions pour installer **_<span style="color: darkblue
 
 - #### Désactiver IPv6
 
-  - Il est recommandé de désactiver les communications IPv6 sur votre réseau, conformément aux bonnes pratiques. Les avantages de l’utilisation d’IPv6 sont minimes et sa désactivation simplifie la sécurisation du réseau avec **_<span style="color: darkblue;">Jimber SASE Platform</span>_**.
+  - Il est recommandé de désactiver la communication IPv6 sur votre réseau, conformément aux bonnes pratiques. IPv6 présente peu d’avantages, et sa désactivation simplifie la sécurisation du réseau avec la **_<span style="color: darkblue;">Jimber SASE Platform</span>_**.
     
 ![Désactiver IPv6](./screenshots/ad-disable-ipv6.png ':size=300')
 
 - #### Définir des ports RPC statiques
 
-  Pour attribuer une petite plage de ports RPC statiques, veuillez modifier les valeurs suivantes dans le registre. 
+  Pour définir une petite plage de ports RPC statiques, modifiez les valeurs suivantes dans le Registre. 
   >[!NOTE]
   > Documentation Microsoft : [Configurer l’allocation dynamique des ports RPC avec des pare-feu](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/configure-rpc-dynamic-port-allocation-with-firewalls#example)
 
- Vous pouvez télécharger [ici](https://docs.jimber.io/advanced/activedirectory/Rpc.reg) un fichier .reg permettant d’appliquer automatiquement les modifications.
+ Vous pouvez télécharger [ici](https://docs.jimber.io/advanced/activedirectory/Rpc.reg) un fichier .reg qui applique automatiquement les modifications.
     
  Chemin de la clé : HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Rpc
   
@@ -49,32 +52,32 @@ Ce guide fournit des instructions pour installer **_<span style="color: darkblue
 - #### Définir l’interface d’écoute du gestionnaire DNS
 
 > [!IMPORTANT]
-> Mode sécurisé uniquement — interrompt la fonctionnalité de communication du domaine sur le réseau natif !
+> Mode sécurisé uniquement - Interrompt la fonctionnalité de communication du domaine sur le réseau natif !
 
-  Lorsque vous activez le mode sécurisé, veillez à ce que l’écoute se fasse sur la bonne interface afin que les adresses IP liées au domaine soient correctement résolues lors des requêtes adressées à l’AD. Remplacez l’adresse IP ci-dessous par l’adresse IP qui vous a été attribuée via Network Isolation.
+  Lorsque vous activez le mode sécurisé, veillez à ce que la bonne interface soit sélectionnée pour l’écoute afin que les adresses IP liées au domaine soient correctement résolues lorsque l’AD est interrogé. Remplacez l’adresse IP ci-dessous par l’adresse IP qui vous est attribuée par Network Isolation.
   ```powershell
   $DnsServerSettings = Get-DnsServerSetting -ALL
   $DnsServerSettings.ListeningIpAddress = @("198.18.0.7")
   Set-DNSServerSetting $DnsServerSettings
   ```
   > [!NOTE]
-  > Ce paramètre n’est pas permanent. Au redémarrage du contrôleur de domaine ou du serveur, les paramètres reprendront leurs valeurs par défaut.
+  > Ce paramètre n’est pas permanent. Au redémarrage du contrôleur de domaine ou du serveur, il reprend sa valeur par défaut.
      
 
 
 ### Installation
 
-Le programme d’installation est disponible [ici](https://SASE.jimber.io/clients/windows-server-latest.msi). Pour procéder à l’installation, il suffit d’exécuter le fichier MSI en tant qu’administrateur.
+Vous trouverez le programme d’installation [ici](https://SASE.jimber.io/clients/windows-server-latest.msi). Pour l’installer, il suffit d’exécuter le fichier MSI en tant qu’administrateur.
 
-Au démarrage de Jimber SASE, une boîte de dialogue apparaît : 
+Au démarrage de Jimber SASE, une boîte de dialogue s’affiche :
 
 ![jimber_server_settings.png](./screenshots/jimber_server_settings.png ':size=400')
 
 Le jeton requis peut être récupéré dans l’onglet « Servers » de l’interface du serveur SASE. Sélectionnez et modifiez le serveur concerné pour le trouver.
 
-![token.png](./screenshots/token.png ':size=400')
+![token.png](./screenshots/token.png ':size=500')
 
-Après avoir renseigné le jeton et cliqué sur le bouton d’envoi, une fenêtre contextuelle indique que la configuration du serveur a été envoyée et que le service a été redémarré :
+Après avoir saisi le jeton et cliqué sur le bouton d’envoi, une fenêtre contextuelle indique que la configuration du serveur a été envoyée et que le service a été redémarré :
 
 
 ![settings_updated.png](./screenshots/settings_updated.png ':size=300')
@@ -83,8 +86,8 @@ Après avoir renseigné le jeton et cliqué sur le bouton d’envoi, une fenêtr
 <!-- - #### Configuration de settings.json
 
   - Pour configurer correctement Network Isolation afin qu’il se connecte au serveur SASE, nous devons modifier le fichier de paramètres.
-    Une fois le logiciel installé, ouvrez le fichier suivant : "C:\Program Files\Jimber\settings.json" dans le Bloc-notes ou tout autre éditeur.
-    Par défaut, il contient uniquement une clé privée et une clé publique.
+    Une fois l’installation terminée, ouvrez le fichier suivant : "C:\Program Files\Jimber\settings.json" dans le Bloc-notes ou un autre éditeur.
+    Par défaut, il ne contient qu’une clé privée et une clé publique.
 
   ```json
   {
@@ -93,7 +96,7 @@ Après avoir renseigné le jeton et cliqué sur le bouton d’envoi, une fenêtr
   }
   ```
 
-  Nous devons ajouter le jeton, que vous trouverez en modifiant le serveur dans SASE.
+  Nous devons ajouter le jeton, que vous trouverez en modifiant le serveur sur SASE.
 
     
 ![ad-light-edit-server.png](/ad-light-edit-server.png ':size=600x')
@@ -109,10 +112,10 @@ Après avoir renseigné le jeton et cliqué sur le bouton d’envoi, une fenêtr
   ```
 
 > [!WARNING]
-> **Attention !** N’oubliez pas la virgule à la fin des lignes et les guillemets !
+> **Attention** ! N’oubliez pas la virgule en fin de ligne et les guillemets !
 Veillez à enregistrer les modifications apportées au fichier. -->
 
-  Veuillez accéder aux services sur votre contrôleur de domaine et redémarrer le `Jimber SASE service`.
+  Accédez aux services sur votre contrôleur de domaine et redémarrez le **_<span style="color: darkblue;">Jimber SASE Service</span>_**.
 
 
 ![Redémarrage du service](./screenshots/ad-restarting-the-service.png ':size=500')
@@ -121,17 +124,17 @@ Veillez à enregistrer les modifications apportées au fichier. -->
 
   Vérifiez que vos paramètres DNS sont corrects. Vous devriez maintenant être connecté à Network Isolation.
   >[!WARNING]
-  >Il est possible que vos paramètres DNS aient été réinitialisés après la configuration du fichier settings.json. Dans ce cas, vous devrez peut-être saisir manuellement les informations DNS correctes.
+  >Il est possible que vos paramètres DNS aient été réinitialisés après la configuration du fichier settings.json. Dans ce cas, vous devrez peut-être saisir à nouveau manuellement les informations DNS correctes.
 
-  Une icône de connexion verte à côté du nom de votre serveur DC indique que celui-ci est connecté.
+  Une icône de connexion verte à côté du nom de votre serveur DC indique qu’il est connecté.
   
 ![ad-light-connected.png](./screenshots/ad-light-connected.png ':size=500')
 
 Redémarrez maintenant le contrôleur de domaine afin que tous les services reconnaissent correctement la nouvelle interface réseau de Network Isolation.
 
-- #### Configurer le transfert DNS vers le serveur SASE
+- #### Configurer le transfert DNS pour le serveur SASE
 
- Accédez à la page de votre serveur SASE, puis à la section Integrations. En haut de la page, vous trouverez un paramètre permettant de configurer le redirecteur DNS. Les clients pour lesquels le remplacement DNS est activé seront redirigés vers notre service DNS, mais les requêtes propres au domaine seront toujours résolues par le serveur que vous indiquez dans ce champ. Vous devez ajouter l’adresse IP Network Isolation du contrôleur de domaine.
+ Accédez à la page de votre serveur SASE, puis ouvrez la section Integrations. En haut, vous trouverez un paramètre permettant de configurer le redirecteur DNS. Les clients pour lesquels le remplacement DNS est activé seront filtrés par notre service DNS, mais les requêtes propres au domaine seront toujours résolues par le serveur que vous indiquez dans ce champ. Vous devez ajouter l’adresse IP Network Isolation du contrôleur de domaine.
     
 ![Redirecteur du serveur SASE](./screenshots/ad-signal-server-forwarder_2.png ':size=600' )
 
@@ -144,21 +147,23 @@ Redémarrez maintenant le contrôleur de domaine afin que tous les services reco
     
 ![Propriétés DNS](./screenshots/ad-dns-properties.png ':size=400')
 
-Il est également possible de configurer les serveurs DNS de transfert ici : 
+Vous pouvez également configurer ici les serveurs DNS de transfert :
     
 ![Redirecteurs DNS](./screenshots/ad-dns-forwarders.png ':size=300')
 
 > [!NOTE]
-> Vous pouvez les configurer comme bon vous semble.
-> Une fois la configuration terminée, redémarrez le contrôleur de domaine pour vous assurer que tous les enregistrements sont correctement définis.
+> Vous pouvez les configurer comme vous le souhaitez.
+> Une fois la configuration terminée, redémarrez le système pour vous assurer que le DC définit correctement tous les enregistrements.
 
 ### 2. Configuration du serveur SASE
 
-### Configuration des ports sur le serveur SASE
+Vous trouverez [ici](/./rules/groupconfiguration/groupconfiguration.md) des instructions pour configurer davantage le serveur.
+
+<!-- ### Configuration des ports sur le serveur SASE
 
 - #### Ports requis
 
-  - Protocole : ICMP — autoriser
+  - Protocole : ICMP - autoriser
   - Port TCP/UDP 53 : DNS
   - Port TCP/UDP 88 : authentification Kerberos
   - Port TCP/UDP 135 : RPC
@@ -168,7 +173,7 @@ Il est également possible de configurer les serveurs DNS de transfert ici :
   - Port TCP/UDP 464 : changement de mot de passe Kerberos
   - Port TCP/UDP 636 : LDAP SSL
   - Port TCP/UDP 3268-3269 : catalogue global
-  - Port TCP/UDP 50000-51000 : ports RPC aléatoires (Remarque : la modification du registre doit être appliquée !)
+  - Port TCP/UDP 50000-51000 : ports RPC aléatoires (Remarque : la modification du Registre doit être appliquée !)
 
 - #### Ports facultatifs
 
@@ -176,55 +181,61 @@ Il est également possible de configurer les serveurs DNS de transfert ici :
   - Port TCP 443 : HTTPS
   - Port TCP 49443 : ADFS
 
-  De nombreux services et ports différents peuvent être utilisés dans AD et dans les applications que vous pouvez y héberger. Veuillez activer les autres ports dont vous pourriez avoir besoin.
+  De nombreux services et ports différents peuvent être utilisés dans AD et par les applications que vous pouvez y héberger. Veuillez activer les autres ports dont vous pourriez avoir besoin.
   
-![ad-light-allowed-services.png](./screenshots/ad-light-allowed-services.png ':size=700')
+![ad-light-allowed-services.png](./screenshots/ad-light-allowed-services.png ':size=700') -->
 
-- #### Test du client de domaine : activation du mode sécurisé
-  L’activation du mode sécurisé empêche les autres appareils de votre réseau natif de se connecter à votre appareil. Seules les connexions provenant de Network Isolation seront autorisées.<br /><br />
+<!-- - #### Test du client de domaine - Activation du mode sécurisé -->
+### 3. Test du client de domaine
 
-  Pour tester correctement la communication avec le domaine, activez le mode sécurisé sur le client et le contrôleur de domaine que nous allons tester. Il est possible d’effectuer le test sans activer le mode sécurisé, mais nous ne pouvons alors pas garantir que Network Isolation sera utilisé. Cela dépend de la manière dont le contrôleur de domaine répondra aux requêtes NetBIOS et DNS.<br /><br />
- 
-  
-![ad-light-enable-secure-mode.png](./screenshots/ad-light-enable-secure-mode.png ':size=700')
+Pour tester correctement la communication du domaine, activez le mode sécurisé pour le client et le contrôleur de domaine utilisés pour ce test. Il est possible d’effectuer le test sans le mode sécurisé, mais il est alors impossible de garantir que Network Isolation sera utilisé. Cela dépend de la manière dont le contrôleur de domaine répondra aux requêtes NetBIOS et DNS.
 
-### 3. Test / vérification de la communication avec le domaine
+Vous trouverez [ici](/./company/users/users) la procédure d’activation du mode sécurisé pour un client.
 
 
-  - Déterminez à quel domaine vous êtes joint, quel que soit l’état actuel de la connexion. Cette commande affiche donc le domaine même si votre connexion au domaine ne fonctionne pas.<br />
+<!--   L’activation du mode sécurisé garantit que les autres appareils de votre réseau natif ne pourront pas se connecter à vous. Seules les connexions provenant de Network Isolation seront autorisées.<br /><br />
+
+  Pour tester correctement la communication du domaine, activez le mode sécurisé pour le client et le contrôleur de domaine utilisés pour ce test. Il est possible d’effectuer le test sans le mode sécurisé, mais nous ne pouvons alors pas garantir que Network Isolation sera utilisé. Cela dépend de la manière dont le contrôleur de domaine répondra aux requêtes NetBIOS et DNS.<br /><br /> -->
+   
+<!-- ![ad-light-enable-secure-mode.png](./screenshots/ad-light-enable-secure-mode.png ':size=700') -->
+
+### 4. Test / vérification de la communication du domaine
+
+
+  - Découvrez à quel domaine vous êtes joint, quel que soit l’état actuel de la connexion. Cette commande affiche donc le domaine, que votre connexion au domaine soit fonctionnelle ou non.<br />
   
   	Shell : **Invite de commandes (cmd.exe)**
     ```
     systeminfo | findstr "Domain:"
     ```
 
-  - Résultat attendu : 
+  - Résultat attendu :
     ```
     Domain:                    isolationcorp.local
     ```
     
     
-  - Déterminez à quel domaine vous êtes joint, quel que soit l’état actuel de la connexion. Cette commande affiche donc le domaine même si votre connexion au domaine ne fonctionne pas.<br />  
+  - Découvrez à quel domaine vous êtes joint, quel que soit l’état actuel de la connexion. Cette commande affiche donc le domaine, que votre connexion au domaine soit fonctionnelle ou non.<br />  
   
   	Shell : **Powershell (powershell.exe)**
     ```cmd
     $env:USERDOMAIN
     ```
 
-  - Résultat attendu : 
+  - Résultat attendu :
     ``` info
     ISOLATIONCORP
     ```
     
-  - Récupérez les informations pertinentes sur le domaine. **Cette commande ne s’exécute que si la communication avec le domaine est établie.** Elle restera bloquée si la communication n’est pas établie ou si certains services ne sont pas disponibles.<br />  
+  - Récupérez les informations pertinentes sur le domaine. **Cette commande ne s’exécute que si la communication avec le domaine est établie**. Elle restera bloquée si aucune communication n’est possible ou si certains services ne sont pas disponibles.<br />  
   
   	Shell : **Powershell (powershell.exe)**
-    Remarque : l’exécution de cette commande peut prendre une minute.
+    Remarque : l’exécution de cette commande peut prendre une minute
     ```cmd
     gpresult /r
     ```
 
-  - Résultat attendu : 
+  - Résultat attendu :
     ``` info
       Microsoft (R) Windows (R) Operating System Group Policy Result tool v2.0
       © Microsoft Corporation. All rights reserved.
@@ -277,14 +288,14 @@ Il est également possible de configurer les serveurs DNS de transfert ici :
 
     ```
 
-  - Déterminez à quel domaine vous êtes joint, quel que soit l’état actuel de la connexion. Cette commande affiche donc le domaine même si votre connexion au domaine ne fonctionne pas.<br />  
+  - Découvrez à quel domaine vous êtes joint, quel que soit l’état actuel de la connexion. Cette commande affiche donc le domaine, que votre connexion au domaine soit fonctionnelle ou non.<br />  
   
   	Shell : **Powershell (powershell.exe)**
     ```cmd
     net config workstation
     ```
 
-  - Résultat attendu : 
+  - Résultat attendu :
     ``` info
     Computer name                        \\MATHIAS-PC
     Full Computer name                   MATHIAS-PC.isolationcorp.local
@@ -307,14 +318,14 @@ Il est également possible de configurer les serveurs DNS de transfert ici :
     ```
     
     
-  - Déterminez à quel domaine vous êtes joint, quel que soit l’état actuel de la connexion. Cette commande affiche donc le domaine même si votre connexion au domaine ne fonctionne pas.<br />  
+  - Découvrez à quel domaine vous êtes joint, quel que soit l’état actuel de la connexion. Cette commande affiche donc le domaine, que votre connexion au domaine soit fonctionnelle ou non.<br />  
   
   	Shell : **Powershell (powershell.exe)**
     ```cmd
     nltest /dsgetdc:$env:USERDOMAIN
     ```
 
-  - Résultat attendu : 
+  - Résultat attendu :
     ``` info
                DC: \\DC
           Address: \\198.18.0.7
@@ -328,16 +339,16 @@ Il est également possible de configurer les serveurs DNS de transfert ici :
 
     ```
 
-Consultez la section Configuration IP de Windows. Elle contient également des informations générales sur le domaine. Aucune connexion active n’est nécessaire pour récupérer ces données. 
+Consultez la section Configuration IP de Windows. Elle contient également des informations générales sur le domaine. Une connexion active n’est pas nécessaire pour récupérer ces données.
 
-  - Déterminez à quel domaine vous êtes joint, quel que soit l’état actuel de la connexion. Cette commande affiche donc le domaine même si votre connexion au domaine ne fonctionne pas.<br />  
+  - Découvrez à quel domaine vous êtes joint, quel que soit l’état actuel de la connexion. Cette commande affiche donc le domaine, que votre connexion au domaine soit fonctionnelle ou non.<br />  
   
   	Shell : **Invite de commandes (cmd.exe) / Powershell (powershell.exe)**
      ```cmd
     ipconfig/all
     ```
 
-  - Résultat attendu : 
+  - Résultat attendu :
     ```cmd
 
     Windows IP Configuration
@@ -380,43 +391,43 @@ Consultez la section Configuration IP de Windows. Elle contient également des i
        NetBIOS over Tcpip. . . . . . . . : Enabled
     ```
 
-### 4. Mapper des partages SMB
+### 5. Mapper des partages SMB
 
-  - Le mappage de partages SMB peut présenter des difficultés, notamment lorsque vous tentez de réutiliser des mappages existants associés à des noms de domaine. Le problème vient du fait que Windows met ces entrées en cache et continue d’essayer de se connecter à des partages obsolètes. Même si des adresses IP correctes de Network Isolation apparaissent lorsque le nom de domaine est résolu dans l’invite de commandes ou dans un navigateur, Windows a tendance à conserver les anciennes associations.
+  - Le mappage de partages SMB peut présenter des difficultés, en particulier lorsque vous tentez de réutiliser des mappages existants associés à des noms de domaine. Le problème vient du fait que Windows met ces entrées en cache et continue d’essayer de se connecter à des partages obsolètes. Même si les adresses IP correctes de Network Isolation s’affichent lorsque vous résolvez le nom de domaine dans l’invite de commandes ou dans un navigateur, Windows tend à conserver les anciennes associations.
 
-   - Pour contourner ce problème, il est conseillé de supprimer puis de mapper à nouveau les partages SMB une fois la connexion fonctionnelle, ou de modifier les stratégies et scripts existants. Vous vous assurez ainsi que cette fonctionnalité essentielle est fournie de façon fluide et automatique.
+   - Pour contourner ce problème, il est conseillé de supprimer puis de remapper les partages SMB une fois qu’une connexion fonctionnelle est établie, ou de modifier les stratégies et scripts existants. Vous garantirez ainsi la mise à disposition automatique et fluide de cette fonctionnalité essentielle.
 
-### 5. Guide étape par étape : joindre au domaine un nouvel utilisateur lorsque le mode sécurisé est activé sur le contrôleur de domaine
+### 6. Guide étape par étape : joindre un nouvel utilisateur à un domaine lorsque le mode sécurisé est activé sur le contrôleur de domaine
 
-Pour joindre un nouvel utilisateur à un domaine lorsque le mode sécurisé est activé sur le contrôleur de domaine, suivez précisément les étapes ci-dessous afin de garantir la réussite de la configuration.
+Pour joindre un nouvel utilisateur à un domaine lorsque le mode sécurisé est activé sur le contrôleur de domaine, il faut suivre des étapes précises afin de garantir la réussite de la configuration. Suivez attentivement ces étapes pour terminer la procédure.
 
 #### Étape 1 : Vérifier que l’utilisateur a été créé
-Avant de poursuivre, assurez-vous que le nouveau compte utilisateur a été créé sur le contrôleur de domaine.
+Avant de continuer, assurez-vous que le nouveau compte utilisateur a été créé sur le contrôleur de domaine.
 
 #### Étape 2 : Se connecter en tant qu’administrateur local
 1. **Connectez-vous à l’appareil** en tant qu’**administrateur local**.
 
-#### Étape 3 : Installer et configurer Jimber SASE
-1. Installez le logiciel Network Isolation s’il ne l’est pas déjà.
-2. **Configurez Network Isolation** conformément aux politiques de votre organisation.
+#### Étape 3 : Installer et configurer Jimber SASE Client
+1. Installez **_<span style="color: darkblue;">Jimber SASE Client</span>_** s’il n’est pas déjà installé.
+2. **Configurez** **_<span style="color: darkblue;">Jimber SASE Client</span>_** conformément aux politiques de votre organisation.
 
 
 #### Étape 4 : Joindre l’utilisateur au domaine
 1. **Joignez l’utilisateur au domaine.**
-2. **Redémarrez l’appareil** une fois le processus de jonction au domaine terminé.
+2. **Redémarrez l’appareil** une fois la procédure de jonction au domaine terminée.
 
 
 #### Étape 5 : Se reconnecter en tant qu’administrateur local
-1. **Connectez-vous à nouveau à l’appareil** en tant qu’**administrateur local**.
-2. Démarrez Network Isolation.
+1. **Connectez-vous de nouveau à l’appareil** en tant qu’**administrateur local**.
+2. Démarrez **_<span style="color: darkblue;">Jimber SASE Client</span>_**.
 
 #### Étape 6 : Changer d’utilisateur ou verrouiller l’appareil
-1. **Changez d’utilisateur** ou **verrouillez l’appareil**. **Ne vous déconnectez pas.**
+**Changez d’utilisateur** ou **verrouillez l’appareil**. **Ne vous déconnectez pas.**
 
 #### Étape 7 : Se connecter avec l’utilisateur joint au domaine
 1. **Connectez-vous avec l’utilisateur joint au domaine**.
-2. Terminez le processus de première connexion.
+2. Terminez la procédure de première connexion.
 3. **Redémarrez l’appareil** une fois la première connexion terminée.
 
 
-En suivant ces étapes, le nouvel utilisateur sera correctement joint au domaine alors que le mode sécurisé est activé sur le contrôleur de domaine.
+En suivant ces étapes, le nouvel utilisateur sera correctement joint au domaine, avec le mode sécurisé activé sur le contrôleur de domaine.

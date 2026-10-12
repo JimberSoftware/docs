@@ -4,24 +4,25 @@ This guide provides instructions for installing **_<span style="color: darkblue;
 
 ## Table of contents
 
-1. [Install Jimber SASE Client on the Domain Controller](#install-network-isolation-on-the-domain-controller)
+1. [Install Jimber SASE Client on the Domain Controller](#_1-install-network-isolation-on-the-domain-controller)
    - [Prerequisites](#prerequisites)
      - [Disable IPv6](#disable-ipv6)
      - [Setting Static RPC Ports](#setting-static-rpc-ports)
      - [Set DNS Manager Listening Interface](#set-dns-manager-listening-interface)
    - [Installation](#installation)
-     - [Configuring settings.json](#configuring-settingsjson)
+     <!-- - [Configuring settings.json](#configuring-settingsjson) -->
      - [Verify Correct DNS Settings and Connectivity](#verify-correct-dns-settings-and-connectivity)
      - [Configuring dns forwarding for SASE server](#configuring-dns-forwarding-for-SASE-server)
      - [Configuring dns forwarding for the domain controller](#configuring-dns-forwarding-for-the-domain-controller)
-2. [SASE Server Configuration](#SASE-server-configuration)
-   - [Port configuration on SASE server](#port-configuration-on-SASE-server)
+2. [SASE Server Configuration](#_2-sase-server-configuration)
+  <!--  - [Port configuration on SASE server](#port-configuration-on-SASE-server)
      - [Required ports](#required-ports)
      - [Optional ports](#optional-ports)
-   - [Domain Client Testing - Enabling Secure Mode](#domain-client-testing-enabling-secure-mode)
-3. [Testing / Verification of Domain Communication](#testing--verification-of-domain-communication)
-4. [How to Map SMB shares](#mapping-smb-shares)
-5. [How to domain join a new use with a domain controller that has secure mode enabled](#_5-step-by-step-guide-domain-joining-a-new-user-with-secure-mode-enabled-on-the-domain-controller)
+   - [Domain Client Testing - Enabling Secure Mode](#domain-client-testing-enabling-secure-mode) -->
+3. [Domain Client Testing](#_3-domain-client-testing)
+4. [Testing / Verification of Domain Communication](#_4-testing-verification-of-domain-communication)
+5. [How to Map SMB shares](#_5-mapping-smb-shares)
+6. [How to domain join a new use with a domain controller that has secure mode enabled](#_6-step-by-step-guide-domain-joining-a-new-user-with-secure-mode-enabled-on-the-domain-controller)
 
 
 ### 1. Install Jimber SASE Client on the Domain Controller
@@ -72,7 +73,7 @@ Starting Jimber SASE, a dialog box will emerge:
 
 The required token can be retrieved from the 'Servers' tab within the SASE Server Interface. Simply select and edit the  correct server to find it.
 
-![token.png](./screenshots/token.png ':size=400')
+![token.png](./screenshots/token.png ':size=500')
 
 After filling in the token and pressing the submit button, a pop-up appears stating that the server configuration has been submitted and the service has been restarted:
 
@@ -112,7 +113,7 @@ After filling in the token and pressing the submit button, a pop-up appears stat
 > **Attention**! Don't forget the comma at the end of lines and the quotation marks!
 Ensure to save the changes made to the file. -->
 
-  Please go to the services on your domain controller and restart the `Jimber SASE service`.
+  Please go to the services on your domain controller and restart the **_<span style="color: darkblue;">Jimber SASE Service</span>_**.
 
 
 ![Restarting the Service](./screenshots/ad-restarting-the-service.png ':size=500')
@@ -154,7 +155,9 @@ It is also possible to configure the forwarding DNS servers here:
 
 ### 2. SASE Server Configuration
 
-### Port configuration on SASE server
+You can find instructions on how to further configure the server [here](/./rules/groupconfiguration/groupconfiguration.md).
+
+<!-- ### Port configuration on SASE server
 
 - #### Required ports
 
@@ -178,17 +181,23 @@ It is also possible to configure the forwarding DNS servers here:
 
   A lot of different services and ports can be used throughout AD and the applications you can host on it. Please enable other ports you might need.
   
-![ad-light-allowed-services.png](./screenshots/ad-light-allowed-services.png ':size=700')
+![ad-light-allowed-services.png](./screenshots/ad-light-allowed-services.png ':size=700') -->
 
-- #### Domain Client Testing - Enabling Secure Mode
-  Enabling secure mode ensures that other devices on your native network will not be able to connect to you. Only connections from Network Isolation will be allowed.<br /><br />
+<!-- - #### Domain Client Testing - Enabling Secure Mode -->
+### 3. Domain Client Testing
 
-  In order to properly test domain communication, enable secure mode for the client and domain controller we are now going to test with. It is possible to test without secure mode, but then we cannot guarantee that Network Isolation will be used. It depends on how the domain controller will respond to its NetBIOS and DNS queries.<br /><br />
- 
-  
-![ad-light-enable-secure-mode.png](./screenshots/ad-light-enable-secure-mode.png ':size=700')
+In order to properly test domain communication, enable secure mode for the client and domain controller you are now going to test with. It is possible to test without secure mode, but then it cannot be guaranteed that Network Isolation will be used. It depends on how the domain controller will respond to its NetBIOS and DNS queries.
 
-### 3. Testing / Verification of Domain Communication
+How to enable secure mode for a client, you can find [here](/./company/users/users).
+
+
+<!--   Enabling secure mode ensures that other devices on your native network will not be able to connect to you. Only connections from Network Isolation will be allowed.<br /><br />
+
+  In order to properly test domain communication, enable secure mode for the client and domain controller we are now going to test with. It is possible to test without secure mode, but then we cannot guarantee that Network Isolation will be used. It depends on how the domain controller will respond to its NetBIOS and DNS queries.<br /><br /> -->
+   
+<!-- ![ad-light-enable-secure-mode.png](./screenshots/ad-light-enable-secure-mode.png ':size=700') -->
+
+### 4. Testing / Verification of Domain Communication
 
 
   - Find out which domain you are joined, regardless of the current state of the connection. So this will show the domain regardless of the fact that you have a working domain connection.<br />
@@ -380,38 +389,38 @@ Check the Windows IP Configuration section. This section also contains some gene
        NetBIOS over Tcpip. . . . . . . . : Enabled
     ```
 
-### 4. Mapping SMB shares
+### 5. Mapping SMB shares
 
   - The process of mapping SMB shares can present challenges, particularly when attempting to reuse existing mappings tied to domain names. The intricacy arises from Windows caching these entries and persistently attempting to connect to outdated shares. Despite accurate network isolation IP addresses appearing when resolving the domain name in the command prompt or a browser, Windows tends to cling to the old associations.
 
    - To circumvent this issue, it is advisable to either remove and remap the SMB shares once a functional connection is established or to modify existing policies and scripts. By doing so, you ensure the seamless and automatic provision of this essential functionality.
 
-### 5. Step-by-Step Guide: Domain Joining a New User with Secure Mode Enabled on the Domain Controller
+### 6. Step-by-Step Guide: Domain Joining a New User with Secure Mode Enabled on the Domain Controller
 
 Joining a new user to a domain with secure mode enabled on the domain controller requires precise steps to ensure successful configuration. Follow these steps carefully to complete the process.
 
-#### Step 1: Ensure User is Created
+#### Step 1: Ensure User is created
 Before proceeding, make sure that the new user account is created in the domain controller.
 
-#### Step 2: Login as Local Administrator
+#### Step 2: Login as local Administrator
 1. **Log in to the device** as a **local administrator**.
 
-#### Step 3: Install and Configure Jimber SASE
-1. Install network isolation software if it’s not already installed.
-2. **Configure network isolation** according to your organization's policies.
+#### Step 3: Install and Configure Jimber SASE Client
+1. Install **_<span style="color: darkblue;">Jimber SASE Client</span>_** if not already installed.
+2. **Configure** **_<span style="color: darkblue;">Jimber SASE Client</span>_** according to your organization's policies.
 
 
-#### Step 4: Domain Join the User
+#### Step 4: Domain join the User
 1. **Domain join the user.**
 2. **Restart the device** after the domain join process is complete.
 
 
-#### Step 5: Login as Local Administrator Again
+#### Step 5: Login as local Administrator again
 1. **Log in to the device** as a **local administrator** once more.
-2. Start network isolation.
+2. Start **_<span style="color: darkblue;">Jimber SASE Client</span>_**.
 
-#### Step 6: Switch User or Lock the Device
-1. **Switch user** or **lock the device**. **Do not log out.**
+#### Step 6: Switch User or lock the device
+**Switch user** or **lock the device**. **Do not log out.**
 
 #### Step 7: Login with the Domain Joined User
 1. **Login with the domain joined user**.

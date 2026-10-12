@@ -35,7 +35,7 @@
   - [Configuration de groupe](./rules/groupconfiguration/groupconfiguration)
   - [Filtrage web](./rules/webfiltering/webfiltering)
   - [Services](./rules/services/services)
-<!-- * [Attribute Services](./rules/attribute_services/attribute_services) -->
+<!-- * [Services d’attributs](./rules/attribute_services/attribute_services) -->
   - [Politiques](./rules/firewall-policies/firewall-policies)
   - [Redirection de ports](./rules/portforwarding/portforwarding)
   - [EDR](./rules/edrconfiguration/edrconfiguration)
@@ -44,26 +44,26 @@
   - [Autoriser les ports personnalisés (archivé)](./rules/customports/customports)
 
 - [**AVANCÉ**](/advanced.md)
-    - [Configuration personnalisée](./advanced/customconfiguration/customconfiguration)
-    - [Active Directory](./advanced/activedirectory/activedirectory)
-    - [Intégration d’Active Directory](./advanced/ad_integration/ad_integration)
-    - [Intégration de Microsoft Entra ID](./advanced/entraid/entraid)
-    - [Installation de l’hyperviseur](./advanced/hypervisorinstallation/hypervisorinstallation.md)
-    - [Installation des contrôleurs réseau](./advanced/networkcontrollerssetup/SettingUpServer.md)
-        <!-- - [Network Controller in Azure](./advanced/azure/azure.md) -->
-    - [Synology](./advanced/synology/synology)
-    - [Cluster Proxmox](./advanced/proxmox/proxmox)
-    - [Contrôleur réseau Docker](./advanced/dockernetworkcontroller/dockernetworkcontroller)
-    - [Journalisation](./advanced/logging/logging.md)
-    - [Jetons d’accès personnels](./advanced/personalaccesstokens/personalaccesstokens.md)
-    - [Environnement unifié](./advanced/unified_environment/unified_environment.md)
+  - [Configuration personnalisée](./advanced/customconfiguration/customconfiguration)
+  - [Active Directory](./advanced/activedirectory/activedirectory)
+  <!-- - [Intégration Active Directory](./advanced/ad_integration/ad_integration) -->
+  - [Intégration Microsoft Entra ID](./advanced/entraid/entraid)
+  - [Installation sur hyperviseur](./advanced/hypervisorinstallation/hypervisorinstallation.md)
+  - [Installation des contrôleurs réseau](./advanced/networkcontrollerssetup/SettingUpServer.md)
+  <!-- - [Contrôleur réseau dans Azure](./advanced/azure/azure.md) -->
+  - [Synology](./advanced/synology/synology)
+  - [Cluster Proxmox](./advanced/proxmox/proxmox)
+  - [Contrôleur réseau Docker](./advanced/dockernetworkcontroller/dockernetworkcontroller)
+  - [Journalisation](./advanced/logging/logging.md)
+  - [Jetons d’accès personnels](./advanced/personalaccesstokens/personalaccesstokens.md)
+  - [Environnement unifié](./advanced/unified_environment/unified_environment.md)
 - [**SUPERVISION**](./monitoring/monitoring.md)
 
 - [**CONTACT**](./contact/index)
 
-<!--   - [Native Networks](./devices/nativenetworks/index.md)
-    - [Networks](./devices/nativenetworks/networks.md)
-    - [Network Interfaces](./devices/nativenetworks/network-interfaces.md)
-    - [WAN Load Balance](./devices/nativenetworks/wan-load-balance.md)
-    - [DHCP Server](./devices/nativenetworks/dhcp-server.md)
-    - [Web Filtering](./devices/nativenetworks/web-filtering.md) -->
+<!--   - [Réseaux natifs](./devices/nativenetworks/index.md)
+    - [Réseaux](./devices/nativenetworks/networks.md)
+    - [Interfaces réseau](./devices/nativenetworks/network-interfaces.md)
+    - [Équilibrage de charge WAN](./devices/nativenetworks/wan-load-balance.md)
+    - [Serveur DHCP](./devices/nativenetworks/dhcp-server.md)
+    - [Filtrage web](./devices/nativenetworks/web-filtering.md) -->

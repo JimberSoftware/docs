@@ -115,10 +115,14 @@ Unified, functional security groups:
 
 ---
 
-#### How They Work
+<!-- #### How They Work
 
 Central policy application  
+You can attach security features (such as `policy.webfiltering.all-companies`, `policy.dns-protection.all-companies`) directly to these functional groups. This ensures the policy is enforced consistently, no matter the company. -->
+#### How They Work as a central policy application 
+ 
 You can attach security features (such as `policy.webfiltering.all-companies`, `policy.dns-protection.all-companies`) directly to these functional groups. This ensures the policy is enforced consistently, no matter the company.
+
 
 **Flexible membership**  
 Groups from different companies can be added as members of a functional group. This allows a single policy to cover many companies without duplicating configurations.
