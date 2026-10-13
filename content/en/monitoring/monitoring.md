@@ -30,7 +30,7 @@ Use the search box to enter keywords and filter the activity list.
 Next to the search box, there is a filter icon ![](../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (`equals`, `contains`, or `NOT`).
+- **Match type**: A dropdown that allows you to select how to match the value (`is`, `contains`, or `is not`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
 ![act_monitoring_filter.png](./screenshots/act_monitoring_filter.png ':size=500')
@@ -68,7 +68,7 @@ Use the search box to enter keywords and filter the packet inspection list.
 Next to the search box, there is a filter icon ![](../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (`equals`, `contains`, or `NOT`).
+- **Match type**: A dropdown that allows you to select how to match the value (`is`, `contains`, or `is not`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
 ![pi_monitoring_filter.png](./screenshots/pi_monitoring_filter.png ':size=500')
@@ -104,7 +104,7 @@ Use the search box to enter keywords and filter the web filter monitoring list.
 Next to the search box, there is a filter icon ![](../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (`equals`, `contains`, or `NOT`).
+- **Match type**: A dropdown that allows you to select how to match the value (`is`, `contains`, or `is not`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
 ![dns_monitoring_filter.png](./screenshots/dns_monitoring_filter.png ':size=500')
@@ -152,7 +152,7 @@ Use the search box to enter keywords and filter the malicious files list.
 Next to the search box, there is a filter icon ![](../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (`equals`, `contains`, or `NOT`).
+- **Match type**: A dropdown that allows you to select how to match the value (`is`, `contains`, or `is not`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
 ![malicious_file_filter.png](./screenshots/malicious_file_filter.png ':size=500')
@@ -192,7 +192,7 @@ Use the search box to enter keywords and filter the file anomalies list.
 Next to the search box, there is a filter icon ![](../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (`equals`, `contains`, or `NOT`).
+- **Match type**: A dropdown that allows you to select how to match the value (`is`, `contains`, or `is not`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
 ![file_anomaly_filter.png](./screenshots/file_anomaly_filter.png ':size=500')
@@ -234,7 +234,7 @@ Use the search box to enter keywords and filter the network anomalies list.
 Next to the search box, there is a filter icon ![](../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (`equals`, `contains`, or `NOT`).
+- **Match type**: A dropdown that allows you to select how to match the value (`is`, `contains`, or `is not`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
 ![nw_anomaly_filter.png](./screenshots/nw_anomaly_filter.png ':size=500')
@@ -278,7 +278,7 @@ Use the search box to enter keywords and filter the unsigned binary list.
 Next to the search box, there is a filter icon ![](../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (`equals`, `contains`, or `NOT`).
+- **Match type**: A dropdown that allows you to select how to match the value (`is`, `contains`, or `is not`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
 ![unsigned_binary_filter.pn](./screenshots/unsigned_binary_filter.png ':size=500')

@@ -87,7 +87,7 @@ Use the search box to enter keywords and filter the user list.
 Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (`equals`, `contains`, or `NOT`).
+- **Match type**: A dropdown that allows you to select how to match the value (`is`, `contains`, or `is not`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
 ![filter_user.png](./screenshots/filter_user.png ':size=500')

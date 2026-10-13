@@ -25,7 +25,7 @@ You can search the list of group configurations using the search box at the top 
 Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (`EQUALS` or `NOT`).
+- **Match type**: A dropdown that allows you to select how to match the value (`is` or `is not`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
 ![filter_groupconfig.png](./screenshots/filter_groupconfig.png ':size=400')
