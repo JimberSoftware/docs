@@ -170,7 +170,7 @@ Once successfully logged in and connected, a green dot will appear on the system
 
 ![linux-tray-logged-in.png](./screenshots/linux_signed_in.png ":size=200")
 
-.
+
 
 <!-- tabs:end -->
 

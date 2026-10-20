@@ -7,6 +7,9 @@ The **Security** menu in the ***_<span style="color: darkblue;">Jimber SASE Plat
 ![](./images/menu/menu_dashboard.png ':size=20') [Security Panel](./rules/security_panel/security_panel)  
   A centralized interface for users to access assigned services and monitor security status through the ***_<span style="color: darkblue;">Jimber SASE client</span>_***.
 
+[App Authentication (SAML and OIDC)](./rules/app-authentication/app-authentication)<br>
+  Configure application sign-in with Jimber identities using SAML or OIDC, assign user and group access, and apply device protection.
+
 ![](./images/menu/menu_scripts.png ':size=20') [Scripts](./rules/scripts/scripts)  
   Manage automation scripts that help customize and automate security and network tasks across your infrastructure.
 

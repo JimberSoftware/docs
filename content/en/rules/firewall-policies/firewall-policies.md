@@ -1,5 +1,104 @@
 # ![](../../images/menu/menu_policies.png ':size=28') Policies
 
+<!-- tabs:start -->
+
+## **![](../../images/menu/menu_services.png ':size=28') Firewall Services**
+
+Within the **_<span style="color: darkblue;">Jimber SASE Platform</span>_**, a **Service** represents a digital resource that can be made accessible to users. These services can include websites, internal portals, remote desktops, CRMs, or any other network-based application.
+
+To make a service available, it must be assigned to a **group** and a **destination** on the [**Policies**](/./rules/firewall-policies/firewall-policies.md) page. Once this is configured, the service will appear in the [**Security Panel**](/./rules/security_panel/security_panel.md) for users who are members of the selected group.
+
+Users can open the Security Panel by clicking the **Jimber SASE tray icon** in their taskbar.
+
+![Screenshot of the Jimber Tray Menu](./screenshots/security_panel.png ':size=300')
+
+A security panel with multiple services can look like this:
+
+![Screenshot of the Services tab of the Security Panel](./screenshots/security_panel_overview.png ':size=600')
+
+
+#### Create Services
+
+To create a service into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
+
+![Screenshot of the Services page](./screenshots/services.png ':size=700')
+
+This will open the following screen where you can enter the specifics of your service:
+
+![Screenshot of the Create Service page](./screenshots/create_service.png ':size=700')
+
+1. **Choose a Name**: Start by giving your service a clear and recognizable name.
+
+> [!NOTE]
+> You can start with a template (see below), or you can create a completely new service. 
+
+
+<!-- 2. **Create a New Service Entry**: Click `+ Create new service entry`. This defines how the service behaves.
+
+    - **Name**: Provide a recognizable name to the service entry.
+    - **Action**: Currently, the only available option is **"Open website"**.
+    - **URL/Path**: Enter the web address or internal path the service should open. -->
+
+2. **Add Access Rule**: Click `+ Add Access Rule`. This defines how traffic is allowed for the service.
+
+    - **Description**: Briefly describe the purpose of the rule.
+    - **Start Port / End Port**: Specify the port range to allow. If left empty, it defaults to `1` and `65535`.
+    - **Protocol**: Choose the protocol the service will use (TCP, UDP, or ICMP).
+    
+    ![add_access_rule.png](./screenshots/add_access_rule.png ':size=500')
+
+3. **Submit the service**, by clicking on the `➢ Submit` button. 
+If you leave the page with any unsaved changes, a warning message will appear:
+
+    ![Screenshot of the unsaved changes warning](../../images/notifications/unsaved_changes.png ':size=300')
+
+**Repeat these steps** to configure additional access rules as needed. 
+
+After creating the service you can switch to [Policies](/./rules/firewall-policies/firewall-policies.md) to specify the details of the service.
+
+#### Service Template
+
+You can save the configuration of your service by clicking the `📄Save template` button. When prompted, enter a distinctive name and a clear, descriptive summary to make it easy to identify and reuse later. 
+
+![save_template.png](./screenshots/save_template.png ':size=500')
+
+ 
+ Any saved templates can be used when creating a new service by clicking the `📄Load template` button at the bottom of the page, selecting the appropriate service template and clicking the `➢ Apply template` button.
+
+![load_template.png](./screenshots/load_template.png ':size=500')
+
+
+#### Search Services
+
+You can search the list of Services using the search box at the top of the page. This helps you quickly find and manage the service you're looking for.
+
+#### Update Services
+Services can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
+
+![update_service.png](./screenshots/update_service.png ':size=800')
+
+From here, you can:
+
+- Change the **service name**.
+- Add, remove, or modify **access rules**.
+
+> [!IMPORTANT]
+> Don't forget to submit the service, by clicking on the `➢ Submit` button.
+
+You can use the `Clear changes` button if you decide not to submit the changes.
+
+
+#### Delete Services
+
+Services can be removed by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
+
+ You will receive a warning before the service is permanently deleted:
+ 
+![Screenshot of the deletion warning](./screenshots/delete_service.png ':size=400')
+
+
+## **![](../../images/menu/menu_services.png ':size=28') Firewall Policies**
+
 **Policies** in the **_<span style="color: darkblue;">Jimber SASE Platform</span>_** provide a comprehensive and centralized approach to managing network security rules. Unlike traditional rule-based systems, policies define access permissions by specifying **sources**, **destinations**, and **services** in a unified framework.
 
 Policies offer several advantages over legacy rule configurations:
@@ -39,14 +138,14 @@ To create a new policy, click the `+ Create new` button in the upper right corne
 
 ![create_policy.png](./screenshots/create_policy.png ':size=500')
 
-#### 1. Basic Settings
+##### Basic Settings
 
  1. **Policy Name**: Provide a clear, descriptive name for the policy
  2. **Enabled**: Use the toggle to activate or deactivate the policy
  3. **Migration Source** (if applicable): Shows the original rule source if this policy was migrated from legacy configurations.
     <!-- Click [here](#policy-migration) for migration overview.  -->
 
-#### 2. Configure Services
+##### Configure Services
 
 Select which services this policy will govern. Services define the applications, websites, or resources that users can access through this policy.
 
@@ -58,7 +157,7 @@ Select which services this policy will govern. Services define the applications,
 
 
 
-#### 3. Define Sources
+##### Define Sources
 
 Sources represent **who** can access the services defined in this policy. As already mentioned, you can add multiple source entities:
 
@@ -79,7 +178,7 @@ Sources represent **who** can access the services defined in this policy. As alr
 
  4. **Multiple Selection**: Add as many source entities as needed for your policy
 
-#### 4. Define Destinations
+##### Define Destinations
 
 Destinations represent **where** the sources can connect. This defines the target resources that sources can access:
 
@@ -97,7 +196,7 @@ Destinations represent **where** the sources can connect. This defines the targe
 > [!INFO]
 > Don't forget to hit the save-button at the bottom of each window. 
 
-#### 5. Service Entries
+##### Service Entries
 
  1. Click `+ Add Service entry` to enter a service entry.
  2. Choose a name for the entry.
@@ -107,15 +206,8 @@ Destinations represent **where** the sources can connect. This defines the targe
 ![service_entry.png](./screenshots/service_entry.png ':size=700')
 
 
-<!-- #### Service Actions
 
-Configure how the policy handles service access:
-
-- **Allow**: Permit access to the specified services
-- **Monitor**: Log access attempts for auditing (if available)
-- **Custom Rules**: Define specific port ranges or protocols if needed -->
-
-#### 6. Submit Policy
+##### Submit Policy
 
 Once all sections are configured:
 
@@ -125,7 +217,7 @@ Once all sections are configured:
 
 ### Manage Existing Policies
 
-#### View Policy List
+##### View Policy List
 
 The main Policies page displays all configured policies in a table format:
 
@@ -142,7 +234,7 @@ The main Policies page displays all configured policies in a table format:
 > [!NOTE]
 >If any of the items are left blank, a yellow exclamation mark will appear in the policy row.
 
-##### Enable/Disable Policies
+###### Enable/Disable Policies
 
 Toggle policy status directly from the main table:
 
@@ -153,7 +245,7 @@ Toggle policy status directly from the main table:
 > [!TIP]
 > You can refresh the list of policies by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
 
-#### Update Policies
+##### Update Policies
 
 To modify an existing policy:
 
@@ -163,7 +255,7 @@ To modify an existing policy:
 
 ![update_policy.png](./screenshots/update_policy.png ':size=500')
 
-#### Delete Policies
+##### Delete Policies
 
 Click the delete icon ![](../../images/icons/icon_delete.png ':size=20') in the policy row to remove a policy.
 
@@ -215,6 +307,13 @@ Migrated policies show their original source in the Basic Settings section, help
 
  **Access Denied Despite Policy**
 
-  - Review **service access rules** for correct port ranges
-  - Verify **entity memberships** (users in groups, devices in networks)
-  - Ensure **destinations include the target resources**
+- Review **service access rules** for correct port ranges
+- Verify **entity memberships** (users in groups, devices in networks)
+- Ensure **destinations include the target resources**
+
+## **![](../../images/menu/menu_services.png ':size=28') Posture Policies**
+
+
+## **![](../../images/menu/menu_services.png ':size=28') Agentless Policies**
+
+<!-- tabs:end -->

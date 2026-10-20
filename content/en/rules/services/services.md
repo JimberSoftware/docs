@@ -1,7 +1,6 @@
 # ![](../../images/menu/menu_services.png ':size=28') Services
 
-Within the **_<span style="color: darkblue;">Jimber SASE Platform</span>_**
-, a **Service** represents a digital resource that can be made accessible to users. These services can include websites, internal portals, remote desktops, CRMs, or any other network-based application.
+Within the **_<span style="color: darkblue;">Jimber SASE Platform</span>_**, a **Service** represents a digital resource that can be made accessible to users. These services can include websites, internal portals, remote desktops, CRMs, or any other network-based application.
 
 To make a service available, it must be assigned to a **group** and a **destination** on the [**Policies**](/./rules/firewall-policies/firewall-policies.md) page. Once this is configured, the service will appear in the [**Security Panel**](/./rules/security_panel/security_panel.md) for users who are members of the selected group.
 

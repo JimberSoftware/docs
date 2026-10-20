@@ -215,7 +215,7 @@ When Always On is enabled, the application will launch with the system. Dependin
 2. Choose between **Forced Mode** or **Autostart Mode**.
 3. Deploy the settings to connected devices.
 
-### **EDR**
+<!-- ### **EDR**
 
 _EDR systems continuously monitor activity on endpoints._
 
@@ -227,7 +227,7 @@ More information on EDR is to be find [here](/./rules/edrconfiguration/edrconfig
 
 - Enable **EDR** in the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** group configuration settings of the selected group.
 
-edr_groupconfig.png
+edr_groupconfig.png -->
 ### **SSL**
 
 _SSL inspection intercepts, decrypts, scans, and re-encrypts encrypted HTTPS web traffic in real time to uncover hidden security threats._
