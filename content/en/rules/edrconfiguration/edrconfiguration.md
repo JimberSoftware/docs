@@ -11,7 +11,8 @@ Endpoint Detection and Response (EDR) monitors Windows endpoints for suspicious 
 2. Select the group you want to configure.
 3. Use the switch on a detection card to enable or disable that detection.
 4. For each enabled detection, choose the automatic response for each severity level: **Low**, **Medium**, **High**, or **Critical**.
-5. Select **Submit** to apply the configuration.
+5. Choose **Email notification** for each severity that should send an alert.
+6. Select **Submit** to apply the configuration.
 
 ![EDR Configuration with malicious file detection settings](./screenshots/edrconfiguration.png ':size=1000')
 
@@ -20,6 +21,16 @@ Endpoint Detection and Response (EDR) monitors Windows endpoints for suspicious 
 
 > [!TIP]
 > Start with monitoring or less disruptive responses, review the detections, and then enable stronger responses for higher severity levels. This helps reduce disruption from false positives.
+
+### Email notifications
+
+Each detection category has an **Email notification** toggle for **Low**, **Medium**, **High**, and **Critical** severity. This includes File Anomaly Detection and Windows Defender.
+
+Emails go to the company's configured EDR notification contacts. A matching detection can send an email even when no automatic response action is selected. Turning off an email toggle does not turn off monitoring or response actions. Email controls are also available without SASE access.
+
+When a device belongs to several groups, email is enabled if any applicable group enables it for that category and severity. The detection category must be enabled in the effective configuration. One event sends one email per contact, even if several groups match. These settings apply to user devices and servers.
+
+Existing category and severity combinations configured to disable SASE access start with email enabled after the upgrade. Other combinations start with email disabled. Review these settings after upgrading.
 
 ### Response actions
 
@@ -60,7 +71,7 @@ Detects executable files and libraries that do not have a trusted digital signat
 
 ### File Anomaly Detection
 
-Detects unusual file activity and records it for review. This detection has no configurable automatic response actions.
+Detects unusual file activity and records it for review. This detection has no configurable automatic response actions. Email notifications can be enabled for each severity.
 
 ### Windows Defender
 

@@ -3,7 +3,7 @@
 In this section, you can determine which people can receive which notifications.
 
 - In the **_Company Notifications Settings_**, the notification settings can be set for anyone of the company.
-- In the **_User Notifications Settings_**, the notification settings can be set for the logged-in user. 
+- In the **_User Notifications Settings_**, the notification settings can be set for the logged-in user.
 
 ### Company Notifications Settings
 
@@ -11,7 +11,7 @@ In this section, you can determine which people can receive which notifications.
 
 In the email addresses field, you can enter the email addresses of the people who should receive the notifications.
 
-- **Server Notification**  
+- **Server Notification**
     - Notifications include when a server is down for more than 3 minutes and when it comes back online
 - **NIAC Notifications**
     - Notifications include when a NIAC is down for more than 3 minutes and when it comes back online
@@ -22,7 +22,7 @@ In the email addresses field, you can enter the email addresses of the people wh
 - **Device Approval Notifications**
     - Notifications include when a user that belongs to a group who needs device approval tries to log in and is waiting for approval to connect
 - **EDR Notifications**
-    - Notifications include when a malicious file or anomalous network activity is detected and SASE access is automatically disabled for a user.
+    - Receive email alerts for the detection categories and severities selected in EDR Configuration, regardless of the response action.
 
 ### User Notification Settings
 
@@ -31,7 +31,7 @@ In the email addresses field, you can enter the email addresses of the people wh
 Here the email address is that of the logged-in user.
 The available notifications are the same as above.
 
- Each set of notifications can be turned on or off. 
+Each set of notifications can be turned on or off.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Always remember to click the **_Apply_** button to save your changes after editing any configuration setting.

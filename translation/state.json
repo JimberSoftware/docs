@@ -179,8 +179,8 @@
                 "company/notificat/notifications.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "150d1af72e5ae4268cc4dadeb1b4b174162ddc8dc293344a65eba76a45eec030",
-                    "translation_hash": "0628496816218876e67a1e6d635a2a1c7b2075e075eab760d1d3ab2cd167523f"
+                    "source_hash": "ba8154eda6558d6d3dca6a700a65476d6d8919470e263c62d8cc06a55f4980d9",
+                    "translation_hash": "2a8ac76fda6ea19725dc164a887775f7cdd4f56782915bf7ee5bcbd3ac011e2c"
                 },
                 "company/users/users.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -335,8 +335,8 @@
                 "rules/edrconfiguration/edrconfiguration.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "39b3332fe2f08148998d223b04dc2a5c78a65eb55c1670fbe9e08f4eb4b80cab",
-                    "translation_hash": "bb5d213539ee47d28567d04bf7102c1d1f050ad28a44bc9f0a132de3552bae6a"
+                    "source_hash": "015437b284796b09ca239d3ee0d2ea725ce1e7ee1576c9c88f3cd0ea0c24fb0c",
+                    "translation_hash": "748a0f6661d0d8a822d02eaa1cfd280bffb1cd1b844a31f5207dd89e3a331615"
                 },
                 "rules/firewall-policies/firewall-policies.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -423,7 +423,7 @@
         }
     },
     "source": {
-        "commit": "a025cebed7b93fc58e39c60d3eeda54588657e5a",
+        "commit": "28c6396134ee380afd85f57a9238073a09caedac",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },

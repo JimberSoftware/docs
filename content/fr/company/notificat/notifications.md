@@ -2,29 +2,29 @@
 
 Dans cette section, vous pouvez déterminer qui peut recevoir quelles notifications.
 
-- Dans les **_Paramètres des notifications de l’entreprise_**, les paramètres de notification peuvent être définis pour toute personne de l’entreprise.
-- Dans les **_Paramètres des notifications de l’utilisateur_**, les paramètres de notification peuvent être définis pour l’utilisateur connecté.
+- Dans les **_Paramètres de notification de l’entreprise_**, les paramètres de notification peuvent être définis pour toute personne de l’entreprise.
+- Dans les **_Paramètres de notification de l’utilisateur_**, les paramètres de notification peuvent être définis pour l’utilisateur connecté.
 
-### Paramètres des notifications de l’entreprise
+### Paramètres de notification de l’entreprise
 
 ![company_not.png](./screenshots/company_notificat.png ':size=500')
 
 Dans le champ des adresses e-mail, vous pouvez saisir les adresses e-mail des personnes qui doivent recevoir les notifications.
 
-- **Notification du serveur**  
-    - Les notifications sont envoyées lorsqu’un serveur est hors service pendant plus de 3 minutes et lorsqu’il est de nouveau en ligne.
+- **Notifications du serveur**
+    - Les notifications indiquent notamment lorsqu’un serveur est hors service pendant plus de 3 minutes et lorsqu’il est de nouveau en ligne.
 - **Notifications NIAC**
-    - Les notifications sont envoyées lorsqu’un NIAC est hors service pendant plus de 3 minutes et lorsqu’il est de nouveau en ligne.
+    - Les notifications indiquent notamment lorsqu’un NIAC est hors service pendant plus de 3 minutes et lorsqu’il est de nouveau en ligne.
 - **Notifications du contrôleur réseau**
-    - Les notifications sont envoyées lorsqu’un contrôleur réseau est hors service pendant plus de 3 minutes et lorsqu’il est de nouveau en ligne.
-- **Notifications de synchronisation de Microsoft Entra ID**
-    - Les notifications sont envoyées lorsque la plateforme ne parvient pas à se synchroniser correctement avec Microsoft Entra ID.
+    - Les notifications indiquent notamment lorsqu’un contrôleur réseau est hors service pendant plus de 3 minutes et lorsqu’il est de nouveau en ligne.
+- **Notifications de synchronisation Microsoft Entra ID**
+    - Les notifications indiquent notamment lorsque la plateforme ne parvient pas à se synchroniser correctement avec Microsoft Entra ID.
 - **Notifications d’approbation des appareils**
-    - Les notifications sont envoyées lorsqu’un utilisateur appartenant à un groupe nécessitant l’approbation des appareils tente de se connecter et attend l’approbation pour se connecter.
+    - Les notifications indiquent notamment lorsqu’un utilisateur appartenant à un groupe qui exige l’approbation des appareils essaie de se connecter et attend l’approbation pour établir la connexion.
 - **Notifications EDR**
-    - Les notifications sont envoyées lorsqu’un fichier malveillant ou une activité réseau anormale est détecté et que l’accès SASE est automatiquement désactivé pour un utilisateur.
+    - Recevez des alertes par e-mail pour les catégories de détection et les niveaux de gravité sélectionnés dans la Configuration EDR, quelle que soit l’action de réponse.
 
-### Paramètres des notifications de l’utilisateur
+### Paramètres de notification de l’utilisateur
 
 ![user_not.png](./screenshots/user_not.png ':size=500')
 
@@ -33,5 +33,5 @@ Les notifications disponibles sont les mêmes que ci-dessus.
 
 Chaque ensemble de notifications peut être activé ou désactivé.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > N’oubliez pas de cliquer sur le bouton **_Appliquer_** pour enregistrer vos modifications après avoir modifié un paramètre de configuration.
