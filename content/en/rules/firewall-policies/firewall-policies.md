@@ -314,9 +314,101 @@ Migrated policies show their original source in the Basic Settings section, help
   - Verify **entity memberships** (users in groups, devices in networks)
   - Ensure **destinations include the target resources**
 
+
 ## **![](../../images/menu/menu_services.png ':size=28') Posture Policies**
+
+A posture policy is a set of rules and automated decision criteria that evaluate whether a system, device, or application meets a required compliance or security standard before it is allowed onto a network or into production.
+
+### Create Posture Policy
+
+To create a posture policy into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
+
+![posture_policy.png](./screenshots/posture_policy.png ':size=600')
+
+![create_posture_policy.png](./screenshots/create_posture_policy.png ':size=400')
+
+1. Select the posture check this policy should evaluate.
+2. Select the operating systems where this posture policy will be enabled.
+3. Choose your preferred settings.
+4. Choose wherefor the policy is required: SASE network connection, and/or cloud authentication.
+5. Create the policy, by clicking on the `Create` button.  
+
+![posture_policy_settings.png](./screenshots/posture_policy_settings.png ':size=400')
+
+>[!ATTENTION]
+>Before the policy is created you get an important warning!
+>
+>![warning_posture_policy.png](./screenshots/warning_posture_policy.png ':size=400')
+
+### Enable/Disable Policies
+
+Toggle policy status directly from the main table:
+
+ 1. Click the **Enable/Disable toggle** in the policy row.
+ 2. The policy status updates immediately.
+ 3. Disabled policies stop enforcing access rules but remain configured.
+
+> [!TIP]
+> You can refresh the list of policies by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
+
+### Edit Posture Policy
+
+Posture Policies can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
+
+The option are the same as when creating the policy. Naturally, the chosen poster check cannot be changed.
+
+### Delete Posture Policy
+
+Posture Policies can be removed by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
+
+ You will receive a warning before the policy is permanently deleted:
+
+![Screenshot of the deletion warning](./screenshots/delete_posture_policy.png ':size=400')
 
 
 ## **![](../../images/menu/menu_services.png ':size=28') Agentless Policies**
+
+Agentless policies are rules and governance frameworks applied to systems, cloud workloads, or network devices without requiring a dedicated software agent to be installed directly on each target endpoint.
+
+### Create Agentless Policy
+
+To create a agentless policy into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
+
+![agentless_policy.png](./screenshots/agentless_policies.png ':size=600')
+
+![create_agentless_policy.png](./screenshots/create_agentless_policy.png ':size=300')
+
+1. Choose a name for the policy (required).
+2. Select at least one service: SSH and/or RDP. 
+3. Add at least one source: group and/or user.
+4. Add at least one destination: group, server, native device, and/or NIAC device.
+5. Create the policy, by clicking on the `Create` button.  
+
+### Enable/Disable Policies
+
+Toggle policy status directly from the main table:
+
+ 1. Click the **Enable/Disable toggle** in the policy row.
+ 2. The policy status updates immediately.
+ 3. Disabled policies stop enforcing access rules but remain configured.
+
+> [!TIP]
+> You can refresh the list of policies by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
+
+
+### Edit Agentless Policy
+
+Agentless Policies can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
+
+The option are the same as when creating the policy. 
+
+### Delete Agentless Policy
+
+Agentless Policies can be removed by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
+
+ You will receive a warning before the policy is permanently deleted:
+
+![Screenshot of the deletion warning](./screenshots/delete_agentless_policy.png ':size=400')
+
 
 <!-- tabs:end -->

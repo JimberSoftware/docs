@@ -8,13 +8,16 @@ Endpoint Detection and Response (EDR) monitors Windows endpoints for suspicious 
 ## Configure EDR for a group
 
 1. Go to **Security > EDR > EDR Configuration**.
+
+![EDR Configuration](./screenshots/edr_configuration.png ':size=700')
+
 2. Select the group you want to configure.
-3. Use the switch on a detection card to enable or disable that detection.
+3. Use the toggle on a detection card to enable or disable that detection.
 4. For each enabled detection, choose the automatic response for each severity level: **Low**, **Medium**, **High**, or **Critical**.
 5. Choose **Email notification** for each severity that should send an alert.
 6. Select **Submit** to apply the configuration.
 
-![EDR Configuration with malicious file detection settings](./screenshots/edrconfiguration.png ':size=1000')
+![EDR Configuration with malicious file detection settings](./screenshots/edrconfiguration.png ':size=700')
 
 > [!NOTE]
 > Enabling a detection without selecting a response action still records detections in the relevant EDR monitoring page. It does not take an automatic response action.
@@ -57,27 +60,31 @@ Scans files for malicious content. Select a sensitivity level, then configure th
 
 Available responses: **Quarantine**, **Disable SASE**, and **Lockdown**.
 
+![malicious_file detection settings](./screenshots/malicious_file.png ':size=700')
+
 ### Network Anomaly Detection
 
 Detects suspicious network behavior on the endpoint. Configure **Disable SASE** and **Lockdown** independently for each severity level.
 
-![Network anomaly detection settings](./screenshots/network-anomaly-detection.png ':size=1000')
+![Network anomaly detection settings](./screenshots/anomaly_detection.png ':size=700')
 
 ### Unsigned Binaries
 
 Detects executable files and libraries that do not have a trusted digital signature. Configure **Quarantine** independently for each severity level.
 
-![Unsigned binary and file anomaly detection settings](./screenshots/unsigned-binaries-file-anomaly.png ':size=1000')
+![Unsigned binary and file anomaly detection settings](./screenshots/unsigned_binaries.png ':size=700')
 
 ### File Anomaly Detection
 
 Detects unusual file activity and records it for review. This detection has no configurable automatic response actions. Email notifications can be enabled for each severity.
 
+![file anomaly detection settings](./screenshots/file_anomaly_detection.png ':size=700')
+
 ### Windows Defender
 
 Monitors supported Microsoft Defender Antivirus events. Configure **Disable SASE** and **Lockdown** independently for each severity level.
 
-![Windows Defender settings](./screenshots/windows-defender.png ':size=1000')
+![Windows Defender settings](./screenshots/windows_defender.png ':size=700')
 
 > [!NOTE]
 > If an endpoint belongs to multiple groups, its EDR configuration combines the enabled detections and response actions from those groups. Malicious File Detection uses the highest configured sensitivity.
