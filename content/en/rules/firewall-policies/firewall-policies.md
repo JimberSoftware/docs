@@ -21,11 +21,11 @@ A security panel with multiple services can look like this:
 
 To create a service into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
 
-![Screenshot of the Services page](./screenshots/services.png ':size=700')
+![Screenshot of the Services page](./screenshots/services.png ':size=600')
 
 This will open the following screen where you can enter the specifics of your service:
 
-![Screenshot of the Create Service page](./screenshots/create_service.png ':size=700')
+![Screenshot of the Create Service page](./screenshots/create_service.png ':size=600')
 
 1. **Choose a Name**: Start by giving your service a clear and recognizable name.
 
@@ -71,6 +71,9 @@ You can save the configuration of your service by clicking the `📄Save templat
 #### Search Services
 
 You can search the list of Services using the search box at the top of the page. This helps you quickly find and manage the service you're looking for.
+
+> [!TIP]
+> You can refresh the list of services by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
 
 #### Update Services
 Services can be edited by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in their row.
@@ -138,14 +141,14 @@ To create a new policy, click the `+ Create new` button in the upper right corne
 
 ![create_policy.png](./screenshots/create_policy.png ':size=500')
 
-##### Basic Settings
+##### 1. Basic Settings
 
  1. **Policy Name**: Provide a clear, descriptive name for the policy
  2. **Enabled**: Use the toggle to activate or deactivate the policy
  3. **Migration Source** (if applicable): Shows the original rule source if this policy was migrated from legacy configurations.
     <!-- Click [here](#policy-migration) for migration overview.  -->
 
-##### Configure Services
+##### 2. Configure Services
 
 Select which services this policy will govern. Services define the applications, websites, or resources that users can access through this policy.
 
@@ -157,7 +160,7 @@ Select which services this policy will govern. Services define the applications,
 
 
 
-##### Define Sources
+##### 3. Define Sources
 
 Sources represent **who** can access the services defined in this policy. As already mentioned, you can add multiple source entities:
 
@@ -178,7 +181,7 @@ Sources represent **who** can access the services defined in this policy. As alr
 
  4. **Multiple Selection**: Add as many source entities as needed for your policy
 
-##### Define Destinations
+##### 4. Define Destinations
 
 Destinations represent **where** the sources can connect. This defines the target resources that sources can access:
 
@@ -196,7 +199,7 @@ Destinations represent **where** the sources can connect. This defines the targe
 > [!INFO]
 > Don't forget to hit the save-button at the bottom of each window. 
 
-##### Service Entries
+##### 5. Service Entries
 
  1. Click `+ Add Service entry` to enter a service entry.
  2. Choose a name for the entry.
@@ -207,7 +210,7 @@ Destinations represent **where** the sources can connect. This defines the targe
 
 
 
-##### Submit Policy
+##### 6. Submit Policy
 
 Once all sections are configured:
 
@@ -307,9 +310,9 @@ Migrated policies show their original source in the Basic Settings section, help
 
  **Access Denied Despite Policy**
 
-- Review **service access rules** for correct port ranges
-- Verify **entity memberships** (users in groups, devices in networks)
-- Ensure **destinations include the target resources**
+  - Review **service access rules** for correct port ranges
+  - Verify **entity memberships** (users in groups, devices in networks)
+  - Ensure **destinations include the target resources**
 
 ## **![](../../images/menu/menu_services.png ':size=28') Posture Policies**
 
