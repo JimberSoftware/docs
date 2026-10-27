@@ -423,7 +423,7 @@
         }
     },
     "source": {
-        "commit": "f844f5cc2a605b23e7a799012af7d68c7e3636cf",
+        "commit": "941d96a0aa1e191c75ad134f57a3765e7b9c9c24",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },
