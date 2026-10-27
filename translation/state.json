@@ -209,8 +209,8 @@
                 "devices/networkcontrollers/networkcontrollers.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "7b872913e470a637909be4c4e5d64fdc643f70e649f348662447172385eb0f04",
-                    "translation_hash": "f5ed8815c0772e738f7dba403f4df3152d7e120381ce16e32475aebbbd82b056"
+                    "source_hash": "d4cb0334d22d1226ab72a287e71ff9814baeb20bf15468c87dccd7c5c5dbebe0",
+                    "translation_hash": "557804679dc429e28b942574d0620a97d8e771ffcda3a2324622e21c60039276"
                 },
                 "devices/networkcontrollerssetup/SettingUpServer.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -423,7 +423,7 @@
         }
     },
     "source": {
-        "commit": "941d96a0aa1e191c75ad134f57a3765e7b9c9c24",
+        "commit": "846e56d7a6078a839e94a23a3c88a5eb60694c37",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },
