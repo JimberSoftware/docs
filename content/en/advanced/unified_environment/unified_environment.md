@@ -2,7 +2,7 @@
 
 ## What is a unified environment?
 
-A unified environment in Jimber SASE is an architectural setup where we integrate the systems of multiple companies into a single environment. Instead of isolating each company’s systems in separate environments or tenants, we bring them together under one SASE instance.
+A unified environment in  the **_<span style="color: darkblue;">Jimber SASE Platform</span>_** is an architectural setup where we integrate the systems of multiple companies into a single environment. Instead of isolating each company’s systems in separate environments or tenants, we bring them together under one SASE instance.
 
 ### Why choose a unified environment?
 

@@ -1,18 +1,20 @@
 # ![](../../images/menu/menu_policies.png ':size=28') Politiques
 
+<br>
+
 <!-- tabs:start -->
 
 ## **![](../../images/menu/menu_services.png ':size=28') Services de pare-feu**
 
-Au sein de la **_<span style="color: darkblue;">Plateforme Jimber SASE</span>_**, un **service** représente une ressource numérique pouvant être rendue accessible aux utilisateurs. Ces services peuvent inclure des sites web, des portails internes, des bureaux à distance, des CRM ou toute autre application réseau.
+Au sein de la **_<span style="color: darkblue;">Plateforme Jimber SASE</span>_**, un **service** représente une ressource numérique pouvant être mise à la disposition des utilisateurs. Ces services peuvent inclure des sites web, des portails internes, des bureaux à distance, des CRM ou toute autre application basée sur le réseau.
 
-Pour rendre un service disponible, il doit être attribué à un **groupe** et à une **destination** sur la page [**Politiques**](/./rules/firewall-policies/firewall-policies.md). Une fois cette configuration effectuée, le service apparaîtra dans le [**Panneau de sécurité**](/./rules/security_panel/security_panel.md) des utilisateurs membres du groupe sélectionné.
+Pour rendre un service disponible, il doit être associé à un **groupe** et à une **destination** sur la page [**Politiques**](/./rules/firewall-policies/firewall-policies.md). Une fois cette configuration effectuée, le service apparaît dans le [**Panneau de sécurité**](/./rules/security_panel/security_panel.md) des utilisateurs membres du groupe sélectionné.
 
-Les utilisateurs peuvent ouvrir le Panneau de sécurité en cliquant sur l’**icône Jimber SASE dans la zone de notification** de leur barre des tâches.
+Les utilisateurs peuvent ouvrir le Panneau de sécurité en cliquant sur l’**icône Jimber SASE dans la barre des tâches**.
 
-![Capture d’écran du menu de la zone de notification Jimber](./screenshots/security_panel.png ':size=300')
+![Capture d’écran du menu de la barre d’état système de Jimber](./screenshots/security_panel.png ':size=300')
 
-Un panneau de sécurité avec plusieurs services peut se présenter ainsi :
+Un panneau de sécurité contenant plusieurs services peut ressembler à ceci :
 
 ![Capture d’écran de l’onglet Services du Panneau de sécurité](./screenshots/security_panel_overview.png ':size=600')
 
@@ -23,47 +25,47 @@ Pour créer un service sur la plateforme, cliquez sur le bouton `+ Create new` s
 
 ![Capture d’écran de la page Services](./screenshots/services.png ':size=600')
 
-L’écran suivant s’ouvrira et vous permettra de saisir les détails de votre service :
+L’écran suivant s’ouvre pour vous permettre de saisir les détails de votre service :
 
 ![Capture d’écran de la page de création d’un service](./screenshots/create_service.png ':size=600')
 
-1. **Choisir un nom** : Commencez par donner à votre service un nom clair et reconnaissable.
+1. **Choisir un nom** : commencez par donner à votre service un nom clair et reconnaissable.
 
 > [!NOTE]
-> Vous pouvez commencer par utiliser un modèle (voir ci-dessous) ou créer un service entièrement nouveau.
+> Vous pouvez commencer avec un modèle (voir ci-dessous) ou créer un service entièrement nouveau. 
 
 
-<!-- 2. **Create a New Service Entry**: Click `+ Create new service entry`. This defines how the service behaves.
+<!-- 2. **Créer une nouvelle entrée de service** : cliquez sur `+ Create new service entry`. Cela définit le comportement du service.
 
     - **Name**: Provide a recognizable name to the service entry.
     - **Action**: Currently, the only available option is **"Open website"**.
     - **URL/Path**: Enter the web address or internal path the service should open. -->
 
-2. **Ajouter une règle d’accès** : Cliquez sur `+ Add Access Rule`. Cela définit la manière dont le trafic est autorisé pour le service.
+2. **Ajouter une règle d’accès** : cliquez sur `+ Add Access Rule`. Cette règle définit la manière dont le trafic est autorisé pour le service.
 
-    - **Description** : Décrivez brièvement l’objectif de la règle.
-    - **Port de début / port de fin** : Indiquez la plage de ports à autoriser. Si vous laissez ces champs vides, les valeurs par défaut `1` et `65535` seront utilisées.
-    - **Protocole** : Choisissez le protocole utilisé par le service (TCP, UDP ou ICMP).
+    - **Description** : décrivez brièvement l’objectif de la règle.
+    - **Port de début / port de fin** : indiquez la plage de ports à autoriser. Si ces champs sont laissés vides, les valeurs par défaut `1` et `65535` sont appliquées.
+    - **Protocole** : choisissez le protocole utilisé par le service (TCP, UDP ou ICMP).
     
     ![add_access_rule.png](./screenshots/add_access_rule.png ':size=500')
 
-3. **Soumettre le service** en cliquant sur le bouton `➢ Submit`.
-Si vous quittez la page alors que des modifications ne sont pas enregistrées, un message d’avertissement s’affichera :
+3. **Envoyer le service** en cliquant sur le bouton `➢ Submit`. 
+Si vous quittez la page alors que des modifications ne sont pas enregistrées, un message d’avertissement s’affiche :
 
     ![Capture d’écran de l’avertissement concernant les modifications non enregistrées](../../images/notifications/unsaved_changes.png ':size=300')
 
-**Répétez ces étapes** pour configurer d’autres règles d’accès si nécessaire.
+**Répétez ces étapes** pour configurer d’autres règles d’accès selon vos besoins. 
 
-Après avoir créé le service, vous pouvez passer à la page [Politiques](/./rules/firewall-policies/firewall-policies.md) pour en préciser les détails.
+Après avoir créé le service, vous pouvez accéder à [Politiques](/./rules/firewall-policies/firewall-policies.md) pour en préciser les détails.
 
 #### Modèle de service
 
-Vous pouvez enregistrer la configuration de votre service en cliquant sur le bouton `📄Save template`. Lorsque vous y êtes invité, saisissez un nom distinctif et un résumé clair et descriptif pour pouvoir facilement le reconnaître et le réutiliser ultérieurement.
+Vous pouvez enregistrer la configuration de votre service en cliquant sur le bouton `📄Save template`. Lorsque vous y êtes invité, saisissez un nom distinctif et un résumé clair et descriptif afin de pouvoir retrouver et réutiliser facilement le modèle ultérieurement. 
 
 ![save_template.png](./screenshots/save_template.png ':size=500')
 
  
- Vous pouvez utiliser les modèles enregistrés lors de la création d’un service en cliquant sur le bouton `📄Load template` au bas de la page, en sélectionnant le modèle de service approprié, puis en cliquant sur le bouton `➢ Apply template`.
+ Vous pouvez utiliser les modèles enregistrés lors de la création d’un nouveau service en cliquant sur le bouton `📄Load template` en bas de la page, en sélectionnant le modèle de service approprié, puis en cliquant sur le bouton `➢ Apply template`.
 
 ![load_template.png](./screenshots/load_template.png ':size=500')
 
@@ -75,65 +77,65 @@ Vous pouvez rechercher un service dans la liste à l’aide du champ de recherch
 > [!TIP]
 > Vous pouvez actualiser la liste des services en cliquant sur l’icône d’actualisation ![](../../images/icons/icon_reload.png ':size=20') en haut de la page.
 
-#### Mettre à jour des services
+#### Mettre à jour les services
 Vous pouvez modifier les services en cliquant sur l’icône de modification ![](../../images/icons/icon_edit.png ':size=20') de leur ligne.
 
 ![update_service.png](./screenshots/update_service.png ':size=800')
 
-Vous pouvez alors :
+À partir de là, vous pouvez :
 
 - Modifier le **nom du service**.
 - Ajouter, supprimer ou modifier des **règles d’accès**.
 
 > [!IMPORTANT]
-> N’oubliez pas de soumettre le service en cliquant sur le bouton `➢ Submit`.
+> N’oubliez pas d’envoyer le service en cliquant sur le bouton `➢ Submit`.
 
-Vous pouvez utiliser le bouton `Clear changes` si vous décidez de ne pas soumettre les modifications.
+Vous pouvez utiliser le bouton `Clear changes` si vous décidez de ne pas envoyer les modifications.
 
 
 #### Supprimer des services
 
 Vous pouvez supprimer des services en cliquant sur l’icône de suppression ![](../../images/icons/icon_delete.png ':size=20') de leur ligne.
 
- Un avertissement s’affichera avant la suppression définitive du service :
+ Un avertissement s’affiche avant la suppression définitive du service :
  
 ![Capture d’écran de l’avertissement de suppression](./screenshots/delete_service.png ':size=400')
 
 
 ## **![](../../images/menu/menu_services.png ':size=28') Politiques de pare-feu**
 
-Les **politiques** de la **_<span style="color: darkblue;">Plateforme Jimber SASE</span>_** offrent une approche complète et centralisée de la gestion des règles de sécurité réseau. Contrairement aux systèmes traditionnels fondés sur des règles, les politiques définissent les autorisations d’accès en précisant les **sources**, les **destinations** et les **services** dans un cadre unifié.
+Les **politiques** de la **_<span style="color: darkblue;">Plateforme Jimber SASE</span>_** offrent une approche complète et centralisée de la gestion des règles de sécurité réseau. Contrairement aux systèmes traditionnels fondés sur des règles, les politiques définissent les autorisations d’accès en spécifiant les **sources**, les **destinations** et les **services** dans un cadre unifié.
 
-Les politiques présentent plusieurs avantages par rapport aux configurations de règles traditionnelles :
+Les politiques présentent plusieurs avantages par rapport aux anciennes configurations de règles :
 
-- **Gestion simplifiée** : Créez une politique au lieu de plusieurs règles individuelles
-- **Sécurité axée sur les services** : Associez directement les services aux autorisations d’accès
-- **Contrôle fondé sur les entités** : Utilisez des groupes, des appareils, des utilisateurs et des réseaux comme composants des politiques
-- **Vue d’ensemble centralisée** : Consultez toutes les règles d’accès dans une interface unique et organisée
+- **Gestion simplifiée** : créez une politique au lieu de plusieurs règles individuelles
+- **Sécurité centrée sur les services** : associez directement les services aux autorisations d’accès
+- **Contrôle fondé sur les entités** : utilisez des groupes, des appareils, des utilisateurs et des réseaux comme composants des politiques
+- **Vue d’ensemble centralisée** : consultez toutes les règles d’accès dans une interface unique et organisée
 
 > [!INFO]
-> Les politiques remplacent et regroupent les fonctionnalités des anciennes options telles que Group Traffic, Allow Custom Ports et Attribute Services, offrant ainsi une approche plus intuitive et évolutive de la gestion de la sécurité.
+> Les politiques remplacent et regroupent les fonctionnalités d’anciennes fonctions telles que Group Traffic, Allow Custom Ports et Attribute Services, pour offrir une approche de gestion de la sécurité plus intuitive et évolutive.
 
-### Prérequis
+### Conditions préalables
 
-Avant de créer des politiques, assurez-vous que les composants suivants sont configurés :
+Avant de créer des politiques, vérifiez que les composants suivants sont configurés :
 
 #### 1. Dépendances requises
 
-- **Services** : Au moins un service doit être créé pour être associé à une politique
-- **Contrôleur réseau** : Un contrôleur cloud doit être en cours d’exécution pour activer la connectivité SASE
+- **Services** : au moins un service doit être créé pour être associé à une politique
+- **Contrôleur réseau** : un contrôleur cloud doit être en cours d’exécution pour permettre la connectivité SASE
 
 #### 2. Sources d’entités facultatives
 
-Les politiques peuvent utiliser n’importe quelle combinaison des types d’entités suivants comme sources et destinations :
+Les politiques peuvent utiliser toute combinaison des types d’entités suivants comme sources et destinations :
 
-- **[Groupes](/./company/groups/groups.md)** : Groupes d’utilisateurs ou d’appareils
-- **[Serveurs](/./devices/servers/servers.md)** : Serveurs backend et infrastructure
-- **[NIAC](/./devices/niacs/niacs.md)** : Clients d’accès pour l’isolation réseau
-- **[Appareils natifs](/./devices/nativedevices/nativedevices.md)** : Appareils physiques sur le réseau
-- **[Utilisateurs avec isolation réseau](/./company/users/users.md)** : Utilisateurs individuels disposant d’un accès réseau
-- **[Appareils utilisateur](/./devices/userdevices/userdevices.md)** : Appareils des utilisateurs finaux (ordinateurs portables, mobiles, etc.)
-- **[Réseaux natifs](/./devices/nativenetworks/index.md)** : Segments de réseau physiques
+- **[Groupes](/./company/groups/groups.md)** : groupes d’utilisateurs ou d’appareils
+- **[Serveurs](/./devices/servers/servers.md)** : serveurs principaux et infrastructure
+- **[NIAC](/./devices/niacs/niacs.md)** : Network Isolation Access Clients
+- **[Appareils natifs](/./devices/nativedevices/nativedevices.md)** : appareils physiques sur le réseau
+- **[Utilisateurs de Network Isolation](/./company/users/users.md)** : utilisateurs individuels ayant accès au réseau
+- **[Appareils utilisateur](/./devices/userdevices/userdevices.md)** : appareils des utilisateurs finaux (ordinateurs portables, téléphones mobiles, etc.)
+- **[Réseaux natifs](/./devices/nativenetworks/index.md)** : segments de réseau physique
 
 ### Créer une politique
 
@@ -143,9 +145,9 @@ Pour créer une nouvelle politique, cliquez sur le bouton `+ Create new` dans le
 
 ##### 1. Paramètres de base
 
- 1. **Nom de la politique** : Donnez à la politique un nom clair et descriptif
- 2. **Activée** : Utilisez le bouton bascule pour activer ou désactiver la politique
- 3. **Source de migration** (le cas échéant) : Affiche la source de la règle d’origine si cette politique a été migrée à partir d’anciennes configurations.
+ 1. **Nom de la politique** : saisissez un nom clair et descriptif pour la politique
+ 2. **Activée** : utilisez le bouton bascule pour activer ou désactiver la politique
+ 3. **Source de migration** (le cas échéant) : indique la source de la règle d’origine si cette politique a été migrée depuis une ancienne configuration.
     <!-- Click [here](#policy-migration) for migration overview.  -->
 
 ##### 2. Configurer les services
@@ -153,7 +155,7 @@ Pour créer une nouvelle politique, cliquez sur le bouton `+ Create new` dans le
 Sélectionnez les services régis par cette politique. Les services définissent les applications, les sites web ou les ressources auxquels les utilisateurs peuvent accéder par l’intermédiaire de cette politique.
 
  1. Cliquez sur `+ Add Services` pour choisir parmi les services disponibles.
- 2. Plusieurs services peuvent être ajoutés à une seule politique.
+ 2. Plusieurs services peuvent être ajoutés à une même politique.
 <!-- 3. Each service shows its configured access rules and destinations. -->
 
 ![add_service.png](./screenshots/add_service.png ':size=500')
@@ -167,19 +169,19 @@ Les sources représentent **qui** peut accéder aux services définis dans cette
  1. Cliquez sur `+ Add Sources` pour ouvrir la boîte de dialogue de sélection des entités
  2. Choisissez parmi les types d’entités disponibles :
 
-    - **[Groupes](/./company/groups/groups.md)** : Sélectionnez des groupes d’utilisateurs ou d’appareils
-    - **[Serveurs](/./devices/servers/servers.md)** : Choisissez des serveurs spécifiques
-    - **[NIAC](/./devices/niacs/niacs.md)** : Sélectionnez des clients d’accès pour l’isolation réseau
-    - **[Appareils natifs](/./devices/nativedevices/nativedevices.md)** : Sélectionnez des appareils réseau physiques
-    - **[Utilisateurs](/./company/users/users.md)** : Choisissez des utilisateurs individuels
-    - **[Appareils utilisateur](/./devices/userdevices/userdevices.md)** : Sélectionnez des appareils spécifiques d’un utilisateur
-    - **[Réseaux natifs](/./devices/nativenetworks/index.md)** : Sélectionnez des segments de réseau
+    - **[Groupes](/./company/groups/groups.md)** : sélectionnez des groupes d’utilisateurs ou d’appareils
+    - **[Serveurs](/./devices/servers/servers.md)** : choisissez des serveurs spécifiques
+    - **[NIAC](/./devices/niacs/niacs.md)** : sélectionnez des Network Isolation Access Clients
+    - **[Appareils natifs](/./devices/nativedevices/nativedevices.md)** : sélectionnez des appareils réseau physiques
+    - **[Utilisateurs](/./company/users/users.md)** : choisissez des utilisateurs individuels
+    - **[Appareils utilisateur](/./devices/userdevices/userdevices.md)** : sélectionnez des appareils spécifiques appartenant à un utilisateur
+    - **[Réseaux natifs](/./devices/nativenetworks/index.md)** : sélectionnez des segments de réseau
 
- 3. **Rechercher et filtrer** : Utilisez la fonction de recherche pour trouver rapidement des entités spécifiques
+ 3. **Rechercher et filtrer** : utilisez la fonction de recherche pour trouver rapidement des entités spécifiques
 
 ![add_source.png](./screenshots/add_source.png ':size=500')
 
- 4. **Sélection multiple** : Ajoutez autant d’entités sources que nécessaire pour votre politique
+ 4. **Sélection multiple** : ajoutez autant d’entités sources que nécessaire pour votre politique
 
 ##### 4. Définir les destinations
 
@@ -190,33 +192,33 @@ Les destinations représentent **où** les sources peuvent se connecter. Elles d
  3. Les destinations comprennent généralement :
     - **[Serveurs](/./devices/servers/servers.md)** hébergeant les services
     - **[Groupes](/./company/groups/groups.md)** contenant les ressources cibles
-    - **[Réseaux natifs](/./devices/nativenetworks/index.md)** donnant accès à des ressources
+    - **[Réseaux natifs](/./devices/nativenetworks/index.md)** contenant des ressources accessibles
     - **Toutes les autres entités** fournissant des services
 
 
 ![add_destination.png](./screenshots/add_destination.png ':size=500')
 
 > [!INFO]
-> N’oubliez pas de cliquer sur le bouton d’enregistrement au bas de chaque fenêtre.
+> N’oubliez pas de cliquer sur le bouton d’enregistrement en bas de chaque fenêtre. 
 
 ##### 5. Entrées de service
 
  1. Cliquez sur `+ Add Service entry` pour ajouter une entrée de service.
  2. Choisissez un nom pour l’entrée.
  3. Choisissez une action.
- 4. Saisissez l’URL ou le chemin d’accès approprié dont le service a besoin pour exécuter l’action.
+ 4. Saisissez l’URL ou le chemin d’accès approprié dont le service a besoin pour effectuer l’action.
 
 ![service_entry.png](./screenshots/service_entry.png ':size=700')
 
 
 
-##### 6. Soumettre la politique
+##### 6. Envoyer la politique
 
 Une fois toutes les sections configurées :
 
  1. Vérifiez la configuration de votre politique
  2. Cliquez sur `➢ Submit` pour enregistrer et activer la politique
- 3. Si elle est activée, la politique prend effet immédiatement
+ 3. Si la politique est activée, elle prend effet immédiatement
 
 ### Gérer les politiques existantes
 
@@ -226,22 +228,22 @@ La page principale Politiques affiche toutes les politiques configurées sous fo
 
 **Colonnes du tableau :**
 
-- **Nom** : Identifiant de la politique
-- **Services** : Services régis par cette politique
-- **Sources** : Entités pouvant initier un accès
-- **Destinations** : Entités cibles accessibles
-- **Activée** : État actuel de la politique (active/inactive)
+- **Nom** : identifiant de la politique
+- **Services** : services régis par cette politique
+- **Sources** : entités pouvant initier un accès
+- **Destinations** : entités cibles pour l’accès
+- **Activée** : état actuel de la politique (active/inactive)
 
 ![policies_overview.png](./screenshots/policies_overview.png ':size=700')
 
 > [!NOTE]
->Si un élément est laissé vide, un point d’exclamation jaune apparaîtra sur la ligne de la politique.
+>Si l’un des champs est laissé vide, un point d’exclamation jaune apparaît sur la ligne de la politique.
 
 ###### Activer/désactiver des politiques
 
-Modifiez l’état d’une politique directement depuis le tableau principal :
+Modifiez l’état de la politique directement depuis le tableau principal :
 
- 1. Cliquez sur le **bouton bascule Activer/Désactiver** de la ligne de la politique
+ 1. Cliquez sur le **bouton bascule d’activation/désactivation** dans la ligne de la politique
  2. L’état de la politique est mis à jour immédiatement
  3. Les politiques désactivées cessent d’appliquer les règles d’accès, mais restent configurées
 
@@ -252,54 +254,54 @@ Modifiez l’état d’une politique directement depuis le tableau principal :
 
 Pour modifier une politique existante :
 
- 1. Cliquez sur l’icône de modification ![](../../images/icons/icon_edit.png ':size=20') de la ligne de la politique.
- 2. Apportez les modifications nécessaires à l’une des sections
+ 1. Cliquez sur l’icône de modification ![](../../images/icons/icon_edit.png ':size=20') dans la ligne de la politique.
+ 2. Effectuez les modifications nécessaires dans les différentes sections
  3. Cliquez sur `➢ Submit` pour enregistrer les modifications
 
 ![update_policy.png](./screenshots/update_policy.png ':size=500')
 
 ##### Supprimer des politiques
 
-Cliquez sur l’icône de suppression ![](../../images/icons/icon_delete.png ':size=20') de la ligne de la politique pour supprimer celle-ci.
+Cliquez sur l’icône de suppression ![](../../images/icons/icon_delete.png ':size=20') dans la ligne de la politique pour la supprimer.
 
-Un avertissement s’affichera avant la suppression définitive de la politique :
+Un avertissement s’affiche avant la suppression définitive de la politique :
 
 ![delete_policy.png](./screenshots/delete_policy.png ':size=400')
 
 > [!WARNING]
-> La suppression d’une politique supprime immédiatement et définitivement toutes les règles d’accès qui lui sont associées. Les utilisateurs peuvent perdre l’accès aux services si aucune autre politique ne leur accorde l’autorisation.
+> La suppression d’une politique supprime immédiatement et définitivement toutes les règles d’accès qui lui sont associées. Les utilisateurs risquent de perdre l’accès aux services si aucune autre politique ne l’autorise.
 
 ### Migration des politiques
 
 Le système migre automatiquement les anciennes règles des configurations précédentes :
 
-- **Règles Attribute Service** → Politiques fondées sur les services
-- **Règles Group Traffic** → Politiques de groupe à groupe
-- **Règles Allow Custom Ports** → Politiques spécifiques aux ports
+- **Règles Attribute Service** → politiques fondées sur les services
+- **Règles Group Traffic** → politiques de groupe à groupe
+- **Règles Allow Custom Ports** → politiques propres à des ports
 
-Les politiques migrées affichent leur source d’origine dans la section Paramètres de base, ce qui vous aide à comprendre l’historique et le contexte de la règle.
+Les politiques migrées indiquent leur source d’origine dans la section Paramètres de base, ce qui vous aide à comprendre l’historique et le contexte de la règle.
 
 ### Bonnes pratiques
 
 #### Organisation des politiques
 
 - **Utilisez des noms descriptifs** qui indiquent clairement l’objectif de la politique
-- **Regroupez les services associés** dans une seule politique lorsque cela est approprié
+- **Regroupez les services associés** dans une même politique lorsque cela est approprié
 - **Séparez les règles d’accès critiques et non critiques** dans différentes politiques
-- **Utilisez des groupes** plutôt que des entités individuelles dans la mesure du possible
+- **Utilisez des groupes** plutôt que des entités individuelles lorsque cela est possible
 
 #### Considérations de sécurité
 
 - **Appliquez le principe du moindre privilège** : n’accordez que les accès nécessaires
-- **Examinez régulièrement les politiques** pour vous assurer qu’elles répondent aux besoins actuels de l’entreprise
+- **Passez régulièrement les politiques en revue** pour vérifier qu’elles répondent aux besoins actuels de l’entreprise
 - **Utilisez des groupes plutôt que des entités individuelles** pour faciliter la gestion
 
 > [!INFO]
-> Les politiques fournissent des pistes d’audit et des fonctionnalités de journalisation, ce qui facilite la supervision de l’utilisation et la résolution des problèmes de connexion.
+> Les politiques fournissent des pistes d’audit et des capacités de journalisation, ce qui facilite la supervision de l’utilisation et la résolution des problèmes de connexion.
 <!-- making it easier to track access patterns and troubleshoot connectivity issues.-->
 ### Dépannage
 
-#### Problèmes fréquents
+#### Problèmes courants
 
  **La politique ne prend pas effet**
 
@@ -310,14 +312,14 @@ Les politiques migrées affichent leur source d’origine dans la section Param�
 
  **Accès refusé malgré la politique**
 
-  - Vérifiez que les **règles d’accès des services** indiquent les plages de ports appropriées
-  - Vérifiez les **appartenances aux entités** (utilisateurs dans des groupes, appareils dans des réseaux)
+  - Vérifiez que les **règles d’accès aux services** définissent les plages de ports appropriées
+  - Vérifiez les **appartenances aux entités** (utilisateurs dans les groupes, appareils dans les réseaux)
   - Assurez-vous que les **destinations incluent les ressources cibles**
 
 
 ## **![](../../images/menu/menu_services.png ':size=28') Politiques de posture**
 
-Une politique de posture est un ensemble de règles et de critères de décision automatisés qui évaluent si un système, un appareil ou une application répond à une norme de conformité ou de sécurité requise avant d’être autorisé à accéder à un réseau ou à un environnement de production.
+Une politique de posture est un ensemble de règles et de critères de décision automatisés qui évaluent si un système, un appareil ou une application respecte une norme de conformité ou de sécurité requise avant d’être autorisé à rejoindre un réseau ou à être mis en production.
 
 ### Créer une politique de posture
 
@@ -330,8 +332,8 @@ Pour créer une politique de posture sur la plateforme, cliquez sur le bouton `+
 1. Sélectionnez le contrôle de posture que cette politique doit évaluer.
 2. Sélectionnez les systèmes d’exploitation sur lesquels cette politique de posture sera activée.
 3. Choisissez les paramètres souhaités.
-4. Choisissez où la politique est requise : pour la connexion au réseau SASE et/ou l’authentification cloud.
-5. Créez la politique en cliquant sur le bouton `Create`.
+4. Choisissez les cas où la politique est requise : connexion au réseau SASE et/ou authentification cloud.
+5. Créez la politique en cliquant sur le bouton `Create`.  
 
 ![posture_policy_settings.png](./screenshots/posture_policy_settings.png ':size=400')
 
@@ -342,9 +344,9 @@ Pour créer une politique de posture sur la plateforme, cliquez sur le bouton `+
 
 ### Activer/désactiver des politiques
 
-Modifiez l’état d’une politique directement depuis le tableau principal :
+Modifiez l’état de la politique directement depuis le tableau principal :
 
- 1. Cliquez sur le **bouton bascule Activer/Désactiver** de la ligne de la politique.
+ 1. Cliquez sur le **bouton bascule d’activation/désactivation** dans la ligne de la politique.
  2. L’état de la politique est mis à jour immédiatement.
  3. Les politiques désactivées cessent d’appliquer les règles d’accès, mais restent configurées.
 
@@ -355,20 +357,20 @@ Modifiez l’état d’une politique directement depuis le tableau principal :
 
 Vous pouvez modifier les politiques de posture en cliquant sur l’icône de modification ![](../../images/icons/icon_edit.png ':size=20') de leur ligne.
 
-Les options sont les mêmes que lors de la création de la politique. Naturellement, le contrôle de posture sélectionné ne peut pas être modifié.
+Les options sont les mêmes que lors de la création de la politique. Naturellement, le contrôle de posture choisi ne peut pas être modifié.
 
 ### Supprimer une politique de posture
 
 Vous pouvez supprimer les politiques de posture en cliquant sur l’icône de suppression ![](../../images/icons/icon_delete.png ':size=20') de leur ligne.
 
- Un avertissement s’affichera avant la suppression définitive de la politique :
+ Un avertissement s’affiche avant la suppression définitive de la politique :
 
 ![Capture d’écran de l’avertissement de suppression](./screenshots/delete_posture_policy.png ':size=400')
 
 
 ## **![](../../images/menu/menu_services.png ':size=28') Politiques sans agent**
 
-Les politiques sans agent sont des règles et des cadres de gouvernance appliqués aux systèmes, aux charges de travail cloud ou aux appareils réseau sans qu’il soit nécessaire d’installer un agent logiciel dédié directement sur chaque terminal cible.
+Les politiques sans agent sont des règles et des cadres de gouvernance appliqués aux systèmes, aux charges de travail cloud ou aux appareils réseau, sans nécessiter l’installation d’un agent logiciel dédié sur chaque point de terminaison cible.
 
 ### Créer une politique sans agent
 
@@ -379,16 +381,16 @@ Pour créer une politique sans agent sur la plateforme, cliquez sur le bouton `+
 ![create_agentless_policy.png](./screenshots/create_agentless_policy.png ':size=300')
 
 1. Choisissez un nom pour la politique (obligatoire).
-2. Sélectionnez au moins un service : SSH et/ou RDP.
-3. Ajoutez au moins une source : un groupe et/ou un utilisateur.
-4. Ajoutez au moins une destination : un groupe, un serveur, un appareil natif et/ou un appareil NIAC.
-5. Créez la politique en cliquant sur le bouton `Create`.
+2. Sélectionnez au moins un service : SSH et/ou RDP. 
+3. Ajoutez au moins une source : groupe et/ou utilisateur.
+4. Ajoutez au moins une destination : groupe, serveur, appareil natif et/ou appareil NIAC.
+5. Créez la politique en cliquant sur le bouton `Create`.  
 
 ### Activer/désactiver des politiques
 
-Modifiez l’état d’une politique directement depuis le tableau principal :
+Modifiez l’état de la politique directement depuis le tableau principal :
 
- 1. Cliquez sur le **bouton bascule Activer/Désactiver** de la ligne de la politique.
+ 1. Cliquez sur le **bouton bascule d’activation/désactivation** dans la ligne de la politique.
  2. L’état de la politique est mis à jour immédiatement.
  3. Les politiques désactivées cessent d’appliquer les règles d’accès, mais restent configurées.
 
@@ -400,13 +402,13 @@ Modifiez l’état d’une politique directement depuis le tableau principal :
 
 Vous pouvez modifier les politiques sans agent en cliquant sur l’icône de modification ![](../../images/icons/icon_edit.png ':size=20') de leur ligne.
 
-Les options sont les mêmes que lors de la création de la politique.
+Les options sont les mêmes que lors de la création de la politique. 
 
 ### Supprimer une politique sans agent
 
 Vous pouvez supprimer les politiques sans agent en cliquant sur l’icône de suppression ![](../../images/icons/icon_delete.png ':size=20') de leur ligne.
 
- Un avertissement s’affichera avant la suppression définitive de la politique :
+ Un avertissement s’affiche avant la suppression définitive de la politique :
 
 ![Capture d’écran de l’avertissement de suppression](./screenshots/delete_agentless_policy.png ':size=400')
 

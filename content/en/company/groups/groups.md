@@ -2,7 +2,7 @@
 
 Groups in the network setting act as a valuable mechanism for applying uniform network rules across multiple users, servers, and Network Isolation Access Clients (NIACs).
 
-The concept of groups brings a high level of versatility and control to your network management. As mentioned in [Best Practices](/./advanced/bestpractices/bestpractices.md) it is better to choose group names that reflects its function, such as 'AllowFileServer', 'ForceOneGateway'...
+The concept of groups brings a high level of versatility and control to your network management. As mentioned in [Best Practices](/./advanced/bestpractices/bestpractices.md) it is better to choose group names that reflects its function, such as 'AllowFileServer', 'ForceOneGateway', WanGateway...
 
 For instance, a group named 'AllowServerAccess' could be set up with rules allowing members of that group to access with the devices in the group 'Servers'. Simultaneously, a separate group such as 'NoServerAccess' could be configured not to have this access. 
 

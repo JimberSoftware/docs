@@ -35,6 +35,7 @@
   - [Security Panel](./rules/security_panel/security_panel)
   - [Scripts](./rules/scripts/scripts)
   - [Group Configuration](./rules/groupconfiguration/groupconfiguration)
+  - [Effective Access](./rules/effective_access/effective_access)
   - [Web Filtering](./rules/webfiltering/webfiltering)
   - [Port Forwarding](./rules/portforwarding/portforwarding)
   <!-- - [Services](./rules/services/services) -->

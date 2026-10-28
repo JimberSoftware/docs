@@ -58,7 +58,7 @@ Before starting, make sure that:
    the last available network interface whenever possible.
 6. Select **Next** and wait for the connection verification to complete.
 
-![Primary Network Controller HA configuration](./screenshots/high-availability-primary.png ':size=900')
+![Primary Network Controller HA configuration](./screenshots/high-availability-primary.png ':size=700')
 
 Leave the primary Network Controller running before continuing with the
 secondary.
@@ -77,13 +77,13 @@ secondary.
    primary. Use the last available network interface whenever possible.
 7. Select **Next**.
 
-![Secondary Network Controller HA configuration](./screenshots/high-availability-secondary.png ':size=900')
+![Secondary Network Controller HA configuration](./screenshots/high-availability-secondary.png ':size=700')
 
 During configuration, the secondary temporarily configures its HA interface and
 authenticates to the primary. When the primary is reachable and ready, the
 secondary confirms the connection and enters standby.
 
-![Secondary Network Controller connected to the primary](./screenshots/high-availability-secondary-ready.png ':size=900')
+![Secondary Network Controller connected to the primary](./screenshots/high-availability-secondary-ready.png ':size=700')
 
 ## Test failover and handback
 

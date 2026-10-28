@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
-- <span style="color: darkblue;">Plateforme Jimber SASE</span>
-    - [Démarrage](./gettingstarted/index)
+- <span style="color: darkblue;">Plateforme JIMBER SASE</span>
+    - [Premiers pas](./gettingstarted/index)
     - [Bonnes pratiques](./advanced/bestpractices/bestpractices)
     - [Paramètres importants](./gettingstarted/setting.md)
 - [**ENTREPRISE**](/company.md)
@@ -16,9 +16,9 @@
         - [Connexion OIDC](./company/configur/oidc-login)
     - [Déployer un certificat racine avec Intune](./company/configur/root-certificate-intune)
 - [**APPAREILS**](/devices.md)
-  - [Appareils utilisateurs](./devices/userdevices/userdevices)
+  - [Appareils utilisateur](./devices/userdevices/userdevices)
   - [Serveurs](./devices/servers/servers)
-  - [NIACs](./devices/niacs/niacs)
+  - [NIAC](./devices/niacs/niacs)
   - [Contrôleurs réseau](./devices/networkcontrollers/networkcontrollers)
   - [Appareils natifs](./devices/nativedevices/nativedevices.md)
 - [**RÉSEAUX NATIFS**](/nativenetworks.md)
@@ -31,10 +31,11 @@
   
   
 - [**SÉCURITÉ**](/security.md)
-  - [Trafic sortant Zero Trust](./ZTO/)
+  - [Zero Trust Outbound](./ZTO/)
   - [Panneau de sécurité](./rules/security_panel/security_panel)
   - [Scripts](./rules/scripts/scripts)
   - [Configuration de groupe](./rules/groupconfiguration/groupconfiguration)
+  - [Accès effectif](./rules/effective_access/effective_access)
   - [Filtrage web](./rules/webfiltering/webfiltering)
   - [Redirection de ports](./rules/portforwarding/portforwarding)
   <!-- - [Services](./rules/services/services) -->

@@ -1,4 +1,4 @@
-# Custom Configuration
+# ![](../../images/menu/menu_configuration.png ':size=25') Custom Configuration
 
 To accommodate specific requirements or to address compatibility issues with other software on your system, a custom configuration for the **_<span style="color: darkblue;">Jimber SASE Platform</span>_** may be necessary. This flexibility is especially useful during testing phases or when customizing the software to fit unique operational environments.
 
