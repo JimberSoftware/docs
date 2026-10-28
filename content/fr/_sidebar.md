@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
-- <span style="color: darkblue;">Plateforme Jimber SASE</span>
-    - [Premiers pas](./gettingstarted/index)
+- <span style="color: darkblue;">Plateforme JIMBER SASE</span>
+    - [Bien démarrer](./gettingstarted/index)
     - [Bonnes pratiques](./advanced/bestpractices/bestpractices)
     - [Paramètres importants](./gettingstarted/setting.md)
 - [**ENTREPRISE**](/company.md)
@@ -39,9 +39,9 @@
   - [Politiques](./rules/firewall-policies/firewall-policies) 
   - [EDR](./rules/edrconfiguration/edrconfiguration)
   - [Authentification des applications](./rules/app-authentication/app-authentication)
-  - [Trafic de groupe (Archivé)](./rules/grouptraffic/grouptraffic)
-  - [Services d’attributs (Archivé)](./rules/attribute_services/attribute_services)
-  - [Autoriser les ports personnalisés (Archivé)](./rules/customports/customports)
+  - [Trafic de groupe (archivé)](./rules/grouptraffic/grouptraffic)
+  - [Services d’attributs (archivés)](./rules/attribute_services/attribute_services)
+  - [Autoriser les ports personnalisés (archivé)](./rules/customports/customports)
 
 - [**AVANCÉ**](/advanced.md)
   - [Configuration personnalisée](./advanced/customconfiguration/customconfiguration)

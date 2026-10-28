@@ -11,8 +11,8 @@
                 "_sidebar.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "983bbf4154ecb318c7b68ff551df5a556a772baef1f569dbbe3295e633730c97",
-                    "translation_hash": "898525220644c4e70ccd31fc156bf595f9141056418b1684caa2036f834fdb5a"
+                    "source_hash": "cfc9bccb50779d282e663c3f6f6c2d67e74e2405cff5c20b5fd403a44e27d879",
+                    "translation_hash": "0f818b49ff93138a838d8dd4958a3cc661d5d259e43cd45a9a04e9c45d499542"
                 },
                 "advanced.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -91,6 +91,12 @@
                     "prompt_version": "1",
                     "source_hash": "bf11b2893a2d90b5574f8ec86a03d8fd8e2fc81cbf2282534ecb69ed16fc5f41",
                     "translation_hash": "6fb1abb0448424ada6049b4c3dd247e912190a914566f8e4342693f7d57135d1"
+                },
+                "advanced/networkcontrollerssetup/high-availability.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "cf1c7b139205f446fa5972f8ae233e89a67c745e94725a3245accabfda0f11ef",
+                    "translation_hash": "0db26024617be64dba824d283d8ead49d06b8f5600f26a735b19c7033db0417c"
                 },
                 "advanced/personalaccesstokens/personalaccesstokens.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -423,7 +429,7 @@
         }
     },
     "source": {
-        "commit": "baba019cdc93ab955e2eb54ba2e4dd182f4a97eb",
+        "commit": "1fc139ec715a15396a525cff8d561b5821f91e43",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },
