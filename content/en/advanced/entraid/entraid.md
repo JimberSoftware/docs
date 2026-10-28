@@ -33,26 +33,27 @@ Following permissions from the Microsoft Graph API are needed:
 - Group.Read.All (Application)
 - User.Read (Delegated) -> this one should already be created by default
 - User.Read.All (Application)
+- Device.Read.All (Application) -> required for **auto-login**, see [Auto-login](#auto-login-microsoft-entra-id-sso-on-windows)
 
 To grant new permissions you can click on 'Add a permission' which is located just above the existing permissions.
 Here you can click on the 'Microsoft Graph' button.
 
 ![azure_microsoft_graph.png](./screenshots/request_api.png ":size=700")
 
-As said before you will need to add Group.Read.All and User.Read.All, both are **Application permissions**.
+As said before you will need to add Group.Read.All, User.Read.All and Device.Read.All, all three are **Application permissions**.
 
 > [!WARNING]
 > Make sure to click on the right type of permissions!
 
 ![microsoft_graph_type_permissions.png](./screenshots/request_api_2.png ":size=700")
 
-This will give you a whole list of different permissions where you can search for the right ones: 'Group.Read.All' and 'User.Read.All'.
+This will give you a whole list of different permissions where you can search for the right ones: 'Group.Read.All', 'User.Read.All' and 'Device.Read.All'.
 
 ![permission_group.png](./screenshots/permission_group.png ":size=500")
 
 ![permission_user.png](./screenshots/permission_user.png ":size=500")
 
-After this is done your permission list should look like this:
+After this is done your permission list should look like this (your list will show one extra row, `Device.Read.All`, compared to the screenshot):
 
 ![azure_permissions_list.png](./screenshots/azure_permissions_list.png ":size=700")
 
@@ -68,6 +69,18 @@ To do this click on 'Grand admin consent for Standaardmap' which is next to 'Add
 Eventually your permission list should look like this:
 
 ![grand_admin_consent.png](./screenshots/configured_permissions.png ":size=700")
+
+### Auto-login (Microsoft Entra ID SSO on Windows)
+
+The Jimber SASE client on Windows can sign a user in automatically with their Microsoft Entra ID identity instead of showing the browser login. Before the client skips the browser login, the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** verifies through Microsoft Graph that the device is Entra-joined and that the signed-in user is registered to that device.
+
+That check uses the `/devices` Graph endpoints, which is why the **Device.Read.All** application permission is required in addition to `Group.Read.All` and `User.Read.All`. It must be added as an **Application permission** and admin consent must be granted for it, just like the other two.
+
+> [!NOTE]
+> Auto-login is also a per-group setting in the group configuration. When it is not enabled for a group, the platform does not query Microsoft Graph for that user at all.
+
+> [!WARNING]
+> If `Device.Read.All` is missing, was added as a *Delegated* permission, or admin consent was not granted for it, Microsoft Graph replies with *Insufficient privileges to complete the operation*. The platform records this as `Device query failed: Insufficient privileges to complete the operation.` in **Recent Activity**, and affected users fall back to the interactive browser login.
 
 ### Client credentials
 

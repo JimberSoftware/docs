@@ -59,8 +59,8 @@
                 "advanced/entraid/entraid.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "a168991a501dc0f5422e7e42f3bf24313cb0c3f31cae598fb24fc48a3488fe75",
-                    "translation_hash": "54a9414a4c268653035e09f133600ee50437edbad199ca1d6d7818d0be131436"
+                    "source_hash": "0aada146b4b73b7f52760f67aefa7c60aefb780ba6e10456d44894d2e1ae6cc6",
+                    "translation_hash": "2615cd792f23d4cad353b9a88dd637eee1d1c01a17f08474960b1e5b719c9455"
                 },
                 "advanced/hypervisorinstallation/hypervisorinstallation copy.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -423,7 +423,7 @@
         }
     },
     "source": {
-        "commit": "371171a2c22e5d8fdfd8538215cc969bb3451f9c",
+        "commit": "7c0ee0a8431d96daadf38c4d427fca346d938a79",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },
