@@ -8,11 +8,17 @@
                     "source_hash": "015d6b60ef7dfaa5d172b07946d7e50429eb849a4ce5933a70011bb1624d2c87",
                     "translation_hash": "8fb8bc31ed359dfbd91e8d7f1b3e565e497bf129d0d256ab3ce231cc80ee6683"
                 },
+                "ZTO/README.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "0b6f95084ba70f6b5f72532f77eee8730914b9bf0b14cf1d589cb98eae5390cc",
+                    "translation_hash": "11494c7d035d9e263bbc30201ab561c76bb52c4183bc58ea879db8f4aa8b76cd"
+                },
                 "_sidebar.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "cfc9bccb50779d282e663c3f6f6c2d67e74e2405cff5c20b5fd403a44e27d879",
-                    "translation_hash": "0f818b49ff93138a838d8dd4958a3cc661d5d259e43cd45a9a04e9c45d499542"
+                    "source_hash": "11fca52aed902f0e6f350846a04beeeb53f7c6a72bcbe321a595bfed2637df1d",
+                    "translation_hash": "1dd4f4f0730523be035fd44f92842f01d0b9dd07b50960906315638d165481f1"
                 },
                 "advanced.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -143,8 +149,14 @@
                 "company/configur/configuration.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "21e1b2fcdc2c931c8d784c5d7e9698302f868fc64ca4514debb11b41ec1b6487",
-                    "translation_hash": "efc6ed1474c98036c9945947a8d1533db8ef9f1af62b017308aacde37fb3f4f5"
+                    "source_hash": "951674d8ff9d76791164135a6b93c56b9a63235570c563f9c9ed370bbce91882",
+                    "translation_hash": "3461390580f5e22cdbccbb818e990c3b6f5f3007c76ec08997afeac39ae9fb5a"
+                },
+                "company/configur/oidc-login.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "6479f25eaf13b47bee522cce0c8ee80ffbe4a1eacb13cfa5e807370a8496d782",
+                    "translation_hash": "20d04429f9a21e2d96f17e33d6210dabe7fe927d86539795e30efc4426e7d2d8"
                 },
                 "company/configur/root-certificate-intune.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -429,7 +441,7 @@
         }
     },
     "source": {
-        "commit": "1fc139ec715a15396a525cff8d561b5821f91e43",
+        "commit": "bc48150430739fb95e455085057f1ed164b795f7",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },

@@ -13,6 +13,7 @@
     - [Integrations](./company/integrations/integrations)
     - [Notifications](./company/notificat/notifications)
     - [Configuration](./company/configur/configuration)
+        - [OIDC Login](./company/configur/oidc-login)
     - [Deploy a root certificate with Intune](./company/configur/root-certificate-intune)
 - [**DEVICES**](/devices.md)
   - [User Devices](./devices/userdevices/userdevices)
@@ -30,6 +31,7 @@
   
   
 - [**SECURITY**](/security.md)
+  - [Zero Trust Outbound](./ZTO/)
   - [Security Panel](./rules/security_panel/security_panel)
   - [Scripts](./rules/scripts/scripts)
   - [Group Configuration](./rules/groupconfiguration/groupconfiguration)

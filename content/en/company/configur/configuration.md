@@ -15,6 +15,12 @@ These settings define general information about your company within the **_*<spa
     > [!INFO]
     > The platform will automatically try to extract the company logo from this URL and display it in the user interface.
 
+### Authentication
+
+The **Authentication** section controls how users sign in to the company. Built-in authentication options can be enabled alongside one or more OpenID Connect providers.
+
+Use [OIDC Login](./oidc-login.md) to connect a standards-compliant identity provider, understand how SASE validates and matches users, and test the complete sign-in flow.
+
 ### Network Isolation <!--Jimber SASE Licence--> Settings
 
 These settings control how user devices are managed and isolated in your environment.

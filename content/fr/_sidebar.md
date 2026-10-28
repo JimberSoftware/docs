@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
-- <span style="color: darkblue;">Plateforme JIMBER SASE</span>
-    - [Bien démarrer](./gettingstarted/index)
+- <span style="color: darkblue;">Plateforme Jimber SASE</span>
+    - [Démarrage](./gettingstarted/index)
     - [Bonnes pratiques](./advanced/bestpractices/bestpractices)
     - [Paramètres importants](./gettingstarted/setting.md)
 - [**ENTREPRISE**](/company.md)
@@ -13,11 +13,12 @@
     - [Intégrations](./company/integrations/integrations)
     - [Notifications](./company/notificat/notifications)
     - [Configuration](./company/configur/configuration)
+        - [Connexion OIDC](./company/configur/oidc-login)
     - [Déployer un certificat racine avec Intune](./company/configur/root-certificate-intune)
 - [**APPAREILS**](/devices.md)
-  - [Appareils utilisateur](./devices/userdevices/userdevices)
+  - [Appareils utilisateurs](./devices/userdevices/userdevices)
   - [Serveurs](./devices/servers/servers)
-  - [NIAC](./devices/niacs/niacs)
+  - [NIACs](./devices/niacs/niacs)
   - [Contrôleurs réseau](./devices/networkcontrollers/networkcontrollers)
   - [Appareils natifs](./devices/nativedevices/nativedevices.md)
 - [**RÉSEAUX NATIFS**](/nativenetworks.md)
@@ -30,6 +31,7 @@
   
   
 - [**SÉCURITÉ**](/security.md)
+  - [Trafic sortant Zero Trust](./ZTO/)
   - [Panneau de sécurité](./rules/security_panel/security_panel)
   - [Scripts](./rules/scripts/scripts)
   - [Configuration de groupe](./rules/groupconfiguration/groupconfiguration)
