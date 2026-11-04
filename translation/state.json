@@ -17,8 +17,8 @@
                 "_sidebar.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "48de2fde9c213152de48bbb5e15be80ae988883c3be13fac1ba2c33a50742cf1",
-                    "translation_hash": "4d46372ce4951901373cdaa6885543143851bb322521b15e5af6c5969c77df4b"
+                    "source_hash": "e291d1db4580440200fa37570d76b7ca198682f21a010b3f19d13a0b2118c660",
+                    "translation_hash": "ae76c5570ff4f1bd7576610875f0e514e56ac2beef58bfd86145deb9b3ad34f0"
                 },
                 "advanced.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -281,8 +281,8 @@
                 "nativenetworks.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "42f2d5484337d24d676f2d70bf6e1a17ac386fa995601ac9c0888516ac42be82",
-                    "translation_hash": "e6a32e91a810c55ca0e1d8210f9234f4c4cfe918cb3b949b7e2ed918c63498cb"
+                    "source_hash": "87b134b9969d4c28aee1a3fb2353c5ee9ea922e9199ee035252b7f93108f7c0b",
+                    "translation_hash": "5caac6bbed2cdeb399f70bfa0f6706c8bfaac9f0312a9b8611f747da67bce23e"
                 },
                 "nativenetworks/dhcp-server.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -293,8 +293,8 @@
                 "nativenetworks/index.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "fa325f4bf0e3413b28d60424d3ff73b93a0f5d3f8fb88bb1c7d4c7fa30c9a1c1",
-                    "translation_hash": "c8d6d302983ee28cfaeb3a9e192d0239c9ddc9f117457d396683180da7109daa"
+                    "source_hash": "8549d7a74aa4a1f54d3055b5cd7109db006689b51928cd8020d716366394a3cf",
+                    "translation_hash": "5371a25e63fb644be936c666288b180d0f2eb58b34c2e499aeb17132d5f259a2"
                 },
                 "nativenetworks/network-interfaces.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -323,8 +323,8 @@
                 "nativenetworks/web-filtering.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "8c5ed1fde45054e82d94633888b2a5f1a3860814212cf86e56204a189f8b7d74",
-                    "translation_hash": "24a817f354b55298ed301ee1299c9710ec6694ee1bf7efef353c52860a3b6de7"
+                    "source_hash": "d83539ed56259041cbc1b91d71e39e31995bf36f101948018072f88ff29090d0",
+                    "translation_hash": "ae2c6075a84aa1eb3806ec13bd5428730ee5cb3d626e9141624c49ba0b74e2e0"
                 },
                 "output.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -371,8 +371,8 @@
                 "rules/groupconfiguration/groupconfiguration.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "1e491b653aebaeb1999d4f293c93ef2c26657dcd13f92a985c54a98f52586c54",
-                    "translation_hash": "8a48d9129142f622f5e048f86640ce2d619884273db996820440e3eb1ad34b1c"
+                    "source_hash": "816e9412be66cccd321720a6fffd818977362f7279184d28f9bc998ffd301e15",
+                    "translation_hash": "86aaa4fc1ae86c6ca6ed657ff2bd6afd6abc3994552658e53b8c9ef32646d9be"
                 },
                 "rules/grouptraffic/grouptraffic.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -407,14 +407,14 @@
                 "rules/webfiltering/webfiltering.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "170e1c4a4b7276fc5e81e25b6cd13b34a57d6c9ff6a6ec96cf2481362fb65c27",
-                    "translation_hash": "8e4dc1651f77bb455126705f28837b7ba5a6c315aa8654022ac484c4c1d34d45"
+                    "source_hash": "6831b0d1c6654bbab5398d0e3da294cc12225b0b2a1b0cb36b5b0c157f766bec",
+                    "translation_hash": "cadbb4149ed3f265ce2e18b1d0cd68b3d785ea7fdcf61ef369a070e63d3d1339"
                 },
                 "security.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "64d9939fa3e40e4cb1153735c37c60db40619c6b165da7f84a914715307c7830",
-                    "translation_hash": "a324a03949962e82389ec88258e06f9054d82f11d7ea7141e6197425b473de30"
+                    "source_hash": "6ff5a5216abd22b0d390edc03229a9b3641e4d1a1ab8e316837c294fcdf6cbee",
+                    "translation_hash": "0359c6344a5a1a5f4c86122e5d20241ed8c7d45fe25b8ca3a0346abb1f40b187"
                 },
                 "tutorials/cloud/index.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -447,7 +447,7 @@
         }
     },
     "source": {
-        "commit": "5a0a07ccdd8853e6f12adc383e4edc462a8fb67b",
+        "commit": "8401cf4eada2e50c896caa703ca8486c9d8b226b",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },

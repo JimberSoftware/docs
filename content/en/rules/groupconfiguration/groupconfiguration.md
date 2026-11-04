@@ -7,8 +7,7 @@ Group Configuration allows administrators to define and manage policies that con
 This modular approach makes it easy to apply consistent settings across similar users or departments, enforce compliance standards, and simplify large-scale management. Each tab below represents a configurable option that can be enabled, disabled, or customized per group.
 
 > [!TIP]
-> You can download an overview of the group configuration by clicking on the download icon ![](../../images/icons/icon_download.png ':size=20') located at the top right of the overview. The overview will be downloaded as a CSV-file. 
-
+> You can download an overview of the group configuration by clicking on the download icon ![](../../images/icons/icon_download.png ':size=20') located at the top right of the overview. The overview will be downloaded as a CSV-file.
 
 ### Edit Group Configuration
 
@@ -32,20 +31,21 @@ Next to the search box, there is a filter icon ![](../../images/icons/icon_filte
 
 To add multiple filters you can press the filter icon ![](../../images/icons/icon_filter.png ':size=20') again and then press the `+` button.
 
-
 > [!TIP]
 > You can refresh the list by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
 
 <!-- tabs:start -->
 
 ### **WAN GATEWAY**
+
 _Force all client internet traffic through the cloud or on-premise router._
 
 #### Overview
 
-By enabling this feature, you can make certain applications accessible **only** to users who are securely connected through the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_***.
+By enabling this feature, you can make certain applications accessible **only** to users who are securely connected through the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_**.
 
 #### Benefits of WAN Gateway
+
 - Route traffic through your existing firewall or proxy for added security or monitoring.
 - Ensure all internet traffic appears to come from a single, consistent IP address — which is required by some SaaS (cloud) applications for access control.
 
@@ -58,30 +58,34 @@ When this option is enabled, all internet traffic from connected devices will be
 
 > [!INFO]
 > **Things to keep in mind when using WAN Gateway:**
+>
 > - **All internet traffic** from clients will be routed through either the **local on-prem** or **cloud Network Controller**, depending on your setup.
 > - **Services tied to your local WAN IP** may stop working. For example, some DNS settings from internet providers rely on a specific IP. A known issue occurs with **Telenet routers** using `195.130.131.11` as their DNS—this address does **not** work when routed through the cloud controller. In such cases, use **DNS Override** to fix it.
 > - **Slightly increased latency** is possible, as traffic takes an extra hop through the gateway.
 
 ##### Configuration Steps
-1. Enable **WAN Gateway** in the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** group configuration settings of the selected group.
+
+1. Enable **WAN Gateway** in the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_** group configuration settings of the selected group.
 2. Monitor and adjust usage as needed.
 
 ### **DNS OVERRIDE**
+
 _Resolve internal devices by hostname or alias and enable DNS-based web filtering._
 
 #### Overview
 
 The **DNS Override** feature enhances control and security by allowing you to customize how domain names are resolved within your network. With this feature, you can resolve internal devices by their hostname or alias, which simplifies network management and improves usability. Additionally, DNS override enables web filtering, letting you block access to specific websites for improved security or to increase productivity.
 
-
 #### Benefits of DNS Override
 
 ##### 1. Resolve Internal Devices by Hostname or Alias
+
 - **Ease of Access**: Quickly and easily access internal devices without needing to remember IP addresses.
 - **Simplified Network Management**: Centralize DNS records for all internal devices.
 - **Consistent Naming Conventions**: Reduce confusion and potential errors.
 
-##### 2. Web Filtering
+##### 2. DNS Filtering
+
 - **Enhanced Security**: Block access to known malicious websites.
 - **Productivity Improvement**: Prevent access to distracting websites.
 - **Customizable Filtering**: Tailor web filtering policies to your organization.
@@ -94,20 +98,23 @@ The DNS override feature works by intercepting DNS queries within your network a
 > On Linux, DNS Override is supported only with **systemd-resolved**.
 
 ##### Configuration Steps
+
 1. Define hostnames and aliases.
 2. Set up web filtering rules.
-3. Enable **DNS Override** in the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** group configuration settings of the selected group.
+3. Enable **DNS Override** in the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_** group configuration settings of the selected group.
 
 #### Example Use Cases
 
 **Internal Device Resolution:**
+
 - Access a server via `server.company.local` or alias like `fileserver`.
 
-**Web Filtering:**
+**DNS Filtering:**
+
 - Block phishing or block time-wasting sites like social media.
 
-
 ### **DEVICE APPROVAL**
+
 _Require administrative consent before devices can access the network._
 
 #### Overview
@@ -117,11 +124,13 @@ The **Device Approval** feature introduces an extra layer of security by requiri
 #### Benefits of Device Approval
 
 ##### 1. Enhanced Security
+
 - **Access Control**: Only approved devices can join the network.
 - **Compliance**: Helps with internal policies and regulations.
 - **Accountability**: Provides an audit trail.
 
 ##### 2. Administrative Oversight
+
 - **Notification System**: Admins are alerted (if enabled).
 - **Approval Workflow**: Simple UI to manage requests.
 - **Monitoring**: Track all connected devices.
@@ -131,17 +140,18 @@ The **Device Approval** feature introduces an extra layer of security by requiri
 When a user tries to onboard a device, the Device Approval feature requires administrator approval before the device is granted access to the network.
 
 ##### Configuration Steps
-1. Enable **Device Approval** in the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** group configuration settings of the selected group.
+
+1. Enable **Device Approval** in the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_** group configuration settings of the selected group.
 2. Enable notifications for new requests.
 3. Admins review/approve devices via dashboard.
 
-
 ### **MOBILE CONNECTION**
+
 _Connect mobile devices to the network securely._
 
 #### Overview
 
-The **Mobile Connection** feature enables users to securely connect their mobile devices to the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** using the Jimber Network Isolation app. Once enabled, users can register and link their mobile devices through a simple and secure process.
+The **Mobile Connection** feature enables users to securely connect their mobile devices to the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_** using the Jimber Network Isolation app. Once enabled, users can register and link their mobile devices through a simple and secure process.
 
 #### Benefits
 
@@ -159,10 +169,10 @@ When Mobile Connection is enabled, users can add a mobile device via the Securit
 1. Enable **Mobile Connection** in the **_<span style="color: darkblue;">Jimber SASE Platform</span>_** group configuration settings of the selected group.
 2. Create a new mobile device in the Security panel.
 3. Link the mobile device by scanning the QR code with the **_<span style="color: darkblue;">Jimber SASE app</span>_**.
-<!-- 3. Link the mobile device by scanning the QR code with the Jimber Network Isolation app. -->
-
+ <!-- 3. Link the mobile device by scanning the QR code with the Jimber Network Isolation app. -->
 
 ### **DEVICE LIMIT**
+
 _Restrict how many devices each user can onboard._
 
 #### Overview
@@ -184,17 +194,18 @@ The **Device Limit** feature lets administrators control how many devices each u
 Each user is assigned a device limit. Once they reach this limit, they must remove an existing device or request permission to add another.
 
 ##### Configuration Steps
-1. Enable **Device Limit** in the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** group configuration settings of the selected group.
+
+1. Enable **Device Limit** in the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_** group configuration settings of the selected group.
 2. Set the device count per user.
 3. Monitor and adjust usage as needed.
 
-
 ### **ALWAYS ON**
+
 _Ensure the application runs continuously to enforce network policies._
 
 #### Overview
 
-The **Always On** feature keeps the ***_<span style="color: darkblue;">Jimber SASE Service</span>_*** running at all times to ensure that network policies are consistently enforced. It offers two enforcement levels: **Forced Mode** and **Autostart Mode**, giving organizations flexibility based on their security needs.
+The **Always On** feature keeps the **_*<span style="color: darkblue;">Jimber SASE Service</span>*_** running at all times to ensure that network policies are consistently enforced. It offers two enforcement levels: **Forced Mode** and **Autostart Mode**, giving organizations flexibility based on their security needs.
 
 #### Benefits
 
@@ -211,7 +222,7 @@ When Always On is enabled, the application will launch with the system. Dependin
 
 ##### Configuration Steps
 
-1. Enable **Always On** in the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** group configuration settings of the selected group.
+1. Enable **Always On** in the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_** group configuration settings of the selected group.
 2. Choose between **Forced Mode** or **Autostart Mode**.
 3. Deploy the settings to connected devices.
 
@@ -228,14 +239,14 @@ More information on EDR is to be find [here](/./rules/edrconfiguration/edrconfig
 - Enable **EDR** in the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** group configuration settings of the selected group.
 
 edr_groupconfig.png -->
+
 ### **SSL**
 
 _SSL inspection intercepts, decrypts, scans, and re-encrypts encrypted HTTPS web traffic in real time to uncover hidden security threats._
 
 ##### Configuration Step
 
-- Enable **SSL** in the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** group configuration settings of the selected group.
-
+- Enable **SSL** in the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_** group configuration settings of the selected group.
 
 <!-- ### **IDS/IPS**
 
@@ -245,6 +256,5 @@ _IPS (Intrusion Prevention System) detects and prevents intrusions, unauthorized
 
 
 IDS and IPS are security systems that monitor network traffic for malicious activity. An IDS detects threats and generates alerts, while an IPS not only detects threats but also takes action to stop them. -->
-
 
 <!-- tabs:end -->

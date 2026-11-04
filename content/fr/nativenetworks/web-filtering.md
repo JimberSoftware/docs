@@ -1,31 +1,31 @@
-# ![native_networks](../images/menu/menu_webfiltering.png ':size=25') Filtrage web
+# ![réseaux natifs](../images/menu/menu_webfiltering.png ':size=25') Filtrage DNS
 
-Utilisez la page _Filtrage web_ pour appliquer des politiques de filtrage à un réseau natif sélectionné.
+Utilisez la page _Filtrage DNS_ pour appliquer des politiques de filtrage à un réseau natif sélectionné.
 
 > [!ATTENTION]
-> Le filtrage web ne sera appliqué que si vous utilisez le DNS Jimber.
+> Le filtrage DNS ne sera appliqué que si Jimber DNS est utilisé.
 
-Vous pouvez contrôler les catégories de contenu courantes, les plateformes de réseaux sociaux, les outils d’IA et les domaines personnalisés au moyen d’une liste d’autorisation ou d’une liste de blocage.
+Vous pouvez contrôler les catégories de contenu courantes, les plateformes de réseaux sociaux, les outils d’IA et les domaines personnalisés à l’aide d’une liste d’autorisation ou d’une liste de blocage.
 
-### Configurer le filtrage web
+### Configurer le filtrage DNS
 
 ![web-filtering.png](./screenshots/web-filtering.png ':size=600')
 
 - Choisissez un _Réseau natif_ dans la liste déroulante en haut à gauche de la page.
-- Examinez les cartes de filtrage de la page.
-- Pour chaque catégorie ou service, activez le bouton _Bloquer_ ou _Superviser_ selon la politique que vous souhaitez appliquer.
+- Examinez les cartes de filtrage sur la page.
+- Pour chaque catégorie ou service, activez l’option _Bloquer_ ou _Surveiller_ correspondant à votre politique.
 
 > [!Attention]
 > N’oubliez pas de cliquer sur _Soumettre_ en haut à droite de la page !
 
-### Modes Bloquer et Superviser
+### Modes Bloquer et Surveiller
 
-Chaque élément de filtrage comprend deux options :
+Chaque élément de filtrage comporte deux options :
 
 - _Bloquer_ pour empêcher l’accès.
-- _Superviser_ pour observer le trafic associé à cette catégorie ou à ce service.
+- _Surveiller_ pour observer le trafic associé à cette catégorie ou à ce service.
 
-Choisissez le paramètre correspondant à la politique que vous souhaitez appliquer au réseau sélectionné.
+Choisissez le paramètre correspondant à votre politique pour le réseau sélectionné.
 
 ### Ajouter un domaine à la liste de blocage
 
@@ -61,10 +61,10 @@ Si aucun domaine personnalisé n’a encore été ajouté, la page affiche _Aucu
 
 ### Remarque
 
-Si vous cliquez sur la petite icône d’horloge en bas à droite, une nouvelle fenêtre s’ouvre pour vous permettre d’indiquer les jours pendant lesquels la liste de blocage ou la liste d’autorisation s’applique :
+Si vous cliquez sur la petite icône d’horloge en bas à droite, une nouvelle fenêtre s’affiche, dans laquelle vous pouvez indiquer les jours où la liste de blocage ou la liste d’autorisation s’applique :
 
 ![weekly_schedule.png](./screenshots/weekly_schedule.png ':size=500')
 
 ## Résumé
 
-Utilisez le *Filtrage web* pour appliquer des contrôles de contenu au niveau du réseau aux appareils connectés par l’intermédiaire d’un réseau natif, y compris aux appareils non gérés sur lesquels le ***_<span style="color: darkblue;">Jimber SASE Client</span>_*** n’est pas installé.
+Utilisez le _Filtrage DNS_ pour appliquer des contrôles de contenu au niveau du réseau aux appareils connectés par l’intermédiaire d’un réseau natif, y compris les appareils non gérés qui n’exécutent pas **_*<span style="color: darkblue;">Jimber SASE Client</span>*_**.
