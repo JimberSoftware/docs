@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-- <span style="color: darkblue;">Plateforme JIMBER SASE</span>
+- <span style="color: darkblue;">Plateforme Jimber SASE</span>
     - [Bien démarrer](./gettingstarted/index)
     - [Bonnes pratiques](./advanced/bestpractices/bestpractices)
     - [Paramètres importants](./gettingstarted/setting.md)
@@ -29,29 +29,28 @@
     - [Serveur DHCP](./nativenetworks/dhcp-server.md)
     - [Filtrage DNS](./nativenetworks/web-filtering.md)
 - [**SÉCURITÉ**](/security.md)
-    - [Zero Trust Outbound](./ZTO/)
-    - [Panneau de sécurité](./rules/security_panel/security_panel)
-    - [Scripts](./rules/scripts/scripts)
-    - [Configuration de groupe](./rules/groupconfiguration/groupconfiguration)
-    - [Accès effectif](./rules/effective_access/effective_access)
-    - [Filtrage DNS](./rules/webfiltering/webfiltering)
-    - [Redirection de ports](./rules/portforwarding/portforwarding)
-      <!-- - [Services](./rules/services/services) -->
-    - [Politiques](./rules/firewall-policies/firewall-policies)
-    - [EDR](./rules/edrconfiguration/edrconfiguration)
-    - [Authentification des applications](./rules/app-authentication/app-authentication)
-    - [Trafic de groupe (archivé)](./rules/grouptraffic/grouptraffic)
-    - [Services d’attributs (archivé)](./rules/attribute_services/attribute_services)
-    - [Autoriser les ports personnalisés (archivé)](./rules/customports/customports)
+  - [Panneau de sécurité](./rules/security_panel/security_panel)
+  - [Scripts](./rules/scripts/scripts)
+  - [Configuration de groupe](./rules/groupconfiguration/groupconfiguration)
+  - [Filtrage web](./rules/webfiltering/webfiltering)
+  - [Accès effectif](./rules/effective_access/effective_access)
+  - [Redirection de ports](./rules/portforwarding/portforwarding)
+  <!-- - [Services](./rules/services/services) -->
+  - [Politiques](./rules/firewall-policies/firewall-policies) 
+  - [EDR](./rules/edrconfiguration/edrconfiguration)
+  - [Authentification des applications](./rules/app-authentication/app-authentication)
+  - [Trafic de groupe (archivé)](./rules/grouptraffic/grouptraffic)
+  - [Services d’attributs (archivés)](./rules/attribute_services/attribute_services)
+  - [Autoriser les ports personnalisés (archivé)](./rules/customports/customports)
 
 - [**AVANCÉ**](/advanced.md)
     - [Configuration personnalisée](./advanced/customconfiguration/customconfiguration)
     - [Active Directory](./advanced/activedirectory/activedirectory)
-      <!-- - [Active Directory Integration](./advanced/ad_integration/ad_integration) -->
+      <!-- - [Intégration Active Directory](./advanced/ad_integration/ad_integration) -->
     - [Intégration Microsoft Entra ID](./advanced/entraid/entraid)
     - [Installation de l’hyperviseur](./advanced/hypervisorinstallation/hypervisorinstallation.md)
     - [Installation des contrôleurs réseau](./advanced/networkcontrollerssetup/SettingUpServer.md)
-        <!-- - [Network Controller in Azure](./advanced/azure/azure.md) -->
+        <!-- - [Contrôleur réseau dans Azure](./advanced/azure/azure.md) -->
     - [Synology](./advanced/synology/synology)
     - [Cluster Proxmox](./advanced/proxmox/proxmox)
     - [Contrôleur réseau Docker](./advanced/dockernetworkcontroller/dockernetworkcontroller)
@@ -62,9 +61,9 @@
 
 - [**CONTACT**](./contact/index)
 
-<!--   - [Native Networks](./devices/nativenetworks/index.md)
-    - [Networks](./devices/nativenetworks/networks.md)
-    - [Network Interfaces](./devices/nativenetworks/network-interfaces.md)
-    - [WAN Load Balance](./devices/nativenetworks/wan-load-balance.md)
-    - [DHCP Server](./devices/nativenetworks/dhcp-server.md)
-    - [DNS Filtering](./devices/nativenetworks/web-filtering.md) -->
+<!--   - [Réseaux natifs](./devices/nativenetworks/index.md)
+    - [Réseaux](./devices/nativenetworks/networks.md)
+    - [Interfaces réseau](./devices/nativenetworks/network-interfaces.md)
+    - [Équilibrage de charge WAN](./devices/nativenetworks/wan-load-balance.md)
+    - [Serveur DHCP](./devices/nativenetworks/dhcp-server.md)
+    - [Filtrage DNS](./devices/nativenetworks/web-filtering.md) -->

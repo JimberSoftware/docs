@@ -17,8 +17,8 @@
                 "_sidebar.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "e291d1db4580440200fa37570d76b7ca198682f21a010b3f19d13a0b2118c660",
-                    "translation_hash": "ae76c5570ff4f1bd7576610875f0e514e56ac2beef58bfd86145deb9b3ad34f0"
+                    "source_hash": "48fe30e021109497072a8334ab64e00fc4a85610507b0a6dec2cfbfb1915e9bb",
+                    "translation_hash": "7c98f1d1c5a78c9fbe6fca3d7a2acb267835426d35f06f545fafa08981829745"
                 },
                 "advanced.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -149,8 +149,8 @@
                 "company/configur/configuration.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "951674d8ff9d76791164135a6b93c56b9a63235570c563f9c9ed370bbce91882",
-                    "translation_hash": "3461390580f5e22cdbccbb818e990c3b6f5f3007c76ec08997afeac39ae9fb5a"
+                    "source_hash": "e888f836286f32d89dcba1bb369f6663857c34571f6c781247724cc28883ebd0",
+                    "translation_hash": "d493a9866b1a6ee26317d707ce9e663cb2ec1a9537bc2039153152b2880af4e5"
                 },
                 "company/configur/oidc-login.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -191,14 +191,14 @@
                 "company/locations/locations.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "187bcbf3a0607b3883bbff4eda21b1f395a7b78ee7954d3f1e5e155b0d28dfda",
-                    "translation_hash": "53a694ea17dfbde7aec46c3d784f569b1c95b77c992d70f6a52f7312f480e58c"
+                    "source_hash": "aebf5a03f4e8fd0120ade241637afab15da50ffadffe8e335e98be0737560ef6",
+                    "translation_hash": "9363b41135b1ff01bec5f0647d07690b916a63ba3177db3474134edaa5d9ab5d"
                 },
                 "company/notificat/notifications.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "ba8154eda6558d6d3dca6a700a65476d6d8919470e263c62d8cc06a55f4980d9",
-                    "translation_hash": "2a8ac76fda6ea19725dc164a887775f7cdd4f56782915bf7ee5bcbd3ac011e2c"
+                    "source_hash": "eb8cf472ae56d0f431e3392aa3bbfa03bafc4bc87255d1082932e1fafec2ab3b",
+                    "translation_hash": "019f86bab906a95207f86831b9d786c21785a1c725a287032b87dd3cefa18280"
                 },
                 "company/users/users.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -371,8 +371,8 @@
                 "rules/groupconfiguration/groupconfiguration.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "816e9412be66cccd321720a6fffd818977362f7279184d28f9bc998ffd301e15",
-                    "translation_hash": "86aaa4fc1ae86c6ca6ed657ff2bd6afd6abc3994552658e53b8c9ef32646d9be"
+                    "source_hash": "8390e1e64fe4f5983e65551b619048576a9475b27106963827643b14bece9bd1",
+                    "translation_hash": "d555075a23a372e7ddc5763f9ef28d1db3833ee5a2f21efb8e9782d58f629b86"
                 },
                 "rules/grouptraffic/grouptraffic.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -447,7 +447,7 @@
         }
     },
     "source": {
-        "commit": "848a8a099fb36b4bec8726f263da76b8df198b13",
+        "commit": "1c6959ae8a79f2ba907f3e6c27a86b79925878e1",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },
