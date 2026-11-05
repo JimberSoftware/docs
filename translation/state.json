@@ -383,8 +383,8 @@
                 "rules/portforwarding/portforwarding.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "e91e37917531c4779bfdb985f4b4715f373eb44f55a6e21f24a00a1941c5f48b",
-                    "translation_hash": "2fd548bcff0a07be7c5df655d5bd075833d9429b39687b04044000bd83d819fb"
+                    "source_hash": "c46a72fc002b4250edbfd54d44652b995b96d8f04bdd876a7be0ae695954dacc",
+                    "translation_hash": "c21f345b9ef96bdb5bc4ad2fd313fface0973f5d4c7c456c47e145284811b67b"
                 },
                 "rules/scripts/scripts.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -447,7 +447,7 @@
         }
     },
     "source": {
-        "commit": "1c6959ae8a79f2ba907f3e6c27a86b79925878e1",
+        "commit": "ad09844827f514dbae58469d4d6ac95671b4ba90",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },
