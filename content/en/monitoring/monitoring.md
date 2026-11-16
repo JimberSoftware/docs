@@ -3,7 +3,7 @@
 >[!ATTENTION]
 >Depending on the installed options, you can see a different menu, with more or less items.
 
-![monitoring.png](./screenshots/monitoring.png ":size=200")
+![monitoring.png](./screenshots/monitoring.png ":size=300")
 
 ### Activity
 

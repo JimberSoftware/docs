@@ -12,21 +12,69 @@ For clarity, consider a scenario where a company named *`Astral Voyage`* wants t
 
 To incorporate a new customer into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
 
-![create_customer.png](./screenshots/create_customer.png ':size=350')
+Based on the chosen plan, there are a few other options to consider:
 
-- Following fields are required:
-	
+<!-- tabs:start -->
+
+# **SASE**
+
+
+_![create_customer.png](./screenshots/create_customer_SASE.png ':size=350')_
+
+
+- Following fields are required:	
     - Name. 
     - Display name. Display name can contain letters and numbers.
     - Primary contact email.
+- Toggle on **_Provision Cloud Controller_** when a network controller needs to be provisioned.
+- Toggle on **_Enable ZTO_** to use Zero Trust Outbound. 
+  
+<!-- - Options that need to be decided on:
 
-
-- Options that need to be decided on:
-
-    - Which plan: SASE or ViPN?
-    - Toggle on ***Provision Cloud Controller*** when a network controller needs to be provisioned.
+    - Which plan: SASE, ViPN or SSE?
+    - Toggle on ***Provision Cloud Controller*** when a network controller needs to be provisioned. -->
 
 - Filling in the website will cause an icon to appear in front of the customer's name.
+
+
+# **ViPN**
+
+
+_![create_customer.png](./screenshots/create_customer_ViPN.png ':size=350')_
+
+
+- Following fields are required:	
+    - Name. 
+    - Display name. Display name can contain letters and numbers.
+    - Primary contact email.
+  
+<!-- - Options that need to be decided on:
+
+    - Which plan: SASE, ViPN or SSE?
+    - Toggle on ***Provision Cloud Controller*** when a network controller needs to be provisioned. -->
+
+- Filling in the website will cause an icon to appear in front of the customer's name.
+
+# **SSE**
+
+
+_![create_customer.png](./screenshots/create_customer_SSE.png ':size=350')_
+
+
+- Following fields are required:	
+    - Name. 
+    - Display name. Display name can contain letters and numbers.
+    - Primary contact email.
+- Toggle on **_Enable ZTO_** to use Zero Trust Outbound. 
+  
+<!-- - Options that need to be decided on:
+
+    - Which plan: SASE, ViPN or SSE?
+    - Toggle on ***Provision Cloud Controller*** when a network controller needs to be provisioned. -->
+
+- Filling in the website will cause an icon to appear in front of the customer's name.
+
+<!-- tabs:end -->
 
 > [!WARNING]
 > Name can only contain letters and numbers. No spaces, special characters, or symbols.
@@ -46,7 +94,7 @@ You can search the list of customers using the search box at the top of the page
 Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (`is`, `contains`, or `is not`).
+- **Match type**: A dropdown that allows you to select how to match the value (`EQUALS`, `CONTAINS`, or `NOT`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
 ![filter_customer.png](./screenshots/filter_customer.png ':size=400' )

@@ -8,6 +8,12 @@
                     "source_hash": "015d6b60ef7dfaa5d172b07946d7e50429eb849a4ce5933a70011bb1624d2c87",
                     "translation_hash": "8fb8bc31ed359dfbd91e8d7f1b3e565e497bf129d0d256ab3ce231cc80ee6683"
                 },
+                "ZTO.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "5265cd2b624e3643979f6e385a02dff2282306dc17b46b632e195064aaefc42c",
+                    "translation_hash": "94c1f37f3275cc583bdb7e48534deba7c22e9ade5793d3a79db6784fd3239d1b"
+                },
                 "ZTO/README.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
@@ -167,8 +173,8 @@
                 "company/customers/customers.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "f3d735e06a750fba730e6645f65ccc2c96e1d1ab20195162c0e948ea31ba43a1",
-                    "translation_hash": "36d7f1893e02eca89f7e5537bd31fa7dc687476d441ec15590324cbd974cf169"
+                    "source_hash": "93b1133a3c0404ef7b62fffa0f9af58f437c12a1a210ca9e9d52045248c309e5",
+                    "translation_hash": "0ade6ea771dc5c22af8700b85303f8ecec27fa2a2b463449c9760030e7799a14"
                 },
                 "company/domains/domains.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -272,11 +278,35 @@
                     "source_hash": "76ca9c6e15503894457f7842611dd4bab801411bc968ba834272970607aa3899",
                     "translation_hash": "e692fbcc65a868a44013c6ec0d577ab7cd28597f5d3f1cb5301e016bb807848f"
                 },
+                "monitoring/data_lake.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "5691d8afb1f233a06178e469e76769fb84fe0fcf7fb6c41164a095f4b6b93811",
+                    "translation_hash": "25d4c819958119ebff8dff76e1820527a20ae780d819b95ec36b3bf954976cea"
+                },
+                "monitoring/edr_monitoring.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "188882b87ce04e6c155f7986f99f2ab68f1f61b7c9494b5391507bfa76ef7bd6",
+                    "translation_hash": "89cb20436bc7b5c17a94405d9e7e520f2322ea7aef11913995c6b3e24ae21400"
+                },
+                "monitoring/insights.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "translation_hash": "193f8ef0b26fb417dcc6013b8b9da06bbf7d55a32902d8656220ce9c0d959abb"
+                },
                 "monitoring/monitoring.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "97ea1501ed8255bfc630382aa1d0afb75b9180c7d9634d5c326c24af0a3cab43",
-                    "translation_hash": "3fcd670bc170ac4efb5b01c7fb9556f78af2b5098907de05fd59ceb6cad0f378"
+                    "source_hash": "eba7247fa72724b5e859446f9709865441dcaea7a4cc0f209e4a75ba018de1f7",
+                    "translation_hash": "4fefd646990652123fe51df8bbcdd371fd89655adf4b87a5d693822fc126b471"
+                },
+                "monitoring/postures.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "translation_hash": "1947d38fa6a096959f56826deb831f28a570e5962da8968b34dccf2c6927c447"
                 },
                 "nativenetworks.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -447,7 +477,7 @@
         }
     },
     "source": {
-        "commit": "128c946a0b42d249cbcc222fcf1868c1400de479",
+        "commit": "67e88dd1e47e0488e65500b0c030746c73986057",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },
