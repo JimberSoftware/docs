@@ -20,6 +20,34 @@ Click on the `+ Create a new rule` button and follow the steps below:
 
 You can use the same source port and protocol on different controllers. Active rules on the same controller must use a different source port or protocol.
 
+### Country restrictions
+
+Each rule has one country mode. Existing and new rules use **No country restriction** by default.
+
+- **No country restriction**: The country does not restrict the rule.
+- **Allow only selected countries**: Allow a known country only if it is selected. Block an unknown country.
+- **Block selected countries**: Block a selected country. Allow an unknown country when the database is usable.
+
+Select countries, read-only preset regions, and company regions. Their countries form one set. Duplicate membership has no extra effect. A restricted mode must have at least one country or region. Use **No country restriction** to remove the restriction.
+
+The controller checks the incoming public source IP before it replaces the source address. VPNs, proxies, and upstream address replacement can change the country that the controller sees. This estimate is not proof of a person's location. It does not replace authentication or other service protection.
+
+Changes apply to new IPv4 TCP and UDP connections. Existing connections can continue until they close or expire. If no usable country database exists, both restricted modes block all new connections and report an error. Unrestricted rules are not affected.
+
+The controller uses a local country database. It checks for an update daily. It validates each replacement and keeps the last valid file if an update fails.
+
+### Regions
+
+Manage regions under **Security → Regions**. Preset regions appear in the table and cannot be changed or deleted. A custom region can contain countries and presets, but not another custom region. Empty regions are not allowed. Edits update all rules that use the region. A custom region cannot be deleted while a rule uses it. Select its rule count to show those rules.
+
+The read-only presets are Africa (UN M49 region 002), Americas (019), Asia (142, including Taiwan), Europe (150), Oceania (009), and Benelux (BE, NL, LU). Their member lists are shown in the country selector.
+
+Company Admins and Security Consultants can manage groups and restrictions. They must have the required role in the target company. Port Forwarding feature access is also required.
+
+Blocked traffic appears under **Monitoring → Port-forward Blocks** with separate columns for the rule ID and name, source country or unknown, and block reason. Search, filters, sorting, packet details, and CSV exports use the same stored events. Packet Inspection still includes these events, with country details in the packet details panel.
+
+Country rejection and unavailable country data are separate reasons. Five-minute groups keep different rules, countries, and reasons separate. Event delivery is not complete under attack or when queues are full. Region changes and rule country changes appear separately in activity history.
+
 Existing rules are copied to each controller during the upgrade. Every company with port-forward rules must have a network controller before the upgrade. The migration fails if this condition is not met. New controllers do not automatically receive existing rules.
 
 > [!TIP]
