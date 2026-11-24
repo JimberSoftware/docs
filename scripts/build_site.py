@@ -16,7 +16,8 @@ LANGUAGE_INDEX = r"""<!doctype html>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@5.1.0/dist/themes/core.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@5.1.0/dist/themes/addons/vue.min.css" />
         <link rel="stylesheet" href="style.css" />
         <title>Jimber SASE Platform - Documentation</title>
         <style>
@@ -125,7 +126,7 @@ LANGUAGE_INDEX = r"""<!doctype html>
             }}
 
             window.$docsify = {{
-                alias: {{ '/.*/_sidebar.md': documentationBasePath + '/{code}/_sidebar.md' }},
+                alias: {{ '/.*/_sidebar.md': '_sidebar.md' }},
                 basePath: documentationBasePath + '/{code}/',
                 loadSidebar: true,
                 search: {{
@@ -162,11 +163,11 @@ LANGUAGE_INDEX = r"""<!doctype html>
                 ],
             }};
         </script>
-        <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-        <script src="https://unpkg.com/docsify-copy-code"></script>
-        <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
-        <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+        <script src="https://cdn.jsdelivr.net/npm/docsify@5.1.0/dist/docsify.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@3.0.2/dist/docsify-copy-code.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts@1.3.0/dist/docsify-plugin-flexible-alerts.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/docsify@5.1.0/dist/plugins/search.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1.6.3/dist/docsify-tabs.min.js"></script>
     </body>
 </html>
 """
