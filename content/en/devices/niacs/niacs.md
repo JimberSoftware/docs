@@ -2,28 +2,25 @@
 
 A Network Isolation Access Client (NIAC) is a specialized hardware device engineered to enable secure network connections. It can be integrated with a broad range of devices, including printers, IP cameras, hard drives and industrial machinery. By serving as a distinct gateway for these devices, NIACs enhance accessibility, ensuring that all data in transit remains encrypted for utmost security.
 
-
 ![niacs.png](./screenshots/niacfront.png ':size=300')
- 
 
 ![niacs.png](./screenshots/niacback.png ':size=300')
 
-
 A NIAC has four available ports: one WAN port for internet connection, two LAN ports and one USB port. The USB port is currently not supported, so only network devices can be connected.
 A LAN port is typically used to connect local devices within a network. Typical devices that can be connected to a LAN port include:
+
 - Computers (desktops, laptops)
 - Smart TVs
 - Network storage devices (NAS)
 - Network printers
 - ...
 
-Once a device is connected, you can see the via DHCP assigned IP address of the device in the overview of the NIAC. In this overview you can also remove a device and activate or deactivate secure mode. 
-
+Once a device is connected, you can see the via DHCP assigned IP address of the device in the overview of the NIAC. In this overview you can also remove a device and activate or deactivate Device isolation.
 
 ![niac_overview.png](./screenshots/niac_overview.png ':size=800')
 
 > [!INFO]
-> If you're an end customer interested in integrating NIACs with your devices, please get in touch with your assigned integrator. 
+> If you're an end customer interested in integrating NIACs with your devices, please get in touch with your assigned integrator.
 
 > [!INFO]
 > If you're an integrator in need of NIACs, you can either contact your distributor or reach out directly to Jimber via email at security@jimber.io.
@@ -35,13 +32,10 @@ Once a device is connected, you can see the via DHCP assigned IP address of the 
 
 To create a NIAC into the platform, click on the `+ Create new` button located at the upper right corner of the interface.
 
-
 ![create_niac.png](./screenshots/create_niac.png ':size=400')
 
 > [!INFO]
 > The hostname must be a lowercase string.
-
-
 
 <!-- ![group_details_niac.png](/group_details_niac.png ':size=600') -->
 
@@ -55,11 +49,9 @@ Next to the search box, there is a filter icon ![](../../images/icons/icon_filte
 - **Match type**: A dropdown that allows you to select how to match the value (`is`, `contains`, or `is not`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
-
 ![filter_niac.png](./screenshots/filter_niac.png ':size=600')
 
 To add multiple filters you can press the filter icon ![](../../images/icons/icon_filter.png ':size=20') again and then press the `+` button.
-
 
 > [!TIP]
 > You can refresh the list of NIACs by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
@@ -72,26 +64,25 @@ Clicking on the corresponding strip of the NIAC opens a new window. The first ta
 
 ![niac_details_security.png](./screenshots/niac_details_security.png ':size=500')
 
-
 - #### Release device
-You can release one of the devices connected to the NIAC by clicking on the red padlock icon ![](../../images/icons/icon_lock.png ':size=20') in their row.
 
-  ![deleting_dhcp_lease.png](./screenshots/deleting_dhcp_lease.png ':size=400')
+    You can release one of the devices connected to the NIAC by clicking on the red padlock icon ![](../../images/icons/icon_lock.png ':size=20') in their row.
+
+    ![deleting_dhcp_lease.png](./screenshots/deleting_dhcp_lease.png ':size=400')
 
 - #### Update device
-You can add or delete aliases for a device by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in its row.
 
-  ![update_device.png](./screenshots/update_device.png ':size=400')
+    You can add or delete aliases for a device by clicking on the edit icon ![](../../images/icons/icon_edit.png ':size=20') in its row.
 
->[!ATTENTION]
+    ![update_device.png](./screenshots/update_device.png ':size=400')
+
+> [!ATTENTION]
 > To add an alias, enter the name and press **Enter or the spacebar** **_before_** clicking Submit.
 
 > [!WARNING]
 > A device that is connected to a NIAC will not be able to reach the internet unless the NIAC is a member of a group for which the WAN Gateway is enabled. For instance: if a NIAC is a member of the group WanGateway and WAN GATEWAY is enabled for that group in Group Configuration, then the connected device will be able to reach the internet. Detailed instructions about Group Configuration are available [here](./rules/groupconfiguration/groupconfiguration.md).
 
-
-![group_config.png](./screenshots/group_config.png ':size=800') 
-
+![group_config.png](./screenshots/group_config.png ':size=800')
 
 ### Edit NIAC
 
@@ -104,5 +95,5 @@ NIACs can be edited by clicking on the edit icon ![](../../images/icons/icon_edi
 NIACs can be deleted by clicking on the delete icon ![](../../images/icons/icon_delete.png ':size=20') in their row.
 
 You will receive a warning before the NIAC is permanently deleted:
- 
+
 ![delete_niac.png](./screenshots/delete_niac.png ':size=400')

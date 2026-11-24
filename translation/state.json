@@ -35,8 +35,8 @@
                 "advanced/activedirectory/activedirectory.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "13703128be6e754b9b2daa4561fc3e6d560547dc3d7a78413011e3c5b460700e",
-                    "translation_hash": "efdb05509945454f073c98974206c3b80ef23348e06d6741151bde4d1edd3dd4"
+                    "source_hash": "f6450453f469218ff1ea10ef495ea2fb5033f79883688275ac25f802f5250764",
+                    "translation_hash": "ec9453f6d769ad6d049dbd2de522b2375f7548608e0ecac8beabff8b0bc5663a"
                 },
                 "advanced/ad_integration/ad_integration.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -209,8 +209,8 @@
                 "company/users/users.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "58eaecfb46ca0b274ce9fe7f1a43ae3f626d18075911f77d2d6b08664948d1d9",
-                    "translation_hash": "aec598125ec2ebfc1e0319a593480f0fab33d20f2e2b3739f7dfc6e76ef70e63"
+                    "source_hash": "ea0b85f1b1e78ccdf64b39bffdf4f3c22a4b3ee82fefbb7e9a83c3f427bf60a9",
+                    "translation_hash": "7bb88d941304b02fb8ae85793daa99c60c00bb3cbf446bf744180be3d56e99eb"
                 },
                 "contact/index.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -245,20 +245,20 @@
                 "devices/niacs/niacs.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "5e89538bdaa9cd4e2e634bed76e4d24a81ddacc98bd07cd2edbe111e0c6a9566",
-                    "translation_hash": "cda298f2e310f3cf3882807e6a44f7b21b738228983aa113581d7edc43521593"
+                    "source_hash": "3d06eb0f2eb1a15c0a2fd66e2cac7be2bdf4d7ed03e7716aa9e46d88ddddb43f",
+                    "translation_hash": "d016a593971bc552d54895621d1dc1edd6e96dc9188a438ecb139893ad2b497f"
                 },
                 "devices/servers/servers.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "4bcfcaa4f5a3eeb3ffa565a86ddbc3796105eee324b6d18eb2057a832b42c7d2",
-                    "translation_hash": "701071106474d7117b3c89afc1e2ae14bc7f2249d8bb20ac487ffcf1d3aa2108"
+                    "source_hash": "662954110f0d5c9fbdc601d8c8f08a2d3c9d9b723883d1ffdcc95b4dda6c9859",
+                    "translation_hash": "7d3023816b10d60f734948db120641638032831f0691b867d4f2b7bf7f741080"
                 },
                 "devices/userdevices/userdevices.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "8b4cc3974f4a552a2ce44e02363d11c1ce0e75a3f939ef0d3bd58e261b447448",
-                    "translation_hash": "28d2cdf32cd47fd0a9952ec0f5b9dcef24656a46ace679ff3c394503ff5e7772"
+                    "source_hash": "fd9f3abd6affbde4018a2d0dd3a6743c1c1ca998d00271541d309903ce81fdea",
+                    "translation_hash": "d74b051e91128f17febdfca15a52438cc56a6885a9b679409226c350b8b08426"
                 },
                 "gettingstarted/index.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -389,8 +389,8 @@
                 "rules/effective_access/effective_access.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "d4441f4085daf4c571476f2e68591d0b8fd6c640d829d33f7942d2f6c47093a8",
-                    "translation_hash": "0c6bf6bdff3182a9d94ef2974abfe30da9d80972c2f856d40878531129ada2be"
+                    "source_hash": "d47d5d59072422d2497a9b89fc03eeb4a2b532a06ea0cebb596906c3ff630a62",
+                    "translation_hash": "d37c7083fc251a70e486fd06de7c6837d4125448b60959a3b704a228d02761c4"
                 },
                 "rules/firewall-policies/firewall-policies.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -477,7 +477,7 @@
         }
     },
     "source": {
-        "commit": "adc81ca7a98e3cafe5d26bf05b457193b2f24b4b",
+        "commit": "76a10f85d8c536eeaa335f9a1e3929e2e1196197",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },

@@ -2,29 +2,24 @@
 
 ### Create Server
 
-To create a server in the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_***, click on the `+ Create new` button located at the upper right corner of the interface. This will open following dialog box:
+To create a server in the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_**, click on the `+ Create new` button located at the upper right corner of the interface. This will open following dialog box:
 
-![create_server.png](./screenshots/create_server.png ":size=800")
+![create_server.png](./screenshots/create_server.png ':size=800')
 
-- Hostname is mandatory and must be a lowercase string. 
+- Hostname is mandatory and must be a lowercase string.
 - You can create a new tag or use a saved tag.
 
-
- 
->[!TIP] 
->We advise you to copy the token as you will be needing it for the installation of the server, but you can still access it at any time on the editing screen of the server on the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_***.
-
+> [!TIP]
+> We advise you to copy the token as you will be needing it for the installation of the server, but you can still access it at any time on the editing screen of the server on the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_**.
 
 ### Server installation
 
-#### Platforms 
+#### Platforms
 
-> [!ATTENTION] 
-> First create your server on the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** (see above).
+> [!ATTENTION]
+> First create your server on the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_** (see above).
 
 <!-- tabs:start -->
-
-
 
 ### **Windows**
 
@@ -37,14 +32,11 @@ Once downloaded, initiate the .msi installation file by double-clicking it.
 
 ![win_server_msi.png](./screenshots/win_server_msi.png ':size=100')
 
-
-
-
-When starting **_Jimber SASE Client_**, a dialog box will emerge: 
+When starting **_Jimber SASE Client_**, a dialog box will emerge:
 
 ![jimber_server_settings.png](./screenshots/jimber_server_settings.png ':size=500')
 
-The required token was created with the new server. If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab of the ****_<span style="color: darkblue;">Jimber SASE Platform</span>_***. Simply select and edit the correct server to find it.
+The required token was created with the new server. If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab of the \***_*<span style="color: darkblue;">Jimber SASE Platform</span>*_**. Simply select and edit the correct server to find it.
 
 ![update_server.png](./screenshots/update_server_token.png ':size=800')
 
@@ -52,21 +44,16 @@ The required token was created with the new server. If you did not copy the toke
 
 After filling in the token and clicking the submit button, a pop-up appears stating that the server configuration has been submitted and the service will be restarted:
 
-
 ![settings_updated.png](./screenshots/settings_updated.png ':size=400')
-
-
-
 
 <!-- Access the 'services' panel by entering 'services.msc' into the start menu's search bar. Within this panel, find the 'Jimber Network Isolation' service and initiate a restart.
 
 
 ![services_jimber.png](/services_jimber.png ':size=800') -->
 
+Upon successful installation, the server should display a connected status (indicated by a green dot) on the 'Servers' tab of the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_**.
 
-Upon successful installation, the server should display a connected status (indicated by a green dot) on the 'Servers' tab of the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_***. 
-
-<!-- For any necessary troubleshooting, consult the log file at this location: 
+<!-- For any necessary troubleshooting, consult the log file at this location:
 `C:\Program Files\Jimber\jimbernetworkisolation.log` -->
 
 ### **Linux**
@@ -74,7 +61,7 @@ Upon successful installation, the server should display a connected status (indi
 > [!IMPORTANT]
 > On Linux, DNS Override is supported only with **systemd-resolved**.
 
-> [!INFO] 
+> [!INFO]
 > Support is currently provided for the latest LTS versions of Ubuntu. For other OS distributions, please reach out to our support team.
 
 Download and install the latest version for the 'Linux Server' client from https://SASE.jimber.io/downloads (no need to log in) by running following commands:
@@ -85,22 +72,22 @@ sudo apt install wireguard
 wget https://SASE.jimber.io/linux-server-latest.deb
 sudo dpkg -i linux-server-latest.deb
 ```
+
 > [!TIP]
 > To download another specific version, you can use this [link](https://SASE.jimber.io/clients).
 
 Upon completion of the installation, a new `settings.json` file will be automatically created in the `/etc/jimber/`directory.
-This file must be completed with the token you were provided upon creating the server within the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** interface. This can be established with the following command:
+This file must be completed with the token you were provided upon creating the server within the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_** interface. This can be established with the following command:
 
 ```bash
 sudo jimberfw -config
 ```
-![token_linux_server.png](./screenshots/token_linux_server.png ':size=300') 
 
-If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab of the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_***. Simply select and edit the correct server to find it.
+![token_linux_server.png](./screenshots/token_linux_server.png ':size=300')
 
+If you did not copy the token in the previous step, it can be retrieved from the 'Servers' tab of the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_**. Simply select and edit the correct server to find it.
 
 ![update_server.png](./screenshots/update_server_token.png ':size=800')
-
 
 <!-- Restart the service by running the following commandsudo
 
@@ -108,16 +95,16 @@ If you did not copy the token in the previous step, it can be retrieved from the
 sudo systemctl restart jimbernetworkisolation.service
 ``` -->
 
-Upon successful installation, the server should display a connected status (indicated by a green dot) on the 'Servers' tab of the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_***. 
+Upon successful installation, the server should display a connected status (indicated by a green dot) on the 'Servers' tab of the **_*<span style="color: darkblue;">Jimber SASE Platform</span>*_**.
+
 <!-- If needed, refer to the following log files for debugging purposes:
 
 ```bash
 cat /var/log/jimber/jimbernetworkisolation.log
 ``` -->
 
->[!TIP]
-> You can see the installed version using *jimberfw version*. You can also see the installed version in the details page of the server in the SASE platform (see below).
-
+> [!TIP]
+> You can see the installed version using _jimberfw version_. You can also see the installed version in the details page of the server in the SASE platform (see below).
 
 ### **Synology**
 
@@ -126,9 +113,11 @@ cat /var/log/jimber/jimbernetworkisolation.log
 ### **Raspberry Pi**
 
 Requirements:
-- Default Raspbian installation 
 
-Follow the Linux installation but use the following deb file instead: 
+- Default Raspbian installation
+
+Follow the Linux installation but use the following deb file instead:
+
 - https://SASE.jimber.io/clients/rpi-latest.deb
 
 > [!TIP]
@@ -138,10 +127,11 @@ All other configuration is identical.
 
 <!-- tabs:end -->
 
->[!INFO]
->For any necessary troubleshooting, you can consult the log files. Locations of the log files can be found [here](/./advanced/logging/logging.md). 
+> [!INFO]
+> For any necessary troubleshooting, you can consult the log files. Locations of the log files can be found [here](/./advanced/logging/logging.md).
 
 ---
+
 ---
 
 ### Filter Servers
@@ -158,7 +148,6 @@ Next to the search box, there is a filter icon ![](../../images/icons/icon_filte
 
 To add multiple filters you can press the filter icon ![](../../images/icons/icon_filter.png ':size=20') again and then press the `+` button.
 
-
 > [!TIP]
 > You can refresh the list of servers by pressing the refresh icon ![](../../images/icons/icon_reload.png ':size=20') at the top of the page.
 
@@ -171,7 +160,7 @@ You can review the used **Tags** by pressing the`Tags`button at the top of the p
 ![tags.png](./screenshots/tags.png ':size=500')
 
 > [!CAUTION]
-> Deleting a tag permanently removes all use of it. You will not receive a warning message before deletion. 
+> Deleting a tag permanently removes all use of it. You will not receive a warning message before deletion.
 
 ### Server Details
 
@@ -184,22 +173,20 @@ An online server will appear in the overview with a green dot. An offline server
 Click the update icon ![](../../images/icons/icon_update.png ':size=20') to initiate the update.
 
 > [!INFO]
-> In case of a successful update, the update icon disappears. Should the icon remain after several minutes, retry the update by clicking the icon again. 
+> In case of a successful update, the update icon disappears. Should the icon remain after several minutes, retry the update by clicking the icon again.
 
-
->[!NOTE]
+> [!NOTE]
 > The update icon is not visible when the server is offline.
-
 
 ![server online.png](./screenshots/server_online.png ':size=800')
 
-Clicking on the corresponding strip of a specific server opens a new window with more details, installed firewalls or antivirus, installed interfaces, security settings, and secure mode exceptions.
+Clicking on the corresponding strip of a specific server opens a new window with more details, installed firewalls or antivirus, installed interfaces, security settings, and Device isolation exceptions.
 
 <!-- tabs:start -->
 
 ##### **Details**
 
-This window shows general information about the server and  the groups to which the server belongs.
+This window shows general information about the server and the groups to which the server belongs.
 
 ![server_detail.png](./screenshots/server_details.png ':size=500')
 
@@ -208,7 +195,6 @@ This window shows general information about the server and  the groups to which 
 Here you get an overview of the installed antivirus software and firewalls.
 
 ![server_software.png](./screenshots/server_software.png ':size=500')
-
 
 ##### **Interfaces**
 
@@ -222,16 +208,15 @@ This window shows the founded policies and port forwarding rules on the server.
 
 ![server_firewall_rules.png](./screenshots/server_firewall_rules.png ':size=500')
 
-##### **Secure Mode**
+##### **Device isolation**
 
-Here you find any secure mode exceptions. Secure mode exceptions allow specific websites, applications, or network traffic to bypass enhanced security restrictions, to ensure daily tasks are not blocked while maintaining high-level defenses. 
- 
+Here you find any Device isolation exceptions. Device isolation exceptions allow specific websites, applications, or network traffic to bypass enhanced security restrictions, to ensure daily tasks are not blocked while maintaining high-level defenses.
+
 ![server_secure_mode.png](./screenshots/server_secure_mode.png ':size=500')
 
-Secure mode can be enabled when creating the server, or when updating the server: 
+Device isolation can be enabled when creating the server, or when updating the server:
 
 ![enable_secure_mode.png](./screenshots/enable_secure_mode.png ':size=500')
-
 
 <!-- tabs:end -->
 
@@ -252,4 +237,3 @@ A server can be deleted by clicking on the delete icon ![](../../images/icons/ic
 You will receive a warning before the device is permanently deleted:
 
 ![delete_server.png](./screenshots/delete_server.png ':size=300')
-
