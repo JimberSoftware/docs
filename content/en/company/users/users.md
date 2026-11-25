@@ -1,6 +1,11 @@
 # ![](../../images/menu/menu_users.png ':size=25') Users
 
+
+
 A user refers to an individual account within the platform. Users can have roles and be linked to properties of different products.
+
+![users.png](./screenshots/users.png ':size=800')
+
 
 > [!IMPORTANT]
 > Managing users efficiently is crucial for maintaining the security and integrity of your platform.
@@ -30,13 +35,16 @@ To create a new User into the platform, click on the `+ Create new` button locat
   - Toggle this option to enable `Network Isolation` for this particular user, adding an extra layer of security.
   - When Network Isolation is enabled, groups can be selected. For more information on groups, you can find [here](/./company/groups/groups.md). -->
 
-- **Enable Device isolation**:
-    - Toggle this option to enable Device isolation.
-    - If Device isolation is turned ON for a device all incoming traffic will be blocked unless it comes from the **_Jimber SASE Platform_**:
+- **Enable Secure Mode**:
+  - Toggle this option to enable **Secure Mode**.
+  - If Secure mode is turned ON for a device all incoming traffic will be blocked unless it comes from the **_<span style="color: darkblue;">Jimber SASE Platform</span>_**:
+
+  ![secure_mode_warning.png](./screenshots/secure_mode_warning.png ':size=400')
+
 
     ![secure_mode_warning.png](./screenshots/secure_mode_warning.png ':size=400')
 
-### Create Security Consultants
+### Create Security Consultant
 
 To create a new Security Consultant into the platform, follow the steps below.
 A Security Consultant can manage configurations of its customer.
@@ -49,26 +57,36 @@ A Security Consultant can manage configurations of its customer.
 
 ![user_in_integrator.png](./screenshots/user_in_integrator.png ':size=800x200')
 
-- There are two ways to proceed: **create** a new user with the Security Consultant role,
-  or **edit** and promote an existing user by toggling the option.
+There are two ways to proceed: **create** a new user with the Security Consultant role,
+or **edit** and promote an existing user by toggling the option.
 
 <!-- tabs:start -->
 
 #### **New user**
 
-Navigate to the section `Users` from the partner, click on the `+ Create new` button to create a new user, and toggle the `Security Consultant` button:
+Navigate to the section `Users` of the **partner**, click on the `+ Create new` button to create a new user, and toggle the `Security Consultant` button: 
 
 ![create_sec_cons.png](./screenshots/create_sec_cons.png ':size=350')
 
+
 #### **Promote an existing user**
 
-Navigate to the section `Users` from the partner, click on the `+ Add Security Consultant` button to promote a existing user:
+Navigate to the section `Users` of the partner.   
+Click on the `Edit` button of the user you want to promote and toggle the `Security Consultant` button.
 
 ![promote_sec_consult.png](./screenshots/promote_sec_consult.png ':size=350')
 
-Provide the email of the user to be promoted.
 
 <!-- tabs:end -->
+
+Once the security consultant has been created for the partner, you can add them to the customer's user list.
+
+ ![add_sec_consul.png](./screenshots/add_sec_consul.png ':size=350')
+
+
+
+    
+ 
 
 ### Filter Users
 
@@ -79,7 +97,7 @@ Use the search box to enter keywords and filter the user list.
 Next to the search box, there is a filter icon ![](../../images/icons/icon_filter.png ':size=20'). When clicked, it reveals advanced filtering options where you can define additional conditions based on the following three elements:
 
 - **Property**: A dropdown menu where you choose the field to filter on.
-- **Match type**: A dropdown that allows you to select how to match the value (`is`, `contains`, or `is not`).
+- **Match type**: A dropdown that allows you to select how to match the value (`EQUALS`, `CONTAINS`, or `NOT`).
 - **Value**: Enter or select the value to match, depending on the selected property.
 
 ![filter_user.png](./screenshots/filter_user.png ':size=500')

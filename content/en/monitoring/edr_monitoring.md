@@ -1,4 +1,4 @@
-## EDR Monitoring
+# EDR Monitoring
 
 <!-- tabs:start -->
 

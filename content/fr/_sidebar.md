@@ -39,26 +39,31 @@
   - [Politiques](./rules/firewall-policies/firewall-policies) 
   - [EDR](./rules/edrconfiguration/edrconfiguration)
   - [Authentification des applications](./rules/app-authentication/app-authentication)
-  - [Trafic de groupe (archivé)](./rules/grouptraffic/grouptraffic)
+  - [Trafic des groupes (archivé)](./rules/grouptraffic/grouptraffic)
   - [Services d’attributs (archivés)](./rules/attribute_services/attribute_services)
   - [Autoriser les ports personnalisés (archivé)](./rules/customports/customports)
 
 - [**AVANCÉ**](/advanced.md)
-    - [Configuration personnalisée](./advanced/customconfiguration/customconfiguration)
-    - [Active Directory](./advanced/activedirectory/activedirectory)
-      <!-- - [Intégration Active Directory](./advanced/ad_integration/ad_integration) -->
-    - [Intégration Microsoft Entra ID](./advanced/entraid/entraid)
-    - [Installation de l’hyperviseur](./advanced/hypervisorinstallation/hypervisorinstallation.md)
-    - [Installation des contrôleurs réseau](./advanced/networkcontrollerssetup/SettingUpServer.md)
-        <!-- - [Contrôleur réseau dans Azure](./advanced/azure/azure.md) -->
-    - [Synology](./advanced/synology/synology)
-    - [Cluster Proxmox](./advanced/proxmox/proxmox)
-    - [Contrôleur réseau Docker](./advanced/dockernetworkcontroller/dockernetworkcontroller)
-    - [Journalisation](./advanced/logging/logging.md)
-    - [Jetons d’accès personnels](./advanced/personalaccesstokens/personalaccesstokens.md)
-    - [Environnement unifié](./advanced/unified_environment/unified_environment.md)
-- [**SUPERVISION**](./monitoring/monitoring.md)
-
+  - [Configuration personnalisée](./advanced/customconfiguration/customconfiguration)
+  - [Active Directory](./advanced/activedirectory/activedirectory)
+  <!-- - [Intégration Active Directory](./advanced/ad_integration/ad_integration) -->
+  - [Intégration Microsoft Entra ID](./advanced/entraid/entraid)
+  - [Installation de l’hyperviseur](./advanced/hypervisorinstallation/hypervisorinstallation.md)
+  - [Installation des contrôleurs réseau](./advanced/networkcontrollerssetup/SettingUpServer.md)
+    - [Haute disponibilité](./advanced/networkcontrollerssetup/high-availability.md)
+    <!-- - [Contrôleur réseau dans Azure](./advanced/azure/azure.md) -->
+  - [Synology](./advanced/synology/synology)
+  - [Cluster Proxmox](./advanced/proxmox/proxmox)
+  - [Contrôleur réseau Docker](./advanced/dockernetworkcontroller/dockernetworkcontroller)
+  - [Journalisation](./advanced/logging/logging.md)
+  - [Jetons d’accès personnels](./advanced/personalaccesstokens/personalaccesstokens.md)
+  - [Environnement unifié](./advanced/unified_environment/unified_environment.md)
+- [**SUPERVISION**](/monitoring_overview.md)
+  - [LAC DE DONNÉES](./monitoring/data_lake)
+  - [SUPERVISION](./monitoring/monitoring)
+  - [APERÇUS](./monitoring/insights.md)
+  - [EDR](./monitoring/edr_monitoring.md)
+  
 - [**CONTACT**](./contact/index)
 
 <!--   - [Réseaux natifs](./devices/nativenetworks/index.md)

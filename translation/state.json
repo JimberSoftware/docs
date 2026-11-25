@@ -23,8 +23,8 @@
                 "_sidebar.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "48fe30e021109497072a8334ab64e00fc4a85610507b0a6dec2cfbfb1915e9bb",
-                    "translation_hash": "7c98f1d1c5a78c9fbe6fca3d7a2acb267835426d35f06f545fafa08981829745"
+                    "source_hash": "1343c42e997c96e936ecdbf454d7d499d1915d50827ac51d1099e6050a43b55c",
+                    "translation_hash": "95c37e928485d20d7c97f482e9d49e5cfa4a054f308e38585831112a8606f32e"
                 },
                 "advanced.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -209,8 +209,8 @@
                 "company/users/users.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "ea0b85f1b1e78ccdf64b39bffdf4f3c22a4b3ee82fefbb7e9a83c3f427bf60a9",
-                    "translation_hash": "7bb88d941304b02fb8ae85793daa99c60c00bb3cbf446bf744180be3d56e99eb"
+                    "source_hash": "632d4c4bf60c328763a27ebc9c012c7ecefabd194614887c521d5a0aa2760cfa",
+                    "translation_hash": "529018b9b1eed99fea5776bd7883f2c8340b23698fe04d8a7fb3336c2261e93a"
                 },
                 "contact/index.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -287,14 +287,14 @@
                 "monitoring/edr_monitoring.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "188882b87ce04e6c155f7986f99f2ab68f1f61b7c9494b5391507bfa76ef7bd6",
-                    "translation_hash": "89cb20436bc7b5c17a94405d9e7e520f2322ea7aef11913995c6b3e24ae21400"
+                    "source_hash": "770abf1f8b64c13e5fc5e9506fe392270c8b07e737e3ae251a2968405ecd6285",
+                    "translation_hash": "c17ad6f9bb3835e2f734482919fa9ca9073875cfab87452d8d785eee97ed6cc5"
                 },
                 "monitoring/insights.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                    "translation_hash": "193f8ef0b26fb417dcc6013b8b9da06bbf7d55a32902d8656220ce9c0d959abb"
+                    "source_hash": "e50b4061ff3a7b8fde934774db9dc538deae3d156e1cdf38976b5b2a3c0966e7",
+                    "translation_hash": "37edf32e0d71fe29c2e450aa2d7e59b00cf602598a365138c57a1ee616fae585"
                 },
                 "monitoring/monitoring.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -305,8 +305,8 @@
                 "monitoring/postures.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                    "translation_hash": "1947d38fa6a096959f56826deb831f28a570e5962da8968b34dccf2c6927c447"
+                    "source_hash": "3561f7d754363d948ff155d580ff347ceb6272abc1a7f0cd52523bff7ba59b60",
+                    "translation_hash": "545e3ce225e842d2d6796ee1e326ff4113c6cd0e4371725a07122e4d81ff7fd5"
                 },
                 "nativenetworks.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -477,7 +477,7 @@
         }
     },
     "source": {
-        "commit": "59577a7cddb4a2dc9322d273a6d6c7f1b6fb81fb",
+        "commit": "b880e8202d7eccfec57c55593f819495cbd83707",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },
