@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 - <span style="color: darkblue;">Plateforme Jimber SASE</span>
-    - [Bien démarrer](./gettingstarted/index)
+    - [Premiers pas](./gettingstarted/index)
     - [Bonnes pratiques](./advanced/bestpractices/bestpractices)
     - [Paramètres importants](./gettingstarted/setting.md)
 - [**ENTREPRISE**](/company.md)
@@ -16,7 +16,7 @@
         - [Connexion OIDC](./company/configur/oidc-login)
     - [Déployer un certificat racine avec Intune](./company/configur/root-certificate-intune)
 - [**APPAREILS**](/devices.md)
-    - [Appareils utilisateurs](./devices/userdevices/userdevices)
+    - [Appareils utilisateur](./devices/userdevices/userdevices)
     - [Serveurs](./devices/servers/servers)
     - [NIAC](./devices/niacs/niacs)
     - [Contrôleurs réseau](./devices/networkcontrollers/networkcontrollers)
@@ -39,19 +39,20 @@
   - [Politiques](./rules/firewall-policies/firewall-policies) 
   - [EDR](./rules/edrconfiguration/edrconfiguration)
   - [Authentification des applications](./rules/app-authentication/app-authentication)
-  - [Trafic des groupes (archivé)](./rules/grouptraffic/grouptraffic)
-  - [Services d’attributs (archivés)](./rules/attribute_services/attribute_services)
-  - [Autoriser les ports personnalisés (archivé)](./rules/customports/customports)
+  - [Trafic de groupe (Archivé)](./rules/grouptraffic/grouptraffic)
+  - [Services d’attributs (Archivé)](./rules/attribute_services/attribute_services)
+  - [Autoriser les ports personnalisés (Archivé)](./rules/customports/customports)
 
 - [**AVANCÉ**](/advanced.md)
   - [Configuration personnalisée](./advanced/customconfiguration/customconfiguration)
   - [Active Directory](./advanced/activedirectory/activedirectory)
-  <!-- - [Intégration Active Directory](./advanced/ad_integration/ad_integration) -->
+  <!-- - [Active Directory Integration](./advanced/ad_integration/ad_integration) -->
   - [Intégration Microsoft Entra ID](./advanced/entraid/entraid)
+    - [Connexion automatique Entra sous Windows](/advanced/entraid/windows-autologin.md)
   - [Installation de l’hyperviseur](./advanced/hypervisorinstallation/hypervisorinstallation.md)
   - [Installation des contrôleurs réseau](./advanced/networkcontrollerssetup/SettingUpServer.md)
     - [Haute disponibilité](./advanced/networkcontrollerssetup/high-availability.md)
-    <!-- - [Contrôleur réseau dans Azure](./advanced/azure/azure.md) -->
+    <!-- - [Network Controller in Azure](./advanced/azure/azure.md) -->
   - [Synology](./advanced/synology/synology)
   - [Cluster Proxmox](./advanced/proxmox/proxmox)
   - [Contrôleur réseau Docker](./advanced/dockernetworkcontroller/dockernetworkcontroller)
@@ -61,14 +62,14 @@
 - [**SUPERVISION**](/monitoring_overview.md)
   - [LAC DE DONNÉES](./monitoring/data_lake)
   - [SUPERVISION](./monitoring/monitoring)
-  - [APERÇUS](./monitoring/insights.md)
+  - [ANALYSES](./monitoring/insights.md)
   - [EDR](./monitoring/edr_monitoring.md)
   
 - [**CONTACT**](./contact/index)
 
-<!--   - [Réseaux natifs](./devices/nativenetworks/index.md)
-    - [Réseaux](./devices/nativenetworks/networks.md)
-    - [Interfaces réseau](./devices/nativenetworks/network-interfaces.md)
-    - [Équilibrage de charge WAN](./devices/nativenetworks/wan-load-balance.md)
-    - [Serveur DHCP](./devices/nativenetworks/dhcp-server.md)
-    - [Filtrage DNS](./devices/nativenetworks/web-filtering.md) -->
+<!--   - [Native Networks](./devices/nativenetworks/index.md)
+    - [Networks](./devices/nativenetworks/networks.md)
+    - [Network Interfaces](./devices/nativenetworks/network-interfaces.md)
+    - [WAN Load Balance](./devices/nativenetworks/wan-load-balance.md)
+    - [DHCP Server](./devices/nativenetworks/dhcp-server.md)
+    - [DNS Filtering](./devices/nativenetworks/web-filtering.md) -->

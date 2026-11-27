@@ -59,12 +59,12 @@ After this is done your permission list should look like this (your list will sh
 
 Admin consent is required and must be granted for your base directory in Azure. The base directory in our example is 'Standaardmap'.
 
-To do this click on 'Grand admin consent for Standaardmap' which is next to 'Add a permission'. This will change the status for each permission to 'granted'.
+To do this click on 'Grant admin consent for Standaardmap' which is next to 'Add a permission'. This will change the status for each permission to 'granted'.
 
 ![grand_admin_consent.png](./screenshots/grant_admin_consent.png ":size=700")
 
 > [!NOTE]
-> If you cannot grand admin consent this is because your user does not have administrator rights. Please contact the admin of your Azure portal to grant admin consent.
+> If you cannot grant admin consent this is because your user does not have administrator rights. Please contact the admin of your Azure portal to grant admin consent.
 
 Eventually your permission list should look like this:
 
@@ -72,15 +72,7 @@ Eventually your permission list should look like this:
 
 ### Auto-login (Microsoft Entra ID SSO on Windows)
 
-The Jimber SASE client on Windows can sign a user in automatically with their Microsoft Entra ID identity instead of showing the browser login. Before the client skips the browser login, the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_*** verifies through Microsoft Graph that the device is Entra-joined and that the signed-in user is registered to that device.
-
-That check uses the `/devices` Graph endpoints, which is why the **Device.Read.All** application permission is required in addition to `Group.Read.All` and `User.Read.All`. It must be added as an **Application permission** and admin consent must be granted for it, just like the other two.
-
-> [!NOTE]
-> Auto-login is also a per-group setting in the group configuration. When it is not enabled for a group, the platform does not query Microsoft Graph for that user at all.
-
-> [!WARNING]
-> If `Device.Read.All` is missing, was added as a *Delegated* permission, or admin consent was not granted for it, Microsoft Graph replies with *Insufficient privileges to complete the operation*. The platform records this as `Device query failed: Insufficient privileges to complete the operation.` in **Recent Activity**, and affected users fall back to the interactive browser login.
+After installing the Windows agent, each user must open **Jimber SASE** manually once. Follow the [Windows auto-login guide](/advanced/entraid/windows-autologin.md) to configure company domains, Microsoft authentication, synchronization and group policy, and to verify a user's device in PowerShell.
 
 ### Client credentials
 

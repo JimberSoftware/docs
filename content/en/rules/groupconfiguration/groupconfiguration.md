@@ -15,6 +15,8 @@ Group Configuration can be edited by clicking on the edit icon ![](../../images/
 
 ![edit_group_configuration.png](./screenshots/edit_group_configuration.png ':size=300')
 
+Enable **Autologin** on a group to allow eligible members to use their Windows Entra sign-in. See [Windows auto-login with Microsoft Entra ID](/advanced/entraid/windows-autologin.md) for the company settings and device checks.
+
 ### Filter Group Configuration
 
 You can search the list of group configurations using the search box at the top of the page. This helps you quickly find and manage the group configuration you're looking for.

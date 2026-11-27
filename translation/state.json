@@ -23,8 +23,8 @@
                 "_sidebar.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "1343c42e997c96e936ecdbf454d7d499d1915d50827ac51d1099e6050a43b55c",
-                    "translation_hash": "95c37e928485d20d7c97f482e9d49e5cfa4a054f308e38585831112a8606f32e"
+                    "source_hash": "7de8043f04b908355e647dd2dc28c6113f585d7c0bb3daa7049872fc5a3c14de",
+                    "translation_hash": "2b90d2d5155028cb78a9e6a17c301b36812624f15eba05b62fc7d1cffd02caae"
                 },
                 "advanced.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -71,8 +71,14 @@
                 "advanced/entraid/entraid.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "0aada146b4b73b7f52760f67aefa7c60aefb780ba6e10456d44894d2e1ae6cc6",
-                    "translation_hash": "2615cd792f23d4cad353b9a88dd637eee1d1c01a17f08474960b1e5b719c9455"
+                    "source_hash": "f02a220acc8dcb2915832abc1944809d36a3ec6605a098b563aa196caaa58e45",
+                    "translation_hash": "5d0d890bb2bf43a33148f7a5bfe9d38ad3f764749a843cdb03f9964197e599e0"
+                },
+                "advanced/entraid/windows-autologin.md": {
+                    "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
+                    "prompt_version": "1",
+                    "source_hash": "2d6a35e5a0c7b495ac5dae0d9d27756ae041cfae0f12bd8e792626703c530d85",
+                    "translation_hash": "dd9a0222afce117e61250ea065bfcb2091b72dc58eddc0e4e7607da65aa724f6"
                 },
                 "advanced/hypervisorinstallation/hypervisorinstallation copy.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -191,8 +197,8 @@
                 "company/integrations/integrations.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "9f9ba8ada31208e50fb78e62cfc37ea42d5082ba1feef3d65d9ca3217b004f22",
-                    "translation_hash": "de35aaeae84ebfcbdf71475c2de6206b8e31f52452a278d17f1ec73a9817563b"
+                    "source_hash": "7694f468d18a211eac2101d8faaebd41765bd08e108691edfdefc51fd4078ea9",
+                    "translation_hash": "77f4636c31a7552e803beacc549b6ada8a924ed4229db4ea35d44f8f0cd7a14e"
                 },
                 "company/locations/locations.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -401,8 +407,8 @@
                 "rules/groupconfiguration/groupconfiguration.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
                     "prompt_version": "1",
-                    "source_hash": "8390e1e64fe4f5983e65551b619048576a9475b27106963827643b14bece9bd1",
-                    "translation_hash": "d555075a23a372e7ddc5763f9ef28d1db3833ee5a2f21efb8e9782d58f629b86"
+                    "source_hash": "7e784969e238c1779e6ed08c848f0bde28b90894b9011041dbc64a2a8fd96c53",
+                    "translation_hash": "b1c7d5e27a5b8c24f06ee97541625e219267c690da17a069ade9ebc3ad58be83"
                 },
                 "rules/grouptraffic/grouptraffic.md": {
                     "glossary_hash": "9affbdadb21e8f9b35810e3efb366c0b3ec383c91b9e74bef7fea334656ae9ab",
@@ -477,7 +483,7 @@
         }
     },
     "source": {
-        "commit": "949fa36ae8cfec88339c1828319bf953bac4b453",
+        "commit": "5e25fca49b197217d6b9f655ef45e7e8aae66fef",
         "path": "apps/docs",
         "repository": "JimberSoftware/jimberfw_signalserver"
     },

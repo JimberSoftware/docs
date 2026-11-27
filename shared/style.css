@@ -1,6 +1,13 @@
 :root {
     --theme-color: #111279;
+    --sidebar-width: 300px;
+    --content-max-width: 80%;
   }
+@media (min-width: 641px) {
+  :root {
+    --content-margin-inline: 90px;
+  }
+}
 .github-corner { 
     display: none;
 }

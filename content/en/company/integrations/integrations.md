@@ -21,7 +21,7 @@ To do so, enter the IP address of the DNS server and click on the apply button.
 Synchronize your user data seamlessly from Microsoft Entra ID to the ***_<span style="color: darkblue;">Jimber SASE Platform</span>_***. This ensures that user information remains consistent across both platforms, providing ease of user management.
 
 > [!INFO]
-> Detailed instructions are available in the Advanced section [here](/./advanced/entraid/entraid.md).
+> See the [Entra app registration guide](/advanced/entraid/entraid.md) and [Windows auto-login setup and verification](/advanced/entraid/windows-autologin.md).
 
 ![micro_entra_id.png](./screenshots/micro_entra_id.png ":size=500")
 

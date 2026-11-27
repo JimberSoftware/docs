@@ -48,6 +48,7 @@
   - [Active Directory](./advanced/activedirectory/activedirectory)
   <!-- - [Active Directory Integration](./advanced/ad_integration/ad_integration) -->
   - [Microsoft Entra ID Integration](./advanced/entraid/entraid)
+    - [Windows Entra auto-login](/advanced/entraid/windows-autologin.md)
   - [Hypervisor Installation](./advanced/hypervisorinstallation/hypervisorinstallation.md)
   - [Network Controllers Installation](./advanced/networkcontrollerssetup/SettingUpServer.md)
     - [High Availability](./advanced/networkcontrollerssetup/high-availability.md)
